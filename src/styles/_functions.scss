@@ -1,0 +1,22 @@
+//makes it easier to choose colours being variations of a specified colour
+
+@function setColor($color, $brightness) {
+
+  @if $brightness < 0 {
+
+    // for negative numbers, darken the primary colour
+    $abs: abs($brightness); //absolute value
+    @return darken($color, $abs*10);
+
+  } @else if $brightness > 0 {
+
+    //for positive numbers, lighten the primary colour
+    @return lighten($color, $brightness*10);
+
+  } @else {
+
+    //for zero, leave the primary colour unchanged
+    @return $color;
+  }
+
+}
