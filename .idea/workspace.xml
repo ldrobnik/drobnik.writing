@@ -102,7 +102,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="92">
-                <caret line="4" column="146" selection-start-line="4" selection-start-column="146" selection-end-line="4" selection-end-column="146" />
+                <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
               </first_editor>
               <second_editor />
             </state>
@@ -412,6 +412,33 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Texts" type="462c0819:PsiDirectoryNode" />
               <item name="Polish" type="462c0819:PsiDirectoryNode" />
+              <item name="CellulosePl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Polish" type="462c0819:PsiDirectoryNode" />
+              <item name="CunninghamellaPl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Polish" type="462c0819:PsiDirectoryNode" />
+              <item name="LandminesPl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Polish" type="462c0819:PsiDirectoryNode" />
               <item name="MothsPl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -510,12 +537,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557070893454</updated>
-      <workItem from="1557070894558" duration="10901000" />
+      <workItem from="1557070894558" duration="11282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10901000" />
+    <option name="totallyTimeSpent" value="11282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="375" y="5" width="1471" height="1017" extended-state="0" />
@@ -523,9 +550,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.28065202" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.28065202" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32983682" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32983682" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -940,7 +967,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="92">
-            <caret line="4" column="146" selection-start-line="4" selection-start-column="146" selection-end-line="4" selection-end-column="146" />
+            <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
           </first_editor>
           <second_editor />
         </state>
