@@ -1,13 +1,28 @@
 import React from 'react';
+import {ThemeProvider} from 'styled-components';
 
 import Layout from './components/Layout/Layout';
 
+// Theme to be used in the project
+const theme = {
+    nocturine: '#a98086',
+    cunninghamella: '#566f0c',
+    vostok: '#a67847',
+    entropia: '#616a65',
+    devonian: '#99aac6',
+    obrovsky: '#b34a53',
+    sansSerif: `'Maven Pro', sans-serif`,
+    serif: `'Roboto Slab', serif`
+};
+
 function App() {
-  return (
-      <Layout>
-        Content
-      </Layout>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <Layout>
+                Content
+            </Layout>
+        </ThemeProvider>
+    );
 }
 
 export default App;

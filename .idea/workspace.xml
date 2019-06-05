@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Elements/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Quote/Quote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Elements/Quote/Quote.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Separator/Separator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Elements/Separator/Separator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/TitlePanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/TitlePanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/CelluloseEn/CelluloseEn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/English/CelluloseEn/CelluloseEn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/CunninghamellaEn/CunninghamellaEn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/English/CunninghamellaEn/CunninghamellaEn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/LandminesEn/LandminesEn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/English/LandminesEn/LandminesEn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/MothsEn/MothsEn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/English/MothsEn/MothsEn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/NocturineEn/NocturineEn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/English/NocturineEn/NocturineEn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/ObrovskyEn/ObrovskyEn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/English/ObrovskyEn/ObrovskyEn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/PhotosensitivityEn/PhotosensitivityEn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/English/PhotosensitivityEn/PhotosensitivityEn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/VostokEn/VostokEn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/English/VostokEn/VostokEn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/CellulosePl/CellulosePl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Polish/CellulosePl/CellulosePl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/CunninghamellaPl/CunninghamellaPl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Polish/CunninghamellaPl/CunninghamellaPl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/LandminesPl/LandminesPl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Polish/LandminesPl/LandminesPl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/MothsPl/MothsPl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Polish/MothsPl/MothsPl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/NocturinePl/NocturinePl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Polish/NocturinePl/NocturinePl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/ObrovskyPl/ObrovskyPl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Polish/ObrovskyPl/ObrovskyPl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/PhotosensitivityPl/PhotosensitivityEn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Polish/PhotosensitivityPl/PhotosensitivityEn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/VostokPl/VostokPl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Texts/Polish/VostokPl/VostokPl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Texts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Texts.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Texts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Bio/Bio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Bio/Bio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/NavBar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_variables.scss" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,92 +19,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Texts/Polish/PhotosensitivityPl/PhotosensitivityEn.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Texts/Polish/VostokPl/VostokPl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/TitlePanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Texts/Elements/Footer/Footer.js">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Texts/Polish/CunninghamellaPl/CunninghamellaPl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Texts/Polish/LandminesPl/LandminesPl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Texts/Polish/MothsPl/MothsPl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Texts/Polish/NocturinePl/NocturinePl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Texts/Polish/ObrovskyPl/ObrovskyPl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="284">
+              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,7 +69,6 @@
         <option value="$PROJECT_DIR$/src/styles/_variables.scss" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Layout/Layout.scss" />
         <option value="$PROJECT_DIR$/src/components/Modals/NocturineCunnignamellaModal/NocturineCunninghamellaModal.scss" />
         <option value="$PROJECT_DIR$/src/components/Modals/NocturineModal/NocturineModal.scss" />
@@ -214,6 +113,7 @@
         <option value="$PROJECT_DIR$/src/containers/Bio/Bio.js" />
         <option value="$PROJECT_DIR$/src/components/Texts/Elements/Footer/Footer.js" />
         <option value="$PROJECT_DIR$/src/containers/NavBar/NavBar.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -264,6 +164,36 @@
               <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Links" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Modals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Modals" type="462c0819:PsiDirectoryNode" />
+              <item name="NocturineCunnignamellaModal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Modals" type="462c0819:PsiDirectoryNode" />
+              <item name="NocturineModal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Texts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -273,6 +203,41 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Texts" type="462c0819:PsiDirectoryNode" />
               <item name="Elements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Elements" type="462c0819:PsiDirectoryNode" />
+              <item name="Quote" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Elements" type="462c0819:PsiDirectoryNode" />
+              <item name="Separator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="English" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="English" type="462c0819:PsiDirectoryNode" />
+              <item name="VostokEn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
@@ -290,6 +255,69 @@
               <item name="Texts" type="462c0819:PsiDirectoryNode" />
               <item name="Polish" type="462c0819:PsiDirectoryNode" />
               <item name="CellulosePl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Polish" type="462c0819:PsiDirectoryNode" />
+              <item name="CunninghamellaPl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Polish" type="462c0819:PsiDirectoryNode" />
+              <item name="LandminesPl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Polish" type="462c0819:PsiDirectoryNode" />
+              <item name="MothsPl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Polish" type="462c0819:PsiDirectoryNode" />
+              <item name="NocturinePl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Polish" type="462c0819:PsiDirectoryNode" />
+              <item name="ObrovskyPl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Polish" type="462c0819:PsiDirectoryNode" />
+              <item name="PhotosensitivityPl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Texts" type="462c0819:PsiDirectoryNode" />
+              <item name="Polish" type="462c0819:PsiDirectoryNode" />
+              <item name="VostokPl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
@@ -331,12 +359,6 @@
               <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -392,26 +414,27 @@
       <option name="presentableId" value="Default" />
       <updated>1557070893454</updated>
       <workItem from="1557070894558" duration="11329000" />
-      <workItem from="1559746107519" duration="1982000" />
+      <workItem from="1559746107519" duration="2625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13311000" />
+    <option name="totallyTimeSpent" value="13954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="375" y="5" width="1471" height="1017" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.28053036" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32983682" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.32983682" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info active="true" anchor="bottom" id="Find" order="5" visible="true" weight="0.32983682" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32983682" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.32983682" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
@@ -426,9 +449,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/styles/_common.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -438,20 +458,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/_functions.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -570,16 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/NavBar/NavBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -715,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Texts/Polish/ObrovskyPl/ObrovskyPl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Texts/Polish/PhotosensitivityPl/PhotosensitivityEn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -754,6 +743,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/NavBar/NavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/_common.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Texts/Polish/ObrovskyPl/ObrovskyPl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
