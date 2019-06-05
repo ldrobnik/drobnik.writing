@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 
 // Theme to be used in the project
 const theme = {
+    //colours
     nocturine: '#a98086',
     cunninghamella: '#566f0c',
     vostok: '#a67847',
@@ -13,6 +14,8 @@ const theme = {
     obrovsky: '#b34a53',
     lightColor: '#e5e5e5',
     darkColor: '#1b1b1b',
+
+    //fonts
     sansSerif: `'Maven Pro', sans-serif`,
     serif: `'Roboto Slab', serif`
 };
