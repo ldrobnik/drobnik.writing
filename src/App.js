@@ -11,6 +11,8 @@ const theme = {
     entropia: '#616a65',
     devonian: '#99aac6',
     obrovsky: '#b34a53',
+    lightColor: '#e5e5e5',
+    darkColor: '#1b1b1b',
     sansSerif: `'Maven Pro', sans-serif`,
     serif: `'Roboto Slab', serif`
 };
