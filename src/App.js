@@ -1,7 +1,7 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
 
-import Layout from './components/Layout/Layout';
+import Home from './components/Home/Home';
 
 // Theme to be used in the project
 const theme = {
@@ -18,9 +18,7 @@ const theme = {
 function App() {
     return (
         <ThemeProvider theme={theme}>
-            <Layout>
-                Content
-            </Layout>
+            <Home />
         </ThemeProvider>
     );
 }
