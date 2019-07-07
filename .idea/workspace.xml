@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/texts/cellulose-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/cellulose-pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/cunninghamella-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/cunninghamella-pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/landmines-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/landmines-pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/moths-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/moths-pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/nocturine-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/nocturine-pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/obrovsky-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/obrovsky-pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/photosensitivity-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/photosensitivity-pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/vostok-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/vostok-pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,19 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/cunninghamella-en.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="7" lean-forward="true" selection-end-line="4" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/cunninghamella-pl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+              <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -76,11 +51,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/vostok-pl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+              <folding>
+                <element signature="e#84#130#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/src/data/texts/photosensitivity-en.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
-              <caret line="2" column="59" selection-end-line="4" selection-end-column="7" />
+              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -188,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/components/Layout/Layout.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/containers/Bio/Bio.js" />
-        <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/data/cellulose-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/cellulose-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/cellulose-en.js" />
@@ -206,6 +192,7 @@
         <option value="$PROJECT_DIR$/src/data/texts/photosensitivity-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/vostok-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/vostok-pl.js" />
+        <option value="$PROJECT_DIR$/src/data/constants.js" />
       </list>
     </option>
   </component>
@@ -354,6 +341,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
@@ -392,12 +380,12 @@
       <updated>1557070893454</updated>
       <workItem from="1557070894558" duration="11329000" />
       <workItem from="1559746107519" duration="3669000" />
-      <workItem from="1562514628974" duration="4225000" />
+      <workItem from="1562514628974" duration="5326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19223000" />
+    <option name="totallyTimeSpent" value="20324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="382" y="144" width="1421" height="834" extended-state="0" />
@@ -407,7 +395,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.29067245" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.21185185" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.21185185" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -691,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="402" column="18" lean-forward="true" selection-start-line="400" selection-start-column="21" selection-end-line="402" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-pl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -747,13 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/cunninghamella-pl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -772,13 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="7" lean-forward="true" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/photosensitivity-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="59" selection-end-line="4" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -807,6 +774,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cunninghamella-pl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/photosensitivity-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <folding>
+            <element signature="e#84#130#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

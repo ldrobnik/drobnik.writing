@@ -1,5 +1,174 @@
 import React from 'react';
 
+//constants containing the content of individual pieces
+import CELLULOSE_EN from 'texts/cellulose-en';
+import CELLULOSE_PL from 'texts/cellulose-pl';
+import CUNNINGHAMELLA_EN from 'texts/cunninghamella-en';
+import CUNNINGHAMELLA_PL from 'texts/cunninghamella-pl';
+import LANDMINES_EN from 'texts/landmines-en';
+import LANDMINES_PL from 'texts/landmines-pl';
+import MOTHS_EN from 'texts/moths-en';
+import MOTHS_PL from 'texts/moths-pl';
+import NOCTURINE_EN from 'texts/nocturine-en';
+import NOCTURINE_PL from 'texts/nocturine-pl';
+import OBROVSKY_EN from 'texts/obrovsky-en';
+import OBROVSKY_PL from 'texts/obrovsky-pl';
+import PHOTOSENSITIVITY_EN from 'texts/photosensitivity-en';
+import PHOTOSENSITIVITY_PL from 'texts/photosensitivity-pl';
+import VOSTOK_EN from 'texts/vostok-en';
+import VOSTOK_PL from 'texts/vostok-pl';
+
+//Content of pieces displayed in the Text component
+export const TEXTS = {
+    en: {
+        cellulose: {
+            title: 'Cellulose',
+            subtitle: '',
+            description: <div></div>,
+            content: CELLULOSE_EN,
+            footer: '',
+            theme: 'devonian'
+        },
+
+        cunninghamella: {
+            title: 'Cunninghamella',
+            subtitle: '',
+            description: <div></div>,
+            content: CUNNINGHAMELLA_EN,
+            footer: '',
+            theme: 'cunninghamella'
+        },
+
+        landmines: {
+            title: 'Landmines',
+            subtitle: '',
+            description: <div></div>,
+            content: LANDMINES_EN,
+            footer: '',
+            theme: 'devonian'
+        },
+
+        moths: {
+            title: 'Moths',
+            subtitle: '',
+            description: <div></div>,
+            content: MOTHS_EN,
+            footer: '',
+            theme: 'devonian'
+        },
+
+        nocturine: {
+            title: 'Nocturine',
+            subtitle: '',
+            description: <div></div>,
+            content: NOCTURINE_EN,
+            footer: '',
+            theme: 'nocturine'
+        },
+
+        obrovsky: {
+            title: 'Obrovsky',
+            subtitle: '',
+            description: <div></div>,
+            content: OBROVSKY_EN,
+            footer: '',
+            theme: 'obrovsky'
+        },
+
+        photosensitivity: {
+            title: 'Photosensitivity',
+            subtitle: '',
+            description: <div></div>,
+            content: PHOTOSENSITIVITY_EN,
+            footer: '',
+            theme: 'entropia'
+        },
+
+        vostok: {
+            title: 'Vostok',
+            subtitle: '',
+            description: <div></div>,
+            content: VOSTOK_EN,
+            footer: '',
+            theme: 'vostok'
+        }
+    },
+    pl: {
+        cellulose: {
+            title: 'Celuloza',
+            subtitle: '',
+            description: <div></div>,
+            content: CELLULOSE_PL,
+            footer: '',
+            theme: 'devonian'
+        },
+
+        cunninghamella: {
+            title: 'Cunninghamella',
+            subtitle: '',
+            description: <div></div>,
+            content: CUNNINGHAMELLA_PL,
+            footer: '',
+            theme: 'cunninghamella'
+        },
+
+        landmines: {
+            title: 'Miny',
+            subtitle: '',
+            description: <div></div>,
+            content: LANDMINES_PL,
+            footer: '',
+            theme: 'devonian'
+        },
+
+        moths: {
+            title: 'Ćmy',
+            subtitle: '',
+            description: <div></div>,
+            content: MOTHS_PL,
+            footer: '',
+            theme: 'devonian'
+        },
+
+        nocturine: {
+            title: 'Nocturine',
+            subtitle: '',
+            description: <div></div>,
+            content: NOCTURINE_PL,
+            footer:'',
+            theme: 'nocturine'
+        },
+
+        obrovsky: {
+            title: 'Obrovsky',
+            subtitle: '',
+            description: <div></div>,
+            content: OBROVSKY_PL,
+            footer: '',
+            theme: 'obrovsky'
+        },
+
+        photosensitivity: {
+            title: 'Światłoczułość',
+            subtitle: '',
+            description: <div></div>,
+            content: PHOTOSENSITIVITY_PL,
+            footer: '',
+            theme: 'entropia'
+        },
+
+        vostok: {
+            title: 'Vostok',
+            subtitle: '',
+            description: <div></div>,
+            content: VOSTOK_PL,
+            footer: '',
+            theme: 'vostok'
+        }
+    }
+};
+
+
 //List of publications used in the Bio section
 export const PUBLICATIONS = [
     {
@@ -390,168 +559,3 @@ export const PUBLICATIONS = [
         language: 'pl'
     }
 ];
-
-//Content of pieces displayed in the Text component
-export const TEXTS = {
-    en: {
-        cellulose: {
-            title: 'Cellulose',
-            subtitle: '',
-            description: '',
-            content: <div className="devonian">
-
-            </div>,
-            footer: ''
-        },
-
-        cunninghamella: {
-            title: 'Cunninghamella',
-            subtitle: '',
-            description: '',
-            content: <div className="cunninghamella">
-
-            </div>,
-            footer: ''
-        },
-
-        landmines: {
-            title: 'Landmines',
-            subtitle: '',
-            description: '',
-            content: <div className="devonian">
-
-            </div>,
-            footer: ''
-        },
-
-        moths: {
-            title: 'Moths',
-            subtitle: '',
-            description: '',
-            content: <div className="devonian">
-
-            </div>,
-            footer: ''
-        },
-
-        nocturine: {
-            title: 'Nocturine',
-            subtitle: '',
-            description: '',
-            content: <div className="nocturine">
-
-            </div>,
-            footer: ''
-        },
-
-        obrovsky: {
-            title: 'Obrovsky',
-            subtitle: '',
-            description: '',
-            content: <div className="obrovsky">
-
-            </div>,
-            footer: ''
-        },
-
-        photosensitivity: {
-            title: 'Photosensitivity',
-            subtitle: '',
-            description: '',
-            content: <div className="entropia">
-
-            </div>,
-            footer: ''
-        },
-
-        vostok: {
-            title: 'Vostok',
-            subtitle: '',
-            description: '',
-            content: <div className="vostok">
-
-            </div>,
-            footer: ''
-        }
-    },
-    pl: {
-        cellulose: {
-            title: 'Celuloza',
-            subtitle: '',
-            description: '',
-            content: <div className="devonian">
-
-            </div>,
-            footer: ''
-        },
-
-        cunninghamella: {
-            title: 'Cunninghamella',
-            subtitle: '',
-            description: '',
-            content: <div className="cunninghamella">
-
-            </div>,
-            footer: ''
-        },
-
-        landmines: {
-            title: 'Miny',
-            subtitle: '',
-            description: '',
-            content: <div className="devonian">
-
-            </div>,
-            footer: ''
-        },
-
-        moths: {
-            title: 'Ćmy',
-            subtitle: '',
-            description: '',
-            content: <div className="devonian">
-
-            </div>,
-            footer: ''
-        },
-
-        nocturine: {
-            title: 'Nocturine',
-            subtitle: '',
-            description: '',
-            content: <div className="nocturine">
-
-            </div>,
-        },
-
-        obrovsky: {
-            title: 'Obrovsky',
-            subtitle: '',
-            description: '',
-            content: <div className="obrovsky">
-
-            </div>,
-            footer: ''
-        },
-
-        photosensitivity: {
-            title: 'Światłoczułość',
-            subtitle: '',
-            description: '',
-            content: <div className="entropia">
-
-            </div>,
-            footer: ''
-        },
-
-        vostok: {
-            title: 'Vostok',
-            subtitle: '',
-            description: '',
-            content: <div className="vostok">
-
-            </div>,
-            footer: ''
-        }
-}
-};
