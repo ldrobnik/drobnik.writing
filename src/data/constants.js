@@ -559,3 +559,32 @@ export const PUBLICATIONS = [
         language: 'pl'
     }
 ];
+
+//content of modals describing book publications
+export const BOOKS = {
+  nocturineCunninghamella: {
+      photo: 'noc-cun',
+      title: 'Nocturine. Cunninghamella',
+      en: {
+          subtitle: '',
+          description: <div></div>
+      },
+      pl: {
+          subtitle: '',
+          description: <div></div>
+      }
+  },
+
+    nocturine: {
+        photo: 'nocturine',
+        title: 'Nocturine',
+        en: {
+            subtitle: '',
+            description: <div></div>
+        },
+        pl: {
+            subtitle: '',
+            description: <div></div>
+        }
+    }
+};
