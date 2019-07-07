@@ -396,22 +396,162 @@ export const TEXTS = {
     en: {
         cellulose: {
             title: 'Cellulose',
+            subtitle: '',
             description: '',
             content: <div className="devonian">
 
             </div>,
             footer: ''
-        }
+        },
 
+        cunninghamella: {
+            title: 'Cunninghamella',
+            subtitle: '',
+            description: '',
+            content: <div className="cunninghamella">
+
+            </div>,
+            footer: ''
+        },
+
+        landmines: {
+            title: 'Landmines',
+            subtitle: '',
+            description: '',
+            content: <div className="devonian">
+
+            </div>,
+            footer: ''
+        },
+
+        moths: {
+            title: 'Moths',
+            subtitle: '',
+            description: '',
+            content: <div className="devonian">
+
+            </div>,
+            footer: ''
+        },
+
+        nocturine: {
+            title: 'Nocturine',
+            subtitle: '',
+            description: '',
+            content: <div className="nocturine">
+
+            </div>,
+            footer: ''
+        },
+
+        obrovsky: {
+            title: 'Obrovsky',
+            subtitle: '',
+            description: '',
+            content: <div className="obrovsky">
+
+            </div>,
+            footer: ''
+        },
+
+        photosensitivity: {
+            title: 'Photosensitivity',
+            subtitle: '',
+            description: '',
+            content: <div className="entropia">
+
+            </div>,
+            footer: ''
+        },
+
+        vostok: {
+            title: 'Vostok',
+            subtitle: '',
+            description: '',
+            content: <div className="vostok">
+
+            </div>,
+            footer: ''
+        }
     },
     pl: {
         cellulose: {
             title: 'Celuloza',
+            subtitle: '',
             description: '',
             content: <div className="devonian">
 
             </div>,
             footer: ''
+        },
+
+        cunninghamella: {
+            title: 'Cunninghamella',
+            subtitle: '',
+            description: '',
+            content: <div className="cunninghamella">
+
+            </div>,
+            footer: ''
+        },
+
+        landmines: {
+            title: 'Miny',
+            subtitle: '',
+            description: '',
+            content: <div className="devonian">
+
+            </div>,
+            footer: ''
+        },
+
+        moths: {
+            title: 'Ćmy',
+            subtitle: '',
+            description: '',
+            content: <div className="devonian">
+
+            </div>,
+            footer: ''
+        },
+
+        nocturine: {
+            title: 'Nocturine',
+            subtitle: '',
+            description: '',
+            content: <div className="nocturine">
+
+            </div>,
+        },
+
+        obrovsky: {
+            title: 'Obrovsky',
+            subtitle: '',
+            description: '',
+            content: <div className="obrovsky">
+
+            </div>,
+            footer: ''
+        },
+
+        photosensitivity: {
+            title: 'Światłoczułość',
+            subtitle: '',
+            description: '',
+            content: <div className="entropia">
+
+            </div>,
+            footer: ''
+        },
+
+        vostok: {
+            title: 'Vostok',
+            subtitle: '',
+            description: '',
+            content: <div className="vostok">
+
+            </div>,
+            footer: ''
         }
-    }
+}
 };
