@@ -1,11 +1,17 @@
-import React, {Component} from 'react';
+import React, {useState, useEffect} from 'react';
+import styled from 'styled-components';
 
-class Bio extends Component {
-    render() {
-        return(
-            <div>Bio</div>
-        );
-    }
-}
+const StyledWrapper = styled.div`
+
+`;
+
+const Bio = (props) => {
+
+    return (
+        <StyledWrapper>
+            Bio
+        </StyledWrapper>
+    );
+};
 
 export default Bio;

@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import styled from 'styled-components';
 
-const modal = props => (
-    <div>
-        {props.children}
-    </div>
-);
+const StyledWrapper = styled.div`
 
-export default modal;
+`;
+
+const Modal = (props) => {
+
+    return (
+        <StyledWrapper>
+            {props.children}
+        </StyledWrapper>
+    );
+};
+
+export default Modal;

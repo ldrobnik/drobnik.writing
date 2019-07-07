@@ -1,11 +1,17 @@
-import React, {Component} from 'react';
+import React, {useState, useEffect} from 'react';
+import styled from 'styled-components';
 
-class NavBar extends Component {
-    render() {
-        return(
-            <div>NavBar</div>
-        );
-    }
-}
+const StyledWrapper = styled.div`
+
+`;
+
+const NavBar = (props) => {
+
+    return (
+        <StyledWrapper>
+            NavBar
+        </StyledWrapper>
+    );
+};
 
 export default NavBar;

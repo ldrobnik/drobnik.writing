@@ -1,12 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import styled from 'styled-components';
 
-const layout = props => (
-    <React.Fragment>
-        <div>Toolbar</div>
-        <main>
-            {props.children}
-        </main>
-    </React.Fragment>
-);
+const StyledWrapper = styled.div`
 
-export default layout;
+`;
+
+const Layout = (props) => {
+
+    return (
+        <StyledWrapper>
+            <div>Toolbar</div>
+            <main>
+                {props.children}
+            </main>
+        </StyledWrapper>
+    );
+};
+
+export default Layout;

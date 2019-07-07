@@ -5,7 +5,7 @@ const StyledWrapper = styled.div`
 
 `;
 
-const Links = (props) => {
+const Text = (props) => {
 
     return (
         <StyledWrapper>
@@ -14,4 +14,4 @@ const Links = (props) => {
     );
 };
 
-export default Links;
+export default Text;
