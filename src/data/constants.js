@@ -1,3 +1,6 @@
+import React from 'react';
+
+//List of publications used in the Bio section
 export const PUBLICATIONS = [
     {
         title: 'Nocturine',
@@ -387,3 +390,28 @@ export const PUBLICATIONS = [
         language: 'pl'
     }
 ];
+
+//Content of pieces displayed in the Text component
+export const TEXTS = {
+    en: {
+        cellulose: {
+            title: 'Cellulose',
+            description: '',
+            content: <div className="devonian">
+
+            </div>,
+            footer: ''
+        }
+
+    },
+    pl: {
+        cellulose: {
+            title: 'Celuloza',
+            description: '',
+            content: <div className="devonian">
+
+            </div>,
+            footer: ''
+        }
+    }
+};

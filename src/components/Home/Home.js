@@ -3,9 +3,6 @@ import styled, {createGlobalStyle} from 'styled-components';
 
 import Layout from '../Layout/Layout';
 
-/* STYLES */
-
-// Global style
 const GlobalStyle = createGlobalStyle`
     body {
         font-family: ${props => props.theme.sansSerif};
@@ -13,18 +10,23 @@ const GlobalStyle = createGlobalStyle`
         }
 `;
 
+const StyledWrapper = styled.div`
+
+`;
 
 
-const home = props => {
+const Home = (props) => {
     return (
         <React.Fragment>
-            <GlobalStyle />
-            <Layout>
-                Content
-            </Layout>
+            <GlobalStyle/>
+            <StyledWrapper>
+                <Layout>
+                    Content
+                </Layout>
+            </StyledWrapper>
         </React.Fragment>
     );
 };
 
-export default home;
+export default Home;
 

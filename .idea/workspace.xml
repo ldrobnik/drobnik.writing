@@ -2,68 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ModalContent/ModalContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Text/Text.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Links/Links.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Links/Links.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Modals/NocturineCunnignamellaModal/NocturineCunninghamellaModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Modals/NocturineModal/NocturineModal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/.sass-cache/8ea01e6eb29593171232d45cbd8e84783af75792/Texts.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_common.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_functions.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_mixins.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_variables.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Footer/.sass-cache/9ce1fe49b89200d19bddd666d087b6087f186fc8/Footer.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Footer/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_common.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Footer/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_functions.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Footer/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_mixins.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Footer/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_variables.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Footer/Footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Footer/Footer.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Footer/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Footer/Footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Quote/.sass-cache/8a1c1576a873a8fd4ac07c22b13b71d496df50e7/Quote.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Quote/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_common.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Quote/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_functions.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Quote/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_mixins.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Quote/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_variables.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Quote/Quote.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Separator/.sass-cache/08fe72aac4df133f7f63ad6c06d832285546f6d3/Separator.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Separator/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_common.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Separator/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_functions.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Separator/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_mixins.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Separator/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_variables.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/Separator/Separator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/.sass-cache/c9ae8d0c0148d7802869b6b02004ebbb82ce6df6/TitlePanel.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_common.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_functions.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_mixins.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_variables.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/TitlePanel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/TitlePanel.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/TitlePanel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Elements/TitlePanel/TitlePanel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/CelluloseEn/CelluloseEn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/CunninghamellaEn/CunninghamellaEn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/LandminesEn/LandminesEn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/MothsEn/MothsEn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/NocturineEn/NocturineEn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/ObrovskyEn/ObrovskyEn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/PhotosensitivityEn/PhotosensitivityEn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/English/VostokEn/VostokEn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/CellulosePl/CellulosePl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/CunninghamellaPl/CunninghamellaPl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/LandminesPl/LandminesPl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/MothsPl/MothsPl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/NocturinePl/NocturinePl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/ObrovskyPl/ObrovskyPl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/PhotosensitivityPl/PhotosensitivityEn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Texts/Polish/VostokPl/VostokPl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Bio/Bio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Bio/Bio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/NavBar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/.sass-cache/340d7587dbf08815dee3b876306c33d7556b964c/Layout.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_common.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_functions.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_mixins.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/.sass-cache/c95cd9fc1d28c300ccc4ddf00cda7d036aaec7ca/Modal.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_common.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_functions.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_mixins.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Bio/.sass-cache/96acb8fad7c8a7814a92aa1bf4a9c5724d796c90/Bio.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Bio/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_common.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Bio/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_functions.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Bio/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_mixins.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Bio/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/NavBar/.sass-cache/eb9b8c2522b8a32ae99ab6eeaeb8d7e615b927ab/NavBar.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/NavBar/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_common.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/NavBar/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_functions.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/NavBar/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_mixins.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/NavBar/.sass-cache/f655fd71bbe6368b5e2c6b99550f5446b0f04952/_variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -91,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="590">
+              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -103,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Links/Links.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="-69">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -115,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Text/Text.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
+            <state relative-caret-position="54">
               <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
@@ -127,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ModalContent/ModalContent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="31">
+              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -139,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UI/Modal/Modal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="230">
+              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -151,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Bio/Bio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+            <state relative-caret-position="169">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -173,10 +134,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="412" column="19" selection-start-line="412" selection-start-column="19" selection-end-line="412" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="368">
+              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -219,7 +189,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/components/Layout/Layout.scss" />
         <option value="$PROJECT_DIR$/src/components/Modals/NocturineCunnignamellaModal/NocturineCunninghamellaModal.scss" />
         <option value="$PROJECT_DIR$/src/components/Modals/NocturineModal/NocturineModal.scss" />
@@ -260,23 +229,24 @@
         <option value="$PROJECT_DIR$/src/components/Texts/Elements/Quote/Quote.js" />
         <option value="$PROJECT_DIR$/src/components/Texts/Elements/Footer/Footer.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/Texts/Elements/Separator/dasdasdas" />
         <option value="$PROJECT_DIR$/src/components/Links/Links.js" />
         <option value="$PROJECT_DIR$/src/components/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" />
-        <option value="$PROJECT_DIR$/src/containers/Bio/Bio.js" />
         <option value="$PROJECT_DIR$/src/containers/NavBar/NavBar.js" />
         <option value="$PROJECT_DIR$/src/components/ModalContent/ModalContent.js" />
         <option value="$PROJECT_DIR$/src/components/Layout/Layout.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
+        <option value="$PROJECT_DIR$/src/containers/Bio/Bio.js" />
+        <option value="$PROJECT_DIR$/src/data/constants.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="708" />
-    <option name="y" value="237" />
-    <option name="width" value="1471" />
-    <option name="height" value="739" />
+    <option name="x" value="226" />
+    <option name="y" value="154" />
+    <option name="width" value="1421" />
+    <option name="height" value="834" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -320,6 +290,13 @@
               <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -335,6 +312,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="ModalContent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Text" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
@@ -431,22 +415,22 @@
       <updated>1557070893454</updated>
       <workItem from="1557070894558" duration="11329000" />
       <workItem from="1559746107519" duration="3669000" />
-      <workItem from="1562514628974" duration="1529000" />
+      <workItem from="1562514628974" duration="2514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16527000" />
+    <option name="totallyTimeSpent" value="17512000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="708" y="237" width="1471" height="739" extended-state="0" />
+    <frame x="226" y="154" width="1421" height="834" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.28053036" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.29067245" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.24655172" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.21185185" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -525,13 +509,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Bio/Bio.scss" />
     <entry file="file://$PROJECT_DIR$/src/containers/NavBar/NavBar.scss" />
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/UI/Modal/Modal.scss" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -688,16 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Texts/Elements/Separator/dasdasdas">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -705,10 +672,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Links/Links.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state relative-caret-position="-69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ModalContent/ModalContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Text/Text.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -717,8 +724,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/UI/Modal/Modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="230">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -727,8 +734,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Bio/Bio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state relative-caret-position="169">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -745,33 +752,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Text/Text.js">
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ModalContent/ModalContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/Layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="253">
+          <caret line="412" column="19" selection-start-line="412" selection-start-column="19" selection-end-line="412" selection-end-column="19" />
         </state>
       </provider>
     </entry>
