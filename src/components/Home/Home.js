@@ -2,7 +2,7 @@ import React from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 
 import Layout from '../Layout/Layout';
-import {TEXTS} from '../../data/constants';
+import { TEXTS } from '../../data/constants';
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -15,13 +15,13 @@ const StyledWrapper = styled.div`
 
 `;
 
-const language = 'en';
-const title = 'treasures';
+const language = 'pl';
+const title = 'nocturine';
 
 const Home = (props) => {
     return (
         <React.Fragment>
-            <GlobalStyle/>
+            <GlobalStyle />
             <StyledWrapper>
                 <Layout>
                     {TEXTS[language][title].content}
