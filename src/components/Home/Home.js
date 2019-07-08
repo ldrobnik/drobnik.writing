@@ -15,8 +15,8 @@ const StyledWrapper = styled.div`
 
 `;
 
-const language = 'pl';
-const title = 'nocturine';
+const language = 'en';
+const text = 'cellulose';
 
 const Home = (props) => {
     return (
@@ -24,7 +24,9 @@ const Home = (props) => {
             <GlobalStyle />
             <StyledWrapper>
                 <Layout>
-                    {TEXTS[language][title].content}
+                    <h1>{TEXTS[language][text].title}</h1>
+                    <h3>{TEXTS[language][text].subtitle}</h3>
+                    {TEXTS[language][text].content}
                 </Layout>
             </StyledWrapper>
         </React.Fragment>
