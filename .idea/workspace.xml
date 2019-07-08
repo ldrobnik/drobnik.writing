@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/data/texts/moths-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/moths-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/moths-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/moths-pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/texts/cellulose-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/cellulose-en.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,18 +16,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="126" column="23" lean-forward="true" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
-              <folding>
-                <element signature="e#84#130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-pl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
@@ -38,10 +25,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-en.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="7" lean-forward="true" selection-end-line="4" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-en.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="207">
+              <caret line="5" column="118" lean-forward="true" selection-start-line="5" selection-start-column="118" selection-end-line="5" selection-end-column="118" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-en.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-pl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -74,28 +88,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/moths-en.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="4" selection-end-line="15" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -132,16 +128,16 @@
       <find>localIdentName: '[name]__[local]__[hash:base64:5]</find>
       <find>import classes</find>
       <find>description: '',</find>
+      <find>^(.+)$</find>
       <find>Wanderlust</find>
       <find>&lt;p&gt;</find>
-      <find>^(.+)$</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
       <replace>Flash fiction</replace>
       <replace>description: &lt;div&gt;&lt;/div&gt;,</replace>
-      <replace>&lt;p&gt;</replace>
       <replace>&lt;p&gt;$1&lt;/p&gt;</replace>
+      <replace>&lt;p&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -188,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/components/ModalContent/ModalContent.js" />
         <option value="$PROJECT_DIR$/src/containers/Bio/Bio.js" />
         <option value="$PROJECT_DIR$/src/components/Text/Text.js" />
-        <option value="$PROJECT_DIR$/src/data/texts/cellulose-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/cellulose-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-pl.js" />
@@ -201,6 +196,7 @@
         <option value="$PROJECT_DIR$/src/data/texts/landmines-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/moths-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/moths-pl.js" />
+        <option value="$PROJECT_DIR$/src/data/texts/cellulose-en.js" />
       </list>
     </option>
   </component>
@@ -389,12 +385,12 @@
       <workItem from="1557070894558" duration="11329000" />
       <workItem from="1559746107519" duration="3669000" />
       <workItem from="1562514628974" duration="6868000" />
-      <workItem from="1562565213207" duration="7778000" />
+      <workItem from="1562565213207" duration="7932000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29644000" />
+    <option name="totallyTimeSpent" value="29798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="567" y="94" width="1262" height="855" extended-state="0" />
@@ -402,9 +398,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.32843137" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.32843137" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.20545977" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.20545977" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -631,27 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-pl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="7" lean-forward="true" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -669,21 +644,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-en.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="4" selection-end-line="15" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-pl.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="3" column="242" lean-forward="true" selection-start-line="3" selection-start-column="242" selection-end-line="3" selection-end-column="242" />
+        <state relative-caret-position="46">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-pl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
@@ -704,24 +693,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-en.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        <state relative-caret-position="207">
+          <caret line="5" column="118" lean-forward="true" selection-start-line="5" selection-start-column="118" selection-end-line="5" selection-end-column="118" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-en.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="4" selection-end-line="15" selection-end-column="14" />
+        <state relative-caret-position="115">
+          <caret line="3" column="242" lean-forward="true" selection-start-line="3" selection-start-column="242" selection-end-line="3" selection-end-column="242" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-en.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        <state relative-caret-position="92">
+          <caret line="4" column="7" lean-forward="true" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
