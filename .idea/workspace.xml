@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/landmines-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/landmines-en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/texts/treasures-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/treasures-en.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,15 +25,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/landmines-pl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-144">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
@@ -42,6 +32,15 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-en.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="3" column="186" selection-start-line="3" selection-start-column="186" selection-end-line="3" selection-end-column="186" />
             </state>
           </provider>
         </entry>
@@ -204,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/data/texts/moths-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/moths-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/nocturine-en.js" />
-        <option value="$PROJECT_DIR$/src/data/texts/treasures-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-pl.js" />
         <option value="$PROJECT_DIR$/src/store/actions.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
@@ -213,6 +211,7 @@
         <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/data/texts/landmines-en.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
+        <option value="$PROJECT_DIR$/src/data/texts/treasures-en.js" />
       </list>
     </option>
   </component>
@@ -350,12 +349,12 @@
       <workItem from="1557070894558" duration="11329000" />
       <workItem from="1559746107519" duration="3669000" />
       <workItem from="1562514628974" duration="6868000" />
-      <workItem from="1562565213207" duration="13725000" />
+      <workItem from="1562565213207" duration="13805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35591000" />
+    <option name="totallyTimeSpent" value="35671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="873" y="6" width="1054" height="1006" extended-state="0" />
@@ -560,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1265">
-          <caret line="21" column="167" selection-start-line="21" selection-start-column="167" selection-end-line="21" selection-end-column="167" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -667,6 +659,13 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="3" column="186" selection-start-line="3" selection-start-column="186" selection-end-line="3" selection-end-column="186" />
         </state>
       </provider>
     </entry>
