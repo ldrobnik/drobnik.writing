@@ -1,7 +1,6 @@
 import React from 'react';
 
-export const NOCTURINE_EN =
-    <div>
+export const NOCTURINE_EN = <div>
         <p> <span className="nocturine">B</span>lood vessels were dilating, pulmonary alveoli evenly filled with air and then emptied, I was running along a tramline, the sky was still clear. While running I could see the Merchant of Poznań department store, there were people, I could hear keys and coins jingling in my pocket.</p>
         <p>I was in a hurry to get home. The city, I thought, had been much nicer since they’d built the new tramline, I wanted to get home before Kazik left, because he was about to leave, there were white clouds in the sky, the sky was blue, there was even some sun, Kazik was about to go to another city for a while.</p>
         <p>The Chopin Park, the pink church, I was running along the tracks, the sky was clear, in places I could see black, perfectly symmetrical cubes, at different heights, yet still much higher than tenement roofs. I thought. I remember, that it was an ad campaign for a new mobile phone company — <i>that</i> was supposed to justify there appearing black levitating cubes all over the city, an appearance that aroused dismay, surprise, anxiety or whatever other feeling those cubes were meant to arouse, and after two weeks it was going to become clear it was all just meant to make you buy a new phone, from a new company, with a new camera and an mp3 player.</p>
@@ -22,4 +21,4 @@ export const NOCTURINE_EN =
         <p>The book I gave her back was <i>Axing</i> by Stachura, actually I’d read only small fragments of it, because lately, somehow, I hadn’t the patience to read books, there were many brilliant fragments in that book including one about fog.</p>
         <p>We sat there for a while, and then I had to go, I paid the bill even though Mirka insisted on paying and we walked out, said goodbye, I embraced her tightly, we arranged to meet another day, I was happy she wasn’t leaving yet.</p>
         <p>I hummed inside my head, rushing to catch a tram.</p>
-    </div>;
+</div>;

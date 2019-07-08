@@ -20,5 +20,4 @@ export const TREASURES_PL = <div>
     <p>—lejdoskopowo rozmigotane fale czekają, aż opadną na nie pióra. Jestem martwa od milionów lat. Nad planetą zapanowały ptaki, zajmując wszystkie nisze. Są ptaki latające, ptaki pływające, ptaki pełzające. Ptaki wielkości mamuta i nie większe od owadów. Ptaki, które spędzają całe życie w chmurach, i ptaki, które żyją we krwi innych ptaków.</p>
     <p>W miejscu, w którym stał nasz dom, pływa gigantyczne gniazdo otoczone płytkim morzem. Cudny ptasi potwór, który w nim mieszka, z rozetami pawiopodobnych piór wokół głowy i łapsk, wydaje z siebie grzechoczący skrzek. Przekrzywia głowę, łypiąc na zmierzchające niebo, na żółte roje sikorek wielkości komarów, na olbrzymie lilie wodne, które są domem dla fluorescencyjnych grzybów.</p>
     <p>Wreszcie, oddawszy się chwilę czyszczeniu piór, pręży kręgosłup, niezgrabnie wytacza się z gniazda i wpada pod wodę — gdzie jego gracja jest bezkresna.</p>
-
 </div>;

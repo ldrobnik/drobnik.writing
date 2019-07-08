@@ -14,5 +14,4 @@ export const MOTHS_PL = <div>
     <p>Ćma, tak ją nazwaliśmy, ze względu na brązowawy odcień i chmury ułożone we wzory podobne jak na skrzydłach ćmy, i to, że zmierza ku nam jak ćma do płomienia. A może po prostu nazwa podchwycona przez media — <i>Nibiru</i> — wydała nam się zbyt sztampowa. Teraz to ledwie czerwonawa plamka wisząca nisko nad dachami, w zmierzchu prawie niewidoczna. Z pewnością byśmy ją przeoczyli, gdyby nie całe zamieszanie.</p>
     <p>Kiedy niezauważeni opuszczamy parking, pchając wypełniony po brzegi wózek, dochodzę do wniosku, że nasza nazwa nie jest jednak trafna. Niedługo będzie na odwrót: za parę dni to my poddamy się jej sile ciążenia, zbaczając z wydeptanej ścieżki orbity, szybciej i szybciej, by wreszcie zanurkować w głębiny tych szarych i brunatnych chmur.</p>
     <p>Ulice są dziwnie ciche. Pachną gorącym asfaltem. Nieśpiesznie docieramy do samochodu, otwieramy bagażnik i zaczynamy go wypełniać chlebem, serem, warzywami, piwem. Robimy to, czego byśmy się nie poważyli w innych okolicznościach: zostawiamy wózek przy drodze. Nim spychasz go do rowu, posyłasz mi psotny uśmiech. Wsiadamy do środka i odjeżdżamy.</p>
-
 </div>;

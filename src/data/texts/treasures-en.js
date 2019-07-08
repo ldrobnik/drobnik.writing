@@ -20,5 +20,4 @@ export const TREASURES_EN = <div>
     <p>—athers pirouette in the air and fall onto glittery waves. I’ve been dead for millions of years. Birds have taken over the planet, occupying all the niches. There are flying birds, swimming birds, slithering birds. Birds the size of a mammoth and as small as insects. Birds that spend their entire lives in the clouds and birds that live in the blood of other birds.</p>
     <p>Where our house used to stand, there’s a gigantic floating nest surrounded by a shallow sea. The beautiful monster of a bird that resides in it, rosettes of peacock-like feathers around its head and paws, lets out a rattling screech. It tilts its head, eyeing the twilit sky, the yellow swarms of mosquito-sized tits, the enormous water lilies that are home to fluorescent mushrooms.</p>
     <p>Finally, having preened its feathers for a bit, it stretches its spine, clumsily crawls out of the nest and plunges underwater — where its grace is endless.</p>
-
 </div>;
