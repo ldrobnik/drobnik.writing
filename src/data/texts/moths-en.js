@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const MOTHS_EN = <div className="devonian">
+export const MOTHS_EN = <div className="entropia">
 
 </div>;

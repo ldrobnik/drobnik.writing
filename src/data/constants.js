@@ -1,169 +1,131 @@
 import React from 'react';
 
 //constants containing the content of individual pieces
-import CELLULOSE_EN from 'texts/cellulose-en';
-import CELLULOSE_PL from 'texts/cellulose-pl';
-import CUNNINGHAMELLA_EN from 'texts/cunninghamella-en';
-import CUNNINGHAMELLA_PL from 'texts/cunninghamella-pl';
-import LANDMINES_EN from 'texts/landmines-en';
-import LANDMINES_PL from 'texts/landmines-pl';
-import MOTHS_EN from 'texts/moths-en';
-import MOTHS_PL from 'texts/moths-pl';
 import NOCTURINE_EN from 'texts/nocturine-en';
 import NOCTURINE_PL from 'texts/nocturine-pl';
-import OBROVSKY_EN from 'texts/obrovsky-en';
-import OBROVSKY_PL from 'texts/obrovsky-pl';
-import PHOTOSENSITIVITY_EN from 'texts/photosensitivity-en';
-import PHOTOSENSITIVITY_PL from 'texts/photosensitivity-pl';
-import VOSTOK_EN from 'texts/vostok-en';
-import VOSTOK_PL from 'texts/vostok-pl';
+import CETACEAN_EN from 'texts/cetacean-en';
+import CETACEAN_PL from 'texts/cetacean-pl';
+import MOTHS_EN from 'texts/moths-en';
+import MOTHS_PL from 'texts/moths-pl';
+import CELLULOSE_EN from 'texts/cellulose-en';
+import CELLULOSE_PL from 'texts/cellulose-pl';
+import TREASURES_EN from 'texts/treasures-en';
+import TREASURES_PL from 'texts/treasures-pl';
+import LANDMINES_EN from 'texts/landmines-en';
+import LANDMINES_PL from 'texts/landmines-pl';
+
+
 
 //Content of pieces displayed in the Text component
 export const TEXTS = {
     en: {
-        cellulose: {
-            title: 'Cellulose',
-            subtitle: '',
-            description: <div></div>,
-            content: CELLULOSE_EN,
-            footer: '',
-            theme: 'devonian'
-        },
-
-        cunninghamella: {
-            title: 'Cunninghamella',
-            subtitle: '',
-            description: <div></div>,
-            content: CUNNINGHAMELLA_EN,
-            footer: '',
-            theme: 'cunninghamella'
-        },
-
-        landmines: {
-            title: 'Landmines',
-            subtitle: '',
-            description: <div></div>,
-            content: LANDMINES_EN,
-            footer: '',
-            theme: 'devonian'
-        },
-
-        moths: {
-            title: 'Moths',
-            subtitle: '',
-            description: <div></div>,
-            content: MOTHS_EN,
-            footer: '',
-            theme: 'devonian'
-        },
-
         nocturine: {
             title: 'Nocturine',
-            subtitle: '',
+            subtitle: 'fragment',
             description: <div></div>,
             content: NOCTURINE_EN,
             footer: '',
             theme: 'nocturine'
         },
 
-        obrovsky: {
-            title: 'Obrovsky',
-            subtitle: '',
+        cetacean: {
+            title: 'Cetacean',
+            subtitle: 'flash fiction',
             description: <div></div>,
-            content: OBROVSKY_EN,
-            footer: '',
-            theme: 'obrovsky'
-        },
-
-        photosensitivity: {
-            title: 'Photosensitivity',
-            subtitle: '',
-            description: <div></div>,
-            content: PHOTOSENSITIVITY_EN,
-            footer: '',
-            theme: 'entropia'
-        },
-
-        vostok: {
-            title: 'Vostok',
-            subtitle: '',
-            description: <div></div>,
-            content: VOSTOK_EN,
-            footer: '',
-            theme: 'vostok'
-        }
-    },
-    pl: {
-        cellulose: {
-            title: 'Celuloza',
-            subtitle: '',
-            description: <div></div>,
-            content: CELLULOSE_PL,
-            footer: '',
-            theme: 'devonian'
-        },
-
-        cunninghamella: {
-            title: 'Cunninghamella',
-            subtitle: '',
-            description: <div></div>,
-            content: CUNNINGHAMELLA_PL,
-            footer: '',
-            theme: 'cunninghamella'
-        },
-
-        landmines: {
-            title: 'Miny',
-            subtitle: '',
-            description: <div></div>,
-            content: LANDMINES_PL,
+            content: CETACEAN_EN,
             footer: '',
             theme: 'devonian'
         },
 
         moths: {
-            title: 'Ćmy',
-            subtitle: '',
+            title: 'Moths',
+            subtitle: 'flash fiction',
             description: <div></div>,
-            content: MOTHS_PL,
+            content: MOTHS_EN,
             footer: '',
-            theme: 'devonian'
+            theme: 'entropia'
         },
 
+        cellulose: {
+            title: 'Cellulose',
+            subtitle: 'flash fiction',
+            description: <div></div>,
+            content: CELLULOSE_EN,
+            footer: '',
+            theme: 'cunninghamella'
+        },
+
+        treasures: {
+            title: 'Treasures',
+            subtitle: 'flash fiction',
+            description: <div></div>,
+            content: TREASURES_EN,
+            footer: '',
+            theme: 'vostok'
+        },
+
+        landmines: {
+            title: 'Landmines',
+            subtitle: 'flash fiction',
+            description: <div></div>,
+            content: LANDMINES_EN,
+            footer: '',
+            theme: 'obrovsky'
+        }
+    },
+    pl: {
         nocturine: {
             title: 'Nocturine',
-            subtitle: '',
+            subtitle: 'fragment',
             description: <div></div>,
             content: NOCTURINE_PL,
             footer:'',
             theme: 'nocturine'
         },
 
-        obrovsky: {
-            title: 'Obrovsky',
-            subtitle: '',
+        cetacean: {
+            title: 'Waleń',
+            subtitle: 'flash fiction',
             description: <div></div>,
-            content: OBROVSKY_PL,
+            content: CETACEAN_PL,
             footer: '',
-            theme: 'obrovsky'
+            theme: 'devonian'
         },
 
-        photosensitivity: {
-            title: 'Światłoczułość',
-            subtitle: '',
+        moths: {
+            title: 'Ćmy',
+            subtitle: 'flash fiction',
             description: <div></div>,
-            content: PHOTOSENSITIVITY_PL,
+            content: MOTHS_PL,
             footer: '',
             theme: 'entropia'
         },
 
-        vostok: {
-            title: 'Vostok',
-            subtitle: '',
+        cellulose: {
+            title: 'Celuloza',
+            subtitle: 'flash fiction',
             description: <div></div>,
-            content: VOSTOK_PL,
+            content: CELLULOSE_PL,
+            footer: '',
+            theme: 'cunninghamella'
+        },
+
+        treasures: {
+            title: 'Skarby',
+            subtitle: 'flash fiction',
+            description: <div></div>,
+            content: TREASURES_PL,
             footer: '',
             theme: 'vostok'
+        },
+
+        landmines: {
+            title: 'Miny',
+            subtitle: 'flash fiction',
+            description: <div></div>,
+            content: LANDMINES_PL,
+            footer: '',
+            theme: 'obrovsky'
         }
     }
 };
