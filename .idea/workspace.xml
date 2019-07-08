@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/data/texts/landmines-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/landmines-pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/texts/moths-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/moths-en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/texts/moths-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/moths-pl.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -63,20 +64,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/landmines-pl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+              <caret line="4" column="102" lean-forward="true" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="102" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-en.js">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/moths-en.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="7" lean-forward="true" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="69">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="4" selection-end-line="15" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -86,15 +96,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="7" lean-forward="true" selection-end-line="4" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -189,8 +190,6 @@
         <option value="$PROJECT_DIR$/src/components/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/data/texts/cellulose-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/cellulose-pl.js" />
-        <option value="$PROJECT_DIR$/src/data/texts/moths-en.js" />
-        <option value="$PROJECT_DIR$/src/data/texts/moths-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-pl.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
@@ -200,6 +199,8 @@
         <option value="$PROJECT_DIR$/src/data/texts/cetacean-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/landmines-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/landmines-pl.js" />
+        <option value="$PROJECT_DIR$/src/data/texts/moths-en.js" />
+        <option value="$PROJECT_DIR$/src/data/texts/moths-pl.js" />
       </list>
     </option>
   </component>
@@ -388,12 +389,12 @@
       <workItem from="1557070894558" duration="11329000" />
       <workItem from="1559746107519" duration="3669000" />
       <workItem from="1562514628974" duration="6868000" />
-      <workItem from="1562565213207" duration="7572000" />
+      <workItem from="1562565213207" duration="7778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29438000" />
+    <option name="totallyTimeSpent" value="29644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="567" y="94" width="1262" height="855" extended-state="0" />
@@ -401,7 +402,7 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.32843137" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.32843137" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.20545977" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -644,20 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="7" lean-forward="true" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -703,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/landmines-en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -720,7 +700,28 @@
     <entry file="file://$PROJECT_DIR$/src/data/texts/landmines-pl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <caret line="4" column="102" lean-forward="true" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="4" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
         </state>
       </provider>
     </entry>
