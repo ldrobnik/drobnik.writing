@@ -15,6 +15,8 @@ const StyledWrapper = styled.div`
 
 `;
 
+const language = 'en';
+const title = 'treasures';
 
 const Home = (props) => {
     return (
@@ -22,7 +24,7 @@ const Home = (props) => {
             <GlobalStyle/>
             <StyledWrapper>
                 <Layout>
-                    {TEXTS.en.cellulose.content}
+                    {TEXTS[language][title].content}
                 </Layout>
             </StyledWrapper>
         </React.Fragment>
