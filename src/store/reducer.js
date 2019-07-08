@@ -1,5 +1,4 @@
 import * as actionTypes from './actions';
-import {declareExportAllDeclaration} from "@babel/types";
 
 const initialState = {
     language: 'en',
@@ -15,7 +14,6 @@ const reducer = (state = initialState, action) => {
         default:
             return state;
     }
-
 };
 
 export default reducer;

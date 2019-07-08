@@ -1,18 +1,18 @@
 import React from 'react';
 
 //constants containing the content of individual pieces
-import NOCTURINE_EN from 'texts/nocturine-en';
-import NOCTURINE_PL from 'texts/nocturine-pl';
-import CETACEAN_EN from 'texts/cetacean-en';
-import CETACEAN_PL from 'texts/cetacean-pl';
-import MOTHS_EN from 'texts/moths-en';
-import MOTHS_PL from 'texts/moths-pl';
-import CELLULOSE_EN from 'texts/cellulose-en';
-import CELLULOSE_PL from 'texts/cellulose-pl';
-import TREASURES_EN from 'texts/treasures-en';
-import TREASURES_PL from 'texts/treasures-pl';
-import LANDMINES_EN from 'texts/landmines-en';
-import LANDMINES_PL from 'texts/landmines-pl';
+import { NOCTURINE_EN } from './texts/nocturine-en';
+import { NOCTURINE_PL } from './texts/nocturine-pl';
+import { CETACEAN_EN } from './texts/cetacean-en';
+import { CETACEAN_PL } from './texts/cetacean-pl';
+import { MOTHS_EN } from './texts/moths-en';
+import { MOTHS_PL } from './texts/moths-pl';
+import { CELLULOSE_EN } from './texts/cellulose-en';
+import { CELLULOSE_PL } from './texts/cellulose-pl';
+import { TREASURES_EN } from './texts/treasures-en';
+import { TREASURES_PL } from './texts/treasures-pl';
+import { LANDMINES_EN } from './texts/landmines-en';
+import { LANDMINES_PL } from './texts/landmines-pl';
 
 
 

@@ -2,6 +2,7 @@ import React from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 
 import Layout from '../Layout/Layout';
+import {TEXTS} from '../../data/constants';
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -21,7 +22,7 @@ const Home = (props) => {
             <GlobalStyle/>
             <StyledWrapper>
                 <Layout>
-                    Content
+                    {TEXTS.en.cellulose.content}
                 </Layout>
             </StyledWrapper>
         </React.Fragment>
