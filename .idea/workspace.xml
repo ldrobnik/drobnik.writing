@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/data/texts/nocturine-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/nocturine-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/nocturine-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/nocturine-pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/texts/cetacean-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/cetacean-en.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-pl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
@@ -100,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-en.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="51" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="69">
+              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -134,6 +133,7 @@
       <find>description: '',</find>
       <find>^(.+)$</find>
       <find>Wanderlust</find>
+      <find>&lt;p&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -193,13 +193,13 @@
         <option value="$PROJECT_DIR$/src/data/texts/landmines-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/moths-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/moths-pl.js" />
-        <option value="$PROJECT_DIR$/src/data/texts/cetacean-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/cetacean-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-pl.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/data/texts/nocturine-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/nocturine-pl.js" />
+        <option value="$PROJECT_DIR$/src/data/texts/cetacean-en.js" />
       </list>
     </option>
   </component>
@@ -388,12 +388,12 @@
       <workItem from="1557070894558" duration="11329000" />
       <workItem from="1559746107519" duration="3669000" />
       <workItem from="1562514628974" duration="6868000" />
-      <workItem from="1562565213207" duration="5964000" />
+      <workItem from="1562565213207" duration="6076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27830000" />
+    <option name="totallyTimeSpent" value="27942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="567" y="94" width="1262" height="855" extended-state="0" />
@@ -672,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="51" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -721,6 +714,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="3" column="242" lean-forward="true" selection-start-line="3" selection-start-column="242" selection-end-line="3" selection-end-column="242" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
         </state>
       </provider>
     </entry>
