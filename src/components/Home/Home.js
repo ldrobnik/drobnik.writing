@@ -16,8 +16,7 @@ const StyledWrapper = styled.div`
 
 `;
 
-const language = 'pl';
-const text = 'landmines';
+const text = 'cetacean';
 
 const Home = (props) => {
     return (
