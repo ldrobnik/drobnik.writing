@@ -8,9 +8,15 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.SET_LANGUAGE:
-            return action.language;
+            return {
+                ...state,
+                language: action.language
+            };
         case actionTypes.SET_THEME:
-            return action.theme;
+            return {
+                ...state,
+                theme: action.theme
+            };
         default:
             return state;
     }

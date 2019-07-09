@@ -8,11 +8,22 @@ const StyledWrapper = styled.div`
 
 `;
 
+
 const NavBar = (props) => {
+const langButton = (props.lang === 'en') ? 'PL' : 'EN';
+
+//changes current language
+    const changeLanguage = () => {
+        if (props.lang === 'en') {
+            props.onLanguageChange('pl');
+        } else {
+            props.onLanguageChange('en');
+        }
+    };
 
     return (
         <StyledWrapper>
-            NavBar
+            <div onClick={changeLanguage}>{langButton}</div>
         </StyledWrapper>
     );
 };
