@@ -21,7 +21,7 @@ export const TEXTS = {
     en: {
         nocturine: {
             title: 'Nocturine',
-            subtitle: '(fragment)',
+            subtitle: 'fragment',
             description: <div></div>,
             content: NOCTURINE_EN,
             footer: '',
@@ -82,7 +82,7 @@ export const TEXTS = {
     pl: {
         nocturine: {
             title: 'Nocturine',
-            subtitle: '(fragment)',
+            subtitle: 'fragment',
             description: <div></div>,
             content: NOCTURINE_PL,
             footer:'',

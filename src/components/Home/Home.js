@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
+import { connect } from 'react-redux';
 
 import Layout from '../Layout/Layout';
 import { TEXTS } from '../../data/constants';
@@ -16,7 +17,7 @@ const StyledWrapper = styled.div`
 `;
 
 const language = 'pl';
-const text = 'nocturine';
+const text = 'landmines';
 
 const Home = (props) => {
     return (
@@ -24,14 +25,20 @@ const Home = (props) => {
             <GlobalStyle />
             <StyledWrapper>
                 <Layout>
-                    <h1>{TEXTS[language][text].title}</h1>
-                    <h3>{TEXTS[language][text].subtitle}</h3>
-                    {TEXTS[language][text].content}
+                    <h1>{TEXTS[props.lang][text].title}</h1>
+                    <h3>{TEXTS[props.lang][text].subtitle}</h3>
+                    {TEXTS[props.lang][text].content}
                 </Layout>
             </StyledWrapper>
         </React.Fragment>
     );
 };
 
-export default Home;
+const mapStateToProps = state => {
+    return {
+        lang: state.language
+    };
+};
+
+export default connect(mapStateToProps)(Home);
 
