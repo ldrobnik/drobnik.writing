@@ -3,6 +3,10 @@ import styled, {createGlobalStyle} from 'styled-components';
 import { connect } from 'react-redux';
 
 import Layout from '../Layout/Layout';
+import Intro from './Intro/Intro';
+import Nocturine from './Nocturine/Nocturine';
+import Bio from './Bio/Bio';
+import Read from './Read/Read';
 import { TEXTS } from '../../data/constants';
 
 const GlobalStyle = createGlobalStyle`
@@ -24,6 +28,10 @@ const Home = (props) => {
             <GlobalStyle />
             <StyledWrapper>
                 <Layout>
+                    <Intro />
+                    <Nocturine />
+                    <Bio />
+                    <Read />
                     <h1>{TEXTS[props.lang][text].title}</h1>
                     <h3>{TEXTS[props.lang][text].subtitle}</h3>
                     {TEXTS[props.lang][text].content}
