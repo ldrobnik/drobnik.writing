@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
-import Intro from "./Intro/Intro";
-import Nocturine from "./Nocturine/Nocturine";
-import Bio from "./Bio/Bio";
-import Read from "./Read/Read";
-import {TEXTS} from "../../../data/constants";
+import Intro from './Intro/Intro';
+import Nocturine from './Nocturine/Nocturine';
+import Bio from './Bio/Bio';
+import Read from './Read/Read';
+
 
 
 const StyledWrapper = styled.div`
@@ -14,17 +15,24 @@ const StyledWrapper = styled.div`
 
 const About = (props) => {
 
+
+    const text = 'moths';
+
     return (
         <StyledWrapper>
             <Intro />
             <Nocturine />
             <Bio />
             <Read />
-            <h1>{TEXTS[props.lang][text].title}</h1>
-            <h3>{TEXTS[props.lang][text].subtitle}</h3>
-            {TEXTS[props.lang][text].content}
+
         </StyledWrapper>
     );
 };
 
-export default About;
+const mapStateToProps = state => {
+    return {
+        lang: state.language
+    };
+};
+
+export default connect(mapStateToProps)(About);

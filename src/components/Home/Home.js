@@ -1,13 +1,11 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import styled, {createGlobalStyle} from 'styled-components';
 import { connect } from 'react-redux';
 
 import Layout from '../Layout/Layout';
-import Intro from './About/Intro/Intro';
-import Nocturine from './About/Nocturine/Nocturine';
-import Bio from './About/Bio/Bio';
-import Read from './About/Read/Read';
-import { TEXTS } from '../../data/constants';
+import About from './About/About';
+import Text from './Text/Text';
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -20,7 +18,6 @@ const StyledWrapper = styled.div`
 
 `;
 
-const text = 'moths';
 
 const Home = (props) => {
     return (
@@ -28,13 +25,9 @@ const Home = (props) => {
             <GlobalStyle />
             <StyledWrapper>
                 <Layout>
-                    <Intro />
-                    <Nocturine />
-                    <Bio />
-                    <Read />
-                    <h1>{TEXTS[props.lang][text].title}</h1>
-                    <h3>{TEXTS[props.lang][text].subtitle}</h3>
-                    {TEXTS[props.lang][text].content}
+                    <Route path="/texts/:id" component={Text} />
+                    <Route path="/texts/" exact component={Text} />
+                    <Route path="/" exact component={About} />
                 </Layout>
             </StyledWrapper>
         </React.Fragment>
