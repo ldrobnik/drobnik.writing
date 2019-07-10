@@ -3,10 +3,10 @@ import styled, {createGlobalStyle} from 'styled-components';
 import { connect } from 'react-redux';
 
 import Layout from '../Layout/Layout';
-import Intro from './Intro/Intro';
-import Nocturine from './Nocturine/Nocturine';
-import Bio from './Bio/Bio';
-import Read from './Read/Read';
+import Intro from './About/Intro/Intro';
+import Nocturine from './About/Nocturine/Nocturine';
+import Bio from './About/Bio/Bio';
+import Read from './About/Read/Read';
 import { TEXTS } from '../../data/constants';
 
 const GlobalStyle = createGlobalStyle`
