@@ -15,8 +15,7 @@ const StyledWrapper = styled.div`
 
 const About = (props) => {
 
-    //Changes the path to '/' in cases non-existent path is entered
-
+    //Changes the displayed path to '/' in cases non-existent path is entered
     useEffect(() => {
         props.history.push('/');
     });

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
@@ -28,6 +29,14 @@ const Text = (props) => {
 
     return (
         <StyledWrapper>
+            <div>
+                <Link to='/texts/nocturine'>Nocturine</Link>&nbsp;
+                <Link to='/texts/cetacean'>Cetacean</Link>&nbsp;
+                <Link to='/texts/moths'>Moths</Link>&nbsp;
+                <Link to='/texts/cellulose'>Cellulose</Link>&nbsp;
+                <Link to='/texts/treasures'>Treasures</Link>&nbsp;
+                <Link to='/texts/landmines'>Landmines</Link>
+            </div>
             <h1>{TEXTS[props.lang][textName].title}</h1>
             <h3>{TEXTS[props.lang][textName].subtitle}</h3>
             {TEXTS[props.lang][textName].content}

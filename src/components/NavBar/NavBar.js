@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
@@ -23,6 +24,8 @@ const langButton = (props.lang === 'en') ? 'PL' : 'EN';
 
     return (
         <StyledWrapper>
+            <Link to='/'>Home</Link>&nbsp;
+            <Link to='/texts/'>Texts</Link>
             <div onClick={changeLanguage}>{langButton}</div>
         </StyledWrapper>
     );
