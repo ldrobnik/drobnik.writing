@@ -16,7 +16,7 @@ const StyledWrapper = styled.div`
 
 `;
 
-const text = 'cetacean';
+const text = 'moths';
 
 const Home = (props) => {
     return (
