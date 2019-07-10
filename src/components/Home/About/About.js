@@ -15,7 +15,6 @@ const StyledWrapper = styled.div`
 
 const About = (props) => {
 
-
     const text = 'moths';
 
     return (
