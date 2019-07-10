@@ -14,7 +14,8 @@ import { TREASURES_PL } from './texts/treasures-pl';
 import { LANDMINES_EN } from './texts/landmines-en';
 import { LANDMINES_PL } from './texts/landmines-pl';
 
-
+//Names of available texts
+export const TEXT_NAMES = ['nocturine', 'cetacean', 'moths', 'cellulose', 'treasures'];
 
 //Content of pieces displayed in the Text component
 export const TEXTS = {
