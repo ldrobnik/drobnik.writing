@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import styled, {createGlobalStyle} from 'styled-components';
 import { connect } from 'react-redux';
 
@@ -25,9 +25,11 @@ const Home = (props) => {
             <GlobalStyle />
             <StyledWrapper>
                 <Layout>
-                    <Route path="/texts/:id" component={Text} />
-                    <Route path="/texts/" exact component={Text} />
-                    <Route path="/" exact component={About} />
+                    <Switch>
+                        <Route path="/texts/:id" component={Text} />
+                        <Route path="/texts/" exact component={Text} />
+                        <Route path="/" component={About} />
+                    </Switch>
                 </Layout>
             </StyledWrapper>
         </React.Fragment>

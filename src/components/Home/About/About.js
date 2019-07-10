@@ -15,7 +15,11 @@ const StyledWrapper = styled.div`
 
 const About = (props) => {
 
-    const text = 'moths';
+    //Changes the path to '/' in cases non-existent path is entered
+
+    useEffect(() => {
+        props.history.push('/');
+    });
 
     return (
         <StyledWrapper>
