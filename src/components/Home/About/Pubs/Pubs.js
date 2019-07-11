@@ -7,13 +7,13 @@ const StyledWrapper = styled.div`
 
 `;
 
-const Bio = (props) => {
+const Pubs = (props) => {
 
     return (
         <StyledWrapper>
-            Bio
+            <h1>Publications</h1>
         </StyledWrapper>
     );
 };
 
-export default Bio;
+export default Pubs;

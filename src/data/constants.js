@@ -144,7 +144,7 @@ export const TEXTS = {
 };
 
 
-//List of publications used in the Bio section
+//List of publications used in the Pubs section
 
 export const PUBLICATIONS = {
     books: [
@@ -171,6 +171,7 @@ export const PUBLICATIONS = {
     press: [
         {
             title: 'Pithead Chapel',
+            issue: 'September 2019',
             type: 'press',
             year: '',
             url: 'https://pitheadchapel.com/',
@@ -180,6 +181,7 @@ export const PUBLICATIONS = {
         },
         {
             title: 'Atticus Review',
+            issue: 'May 2019',
             type: 'press',
             year: '2019',
             url: 'https://atticusreview.org/',
@@ -188,7 +190,8 @@ export const PUBLICATIONS = {
             language: 'en'
         },
         {
-            title: 'Foglifter Volume 4 Issue 1',
+            title: 'Foglifter',
+            issue: 'Volume 4 Issue 1',
             type: 'press',
             year: '2019',
             url: 'https://foglifterjournal.com/',
@@ -198,6 +201,7 @@ export const PUBLICATIONS = {
         },
         {
             title: 'X-R-A-Y Literary Magazine',
+            issue: 'Issue 17',
             type: 'press',
             year: '2019',
             url: 'http://x-r-a-y.com/spores-lukasz-drobnik/fiction/',
@@ -206,7 +210,8 @@ export const PUBLICATIONS = {
             language: 'en'
         },
         {
-            title: 'SHARKPACK Annual (2018)',
+            title: 'SHARKPACK Annual',
+            issue: '#1/(#5)',
             type: 'press',
             year: '2018',
             url: 'http://fathombooks.org/html/issueone.html',
@@ -215,7 +220,8 @@ export const PUBLICATIONS = {
             language: 'en'
         },
         {
-            title: 'Stoner Polski (1)',
+            title: 'Stoner Polski',
+            issue: '#1',
             type: 'press',
             year: '2018',
             url: 'http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html',
@@ -224,7 +230,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Underwood (September 2018)',
+            title: 'Underwood',
+            issue: 'September 2018',
             type: 'press',
             year: '2018',
             url: 'https://underwoodpress.com/inaugural-issue/september-2018/photosensitivity-by-lukasz-drobnik/',
@@ -233,7 +240,8 @@ export const PUBLICATIONS = {
             language: 'en'
         },
         {
-            title: 'Mojave Heart Review (September 2018)',
+            title: 'Mojave Heart Review',
+            issue: 'September 2018',
             type: 'press',
             year: '2018',
             url: 'https://mojaveheart.com/cellulose/',
@@ -242,7 +250,8 @@ export const PUBLICATIONS = {
             language: 'en'
         },
         {
-            title: 'Afront 2(5)/2018',
+            title: 'Afront',
+            issue: '2(5)/2018',
             type: 'press',
             year: '2018',
             url: 'https://afront.org.pl/',
@@ -252,6 +261,7 @@ export const PUBLICATIONS = {
         },
         {
             title: 'wydawnictwo j',
+            issue: '',
             type: 'press',
             year: '2018',
             url: 'http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/',
@@ -260,7 +270,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Magazyn Wizje (2/2018)',
+            title: 'Magazyn Wizje',
+            issue: '2/2018',
             type: 'press',
             year: '2018',
             url: 'http://magazynwizje.pl/lukasz-drobnik-swiatloczulosc/',
@@ -270,7 +281,8 @@ export const PUBLICATIONS = {
 
         },
         {
-            title: 'Quarterly West (94)',
+            title: 'Quarterly West',
+            issue: '#94',
             type: 'press',
             year: '2018',
             url: 'https://www.quarterlywest.com/issue-94/cetacean',
@@ -279,7 +291,8 @@ export const PUBLICATIONS = {
             language: 'en'
         },
         {
-            title: 'Obszary Przepisane (5)',
+            title: 'Obszary Przepisane',
+            issue: '#5',
             type: 'press',
             year: '2018',
             url: 'http://obszaryprzepisane.com/wp-content/uploads/2018/04/05op-1.pdf',
@@ -288,7 +301,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'The Chaffin Journal (2018)',
+            title: 'The Chaffin Journal',
+            issue: 'The 2018 Issue',
             type: 'press',
             year: '2018',
             url: 'https://english.eku.edu/chaffin-journal',
@@ -297,7 +311,8 @@ export const PUBLICATIONS = {
             language: 'en'
         },
         {
-            title: 'Inter– (2(16)/2018)',
+            title: 'Inter–',
+            issue: '2(16)/2018',
             type: 'press',
             year: '2018',
             url: 'https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/',
@@ -306,7 +321,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Helikopter (3/2018)',
+            title: 'Helikopter',
+            issue: '3/2018',
             type: 'press',
             year: '2018',
             url: 'https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/',
@@ -315,7 +331,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Cartridge Lit (The Foul Play Temple Issue)',
+            title: 'Cartridge Lit',
+            issue: 'The Foul Play Temple Issue',
             type: 'press',
             year: '2018',
             url: 'https://cartridgelit.com/2018/02/14/montezumas-revenge/',
@@ -323,9 +340,9 @@ export const PUBLICATIONS = {
             descriptionEn: 'Short story “montezuma’s revenge”',
             language: 'en'
         },
-
         {
-            title: 'The Write Launch (February 2018)',
+            title: 'The Write Launch',
+            issue: 'February 2018',
             type: 'press',
             year: '2018',
             url: 'https://thewritelaunch.com/2018/01/heart-mighty-power/',
@@ -334,7 +351,8 @@ export const PUBLICATIONS = {
             language: 'en'
         },
         {
-            title: 'The Gravity of the Thing (Winter 2018)',
+            title: 'The Gravity of the Thing',
+            issue: 'Winter 2018',
             type: 'press',
             year: '2018',
             url: 'http://thegravityofthething.com/devonian-lukasz-drobnik/',
@@ -343,7 +361,8 @@ export const PUBLICATIONS = {
             language: 'en'
         },
         {
-            title: 'Bare Fiction (10)',
+            title: 'Bare Fiction',
+            issue: '#10',
             type: 'press',
             year: '2017',
             url: 'http://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/',
@@ -353,7 +372,8 @@ export const PUBLICATIONS = {
         },
 
         {
-            title: 'Fabularie (10)',
+            title: 'Fabularie',
+            issue: '10',
             type: 'press',
             year: '2016',
             url: 'https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok',
@@ -362,7 +382,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Wyspa (4 - Suplement)',
+            title: 'Wyspa',
+            issue: '4 - Suplement',
             type: 'press',
             year: '2015',
             url: 'http://kwartalnikwyspa.pl/category/numer-2015suplement/',
@@ -371,7 +392,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Lighthouse (10)',
+            title: 'Lighthouse',
+            issue: '#10',
             type: 'press',
             year: '2015',
             url: 'http://www.gatehousepress.com/lighthouse/',
@@ -380,7 +402,8 @@ export const PUBLICATIONS = {
             language: 'en'
         },
         {
-            title: 'Lampa (3/2012)',
+            title: 'Lampa',
+            issue: '3/2012',
             type: 'press',
             year: '2012',
             url: 'http://lampa.art.pl/',
@@ -389,7 +412,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Dodatek Literacki (9)',
+            title: 'Dodatek Literacki',
+            issue: '#9',
             type: 'press',
             year: '2011',
             url: 'http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf',
@@ -398,7 +422,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Dwutygodnik.com (57)',
+            title: 'Dwutygodnik.com',
+            issue: '#57',
             type: 'press',
             year: '2011',
             url: 'http://www.dwutygodnik.com/wydanie/2011/57',
@@ -407,7 +432,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Latarnia Morska (1–2 (11–12) 2009 / 1 (13) 2010)',
+            title: 'Latarnia Morska',
+            issue: '1–2 (11–12) 2009/1 (13) 2010',
             type: 'press',
             year: '2009/2010',
             url: 'http://www.latarnia-morska.eu/pl/proza/513-nocturine',
@@ -416,7 +442,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Pro Arte online 3 (61) 2006',
+            title: 'Pro Arte online 3',
+            issue: '61/2006',
             type: 'press',
             year: '2006',
             url: 'http://proarte.net.pl',
@@ -425,7 +452,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Rita Baum (10)',
+            title: 'Rita Baum',
+            issue: '#10',
             type: 'press',
             year: '2006',
             url: 'https://issuu.com/ritabaumwroclaw/docs/10',
@@ -434,7 +462,8 @@ export const PUBLICATIONS = {
             language: 'pl'
         },
         {
-            title: 'Lampa (6/2005)',
+            title: 'Lampa',
+            issue: '6/2005',
             type: 'press',
             year: '2005',
             url: 'http://lampa.art.pl/',

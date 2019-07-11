@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import Intro from './Intro/Intro';
 import Nocturine from './Nocturine/Nocturine';
-import Bio from './Bio/Bio';
+import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
 
 
@@ -24,7 +24,7 @@ const About = (props) => {
         <StyledWrapper>
             <Intro />
             <Nocturine />
-            <Bio />
+            <Pubs />
             <Read />
 
         </StyledWrapper>
