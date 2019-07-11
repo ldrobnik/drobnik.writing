@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 
 import * as actionTypes from '../../store/actions';
 import { TEXTS, TEXT_NAMES } from '../../data/constants';
-import BookTile from "../Home/About/Pubs/BookTile/BookTile";
 
 const StyledWrapper = styled.div`
 
