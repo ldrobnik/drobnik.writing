@@ -26,6 +26,14 @@ const Text = (props) => {
 
     const textName = checkTextID(props.match.params.id);
 
+    useEffect(() => {
+        //Update page title with the piece title
+        document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
+
+        //Scroll to top
+        window.scrollTo(0, 0);
+    });
+
     return (
         <StyledWrapper>
             <div>
