@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
-
+import {connect} from 'react-redux';
 
 
 import * as actionTypes from '../../store/actions';
-import { TEXTS, TEXT_NAMES } from '../../data/constants';
+import {TEXTS, TEXT_NAMES} from '../../data/constants';
 
 const StyledWrapper = styled.div`
 
@@ -14,7 +13,7 @@ const StyledWrapper = styled.div`
 
 
 const NavBar = (props) => {
-const langButton = (props.lang === 'en') ? 'PL' : 'EN';
+    const langButton = (props.lang === 'en') ? 'PL' : 'EN';
 
     //changes current language
     const changeLanguage = () => {
@@ -31,10 +30,12 @@ const langButton = (props.lang === 'en') ? 'PL' : 'EN';
             <Link to='/' className={'textLink'}>Home</Link>&nbsp;
             <div onClick={changeLanguage}>{langButton}</div>
             {TEXT_NAMES.map((textName) => {
-                return(
-                    <Link to={'/texts/' + textName}>{TEXTS[props.lang][textName].title}</Link>
+                return (
+                    <p>
+                        <Link to={'/texts/' + textName}>{TEXTS[props.lang][textName].title}</Link>
+                    </p>
                 )
-                })}
+            })}
         </StyledWrapper>
     );
 };

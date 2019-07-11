@@ -42,7 +42,7 @@ const About = (props) => {
                 <Pubs/>
             </section>
             <section id='read'>
-                <Read id='read' />
+                <Read />
             </section>
         </StyledWrapper>
     );
