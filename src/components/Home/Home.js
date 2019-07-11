@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: ${props => props.theme.sansSerif};
         color: ${props => props.theme.darkColor};
         background-image: linear-gradient(145deg, ${props => props.theme.color1}, ${props => props.theme.color2});
+        min-height: 100vh;
         }
 `;
 
