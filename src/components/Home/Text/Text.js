@@ -20,8 +20,7 @@ const Text = (props) => {
             if (TEXT_NAMES[i] === name) return name;
         }
 
-        //if unknown url, change it to one pointing to nocturine
-        props.history.push('/texts/nocturine');
+        //if unknown id, display 'nocturine'
         return 'nocturine';
     };
 

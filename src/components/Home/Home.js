@@ -26,9 +26,9 @@ const Home = (props) => {
             <StyledWrapper>
                 <Layout>
                     <Switch>
+                        <Route path="/" exact component={About} />
                         <Route path="/texts/:id" component={Text} />
-                        <Route path="/texts/" exact component={Text} />
-                        <Route path="/" component={About} />
+                        <Route component={About} />
                     </Switch>
                 </Layout>
             </StyledWrapper>

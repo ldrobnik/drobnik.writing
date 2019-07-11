@@ -25,7 +25,7 @@ const langButton = (props.lang === 'en') ? 'PL' : 'EN';
     return (
         <StyledWrapper>
             <Link to='/'>Home</Link>&nbsp;
-            <Link to='/texts/'>Texts</Link>
+            <Link to='/texts/nocturine'>Texts</Link>
             <div onClick={changeLanguage}>{langButton}</div>
         </StyledWrapper>
     );
