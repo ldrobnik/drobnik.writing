@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import * as actionTypes from '../../store/actions';
 
@@ -22,11 +23,12 @@ const langButton = (props.lang === 'en') ? 'PL' : 'EN';
         }
     };
 
+
     return (
         <StyledWrapper>
             <Link to='/'>Home</Link>&nbsp;
-            <a href='#nocturine'>Nocturine</a>&nbsp;
-            <a href='#pubs'>Publications</a>&nbsp;
+            <AnchorLink href='#nocturine'>Nocturine</AnchorLink>&nbsp;
+            <AnchorLink href='#pubs'>Publications</AnchorLink>&nbsp;
             <Link to='/texts/nocturine'>Texts</Link>
             <div onClick={changeLanguage}>{langButton}</div>
         </StyledWrapper>

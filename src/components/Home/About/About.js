@@ -32,14 +32,15 @@ const About = (props) => {
     return (
         <StyledWrapper>
             <Intro />
-
-                <Nocturine />
-
-
-                <Pubs />
-
-                <Read />
-
+            <section id='nocturine'>
+                <Nocturine/>
+            </section>
+            <section id='pubs'>
+                <Pubs/>
+            </section>
+            <section id='read'>
+                <Read id='read' />
+            </section>
 
         </StyledWrapper>
     );
