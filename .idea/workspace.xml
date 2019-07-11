@@ -90,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="502" column="24" selection-start-line="502" selection-start-column="24" selection-end-line="502" selection-end-column="24" />
+            <state relative-caret-position="287">
+              <caret line="472" column="12" selection-start-line="472" selection-start-column="12" selection-end-line="472" selection-end-column="12" />
               <folding>
                 <element signature="e#84#136#0" expanded="true" />
               </folding>
@@ -419,12 +419,12 @@
       <workItem from="1562610845543" duration="1966000" />
       <workItem from="1562648557272" duration="5991000" />
       <workItem from="1562701548512" duration="11639000" />
-      <workItem from="1562795218727" duration="4035000" />
+      <workItem from="1562795218727" duration="4299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63104000" />
+    <option name="totallyTimeSpent" value="63368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="592" y="5" width="1292" height="1010" extended-state="0" />
@@ -432,9 +432,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.22089314" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.22089314" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16803761" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16803761" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -727,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="502" column="24" selection-start-line="502" selection-start-column="24" selection-end-line="502" selection-end-column="24" />
+        <state relative-caret-position="287">
+          <caret line="472" column="12" selection-start-line="472" selection-start-column="12" selection-end-line="472" selection-end-column="12" />
           <folding>
             <element signature="e#84#136#0" expanded="true" />
           </folding>
