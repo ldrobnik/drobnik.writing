@@ -149,8 +149,7 @@ export const TEXTS = {
 export const PUBLICATIONS = {
     books: [
         {
-            title: 'Nocturine',
-            type: 'book',
+            title: 'Nocturine'
             year: '',
             url: 'http://fathombooks.org/',
             descriptionPl: 'Angielska wersja minipowieści „Nocturine”, która ukaże się w 2019 r. nakładem wydawnictwa Fathom Books',
@@ -159,7 +158,6 @@ export const PUBLICATIONS = {
         },
         {
             title: 'Nocturine. Cunninghamella',
-            type: 'book',
             year: '2011',
             url: 'http://wforma.eu/12,nocturine.-cunninghamella.html',
             descriptionPl: 'Tom dwóch minipowieści opublikowany przez wydawnictwo Forma',
@@ -172,7 +170,6 @@ export const PUBLICATIONS = {
         {
             title: 'Pithead Chapel',
             issue: 'September 2019',
-            type: 'press',
             year: '',
             url: 'https://pitheadchapel.com/',
             descriptionPl: 'Flash fiction „Entrails”',
@@ -182,7 +179,6 @@ export const PUBLICATIONS = {
         {
             title: 'Atticus Review',
             issue: 'May 2019',
-            type: 'press',
             year: '2019',
             url: 'https://atticusreview.org/',
             descriptionPl: 'Flash fiction „Treasures”',
@@ -192,7 +188,6 @@ export const PUBLICATIONS = {
         {
             title: 'Foglifter',
             issue: 'Volume 4 Issue 1',
-            type: 'press',
             year: '2019',
             url: 'https://foglifterjournal.com/',
             descriptionPl: 'Flash fiction „Landmines”',
@@ -202,7 +197,6 @@ export const PUBLICATIONS = {
         {
             title: 'X-R-A-Y Literary Magazine',
             issue: 'Issue 17',
-            type: 'press',
             year: '2019',
             url: 'http://x-r-a-y.com/spores-lukasz-drobnik/fiction/',
             descriptionPl: 'Flash fiction „Spores”',
@@ -212,7 +206,6 @@ export const PUBLICATIONS = {
         {
             title: 'SHARKPACK Annual',
             issue: '#1/(#5)',
-            type: 'press',
             year: '2018',
             url: 'http://fathombooks.org/html/issueone.html',
             descriptionPl: '„8-bit Dreams” (fragment minipowieści „Nocturine”)',
@@ -222,7 +215,6 @@ export const PUBLICATIONS = {
         {
             title: 'Stoner Polski',
             issue: '#1',
-            type: 'press',
             year: '2018',
             url: 'http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html',
             descriptionPl: 'Flash fiction „Celuloza” (przekład tekstu „Cellulose”)',
@@ -232,7 +224,6 @@ export const PUBLICATIONS = {
         {
             title: 'Underwood',
             issue: 'September 2018',
-            type: 'press',
             year: '2018',
             url: 'https://underwoodpress.com/inaugural-issue/september-2018/photosensitivity-by-lukasz-drobnik/',
             descriptionPl: 'Opowiadanie „Photosensitivity” (przekład tekstu „Światłoczułość”)',
@@ -242,7 +233,6 @@ export const PUBLICATIONS = {
         {
             title: 'Mojave Heart Review',
             issue: 'September 2018',
-            type: 'press',
             year: '2018',
             url: 'https://mojaveheart.com/cellulose/',
             descriptionPl: 'Flash fiction „Cellulose”',
@@ -252,7 +242,6 @@ export const PUBLICATIONS = {
         {
             title: 'Afront',
             issue: '2(5)/2018',
-            type: 'press',
             year: '2018',
             url: 'https://afront.org.pl/',
             descriptionPl: 'Opowiadanie „Skomplikowane przeczucie” i flash fiction „Waleń” (przekład tekstu „Cetacean”)',
@@ -262,7 +251,6 @@ export const PUBLICATIONS = {
         {
             title: 'wydawnictwo j',
             issue: '',
-            type: 'press',
             year: '2018',
             url: 'http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/',
             descriptionPl: 'Fragment powieści „Vostok”',
@@ -272,7 +260,6 @@ export const PUBLICATIONS = {
         {
             title: 'Magazyn Wizje',
             issue: '2/2018',
-            type: 'press',
             year: '2018',
             url: 'http://magazynwizje.pl/lukasz-drobnik-swiatloczulosc/',
             descriptionPl: 'Opowiadanie „Światłoczułość”',
@@ -283,7 +270,6 @@ export const PUBLICATIONS = {
         {
             title: 'Quarterly West',
             issue: '#94',
-            type: 'press',
             year: '2018',
             url: 'https://www.quarterlywest.com/issue-94/cetacean',
             descriptionPl: 'Flash fiction „Cetacean”',
@@ -293,7 +279,6 @@ export const PUBLICATIONS = {
         {
             title: 'Obszary Przepisane',
             issue: '#5',
-            type: 'press',
             year: '2018',
             url: 'http://obszaryprzepisane.com/wp-content/uploads/2018/04/05op-1.pdf',
             descriptionPl: 'Flash fiction „Żywioły” (przekład tekstu „Elements”)',
@@ -303,7 +288,6 @@ export const PUBLICATIONS = {
         {
             title: 'The Chaffin Journal',
             issue: 'The 2018 Issue',
-            type: 'press',
             year: '2018',
             url: 'https://english.eku.edu/chaffin-journal',
             descriptionPl: 'Flash fiction „Elements”',
@@ -313,7 +297,6 @@ export const PUBLICATIONS = {
         {
             title: 'Inter–',
             issue: '2(16)/2018',
-            type: 'press',
             year: '2018',
             url: 'https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/',
             descriptionPl: 'Flash fiction „Dewon” (przekład tekstu „Devonian”)',
@@ -323,7 +306,6 @@ export const PUBLICATIONS = {
         {
             title: 'Helikopter',
             issue: '3/2018',
-            type: 'press',
             year: '2018',
             url: 'https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/',
             descriptionPl: 'Flash fiction „Drony” (przekład tekstu „Drones”)',
@@ -333,7 +315,6 @@ export const PUBLICATIONS = {
         {
             title: 'Cartridge Lit',
             issue: 'The Foul Play Temple Issue',
-            type: 'press',
             year: '2018',
             url: 'https://cartridgelit.com/2018/02/14/montezumas-revenge/',
             descriptionPl: 'Opowiadanie „montezuma’s revenge”',
@@ -343,7 +324,6 @@ export const PUBLICATIONS = {
         {
             title: 'The Write Launch',
             issue: 'February 2018',
-            type: 'press',
             year: '2018',
             url: 'https://thewritelaunch.com/2018/01/heart-mighty-power/',
             descriptionPl: '„Heart Mighty Power”, fragment minipowieści „Nocturine”',
@@ -353,7 +333,6 @@ export const PUBLICATIONS = {
         {
             title: 'The Gravity of the Thing',
             issue: 'Winter 2018',
-            type: 'press',
             year: '2018',
             url: 'http://thegravityofthething.com/devonian-lukasz-drobnik/',
             descriptionPl: 'Flash fiction „Devonian”',
@@ -363,7 +342,6 @@ export const PUBLICATIONS = {
         {
             title: 'Bare Fiction',
             issue: '#10',
-            type: 'press',
             year: '2017',
             url: 'http://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/',
             descriptionPl: 'Flash fiction „Drones”',
@@ -374,7 +352,6 @@ export const PUBLICATIONS = {
         {
             title: 'Fabularie',
             issue: '10',
-            type: 'press',
             year: '2016',
             url: 'https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok',
             descriptionPl: 'Flash fiction „Ćmy” (przekład tekstu „Moths”)',
@@ -384,7 +361,6 @@ export const PUBLICATIONS = {
         {
             title: 'Wyspa',
             issue: '4 - Suplement',
-            type: 'press',
             year: '2015',
             url: 'http://kwartalnikwyspa.pl/category/numer-2015suplement/',
             descriptionPl: 'Opowiadanie „Wszystkożerność”',
@@ -394,7 +370,6 @@ export const PUBLICATIONS = {
         {
             title: 'Lighthouse',
             issue: '#10',
-            type: 'press',
             year: '2015',
             url: 'http://www.gatehousepress.com/lighthouse/',
             descriptionPl: 'Flash fiction „Moths”',
@@ -404,7 +379,6 @@ export const PUBLICATIONS = {
         {
             title: 'Lampa',
             issue: '3/2012',
-            type: 'press',
             year: '2012',
             url: 'http://lampa.art.pl/',
             descriptionPl: 'Początkowe rozdziały powieści „Vostok”',
@@ -414,7 +388,6 @@ export const PUBLICATIONS = {
         {
             title: 'Dodatek Literacki',
             issue: '#9',
-            type: 'press',
             year: '2011',
             url: 'http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf',
             descriptionPl: 'Fragment minipowieści „Nocturine”',
@@ -424,7 +397,6 @@ export const PUBLICATIONS = {
         {
             title: 'Dwutygodnik.com',
             issue: '#57',
-            type: 'press',
             year: '2011',
             url: 'http://www.dwutygodnik.com/wydanie/2011/57',
             descriptionPl: 'Fragment minipowieści „Nocturine”',
@@ -434,7 +406,6 @@ export const PUBLICATIONS = {
         {
             title: 'Latarnia Morska',
             issue: '1–2 (11–12) 2009/1 (13) 2010',
-            type: 'press',
             year: '2009/2010',
             url: 'http://www.latarnia-morska.eu/pl/proza/513-nocturine',
             descriptionPl: 'Fragment minipowieści „Nocturine”',
@@ -444,7 +415,6 @@ export const PUBLICATIONS = {
         {
             title: 'Pro Arte online 3',
             issue: '61/2006',
-            type: 'press',
             year: '2006',
             url: 'http://proarte.net.pl',
             descriptionPl: 'Opowiadanie „ośmiobitowe sny”',
@@ -454,7 +424,6 @@ export const PUBLICATIONS = {
         {
             title: 'Rita Baum',
             issue: '#10',
-            type: 'press',
             year: '2006',
             url: 'https://issuu.com/ritabaumwroclaw/docs/10',
             descriptionPl: 'Opowiadanie „Rozbieranie do snu”',
@@ -464,7 +433,6 @@ export const PUBLICATIONS = {
         {
             title: 'Lampa',
             issue: '6/2005',
-            type: 'press',
             year: '2005',
             url: 'http://lampa.art.pl/',
             descriptionPl: 'Opowiadanie „Astroskopia”',
@@ -476,7 +444,6 @@ export const PUBLICATIONS = {
     collections: [
         {
             title: 'Transformation Anthology',
-            type: 'collection',
             year: '2019',
             url: 'http://theselkie.co.uk/anthology/',
             descriptionPl: 'Flash fiction „Airborne” w antologii opublikowanej przez magazyn The Selkie',
@@ -485,7 +452,6 @@ export const PUBLICATIONS = {
         },
         {
             title: '2017. Antologia współczesnych polskich opowiadań',
-            type: 'collection',
             year: '2017',
             url: 'http://www.wforma.eu/2017-antologia-wspolczesnych-polskich-opowiadan.html',
             descriptionPl: 'Zbiór opowiadań z moim tekstem „Jeśli zapłonę” (Forma)',
@@ -494,7 +460,6 @@ export const PUBLICATIONS = {
         },
         {
             title: '2014. Antologia współczesnych polskich opowiadań',
-            type: 'collection',
             year: '2014',
             url: 'http://www.wforma.eu/318,2014-antologia-wspolczesnych-polskich-opowiadan.html',
             descriptionPl: 'Zbiór opowiadań z moim tekstem „Biegnący człowiek” (Forma)',

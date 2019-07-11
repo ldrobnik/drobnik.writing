@@ -9,7 +9,7 @@ const BookTile = (props) => {
 
     return (
         <StyledWrapper>
-
+            {props.title}
         </StyledWrapper>
     );
 };
