@@ -508,27 +508,27 @@ export const THEME_COLORS = {
         color2: '#ca2b55'
     },
     cunninghamella: {
-        color1: '#566f0c',
-        color2: '#85a814'
+        color1: '#8eac0c',
+        color2: '#177706'
     },
     vostok: {
-        color1: '#a67847',
+        color1: '#906726',
         color2: '#c69f25'
     },
     entropia: {
-        color1: '#616a65',
-        color2: '#228671'
+        color1: '#7f8883',
+        color2: '#3e6a62'
     },
     devonian: {
         color1: '#99aac6',
         color2: '#3fc6eb'
     },
     obrovsky: {
-        color1: '#b34a53',
-        color2: '#e44f60'
+        color1: '#942e2b',
+        color2: '#fb5162'
     },
     default: {
-        color1: '#f44d14',
-        color2: '#f7825a'
+        color1: '#f79d4a',
+        color2: '#f44d14'
     }
 };
