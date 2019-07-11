@@ -34,6 +34,23 @@ const Pubs = (props) => {
     return (
         <StyledWrapper>
             <h1>Publications</h1>
+            <label>
+                <input
+                    type='checkbox'
+                    checked={en}
+                    onChange={setEnHandler}
+                />
+                English
+            </label>
+            <label>
+               <input
+                type='checkbox'
+                checked={pl}
+                onChange={setPlHandler}
+            />
+            Polish
+            </label>
+
             <h3>Books</h3>
             {PUBLICATIONS.books.map((book) => {
                 if ((en && (book.language === 'en')) || (pl && (book.language == 'pl'))) {
@@ -51,30 +68,34 @@ const Pubs = (props) => {
             })}
             <h3>Press</h3>
             {PUBLICATIONS.press.map((press) => {
-                return (
-                    <PressTile
-                        title={press.title}
-                        issue={press.issue}
-                        year={press.year}
-                        url={press.url}
-                        descriptionPl={press.descriptionPl}
-                        descriptionEn={press.descriptionEn}
-                        language={press.language}
-                        key={press.title + press.issue}/>
-                )
+                if ((en && (press.language === 'en')) || (pl && (press.language == 'pl'))) {
+                    return (
+                        <PressTile
+                            title={press.title}
+                            issue={press.issue}
+                            year={press.year}
+                            url={press.url}
+                            descriptionPl={press.descriptionPl}
+                            descriptionEn={press.descriptionEn}
+                            language={press.language}
+                            key={press.title + press.issue}/>
+                    )
+                }
             })}
             <h3>Collections</h3>
             {PUBLICATIONS.collections.map((collection) => {
-                return (
-                    <CollectionTile
-                        title={collection.title}
-                        year={collection.year}
-                        url={collection.url}
-                        descriptionPl={collection.descriptionPl}
-                        descriptionEn={collection.descriptionEn}
-                        language={collection.language}
-                        key={collection.title}/>
-                )
+                if ((en && (collection.language === 'en')) || (pl && (collection.language == 'pl'))) {
+                    return (
+                        <CollectionTile
+                            title={collection.title}
+                            year={collection.year}
+                            url={collection.url}
+                            descriptionPl={collection.descriptionPl}
+                            descriptionEn={collection.descriptionEn}
+                            language={collection.language}
+                            key={collection.title}/>
+                    )
+                }
             })}
         </StyledWrapper>
     );
