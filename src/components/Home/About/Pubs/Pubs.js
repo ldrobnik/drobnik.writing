@@ -22,17 +22,17 @@ const Pubs = (props) => {
                     <BookTile
                         title={book.title}
                         year={book.year}
-            url={book.url}
-            descriptionPl={book.descriptionPl}
-            descriptionEn={book.descriptionEn}
-            language={book.language}
+                        url={book.url}
+                        descriptionPl={book.descriptionPl}
+                        descriptionEn={book.descriptionEn}
+                        language={book.language}
                         key={book.title}/>
                 )
             })}
             <h3>Press</h3>
             {PUBLICATIONS.press.map((press) => {
                 return (
-                    <BookTile
+                    <PressTile
                         title={press.title}
                         issue={press.issue}
                         year={press.year}
@@ -46,7 +46,7 @@ const Pubs = (props) => {
             <h3>Collections</h3>
             {PUBLICATIONS.collections.map((collection) => {
                 return (
-                    <BookTile
+                    <CollectionTile
                         title={collection.title}
                         year={collection.year}
                         url={collection.url}
