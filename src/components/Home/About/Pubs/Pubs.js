@@ -21,6 +21,11 @@ const Pubs = (props) => {
                 return (
                     <BookTile
                         title={book.title}
+                        year={book.year}
+            url={book.url}
+            descriptionPl={book.descriptionPl}
+            descriptionEn={book.descriptionEn}
+            language={book.language}
                         key={book.title}/>
                 )
             })}

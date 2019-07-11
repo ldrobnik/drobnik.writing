@@ -149,7 +149,7 @@ export const TEXTS = {
 export const PUBLICATIONS = {
     books: [
         {
-            title: 'Nocturine'
+            title: 'Nocturine',
             year: '',
             url: 'http://fathombooks.org/',
             descriptionPl: 'Angielska wersja minipowieści „Nocturine”, która ukaże się w 2019 r. nakładem wydawnictwa Fathom Books',

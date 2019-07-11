@@ -9,7 +9,7 @@ const BookTile = (props) => {
 
     return (
         <StyledWrapper>
-            {props.title}
+            <a href={props.url} target="_blank" rel="noopener noreferrer">{props.title}</a>
         </StyledWrapper>
     );
 };
