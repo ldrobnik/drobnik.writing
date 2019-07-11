@@ -7,6 +7,7 @@ import Intro from './Intro/Intro';
 import Nocturine from './Nocturine/Nocturine';
 import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
+import * as actionTypes from "../../../store/actions";
 
 
 
@@ -16,13 +17,23 @@ const StyledWrapper = styled.div`
 
 const About = (props) => {
 
+    //part of page title to be displayed depending on the current language
     const fictionWriter = (props.lang === 'en') ? 'fiction writer' : 'prozaik';
+
+    //updates current theme
+    const updateTheme = () => {
+        props.onThemeChange('default');
+    };
+
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${fictionWriter}`;
 
         //Scroll to top
         window.scrollTo(0, 0);
+
+        //change theme to a random one
+        updateTheme();
     });
 
     // //Changes the displayed path to '/' in cases non-existent path is entered
@@ -54,4 +65,10 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps)(About);
+const mapDispatchToProps = dispatch => {
+    return {
+        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme})
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(About);

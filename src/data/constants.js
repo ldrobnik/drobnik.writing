@@ -526,5 +526,9 @@ export const THEME_COLORS = {
     obrovsky: {
         color1: '#b34a53',
         color2: '#e44f60'
+    },
+    default: {
+        color1: '#f44d14',
+        color2: '#f7825a'
     }
 };

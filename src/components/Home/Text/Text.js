@@ -9,7 +9,6 @@ const StyledWrapper = styled.div`
 
 `;
 
-const text = 'moths';
 
 const Text = (props) => {
 
