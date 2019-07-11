@@ -295,7 +295,7 @@ export const PUBLICATIONS = {
             language: 'en'
         },
         {
-            title: 'Inter–',
+            title: 'Inter-',
             issue: '2(16)/2018',
             year: '2018',
             url: 'https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/',

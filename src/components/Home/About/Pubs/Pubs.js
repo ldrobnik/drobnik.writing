@@ -44,6 +44,18 @@ const Pubs = (props) => {
                 )
             })}
             <h3>Collections</h3>
+            {PUBLICATIONS.collections.map((collection) => {
+                return (
+                    <BookTile
+                        title={collection.title}
+                        year={collection.year}
+                        url={collection.url}
+                        descriptionPl={collection.descriptionPl}
+                        descriptionEn={collection.descriptionEn}
+                        language={collection.language}
+                        key={collection.title}/>
+                )
+            })}
         </StyledWrapper>
     );
 };
