@@ -2,7 +2,7 @@ import * as actionTypes from './actions';
 
 const initialState = {
     language: 'en',
-    theme: 'nocturine'
+    theme: 'default'
 };
 
 const reducer = (state = initialState, action) => {
