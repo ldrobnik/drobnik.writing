@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import * as actionTypes from '../../store/actions';
@@ -11,10 +12,10 @@ const StyledWrapper = styled.div`
 `;
 
 
-const NavBar = (props) => {
+const NavBar = withRouter((props) => {
 const langButton = (props.lang === 'en') ? 'PL' : 'EN';
 
-//changes current language
+    //changes current language
     const changeLanguage = () => {
         if (props.lang === 'en') {
             props.onLanguageChange('pl');
@@ -23,17 +24,27 @@ const langButton = (props.lang === 'en') ? 'PL' : 'EN';
         }
     };
 
+    //navigation links rendered differently for different routes
+    const navLinks = (props.location.pathname === '/') ?
+    <React.Fragment>
+        <AnchorLink href='#nocturine'>Nocturine</AnchorLink>&nbsp;
+        <AnchorLink href='#pubs'>Publications</AnchorLink>&nbsp;
+        <Link to='/texts/nocturine'>Texts</Link>
+    </React.Fragment> :
+    <React.Fragment>
+        <Link to='/#nocturine'>Nocturine</Link>&nbsp;
+        <Link to ='/#pubs'>Publications</Link>&nbsp;
+        Texts
+    </React.Fragment> ;
 
     return (
         <StyledWrapper>
             <Link to='/'>Home</Link>&nbsp;
-            <AnchorLink href='#nocturine'>Nocturine</AnchorLink>&nbsp;
-            <AnchorLink href='#pubs'>Publications</AnchorLink>&nbsp;
-            <Link to='/texts/nocturine'>Texts</Link>
+            {navLinks}
             <div onClick={changeLanguage}>{langButton}</div>
         </StyledWrapper>
     );
-};
+});
 
 const mapStateToProps = state => {
     return {
