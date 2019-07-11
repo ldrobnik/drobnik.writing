@@ -12,22 +12,42 @@ const StyledWrapper = styled.div`
 `;
 
 const Pubs = (props) => {
-    let year = '';
+
+    //specifies whether texts in English should be displayed
+    const [en, setEn] = useState(true);
+
+    //specifies whether texts in Polish should be displayed
+    const [pl, setPl] = useState(true);
+
+    //toggles the display of English pubs and if both en and pl are false, sets pl to true
+    const setEnHandler = () => {
+        setEn(!en);
+        if (!en && !pl) setPl(true);
+    };
+
+    //toggles the display of Polish pubs and if both en and pl are false, sets en to true
+    const setPlHandler = () => {
+        setPl(!pl);
+        if (!en && !pl) setEn(true);
+    };
+
     return (
         <StyledWrapper>
             <h1>Publications</h1>
             <h3>Books</h3>
             {PUBLICATIONS.books.map((book) => {
-                return (
-                    <BookTile
-                        title={book.title}
-                        year={book.year}
-                        url={book.url}
-                        descriptionPl={book.descriptionPl}
-                        descriptionEn={book.descriptionEn}
-                        language={book.language}
-                        key={book.title}/>
-                )
+                if ((en && (book.language === 'en')) || (pl && (book.language == 'pl'))) {
+                    return (
+                        <BookTile
+                            title={book.title}
+                            year={book.year}
+                            url={book.url}
+                            descriptionPl={book.descriptionPl}
+                            descriptionEn={book.descriptionEn}
+                            language={book.language}
+                            key={book.title}/>
+                    )
+                }
             })}
             <h3>Press</h3>
             {PUBLICATIONS.press.map((press) => {
