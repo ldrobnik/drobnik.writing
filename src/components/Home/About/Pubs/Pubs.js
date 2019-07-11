@@ -30,6 +30,19 @@ const Pubs = (props) => {
                 )
             })}
             <h3>Press</h3>
+            {PUBLICATIONS.press.map((press) => {
+                return (
+                    <BookTile
+                        title={press.title}
+                        issue={press.issue}
+                        year={press.year}
+                        url={press.url}
+                        descriptionPl={press.descriptionPl}
+                        descriptionEn={press.descriptionEn}
+                        language={press.language}
+                        key={press.title + press.issue}/>
+                )
+            })}
             <h3>Collections</h3>
         </StyledWrapper>
     );
