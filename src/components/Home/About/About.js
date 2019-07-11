@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
-import ScrollableAnchor from 'react-scrollable-anchor'
 
 import Intro from './Intro/Intro';
 import Nocturine from './Nocturine/Nocturine';
@@ -32,16 +31,15 @@ const About = (props) => {
 
     return (
         <StyledWrapper>
-            <Intro/>
-            <ScrollableAnchor id={'nocturine'}>
-                <Nocturine/>
-            </ScrollableAnchor>
-            <ScrollableAnchor id={'pubs'}>
-                <Pubs/>
-            </ScrollableAnchor>
-            <ScrollableAnchor id={'read'}>
-                <Read/>
-            </ScrollableAnchor>
+            <Intro />
+
+                <Nocturine />
+
+
+                <Pubs />
+
+                <Read />
+
 
         </StyledWrapper>
     );
