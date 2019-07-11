@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
+import * as actionTypes from '../../../store/actions';
 import { TEXTS, TEXT_NAMES } from '../../../data/constants';
 
 const StyledWrapper = styled.div`
@@ -26,12 +26,20 @@ const Text = (props) => {
 
     const textName = checkTextID(props.match.params.id);
 
+    //updates current theme
+    const updateTheme = () => {
+        props.onThemeChange(TEXTS[props.lang][textName].theme);
+    };
+
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
 
         //Scroll to top
         window.scrollTo(0, 0);
+
+        //update the theme depending on the text displayed
+        updateTheme();
     });
 
     return (
@@ -49,4 +57,10 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps)(Text);
+const mapDispatchToProps = dispatch => {
+    return {
+        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme})
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Text);

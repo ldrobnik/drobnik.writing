@@ -31,7 +31,7 @@ const NavBar = (props) => {
             <div onClick={changeLanguage}>{langButton}</div>
             {TEXT_NAMES.map((textName) => {
                 return (
-                    <p>
+                    <p key={textName}>
                         <Link to={'/texts/' + textName}>{TEXTS[props.lang][textName].title}</Link>
                     </p>
                 )
