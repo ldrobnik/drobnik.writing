@@ -9,7 +9,7 @@ const CollectionTile = (props) => {
 
     return (
         <StyledWrapper>
-
+            <a href={props.url} target="_blank" rel="noopener noreferrer">{props.title}</a>
         </StyledWrapper>
     );
 };
