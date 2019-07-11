@@ -1,18 +1,18 @@
 import React from 'react';
 
 //constants containing the content of individual pieces
-import { NOCTURINE_EN } from './texts/nocturine-en';
-import { NOCTURINE_PL } from './texts/nocturine-pl';
-import { CETACEAN_EN } from './texts/cetacean-en';
-import { CETACEAN_PL } from './texts/cetacean-pl';
-import { MOTHS_EN } from './texts/moths-en';
-import { MOTHS_PL } from './texts/moths-pl';
-import { CELLULOSE_EN } from './texts/cellulose-en';
-import { CELLULOSE_PL } from './texts/cellulose-pl';
-import { TREASURES_EN } from './texts/treasures-en';
-import { TREASURES_PL } from './texts/treasures-pl';
-import { LANDMINES_EN } from './texts/landmines-en';
-import { LANDMINES_PL } from './texts/landmines-pl';
+import {NOCTURINE_EN} from './texts/nocturine-en';
+import {NOCTURINE_PL} from './texts/nocturine-pl';
+import {CETACEAN_EN} from './texts/cetacean-en';
+import {CETACEAN_PL} from './texts/cetacean-pl';
+import {MOTHS_EN} from './texts/moths-en';
+import {MOTHS_PL} from './texts/moths-pl';
+import {CELLULOSE_EN} from './texts/cellulose-en';
+import {CELLULOSE_PL} from './texts/cellulose-pl';
+import {TREASURES_EN} from './texts/treasures-en';
+import {TREASURES_PL} from './texts/treasures-pl';
+import {LANDMINES_EN} from './texts/landmines-en';
+import {LANDMINES_PL} from './texts/landmines-pl';
 
 //Names of available texts
 export const TEXT_NAMES = ['nocturine', 'cetacean', 'moths', 'cellulose', 'treasures', 'landmines'];
@@ -86,7 +86,7 @@ export const TEXTS = {
             subtitle: 'fragment',
             description: <div></div>,
             content: NOCTURINE_PL,
-            footer:'',
+            footer: '',
             theme: 'nocturine',
             url: 'nocturine-pl'
         },
@@ -473,18 +473,18 @@ export const PUBLICATIONS = {
 
 //content of modals describing book publications
 export const BOOKS = {
-  nocturineCunninghamella: {
-      photo: 'noc-cun',
-      title: 'Nocturine. Cunninghamella',
-      en: {
-          subtitle: '',
-          description: <div></div>
-      },
-      pl: {
-          subtitle: '',
-          description: <div></div>
-      }
-  },
+    nocturineCunninghamella: {
+        photo: 'noc-cun',
+        title: 'Nocturine. Cunninghamella',
+        en: {
+            subtitle: '',
+            description: <div></div>
+        },
+        pl: {
+            subtitle: '',
+            description: <div></div>
+        }
+    },
 
     nocturine: {
         photo: 'nocturine',
@@ -497,5 +497,34 @@ export const BOOKS = {
             subtitle: '',
             description: <div></div>
         }
+    }
+};
+
+//Colours used in themes
+
+export const THEME_COLORS = {
+    nocturine: {
+        color1: '#a98086',
+        color2: '#ca8ca3'
+    },
+    cunninghamella: {
+        color1: '#566f0c',
+        color2: '#85a814'
+    },
+    vostok: {
+        color1: '#a67847',
+        color2: '#c69f25'
+    },
+    entropia: {
+        color1: '#616a65',
+        color2: '#228671'
+    },
+    devonian: {
+        color1: '#99aac6',
+        color2: '#3fc6eb'
+    },
+    obrovsky: {
+        color1: '#b34a53',
+        color2: '#e44f60'
     }
 };
