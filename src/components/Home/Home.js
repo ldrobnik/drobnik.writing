@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: ${props => props.theme.sansSerif};
         color: ${props => props.theme.darkColor};
-        background-color: ${props => props.theme.color1};
+        background-image: linear-gradient(141deg, ${props => props.theme.color1}, ${props => props.theme.color2});
         }
 `;
 
