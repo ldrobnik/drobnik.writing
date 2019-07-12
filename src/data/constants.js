@@ -512,11 +512,11 @@ export const THEME_COLORS = {
         color2: '#177706'
     },
     treasures: {
-        color1: '#c19a48',
+        color1: '#e7b84c',
         color2: '#b88636'
     },
     landmines: {
-        color1: '#f45f32',
-        color2: '#e74c23'
+        color1: '#f4acca',
+        color2: '#f47ba1'
     }
 };
