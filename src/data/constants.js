@@ -508,12 +508,12 @@ export const THEME_COLORS = {
         color2: '#a96767'
     },
     cunninghamella: {
-        color1: '#8eac0c',
+        color1: '#34bf23',
         color2: '#177706'
     },
     vostok: {
-        color1: '#906726',
-        color2: '#c69f25'
+        color1: '#c69f25',
+        color2: '#ae873d'
     },
     entropia: {
         color1: '#7f8883',
