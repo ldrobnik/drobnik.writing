@@ -520,8 +520,8 @@ export const THEME_COLORS = {
         color2: '#4a5dff'
     },
     devonian: {
-        color1: '#99aac6',
-        color2: '#3fc6eb'
+        color1: '#52e1f6',
+        color2: '#3eb3d7'
     },
     obrovsky: {
         color1: '#942e2b',
