@@ -524,8 +524,8 @@ export const THEME_COLORS = {
         color2: '#3eb3d7'
     },
     obrovsky: {
-        color1: '#942e2b',
-        color2: '#fb5162'
+        color1: '#fb5162',
+        color2: '#f5494d'
     },
     default: {
         color1: '#f79d4a',
