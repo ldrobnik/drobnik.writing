@@ -10,6 +10,11 @@ import { PUBLICATIONS } from '../../../../data/constants';
 // STYLES
 const TileContainer = styled.div`
   display: flex;
+  padding: 1em;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 `;
 
 const Pubs = (props) => {
