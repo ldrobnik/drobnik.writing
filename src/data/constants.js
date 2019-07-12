@@ -513,11 +513,11 @@ export const THEME_COLORS = {
     },
     vostok: {
         color1: '#c69f25',
-        color2: '#ae873d'
+        color2: '#a07a39'
     },
     entropia: {
-        color1: '#7f8883',
-        color2: '#3e6a62'
+        color1: '#6b94ff',
+        color2: '#4a5dff'
     },
     devonian: {
         color1: '#99aac6',

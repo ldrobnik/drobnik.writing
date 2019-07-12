@@ -69,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="514" column="24" selection-start-line="514" selection-start-column="24" selection-end-line="514" selection-end-column="24" />
+            <state relative-caret-position="440">
+              <caret line="519" column="24" selection-start-line="519" selection-start-column="24" selection-end-line="519" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -388,12 +388,12 @@
       <workItem from="1562648557272" duration="5991000" />
       <workItem from="1562701548512" duration="11639000" />
       <workItem from="1562795218727" duration="29080000" />
-      <workItem from="1562916074687" duration="391000" />
+      <workItem from="1562916074687" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88540000" />
+    <option name="totallyTimeSpent" value="88746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="959" y="54" width="1167" height="1010" extended-state="0" />
@@ -720,8 +720,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="514" column="24" selection-start-line="514" selection-start-column="24" selection-end-line="514" selection-end-column="24" />
+        <state relative-caret-position="440">
+          <caret line="519" column="24" selection-start-line="519" selection-start-column="24" selection-end-line="519" selection-end-column="24" />
         </state>
       </provider>
     </entry>
