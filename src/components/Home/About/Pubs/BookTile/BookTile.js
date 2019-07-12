@@ -5,19 +5,31 @@ import {connect} from 'react-redux';
 
 const Tile = styled.div`
     background-color: ${props => props.theme.background};
+    margin: 5px;
+    height: 8em;
+    width: 12em;
 `;
 
 const BookTile = (props) => {
 
     //if the url property contains an anchor link, display AnchorLink, otherwise display normal link
-    const link = (props.url.charAt(0) === '#') ?
-        <AnchorLink href={props.url}>{props.title}</AnchorLink> :
-        <a href={props.url} target="_blank" rel="noopener noreferrer">{props.title}</a>;
+    const tile = (props.url.charAt(0) === '#') ?
+        <AnchorLink href={props.url}>
+            <Tile>
+            {props.title}
+            </Tile>
+        </AnchorLink> :
+        <a href={props.url} target="_blank" rel="noopener noreferrer">
+            <Tile>
+                {props.title}
+            </Tile>
+        </a>;
 
     return (
-        <Tile>
-            {link}
-        </Tile>
+        <div>
+            {tile}
+        </div>
+
     );
 };
 
