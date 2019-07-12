@@ -36,8 +36,7 @@ export const TEXTS = {
             description: <div></div>,
             content: CETACEAN_EN,
             footer: '',
-            theme: 'devonian',
-            url: 'cetacean'
+            theme: 'cetacean'
         },
 
         moths: {
@@ -46,8 +45,7 @@ export const TEXTS = {
             description: <div></div>,
             content: MOTHS_EN,
             footer: '',
-            theme: 'entropia',
-            url: 'moths'
+            theme: 'moths'
         },
 
         cellulose: {
@@ -56,8 +54,7 @@ export const TEXTS = {
             description: <div></div>,
             content: CELLULOSE_EN,
             footer: '',
-            theme: 'cunninghamella',
-            url: 'cellulose'
+            theme: 'cellulose'
         },
 
         treasures: {
@@ -66,8 +63,7 @@ export const TEXTS = {
             description: <div></div>,
             content: TREASURES_EN,
             footer: '',
-            theme: 'vostok',
-            url: 'treasures'
+            theme: 'treasures'
         },
 
         landmines: {
@@ -76,8 +72,7 @@ export const TEXTS = {
             description: <div></div>,
             content: LANDMINES_EN,
             footer: '',
-            theme: 'obrovsky',
-            url: 'landmines'
+            theme: 'landmines'
         }
     },
     pl: {
@@ -87,8 +82,7 @@ export const TEXTS = {
             description: <div></div>,
             content: NOCTURINE_PL,
             footer: '',
-            theme: 'nocturine',
-            url: 'nocturine-pl'
+            theme: 'nocturine'
         },
 
         cetacean: {
@@ -97,8 +91,7 @@ export const TEXTS = {
             description: <div></div>,
             content: CETACEAN_PL,
             footer: '',
-            theme: 'devonian',
-            url: 'walen'
+            theme: 'cetacean'
         },
 
         moths: {
@@ -107,8 +100,7 @@ export const TEXTS = {
             description: <div></div>,
             content: MOTHS_PL,
             footer: '',
-            theme: 'entropia',
-            url: 'cmy'
+            theme: 'moths'
         },
 
         cellulose: {
@@ -117,8 +109,7 @@ export const TEXTS = {
             description: <div></div>,
             content: CELLULOSE_PL,
             footer: '',
-            theme: 'cunninghamella',
-            url: 'celuloza'
+            theme: 'cellulose'
         },
 
         treasures: {
@@ -127,8 +118,7 @@ export const TEXTS = {
             description: <div></div>,
             content: TREASURES_PL,
             footer: '',
-            theme: 'vostok',
-            url: 'skarby'
+            theme: 'treasures'
         },
 
         landmines: {
@@ -137,8 +127,7 @@ export const TEXTS = {
             description: <div></div>,
             content: LANDMINES_PL,
             footer: '',
-            theme: 'obrovsky',
-            url: 'miny'
+            theme: 'landmines'
         }
     }
 };
