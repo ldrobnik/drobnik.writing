@@ -7,8 +7,9 @@ import CollectionTile from './CollectionTile/CollectionTile';
 
 import { PUBLICATIONS } from '../../../../data/constants';
 
-const StyledWrapper = styled.div`
-
+// STYLES
+const TileContainer = styled.div`
+  display: flex;
 `;
 
 const Pubs = (props) => {
@@ -32,7 +33,7 @@ const Pubs = (props) => {
     };
 
     return (
-        <StyledWrapper>
+        <React.Fragment>
             <h1>Publications</h1>
             <label>
                 <input
@@ -52,37 +53,42 @@ const Pubs = (props) => {
             </label>
 
             <h3>Books</h3>
-            {PUBLICATIONS.books.map((book) => {
-                if ((en && (book.language === 'en')) || (pl && (book.language == 'pl'))) {
-                    return (
-                        <BookTile
-                            title={book.title}
-                            year={book.year}
-                            url={book.url}
-                            descriptionPl={book.descriptionPl}
-                            descriptionEn={book.descriptionEn}
-                            language={book.language}
-                            key={book.title}/>
-                    )
-                }
-            })}
+            <TileContainer>
+                {PUBLICATIONS.books.map((book) => {
+                    if ((en && (book.language === 'en')) || (pl && (book.language == 'pl'))) {
+                        return (
+                            <BookTile
+                                title={book.title}
+                                year={book.year}
+                                url={book.url}
+                                descriptionPl={book.descriptionPl}
+                                descriptionEn={book.descriptionEn}
+                                language={book.language}
+                                key={book.title}/>
+                        )
+                    }
+                })}
+            </TileContainer>
             <h3>Press</h3>
-            {PUBLICATIONS.press.map((press) => {
-                if ((en && (press.language === 'en')) || (pl && (press.language == 'pl'))) {
-                    return (
-                        <PressTile
-                            title={press.title}
-                            issue={press.issue}
-                            year={press.year}
-                            url={press.url}
-                            descriptionPl={press.descriptionPl}
-                            descriptionEn={press.descriptionEn}
-                            language={press.language}
-                            key={press.title + press.issue}/>
-                    )
-                }
-            })}
+            <TileContainer>
+                {PUBLICATIONS.press.map((press) => {
+                    if ((en && (press.language === 'en')) || (pl && (press.language == 'pl'))) {
+                        return (
+                            <PressTile
+                                title={press.title}
+                                issue={press.issue}
+                                year={press.year}
+                                url={press.url}
+                                descriptionPl={press.descriptionPl}
+                                descriptionEn={press.descriptionEn}
+                                language={press.language}
+                                key={press.title + press.issue}/>
+                        )
+                    }
+                })}
+            </TileContainer>
             <h3>Collections</h3>
+            <TileContainer>
             {PUBLICATIONS.collections.map((collection) => {
                 if ((en && (collection.language === 'en')) || (pl && (collection.language == 'pl'))) {
                     return (
@@ -97,7 +103,8 @@ const Pubs = (props) => {
                     )
                 }
             })}
-        </StyledWrapper>
+            </TileContainer>
+        </React.Fragment>
     );
 };
 
