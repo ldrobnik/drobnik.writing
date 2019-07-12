@@ -505,7 +505,7 @@ export const BOOKS = {
 export const THEME_COLORS = {
     nocturine: {
         color1: '#a98086',
-        color2: '#ca2b55'
+        color2: '#a96767'
     },
     cunninghamella: {
         color1: '#8eac0c',
