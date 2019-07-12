@@ -512,8 +512,8 @@ export const THEME_COLORS = {
         color2: '#177706'
     },
     vostok: {
-        color1: '#c69f25',
-        color2: '#a07a39'
+        color1: '#c19a48',
+        color2: '#b88636'
     },
     entropia: {
         color1: '#6b94ff',
@@ -528,7 +528,7 @@ export const THEME_COLORS = {
         color2: '#f5494d'
     },
     default: {
-        color1: '#f79d4a',
-        color2: '#f44d14'
+        color1: '#f45f32',
+        color2: '#e74c23'
     }
 };
