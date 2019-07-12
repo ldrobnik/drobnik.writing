@@ -492,8 +492,8 @@ export const BOOKS = {
 
 export const THEME_COLORS = {
     default: {
-        color1: '#f45f32',
-        color2: '#e74c23'
+        color1: '#fb5162',
+        color2: '#f5494d'
     },
     nocturine: {
         color1: '#a98086',
@@ -516,7 +516,7 @@ export const THEME_COLORS = {
         color2: '#b88636'
     },
     landmines: {
-        color1: '#fb5162',
-        color2: '#f5494d'
+        color1: '#f45f32',
+        color2: '#e74c23'
     }
 };
