@@ -10,6 +10,7 @@ import { PUBLICATIONS } from '../../../../data/constants';
 // STYLES
 const TileContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   padding: 1em;
   width: 100%;
   align-items: center;

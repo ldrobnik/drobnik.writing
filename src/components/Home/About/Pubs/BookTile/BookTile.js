@@ -6,8 +6,9 @@ import {connect} from 'react-redux';
 const Tile = styled.div`
     background-color: ${props => props.theme.background};
     margin: 5px;
-    height: 8em;
-    width: 12em;
+    height: 12em;
+    width: 14em;
+    text-align: center;
 `;
 
 const BookTile = (props) => {
