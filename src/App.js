@@ -12,7 +12,7 @@ const App = (props) => {
         //colours
         color1: THEME_COLORS[props.theme].color1,
         color2: THEME_COLORS[props.theme].color2,
-        darkColor: '#353535',
+        darkColor: '#0f1e12',
         background: 'rgba(53,53,53,0.25)',
 
         //fonts
