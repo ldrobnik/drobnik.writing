@@ -27,7 +27,7 @@ const Text = (props) => {
 
     //updates current theme
     const updateTheme = () => {
-        props.onThemeChange(TEXTS[props.lang][textName].theme);
+        props.onThemeChange(TEXTS[props.lang][textName].url);
     };
 
     useEffect(() => {

@@ -503,32 +503,32 @@ export const BOOKS = {
 //Colours used in themes
 
 export const THEME_COLORS = {
+    default: {
+        color1: '#f45f32',
+        color2: '#e74c23'
+    },
     nocturine: {
         color1: '#a98086',
         color2: '#a96767'
     },
-    cunninghamella: {
-        color1: '#34bf23',
-        color2: '#177706'
-    },
-    vostok: {
-        color1: '#c19a48',
-        color2: '#b88636'
-    },
-    entropia: {
-        color1: '#6b94ff',
-        color2: '#4a5dff'
-    },
-    devonian: {
+    cetacean: {
         color1: '#52e1f6',
         color2: '#3eb3d7'
     },
-    obrovsky: {
+    moths: {
+        color1: '#6b94ff',
+        color2: '#4a5dff'
+    },
+    cellulose: {
+        color1: '#34bf23',
+        color2: '#177706'
+    },
+    treasures: {
+        color1: '#c19a48',
+        color2: '#b88636'
+    },
+    landmines: {
         color1: '#fb5162',
         color2: '#f5494d'
-    },
-    default: {
-        color1: '#f45f32',
-        color2: '#e74c23'
     }
 };
