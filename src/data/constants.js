@@ -26,8 +26,7 @@ export const TEXTS = {
             description: <div></div>,
             content: NOCTURINE_EN,
             footer: '',
-            theme: 'nocturine',
-            url: 'nocturine'
+            theme: 'nocturine'
         },
 
         cetacean: {
@@ -505,7 +504,7 @@ export const THEME_COLORS = {
         color2: '#3eb3d7'
     },
     moths: {
-        color1: '#6b94ff',
+        color1: '#4081ff',
         color2: '#4a5dff'
     },
     cellulose: {
