@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
 
-const StyledWrapper = styled.div`
-
+const Tile = styled.div`
+    background-color: ${props => props.theme.background};
 `;
 
 const BookTile = (props) => {
@@ -15,9 +15,9 @@ const BookTile = (props) => {
         <a href={props.url} target="_blank" rel="noopener noreferrer">{props.title}</a>;
 
     return (
-        <StyledWrapper>
+        <Tile>
             {link}
-        </StyledWrapper>
+        </Tile>
     );
 };
 

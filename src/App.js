@@ -12,10 +12,13 @@ const App = (props) => {
         //colours
         color1: THEME_COLORS[props.theme].color1,
         color2: THEME_COLORS[props.theme].color2,
+        darkColor: '#353535',
+        background: 'rgba(53,53,53,0.25)',
 
         //fonts
         sansSerif: `'Maven Pro', sans-serif`,
-        serif: `'Roboto Slab', serif`
+        serif: `'Roboto Slab', serif`,
+
     };
 
 

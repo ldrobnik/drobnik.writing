@@ -1,7 +1,7 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import styled, {createGlobalStyle} from 'styled-components';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 
 import Layout from '../Layout/Layout';
 import About from './About/About';
@@ -16,24 +16,17 @@ const GlobalStyle = createGlobalStyle`
         }
 `;
 
-const StyledWrapper = styled.div`
-
-`;
-
-
 const Home = (props) => {
     return (
         <React.Fragment>
-            <GlobalStyle />
-            <StyledWrapper>
-                <Layout>
-                    <Switch>
-                        <Route path="/" exact component={About} />
-                        <Route path="/texts/:id" component={Text} />
-                        <Route component={About} />
-                    </Switch>
-                </Layout>
-            </StyledWrapper>
+            <GlobalStyle/>
+            <Layout>
+                <Switch>
+                    <Route path="/" exact component={About}/>
+                    <Route path="/texts/:id" component={Text}/>
+                    <Route component={About}/>
+                </Switch>
+            </Layout>
         </React.Fragment>
     );
 };
