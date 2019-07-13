@@ -19,6 +19,11 @@ const App = (props) => {
         sansSerif: `'Maven Pro', sans-serif`,
         serif: `'Roboto Slab', serif`,
 
+        //breakpoints
+        small: '480px',
+        medium: '768px',
+        large: '991px'
+
     };
 
 

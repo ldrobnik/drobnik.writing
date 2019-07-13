@@ -9,7 +9,7 @@ import { PUBLICATIONS } from '../../../../data/constants';
 const TileContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  padding: 1em 3em;
+  padding: 1em 2em;
   width: 100%;
   cursor: pointer;
 `;
