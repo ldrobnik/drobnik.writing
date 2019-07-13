@@ -13,17 +13,53 @@ const Tile = styled.div`
 
 const BookTile = (props) => {
 
+    //specifies whether additional content should be displayed on hover
+    const [mouseEnter, setMouseEnter] = useState(false);
+
+    //handles change of the hover state
+    const mouseEnterHandler = () => {
+      setMouseEnter(true);
+    };
+
+    const mouseLeaveHandler = () => {
+      setMouseEnter(false);
+    };
+
+    //text to be displayed for forthcoming publications depending on the current language
+    const forthcoming = (props.lang === 'en') ? 'forthcoming' : 'w przygotowaniu';
+
+    //description to be diplayed depending on the current language
+    const description = (props.lang === 'en') ? props.descriptionEn : props.descriptionPl;
+
+    //year to be displayed - if no year available, display the 'forthcoming' info
+    const year = (props.year === '') ? forthcoming : props.year;
+
+    //info to be include in the tile (different when cursor is over the element)
+    const tileDescription = !mouseEnter ?
+        <React.Fragment>
+            <p><i>{year}</i></p>
+            <h4>{props.title}</h4>
+            <p>{props.language}</p>
+        </React.Fragment> :
+        <React.Fragment>
+            <p>{description}</p>
+        </React.Fragment>;
+
+    //the above description wrapped in a tile element
+    const tileContent = <Tile
+                onMouseEnter={mouseEnterHandler}
+                onMouseLeave={mouseLeaveHandler}
+    >
+        {tileDescription}
+    </Tile>;
+
     //if the url property contains an anchor link, display AnchorLink, otherwise display normal link
     const tile = (props.url.charAt(0) === '#') ?
         <AnchorLink href={props.url}>
-            <Tile>
-            {props.title}
-            </Tile>
+            {tileContent}
         </AnchorLink> :
         <a href={props.url} target="_blank" rel="noopener noreferrer">
-            <Tile>
-                {props.title}
-            </Tile>
+            {tileContent}
         </a>;
 
     return (
