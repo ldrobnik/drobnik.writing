@@ -11,18 +11,18 @@ const Tile = styled.div`
     text-align: center;
 `;
 
-const BookTile = (props) => {
+const PubTile = (props) => {
 
     //specifies whether additional content should be displayed on hover
     const [mouseEnter, setMouseEnter] = useState(false);
 
     //handles change of the hover state
     const mouseEnterHandler = () => {
-      setMouseEnter(true);
+        setMouseEnter(true);
     };
 
     const mouseLeaveHandler = () => {
-      setMouseEnter(false);
+        setMouseEnter(false);
     };
 
     //text to be displayed for forthcoming publications depending on the current language
@@ -34,6 +34,9 @@ const BookTile = (props) => {
     //year to be displayed - if no year available, display the 'forthcoming' info
     const year = (props.year === '') ? forthcoming : props.year;
 
+    //text to be displayed if the issue number/name is available
+    const issue = (props.issue !== undefined) ? <p><i>{props.issue}</i></p> : <div></div>;
+
     //info to be include in the tile (different when cursor is over the element)
     const tileDescription = !mouseEnter ?
         <React.Fragment>
@@ -42,13 +45,14 @@ const BookTile = (props) => {
             <p>{props.language}</p>
         </React.Fragment> :
         <React.Fragment>
+            {issue}
             <p>{description}</p>
         </React.Fragment>;
 
     //the above description wrapped in a tile element
     const tileContent = <Tile
-                onMouseEnter={mouseEnterHandler}
-                onMouseLeave={mouseLeaveHandler}
+        onMouseEnter={mouseEnterHandler}
+        onMouseLeave={mouseLeaveHandler}
     >
         {tileDescription}
     </Tile>;
@@ -75,4 +79,4 @@ const mapStateToProps = state => {
         lang: state.language
     };
 };
-export default connect(mapStateToProps)(BookTile);
+export default connect(mapStateToProps)(PubTile);

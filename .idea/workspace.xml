@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Home/About/Pubs/PubTile/PubTile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Pubs/BookTile/BookTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Pubs/BookTile/BookTile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Pubs/PressTile/PressTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Pubs/PressTile/PressTile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,11 +42,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-667">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="69">
+              <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/BookTile/BookTile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -52,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/BookTile/BookTile.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubTile/PubTile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+            <state relative-caret-position="365">
+              <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -67,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PressTile/PressTile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="667">
+              <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -99,7 +110,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Polish translation</find>
       <find>Short story</find>
       <find>css</find>
       <find>65</find>
@@ -129,6 +139,7 @@
       <find>textN</find>
       <find>unninghamella</find>
       <find>.url</find>
+      <find>BookTile</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -138,6 +149,7 @@
       <replace>&lt;p&gt;$1&lt;/p&gt;</replace>
       <replace>SET_</replace>
       <replace>url:</replace>
+      <replace>PubTile</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -146,9 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/data/texts/cunninghamella-pl.js" />
-        <option value="$PROJECT_DIR$/src/data/texts/obrovsky-en.js" />
-        <option value="$PROJECT_DIR$/src/data/texts/obrovsky-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/photosensitivity-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/photosensitivity-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/vostok-en.js" />
@@ -193,10 +202,13 @@
         <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PressTile/PressTile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/CollectionTile/CollectionTile.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/BookTile/BookTile.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PressTile/PressTile.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Tile/Tile.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Tile/PubTile.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubTile/PubTile.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" />
       </list>
     </option>
   </component>
@@ -399,12 +411,12 @@
       <workItem from="1562916074687" duration="2741000" />
       <workItem from="1562920846761" duration="792000" />
       <workItem from="1562937076679" duration="5215000" />
-      <workItem from="1563032418681" duration="1401000" />
+      <workItem from="1563032418681" duration="2007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98298000" />
+    <option name="totallyTimeSpent" value="98904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="834" y="3" width="1070" height="1010" extended-state="0" />
@@ -412,9 +424,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.26841086" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.26841086" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16803761" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16803761" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -454,7 +466,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Text/Elements/TitlePanel/TitlePanel.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Text/Elements/Footer/Footer.js" />
     <entry file="file://$PROJECT_DIR$/src/styles/_common.scss" />
     <entry file="file://$PROJECT_DIR$/src/components/Text/Polish/ObrovskyPl/ObrovskyPl.js" />
@@ -723,18 +734,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PressTile/PressTile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="667">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -743,11 +744,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/BookTile/BookTile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+        <state relative-caret-position="69">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubTile/PubTile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
         </state>
       </provider>
     </entry>

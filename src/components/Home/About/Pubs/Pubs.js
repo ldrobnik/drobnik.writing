@@ -1,9 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 
-import BookTile from './BookTile/BookTile';
-import PressTile from './PressTile/PressTile';
-import CollectionTile from './CollectionTile/CollectionTile';
+import PubTile from './PubTile/PubTile';
 
 import { PUBLICATIONS } from '../../../../data/constants';
 
@@ -61,7 +59,7 @@ const Pubs = (props) => {
                 {PUBLICATIONS.books.map((book) => {
                     if ((en && (book.language === 'en')) || (pl && (book.language == 'pl'))) {
                         return (
-                            <BookTile
+                            <PubTile
                                 title={book.title}
                                 year={book.year}
                                 url={book.url}
@@ -78,7 +76,7 @@ const Pubs = (props) => {
                 {PUBLICATIONS.press.map((press) => {
                     if ((en && (press.language === 'en')) || (pl && (press.language == 'pl'))) {
                         return (
-                            <PressTile
+                            <PubTile
                                 title={press.title}
                                 issue={press.issue}
                                 year={press.year}
@@ -96,7 +94,7 @@ const Pubs = (props) => {
             {PUBLICATIONS.collections.map((collection) => {
                 if ((en && (collection.language === 'en')) || (pl && (collection.language == 'pl'))) {
                     return (
-                        <CollectionTile
+                        <PubTile
                             title={collection.title}
                             year={collection.year}
                             url={collection.url}
