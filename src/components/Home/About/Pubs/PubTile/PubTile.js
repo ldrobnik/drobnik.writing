@@ -5,11 +5,19 @@ import {connect} from 'react-redux';
 
 const Tile = styled.div`
     background-color: ${props => props.theme.background};
-    margin: 5px;
     height: 12em;
-    width: 14em;
+    width: 15em;
+    padding: 0 0.5em;
     text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 `;
+
+const TileWrapper = styled.div`
+  display: table;
+  margin: 5px;
+`;
+
 
 const PubTile = (props) => {
 
@@ -50,12 +58,15 @@ const PubTile = (props) => {
         </React.Fragment>;
 
     //the above description wrapped in a tile element
-    const tileContent = <Tile
-        onMouseEnter={mouseEnterHandler}
-        onMouseLeave={mouseLeaveHandler}
-    >
-        {tileDescription}
-    </Tile>;
+    const tileContent =
+        <TileWrapper>
+            <Tile
+                onMouseEnter={mouseEnterHandler}
+                onMouseLeave={mouseLeaveHandler}
+            >
+                {tileDescription}
+            </Tile>
+        </TileWrapper>;
 
     //if the url property contains an anchor link, display AnchorLink, otherwise display normal link
     const tile = (props.url.charAt(0) === '#') ?
