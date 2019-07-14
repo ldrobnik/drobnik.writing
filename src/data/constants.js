@@ -496,11 +496,11 @@ export const BOOKS = {
 export const THEME_COLORS = {
     default: {
         color1: '#ff6a7d',
-        color2: '#ee5d6c'
+        color2: '#ee5b7b'
     },
     nocturine: {
         color1: '#daafb5',
-        color2: '#daa5b2'
+        color2: '#da849a'
     },
     cetacean: {
         color1: '#52e1f6',
