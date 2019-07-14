@@ -15,7 +15,7 @@ import {LANDMINES_EN} from './texts/landmines-en';
 import {LANDMINES_PL} from './texts/landmines-pl';
 
 //Names of available texts
-export const TEXT_NAMES = ['nocturine', 'cetacean', 'moths', 'cellulose', 'treasures', 'landmines'];
+export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'treasures', 'landmines'];
 
 //Content of pieces displayed in the Text component
 export const TEXTS = {
@@ -29,6 +29,15 @@ export const TEXTS = {
             theme: 'nocturine'
         },
 
+        cellulose: {
+            title: 'Cellulose',
+            subtitle: 'flash fiction',
+            description: <div></div>,
+            content: CELLULOSE_EN,
+            footer: '',
+            theme: 'cellulose'
+        },
+
         cetacean: {
             title: 'Cetacean',
             subtitle: 'flash fiction',
@@ -38,6 +47,7 @@ export const TEXTS = {
             theme: 'cetacean'
         },
 
+
         moths: {
             title: 'Moths',
             subtitle: 'flash fiction',
@@ -45,15 +55,6 @@ export const TEXTS = {
             content: MOTHS_EN,
             footer: '',
             theme: 'moths'
-        },
-
-        cellulose: {
-            title: 'Cellulose',
-            subtitle: 'flash fiction',
-            description: <div></div>,
-            content: CELLULOSE_EN,
-            footer: '',
-            theme: 'cellulose'
         },
 
         treasures: {
@@ -93,14 +94,6 @@ export const TEXTS = {
             theme: 'cetacean'
         },
 
-        moths: {
-            title: 'Ćmy',
-            subtitle: 'flash fiction',
-            description: <div></div>,
-            content: MOTHS_PL,
-            footer: '',
-            theme: 'moths'
-        },
 
         cellulose: {
             title: 'Celuloza',
@@ -110,6 +103,16 @@ export const TEXTS = {
             footer: '',
             theme: 'cellulose'
         },
+
+        moths: {
+            title: 'Ćmy',
+            subtitle: 'flash fiction',
+            description: <div></div>,
+            content: MOTHS_PL,
+            footer: '',
+            theme: 'moths'
+        },
+
 
         treasures: {
             title: 'Skarby',
@@ -503,13 +506,13 @@ export const THEME_COLORS = {
         color1: '#52e1f6',
         color2: '#3eb3d7'
     },
-    moths: {
-        color1: '#4081ff',
-        color2: '#4a5dff'
-    },
     cellulose: {
         color1: '#34bf23',
         color2: '#177706'
+    },
+    moths: {
+        color1: '#4081ff',
+        color2: '#4a5dff'
     },
     treasures: {
         color1: '#e7b84c',

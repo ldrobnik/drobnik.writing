@@ -8,7 +8,7 @@ import { TEXTS, TEXT_NAMES } from '../../../data/constants';
 const TextBody = styled.div`
     font-family: ${props => props.theme.serif};
     font-size: 1.3em;
-    line-height: 1.3em;
+    line-height: 1.4em;
     
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
       padding: 2em 3em;
