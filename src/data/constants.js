@@ -495,24 +495,24 @@ export const BOOKS = {
 
 export const THEME_COLORS = {
     default: {
-        color1: '#fb5162',
-        color2: '#f5494d'
+        color1: '#ff6a7d',
+        color2: '#ee5d6c'
     },
     nocturine: {
-        color1: '#a98086',
-        color2: '#a96767'
+        color1: '#daafb5',
+        color2: '#daa5b2'
     },
     cetacean: {
         color1: '#52e1f6',
         color2: '#3eb3d7'
     },
     cellulose: {
-        color1: '#34bf23',
-        color2: '#177706'
+        color1: '#06e62a',
+        color2: '#0bb612'
     },
     moths: {
-        color1: '#4081ff',
-        color2: '#4a5dff'
+        color1: '#4db3ff',
+        color2: '#4289ed'
     },
     treasures: {
         color1: '#e7b84c',
