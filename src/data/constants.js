@@ -15,7 +15,7 @@ import {LANDMINES_EN} from './texts/landmines-en';
 import {LANDMINES_PL} from './texts/landmines-pl';
 
 //Names of available texts
-export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'treasures', 'landmines'];
+export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'landmines', 'treasures'];
 
 //Content of pieces displayed in the Text component
 export const TEXTS = {
@@ -462,37 +462,7 @@ export const PUBLICATIONS = {
 };
 
 
-//content of modals describing book publications
-export const BOOKS = {
-    nocturineCunninghamella: {
-        photo: 'noc-cun',
-        title: 'Nocturine. Cunninghamella',
-        en: {
-            subtitle: '',
-            description: <div></div>
-        },
-        pl: {
-            subtitle: '',
-            description: <div></div>
-        }
-    },
-
-    nocturine: {
-        photo: 'nocturine',
-        title: 'Nocturine',
-        en: {
-            subtitle: '',
-            description: <div></div>
-        },
-        pl: {
-            subtitle: '',
-            description: <div></div>
-        }
-    }
-};
-
 //Colours used in themes
-
 export const THEME_COLORS = {
     default: {
         color1: '#ff6a7d',
@@ -514,12 +484,12 @@ export const THEME_COLORS = {
         color1: '#4db3ff',
         color2: '#4289ed'
     },
-    treasures: {
-        color1: '#e7b84c',
-        color2: '#b88636'
-    },
     landmines: {
         color1: '#f4acca',
         color2: '#f47ba1'
+    },
+    treasures: {
+        color1: '#e7b84c',
+        color2: '#b88636'
     }
 };
