@@ -507,8 +507,8 @@ export const THEME_COLORS = {
         color2: '#3eb3d7'
     },
     cellulose: {
-        color1: '#06e62a',
-        color2: '#0bb612'
+        color1: '#82e672',
+        color2: '#6ad540'
     },
     moths: {
         color1: '#4db3ff',
