@@ -11,11 +11,11 @@ const TextBody = styled.div`
     line-height: 1.3em;
     
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-      padding: 2em 2em;
+      padding: 2em 3em;
     }
     
     @media all and (min-width: ${props => props.theme.smallScr}) {
-      padding: 2em 3em;
+      padding: 2em 5%;
     }
     
     @media all and (min-width: ${props => props.theme.mediumScr}) {
@@ -27,7 +27,7 @@ const TextBody = styled.div`
     }
     
     @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-      padding: 2em 30%;
+      padding: 2em 32%;
     }
     
     
