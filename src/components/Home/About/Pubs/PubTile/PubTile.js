@@ -11,6 +11,10 @@ const Tile = styled.div`
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    
+    h4 {
+    text-transform: uppercase;
+    }
 `;
 
 const TileWrapper = styled.div`
