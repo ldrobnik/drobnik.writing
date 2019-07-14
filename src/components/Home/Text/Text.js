@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
+import {Link} from 'react-router-dom';
 
 import * as actionTypes from '../../../store/actions';
 import { TEXTS, TEXT_NAMES } from '../../../data/constants';
@@ -50,6 +51,19 @@ const Text = (props) => {
 
     const textName = checkTextID(props.match.params.id);
 
+    const textIndex = TEXT_NAMES.indexOf(textName);
+
+    //The next text to be displayed;
+    const nextTextId = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
+
+    console.log('TEXT_NAMES.indexOf(textName)', textIndex, 'TEXT_NAMES.length', TEXT_NAMES.length);
+
+    //The next text name
+    const nextTextName = TEXT_NAMES[nextTextId];
+
+    //The link to the next text
+    const nextTextLink = <Link to={'/texts/' + nextTextName}>{TEXTS[props.lang][nextTextName].title}</Link>
+
     //updates current theme
     const updateTheme = () => {
         props.onThemeChange(TEXTS[props.lang][textName].theme);
@@ -73,6 +87,7 @@ const Text = (props) => {
             <TextBody>
                 {TEXTS[props.lang][textName].content}
             </TextBody>
+            <p>{nextTextLink}</p>
         </React.Fragment>
     );
 };
