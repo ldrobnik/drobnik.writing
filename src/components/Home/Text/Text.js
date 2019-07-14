@@ -5,8 +5,33 @@ import { connect } from 'react-redux';
 import * as actionTypes from '../../../store/actions';
 import { TEXTS, TEXT_NAMES } from '../../../data/constants';
 
-const StyledWrapper = styled.div`
-
+const TextBody = styled.div`
+    font-family: ${props => props.theme.serif};
+    font-size: 1.3em;
+    line-height: 1.3em;
+    
+    @media all and (min-width: ${props => props.theme.extraSmallScr}) {
+      padding: 2em 2em;
+    }
+    
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+      padding: 2em 3em;
+    }
+    
+    @media all and (min-width: ${props => props.theme.mediumScr}) {
+      padding: 2em 20%;
+    }
+    
+    @media all and (min-width: ${props => props.theme.largeScr}) {
+      padding: 2em 25%;
+    }
+    
+    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+      padding: 2em 30%;
+    }
+    
+    
+    padding: 2em 1em;
 `;
 
 
@@ -42,11 +67,13 @@ const Text = (props) => {
     });
 
     return (
-        <StyledWrapper>
+        <React.Fragment>
             <h1>{TEXTS[props.lang][textName].title}</h1>
             <h3>{TEXTS[props.lang][textName].subtitle}</h3>
-            {TEXTS[props.lang][textName].content}
-        </StyledWrapper>
+            <TextBody>
+                {TEXTS[props.lang][textName].content}
+            </TextBody>
+        </React.Fragment>
     );
 };
 

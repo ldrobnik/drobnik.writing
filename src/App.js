@@ -20,10 +20,11 @@ const App = (props) => {
         serif: `'Roboto Slab', serif`,
 
         //breakpoints
-        small: '480px',
-        medium: '768px',
-        large: '991px'
-
+        extraSmallScr: '480px',
+        smallScr: '736px',
+        mediumScr: '980px',
+        largeScr: '1280px',
+        extraLargeScr: '1690px'
     };
 
 
