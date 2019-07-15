@@ -63,9 +63,12 @@ const Text = (props) => {
     //The link to the next text
     const nextTextLink = <Link to={'/texts/' + nextTextName}>{WEBSITE_TEXT.text.nextText[props.lang]}{TEXTS[props.lang][nextTextName].title}</Link>
 
+    //theme to be used - based on the current text or black-and-white if the black-and-white mode is on
+    const themeToUse = props.bwMode ? 'blackAndWhite' : TEXTS[props.lang][textName].theme;
+
     //updates current theme
     const updateTheme = () => {
-        props.onThemeChange(TEXTS[props.lang][textName].theme);
+        props.onThemeChange(themeToUse);
     };
 
     useEffect(() => {
@@ -93,7 +96,8 @@ const Text = (props) => {
 
 const mapStateToProps = state => {
     return {
-        lang: state.language
+        lang: state.language,
+        bwMode: state.blackAndWhite
     };
 };
 
