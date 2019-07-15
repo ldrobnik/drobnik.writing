@@ -541,6 +541,18 @@ export const WEBSITE_TEXT = {
           en: 'Publications',
           pl: 'Publikacje'
         },
+        headlines: {
+          en: {
+              books: 'Books',
+              press: 'Press',
+              collections: 'Collections'
+          },
+            pl: {
+                books: 'Książki',
+                press: 'Prasa',
+                collections: 'Zbiory'
+            }
+        },
         description: {
             en: [
                 'english1',
