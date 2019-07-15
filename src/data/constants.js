@@ -524,25 +524,22 @@ export const WEBSITE_TEXT = {
             ]
         },
         patreon: {
-            en: <div>Please consider supporting me on <a href="https://www.patreon.com/drobnik" target="_blank"
-                                                         rel="noopener noreferrer">Patreon</a>!</div>,
-            pl: <div>Pomyśl, proszę, o&bnsp;wsparciu mnie na <a href="https://www.patreon.com/drobnik" target="_blank"
-                                                                rel="noopener noreferrer">Patreonie</a>!</div>
+            en: <p>Please consider supporting me on <a href="https://www.patreon.com/drobnik" target="_blank"
+                                                         rel="noopener noreferrer">Patreon</a>!</p>,
+            pl: <p>Pomyśl, proszę, o wsparciu mnie na <a href="https://www.patreon.com/drobnik" target="_blank"
+                                                                rel="noopener noreferrer">Patreonie</a>!</p>
         },
         social: [
             {
-                name: 'twitter',
-                onHover: '@drobnik',
+                name: 'twitter: @drobnik',
                 url: 'https://twitter.com/drobnik'
             },
             {
-                name: 'instagram',
-                onHover: '@drobnikwrites',
+                name: 'instagram: @drobnikwrites',
                 url: 'https://www.instagram.com/drobnikwrites/'
             },
             {
-                name: 'facebook',
-                onHover: '@drobnikwrites',
+                name: 'facebook: @drobnikwrites',
                 url: 'https://www.facebook.com/drobnikwrites'
             }
         ]
