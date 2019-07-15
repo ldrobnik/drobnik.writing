@@ -610,3 +610,44 @@ export const WEBSITE_TEXT = {
     }
 
 };
+
+//Content of Instagram links
+
+export const LINKS = [
+    {
+        title: 'Official website',
+        subtitle: 'www.drobnik.com',
+        url: '/'
+    },
+    {
+        title: 'Read “Treasures”',
+        subtitle: 'in Atticus Review',
+        url: 'https://atticusreview.org/treasures/'
+    },
+    {
+        title: 'Read “Spores”',
+        subtitle: 'in X-R-A-Y Literary Magazine',
+        url: '/'
+    },
+    {
+        title: 'Buy Foglifter Vol. 4 Issue 1',
+        subtitle: 'with my piece “Landmines” inside',
+        url: 'https://foglifterjournal.com/shop/'
+    },
+    {
+        title: 'Patreon',
+        subtitle: 'please consider supporting me',
+        url: 'https://www.patreon.com/drobnik'
+    },
+    {
+        title: 'Twitter',
+        subtitle: '@drobnik',
+        url: 'https://twitter.com/drobnik'
+    },
+    {
+        title: 'Facebook',
+        subtitle: '@drobnikwrites',
+        url: 'https://www.facebook.com/drobnikwrites/'
+    }
+];
+
