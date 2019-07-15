@@ -635,6 +635,11 @@ export const LINKS = [
         url: 'https://foglifterjournal.com/shop/'
     },
     {
+        title: 'Buy Sharkpack Annual',
+        subtitle: 'with my piece “8-bit Dreams” inside',
+        url: 'https://shop.trycelery.com/page/5c2f6d549d2284130021165b'
+    },
+    {
         title: 'Patreon',
         subtitle: 'please consider supporting me',
         url: 'https://www.patreon.com/drobnik'
