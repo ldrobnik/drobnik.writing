@@ -504,8 +504,8 @@ const websiteText = {
                 'english2'
             ],
             pl: [
-                'english1',
-                'english2'
+                'polish1',
+                'polish2'
             ]
         },
         patreon: {
@@ -529,7 +529,36 @@ const websiteText = {
                 url: 'https://www.facebook.com/drobnikwrites'
             }
         ]
-
-    }
+    },
+    nocturine: {
+        title: {
+            en: 'Nocturine',
+            pl: 'Nocturine'
+        }
+    },
+    publications: {
+        description: {
+            en: [
+                'english1',
+                'english2'
+            ],
+            pl: [
+                'polish1',
+                'polish2'
+            ]
+        },
+        chooseLanguage: {
+            en: {
+                label: 'Display pieces written in:',
+                english: 'English',
+                polish: 'Polish'
+            },
+            pl: {
+                label: 'Wyświetl teksty napisane po:',
+                english: 'angielsku',
+                polish: 'polsku'
+            }
+        }
+    },
 
 };

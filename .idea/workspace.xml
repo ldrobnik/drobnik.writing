@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Text/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Text/Text.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="513" column="10" lean-forward="true" selection-start-line="513" selection-start-column="10" selection-end-line="513" selection-end-column="10" />
+            <state relative-caret-position="516">
+              <caret line="558" column="31" selection-start-line="558" selection-start-column="31" selection-end-line="558" selection-end-column="31" />
               <folding>
                 <element signature="e#84#134#0" expanded="true" />
               </folding>
@@ -422,12 +420,12 @@
       <workItem from="1563084172670" duration="3797000" />
       <workItem from="1563131592521" duration="87000" />
       <workItem from="1563136155744" duration="6054000" />
-      <workItem from="1563180049926" duration="1592000" />
+      <workItem from="1563180049926" duration="1898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113022000" />
+    <option name="totallyTimeSpent" value="113328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="366" y="0" width="1538" height="1047" extended-state="0" />
@@ -751,8 +749,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="513" column="10" lean-forward="true" selection-start-line="513" selection-start-column="10" selection-end-line="513" selection-end-column="10" />
+        <state relative-caret-position="516">
+          <caret line="558" column="31" selection-start-line="558" selection-start-column="31" selection-end-line="558" selection-end-column="31" />
           <folding>
             <element signature="e#84#134#0" expanded="true" />
           </folding>
