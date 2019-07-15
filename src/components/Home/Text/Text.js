@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
 
 import * as actionTypes from '../../../store/actions';
-import { TEXTS, TEXT_NAMES } from '../../../data/constants';
+import { TEXTS, TEXT_NAMES, WEBSITE_TEXT } from '../../../data/constants';
 
 const TextBody = styled.div`
     font-family: ${props => props.theme.serif};
@@ -62,7 +62,7 @@ const Text = (props) => {
     const nextTextName = TEXT_NAMES[nextTextId];
 
     //The link to the next text
-    const nextTextLink = <Link to={'/texts/' + nextTextName}>{TEXTS[props.lang][nextTextName].title}</Link>
+    const nextTextLink = <Link to={'/texts/' + nextTextName}>{WEBSITE_TEXT.text.nextText[props.lang]}{TEXTS[props.lang][nextTextName].title}</Link>
 
     //updates current theme
     const updateTheme = () => {
@@ -86,7 +86,7 @@ const Text = (props) => {
             <h3>{TEXTS[props.lang][textName].subtitle}</h3>
             <TextBody>
                 {TEXTS[props.lang][textName].content}
-                <p>{nextTextLink}</p>
+                <p><i>{nextTextLink}</i></p>
             </TextBody>
         </React.Fragment>
     );

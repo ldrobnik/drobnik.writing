@@ -496,7 +496,7 @@ export const THEME_COLORS = {
 
 //constant containing text used on the website:
 
-const websiteText = {
+export const WEBSITE_TEXT = {
     intro: {
         body: {
             en: [
@@ -537,6 +537,10 @@ const websiteText = {
         }
     },
     publications: {
+        title: {
+          en: 'Publications',
+          pl: 'Publikacje'
+        },
         description: {
             en: [
                 'english1',
@@ -560,5 +564,17 @@ const websiteText = {
             }
         }
     },
+    read: {
+        title: {
+            en: 'Read',
+            pl: 'Czytaj'
+        }
+    },
+    text: {
+        nextText: {
+            en: 'Up next: ',
+            pl: 'Następny tekst: '
+        }
+    }
 
 };
