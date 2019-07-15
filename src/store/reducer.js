@@ -2,7 +2,8 @@ import * as actionTypes from './actions';
 
 const initialState = {
     language: 'en',
-    theme: 'default'
+    theme: 'default',
+    blackAndWhite: false
 };
 
 const reducer = (state = initialState, action) => {
@@ -16,6 +17,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 theme: action.theme
+            };
+        case actionTypes.SET_BW_MODE:
+            return {
+                ...state,
+                theme: action.blackAndWhite
             };
         default:
             return state;
