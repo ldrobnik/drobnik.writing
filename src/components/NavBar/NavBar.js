@@ -42,7 +42,7 @@ const NavBar = (props) => {
 
     return (
         <StyledWrapper>
-            <Link to='/' className={'textLink'}>Home</Link>&nbsp;
+            <Link to='/' className={'textLink'}>{WEBSITE_TEXT.navbar.title} – {WEBSITE_TEXT.navbar.subtitle[props.lang]}</Link>&nbsp;
             <div onClick={changeLanguage}>{langButton}</div>
             <div onClick={toggleBwMode}>{bwButton}</div>
             {TEXT_NAMES.map((textName) => {
