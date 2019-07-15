@@ -24,7 +24,10 @@ const App = (props) => {
         smallScr: '736px',
         mediumScr: '980px',
         largeScr: '1280px',
-        extraLargeScr: '1690px'
+        extraLargeScr: '1690px',
+
+        //opacity
+        translucent: '0.7'
     };
 
 

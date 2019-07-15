@@ -9,8 +9,8 @@ import { WEBSITE_TEXT } from '../../data/constants';
 import * as actionTypes from '../../store/actions';
 import {TEXTS, TEXT_NAMES} from '../../data/constants';
 
-const StyledWrapper = styled.div`
-
+const Translucent = styled.span`
+  opacity: ${props => props.theme.translucent};
 `;
 
 
@@ -29,9 +29,8 @@ const NavBar = (props) => {
         }
     };
 
-    //content of the button used to toggle the black-and-white mode
-
-    const bwButton = (props.bwMode) ? WEBSITE_TEXT.navbar.colourMode.colour : WEBSITE_TEXT.navbar.colourMode.blackAndWhite;
+    //content of the button used to toggle the black-and-white mode - display translucent if the mode is toggled off
+    const bwButton = (props.bwMode) ? WEBSITE_TEXT.navbar.colourMode : <Translucent>{WEBSITE_TEXT.navbar.colourMode}</Translucent>;
 
     //toggle the black-and-white mode
     const toggleBwMode = () => {
@@ -41,7 +40,7 @@ const NavBar = (props) => {
 
 
     return (
-        <StyledWrapper>
+        <React.Fragment>
             <Link to='/' className={'textLink'}>{WEBSITE_TEXT.navbar.title} – {WEBSITE_TEXT.navbar.subtitle[props.lang]}</Link>&nbsp;
             <div onClick={changeLanguage}>{langButton}</div>
             <div onClick={toggleBwMode}>{bwButton}</div>
@@ -52,7 +51,7 @@ const NavBar = (props) => {
                     </p>
                 )
             })}
-        </StyledWrapper>
+        </React.Fragment>
     );
 };
 

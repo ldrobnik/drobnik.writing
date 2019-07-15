@@ -511,10 +511,7 @@ export const WEBSITE_TEXT = {
             en: 'pl',
             pl: 'en'
         },
-        colourMode: {
-            blackAndWhite: 'b&w',
-            colour: 'c'
-        }
+        colourMode: 'b&w'
     },
     intro: {
         body: {
