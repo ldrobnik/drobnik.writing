@@ -8,6 +8,7 @@ import Nocturine from './Nocturine/Nocturine';
 import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
 import * as actionTypes from "../../../store/actions";
+import {TEXTS} from "../../../data/constants";
 
 
 
@@ -20,9 +21,13 @@ const About = (props) => {
     //part of page title to be displayed depending on the current language
     const fictionWriter = (props.lang === 'en') ? 'fiction writer' : 'prozaik';
 
+
+    //theme to be used - based on the current text or black-and-white if the black-and-white mode is on
+    const themeToUse = props.bwMode ? 'blackAndWhite' : 'default';
+
     //updates current theme
     const updateTheme = () => {
-        props.onThemeChange('default');
+        props.onThemeChange(themeToUse);
     };
 
     useEffect(() => {
@@ -61,7 +66,8 @@ const About = (props) => {
 
 const mapStateToProps = state => {
     return {
-        lang: state.language
+        lang: state.language,
+        bwMode: state.blackAndWhite
     };
 };
 
