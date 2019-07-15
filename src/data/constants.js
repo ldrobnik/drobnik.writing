@@ -493,3 +493,43 @@ export const THEME_COLORS = {
         color2: '#b88636'
     }
 };
+
+//constant containing text used on the website:
+
+const websiteText = {
+    intro: {
+        body: {
+            en: [
+                'english1',
+                'english2'
+            ],
+            pl: [
+                'english1',
+                'english2'
+            ]
+        },
+        patreon: {
+            en: <div>Please consider supporting me on <a href="https://www.patreon.com/drobnik" target="_blank" rel="noopener noreferrer">Patreon</a>!</div>,
+            pl: <div>Pomyśl, proszę, o&bnsp;wsparciu mnie na <a href="https://www.patreon.com/drobnik" target="_blank" rel="noopener noreferrer">Patreonie</a>!</div>
+        },
+        social: [
+            {
+                name: 'twitter',
+                onHover: '@drobnik',
+                url: 'https://twitter.com/drobnik'
+            },
+            {
+                name: 'instagram',
+                onHover: '@drobnikwrites',
+                url: 'https://www.instagram.com/drobnikwrites/'
+            },
+            {
+                name: 'facebook',
+                onHover: '@drobnikwrites',
+                url: 'https://www.facebook.com/drobnikwrites'
+            }
+        ]
+
+    }
+
+};

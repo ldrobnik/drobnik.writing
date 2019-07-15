@@ -86,8 +86,8 @@ const Text = (props) => {
             <h3>{TEXTS[props.lang][textName].subtitle}</h3>
             <TextBody>
                 {TEXTS[props.lang][textName].content}
+                <p>{nextTextLink}</p>
             </TextBody>
-            <p>{nextTextLink}</p>
         </React.Fragment>
     );
 };
