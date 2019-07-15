@@ -578,16 +578,6 @@ export const WEBSITE_TEXT = {
                 collections: 'Zbiory'
             }
         },
-        description: {
-            en: [
-                'english1',
-                'english2'
-            ],
-            pl: [
-                'polish1',
-                'polish2'
-            ]
-        },
         chooseLanguage: {
             en: {
                 label: 'Display pieces written in:',

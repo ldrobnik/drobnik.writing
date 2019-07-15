@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
+import { WEBSITE_TEXT } from '../../../../data/constants';
 
 import PubTile from './PubTile/PubTile';
 
@@ -36,14 +38,15 @@ const Pubs = (props) => {
 
     return (
         <React.Fragment>
-            <h1>Publications</h1>
+            <h1>{WEBSITE_TEXT.publications.title[props.lang]}</h1>
             <label>
+                <p>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</p>
                 <input
                     type='checkbox'
                     checked={en}
                     onChange={setEnHandler}
                 />
-                English
+                {WEBSITE_TEXT.publications.chooseLanguage[props.lang].english}
             </label>
             <label>
                <input
@@ -51,10 +54,10 @@ const Pubs = (props) => {
                 checked={pl}
                 onChange={setPlHandler}
             />
-            Polish
+                {WEBSITE_TEXT.publications.chooseLanguage[props.lang].polish}
             </label>
 
-            <h3>Books</h3>
+            <h3>{WEBSITE_TEXT.publications.headlines[props.lang].books}</h3>
             <TileContainer>
                 {PUBLICATIONS.books.map((book) => {
                     if ((en && (book.language === 'en')) || (pl && (book.language == 'pl'))) {
@@ -71,7 +74,7 @@ const Pubs = (props) => {
                     }
                 })}
             </TileContainer>
-            <h3>Press</h3>
+            <h3>{WEBSITE_TEXT.publications.headlines[props.lang].press}</h3>
             <TileContainer>
                 {PUBLICATIONS.press.map((press) => {
                     if ((en && (press.language === 'en')) || (pl && (press.language == 'pl'))) {
@@ -89,7 +92,7 @@ const Pubs = (props) => {
                     }
                 })}
             </TileContainer>
-            <h3>Collections</h3>
+            <h3>{WEBSITE_TEXT.publications.headlines[props.lang].collections}</h3>
             <TileContainer>
             {PUBLICATIONS.collections.map((collection) => {
                 if ((en && (collection.language === 'en')) || (pl && (collection.language == 'pl'))) {
@@ -110,4 +113,10 @@ const Pubs = (props) => {
     );
 };
 
-export default Pubs;
+const mapStateToProps = state => {
+    return {
+        lang: state.language
+    };
+};
+
+export default connect(mapStateToProps)(Pubs);
