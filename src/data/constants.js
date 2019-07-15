@@ -491,6 +491,10 @@ export const THEME_COLORS = {
     treasures: {
         color1: '#e7b84c',
         color2: '#b88636'
+    },
+    blackAndWhite: {
+        color1: '#fafafa',
+        color2: '#f4f4f4'
     }
 };
 
