@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+import { WEBSITE_TEXT } from '../../../../data/constants';
 const StyledWrapper = styled.div`
 
 `;

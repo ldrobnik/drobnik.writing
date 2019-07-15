@@ -497,6 +497,21 @@ export const THEME_COLORS = {
 //constant containing text used on the website:
 
 export const WEBSITE_TEXT = {
+    navbar: {
+        title: 'Łukasz Drobnik',
+        subtitle: {
+            en: 'fiction writer',
+            pl: 'prozaik'
+        },
+        language: {
+            en: 'pl',
+            pl: 'en'
+        },
+        colourMode: {
+            greyScale: 'b&w',
+            colour: 'c'
+        }
+    },
     intro: {
         body: {
             en: [
@@ -509,8 +524,10 @@ export const WEBSITE_TEXT = {
             ]
         },
         patreon: {
-            en: <div>Please consider supporting me on <a href="https://www.patreon.com/drobnik" target="_blank" rel="noopener noreferrer">Patreon</a>!</div>,
-            pl: <div>Pomyśl, proszę, o&bnsp;wsparciu mnie na <a href="https://www.patreon.com/drobnik" target="_blank" rel="noopener noreferrer">Patreonie</a>!</div>
+            en: <div>Please consider supporting me on <a href="https://www.patreon.com/drobnik" target="_blank"
+                                                         rel="noopener noreferrer">Patreon</a>!</div>,
+            pl: <div>Pomyśl, proszę, o&bnsp;wsparciu mnie na <a href="https://www.patreon.com/drobnik" target="_blank"
+                                                                rel="noopener noreferrer">Patreonie</a>!</div>
         },
         social: [
             {
@@ -538,15 +555,15 @@ export const WEBSITE_TEXT = {
     },
     publications: {
         title: {
-          en: 'Publications',
-          pl: 'Publikacje'
+            en: 'Publications',
+            pl: 'Publikacje'
         },
         headlines: {
-          en: {
-              books: 'Books',
-              press: 'Press',
-              collections: 'Collections'
-          },
+            en: {
+                books: 'Books',
+                press: 'Press',
+                collections: 'Collections'
+            },
             pl: {
                 books: 'Książki',
                 press: 'Prasa',
