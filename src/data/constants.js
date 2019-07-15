@@ -595,6 +595,10 @@ export const WEBSITE_TEXT = {
         title: {
             en: 'Read',
             pl: 'Czytaj'
+        },
+        introduction: {
+            en: 'Here is a handful of my texts in case you wished to read them:',
+            pl: 'Oto kilka moich tekstów. Może zechcesz je przeczytać:'
         }
     },
     text: {
