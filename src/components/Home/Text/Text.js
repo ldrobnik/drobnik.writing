@@ -56,7 +56,6 @@ const Text = (props) => {
     //The next text to be displayed;
     const nextTextId = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
 
-    console.log('TEXT_NAMES.indexOf(textName)', textIndex, 'TEXT_NAMES.length', TEXT_NAMES.length);
 
     //The next text name
     const nextTextName = TEXT_NAMES[nextTextId];

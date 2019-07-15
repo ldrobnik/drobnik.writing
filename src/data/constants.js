@@ -508,7 +508,7 @@ export const WEBSITE_TEXT = {
             pl: 'en'
         },
         colourMode: {
-            greyScale: 'b&w',
+            blackAndWhite: 'b&w',
             colour: 'c'
         }
     },

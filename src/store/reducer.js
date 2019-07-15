@@ -21,7 +21,7 @@ const reducer = (state = initialState, action) => {
         case actionTypes.SET_BW_MODE:
             return {
                 ...state,
-                theme: action.blackAndWhite
+                blackAndWhite: action.blackAndWhite
             };
         default:
             return state;

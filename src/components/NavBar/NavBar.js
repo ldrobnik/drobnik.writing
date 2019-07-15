@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
 
+import { WEBSITE_TEXT } from '../../data/constants';
+
 
 import * as actionTypes from '../../store/actions';
 import {TEXTS, TEXT_NAMES} from '../../data/constants';
@@ -13,7 +15,10 @@ const StyledWrapper = styled.div`
 
 
 const NavBar = (props) => {
-    const langButton = (props.lang === 'en') ? 'PL' : 'EN';
+
+    //content of the button used to change current language
+    const langButton = (props.lang === 'en') ? WEBSITE_TEXT.navbar.language[props.lang] : WEBSITE_TEXT.navbar.language[props.lang];
+
 
     //changes current language
     const changeLanguage = () => {
@@ -24,11 +29,22 @@ const NavBar = (props) => {
         }
     };
 
+    //content of the button used to toggle the black-and-white mode
+
+    const bwButton = (props.bwMode) ? WEBSITE_TEXT.navbar.colourMode.colour : WEBSITE_TEXT.navbar.colourMode.blackAndWhite;
+
+    //toggle the black-and-white mode
+    const toggleBwMode = () => {
+        props.onBwModeChange(!props.bwMode);
+    };
+
+
 
     return (
         <StyledWrapper>
             <Link to='/' className={'textLink'}>Home</Link>&nbsp;
             <div onClick={changeLanguage}>{langButton}</div>
+            <div onClick={toggleBwMode}>{bwButton}</div>
             {TEXT_NAMES.map((textName) => {
                 return (
                     <p key={textName}>
@@ -42,13 +58,15 @@ const NavBar = (props) => {
 
 const mapStateToProps = state => {
     return {
-        lang: state.language
+        lang: state.language,
+        bwMode: state.blackAndWhite
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        onLanguageChange: (newLang) => dispatch({type: actionTypes.SET_LANGUAGE, language: newLang})
+        onLanguageChange: (newLang) => dispatch({type: actionTypes.SET_LANGUAGE, language: newLang}),
+        onBwModeChange: (newMode) => dispatch({type: actionTypes.SET_BW_MODE, blackAndWhite: newMode})
     };
 };
 
