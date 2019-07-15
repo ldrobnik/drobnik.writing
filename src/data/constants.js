@@ -525,9 +525,9 @@ export const WEBSITE_TEXT = {
         },
         patreon: {
             en: <p>Please consider supporting me on <a href="https://www.patreon.com/drobnik" target="_blank"
-                                                         rel="noopener noreferrer">Patreon</a>!</p>,
+                                                       rel="noopener noreferrer">Patreon</a>!</p>,
             pl: <p>Pomyśl, proszę, o wsparciu mnie na <a href="https://www.patreon.com/drobnik" target="_blank"
-                                                                rel="noopener noreferrer">Patreonie</a>!</p>
+                                                         rel="noopener noreferrer">Patreonie</a>!</p>
         },
         social: [
             {
@@ -548,7 +548,18 @@ export const WEBSITE_TEXT = {
         title: {
             en: 'Nocturine',
             pl: 'Nocturine'
+        },
+        body: {
+            en: [
+                'english1',
+                'english2'
+            ],
+            pl: [
+                'polish1',
+                'polish2'
+            ],
         }
+
     },
     publications: {
         title: {
