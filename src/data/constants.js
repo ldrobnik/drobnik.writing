@@ -630,6 +630,11 @@ export const LINKS = [
         url: '/'
     },
     {
+        title: 'Patreon',
+        subtitle: 'please consider supporting me',
+        url: 'https://www.patreon.com/drobnik'
+    },
+    {
         title: 'Buy Foglifter Vol. 4 Issue 1',
         subtitle: 'with my piece “Landmines” inside',
         url: 'https://foglifterjournal.com/shop/'
@@ -638,11 +643,6 @@ export const LINKS = [
         title: 'Buy Sharkpack Annual',
         subtitle: 'with my piece “8-bit Dreams” inside',
         url: 'https://shop.trycelery.com/page/5c2f6d549d2284130021165b'
-    },
-    {
-        title: 'Patreon',
-        subtitle: 'please consider supporting me',
-        url: 'https://www.patreon.com/drobnik'
     },
     {
         title: 'Twitter',
