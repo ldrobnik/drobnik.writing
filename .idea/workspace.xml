@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/data/texts/treasures-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/treasures-pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/texts/landmines-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/landmines-pl.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,18 +45,18 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="92">
-                <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+                <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/texts/landmines-pl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="7" column="474" selection-start-line="7" selection-start-column="474" selection-end-line="7" selection-end-column="474" />
+            <state relative-caret-position="69">
+              <caret line="3" column="211" selection-start-line="3" selection-start-column="211" selection-end-line="3" selection-end-column="211" />
             </state>
           </provider>
         </entry>
@@ -72,17 +73,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
+            <state relative-caret-position="138">
               <caret line="6" column="362" selection-start-line="6" selection-start-column="362" selection-end-line="6" selection-end-column="362" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+            <state relative-caret-position="161">
+              <caret line="7" column="135" lean-forward="true" selection-start-line="7" selection-start-column="135" selection-end-line="7" selection-end-column="135" />
             </state>
           </provider>
         </entry>
@@ -229,10 +230,10 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/data/texts/landmines-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/cetacean-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/moths-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-pl.js" />
+        <option value="$PROJECT_DIR$/src/data/texts/landmines-pl.js" />
       </list>
     </option>
   </component>
@@ -250,7 +251,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,6 +330,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,12 +408,13 @@
       <workItem from="1563436392760" duration="1264000" />
       <workItem from="1563470419244" duration="639000" />
       <workItem from="1563523193733" duration="366000" />
-      <workItem from="1563646734900" duration="1003000" />
+      <workItem from="1563646734900" duration="3210000" />
+      <workItem from="1563777535088" duration="39000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131005000" />
+    <option name="totallyTimeSpent" value="133251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="286" y="6" width="1538" height="1047" extended-state="0" />
@@ -688,6 +690,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="92">
+            <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="186" selection-start-line="9" selection-start-column="186" selection-end-line="9" selection-end-column="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="362" selection-start-line="6" selection-start-column="362" selection-end-line="6" selection-end-column="362" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -712,41 +738,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="92">
-            <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="135" lean-forward="true" selection-start-line="7" selection-start-column="135" selection-end-line="7" selection-end-column="135" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/landmines-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="7" column="474" selection-start-line="7" selection-start-column="474" selection-end-line="7" selection-end-column="474" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="186" selection-start-line="9" selection-start-column="186" selection-end-line="9" selection-end-column="186" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="6" column="362" selection-start-line="6" selection-start-column="362" selection-end-line="6" selection-end-column="362" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+        <state relative-caret-position="69">
+          <caret line="3" column="211" selection-start-line="3" selection-start-column="211" selection-end-line="3" selection-end-column="211" />
         </state>
       </provider>
     </entry>
