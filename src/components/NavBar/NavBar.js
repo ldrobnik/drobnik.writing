@@ -21,13 +21,17 @@ const Toolbar = styled.header`
     background-color: ${props => props.theme.background};
     opacity: ${props => props.theme.background};
     z-index: 90;
-    font-size: 1em;
     font-weight: bold;
-      user-select: none;
+     user-select: none;
+`;
+
+const Options = styled.div`
+  cursor: pointer;
+  font-size: 1em;
 `;
 
 const NavLink = styled.div`
-  cursor: pointer;
+  font-size: 1.3em;
 `;
 
 
@@ -96,14 +100,18 @@ const NavBar = (props) => {
     return (
         <Toolbar>
             <Link to='/' className={'textLink'}><Logo/></Link>
-            <NavLink>
+            <Options>
                 <div onClick={changeLanguage}>{langButton}</div>
+            </Options>
+            <Options>
+                <div onClick={toggleBwMode}>{bwButton}</div>
+            </Options>
+            <NavLink>
+                <Link to={'/texts/' + prevLink}>&lt;</Link>
             </NavLink>
             <NavLink>
-                <div onClick={toggleBwMode}>{bwButton}</div>
+                <Link to={'/texts/' + nextLink}>&gt;</Link>
             </NavLink>
-            <Link to={'/texts/' + prevLink}>&lt;</Link>
-            <Link to={'/texts/' + nextLink}>&gt;</Link>
         </Toolbar>
     );
 };
