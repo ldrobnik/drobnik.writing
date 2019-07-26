@@ -38,8 +38,7 @@ const NavBar = (props) => {
     //The next button link -  by default it is the first available text
     let nextLink;
 
-    //If any text is displayed, change the previous and next button links accordingly,
-    // otherwise point to the last and first texts
+    //If any text is displayed, change the previous and next button links accordingly
     if (currentText !== '') {
         //The index of the currently displayed text
         const textIndex = TEXT_NAMES.indexOf(props.curText);
@@ -57,9 +56,10 @@ const NavBar = (props) => {
         nextLink = TEXT_NAMES[nextIndex];
 
     } else {
-        //By default, let the buttons point to the last and first texts
-        prevLink = TEXT_NAMES.slice(-1)[0];
-        nextLink = TEXT_NAMES[0];
+
+        //If not texts are displayed, add set random links to both buttons
+        prevLink = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
+        nextLink = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
     }
 
     //Content of the button used to change current language
@@ -90,13 +90,6 @@ const NavBar = (props) => {
             <div onClick={toggleBwMode}>{bwButton}</div>
             <Link to={'/texts/' + prevLink}>&lt;</Link>
             <Link to={'/texts/' + nextLink}>&gt;</Link>
-            {TEXT_NAMES.map((textName) => {
-                return (
-                    <p key={textName}>
-                        <Link to={'/texts/' + textName}>{TEXTS[props.lang][textName].title}</Link>
-                    </p>
-                )
-            })}
         </Toolbar>
     );
 };
