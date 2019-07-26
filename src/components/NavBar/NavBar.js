@@ -32,25 +32,6 @@ const Translucent = styled.span`
 
 const NavBar = (props) => {
 
-    //the current url id specifying the text name (if any)
-    const urlId = '';
-
-    //specifies text to be linked to the 'next' button
-    const checkNextText = () => {
-        //default text to be displayed
-        let nextText = 'nocturine';
-
-        //if the current url matches any text, specify the next text
-        for (let i = 0; i < TEXT_NAMES.length; i++) {
-            if (TEXT_NAMES[i] === urlId) {
-
-            }
-        }
-
-        return nextText;
-    };
-
-
     //content of the button used to change current language
     const langButton = (props.lang === 'en') ? WEBSITE_TEXT.navbar.language[props.lang] : WEBSITE_TEXT.navbar.language[props.lang];
 
