@@ -3,11 +3,8 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
 
-import { WEBSITE_TEXT } from '../../data/constants';
-
-
 import * as actionTypes from '../../store/actions';
-import {TEXTS, TEXT_NAMES} from '../../data/constants';
+import { WEBSITE_TEXT, TEXTS, TEXT_NAMES} from '../../data/constants';
 
 const Toolbar = styled.header`
     height: 3em;
@@ -32,11 +29,33 @@ const Translucent = styled.span`
 
 const NavBar = (props) => {
 
-    //content of the button used to change current language
+    //The currently displayed text
+    const currentText = props.curText;
+
+    //The prev button link - by default it is the last available text
+    let prevLink = TEXT_NAMES.slice(-1)[0];
+
+    //The next button link -  by default it is the first available text
+    let nextLink = TEXT_NAMES[0];
+
+    //If any text is displayed, change the previous and next button links accordingly
+    if (currentText !== '') {
+        //The index of the currently displayed text
+        const textIndex = TEXT_NAMES.indexOf(props.curText);
+
+        //Change the prev button link depending on the current text
+        prevLink = (textIndex > 0) ? textIndex - 1 : TEXT_NAMES.length;
+
+        //Change the next button link depending on the current text
+        nextLink = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
+
+    }
+
+    //Content of the button used to change current language
     const langButton = (props.lang === 'en') ? WEBSITE_TEXT.navbar.language[props.lang] : WEBSITE_TEXT.navbar.language[props.lang];
 
 
-    //changes current language
+    //Changes current language
     const changeLanguage = () => {
         if (props.lang === 'en') {
             props.onLanguageChange('pl');

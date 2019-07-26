@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
         color: ${props => props.theme.darkColor};
         background-image: linear-gradient(145deg, ${props => props.theme.color1}, ${props => props.theme.color2});
         min-height: 100vh;
+        padding-top: 3em;
         }
         
      a {

@@ -53,11 +53,6 @@ const Text = (props) => {
 
     const textIndex = TEXT_NAMES.indexOf(textName);
 
-    //updates the currently displayed text
-    const updateText = () => {
-        props.onTextChange(textName);
-    };
-
     //The next text to be displayed;
     const nextTextId = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
 
@@ -67,6 +62,11 @@ const Text = (props) => {
 
     //The link to the next text
     const nextTextLink = <Link to={'/texts/' + nextTextName}>{WEBSITE_TEXT.text.nextText[props.lang]}{TEXTS[props.lang][nextTextName].title}</Link>
+
+    //updates the currently displayed text
+    const updateText = () => {
+        props.onTextChange(textName);
+    };
 
     //theme to be used - based on the current text or black-and-white if the black-and-white mode is on
     const themeToUse = props.bwMode ? 'blackAndWhite' : TEXTS[props.lang][textName].theme;
