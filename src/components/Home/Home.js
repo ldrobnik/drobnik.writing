@@ -19,6 +19,11 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         color: ${props => props.theme.darkColor};
      }
+     
+     ::selection {
+        color: ${props => props.theme.color1};
+        background-color: ${props => props.theme.darkColor};
+     }
 `;
 
 const Home = (props) => {
