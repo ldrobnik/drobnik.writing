@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import websiteLogo from '../../../assets/logo.png';
 
 const WebsiteLogo = styled.div`
-  padding: 2em;
   height: 3em;
     img {
       height: 100%;
