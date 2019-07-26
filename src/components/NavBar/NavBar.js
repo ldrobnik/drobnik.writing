@@ -85,7 +85,7 @@ const NavBar = (props) => {
 
     return (
         <Toolbar>
-            <Link to='/' className={'textLink'}>{WEBSITE_TEXT.navbar.title} – {WEBSITE_TEXT.navbar.subtitle[props.lang]}</Link>&nbsp;
+            <Link to='/' className={'textLink'}>home</Link>&nbsp;
             <div onClick={changeLanguage}>{langButton}</div>
             <div onClick={toggleBwMode}>{bwButton}</div>
             <Link to={'/texts/' + prevLink}>&lt;</Link>

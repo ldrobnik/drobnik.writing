@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { connect } from 'react-redux';
 import { WEBSITE_TEXT } from '../../../../data/constants';
+import {Link} from "react-router-dom";
 const StyledWrapper = styled.div`
 
 `;
@@ -14,6 +15,7 @@ const Intro = (props) => {
 
     return (
         <StyledWrapper>
+            <h1>{WEBSITE_TEXT.intro.title} – {WEBSITE_TEXT.intro.subtitle[props.lang]}</h1>
             {WEBSITE_TEXT.intro.body[props.lang].map((paragraph, k) => {
                 return (
                     <p key={k}>

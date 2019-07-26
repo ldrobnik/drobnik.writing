@@ -514,6 +514,11 @@ export const WEBSITE_TEXT = {
         colourMode: 'b&w'
     },
     intro: {
+        title: 'Łukasz Drobnik',
+        subtitle: {
+            en: 'fiction writer',
+            pl: 'prozaik'
+        },
         body: {
             en: [
                 'english1',
