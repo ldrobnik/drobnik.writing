@@ -53,8 +53,6 @@ const NavBar = (props) => {
         props.onBwModeChange(!props.bwMode);
     };
 
-
-
     return (
         <Toolbar>
             <Link to='/' className={'textLink'}>{WEBSITE_TEXT.navbar.title} – {WEBSITE_TEXT.navbar.subtitle[props.lang]}</Link>&nbsp;

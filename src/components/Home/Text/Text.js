@@ -112,7 +112,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme}),
-        onTextChange: (newText) => dispatch({type: actionTypes.SET_CURRENT_TEXT, theme: newText})
+        onTextChange: (newText) => dispatch({type: actionTypes.SET_CURRENT_TEXT, currentText: newText})
     };
 };
 
