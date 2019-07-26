@@ -30,13 +30,15 @@ const Home = (props) => {
     return (
         <React.Fragment>
             <GlobalStyle/>
-            <Layout>
-                <Switch>
+            <Switch>
+                <Layout>
+
                     <Route path="/" exact component={About}/>
                     <Route path="/texts/:id" component={Text}/>
                     <Route component={About}/>
-                </Switch>
-            </Layout>
+
+                </Layout>
+            </Switch>
         </React.Fragment>
     );
 };

@@ -49,8 +49,10 @@ const Text = (props) => {
         return 'nocturine';
     };
 
+    //Name (ID) of the current text based on the current url
     const textName = checkTextID(props.match.params.id);
 
+    //ID of the text of a given name (ID)
     const textIndex = TEXT_NAMES.indexOf(textName);
 
     //The next text to be displayed;
