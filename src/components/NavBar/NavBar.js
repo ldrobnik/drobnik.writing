@@ -74,7 +74,8 @@ const NavBar = (props) => {
 const mapStateToProps = state => {
     return {
         lang: state.language,
-        bwMode: state.blackAndWhite
+        bwMode: state.blackAndWhite,
+        curText: state.currentText
     };
 };
 

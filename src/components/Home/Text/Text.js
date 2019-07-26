@@ -53,6 +53,11 @@ const Text = (props) => {
 
     const textIndex = TEXT_NAMES.indexOf(textName);
 
+    //updates the currently displayed text
+    const updateText = () => {
+        props.onTextChange(textName);
+    };
+
     //The next text to be displayed;
     const nextTextId = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
 
@@ -80,6 +85,9 @@ const Text = (props) => {
 
         //update the theme depending on the text displayed
         updateTheme();
+
+        //update the currently displayed text
+        updateText();
     });
 
     return (
@@ -103,7 +111,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme})
+        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme}),
+        onTextChange: (newText) => dispatch({type: actionTypes.SET_CURRENT_TEXT, theme: newText})
     };
 };
 

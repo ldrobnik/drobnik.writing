@@ -3,7 +3,8 @@ import * as actionTypes from './actions';
 const initialState = {
     language: 'en',
     theme: 'default',
-    blackAndWhite: false
+    blackAndWhite: false,
+    currentText: ''
 };
 
 const reducer = (state = initialState, action) => {
@@ -22,6 +23,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 blackAndWhite: action.blackAndWhite
+            };
+        case actionTypes.SET_CURRENT_TEXT:
+            return {
+                ...state,
+                currentText: action.currentText
             };
         default:
             return state;
