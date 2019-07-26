@@ -9,6 +9,11 @@ import { WEBSITE_TEXT } from '../../data/constants';
 import * as actionTypes from '../../store/actions';
 import {TEXTS, TEXT_NAMES} from '../../data/constants';
 
+const Toolbar = styled.header`
+    background-color: ${props => props.theme.background};
+    opacity: ${props => props.theme.background};
+`;
+
 const Translucent = styled.span`
   opacity: ${props => props.theme.translucent};
 `;
@@ -40,7 +45,7 @@ const NavBar = (props) => {
 
 
     return (
-        <React.Fragment>
+        <Toolbar>
             <Link to='/' className={'textLink'}>{WEBSITE_TEXT.navbar.title} – {WEBSITE_TEXT.navbar.subtitle[props.lang]}</Link>&nbsp;
             <div onClick={changeLanguage}>{langButton}</div>
             <div onClick={toggleBwMode}>{bwButton}</div>
@@ -51,7 +56,7 @@ const NavBar = (props) => {
                     </p>
                 )
             })}
-        </React.Fragment>
+        </Toolbar>
     );
 };
 
