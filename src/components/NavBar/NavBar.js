@@ -10,8 +10,19 @@ import * as actionTypes from '../../store/actions';
 import {TEXTS, TEXT_NAMES} from '../../data/constants';
 
 const Toolbar = styled.header`
+    height: 3em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    box-sizing: border-box;
     background-color: ${props => props.theme.background};
     opacity: ${props => props.theme.background};
+    z-index: 90;
 `;
 
 const Translucent = styled.span`
