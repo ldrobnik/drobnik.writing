@@ -33,22 +33,33 @@ const NavBar = (props) => {
     const currentText = props.curText;
 
     //The prev button link - by default it is the last available text
-    let prevLink = TEXT_NAMES.slice(-1)[0];
+    let prevLink;
 
     //The next button link -  by default it is the first available text
-    let nextLink = TEXT_NAMES[0];
+    let nextLink;
 
-    //If any text is displayed, change the previous and next button links accordingly
+    //If any text is displayed, change the previous and next button links accordingly,
+    // otherwise point to the last and first texts
     if (currentText !== '') {
         //The index of the currently displayed text
         const textIndex = TEXT_NAMES.indexOf(props.curText);
 
-        //Change the prev button link depending on the current text
-        prevLink = (textIndex > 0) ? textIndex - 1 : TEXT_NAMES.length;
+        //Index of the previous text to be displayed
+        const prevIndex = (textIndex > 0) ? textIndex - 1 : TEXT_NAMES.length - 1;
 
-        //Change the next button link depending on the current text
-        nextLink = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
+        //Update the prev button link accordingly
+        prevLink = TEXT_NAMES[prevIndex];
 
+        //Index of the next text to be displayed
+        const nextIndex = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
+
+        //Update the prev button link accordingly
+        nextLink = TEXT_NAMES[nextIndex];
+
+    } else {
+        //By default, let the buttons point to the last and first texts
+        prevLink = TEXT_NAMES.slice(-1)[0];
+        nextLink = TEXT_NAMES[0];
     }
 
     //Content of the button used to change current language
@@ -77,8 +88,8 @@ const NavBar = (props) => {
             <Link to='/' className={'textLink'}>{WEBSITE_TEXT.navbar.title} – {WEBSITE_TEXT.navbar.subtitle[props.lang]}</Link>&nbsp;
             <div onClick={changeLanguage}>{langButton}</div>
             <div onClick={toggleBwMode}>{bwButton}</div>
-            <Link to={'/texts/'}>&lt;</Link>
-            <Link to={'/texts/'}>&gt;</Link>
+            <Link to={'/texts/' + prevLink}>&lt;</Link>
+            <Link to={'/texts/' + nextLink}>&gt;</Link>
             {TEXT_NAMES.map((textName) => {
                 return (
                     <p key={textName}>
