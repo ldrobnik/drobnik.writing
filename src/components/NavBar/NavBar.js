@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 
 import Logo from './Logo/Logo';
 import * as actionTypes from '../../store/actions';
-import { WEBSITE_TEXT, TEXTS, TEXT_NAMES} from '../../data/constants';
+import {WEBSITE_TEXT, TEXTS, TEXT_NAMES} from '../../data/constants';
 
 const Toolbar = styled.header`
     height: 3em;
@@ -21,7 +21,15 @@ const Toolbar = styled.header`
     background-color: ${props => props.theme.background};
     opacity: ${props => props.theme.background};
     z-index: 90;
+    font-size: 1em;
+    font-weight: bold;
+      user-select: none;
 `;
+
+const NavLink = styled.div`
+  cursor: pointer;
+`;
+
 
 const Translucent = styled.span`
   opacity: ${props => props.theme.translucent};
@@ -77,7 +85,8 @@ const NavBar = (props) => {
     };
 
     //content of the button used to toggle the black-and-white mode - display translucent if the mode is toggled off
-    const bwButton = (props.bwMode) ? WEBSITE_TEXT.navbar.colourMode : <Translucent>{WEBSITE_TEXT.navbar.colourMode}</Translucent>;
+    const bwButton = (props.bwMode) ? WEBSITE_TEXT.navbar.colourMode :
+        <Translucent>{WEBSITE_TEXT.navbar.colourMode}</Translucent>;
 
     //toggle the black-and-white mode
     const toggleBwMode = () => {
@@ -86,9 +95,13 @@ const NavBar = (props) => {
 
     return (
         <Toolbar>
-            <Link to='/' className={'textLink'}><Logo /></Link>&nbsp;
-            <div onClick={changeLanguage}>{langButton}</div>
-            <div onClick={toggleBwMode}>{bwButton}</div>
+            <Link to='/' className={'textLink'}><Logo/></Link>
+            <NavLink>
+                <div onClick={changeLanguage}>{langButton}</div>
+            </NavLink>
+            <NavLink>
+                <div onClick={toggleBwMode}>{bwButton}</div>
+            </NavLink>
             <Link to={'/texts/' + prevLink}>&lt;</Link>
             <Link to={'/texts/' + nextLink}>&gt;</Link>
         </Toolbar>
