@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
 
+import Logo from './Logo/Logo';
 import * as actionTypes from '../../store/actions';
 import { WEBSITE_TEXT, TEXTS, TEXT_NAMES} from '../../data/constants';
 
@@ -85,7 +86,7 @@ const NavBar = (props) => {
 
     return (
         <Toolbar>
-            <Link to='/' className={'textLink'}>home</Link>&nbsp;
+            <Link to='/' className={'textLink'}><Logo /></Link>&nbsp;
             <div onClick={changeLanguage}>{langButton}</div>
             <div onClick={toggleBwMode}>{bwButton}</div>
             <Link to={'/texts/' + prevLink}>&lt;</Link>
