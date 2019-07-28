@@ -16,6 +16,11 @@ const StyledWrapper = styled.div`
 
 `;
 
+const TopAnchor = styled.div`
+  position: absolute;
+  top: 0;
+`;
+
 const About = (props) => {
 
 
@@ -46,6 +51,9 @@ const About = (props) => {
 
     return (
         <StyledWrapper>
+            <TopAnchor>
+                <div id='top'></div>
+            </TopAnchor>
             <section id='intro'>
                 <Intro />
             </section>

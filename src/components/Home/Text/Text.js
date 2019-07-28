@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 import * as actionTypes from '../../../store/actions';
 import { TEXTS, TEXT_NAMES, WEBSITE_TEXT } from '../../../data/constants';
-import About from "../About/About";
+
 
 const TopAnchor = styled.div`
   position: absolute;

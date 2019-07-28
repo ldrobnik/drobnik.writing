@@ -12,6 +12,9 @@ const StyledWrapper = styled.div`
 
 const Read = (props) => {
 
+    //The Back to Top link
+    const backToTop = <AnchorLink href='#top'>{WEBSITE_TEXT.text.backToTop[props.lang]}</AnchorLink>;
+
     return (
         <StyledWrapper>
             <h1>{WEBSITE_TEXT.read.title[props.lang]}</h1>
@@ -28,6 +31,7 @@ const Read = (props) => {
                         </Link>
                         )
             })}
+            <p><i>{backToTop}</i></p>
         </StyledWrapper>
     );
 };

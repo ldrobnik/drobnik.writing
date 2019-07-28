@@ -625,6 +625,10 @@ export const WEBSITE_TEXT = {
         introduction: {
             en: 'Here is a handful of my texts in case you wished to read them:',
             pl: 'Oto kilka moich tekstów. Może zechcesz je przeczytać:'
+        },
+        backToTop: {
+            en: 'Back to Top',
+            pl: 'Wróć do początku'
         }
     },
     text: {
