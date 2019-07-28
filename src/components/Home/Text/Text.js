@@ -119,6 +119,7 @@ const Text = (props) => {
             </Header>
             <TextBody>
                 {TEXTS[props.lang][textName].content}
+                <p><i>{TEXTS[props.lang][textName].notes}</i></p>
                 <p><i>{nextTextLink}</i></p>
             </TextBody>
         </Wrapper>
