@@ -33,17 +33,9 @@ const About = (props) => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${fictionWriter}`;
 
-        //Scroll to top
-        // window.scrollTo(0, 0);
-
         //change theme to a random one
         updateTheme();
     });
-
-    // //Changes the displayed path to '/' in cases non-existent path is entered
-    // useEffect(() => {
-    //     props.history.push('/');
-    // });
 
     return (
         <StyledWrapper>
