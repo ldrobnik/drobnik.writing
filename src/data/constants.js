@@ -25,7 +25,7 @@ export const TEXTS = {
         nocturine: {
             title: 'Nocturine',
             subtitle: 'novella (fragment)',
-            notes: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
+            credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
             description: <div></div>,
             content: NOCTURINE_EN,
             theme: 'nocturine'
@@ -34,7 +34,7 @@ export const TEXTS = {
         cetacean: {
             title: 'Cetacean',
             subtitle: 'flash fiction',
-            notes: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
+            credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
             description: <div></div>,
             content: CETACEAN_EN,
             theme: 'cetacean'
@@ -43,7 +43,7 @@ export const TEXTS = {
         cellulose: {
             title: 'Cellulose',
             subtitle: 'flash fiction',
-            notes: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
+            credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
             description: <div></div>,
             content: CELLULOSE_EN,
             theme: 'cellulose'
@@ -52,7 +52,7 @@ export const TEXTS = {
         moths: {
             title: 'Moths',
             subtitle: 'flash fiction',
-            notes: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Anna De Vaul.',
+            credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Anna De Vaul.',
             description: <div></div>,
             content: MOTHS_EN,
             theme: 'moths'
@@ -61,7 +61,7 @@ export const TEXTS = {
         drones: {
             title: 'Drones',
             subtitle: 'flash fiction',
-            notes: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Robert Harper.',
+            credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Robert Harper.',
             description: <div></div>,
             content: DRONES_EN,
             theme: 'drones'
@@ -70,7 +70,7 @@ export const TEXTS = {
         landmines: {
             title: 'Landmines',
             subtitle: 'flash fiction',
-            notes: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
+            credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
             description: <div></div>,
             content: LANDMINES_EN,
             theme: 'landmines'
@@ -79,7 +79,7 @@ export const TEXTS = {
         treasures: {
             title: 'Treasures',
             subtitle: 'flash fiction',
-            notes: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Michelle Ross.',
+            credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Michelle Ross.',
             description: <div></div>,
             content: TREASURES_EN,
             theme: 'treasures'
@@ -90,7 +90,7 @@ export const TEXTS = {
         nocturine: {
             title: 'Nocturine',
             subtitle: 'minipowieść (fragment)',
-            notes: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
+            credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
             description: <div></div>,
             content: NOCTURINE_PL,
             theme: 'nocturine'
@@ -99,7 +99,7 @@ export const TEXTS = {
         cetacean: {
             title: 'Waleń',
             subtitle: 'flash fiction',
-            notes: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
+            credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
             description: <div></div>,
             content: CETACEAN_PL,
             theme: 'cetacean'
@@ -109,7 +109,7 @@ export const TEXTS = {
         cellulose: {
             title: 'Celuloza',
             subtitle: 'flash fiction',
-            notes: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
+            credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
             description: <div></div>,
             content: CELLULOSE_PL,
             theme: 'cellulose'
@@ -118,7 +118,7 @@ export const TEXTS = {
         moths: {
             title: 'Ćmy',
             subtitle: 'flash fiction',
-            notes: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
+            credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
             description: <div></div>,
             content: MOTHS_PL,
             theme: 'moths'
@@ -127,7 +127,7 @@ export const TEXTS = {
         drones: {
             title: 'Drony',
             subtitle: 'flash fiction',
-            notes: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
+            credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
             description: <div></div>,
             content: DRONES_PL,
             theme: 'drones'
@@ -137,7 +137,7 @@ export const TEXTS = {
         landmines: {
             title: 'Miny',
             subtitle: 'flash fiction',
-            notes: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
+            credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
             description: <div></div>,
             content: LANDMINES_PL,
             theme: 'landmines'
@@ -146,7 +146,7 @@ export const TEXTS = {
         treasures: {
             title: 'Skarby',
             subtitle: 'flash fiction',
-            notes: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
+            credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
             description: <div></div>,
             content: TREASURES_PL,
             theme: 'treasures'

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/Home/Text/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Text/Text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="121" column="56" selection-start-line="121" selection-start-column="56" selection-end-line="121" selection-end-column="56" />
+            <state relative-caret-position="132">
+              <caret line="122" column="44" lean-forward="true" selection-start-line="122" selection-start-column="44" selection-end-line="122" selection-end-column="44" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -63,8 +64,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3450">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+            <state relative-caret-position="276">
+              <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+              <folding>
+                <element signature="e#84#134#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,8 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cellulose</find>
-      <find>Z</find>
       <find>z</find>
       <find />
       <find>w</find>
@@ -129,7 +131,6 @@
       <find>czego b</find>
       <find>scrollTo</find>
       <find>scr</find>
-      <find>window</find>
       <find>^(.+)$</find>
       <find>a</find>
       <find>match.params</find>
@@ -137,6 +138,9 @@
       <find>Math.floor</find>
       <find>'default'</find>
       <find>fragment</find>
+      <find>window</find>
+      <find>notes</find>
+      <find>notes:</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -155,6 +159,7 @@
       <replace>&lt;p&gt;$1&lt;/p&gt;</replace>
       <replace>a&amp;nbsp;</replace>
       <replace>o&amp;nbsp;</replace>
+      <replace>credits:</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\NavBar</dir>
@@ -408,12 +413,12 @@
       <workItem from="1563989941521" duration="6000" />
       <workItem from="1564157186280" duration="2046000" />
       <workItem from="1564297771571" duration="617000" />
-      <workItem from="1564300801788" duration="6203000" />
+      <workItem from="1564300801788" duration="6294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156242000" />
+    <option name="totallyTimeSpent" value="156333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="834" y="0" width="1084" height="1047" extended-state="0" />
@@ -785,15 +790,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3450">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        <state relative-caret-position="276">
+          <caret line="39" column="29" lean-forward="true" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="e#84#134#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="121" column="56" selection-start-line="121" selection-start-column="56" selection-end-line="121" selection-end-column="56" />
+        <state relative-caret-position="132">
+          <caret line="122" column="44" lean-forward="true" selection-start-line="122" selection-start-column="44" selection-end-line="122" selection-end-column="44" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
