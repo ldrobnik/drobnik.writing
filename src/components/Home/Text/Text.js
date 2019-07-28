@@ -6,11 +6,7 @@ import {Link} from 'react-router-dom';
 import * as actionTypes from '../../../store/actions';
 import { TEXTS, TEXT_NAMES, WEBSITE_TEXT } from '../../../data/constants';
 
-const TextBody = styled.div`
-    font-family: ${props => props.theme.serif};
-    font-size: 1.3em;
-    line-height: 1.4em;
-    
+const Wrapper = styled.div`
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
       padding: 2em 3em;
     }
@@ -31,8 +27,26 @@ const TextBody = styled.div`
       padding: 2em 32%;
     }
     
-    
     padding: 2em 1em;
+`;
+
+const TextTitle = styled.div`
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+`;
+
+const TextSubtitle = styled.div`
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+`;
+
+const TextBody = styled.div`
+    font-family: ${props => props.theme.serif};
+    font-size: 1.3em;
+    line-height: 1.4em;
 `;
 
 
@@ -91,14 +105,18 @@ const Text = (props) => {
     });
 
     return (
-        <React.Fragment>
-            <h1>{TEXTS[props.lang][textName].title}</h1>
-            <h3>{TEXTS[props.lang][textName].subtitle}</h3>
+        <Wrapper>
+            <TextTitle>
+                {TEXTS[props.lang][textName].title}
+            </TextTitle>
+            <TextSubtitle>
+                {TEXTS[props.lang][textName].subtitle}
+            </TextSubtitle>
             <TextBody>
                 {TEXTS[props.lang][textName].content}
                 <p><i>{nextTextLink}</i></p>
             </TextBody>
-        </React.Fragment>
+        </Wrapper>
     );
 };
 
