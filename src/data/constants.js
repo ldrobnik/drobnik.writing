@@ -17,7 +17,7 @@ import {TREASURES_EN} from './texts/treasures-en';
 import {TREASURES_PL} from './texts/treasures-pl';
 
 //Names of available texts
-export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'landmines', 'treasures'];
+export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'landmines', 'treasures'];
 
 //Content of pieces displayed in the Text component
 export const TEXTS = {
@@ -504,6 +504,10 @@ export const THEME_COLORS = {
     moths: {
         color1: '#4db3ff',
         color2: '#4289ed'
+    },
+    drones: {
+        color1: '#ff6a7d',
+        color2: '#ee5b7b'
     },
     landmines: {
         color1: '#f4acca',
