@@ -90,8 +90,11 @@ const Text = (props) => {
     //The link to the next text
     const nextTextLink = <Link to={'/texts/' + nextTextName}>{WEBSITE_TEXT.text.nextText[props.lang]}{TEXTS[props.lang][nextTextName].title}</Link>
 
-    //The Back to Top Link
-    const backToTop = <AnchorLink href='#top'>{WEBSITE_TEXT.text.backToTop[props.lang]}</AnchorLink>
+    //The Back to Top link
+    const backToTop = <AnchorLink href='#top'>{WEBSITE_TEXT.text.backToTop[props.lang]}</AnchorLink>;
+
+    //The Home link
+    const home = <Link to={'/'}>{WEBSITE_TEXT.text.home[props.lang]}</Link>;
 
     //updates the currently displayed text
     const updateText = () => {
@@ -133,7 +136,10 @@ const Text = (props) => {
             <TextBody>
                 {TEXTS[props.lang][textName].content}
                 <p><i>{TEXTS[props.lang][textName].credits}</i></p>
-                <p><i>{nextTextLink}</i>&nbsp;|&nbsp;<i>{backToTop}</i>
+                <p>
+                    <i>{nextTextLink}</i>&nbsp;|&nbsp;
+                    <i>{backToTop}</i>&nbsp;|&nbsp;
+                    <i>{home}</i>
                 </p>
             </TextBody>
         </Wrapper>
