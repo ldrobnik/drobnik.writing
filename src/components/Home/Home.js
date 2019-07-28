@@ -1,5 +1,5 @@
-import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+import {Route, Switch, withRouter} from 'react-router-dom';
 import styled, {createGlobalStyle} from 'styled-components';
 import {connect} from 'react-redux';
 
@@ -27,7 +27,18 @@ const GlobalStyle = createGlobalStyle`
      }
 `;
 
+
+
 const Home = (props) => {
+
+    //Scrolls to top initially and if the URL path changes
+    useEffect(() => {
+
+        window.scrollTo(0, 0);
+    },
+        [props.location.pathname]
+    );
+
     return (
         <React.Fragment>
             <GlobalStyle/>
@@ -48,5 +59,5 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps)(Home);
+export default withRouter(connect(mapStateToProps)(Home));
 

@@ -101,7 +101,7 @@ const Text = (props) => {
         document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
 
         //Scroll to top
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
 
         //update the theme depending on the text displayed
         updateTheme();
