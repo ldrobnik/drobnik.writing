@@ -9,10 +9,12 @@ import {MOTHS_EN} from './texts/moths-en';
 import {MOTHS_PL} from './texts/moths-pl';
 import {CELLULOSE_EN} from './texts/cellulose-en';
 import {CELLULOSE_PL} from './texts/cellulose-pl';
-import {TREASURES_EN} from './texts/treasures-en';
-import {TREASURES_PL} from './texts/treasures-pl';
 import {LANDMINES_EN} from './texts/landmines-en';
 import {LANDMINES_PL} from './texts/landmines-pl';
+import {DRONES_EN} from './texts/drones-en';
+import {DRONES_PL} from './texts/drones-pl';
+import {TREASURES_EN} from './texts/treasures-en';
+import {TREASURES_PL} from './texts/treasures-pl';
 
 //Names of available texts
 export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'landmines', 'treasures'];
@@ -57,13 +59,13 @@ export const TEXTS = {
             theme: 'moths'
         },
 
-        treasures: {
-            title: 'Treasures',
+        drones: {
+            title: 'Drones',
             subtitle: 'flash fiction',
             notes: <div></div>,
             description: <div></div>,
-            content: TREASURES_EN,
-            theme: 'treasures'
+            content: DRONES_EN,
+            theme: 'drones'
         },
 
         landmines: {
@@ -73,7 +75,17 @@ export const TEXTS = {
             description: <div></div>,
             content: LANDMINES_EN,
             theme: 'landmines'
+        },
+
+        treasures: {
+            title: 'Treasures',
+            subtitle: 'flash fiction',
+            notes: <div></div>,
+            description: <div></div>,
+            content: TREASURES_EN,
+            theme: 'treasures'
         }
+
     },
     pl: {
         nocturine: {
@@ -113,15 +125,15 @@ export const TEXTS = {
             theme: 'moths'
         },
 
-
-        treasures: {
-            title: 'Skarby',
+        drones: {
+            title: 'Drony',
             subtitle: 'flash fiction',
             notes: <div></div>,
             description: <div></div>,
-            content: TREASURES_PL,
-            theme: 'treasures'
+            content: DRONES_PL,
+            theme: 'drones'
         },
+
 
         landmines: {
             title: 'Miny',
@@ -130,6 +142,15 @@ export const TEXTS = {
             description: <div></div>,
             content: LANDMINES_PL,
             theme: 'landmines'
+        },
+
+        treasures: {
+            title: 'Skarby',
+            subtitle: 'flash fiction',
+            notes: <div></div>,
+            description: <div></div>,
+            content: TREASURES_PL,
+            theme: 'treasures'
         }
     }
 };
