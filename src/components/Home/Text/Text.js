@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 
 import * as actionTypes from '../../../store/actions';
 import { TEXTS, TEXT_NAMES, WEBSITE_TEXT } from '../../../data/constants';
+import About from "../About/About";
 
 const Wrapper = styled.div`
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
@@ -84,6 +85,9 @@ const Text = (props) => {
     //The link to the next text
     const nextTextLink = <Link to={'/texts/' + nextTextName}>{WEBSITE_TEXT.text.nextText[props.lang]}{TEXTS[props.lang][nextTextName].title}</Link>
 
+    //The Back to Top Link
+    const backToTop = <AnchorLink href='#title'>{WEBSITE_TEXT.text.backToTop[props.lang]}</AnchorLink>
+
     //updates the currently displayed text
     const updateText = () => {
         props.onTextChange(textName);
@@ -112,7 +116,9 @@ const Text = (props) => {
         <Wrapper>
             <Header>
                 <TextTitle>
+                    <div id='title'>
                     {TEXTS[props.lang][textName].title}
+                    </div>
                 </TextTitle>
                 <TextSubtitle>
                     {TEXTS[props.lang][textName].subtitle}
@@ -121,7 +127,8 @@ const Text = (props) => {
             <TextBody>
                 {TEXTS[props.lang][textName].content}
                 <p><i>{TEXTS[props.lang][textName].credits}</i></p>
-                <p><i>{nextTextLink}</i></p>
+                <p><i>{nextTextLink}</i>&nbsp;|&nbsp;<i>{backToTop}</i>
+                </p>
             </TextBody>
         </Wrapper>
     );
