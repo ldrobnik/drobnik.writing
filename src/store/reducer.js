@@ -2,7 +2,7 @@ import * as actionTypes from './actions';
 
 const initialState = {
     language: 'en',
-    theme: 'default',
+    theme: 'nocturine',
     blackAndWhite: false,
     currentText: ''
 };

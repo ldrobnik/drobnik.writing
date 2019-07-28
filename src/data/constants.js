@@ -485,10 +485,6 @@ export const PUBLICATIONS = {
 
 //Colours used in themes
 export const THEME_COLORS = {
-    default: {
-        color1: '#ff6a7d',
-        color2: '#ee5b7b'
-    },
     nocturine: {
         color1: '#daafb5',
         color2: '#da849a'
