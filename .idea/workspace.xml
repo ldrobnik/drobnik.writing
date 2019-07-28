@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="" />
+    <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/data/texts/drones-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/drones-pl.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -79,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/texts/drones-pl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state relative-caret-position="115">
+              <caret line="3" column="260" selection-start-line="3" selection-start-column="260" selection-end-line="3" selection-end-column="260" />
             </state>
           </provider>
         </entry>
@@ -96,7 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.url</find>
       <find>pithead</find>
       <find>BookTile</find>
       <find>max-width:</find>
@@ -123,9 +124,10 @@
       <find>scrollTo</find>
       <find>scr</find>
       <find>window</find>
-      <find>fragment</find>
-      <find>match.params</find>
       <find>^(.+)$</find>
+      <find>fragment</find>
+      <find>a</find>
+      <find>match.params</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -142,6 +144,7 @@
       <replace>o&amp;nbsp;</replace>
       <replace>w&amp;nbsp;</replace>
       <replace>&lt;p&gt;$1&lt;/p&gt;</replace>
+      <replace>a&amp;nbsp;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\NavBar</dir>
@@ -208,7 +211,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="657" />
+    <option name="x" value="339" />
     <option name="width" value="1123" />
     <option name="height" value="1047" />
   </component>
@@ -395,22 +398,22 @@
       <workItem from="1563989941521" duration="6000" />
       <workItem from="1564157186280" duration="2046000" />
       <workItem from="1564297771571" duration="617000" />
-      <workItem from="1564300801788" duration="4046000" />
+      <workItem from="1564300801788" duration="4348000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154085000" />
+    <option name="totallyTimeSpent" value="154387000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="657" y="0" width="1123" height="1047" extended-state="0" />
+    <frame x="339" y="0" width="1123" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.22119816" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.22119816" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16216215" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16216215" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -782,8 +785,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/drones-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        <state relative-caret-position="115">
+          <caret line="3" column="260" selection-start-line="3" selection-start-column="260" selection-end-line="3" selection-end-column="260" />
         </state>
       </provider>
     </entry>
