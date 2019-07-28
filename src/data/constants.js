@@ -22,28 +22,28 @@ export const TEXTS = {
     en: {
         nocturine: {
             title: 'Nocturine',
-            subtitle: 'fragment',
+            subtitle: 'novella (fragment)',
+            notes: <div></div>,
             description: <div></div>,
             content: NOCTURINE_EN,
-            footer: '',
             theme: 'nocturine'
         },
 
         cellulose: {
             title: 'Cellulose',
             subtitle: 'flash fiction',
+            notes: <div></div>,
             description: <div></div>,
             content: CELLULOSE_EN,
-            footer: '',
             theme: 'cellulose'
         },
 
         cetacean: {
             title: 'Cetacean',
             subtitle: 'flash fiction',
+            notes: <div></div>,
             description: <div></div>,
             content: CETACEAN_EN,
-            footer: '',
             theme: 'cetacean'
         },
 
@@ -51,46 +51,46 @@ export const TEXTS = {
         moths: {
             title: 'Moths',
             subtitle: 'flash fiction',
+            notes: <div></div>,
             description: <div></div>,
             content: MOTHS_EN,
-            footer: '',
             theme: 'moths'
         },
 
         treasures: {
             title: 'Treasures',
             subtitle: 'flash fiction',
+            notes: <div></div>,
             description: <div></div>,
             content: TREASURES_EN,
-            footer: '',
             theme: 'treasures'
         },
 
         landmines: {
             title: 'Landmines',
             subtitle: 'flash fiction',
+            notes: <div></div>,
             description: <div></div>,
             content: LANDMINES_EN,
-            footer: '',
             theme: 'landmines'
         }
     },
     pl: {
         nocturine: {
             title: 'Nocturine',
-            subtitle: 'fragment',
+            subtitle: 'minipowieść (fragment)',
+            notes: <div></div>,
             description: <div></div>,
             content: NOCTURINE_PL,
-            footer: '',
             theme: 'nocturine'
         },
 
         cetacean: {
             title: 'Waleń',
             subtitle: 'flash fiction',
+            notes: <div></div>,
             description: <div></div>,
             content: CETACEAN_PL,
-            footer: '',
             theme: 'cetacean'
         },
 
@@ -98,18 +98,18 @@ export const TEXTS = {
         cellulose: {
             title: 'Celuloza',
             subtitle: 'flash fiction',
+            notes: <div></div>,
             description: <div></div>,
             content: CELLULOSE_PL,
-            footer: '',
             theme: 'cellulose'
         },
 
         moths: {
             title: 'Ćmy',
             subtitle: 'flash fiction',
+            notes: <div></div>,
             description: <div></div>,
             content: MOTHS_PL,
-            footer: '',
             theme: 'moths'
         },
 
@@ -117,18 +117,18 @@ export const TEXTS = {
         treasures: {
             title: 'Skarby',
             subtitle: 'flash fiction',
+            notes: <div></div>,
             description: <div></div>,
             content: TREASURES_PL,
-            footer: '',
             theme: 'treasures'
         },
 
         landmines: {
             title: 'Miny',
             subtitle: 'flash fiction',
+            notes: <div></div>,
             description: <div></div>,
             content: LANDMINES_PL,
-            footer: '',
             theme: 'landmines'
         }
     }

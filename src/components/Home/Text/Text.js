@@ -30,14 +30,20 @@ const Wrapper = styled.div`
     padding: 2em 1em;
 `;
 
-const TextTitle = styled.div`
+const Header = styled.div`
     text-align: center;
+    
+    @media all and (min-width: ${props => props.theme.mediumScr}) {
+      padding-right: 1em;
+    }
+`;
+
+const TextTitle = styled.div`
     font-size: 5em;
     font-weight: bold;
 `;
 
 const TextSubtitle = styled.div`
-    text-align: center;
     font-size: 2em;
     font-weight: bold;
     font-style: italic;
@@ -106,12 +112,14 @@ const Text = (props) => {
 
     return (
         <Wrapper>
-            <TextTitle>
-                {TEXTS[props.lang][textName].title}
-            </TextTitle>
-            <TextSubtitle>
-                {TEXTS[props.lang][textName].subtitle}
-            </TextSubtitle>
+            <Header>
+                <TextTitle>
+                    {TEXTS[props.lang][textName].title}
+                </TextTitle>
+                <TextSubtitle>
+                    {TEXTS[props.lang][textName].subtitle}
+                </TextSubtitle>
+            </Header>
             <TextBody>
                 {TEXTS[props.lang][textName].content}
                 <p><i>{nextTextLink}</i></p>
