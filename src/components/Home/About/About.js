@@ -11,11 +11,6 @@ import * as actionTypes from "../../../store/actions";
 import {TEXT_NAMES} from '../../../data/constants';
 
 
-
-const StyledWrapper = styled.div`
-
-`;
-
 const TopAnchor = styled.div`
   position: absolute;
   top: 0;
@@ -50,7 +45,7 @@ const About = (props) => {
     });
 
     return (
-        <StyledWrapper>
+        <React.Fragment>
             <TopAnchor>
                 <div id='top'></div>
             </TopAnchor>
@@ -66,7 +61,7 @@ const About = (props) => {
             <section id='read'>
                 <Read />
             </section>
-        </StyledWrapper>
+        </React.Fragment>
     );
 };
 
