@@ -8,6 +8,11 @@ import * as actionTypes from '../../../store/actions';
 import { TEXTS, TEXT_NAMES, WEBSITE_TEXT } from '../../../data/constants';
 import About from "../About/About";
 
+const TopAnchor = styled.div`
+  position: absolute;
+  top: 0;
+`;
+
 const Wrapper = styled.div`
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
       padding: 2em 3em;
@@ -86,7 +91,7 @@ const Text = (props) => {
     const nextTextLink = <Link to={'/texts/' + nextTextName}>{WEBSITE_TEXT.text.nextText[props.lang]}{TEXTS[props.lang][nextTextName].title}</Link>
 
     //The Back to Top Link
-    const backToTop = <AnchorLink href='#title'>{WEBSITE_TEXT.text.backToTop[props.lang]}</AnchorLink>
+    const backToTop = <AnchorLink href='#top'>{WEBSITE_TEXT.text.backToTop[props.lang]}</AnchorLink>
 
     //updates the currently displayed text
     const updateText = () => {
@@ -114,11 +119,12 @@ const Text = (props) => {
 
     return (
         <Wrapper>
+            <TopAnchor>
+                <div id='top'></div>
+            </TopAnchor>
             <Header>
                 <TextTitle>
-                    <div id='title'>
                     {TEXTS[props.lang][textName].title}
-                    </div>
                 </TextTitle>
                 <TextSubtitle>
                     {TEXTS[props.lang][textName].subtitle}
