@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
 

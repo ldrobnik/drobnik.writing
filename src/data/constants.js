@@ -631,6 +631,14 @@ export const WEBSITE_TEXT = {
         nextText: {
             en: 'Up next: ',
             pl: 'Następny tekst: '
+        },
+        backToTop: {
+            en: 'Back to Top',
+            pl: 'Wróć do początku'
+        },
+        home: {
+            en: 'Home',
+            pl: 'Strona główna'
         }
     }
 
