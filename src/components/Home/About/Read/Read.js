@@ -21,7 +21,6 @@ const Read = (props) => {
             <p>{WEBSITE_TEXT.read.introduction[props.lang]}</p>
             {TEXT_NAMES.map((text) => {
                     let textLink = '/texts/' + text;
-                    console.log(text);
                     return (
                         <Link
                             to={textLink}
