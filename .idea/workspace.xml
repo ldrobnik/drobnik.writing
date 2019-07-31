@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Home/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +25,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/About.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="87" column="18" lean-forward="true" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+            <state relative-caret-position="219">
+              <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -40,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="37" selection-end-column="2" />
+              <caret line="15" selection-start-line="15" selection-end-line="37" selection-end-column="2" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -48,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="36" column="48" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="48" />
+            <state relative-caret-position="322">
+              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -75,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1219">
-              <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="138">
+              <caret line="12" selection-start-line="12" selection-end-line="19" selection-end-column="2" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -89,18 +102,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
               <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14214">
-              <caret line="631" column="9" selection-start-line="631" selection-start-column="9" selection-end-line="631" selection-end-column="9" />
-              <folding>
-                <element signature="e#84#134#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -239,11 +240,11 @@
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
         <option value="$PROJECT_DIR$/public/_redirects" />
         <option value="$PROJECT_DIR$/src/data/texts/drones-pl.js" />
-        <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/About.js" />
+        <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
       </list>
     </option>
   </component>
@@ -312,6 +313,15 @@
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="About" type="462c0819:PsiDirectoryNode" />
               <item name="Intro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="About" type="462c0819:PsiDirectoryNode" />
+              <item name="Nocturine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
@@ -465,12 +475,12 @@
       <workItem from="1564300801788" duration="9994000" />
       <workItem from="1564378612003" duration="640000" />
       <workItem from="1564475607987" duration="605000" />
-      <workItem from="1564587171489" duration="6146000" />
+      <workItem from="1564587171489" duration="6971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167424000" />
+    <option name="totallyTimeSpent" value="168249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="834" y="0" width="1084" height="1047" extended-state="0" />
@@ -478,9 +488,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2294455" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.2294455" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16666667" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16666667" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -663,16 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Links/Links.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -816,30 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1219">
-          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="37" selection-end-column="2" />
+          <caret line="15" selection-start-line="15" selection-end-line="37" selection-end-column="2" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -848,8 +828,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/About.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="87" column="18" lean-forward="true" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        <state relative-caret-position="219">
+          <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="12" selection-start-line="12" selection-end-line="19" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>

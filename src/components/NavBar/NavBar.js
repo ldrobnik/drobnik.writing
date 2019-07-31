@@ -31,7 +31,6 @@ const Toolbar = styled.header`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0 2em;
     box-sizing: border-box;
     background-color: ${props => props.theme.background};
     opacity: ${props => props.theme.background};
