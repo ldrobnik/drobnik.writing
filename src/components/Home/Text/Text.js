@@ -48,12 +48,21 @@ const Header = styled.div`
 const TextTitle = styled.div`
     font-size: 5em;
     font-weight: bold;
+    
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      font-size: 15vw;
+    }
 `;
 
 const TextSubtitle = styled.div`
     font-size: 2em;
     font-weight: bold;
     font-style: italic;
+    
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      font-size: 8vw;
+    }
+    
 `;
 
 const TextBody = styled.div`
