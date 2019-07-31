@@ -14,9 +14,9 @@ const Toolbar = styled.header`
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 0 0.5em;
+    padding: 0 2em;
     box-sizing: border-box;
     background-color: ${props => props.theme.background};
     opacity: ${props => props.theme.background};
@@ -25,13 +25,21 @@ const Toolbar = styled.header`
      user-select: none;
 `;
 
+const LogoWrapper = styled.div`
+  position: absolute;
+  top: -4px;
+  left: -2px;
+`;
+
 const Options = styled.div`
   cursor: pointer;
   font-size: 1em;
+  margin-left: 2em;
 `;
 
 const NavLink = styled.div`
   font-size: 1.3em;
+   margin-left: 2em;
 `;
 
 
@@ -99,7 +107,11 @@ const NavBar = (props) => {
 
     return (
         <Toolbar>
-            <Link to='/' className={'textLink'}><Logo/></Link>
+            <LogoWrapper>
+                <Link to='/' className={'textLink'}>
+                    <Logo/>
+                </Link>
+            </LogoWrapper>
             <Options>
                 <div onClick={changeLanguage}>{langButton}</div>
             </Options>
