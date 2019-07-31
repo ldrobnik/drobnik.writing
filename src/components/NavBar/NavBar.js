@@ -1,11 +1,26 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import {connect} from 'react-redux';
 
 import Logo from './Logo/Logo';
 import * as actionTypes from '../../store/actions';
-import {WEBSITE_TEXT, TEXTS, TEXT_NAMES} from '../../data/constants';
+import {WEBSITE_TEXT, TEXT_NAMES} from '../../data/constants';
+
+const fadeEffect = keyframes`
+  0% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0.5;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+  
+`;
 
 const Toolbar = styled.header`
     height: 3em;
@@ -22,13 +37,17 @@ const Toolbar = styled.header`
     opacity: ${props => props.theme.background};
     z-index: 90;
     font-weight: bold;
-     user-select: none;
+    user-select: none;
 `;
 
 const LogoWrapper = styled.div`
   position: absolute;
   top: -4px;
   left: -2px;
+  
+   &:hover {
+    animation: ${fadeEffect} 0.8s ease-in-out infinite;
+  }
 `;
 
 const NavElement = styled.div`
@@ -37,6 +56,10 @@ const NavElement = styled.div`
 
   Link, div {
       padding: 1em;
+  }
+  
+  &:hover {
+    animation: ${fadeEffect} 0.8s ease-in-out infinite;
   }
 `;
 
