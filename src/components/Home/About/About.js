@@ -30,11 +30,11 @@ const Wrapper = styled.div`
     }
     
     @media all and (min-width: ${props => props.theme.largeScr}) {
-      padding: 2em 25%;
+      padding: 2em 22%;
     }
     
     @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-      padding: 2em 32%;
+      padding: 2em 25%;
     }
     
     padding: 2em 1em;
