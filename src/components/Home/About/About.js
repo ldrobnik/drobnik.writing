@@ -16,6 +16,30 @@ const TopAnchor = styled.div`
   top: 0;
 `;
 
+const Wrapper = styled.div`
+    @media all and (min-width: ${props => props.theme.extraSmallScr}) {
+      padding: 2em 3em;
+    }
+    
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+      padding: 2em 5%;
+    }
+    
+    @media all and (min-width: ${props => props.theme.mediumScr}) {
+      padding: 2em 20%;
+    }
+    
+    @media all and (min-width: ${props => props.theme.largeScr}) {
+      padding: 2em 25%;
+    }
+    
+    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+      padding: 2em 32%;
+    }
+    
+    padding: 2em 1em;
+`;
+
 const About = (props) => {
 
 
@@ -45,7 +69,7 @@ const About = (props) => {
     });
 
     return (
-        <React.Fragment>
+        <Wrapper>
             <TopAnchor>
                 <div id='top'></div>
             </TopAnchor>
@@ -61,7 +85,7 @@ const About = (props) => {
             <section id='read'>
                 <Read />
             </section>
-        </React.Fragment>
+        </Wrapper>
     );
 };
 
