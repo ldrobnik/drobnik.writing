@@ -31,15 +31,21 @@ const LogoWrapper = styled.div`
   left: -2px;
 `;
 
-const Options = styled.div`
+const NavElement = styled.div`
   cursor: pointer;
-  font-size: 1em;
-  margin-left: 2em;
+  margin-left: 1em;
+
+  Link, div {
+      padding: 1em;
+  }
+`;
+
+const OptionButton = styled.span`
+    font-size: 1em;
 `;
 
 const NavLink = styled.div`
   font-size: 1.3em;
-   margin-left: 2em;
 `;
 
 
@@ -112,18 +118,26 @@ const NavBar = (props) => {
                     <Logo/>
                 </Link>
             </LogoWrapper>
-            <Options>
-                <div onClick={changeLanguage}>{langButton}</div>
-            </Options>
-            <Options>
-                <div onClick={toggleBwMode}>{bwButton}</div>
-            </Options>
-            <NavLink>
-                <Link to={'/texts/' + prevLink}>&lt;</Link>
-            </NavLink>
-            <NavLink>
-                <Link to={'/texts/' + nextLink}>&gt;</Link>
-            </NavLink>
+            <NavElement>
+                <OptionButton>
+                    <div onClick={changeLanguage}>{langButton}</div>
+                </OptionButton>
+            </NavElement>
+            <NavElement>
+                <OptionButton>
+                    <div onClick={toggleBwMode}>{bwButton}</div>
+                </OptionButton>
+            </NavElement>
+            <NavElement>
+                <NavLink>
+                    <Link to={'/texts/' + prevLink}>&lt;</Link>
+                </NavLink>
+            </NavElement>
+            <NavElement>
+                <NavLink>
+                    <Link to={'/texts/' + nextLink}>&gt;</Link>
+                </NavLink>
+            </NavElement>
         </Toolbar>
     );
 };
