@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
 
-
 import Intro from './Intro/Intro';
 import Nocturine from './Nocturine/Nocturine';
 import Pubs from './Pubs/Pubs';

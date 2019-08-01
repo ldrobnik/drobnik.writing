@@ -11,6 +11,7 @@ const Tile = styled.div`
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    overflow: hidden;
     
     h4 {
     text-transform: uppercase;
@@ -20,6 +21,13 @@ const Tile = styled.div`
 const TileWrapper = styled.div`
   display: table;
   margin: 5px;
+`;
+
+const Capital = styled.div`
+  font-family: ${props => props.theme.serif};
+  font-style: italic;
+  opacity: 0.5;
+  position: absolute;
 `;
 
 
@@ -49,6 +57,9 @@ const PubTile = (props) => {
     //text to be displayed if the issue number/name is available
     const issue = (props.issue !== undefined) ? <p><i>{props.issue}</i></p> : <div></div>;
 
+    //the first letter of a title to be displayed in the tile
+    const capital = props.title[0];
+
     //info to be include in the tile (different when cursor is over the element)
     const tileDescription = !mouseEnter ?
         <React.Fragment>
@@ -69,6 +80,9 @@ const PubTile = (props) => {
                 onMouseLeave={mouseLeaveHandler}
             >
                 {tileDescription}
+                <Capital>
+                    {capital}
+                </Capital>
             </Tile>
         </TileWrapper>;
 
