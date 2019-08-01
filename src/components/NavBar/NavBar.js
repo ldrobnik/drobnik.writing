@@ -29,9 +29,11 @@ const LogoWrapper = styled.div`
   top: -4px;
   left: -2px;
   
-   &:hover {
-    animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
-  }
+   @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
+             }
+        }
 `;
 
 const NavElement = styled.div`
@@ -42,9 +44,11 @@ const NavElement = styled.div`
       padding: 1em;
   }
   
-  &:hover {
-    animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
-  }
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
+             }
+        }
 `;
 
 const OptionButton = styled.span`

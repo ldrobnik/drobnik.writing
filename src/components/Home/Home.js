@@ -21,9 +21,13 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         color: ${props => props.theme.darkColor};
         
-            &:hover {
-              animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
-            }
+        
+        @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
+             }
+        }
+            
         }
      
      
