@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const TREASURES_EN = <div>
-    <p><span className="vostok">S</span>he calls us her little treasures. Her hair smells of the bonfire. We watch the star-studded sky with our sharp-sighted eyes, touch the cool grass — just my little brother L and I, that is. K, the beautiful accident, won’t happen for many years.</p>
+    <p>She calls us her little treasures. Her hair smells of the bonfire. We watch the star-studded sky with our sharp-sighted eyes, touch the cool grass — just my little brother L and I, that is. K, the beautiful accident, won’t happen for many years.</p>
     <p>Dad, his black moustache even blacker in the dark, takes a stick to retrieve another potato from the cinders. Mum helps us remove the coal-tasting crust to reveal the fluffy interior.</p>
     <p>From a pile of old planks, through the deafening chirping of crickets filling the garden, comes the squeal of rats. They’re dying from poi—</p>
     <p> </p>

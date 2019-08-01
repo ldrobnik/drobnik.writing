@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const TREASURES_PL = <div>
-    <p><span className="vostok">M</span>ówi o&nbsp;nas „moje skarby”. Jej włosy pachną ogniskiem. Ostrym jak brzytwa wzrokiem mierzymy rozgwieżdżone niebo, dotykamy chłodnej trawy — na razie tylko ja i&nbsp;L, mój młodszy brat. K — ów cudny wypadek — nie przytrafi się przez lata.</p>
+    <p>Mówi o&nbsp;nas „moje skarby”. Jej włosy pachną ogniskiem. Ostrym jak brzytwa wzrokiem mierzymy rozgwieżdżone niebo, dotykamy chłodnej trawy — na razie tylko ja i&nbsp;L, mój młodszy brat. K — ów cudny wypadek — nie przytrafi się przez lata.</p>
     <p>Tata, z&nbsp;czarnym wąsem jeszcze czarniejszym w&nbsp;tym mroku, sięga po patyk i&nbsp;wygrzebuje z&nbsp;popiołu kolejnego ziemniaka. Mama pomaga nam zdjąć smakującą węglem skórkę, by odsłonić puszyste wnętrze.</p>
     <p>Ze sterty zmurszałych desek, przez ogłuszające cykanie świerszczy, które wypełnia podwórko, dobiega pisk szczurów. Trucizna przesącza ich kre—</p>
     <p> </p>

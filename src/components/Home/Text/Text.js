@@ -129,6 +129,7 @@ const Text = (props) => {
         updateText();
     });
 
+    console.log(TEXTS[props.lang][textName].content);
 
     return (
         <Wrapper>
@@ -146,7 +147,7 @@ const Text = (props) => {
             <TextBody>
                 {TEXTS[props.lang][textName].content}
                 <p><i>{TEXTS[props.lang][textName].credits}</i></p>
-                <p>{TEXTS[props.lang][textName].description}</p>
+                {TEXTS[props.lang][textName].description}
                 <p>
                     <i>{nextTextLink}</i>&nbsp;|&nbsp;
                     <i>{backToTop}</i>&nbsp;|&nbsp;
