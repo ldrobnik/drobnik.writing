@@ -1,5 +1,12 @@
 import React from 'react';
 import {keyframes} from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faTwitterSquare,
+    faFacebookSquare,
+    faInstagram,
+    faPatreon
+} from '@fortawesome/free-brands-svg-icons';
 
 //constants containing the content of individual pieces
 import {NOCTURINE_EN} from './texts/nocturine-en';
@@ -558,7 +565,7 @@ export const WEBSITE_TEXT = {
         },
         social: [
             {
-                name: 'twitter: @drobnik',
+                name: <div><FontAwesomeIcon icon={faTwitterSquare} /> @drobnik</div>,
                 url: 'https://twitter.com/drobnik'
             },
             {
