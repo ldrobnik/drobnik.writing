@@ -129,6 +129,7 @@ const Text = (props) => {
         updateText();
     });
 
+
     return (
         <Wrapper>
             <TopAnchor>
