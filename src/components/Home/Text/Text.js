@@ -145,7 +145,7 @@ const Text = (props) => {
             <TextBody>
                 {TEXTS[props.lang][textName].content}
                 <p><i>{TEXTS[props.lang][textName].credits}</i></p>
-                <p><i>{TEXTS[props.lang][textName].description}</i></p>
+                <p>{TEXTS[props.lang][textName].description}</p>
                 <p>
                     <i>{nextTextLink}</i>&nbsp;|&nbsp;
                     <i>{backToTop}</i>&nbsp;|&nbsp;
