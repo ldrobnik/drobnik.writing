@@ -3,14 +3,20 @@ import styled from 'styled-components';
 import {PUBLICATIONS} from "../../../../../data/constants";
 import PubTile from "./PubTile/PubTile";
 
-const StyledWrapper = styled.div`
-
+const TileContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1em 2em;
+  width: 100%;
+  cursor: pointer;
 `;
 
 const PubList = (props) => {
 
     return (
-        <StyledWrapper>
+        <TileContainer>
             {PUBLICATIONS[props.type].map((pub) => {
                 if ((props.en && (pub.language === 'en')) || (props.pl && (pub.language == 'pl'))) {
                     return (
@@ -26,7 +32,7 @@ const PubList = (props) => {
                     )
                 }
             })}
-        </StyledWrapper>
+        </TileContainer>
     );
 };
 
