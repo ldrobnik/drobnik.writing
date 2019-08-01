@@ -4,9 +4,7 @@ import { connect } from 'react-redux';
 import { WEBSITE_TEXT } from '../../../../data/constants';
 
 import PubList from './PubList/PubList';
-import PubTile from './PubList/PubTile/PubTile';
 
-import { PUBLICATIONS } from '../../../../data/constants';
 
 const Pubs = (props) => {
 
