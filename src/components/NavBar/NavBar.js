@@ -40,9 +40,7 @@ const NavElement = styled.div`
   cursor: pointer;
   margin-left: 1em;
 
-  Link, div {
-      padding: 1em;
-  }
+
   
   @media all and (min-width: ${props => props.theme.smallScr}) {
              &:hover {
@@ -53,10 +51,19 @@ const NavElement = styled.div`
 
 const OptionButton = styled.span`
     font-size: 1em;
+    div {
+      padding: 1em;
+      display: block;
+    }
 `;
 
 const NavLink = styled.div`
   font-size: 1.3em;
+      a {
+    padding: 1em;
+    display: block;
+  }
+
 `;
 
 
