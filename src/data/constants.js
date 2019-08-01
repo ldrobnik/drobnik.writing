@@ -43,7 +43,7 @@ export const TEXTS = {
             title: 'Cetacean',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <div></div>,
+            description: <div>The piece was originally published in <a href="https://www.quarterlywest.com/issue-94/cetacean" target="_blank" rel="noopener noreferrer"><i>Quarterly West</i> Issue 94</a>. Its Polish translation was featured in <a href="https://afront.org.pl/" target="_blank" rel="noopener noreferrer"><i>Afront</i> Issue 2(5)/2018</a>.</div>,
             content: CETACEAN_EN,
             theme: 'cetacean'
         },
@@ -108,7 +108,7 @@ export const TEXTS = {
             title: 'Waleń',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <div></div>,
+            description:<div>Tekst ukazał się pierwotnie po angielsku w <a href="https://www.quarterlywest.com/issue-94/cetacean" target="_blank" rel="noopener noreferrer">94. numerze <i>Quarterly West</i></a>. Polski przekład zamieszczono w <a href="https://afront.org.pl/" target="_blank" rel="noopener noreferrer"><i>Afroncie</i> (numer 2(5)/2018)</a>.</div>,
             content: CETACEAN_PL,
             theme: 'cetacean'
         },
