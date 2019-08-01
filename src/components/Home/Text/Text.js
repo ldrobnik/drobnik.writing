@@ -14,6 +14,7 @@ const TopAnchor = styled.div`
 `;
 
 const Wrapper = styled.div`
+    position: relative;
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
       padding: 2em 3em;
     }
@@ -64,6 +65,19 @@ const TextSubtitle = styled.div`
     }
     
 `;
+
+const Capital = styled.div`
+  font-family: ${props => props.theme.cursive};
+  font-size: 12em;
+  text-transform: uppercase;
+  //font-style: italic;
+  opacity: ${props => props.theme.transparent};
+  position: absolute;
+  top: 0;
+  left: 0;
+  //transform: translate(-50%, -50%);
+`;
+
 
 const TextBody = styled.div`
     font-family: ${props => props.theme.serif};
@@ -145,6 +159,9 @@ const Text = (props) => {
                 </TextSubtitle>
             </Header>
             <TextBody>
+                <Capital>
+                    {TEXTS[props.lang][textName].firstLetter}
+                </Capital>
                 {TEXTS[props.lang][textName].content}
                 <p><i>{TEXTS[props.lang][textName].credits}</i></p>
                 {TEXTS[props.lang][textName].description}
