@@ -202,7 +202,7 @@ export const PUBLICATIONS = {
             title: 'Atticus Review',
             issue: 'May 2019',
             year: '2019',
-            url: 'https://atticusreview.org/',
+            url: 'https://atticusreview.org/treasures/',
             descriptionPl: 'Flash fiction „Treasures”',
             descriptionEn: 'Flash fiction “Treasures”',
             language: 'en',
