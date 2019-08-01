@@ -27,7 +27,10 @@ const App = (props) => {
         extraLargeScr: '1690px',
 
         //opacity
-        translucent: '0.7'
+        translucent: '0.7',
+
+        //animations
+        hoverAnimation: '0.8s ease-in-out infinite'
     };
 
 

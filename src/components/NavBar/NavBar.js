@@ -30,7 +30,7 @@ const LogoWrapper = styled.div`
   left: -2px;
   
    &:hover {
-    animation: ${HOVER_KEYFRAMES} 0.8s ease-in-out infinite;
+    animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
   }
 `;
 
@@ -43,7 +43,7 @@ const NavElement = styled.div`
   }
   
   &:hover {
-    animation: ${HOVER_KEYFRAMES} 0.8s ease-in-out infinite;
+    animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
   }
 `;
 
