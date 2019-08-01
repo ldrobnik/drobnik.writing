@@ -18,6 +18,7 @@ const App = (props) => {
         //fonts
         sansSerif: `'Maven Pro', sans-serif`,
         serif: `'Roboto Slab', serif`,
+        cursive: `'Pacifico', cursive`,
 
         //breakpoints
         extraSmallScr: '480px',

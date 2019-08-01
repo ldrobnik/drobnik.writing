@@ -25,9 +25,11 @@ const TileWrapper = styled.div`
 `;
 
 const Capital = styled.div`
-  font-family: ${props => props.theme.serif};
-  font-style: italic;
-  opacity: 0.5;
+  font-family: ${props => props.theme.cursive};
+  font-size: 24em;
+  text-transform: uppercase;
+  //font-style: italic;
+  opacity: 0.1;
   position: absolute;
   top: 50%;
   left: 50%;
