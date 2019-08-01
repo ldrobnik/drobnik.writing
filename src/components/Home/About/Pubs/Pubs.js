@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { WEBSITE_TEXT } from '../../../../data/constants';
 
-import PubTile from './PubTile/PubTile';
+import PubList from './PubList/PubList';
+import PubTile from './PubList/PubTile/PubTile';
 
 import { PUBLICATIONS } from '../../../../data/constants';
 
@@ -60,6 +61,13 @@ const Pubs = (props) => {
             </label>
 
             <h3>{WEBSITE_TEXT.publications.headlines[props.lang].books}</h3>
+
+            <TileContainer>
+                <PubList
+                    en={en}
+                    pl={pl}
+                    type="books"/>
+            </TileContainer>
             <TileContainer>
                 {PUBLICATIONS.books.map((book) => {
                     if ((en && (book.language === 'en')) || (pl && (book.language == 'pl'))) {

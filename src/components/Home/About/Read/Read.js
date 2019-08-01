@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { connect } from 'react-redux';
 import {PUBLICATIONS, WEBSITE_TEXT, TEXT_NAMES, TEXTS} from '../../../../data/constants';
-import PubTile from "../Pubs/PubTile/PubTile";
+import PubTile from "../Pubs/PubList/PubTile/PubTile";
 
 const StyledWrapper = styled.div`
 
