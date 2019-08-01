@@ -5,22 +5,7 @@ import {connect} from 'react-redux';
 
 import Logo from './Logo/Logo';
 import * as actionTypes from '../../store/actions';
-import {WEBSITE_TEXT, TEXT_NAMES} from '../../data/constants';
-
-const fadeEffect = keyframes`
-  0% {
-    opacity: 1;
-  }
-  
-  50% {
-    opacity: 0.5;
-  }
-  
-  100% {
-    opacity: 1;
-  }
-  
-`;
+import {WEBSITE_TEXT, TEXT_NAMES, HOVER_KEYFRAMES} from '../../data/constants';
 
 const Toolbar = styled.header`
     height: 3em;
@@ -45,7 +30,7 @@ const LogoWrapper = styled.div`
   left: -2px;
   
    &:hover {
-    animation: ${fadeEffect} 0.8s ease-in-out infinite;
+    animation: ${HOVER_KEYFRAMES} 0.8s ease-in-out infinite;
   }
 `;
 
@@ -58,7 +43,7 @@ const NavElement = styled.div`
   }
   
   &:hover {
-    animation: ${fadeEffect} 0.8s ease-in-out infinite;
+    animation: ${HOVER_KEYFRAMES} 0.8s ease-in-out infinite;
   }
 `;
 

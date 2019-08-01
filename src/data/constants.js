@@ -1,4 +1,5 @@
 import React from 'react';
+import {keyframes} from 'styled-components';
 
 //constants containing the content of individual pieces
 import {NOCTURINE_EN} from './texts/nocturine-en';
@@ -693,3 +694,18 @@ export const LINKS = [
     }
 ];
 
+//Keyframes of the animation used for hovering over links
+
+export const HOVER_KEYFRAMES = keyframes`
+  0% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0.5;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+`;
