@@ -563,11 +563,11 @@ export const WEBSITE_TEXT = {
         },
         social: [
             {
-                name: <div><FontAwesomeIcon icon={faTwitterSquare} /> @drobnik</div>,
+                name: <div><FontAwesomeIcon icon={faTwitterSquare} /> @drobnik |</div>,
                 url: 'https://twitter.com/drobnik'
             },
             {
-                name: <div><FontAwesomeIcon icon={faInstagram} /> @drobnikwrites</div>,
+                name: <div><FontAwesomeIcon icon={faInstagram} /> @drobnikwrites |</div>,
                 url: 'https://www.instagram.com/drobnikwrites/'
             },
             {

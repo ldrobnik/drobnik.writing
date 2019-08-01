@@ -38,6 +38,16 @@ const AuthorsPhoto = styled.div`
     }
 `;
 
+const SocialLinks = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    
+    div {
+      padding-right: 8px;
+    }
+
+`;
+
 const Intro = (props) => {
 
     //separator to be used for social media links
@@ -61,14 +71,16 @@ const Intro = (props) => {
                 }
             )}
             <p>
-                {WEBSITE_TEXT.intro.social.map((link, k) => {
-                        //don't display the separator after the last link
-                        separator = (k < (WEBSITE_TEXT.intro.social.length - 1)) ? ' | ' : '';
-                        return (
-                            <a key={k} href={link.url} target="_blank" rel="noopener noreferrer">{link.name}{separator}</a>
-                        )
-                    }
-                )}
+                <SocialLinks>
+                    {WEBSITE_TEXT.intro.social.map((link, k) => {
+                            //don't display the separator after the last link
+                            return (
+                                <a key={k} href={link.url} target="_blank"
+                                   rel="noopener noreferrer">{link.name}</a>
+                            )
+                        }
+                    )}
+                </SocialLinks>
             </p>
             {WEBSITE_TEXT.intro.patreon[props.lang]}
             <p>Consectetur adipisicing elit. Architecto dignissimos ducimus est nesciunt quas vero. Aliquid amet

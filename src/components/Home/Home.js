@@ -6,6 +6,7 @@ import {connect} from 'react-redux';
 import Layout from '../Layout/Layout';
 import About from './About/About';
 import Text from './Text/Text';
+import {HOVER_KEYFRAMES} from "../../data/constants";
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -19,7 +20,12 @@ const GlobalStyle = createGlobalStyle`
      a {
         text-decoration: none;
         color: ${props => props.theme.darkColor};
-     }
+        
+            &:hover {
+              animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
+            }
+        }
+     
      
      ::selection {
         color: ${props => props.theme.color1};
@@ -28,14 +34,13 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 
-
 const Home = (props) => {
 
     //Scrolls to top initially and if the URL path changes
     useEffect(() => {
 
-        window.scrollTo(0, 0);
-    },
+            window.scrollTo(0, 0);
+        },
         [props.location.pathname]
     );
 
