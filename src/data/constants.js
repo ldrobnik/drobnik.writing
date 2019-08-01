@@ -558,10 +558,8 @@ export const WEBSITE_TEXT = {
             ]
         },
         patreon: {
-            en: <p>Please consider supporting me on <a href="https://www.patreon.com/drobnik" target="_blank"
-                                                       rel="noopener noreferrer">Patreon</a>!</p>,
-            pl: <p>Pomyśl, proszę, o wsparciu mnie na <a href="https://www.patreon.com/drobnik" target="_blank"
-                                                         rel="noopener noreferrer">Patreonie</a>!</p>
+            en: <a href="https://www.patreon.com/drobnik" target="_blank" rel="noopener noreferrer">Please consider becoming my&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atron!</a>,
+            pl: <a href="https://www.patreon.com/drobnik" target="_blank" rel="noopener noreferrer">Rozważ, proszę, zostanie moim&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atronem!</a>
         },
         social: [
             {
@@ -569,11 +567,11 @@ export const WEBSITE_TEXT = {
                 url: 'https://twitter.com/drobnik'
             },
             {
-                name: 'instagram: @drobnikwrites',
+                name: <div><FontAwesomeIcon icon={faInstagram} /> @drobnikwrites</div>,
                 url: 'https://www.instagram.com/drobnikwrites/'
             },
             {
-                name: 'facebook: @drobnikwrites',
+                name: <div><FontAwesomeIcon icon={faFacebookSquare} /> @drobnikwrites</div>,
                 url: 'https://www.facebook.com/drobnikwrites'
             }
         ]
