@@ -71,6 +71,7 @@ const Pubs = (props) => {
                                 descriptionPl={book.descriptionPl}
                                 descriptionEn={book.descriptionEn}
                                 language={book.language}
+                                pieceTitle={book.pieceTitle}
                                 key={book.title}/>
                         )
                     }
@@ -89,6 +90,7 @@ const Pubs = (props) => {
                                 descriptionPl={press.descriptionPl}
                                 descriptionEn={press.descriptionEn}
                                 language={press.language}
+                                pieceTitle={press.pieceTitle}
                                 key={press.title + press.issue}/>
                         )
                     }
@@ -106,6 +108,7 @@ const Pubs = (props) => {
                             descriptionPl={collection.descriptionPl}
                             descriptionEn={collection.descriptionEn}
                             language={collection.language}
+                            pieceTitle={collection.pieceTitle}
                             key={collection.title}/>
                     )
                 }

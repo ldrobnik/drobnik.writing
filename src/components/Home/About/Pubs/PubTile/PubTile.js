@@ -64,7 +64,7 @@ const PubTile = (props) => {
     const issue = (props.issue !== undefined) ? <p><i>{props.issue}</i></p> : <div></div>;
 
     //the first letter of a title to be displayed in the tile
-    const capital = props.title[0];
+    const capital = props.pieceTitle[0];
 
     //info to be include in the tile (different when cursor is over the element)
     const tileDescription = !mouseEnter ?
