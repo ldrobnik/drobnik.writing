@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 
 const Tile = styled.div`
     background-color: ${props => props.theme.background};
+    position: relative;
     height: 12em;
     width: 15em;
     padding: 0 0.5em;
@@ -28,6 +29,9 @@ const Capital = styled.div`
   font-style: italic;
   opacity: 0.5;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 
