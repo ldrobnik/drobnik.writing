@@ -61,7 +61,7 @@ export const TEXTS = {
             title: 'Moths',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Anna De Vaul.',
-            description: <div></div>,
+            description: <div>The piece was originally published in <a href="http://www.gatehousepress.com/lighthouse/" target="_blank" rel="noopener noreferrer"><i>Lighthouse</i> Issue 10</a>. Its Polish translation was featured in <a href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank" rel="noopener noreferrer"><i>Fabularie</i> (incidentally, also Issue 10)</a>.</div>,
             content: MOTHS_EN,
             theme: 'moths'
         },
@@ -70,7 +70,7 @@ export const TEXTS = {
             title: 'Drones',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Robert Harper.',
-            description: <div></div>,
+            description: <div>The piece was originally published in <a href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/" target="_blank" rel="noopener noreferrer"><i>Bare Fiction</i> Issue 10</a>. Its Polish translation was featured in  <a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank" rel="noopener noreferrer"><i>Helikopter</i> Issue 3/2018</a>.</div>,
             content: DRONES_EN,
             theme: 'drones'
         },
@@ -79,7 +79,7 @@ export const TEXTS = {
             title: 'Landmines',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <div></div>,
+            description: <div>The piece published in <a href="https://foglifterjournal.com/" target="_blank" rel="noopener noreferrer"><i>Foglifter</i> Volume 4 Issue 1</a>.</div>,
             content: LANDMINES_EN,
             theme: 'landmines'
         },
@@ -88,7 +88,7 @@ export const TEXTS = {
             title: 'Treasures',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Michelle Ross.',
-            description: <div></div>,
+            description: <div>The piece was published in <a href="https://atticusreview.org/treasures/" target="_blank" rel="noopener noreferrer">May 2019 in <i>Atticus Review</i></a>.</div>,
             content: TREASURES_EN,
             theme: 'treasures'
         }
@@ -127,7 +127,7 @@ export const TEXTS = {
             title: 'Ćmy',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <div></div>,
+            description: <div>Tekst ukazał się pierwotnie po angielsku w <a href="http://www.gatehousepress.com/lighthouse/" target="_blank" rel="noopener noreferrer">10. numerze <i>Lighthouse</i></a>. Polski przekład zamieszczono w <a href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank" rel="noopener noreferrer"><i>Fabulariach</i> (także w numerze 10.)</a>.</div>,
             content: MOTHS_PL,
             theme: 'moths'
         },
@@ -136,7 +136,7 @@ export const TEXTS = {
             title: 'Drony',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <div></div>,
+            description: <div>Tekst ukazał się pierwotnie po angielsku w <a href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/" target="_blank" rel="noopener noreferrer">10. numerze <i>Bare Fiction</i></a>. Polski przekład zamieszczono w  <a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank" rel="noopener noreferrer"><i>Helikopterze</i> (numer 3/2018)</a>.</div>,
             content: DRONES_PL,
             theme: 'drones'
         },
@@ -146,7 +146,7 @@ export const TEXTS = {
             title: 'Miny',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <div></div>,
+            description: <div>Tekst ukazał się po angielsku w piśmie <a href="https://foglifterjournal.com/" target="_blank" rel="noopener noreferrer"><i>Foglifter</i> (Volume 4 Issue 1)</a>.</div>,
             content: LANDMINES_PL,
             theme: 'landmines'
         },
@@ -155,7 +155,7 @@ export const TEXTS = {
             title: 'Skarby',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <div></div>,
+            description: <div>Tekst ukazał się po angielsku w <a href="https://atticusreview.org/treasures/" target="_blank" rel="noopener noreferrer">maju 2019 r. w <i>Atticus Review</i></a>.</div>,
             content: TREASURES_PL,
             theme: 'treasures'
         }
