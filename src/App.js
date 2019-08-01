@@ -29,6 +29,7 @@ const App = (props) => {
 
         //opacity
         translucent: '0.7',
+        transparent: '0.1',
 
         //animations
         hoverAnimation: '0.8s ease-in-out infinite'

@@ -29,7 +29,7 @@ const Capital = styled.div`
   font-size: 24em;
   text-transform: uppercase;
   //font-style: italic;
-  opacity: 0.1;
+  opacity: ${props => props.theme.transparent};
   position: absolute;
   top: 50%;
   left: 50%;
