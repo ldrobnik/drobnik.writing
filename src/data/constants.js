@@ -32,7 +32,7 @@ export const TEXTS = {
     en: {
         nocturine: {
             title: 'Nocturine',
-            subtitle: 'novella (fragment)',
+            subtitle: 'novella fragment',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
             description: <div></div>,
             content: NOCTURINE_EN,
@@ -97,7 +97,7 @@ export const TEXTS = {
     pl: {
         nocturine: {
             title: 'Nocturine',
-            subtitle: 'minipowieść (fragment)',
+            subtitle: 'fragment minipowieści',
             credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
             description: <div></div>,
             content: NOCTURINE_PL,

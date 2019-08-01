@@ -23,6 +23,7 @@ const PubList = (props) => {
                         <PubTile
                             title={pub.title}
                             year={pub.year}
+                            issue={pub.issue}
                             url={pub.url}
                             descriptionPl={pub.descriptionPl}
                             descriptionEn={pub.descriptionEn}
