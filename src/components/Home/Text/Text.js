@@ -14,7 +14,7 @@ const TopAnchor = styled.div`
 `;
 
 const Wrapper = styled.div`
-    position: relative;
+
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
       padding: 2em 3em;
     }
@@ -75,7 +75,7 @@ const Capital = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  //transform: translate(-50%, -50%);
+  transform: translate(-20%, 70%);
 `;
 
 
@@ -83,6 +83,7 @@ const TextBody = styled.div`
     font-family: ${props => props.theme.serif};
     font-size: 1.3em;
     line-height: 1.4em;
+    position: relative;
 `;
 
 
