@@ -34,7 +34,7 @@ export const TEXTS = {
             title: 'Nocturine',
             subtitle: 'novella fragment',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
-            description: <div></div>,
+            description: <div><a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">NOCTURINE is a novella/short fiction collection forthcoming from <i>FATHOM BOOKS</i></a>. It was originally written in Polish and published in <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">one volume with another novella, CUNNINGHAMELLA (<i>Forma</i> 2011)</a>. Excerpts from NOCTURINE have been featured in a number of journals — both in Polish (<a href="https://www.dwutygodnik.com/wydanie/2011/57" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>) and in English (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</div>,
             content: NOCTURINE_EN,
             theme: 'nocturine'
         },
@@ -99,7 +99,7 @@ export const TEXTS = {
             title: 'Nocturine',
             subtitle: 'fragment minipowieści',
             credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
-            description: <div></div>,
+            description: <div><a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">NOCTURINE to minipowieść/zbiór krótkich próz, który niedługo zostanie wydany nakładem wydawnictwa <i>FATHOM BOOKS</i></a>. Książka pierwotnie ukazała się po polsku <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">w jednym tomie z inną minipowieścią pt. CUNNINGHAMELLA (<i>Forma</i> 2011)</a>. Fragmenty NOCTURINE opublikowano w kilku czasopismach — zarówno po polsku (<a href="https://www.dwutygodnik.com/wydanie/2011/57" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>), jak i po angielsku (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</div>,
             content: NOCTURINE_PL,
             theme: 'nocturine'
         },
