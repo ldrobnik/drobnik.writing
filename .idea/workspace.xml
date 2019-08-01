@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Text/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Text/Text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/cellulose-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/cellulose-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/cellulose-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/cellulose-pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/cetacean-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/cetacean-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/cetacean-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/cetacean-pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/landmines-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/landmines-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/landmines-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/landmines-pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/moths-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/moths-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/moths-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/moths-pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/nocturine-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/nocturine-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/nocturine-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/nocturine-pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/treasures-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/treasures-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/treasures-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/treasures-pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,6 +16,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-en.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
@@ -38,7 +34,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-en.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="172" column="27" selection-start-line="172" selection-start-column="27" selection-end-line="172" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
               <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
@@ -83,37 +100,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/drones-en.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-en.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-pl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-en.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="7" />
+              <caret line="3" column="140" selection-start-line="3" selection-start-column="140" selection-end-line="3" selection-end-column="140" />
             </state>
           </provider>
         </entry>
@@ -129,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scrollTo</find>
       <find>scr</find>
       <find>^(.+)$</find>
       <find>a</find>
@@ -159,6 +148,7 @@
       <find>https://atticusreview.or</find>
       <find>opacity</find>
       <find>contant</find>
+      <find>TEXTS</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -226,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js" />
         <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
-        <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-en.js" />
@@ -240,6 +229,7 @@
         <option value="$PROJECT_DIR$/src/data/texts/cetacean-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/cellulose-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/cellulose-en.js" />
+        <option value="$PROJECT_DIR$/src/data/constants.js" />
       </list>
     </option>
   </component>
@@ -488,12 +478,12 @@
       <workItem from="1564378612003" duration="640000" />
       <workItem from="1564475607987" duration="605000" />
       <workItem from="1564587171489" duration="8714000" />
-      <workItem from="1564641338979" duration="24821000" />
+      <workItem from="1564641338979" duration="25180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194813000" />
+    <option name="totallyTimeSpent" value="195172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="693" y="9" width="1207" height="1038" extended-state="0" />
@@ -636,13 +626,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Text/TextBody/Body.js" />
-    <entry file="file://$PROJECT_DIR$/src/data/texts/drones-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="3" column="140" selection-start-line="3" selection-start-column="140" selection-end-line="3" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -784,30 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="565" column="16" selection-start-line="565" selection-start-column="16" selection-end-line="565" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-pl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -815,35 +774,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="24" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/landmines-pl.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/landmines-en.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-pl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
@@ -857,31 +809,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/drones-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="140" selection-start-line="3" selection-start-column="140" selection-end-line="3" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/landmines-en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-en.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/landmines-pl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-pl.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="24" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/moths-pl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/cellulose-en.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="92">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="172" column="27" selection-start-line="172" selection-start-column="27" selection-end-line="172" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
