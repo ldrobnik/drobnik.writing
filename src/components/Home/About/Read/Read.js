@@ -19,8 +19,8 @@ const Message = styled.p`
 
 const Read = (props) => {
 
-    //The Back to Top link
-    const backToTop = <AnchorLink href='#top'>{WEBSITE_TEXT.text.backToTop[props.lang]}</AnchorLink>;
+    //decorative letters to be displayed on the buttons
+    const letters = ['D', 'R', 'O', 'B', 'N', 'I', 'K'];
 
     return (
         <Wrapper>
@@ -29,14 +29,15 @@ const Read = (props) => {
                 subtitle=""
             />
             <Message>{WEBSITE_TEXT.read.introduction[props.lang]}</Message>
-            {TEXT_NAMES.map((text) => {
+            {TEXT_NAMES.map((text, k) => {
                     let textLink = '/texts/' + text;
                     return (
                         <CentredButton
                             message={TEXTS[props.lang][text].title + ' (' + TEXTS[props.lang][text].subtitle + ')'}
                             path={textLink}
                             link={true}
-                            capital={TEXTS[props.lang][text].title[0]}/>
+                            capital={letters[k]}
+                            key={k}/>
                         )
             })}
             <SectionLinks
