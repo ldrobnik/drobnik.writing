@@ -640,9 +640,10 @@ export const WEBSITE_TEXT = {
                 <p>The book was originally published in Polish, in <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">one volume with another novella, “Cunninghamella” (Forma 2011)</a>. Now, my authorial translation into English is forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>.</p>
             </div>,
             pl: <div>
-                <p></p>
-                <p></p>
-            </div>,
+                <p>Koniec świata zaczyna się jak kampania reklamowa. Gdy nad Poznaniem zawisają czarne sześciany, niektórzy sądzą, że to po prostu kolejny operator sieci komórkowej wchodzi na rynek. Do tej grupy należy Mietek, bezrobotny, dwudziestoparoletni gej, którego nagle opuszcza chłopak. Niedługa jego najlepsza przyjaciółka także znika, podczas gdy czarne sześciany na niebie zaczynają się mnożyć, zabierając coraz więcej miejskiej przestrzeni.</p>
+                <p><Link to="/texts/nocturine"><b>NOCTURINE</b></Link> to minipowieść/zbiór krótkich próz, który zabiera czytelnika na niejednoznaczną gatunkowo podróż od Poznania pożeranego przez ośmiobiotową amebę przez dom złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze ludzkiego ciała. Każdy z&nbsp;sześciu rozdziałów/opowiadań ma innego narratora, który snuje opowieść w&nbsp;gorączkowym, acz melancholijnym stylu.</p>
+                <p>Książka została pierwotnie wydana po polsku w&nbsp;jednym tomie z&nbsp;inną minipowieścią pt. „Cunninghamella”. Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się jej autorski przekład na angielski.</p>
+            </div>
         }
 
     },

@@ -20,6 +20,10 @@ const App = (props) => {
         serif: `'Roboto Slab', serif`,
         cursive: `'Molle', cursive`,
 
+        //font sizes
+        titleSize: '5em',
+        subtitleSize: '2em',
+        bodySize: '1.3em',
         //breakpoints
         extraSmallScr: '480px',
         smallScr: '736px',

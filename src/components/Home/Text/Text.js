@@ -47,7 +47,7 @@ const Header = styled.div`
 `;
 
 const TextTitle = styled.div`
-    font-size: 5em;
+    font-size: ${props => props.theme.titleSize};
     font-weight: bold;
     
     @media all and (max-width: ${props => props.theme.smallScr}) {
@@ -56,7 +56,7 @@ const TextTitle = styled.div`
 `;
 
 const TextSubtitle = styled.div`
-    font-size: 2em;
+    font-size: ${props => props.theme.subtitleSize};
     font-weight: bold;
     font-style: italic;
     
@@ -80,7 +80,7 @@ const Capital = styled.div`
 
 const TextBody = styled.div`
     font-family: ${props => props.theme.serif};
-    font-size: 1.3em;
+    font-size: ${props => props.theme.bodySize};
     line-height: 1.4em;
     position: relative;
 `;
