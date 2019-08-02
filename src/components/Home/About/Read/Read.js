@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { connect } from 'react-redux';
 import {PUBLICATIONS, WEBSITE_TEXT, TEXT_NAMES, TEXTS} from '../../../../data/constants';
-import PubTile from "../Pubs/PubList/PubTile/PubTile";
+import SectionHeading from '../SectionHeading/SectionHeading'
 
 const StyledWrapper = styled.div`
 
@@ -17,7 +17,10 @@ const Read = (props) => {
 
     return (
         <StyledWrapper>
-            <h1>{WEBSITE_TEXT.read.title[props.lang]}</h1>
+            <SectionHeading
+                title={WEBSITE_TEXT.read.title[props.lang]}
+                subtitle=""
+            />
             <p>{WEBSITE_TEXT.read.introduction[props.lang]}</p>
             {TEXT_NAMES.map((text) => {
                     let textLink = '/texts/' + text;

@@ -53,11 +53,12 @@ const Intro = (props) => {
 
     return (
         <React.Fragment>
+            <SectionHeading
+                title={WEBSITE_TEXT.intro.title}
+                subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
+            />
             <Header>
-                <SectionHeading
-                        title={WEBSITE_TEXT.intro.title}
-                        subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
-                />
+
                 <AuthorsPhoto>
                     <img src={authorsPhoto} alt='Author’s photo' />
                 </AuthorsPhoto>

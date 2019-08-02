@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { WEBSITE_TEXT } from '../../../../data/constants';
 
+import SectionHeading from '../SectionHeading/SectionHeading'
 import PubList from './PubList/PubList';
+
 
 
 const Pubs = (props) => {
@@ -28,7 +30,10 @@ const Pubs = (props) => {
 
     return (
         <React.Fragment>
-            <h1>{WEBSITE_TEXT.publications.title[props.lang]}</h1>
+            <SectionHeading
+                title={WEBSITE_TEXT.publications.title[props.lang]}
+                subtitle=""
+            />
             <label>
                 <p>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</p>
                 <input

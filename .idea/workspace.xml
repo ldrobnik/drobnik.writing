@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Home/About/SectionHeading/SectionHeading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/SectionHeading/SectionHeading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/SectionHeading/SectionHeading.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -78,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+            <state relative-caret-position="1311">
+              <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -93,8 +94,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/SectionHeading/SectionHeading.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/About/Read/Read.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <caret line="35" column="14" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="35" selection-end-column="14" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -105,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            <state relative-caret-position="253">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="17" selection-end-column="14" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -206,12 +231,10 @@
         <option value="$PROJECT_DIR$/src/components/Home/Text/TextBody/Body.js" />
         <option value="$PROJECT_DIR$/src/data/texts/drones-en.js" />
         <option value="$PROJECT_DIR$/src/store/reducer.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
         <option value="$PROJECT_DIR$/public/_redirects" />
         <option value="$PROJECT_DIR$/src/data/texts/drones-pl.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubTile/PubTile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubList.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/treasures-en.js" />
@@ -229,13 +252,15 @@
         <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/About.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/SectionHeading/SectionHeading.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/SectionHeading/SectionHeading.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
       </list>
     </option>
   </component>
@@ -494,12 +519,12 @@
       <workItem from="1564475607987" duration="605000" />
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
-      <workItem from="1564688734239" duration="11551000" />
+      <workItem from="1564688734239" duration="12089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208012000" />
+    <option name="totallyTimeSpent" value="208550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="489" y="9" width="1410" height="1038" extended-state="0" />
@@ -678,16 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/nocturine-pl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -810,26 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Read/Read.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -880,10 +875,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/SectionHeading/SectionHeading.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="253">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="17" selection-end-column="14" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -892,8 +887,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+        <state relative-caret-position="1311">
+          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/SectionHeading/SectionHeading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Read/Read.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
