@@ -10,7 +10,29 @@ const ButtonWrapper = styled.div`
   background-color: ${props => props.theme.background};
   opacity: ${props => props.theme.translucent};
   font-size: ${props => props.theme.bodySize};
-  padding: 1em;
+  padding: 0.8em;
+  margin: 0 0.5em;
+    
+    @media all and (min-width: ${props => props.theme.extraSmallScr}) {
+       margin: 0 0.8em;;
+    }
+    
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+       margin: 0 1em;
+    }
+    
+    @media all and (min-width: ${props => props.theme.mediumScr}) {
+      margin: 0 2em;
+    }
+    
+    @media all and (min-width: ${props => props.theme.largeScr}) {
+       margin: 0 20%;
+    }
+    
+    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+       margin: 0 25%;
+    }
+    
 `;
 
 

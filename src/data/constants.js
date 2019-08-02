@@ -834,3 +834,21 @@ export const BLUR_KEYFRAMES = keyframes`
   }
   
 `;
+
+//Keyframes for 'popping' animation
+
+export const POP_KEYFRAMES = keyframes`
+
+  0% {
+    transform: scale(1);
+  }
+  
+  30% {
+    transform: scale(1.3)
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+  
+`;
