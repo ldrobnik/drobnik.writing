@@ -23,7 +23,7 @@ const Tile = styled.div`
 
 const TileWrapper = styled.div`
   display: table;
-  margin: 5px;
+  margin: 0.8em 0;
 `;
 
 const Capital = styled.div`
