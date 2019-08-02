@@ -672,7 +672,7 @@ export const WEBSITE_TEXT = {
                     source: 'Patrycja Janowska, LAMPA 1–2/2012'
                 },
                 {
-                    quote: 'Drobnik creates an evocative, oppressive mood through the dangerous unknown; subtly, with a single shift outside the boundaries of our expectations.',
+                    quote: 'Drobnik creates an evocative, oppressive mood through the dangerous unknown; subtly, with a single shift outside the boundaries of what we are used to.',
                     source: 'Ilona Witkowska, ODRA 5/2012'
                 },
                 {

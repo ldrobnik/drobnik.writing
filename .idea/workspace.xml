@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,8 +56,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
-              <caret line="663" column="13" selection-start-line="663" selection-start-column="8" selection-end-line="663" selection-end-column="13" />
+            <state relative-caret-position="190">
+              <caret line="673" column="17" lean-forward="true" selection-start-line="673" selection-start-column="17" selection-end-line="673" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -67,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="143">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -111,7 +124,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hoverAnimation</find>
       <find>upper</find>
       <find>animation</find>
       <find>keyf</find>
@@ -141,6 +153,7 @@
       <find>bodySize</find>
       <find>;</find>
       <find>quote</find>
+      <find>our expe</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -211,16 +224,16 @@
         <option value="$PROJECT_DIR$/src/components/Home/About/SocialLinks/SocialLinks.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubList.js" />
         <option value="$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js" />
-        <option value="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
-        <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/QuoteList/QuoteList.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/data/constants.js" />
+        <option value="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" />
       </list>
     </option>
@@ -354,6 +367,14 @@
               <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
               <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="CentredButton" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -455,12 +476,12 @@
       <workItem from="1564475607987" duration="605000" />
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
-      <workItem from="1564688734239" duration="31247000" />
+      <workItem from="1564688734239" duration="32353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227708000" />
+    <option name="totallyTimeSpent" value="228814000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="732" y="18" width="1204" height="1038" extended-state="0" />
@@ -821,16 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -881,16 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="663" column="13" selection-start-line="663" selection-start-column="8" selection-end-line="663" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/QuoteList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -911,10 +912,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="673" column="17" lean-forward="true" selection-start-line="673" selection-start-column="17" selection-end-line="673" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="143">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>

@@ -9,6 +9,7 @@ const Wrapper = styled.div`
 const QuoteContent = styled.p`
     font-family: ${props => props.theme.serif};
     font-size: ${props => props.theme.captionSize};
+
 `;
 
 const QuoteSource = styled.p`
@@ -16,6 +17,18 @@ const QuoteSource = styled.p`
     font-size: ${props => props.theme.smallCaptionSize};
     margin-top: 1em;
     font-weight: bold;
+        position: relative;
+`;
+
+const InvertedCommas = styled.div`
+  font-family: ${props => props.theme.cursive};
+  font-size: 10em;
+  text-transform: uppercase;
+  opacity: ${props => props.theme.transparent};
+  position: absolute;
+  left: 22vw;
+  top: 0;
+  transform: translateY(-20%);
 `;
 
 const Quote = (props) => {
@@ -27,6 +40,9 @@ const Quote = (props) => {
             </QuoteContent>
             <QuoteSource>
                 {props.source}
+                <InvertedCommas>
+                    “”
+                </InvertedCommas>
             </QuoteSource>
         </Wrapper>
     );

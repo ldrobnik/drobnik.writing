@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {BLUR_KEYFRAMES, POP_KEYFRAMES} from "../../../data/constants";
+import {POP_KEYFRAMES} from "../../../data/constants";
 
 const Wrapper = styled.div`
   text-align: center;
@@ -52,7 +52,6 @@ const Capital = styled.div`
   font-family: ${props => props.theme.cursive};
   font-size: 24em;
   text-transform: uppercase;
-  //font-style: italic;
   opacity: ${props => props.theme.transparent};
   position: absolute;
   top: 50%;
