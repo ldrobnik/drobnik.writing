@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
 
+import {BLUR_KEYFRAMES} from "../../../../../../data/constants";
+
 const Tile = styled.div`
     background-color: ${props => props.theme.background};
     position: relative;
@@ -34,6 +36,10 @@ const Capital = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
+  &:hover {
+    animation: ${BLUR_KEYFRAMES} ${props => props.theme.scaleAnimation}
+  }
 `;
 
 

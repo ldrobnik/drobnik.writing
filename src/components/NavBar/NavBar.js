@@ -31,7 +31,7 @@ const LogoWrapper = styled.div`
   
    @media all and (min-width: ${props => props.theme.smallScr}) {
              &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.hoverAnimation};
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
              }
         }
 `;
@@ -44,7 +44,7 @@ const NavElement = styled.div`
   
   @media all and (min-width: ${props => props.theme.smallScr}) {
              &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.hoverAnimation};
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
              }
         }
 `;

@@ -765,15 +765,12 @@ export const PULSATE_KEYFRAMES = keyframes`
   }
 `;
 
-//Keyframes for scaling animation
+//Keyframes for blur animation
 
-export const SCALE_KEYFRAMES = keyframes`
-  from {
-    transform: scale(1);
-  }
-  
+export const BLUR_KEYFRAMES = keyframes`
+
   to {
-    transform: scale(2);
+    filter: blur(10px);
   }
   
 `;

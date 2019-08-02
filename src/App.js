@@ -32,7 +32,8 @@ const App = (props) => {
         transparent: '0.1',
 
         //animations
-        hoverAnimation: '0.8s ease-in-out infinite'
+        pulsateAnimation: '0.8s ease-in-out infinite',
+        scaleAnimation: '6s ease-out alternate infinite'
     };
 
 
