@@ -634,14 +634,15 @@ export const WEBSITE_TEXT = {
             pl: 'Nocturine'
         },
         body: {
-            en: [
-                'english1',
-                'english2'
-            ],
-            pl: [
-                'polish1',
-                'polish2'
-            ],
+            en: <div>
+                <p>The end of the world starts like an ad campaign. When black cubes appear above the city of Poznań, some think it’s just a new mobile network operator entering the market. This includes Mietek, an unemployed gay man in his twenties, suddenly abandoned by his boyfriend. Soon his best friend also disappears, while the black cubes in the sky start multiplying, taking up more and more of the urban space.</p>
+                <p><Link to="/texts/nocturine"><b>NOCTURINE</b></Link> is a novella/short fiction collection that takes you on a genre-bending journey from contemporary Poznan devoured by an 8-bit amoeba to a house comprised of countless floors, to a homestead haunted by dummies, to the inside of a human body. Each of six chapters/stories is told by a different narrator in a frantic yet melancholic style.</p>
+                <p>The book was originally published in Polish, in <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">one volume with another novella, “Cunninghamella” (Forma 2011)</a>. Now, my authorial translation into English is forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>.</p>
+            </div>,
+            pl: <div>
+                <p></p>
+                <p></p>
+            </div>,
         }
 
     },
