@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Text/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Text/Text.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/About.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
@@ -66,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
-              <caret line="645" column="18" lean-forward="true" selection-start-line="645" selection-start-column="18" selection-end-line="645" selection-end-column="18" />
+            <state relative-caret-position="460">
+              <caret line="131" column="175" selection-start-line="131" selection-start-column="175" selection-end-line="131" selection-end-column="175" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -220,10 +217,10 @@
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" />
-        <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/About.js" />
+        <option value="$PROJECT_DIR$/src/data/constants.js" />
       </list>
     </option>
   </component>
@@ -473,12 +470,12 @@
       <workItem from="1564475607987" duration="605000" />
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
-      <workItem from="1564688734239" duration="9892000" />
+      <workItem from="1564688734239" duration="10131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206353000" />
+    <option name="totallyTimeSpent" value="206592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="840" y="9" width="1059" height="1038" extended-state="0" />
@@ -486,9 +483,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.3712047" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.3712047" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16609783" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16609783" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -820,16 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="645" column="18" lean-forward="true" selection-start-line="645" selection-start-column="18" selection-end-line="645" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -866,6 +853,16 @@
           <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="131" column="175" selection-start-line="131" selection-start-column="175" selection-end-line="131" selection-end-column="175" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

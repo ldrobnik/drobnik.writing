@@ -108,7 +108,7 @@ export const TEXTS = {
             title: 'Nocturine',
             subtitle: 'fragment minipowieści',
             credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
-            description: <p><a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">„Nocturine” to minipowieść/zbiór krótkich próz, który niedługo zostanie wydany nakładem wydawnictwa <i>Fathom Books</i></a>. Książka pierwotnie ukazała się po polsku <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">w jednym tomie z inną minipowieścią pt. „Cunninghamella” (<i>Forma</i> 2011)</a>. Fragmenty „Nocturine” opublikowano w kilku czasopismach — zarówno po polsku (<a href="https://www.dwutygodnik.com/wydanie/2011/57" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>), jak i po angielsku (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
+            description: <p><a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">„Nocturine” to minipowieść/zbiór krótkich próz, który niedługo zostanie wydany nakładem wydawnictwa <i>Fathom Books</i></a>. Książka pierwotnie ukazała się po polsku <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">w&nbsp;jednym tomie z&nbsp;inną minipowieścią pt. „Cunninghamella” (<i>Forma</i> 2011)</a>. Fragmenty „Nocturine” opublikowano w&nbsp;kilku czasopismach — zarówno po polsku (<a href="https://www.dwutygodnik.com/wydanie/2011/57" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>), jak i&nbsp;po angielsku (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
             content: NOCTURINE_PL,
             theme: 'nocturine',
             firstLetter: 'N'
@@ -118,7 +118,7 @@ export const TEXTS = {
             title: 'Waleń',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description:<p>Tekst ukazał się pierwotnie po angielsku w <a href="https://www.quarterlywest.com/issue-94/cetacean" target="_blank" rel="noopener noreferrer">94. numerze <i>Quarterly West</i></a>. Polski przekład zamieszczono w <a href="https://afront.org.pl/" target="_blank" rel="noopener noreferrer"><i>Afroncie</i> (numer 2(5)/2018)</a>.</p>,
+            description:<p>Tekst ukazał się pierwotnie po angielsku w&nbsp;<a href="https://www.quarterlywest.com/issue-94/cetacean" target="_blank" rel="noopener noreferrer">94. numerze <i>Quarterly West</i></a>. Polski przekład zamieszczono w&nbsp;<a href="https://afront.org.pl/" target="_blank" rel="noopener noreferrer"><i>Afroncie</i> (numer 2(5)/2018)</a>.</p>,
             content: CETACEAN_PL,
             theme: 'cetacean',
             firstLetter: 'P'
@@ -129,7 +129,7 @@ export const TEXTS = {
             title: 'Celuloza',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <div>Tekst ukazał się pierwotnie po angielsku <a href="https://mojaveheart.com/cellulose/" target="_blank" rel="noopener noreferrer">w 2018 r. we wrześniowym numerze <i>Mojave Heart Review</i></a>. Polski przekład zamieszczono w  <a href="http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html" target="_blank" rel="noopener noreferrer">pierwszym numerze <i>Stonera Polskiego</i></a>.</div>,
+            description: <div>Tekst ukazał się pierwotnie po angielsku <a href="https://mojaveheart.com/cellulose/" target="_blank" rel="noopener noreferrer">w&nbsp;2018&nbsp;r. we wrześniowym numerze <i>Mojave Heart Review</i></a>. Polski przekład zamieszczono w&nbsp;<a href="http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html" target="_blank" rel="noopener noreferrer">pierwszym numerze <i>Stonera Polskiego</i></a>.</div>,
             content: CELLULOSE_PL,
             theme: 'cellulose',
             firstLetter: 'D'
@@ -139,7 +139,7 @@ export const TEXTS = {
             title: 'Ćmy',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się pierwotnie po angielsku w <a href="http://www.gatehousepress.com/lighthouse/" target="_blank" rel="noopener noreferrer">10. numerze <i>Lighthouse</i></a>. Polski przekład zamieszczono w <a href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank" rel="noopener noreferrer"><i>Fabulariach</i> (także w numerze 10.)</a>.</p>,
+            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;<a href="http://www.gatehousepress.com/lighthouse/" target="_blank" rel="noopener noreferrer">10. numerze <i>Lighthouse</i></a>. Polski przekład zamieszczono w&nbsp;<a href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank" rel="noopener noreferrer"><i>Fabulariach</i> (także w&nbsp;numerze 10.)</a>.</p>,
             content: MOTHS_PL,
             theme: 'moths',
             firstLetter: 'P'
@@ -149,7 +149,7 @@ export const TEXTS = {
             title: 'Drony',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się pierwotnie po angielsku w <a href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/" target="_blank" rel="noopener noreferrer">10. numerze <i>Bare Fiction</i></a>. Polski przekład zamieszczono w  <a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank" rel="noopener noreferrer"><i>Helikopterze</i> (numer 3/2018)</a>.</p>,
+            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;<a href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/" target="_blank" rel="noopener noreferrer">10. numerze <i>Bare Fiction</i></a>. Polski przekład zamieszczono w&nbsp;<a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank" rel="noopener noreferrer"><i>Helikopterze</i> (numer 3/2018)</a>.</p>,
             content: DRONES_PL,
             theme: 'drones',
             firstLetter: 'J'
@@ -159,7 +159,7 @@ export const TEXTS = {
             title: 'Miny',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się po angielsku w piśmie <a href="https://foglifterjournal.com/" target="_blank" rel="noopener noreferrer"><i>Foglifter</i> (Volume 4 Issue 1)</a>.</p>,
+            description: <p>Tekst ukazał się po angielsku w&nbsp;piśmie <a href="https://foglifterjournal.com/" target="_blank" rel="noopener noreferrer"><i>Foglifter</i> (Volume 4 Issue 1)</a>.</p>,
             content: LANDMINES_PL,
             theme: 'landmines',
             firstLetter: 'T'
@@ -169,7 +169,7 @@ export const TEXTS = {
             title: 'Skarby',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się po angielsku w <a href="https://atticusreview.org/treasures/" target="_blank" rel="noopener noreferrer">maju 2019 r. w <i>Atticus Review</i></a>.</p>,
+            description: <p>Tekst ukazał się po angielsku w&nbsp;<a href="https://atticusreview.org/treasures/" target="_blank" rel="noopener noreferrer">maju 2019&nbsp;r. w&nbsp;<i>Atticus Review</i></a>.</p>,
             content: TREASURES_PL,
             theme: 'treasures',
             firstLetter: 'M'
