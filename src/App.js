@@ -24,6 +24,8 @@ const App = (props) => {
         titleSize: '5em',
         subtitleSize: '2em',
         bodySize: '1.3em',
+        captionSize: '1em',
+
         //breakpoints
         extraSmallScr: '480px',
         smallScr: '736px',

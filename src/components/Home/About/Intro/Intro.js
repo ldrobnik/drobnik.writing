@@ -7,16 +7,8 @@ import authorsPhoto from '../../../../assets/authorsPhoto.jpg'
 import {WEBSITE_TEXT} from '../../../../data/constants';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import CentredPhoto from '../CentredPhoto/CentredPhoto';
+import SocialLinks from '../SocialLinks/SocialLinks';
 
-const SocialLinks = styled.div`
-    display: flex;
-    justify-content: flex-start;
-    
-    div {
-      padding-right: 8px;
-    }
-
-`;
 
 const Intro = (props) => {
 
@@ -32,16 +24,7 @@ const Intro = (props) => {
             />
             {WEBSITE_TEXT.intro.body[props.lang]}
             <p>
-                <SocialLinks>
-                    {WEBSITE_TEXT.intro.social.map((link, k) => {
-                            //don't display the separator after the last link
-                            return (
-                                <a key={k} href={link.url} target="_blank"
-                                   rel="noopener noreferrer">{link.name}</a>
-                            )
-                        }
-                    )}
-                </SocialLinks>
+                <SocialLinks />
             </p>
             {WEBSITE_TEXT.intro.patreon[props.lang]}
             <p><AnchorLink href='#read'>Read</AnchorLink></p>

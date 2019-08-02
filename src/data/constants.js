@@ -615,15 +615,15 @@ export const WEBSITE_TEXT = {
         },
         social: [
             {
-                name: <div><FontAwesomeIcon icon={faTwitterSquare} /> @drobnik |</div>,
+                name: <div><FontAwesomeIcon icon={faTwitterSquare} />&nbsp;@drobnik</div>,
                 url: 'https://twitter.com/drobnik'
             },
             {
-                name: <div><FontAwesomeIcon icon={faInstagram} /> @drobnikwrites |</div>,
+                name: <div><FontAwesomeIcon icon={faInstagram} />&nbsp;@drobnikwrites</div>,
                 url: 'https://www.instagram.com/drobnikwrites/'
             },
             {
-                name: <div><FontAwesomeIcon icon={faFacebookSquare} /> @drobnikwrites</div>,
+                name: <div><FontAwesomeIcon icon={faFacebookSquare} />&nbsp;@drobnikwrites</div>,
                 url: 'https://www.facebook.com/drobnikwrites'
             }
         ]
