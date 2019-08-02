@@ -101,13 +101,21 @@ const Description = styled.div`
   }
 `;
 
+const UpNext = styled.div`
+  text-align: center;
+  font-weight: bold;
+  font-size: ${props => props.theme.bodySize}
+  user-select: none;
+  margin: 1em 0;
+`;
+
 const Links = styled.div`
   display: flex;
   justify-content: center;
   font-weight: bold;
   font-size: ${props => props.theme.captionSize}
   user-select: none;
-  margin: 4em 0;
+  margin: 1em 0;
   
   div {
     padding: 0 0.3em;
@@ -141,7 +149,7 @@ const Text = (props) => {
 
     //The link to the next text
     const nextTextLink = <Link
-        to={'/texts/' + nextTextName}>{WEBSITE_TEXT.text.nextText[props.lang]}{TEXTS[props.lang][nextTextName].title}</Link>
+        to={'/texts/' + nextTextName}>{WEBSITE_TEXT.text.nextText[props.lang]}<i>{TEXTS[props.lang][nextTextName].title}</i></Link>
 
     //The Back to Top link
     const top = <AnchorLink href='#top'>{WEBSITE_TEXT.text.top[props.lang]}</AnchorLink>;
@@ -200,8 +208,10 @@ const Text = (props) => {
             <Description>
                 {TEXTS[props.lang][textName].description}
             </Description>
+            <UpNext>
+                {nextTextLink}
+            </UpNext>
             <Links>
-                <div>{nextTextLink}</div>
                 <div>{top}</div>
                 <div>{home}</div>
             </Links>
