@@ -611,11 +611,11 @@ export const WEBSITE_TEXT = {
         },
         patreon: {
             en: {
-                message: <div>Please consider becoming my&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atron!</div>,
+                message: <div>Please consider becoming my<br /><FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atron!</div>,
                 path: 'https://www.patreon.com/drobnik'
             },
             pl: {
-                message: <div>Pomyśl, proszę, o&nbsp;zostaniu moim&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atronem!</div>,
+                message: <div>Pomyśl, proszę, o&nbsp;zostaniu moim<br /><FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atronem!</div>,
                 path: 'https://www.patreon.com/drobnik'
             }
         },

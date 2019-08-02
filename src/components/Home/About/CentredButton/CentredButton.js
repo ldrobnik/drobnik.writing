@@ -7,8 +7,10 @@ const Wrapper = styled.div`
 `;
 
 const ButtonWrapper = styled.div`
-  background-color: ${props => props.theme.darkColor};
+  background-color: ${props => props.theme.background};
   opacity: ${props => props.theme.translucent};
+  font-size: ${props => props.theme.bodySize};
+  padding: 1em;
 `;
 
 
@@ -16,6 +18,7 @@ const CentredButton = (props) => {
 
     //constant holding the button content
     const buttonContent = props.message;
+    console.log(props.message);
 
     //variable holding the button content wrapped in a Link or a element
     let workingButton;
