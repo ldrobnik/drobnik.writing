@@ -2,7 +2,7 @@
 
 **WORK IN PROGRESS**
 
-A new version of my author website I’m building with **React**. Here is the [live demo](https://drobnik-writing-new.netlify.com/) of what I’ve done so far. (I’m taking care of the functionality first, so it’s not the prettiest sight at the moment). You can also take a look at [the previous version](https://github.com/ldrobnik/drobnik.co) made in Angular.
+A new version of my author website I’m building with **React**. Here is the [live demo](https://drobnik-writing-new.netlify.com/) of what I’ve done so far. You can also take a look at [the previous version](https://github.com/ldrobnik/drobnik.co) made with Angular.
 
 ## Main features:
 * a fully **bilingual** site – language change with a single click

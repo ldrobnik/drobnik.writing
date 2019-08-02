@@ -94,7 +94,7 @@ const Description = styled.div`
   background-color: ${props => props.theme.background};
   font-size: ${props => props.theme.bodySize};
   text-align: center;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   margin: 1em 0;
   a {
     font-weight: bold;
@@ -107,7 +107,7 @@ const Links = styled.div`
   font-weight: bold;
   font-size: ${props => props.theme.captionSize}
   user-select: none;
-  margin: 2em 0;
+  margin: 4em 0;
   
   div {
     padding: 0 0.3em;
