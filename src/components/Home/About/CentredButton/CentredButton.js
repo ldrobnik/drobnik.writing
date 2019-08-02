@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -23,7 +24,7 @@ const CentredButton = (props) => {
         workingButton =
             <Link to={props.path}>
                 <ButtonWrapper>
-                    {props.message}
+                    {buttonContent}
                 </ButtonWrapper>
             </Link>;
     } else {
@@ -33,7 +34,7 @@ const CentredButton = (props) => {
                 target="_blank"
                 rel="noopener noreferrer">
                 <ButtonWrapper>
-                    {props.message}
+                    {buttonContent}
                 </ButtonWrapper>
             </a>;
     }

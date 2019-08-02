@@ -8,7 +8,7 @@ import {WEBSITE_TEXT} from '../../../../data/constants';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import CentredPhoto from '../CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
-
+import CentredButton from '../CentredButton/CentredButton';
 
 const Intro = (props) => {
 
@@ -26,7 +26,11 @@ const Intro = (props) => {
             <p>
                 <SocialLinks />
             </p>
-            {WEBSITE_TEXT.intro.patreon[props.lang]}
+            <CentredButton
+            message={WEBSITE_TEXT.intro.patreon[props.lang].message}
+            path={WEBSITE_TEXT.intro.patreon[props.lang].path}
+            link={false}/>
+
             <p><AnchorLink href='#read'>Read</AnchorLink></p>
         </React.Fragment>
     );

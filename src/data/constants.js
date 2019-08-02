@@ -610,8 +610,14 @@ export const WEBSITE_TEXT = {
             </div>
         },
         patreon: {
-            en: <a href="https://www.patreon.com/drobnik" target="_blank" rel="noopener noreferrer">Please consider becoming my&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atron!</a>,
-            pl: <a href="https://www.patreon.com/drobnik" target="_blank" rel="noopener noreferrer">Rozważ, proszę, zostanie moim&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atronem!</a>
+            en: {
+                message: <div>Please consider becoming my&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atron!</div>,
+                path: 'https://www.patreon.com/drobnik'
+            },
+            pl: {
+                message: <div>Pomyśl, proszę, o&nbsp;zostaniu moim&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atronem!</div>,
+                path: 'https://www.patreon.com/drobnik'
+            }
         },
         social: [
             {

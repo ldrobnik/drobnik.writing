@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Home/About/CentredButton/CentredButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/About/CentredPhoto/CentredPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/CentredPhoto/CentredPhoto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/CentredButton/CentredButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/CentredButton/CentredButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,13 +41,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/CentredButton/CentredButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="483">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="612" column="99" selection-start-line="612" selection-start-column="58" selection-end-line="612" selection-end-column="99" />
+            <state relative-caret-position="213">
+              <caret line="617" column="138" selection-start-line="617" selection-start-column="138" selection-end-line="617" selection-end-column="138" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -86,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="276">
+              <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -145,7 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>flex</find>
       <find>HOVER_KEY</find>
       <find>theme</find>
       <find>(fragment)</find>
@@ -173,8 +172,9 @@
       <find>WEBSITE</find>
       <find>WEBSI</find>
       <find>od Pozna</find>
-      <find>Anchor</find>
       <find>@drobnik</find>
+      <find>Anchor</find>
+      <find>becoming my</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -250,12 +250,12 @@
         <option value="$PROJECT_DIR$/src/components/Home/About/SectionHeading/SectionHeading.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/About.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
-        <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/SocialLinks/SocialLinks.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/CentredPhoto/CentredPhoto.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/CentredButton/CentredButton.js" />
+        <option value="$PROJECT_DIR$/src/data/constants.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
       </list>
     </option>
   </component>
@@ -433,12 +433,12 @@
       <workItem from="1564475607987" duration="605000" />
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
-      <workItem from="1564688734239" duration="15987000" />
+      <workItem from="1564688734239" duration="16565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212448000" />
+    <option name="totallyTimeSpent" value="213026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="627" y="9" width="1272" height="1038" extended-state="0" />
@@ -446,9 +446,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.3071313" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.3071313" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16609783" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16609783" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -809,26 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -846,10 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+    <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="612" column="99" selection-start-line="612" selection-start-column="58" selection-end-line="612" selection-end-column="99" />
+        <state relative-caret-position="414">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -858,8 +838,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/CentredButton/CentredButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="483">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="617" column="138" selection-start-line="617" selection-start-column="138" selection-end-line="617" selection-end-column="138" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
