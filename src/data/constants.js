@@ -615,7 +615,7 @@ export const WEBSITE_TEXT = {
                 path: 'https://www.patreon.com/drobnik'
             },
             pl: {
-                message: <div>Pomyśl, proszę, o&nbsp;zostaniu moim<br /><FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atronem</div>,
+                message: <div>Zostań, proszę, moim <FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atronem</div>,
                 path: 'https://www.patreon.com/drobnik'
             }
         },
@@ -746,7 +746,7 @@ export const WEBSITE_TEXT = {
         },
         introduction: {
             en: 'Here’s a handful of my pieces. Maybe you’d like to read them:',
-            pl: 'Oto kilka moich tekstów. Może zechcesz je przeczytać:'
+            pl: 'Oto garstka moich tekstów. Może zechcesz je przeczytać:'
         },
         backToTop: {
             en: 'Back to Top',
