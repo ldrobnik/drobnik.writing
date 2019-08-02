@@ -6,38 +6,7 @@ import {Link} from "react-router-dom";
 import authorsPhoto from '../../../../assets/authorsPhoto.jpg'
 import {WEBSITE_TEXT} from '../../../../data/constants';
 import SectionHeading from '../SectionHeading/SectionHeading';
-
-const Header = styled.div`
-  text-align: center;
-`;
-
-const Title = styled.div`
-    font-size: ${props => props.theme.titleSize};
-    font-weight: bold;
-    
-    @media all and (max-width: ${props => props.theme.smallScr}) {
-      font-size: 15vw;
-    }
-`;
-
-const Subtitle = styled.div`
-    font-size: ${props => props.theme.subtitleSize};
-    font-weight: bold;
-    font-style: italic;
-    
-    @media all and (max-width: ${props => props.theme.smallScr}) {
-      font-size: 8vw;
-    }
-    
-`;
-
-const AuthorsPhoto = styled.div`
-  height: 12em;
-  opacity: ${props => props.theme.translucent};
-    img {
-      height: 100%;
-    }
-`;
+import CentredPhoto from '../CentredPhoto/CentredPhoto';
 
 const SocialLinks = styled.div`
     display: flex;
@@ -57,12 +26,10 @@ const Intro = (props) => {
                 title={WEBSITE_TEXT.intro.title}
                 subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
             />
-            <Header>
-
-                <AuthorsPhoto>
-                    <img src={authorsPhoto} alt='Author’s photo' />
-                </AuthorsPhoto>
-            </Header>
+            <CentredPhoto
+                source={authorsPhoto}
+                altText='Author’s photo'
+            />
             {WEBSITE_TEXT.intro.body[props.lang]}
             <p>
                 <SocialLinks>
