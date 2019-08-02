@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 
 import * as actionTypes from '../../../store/actions';
-import { TEXTS, TEXT_NAMES, WEBSITE_TEXT } from '../../../data/constants';
+import {TEXTS, TEXT_NAMES, WEBSITE_TEXT} from '../../../data/constants';
 
 
 const TopAnchor = styled.div`
@@ -85,6 +85,35 @@ const TextBody = styled.div`
     position: relative;
 `;
 
+const Credits = styled.p`
+  font-size: ${props => props.theme.captionSize};
+  font-family: ${props => props.theme.serif};
+`;
+
+const Description = styled.div`
+  background-color: ${props => props.theme.background};
+  font-size: ${props => props.theme.bodySize};
+  text-align: center;
+  padding: 0.5em;
+  margin: 1em 0;
+  a {
+    font-weight: bold;
+  }
+`;
+
+const Links = styled.div`
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: ${props => props.theme.captionSize}
+  user-select: none;
+  margin: 2em 0;
+  
+  div {
+    padding: 0 0.3em;
+  }
+`;
+
 
 const Text = (props) => {
 
@@ -111,10 +140,11 @@ const Text = (props) => {
     const nextTextName = TEXT_NAMES[nextTextId];
 
     //The link to the next text
-    const nextTextLink = <Link to={'/texts/' + nextTextName}>{WEBSITE_TEXT.text.nextText[props.lang]}{TEXTS[props.lang][nextTextName].title}</Link>
+    const nextTextLink = <Link
+        to={'/texts/' + nextTextName}>{WEBSITE_TEXT.text.nextText[props.lang]}{TEXTS[props.lang][nextTextName].title}</Link>
 
     //The Back to Top link
-    const backToTop = <AnchorLink href='#top'>{WEBSITE_TEXT.text.backToTop[props.lang]}</AnchorLink>;
+    const top = <AnchorLink href='#top'>{WEBSITE_TEXT.text.top[props.lang]}</AnchorLink>;
 
     //The Home link
     const home = <Link to={'/'}>{WEBSITE_TEXT.text.home[props.lang]}</Link>;
@@ -163,14 +193,18 @@ const Text = (props) => {
                     {TEXTS[props.lang][textName].firstLetter}
                 </Capital>
                 {TEXTS[props.lang][textName].content}
-                <p><i>{TEXTS[props.lang][textName].credits}</i></p>
-                {TEXTS[props.lang][textName].description}
-                <p>
-                    <i>{nextTextLink}</i>&nbsp;|&nbsp;
-                    <i>{backToTop}</i>&nbsp;|&nbsp;
-                    <i>{home}</i>
-                </p>
             </TextBody>
+            <Credits>
+                <i>{TEXTS[props.lang][textName].credits}</i>
+            </Credits>
+            <Description>
+                {TEXTS[props.lang][textName].description}
+            </Description>
+            <Links>
+                <div>{nextTextLink}</div>
+                <div>{top}</div>
+                <div>{home}</div>
+            </Links>
         </Wrapper>
     );
 };

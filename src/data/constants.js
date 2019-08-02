@@ -747,10 +747,6 @@ export const WEBSITE_TEXT = {
         introduction: {
             en: 'Here’s a handful of my pieces. Maybe you’d like to read them:',
             pl: 'Oto garstka moich tekstów. Może zechcesz je przeczytać:'
-        },
-        backToTop: {
-            en: 'Back to Top',
-            pl: 'Wróć do początku'
         }
     },
     sectionLinks: [
@@ -785,16 +781,16 @@ export const WEBSITE_TEXT = {
     ],
     text: {
         nextText: {
-            en: 'Up next: ',
-            pl: 'Następny tekst: '
+            en: 'up next: ',
+            pl: 'następny tekst: '
         },
-        backToTop: {
-            en: 'Back to Top',
-            pl: 'Wróć do początku'
+        top: {
+            en: 'top',
+            pl: 'góra'
         },
         home: {
-            en: 'Home',
-            pl: 'Strona główna'
+            en: 'home',
+            pl: 'strona główna'
         }
     }
 
