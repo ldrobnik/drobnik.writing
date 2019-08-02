@@ -652,8 +652,14 @@ export const WEBSITE_TEXT = {
             </div>
         },
         button: {
-            en: 'Read an excerpt',
-            pl: 'Przeczytaj fragment'
+            en: {
+                message: 'Read an excerpt',
+                path: '/texts/nocturine'
+            },
+            pl: {
+                message: 'Przeczytaj fragment',
+                path: '/texts/nocturine'
+            }
         },
         quotes: {
             en: [

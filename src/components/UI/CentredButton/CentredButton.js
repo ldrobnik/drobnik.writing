@@ -11,12 +11,13 @@ const Wrapper = styled.div`
 const ButtonWrapper = styled.div`
   background-color: ${props => props.theme.background};
   font-size: ${props => props.theme.bodySize};
+  font-weight: bold;
   padding: 0.8em;
   margin: 0 0.5em;
   cursor: pointer;
   display: block;
   user-select: none;
-    
+
         
     &:hover {
       animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation}
@@ -56,24 +57,26 @@ const CentredButton = (props) => {
     let workingButton;
 
     if (props.link) {
-        workingButton =
+        workingButton = (
 
-            <ButtonWrapper>
-                <Link to={props.path}>
+            <Link to={props.path}>
+                <ButtonWrapper>
                     {buttonContent}
-                </Link>;
-            </ButtonWrapper>
+                </ButtonWrapper>
+            </Link>);
 
     } else {
-        workingButton =
-            <ButtonWrapper>
-                <a
-                    href={props.path}
-                    target="_blank"
-                    rel="noopener noreferrer">
+        workingButton = (
+
+            <a
+                href={props.path}
+                target="_blank"
+                rel="noopener noreferrer">
+                <ButtonWrapper>
                     {buttonContent}
-                </a>
-            </ButtonWrapper>;
+                </ButtonWrapper>
+            </a>
+        );
     }
 
     return (
