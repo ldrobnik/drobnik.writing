@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {POP_KEYFRAMES} from "../../../../data/constants";
+import {POP_KEYFRAMES} from "../../../data/constants";
 
 const Wrapper = styled.div`
   text-align: center;

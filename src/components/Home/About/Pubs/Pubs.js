@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { WEBSITE_TEXT } from '../../../../data/constants';
 
-import SectionHeading from '../SectionHeading/SectionHeading'
+import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import PubList from './PubList/PubList';
 
 

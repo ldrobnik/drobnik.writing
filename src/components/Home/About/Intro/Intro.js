@@ -5,10 +5,10 @@ import {connect} from 'react-redux';
 import {Link} from "react-router-dom";
 import authorsPhoto from '../../../../assets/authorsPhoto.jpg'
 import {WEBSITE_TEXT} from '../../../../data/constants';
-import SectionHeading from '../SectionHeading/SectionHeading';
-import CentredPhoto from '../CentredPhoto/CentredPhoto';
+import SectionHeading from '../../../UI/SectionHeading/SectionHeading';
+import CentredPhoto from '../../../UI/CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
-import CentredButton from '../CentredButton/CentredButton';
+import CentredButton from '../../../UI/CentredButton/CentredButton';
 
 const Body = styled.div`
   text-align: left;
