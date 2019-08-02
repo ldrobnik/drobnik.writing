@@ -5,6 +5,7 @@ import {WEBSITE_TEXT} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import CentredButton from "../../../UI/CentredButton/CentredButton";
 import SectionLinks from "../SectionLinks/SectionLinks";
+import QuoteList from '../QuoteList/QuoteList';
 
 const Body = styled.div`
   text-align: left;
@@ -24,6 +25,9 @@ const Nocturine = (props) => {
             <Body>
                 {WEBSITE_TEXT.nocturine.body[props.lang]}
             </Body>
+            <QuoteList
+                lang={props.lang}
+            />
             <CentredButton
                 message={WEBSITE_TEXT.nocturine.button[props.lang].message}
                 path={WEBSITE_TEXT.nocturine.button[props.lang].path}
