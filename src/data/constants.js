@@ -749,9 +749,9 @@ export const LINKS = [
     }
 ];
 
-//Keyframes of the animation used for hovering over links
+//Keyframes of pulsating animation
 
-export const HOVER_KEYFRAMES = keyframes`
+export const PULSATE_KEYFRAMES = keyframes`
   0% {
     opacity: 1;
   }
@@ -763,4 +763,17 @@ export const HOVER_KEYFRAMES = keyframes`
   100% {
     opacity: 1;
   }
+`;
+
+//Keyframes for scaling animation
+
+export const SCALE_KEYFRAMES = keyframes`
+  from {
+    transform: scale(1);
+  }
+  
+  to {
+    transform: scale(2);
+  }
+  
 `;

@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 import Layout from '../Layout/Layout';
 import About from './About/About';
 import Text from './Text/Text';
-import {HOVER_KEYFRAMES} from "../../data/constants";
+import {PULSATE_KEYFRAMES} from "../../data/constants";
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
         
         @media all and (min-width: ${props => props.theme.smallScr}) {
              &:hover {
-                      animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.hoverAnimation};
              }
         }
             

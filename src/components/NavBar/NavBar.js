@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 
 import Logo from './Logo/Logo';
 import * as actionTypes from '../../store/actions';
-import {WEBSITE_TEXT, TEXT_NAMES, HOVER_KEYFRAMES} from '../../data/constants';
+import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES} from '../../data/constants';
 
 const Toolbar = styled.header`
     height: 3em;
@@ -31,7 +31,7 @@ const LogoWrapper = styled.div`
   
    @media all and (min-width: ${props => props.theme.smallScr}) {
              &:hover {
-                      animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.hoverAnimation};
              }
         }
 `;
@@ -44,7 +44,7 @@ const NavElement = styled.div`
   
   @media all and (min-width: ${props => props.theme.smallScr}) {
              &:hover {
-                      animation: ${HOVER_KEYFRAMES} ${props => props.theme.hoverAnimation};
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.hoverAnimation};
              }
         }
 `;

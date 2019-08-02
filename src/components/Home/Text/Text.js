@@ -70,7 +70,6 @@ const Capital = styled.div`
   font-family: ${props => props.theme.cursive};
   font-size: 12em;
   text-transform: uppercase;
-  //font-style: italic;
   opacity: ${props => props.theme.transparent};
   position: absolute;
   top: 0;
