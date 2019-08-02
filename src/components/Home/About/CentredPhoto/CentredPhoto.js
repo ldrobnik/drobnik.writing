@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import authorsPhoto from "../../../../assets/authorsPhoto.jpg";
 
 const Wrapper = styled.div`
   text-align: center;
