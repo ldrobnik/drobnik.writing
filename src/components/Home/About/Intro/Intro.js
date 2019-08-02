@@ -10,6 +10,12 @@ import CentredPhoto from '../CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import CentredButton from '../CentredButton/CentredButton';
 
+const Body = styled.div`
+  text-align: left;
+  font-size: ${props => props.theme.bodySize};
+  font-family: ${props => props.theme.serif};
+`;
+
 const Intro = (props) => {
 
     return (
@@ -22,14 +28,15 @@ const Intro = (props) => {
                 source={authorsPhoto}
                 altText='Author’s photo'
             />
-            {WEBSITE_TEXT.intro.body[props.lang]}
-            <p>
-                <SocialLinks />
-            </p>
+            <Body>
+                {WEBSITE_TEXT.intro.body[props.lang]}
+            </Body>
+            <SocialLinks/>
+
             <CentredButton
-            message={WEBSITE_TEXT.intro.patreon[props.lang].message}
-            path={WEBSITE_TEXT.intro.patreon[props.lang].path}
-            link={false}/>
+                message={WEBSITE_TEXT.intro.patreon[props.lang].message}
+                path={WEBSITE_TEXT.intro.patreon[props.lang].path}
+                link={false}/>
 
             <p><AnchorLink href='#read'>Read</AnchorLink></p>
         </React.Fragment>
