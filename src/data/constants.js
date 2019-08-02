@@ -611,7 +611,7 @@ export const WEBSITE_TEXT = {
         },
         patreon: {
             en: {
-                message: <div>Please consider becoming my<br /><FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atron</div>,
+                message: <div>Please become my <FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atron</div>,
                 path: 'https://www.patreon.com/drobnik'
             },
             pl: {
@@ -753,6 +753,36 @@ export const WEBSITE_TEXT = {
             pl: 'Wróć do początku'
         }
     },
+    sectionLinks: [
+        {
+          id: 'top',
+          text: {
+              en: 'top',
+              pl: 'góra'
+          }
+        },
+        {
+            id: 'nocturine',
+            text: {
+                en: 'nocturine',
+                pl: 'nocturine'
+            }
+        },
+        {
+            id: 'pubs',
+            text: {
+                en: 'publications',
+                pl: 'publikacje'
+            }
+        },
+        {
+            id: 'read',
+            text: {
+                en: 'reading room',
+                pl: 'czytelnia'
+            }
+        }
+    ],
     text: {
         nextText: {
             en: 'Up next: ',

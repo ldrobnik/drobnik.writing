@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="213">
+              <caret line="116" column="101" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="101" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -46,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
+            <state relative-caret-position="299">
+              <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -56,10 +54,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="534">
+              <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="328">
-              <caret line="617" column="131" lean-forward="true" selection-start-line="617" selection-start-column="131" selection-end-line="617" selection-end-column="131" />
+              <caret line="604" column="666" lean-forward="true" selection-start-line="604" selection-start-column="666" selection-end-line="604" selection-end-column="666" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -70,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="42" selection-end-column="2" />
+            <state relative-caret-position="92">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -82,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
+            <state relative-caret-position="874">
               <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
@@ -106,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/SocialLinks/SocialLinks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+            <state relative-caret-position="258">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="34" selection-end-column="14" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -126,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>https://atticusreview.or</find>
       <find>opacity</find>
       <find>contant</find>
       <find>TEXTS</find>
@@ -150,12 +159,13 @@
       <find>scaleAn</find>
       <find>select</find>
       <find>becoming my</find>
-      <find>bodySize</find>
       <find>padding</find>
       <find>Poznan</find>
       <find>;</find>
-      <find>Anchor</find>
+      <find>bodySize</find>
       <find>consider</find>
+      <find>Anchor</find>
+      <find>anchorLInk</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -186,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Home/About/Read/BookTile/BookTile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/PressTile/PressTile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/CollectionTile/CollectionTile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/CollectionTile/CollectionTile.js" />
@@ -237,6 +246,7 @@
         <option value="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" />
         <option value="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" />
       </list>
     </option>
   </component>
@@ -340,6 +350,15 @@
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="About" type="462c0819:PsiDirectoryNode" />
               <item name="Read" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="About" type="462c0819:PsiDirectoryNode" />
+              <item name="SectionLinks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
@@ -477,21 +496,22 @@
       <workItem from="1564475607987" duration="605000" />
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
-      <workItem from="1564688734239" duration="26024000" />
+      <workItem from="1564688734239" duration="27931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222485000" />
+    <option name="totallyTimeSpent" value="224392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="76" y="18" width="1425" height="1038" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27325162" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.27325162" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16609783" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.16609783" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -542,7 +562,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/data/texts/photosensitivity-pl.js" />
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -811,16 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -858,26 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/SocialLinks/SocialLinks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="42" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -888,9 +877,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="116" column="101" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
+        <state relative-caret-position="874">
           <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
@@ -898,22 +907,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
+        <state relative-caret-position="328">
+          <caret line="604" column="666" lean-forward="true" selection-start-line="604" selection-start-column="666" selection-end-line="604" selection-end-column="666" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="617" column="131" lean-forward="true" selection-start-line="617" selection-start-column="131" selection-end-line="617" selection-end-column="131" />
+        <state relative-caret-position="299">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/SocialLinks/SocialLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="34" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
