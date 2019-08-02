@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import {POP_KEYFRAMES, BLUR_KEYFRAMES} from "../../../../data/constants";
 
 const Wrapper = styled.div`
   text-align: center;
@@ -8,10 +9,16 @@ const Wrapper = styled.div`
 
 const ButtonWrapper = styled.div`
   background-color: ${props => props.theme.background};
-  opacity: ${props => props.theme.translucent};
   font-size: ${props => props.theme.bodySize};
   padding: 0.8em;
   margin: 0 0.5em;
+  cursor: pointer;
+  display: block;
+    
+        
+    &:hover {
+      animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation}
+    }
     
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
        margin: 0 0.8em;;
@@ -32,6 +39,7 @@ const ButtonWrapper = styled.div`
     @media all and (min-width: ${props => props.theme.extraLargeScr}) {
        margin: 0 25%;
     }
+
     
 `;
 
@@ -47,21 +55,23 @@ const CentredButton = (props) => {
 
     if (props.link) {
         workingButton =
-            <Link to={props.path}>
-                <ButtonWrapper>
+
+            <ButtonWrapper>
+                <Link to={props.path}>
                     {buttonContent}
-                </ButtonWrapper>
-            </Link>;
+                </Link>;
+            </ButtonWrapper>
+
     } else {
         workingButton =
-            <a
-                href={props.path}
-                target="_blank"
-                rel="noopener noreferrer">
-                <ButtonWrapper>
+            <ButtonWrapper>
+                <a
+                    href={props.path}
+                    target="_blank"
+                    rel="noopener noreferrer">
                     {buttonContent}
-                </ButtonWrapper>
-            </a>;
+                </a>
+            </ButtonWrapper>;
     }
 
     return (

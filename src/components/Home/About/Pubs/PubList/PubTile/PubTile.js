@@ -38,7 +38,7 @@ const Capital = styled.div`
   transform: translate(-50%, -50%);
   
   &:hover {
-    animation: ${BLUR_KEYFRAMES} ${props => props.theme.scaleAnimation}
+    animation: ${BLUR_KEYFRAMES} ${props => props.theme.blurAnimation}
   }
 `;
 
