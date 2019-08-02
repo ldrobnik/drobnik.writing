@@ -36,7 +36,8 @@ const Intro = (props) => {
             <CentredButton
                 message={WEBSITE_TEXT.intro.patreon[props.lang].message}
                 path={WEBSITE_TEXT.intro.patreon[props.lang].path}
-                link={false}/>
+                link={false}
+                capital='w'/>
         </React.Fragment>
     );
 };

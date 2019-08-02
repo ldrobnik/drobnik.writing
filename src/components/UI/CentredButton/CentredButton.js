@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {POP_KEYFRAMES} from "../../../data/constants";
+import {BLUR_KEYFRAMES, POP_KEYFRAMES} from "../../../data/constants";
 
 const Wrapper = styled.div`
   text-align: center;
@@ -16,7 +16,9 @@ const ButtonWrapper = styled.div`
   margin: 0 0.5em;
   cursor: pointer;
   display: block;
+  position: relative;
   user-select: none;
+  overflow: hidden;
 
         
     &:hover {
@@ -46,6 +48,18 @@ const ButtonWrapper = styled.div`
     
 `;
 
+const Capital = styled.div`
+  font-family: ${props => props.theme.cursive};
+  font-size: 24em;
+  text-transform: uppercase;
+  //font-style: italic;
+  opacity: ${props => props.theme.transparent};
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
 
 const CentredButton = (props) => {
 
@@ -56,12 +70,18 @@ const CentredButton = (props) => {
     //variable holding the button content wrapped in a Link or a element
     let workingButton;
 
+    //decorative letter to be displayed on the button
+    const capital = props.capital;
+
     if (props.link) {
         workingButton = (
 
             <Link to={props.path}>
                 <ButtonWrapper>
                     {buttonContent}
+                    <Capital>
+                        {capital}
+                    </Capital>
                 </ButtonWrapper>
             </Link>);
 
@@ -74,6 +94,9 @@ const CentredButton = (props) => {
                 rel="noopener noreferrer">
                 <ButtonWrapper>
                     {buttonContent}
+                    <Capital>
+                        {capital}
+                    </Capital>
                 </ButtonWrapper>
             </a>
         );

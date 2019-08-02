@@ -26,7 +26,8 @@ const Nocturine = (props) => {
             <CentredButton
                 message={WEBSITE_TEXT.nocturine.button[props.lang].message}
                 path={WEBSITE_TEXT.nocturine.button[props.lang].path}
-                link={true}/>
+                link={true}
+                capital='m'/>
         </React.Fragment>
     );
 };
