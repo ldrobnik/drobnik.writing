@@ -8,7 +8,6 @@ const TileContainer = styled.div`
   justify-content: space-evenly;
   align-content: space-evenly;
   flex-wrap: wrap;
-  padding: 1em 2em;
   width: 100%;
   cursor: pointer;
 `;

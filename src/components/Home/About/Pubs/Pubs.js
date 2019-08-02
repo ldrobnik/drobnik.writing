@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
 
-import Switch from "react-switch";
 import {WEBSITE_TEXT} from '../../../../data/constants';
 
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
@@ -14,18 +13,27 @@ const Wrapper = styled.div`
   text-align: center;
 `;
 
+const Message = styled.p`
+  font-size: ${props => props.theme.bodySize};
+`;
+
 const SwitchPanel = styled.div`
   display: flex;
+  justify-content: center;
+  align-content: space-evenly;
+  font-size: ${props => props.theme.bodySize};
+  font-weight: bold;
 
 `;
 
 const SwitchWrapper = styled.div`
   display: flex;
+  margin: 0.5em;
 `;
 
 
 const Label = styled.span`
-
+  padding: 0.1em;
 `;
 
 
@@ -55,7 +63,7 @@ const Pubs = (props) => {
                 title={WEBSITE_TEXT.publications.title[props.lang]}
                 subtitle=""
             />
-            <p>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</p>
+            <Message>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</Message>
             <SwitchPanel>
                 <label>
                     <SwitchWrapper>
