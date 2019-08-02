@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
         
         @media all and (min-width: ${props => props.theme.smallScr}) {
              &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.hoverAnimation};
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
              }
         }
             

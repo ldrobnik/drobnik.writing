@@ -679,7 +679,7 @@ export const WEBSITE_TEXT = {
             pl: 'Czytaj'
         },
         introduction: {
-            en: 'Here is a handful of my texts in case you wished to read them:',
+            en: 'Here’s a handful of my pieces. Maybe you’d like to read them:',
             pl: 'Oto kilka moich tekstów. Może zechcesz je przeczytać:'
         },
         backToTop: {
