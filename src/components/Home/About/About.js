@@ -17,7 +17,6 @@ const TopAnchor = styled.div`
 
 const Wrapper = styled.div`
 
-    font-size: ${props => props.theme.bodySize};
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
       padding: 2em 3em;
     }

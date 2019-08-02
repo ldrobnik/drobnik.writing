@@ -15,6 +15,7 @@ const ButtonWrapper = styled.div`
   margin: 0 0.5em;
   cursor: pointer;
   display: block;
+  user-select: none;
     
         
     &:hover {

@@ -14,6 +14,7 @@ const Body = styled.div`
   text-align: left;
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.serif};
+  line-height: 1.4em;
 `;
 
 const Intro = (props) => {
