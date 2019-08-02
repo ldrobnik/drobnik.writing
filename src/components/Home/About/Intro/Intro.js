@@ -9,6 +9,7 @@ import SectionHeading from '../../../UI/SectionHeading/SectionHeading';
 import CentredPhoto from '../../../UI/CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import CentredButton from '../../../UI/CentredButton/CentredButton';
+import SectionLinks from '../SectionLinks/SectionLinks';
 
 const Body = styled.div`
   text-align: left;
@@ -38,6 +39,13 @@ const Intro = (props) => {
                 path={WEBSITE_TEXT.intro.patreon[props.lang].path}
                 link={false}
                 capital='w'/>
+                <SectionLinks
+                    lang={props.lang}
+                    top={false}
+                    nocturine={false}
+                    pubs={true}
+                    read={true}
+                />
         </React.Fragment>
     );
 };

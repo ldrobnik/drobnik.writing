@@ -7,6 +7,7 @@ import {WEBSITE_TEXT} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import ToggleSwitch from '../../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
+import SectionLinks from "../SectionLinks/SectionLinks";
 
 
 const Wrapper = styled.div`
@@ -104,6 +105,13 @@ const Pubs = (props) => {
                 en={en}
                 pl={pl}
                 type="collections"/>
+            <SectionLinks
+                lang={props.lang}
+                top={true}
+                nocturine={true}
+                pubs={true}
+                read={false}
+            />
         </Wrapper>
     );
 };

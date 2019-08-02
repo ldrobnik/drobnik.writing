@@ -27,7 +27,7 @@ const SectionLinks = (props) => {
         linkText = sectionLinks[i].text[props.lang];
         if (props[linkId]) {
             linksToDisplay.push(
-                <AnchorLink href='#pubs' offset="60px">linkText</AnchorLink>
+                <AnchorLink href={linkPath} offset="60px">{linkText}</AnchorLink>
             );
         }
 

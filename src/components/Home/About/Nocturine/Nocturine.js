@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {WEBSITE_TEXT} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import CentredButton from "../../../UI/CentredButton/CentredButton";
+import SectionLinks from "../SectionLinks/SectionLinks";
 
 const Body = styled.div`
   text-align: left;
@@ -28,6 +29,13 @@ const Nocturine = (props) => {
                 path={WEBSITE_TEXT.nocturine.button[props.lang].path}
                 link={true}
                 capital='m'/>
+            <SectionLinks
+                lang={props.lang}
+                top={true}
+                nocturine={false}
+                pubs={false}
+                read={true}
+            />
         </React.Fragment>
     );
 };

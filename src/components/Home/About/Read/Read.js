@@ -5,6 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { connect } from 'react-redux';
 import {PUBLICATIONS, WEBSITE_TEXT, TEXT_NAMES, TEXTS} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
+import SectionLinks from "../SectionLinks/SectionLinks";
 
 const StyledWrapper = styled.div`
 
@@ -33,7 +34,13 @@ const Read = (props) => {
                         </Link>
                         )
             })}
-            <p><i>{backToTop}</i></p>
+            <SectionLinks
+                lang={props.lang}
+                top={true}
+                nocturine={true}
+                pubs={true}
+                read={false}
+            />
         </StyledWrapper>
     );
 };
