@@ -41,6 +41,10 @@ const Wrapper = styled.div`
     padding: 2em 1em;
 `;
 
+const SectionWrapper = styled.div`
+    margin-bottom: 5em;
+`;
+
 const About = (props) => {
 
 
@@ -74,18 +78,18 @@ const About = (props) => {
             <TopAnchor>
                 <div id='top'></div>
             </TopAnchor>
-            <section id='intro'>
+            <SectionWrapper>
                 <Intro />
-            </section>
-            <section id='nocturine'>
+            </SectionWrapper>
+            <SectionWrapper id='nocturine'>
                 <Nocturine/>
-            </section>
-            <section id='pubs'>
+            </SectionWrapper>
+            <SectionWrapper id='pubs'>
                 <Pubs/>
-            </section>
-            <section id='read'>
+            </SectionWrapper>
+            <SectionWrapper id='read'>
                 <Read />
-            </section>
+            </SectionWrapper>
         </Wrapper>
     );
 };
