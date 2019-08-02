@@ -6,9 +6,15 @@ import { connect } from 'react-redux';
 import {PUBLICATIONS, WEBSITE_TEXT, TEXT_NAMES, TEXTS} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import SectionLinks from "../SectionLinks/SectionLinks";
+import CentredButton from "../../../UI/CentredButton/CentredButton";
 
-const StyledWrapper = styled.div`
+const Wrapper = styled.div`
+  text-align: center;
+`;
 
+const Message = styled.p`
+  font-weight: bold;
+  font-size: ${props => props.theme.bodySize};
 `;
 
 const Read = (props) => {
@@ -17,21 +23,20 @@ const Read = (props) => {
     const backToTop = <AnchorLink href='#top'>{WEBSITE_TEXT.text.backToTop[props.lang]}</AnchorLink>;
 
     return (
-        <StyledWrapper>
+        <Wrapper>
             <SectionHeading
                 title={WEBSITE_TEXT.read.title[props.lang]}
                 subtitle=""
             />
-            <p>{WEBSITE_TEXT.read.introduction[props.lang]}</p>
+            <Message>{WEBSITE_TEXT.read.introduction[props.lang]}</Message>
             {TEXT_NAMES.map((text) => {
                     let textLink = '/texts/' + text;
                     return (
-                        <Link
-                            to={textLink}
-                            key={text}
-                        >
-                            <p>{TEXTS[props.lang][text].title}</p>
-                        </Link>
+                        <CentredButton
+                            message={TEXTS[props.lang][text].title}
+                            path={textLink}
+                            link={true}
+                            capital={TEXTS[props.lang][text].title[0]}/>
                         )
             })}
             <SectionLinks
@@ -41,7 +46,7 @@ const Read = (props) => {
                 pubs={true}
                 read={false}
             />
-        </StyledWrapper>
+        </Wrapper>
     );
 };
 
