@@ -2,16 +2,17 @@ import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
-import {WEBSITE_TEXT} from '../../../../data/constants';
 import {Link} from "react-router-dom";
 import authorsPhoto from '../../../../assets/authorsPhoto.jpg'
+import {WEBSITE_TEXT} from '../../../../data/constants';
+import SectionHeading from '../SectionHeading/SectionHeading';
 
 const Header = styled.div`
   text-align: center;
 `;
 
 const Title = styled.div`
-    font-size: 5em;
+    font-size: ${props => props.theme.titleSize};
     font-weight: bold;
     
     @media all and (max-width: ${props => props.theme.smallScr}) {
@@ -20,7 +21,7 @@ const Title = styled.div`
 `;
 
 const Subtitle = styled.div`
-    font-size: 2em;
+    font-size: ${props => props.theme.subtitleSize};
     font-weight: bold;
     font-style: italic;
     
@@ -50,14 +51,13 @@ const SocialLinks = styled.div`
 
 const Intro = (props) => {
 
-    //separator to be used for social media links
-    let separator;
-
     return (
         <React.Fragment>
             <Header>
-                <Title>{WEBSITE_TEXT.intro.title}</Title>
-                <Subtitle>{WEBSITE_TEXT.intro.subtitle[props.lang]}</Subtitle>
+                <SectionHeading
+                        title={WEBSITE_TEXT.intro.title}
+                        subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
+                />
                 <AuthorsPhoto>
                     <img src={authorsPhoto} alt='Author’s photo' />
                 </AuthorsPhoto>

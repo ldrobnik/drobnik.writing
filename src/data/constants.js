@@ -648,6 +648,52 @@ export const WEBSITE_TEXT = {
         button: {
             en: 'Read an excerpt',
             pl: 'Przeczytaj fragment'
+        },
+        quotes: {
+            en: [
+                {
+                  quote: 'Drobnik wowed us with his free-wheeling sentence structure + utterly unique vision.',
+                  source: 'FATHOM BOOKS, the publisher'
+                },
+                {
+                    quote: 'To say Nocturine is oneiric isn’t enough — it’s a psychedelic. It kicks in slowly, swaying you from the very first sentences. Hypnotic phrase. Beautiful!',
+                    source: 'Patrycja Janowska, LAMPA 1–2/2012'
+                },
+                {
+                    quote: 'Drobnik creates an evocative, oppressive mood through the dangerous unknown; subtly, with a single shift outside the boundaries of our expectations.',
+                    source: 'Ilona Witkowska, ODRA 5/2012'
+                },
+                {
+                    quote: 'Drobnik’s strategy is to combine a fast-paced plot typical of popular literature with the highly metaphorical language of literary fiction.',
+                    source: 'Rafał Derda, ELEWATOR 2/2012'
+                },
+                {
+                    quote: 'I’m not going to build suspense. Let me say it right away: this book will drag you in with its thousand tentacles (everyone gets their own, according to their liking).',
+                    source: 'Marta Sawicka-Danielak, BLUSZCZ 2/2012'
+                }
+            ],
+            pl: [
+                {
+                    quote: 'Drobnik zachwycił nas swoją beztroską składnią i&nbsp;absolutnie wyjątkową wizją.',
+                    source: 'FATHOM BOOKS, wydawca'
+                },
+                {
+                    quote: 'Powiedzieć, że Nocturine jest oniryczne, to za mało — to psychodelik jest. Wchodzi miękko, od pierwszych zdań już kołysze. Fraza hipnotyczna. Coś pięknego!',
+                    source: 'Patrycja Janowska, LAMPA 1–2/2012'
+                },
+                {
+                    quote: 'Drobnik tworzy sugestywnie nastrój osaczenia przez groźne nieznane; subtelnie, jednym przesunięciem poza ramy naszych przyzwyczajeń.',
+                    source: 'Ilona Witkowska, ODRA 5/2012'
+                },
+                {
+                    quote: 'Przyjęta przez Drobnika strategia polega na połączeniu przynależnej literaturze popularnej wartkości fabuły z&nbsp;gęstym, mocno zmetaforyzowanym językiem literatury pięknej.',
+                    source: 'Rafał Derda, ELEWATOR 2/2012'
+                },
+                {
+                    quote: 'Nie będę budowała suspensu. Zdradzę już na wstępie: ta książka wciągnie was tysiącem swoim macek (każdemu inna, wedle gustu).',
+                    source: 'Marta Sawicka-Danielak, BLUSZCZ 2/2012'
+                }
+            ]
         }
 
     },
