@@ -1,9 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
+
+import Switch from "react-switch";
 import { WEBSITE_TEXT } from '../../../../data/constants';
 
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
+import ToggleSwitch from '../../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
 
 
@@ -34,22 +37,21 @@ const Pubs = (props) => {
                 title={WEBSITE_TEXT.publications.title[props.lang]}
                 subtitle=""
             />
+            <p>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</p>
             <label>
-                <p>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</p>
-                <input
-                    type='checkbox'
+                <ToggleSwitch
                     checked={en}
                     onChange={setEnHandler}
                 />
-                {WEBSITE_TEXT.publications.chooseLanguage[props.lang].english}
+                <span>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].english}</span>
+
             </label>
             <label>
-               <input
-                type='checkbox'
-                checked={pl}
-                onChange={setPlHandler}
-            />
-                {WEBSITE_TEXT.publications.chooseLanguage[props.lang].polish}
+                <ToggleSwitch
+                    checked={pl}
+                    onChange={setPlHandler}
+                />
+                <span>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].polish}</span>
             </label>
             <h3>{WEBSITE_TEXT.publications.headlines[props.lang].books}</h3>
                 <PubList
