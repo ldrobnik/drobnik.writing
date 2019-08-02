@@ -1,14 +1,32 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 
 import Switch from "react-switch";
-import { WEBSITE_TEXT } from '../../../../data/constants';
+import {WEBSITE_TEXT} from '../../../../data/constants';
 
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import ToggleSwitch from '../../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
 
+
+const Wrapper = styled.div`
+  text-align: center;
+`;
+
+const SwitchPanel = styled.div`
+  display: flex;
+
+`;
+
+const SwitchWrapper = styled.div`
+  display: flex;
+`;
+
+
+const Label = styled.span`
+
+`;
 
 
 const Pubs = (props) => {
@@ -32,32 +50,37 @@ const Pubs = (props) => {
     };
 
     return (
-        <React.Fragment>
+        <Wrapper>
             <SectionHeading
                 title={WEBSITE_TEXT.publications.title[props.lang]}
                 subtitle=""
             />
             <p>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</p>
-            <label>
-                <ToggleSwitch
-                    checked={en}
-                    onChange={setEnHandler}
-                />
-                <span>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].english}</span>
-
-            </label>
-            <label>
-                <ToggleSwitch
-                    checked={pl}
-                    onChange={setPlHandler}
-                />
-                <span>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].polish}</span>
-            </label>
+            <SwitchPanel>
+                <label>
+                    <SwitchWrapper>
+                        <ToggleSwitch
+                            checked={en}
+                            onChange={setEnHandler}
+                        />
+                        <Label>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].english}</Label>
+                    </SwitchWrapper>
+                </label>
+                <label>
+                    <SwitchWrapper>
+                        <ToggleSwitch
+                            checked={pl}
+                            onChange={setPlHandler}
+                        />
+                        <Label>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].polish}</Label>
+                    </SwitchWrapper>
+                </label>
+            </SwitchPanel>
             <h3>{WEBSITE_TEXT.publications.headlines[props.lang].books}</h3>
-                <PubList
-                    en={en}
-                    pl={pl}
-                    type="books"/>
+            <PubList
+                en={en}
+                pl={pl}
+                type="books"/>
             <h3>{WEBSITE_TEXT.publications.headlines[props.lang].press}</h3>
             <PubList
                 en={en}
@@ -68,7 +91,7 @@ const Pubs = (props) => {
                 en={en}
                 pl={pl}
                 type="collections"/>
-        </React.Fragment>
+        </Wrapper>
     );
 };
 
