@@ -4,7 +4,16 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {WEBSITE_TEXT} from "../../../../data/constants";
 
 const Wrapper = styled.div`
-  float: left;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: ${props => props.theme.captionSize}
+  user-select: none;
+  margin: 2em 0;
+  
+  div {
+    padding: 0 0.3em;
+  }
 `;
 
 const SectionLinks = (props) => {
@@ -34,7 +43,6 @@ const SectionLinks = (props) => {
     }
     return (
         <Wrapper>
-            <div>go to:</div>
             {linksToDisplay.map((link, k) => {
                     return (<div key={k}>
                             {link}
