@@ -7,6 +7,8 @@ import {
     faInstagram,
     faPatreon
 } from '@fortawesome/free-brands-svg-icons';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import {Link} from 'react-router-dom';
 
 //constants containing the content of individual pieces
 import {NOCTURINE_EN} from './texts/nocturine-en';
@@ -598,14 +600,13 @@ export const WEBSITE_TEXT = {
             pl: 'prozaik'
         },
         body: {
-            en: [
-                'english1',
-                'english2'
-            ],
-            pl: [
-                'polish1',
-                'polish2'
-            ]
+            en: <div>
+                <p>I’m a bilingual writer who creates prose in his native Polish but recently mostly in English, my second language. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan. (Though I don’t shy away from longer forms.)</p>
+                <p><Link to="/texts/nocturine"><b>NOCTURINE</b></Link>, my novella/short fiction collection is now forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>, and my work has been featured in <i>Atticus Review</i>, <i>Quarterly West</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and elsewhere. Below you can find a <AnchorLink href='#pubs'><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and also <AnchorLink href='#read'><b>READ</b></AnchorLink> some of my pieces.</p>
+            </div>,
+            pl: <div>
+
+            </div>
         },
         patreon: {
             en: <a href="https://www.patreon.com/drobnik" target="_blank" rel="noopener noreferrer">Please consider becoming my&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atron!</a>,

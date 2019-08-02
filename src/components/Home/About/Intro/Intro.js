@@ -59,17 +59,10 @@ const Intro = (props) => {
                 <Title>{WEBSITE_TEXT.intro.title}</Title>
                 <Subtitle>{WEBSITE_TEXT.intro.subtitle[props.lang]}</Subtitle>
                 <AuthorsPhoto>
-                    <img src={authorsPhoto} alt='Author’s photo'/>
+                    <img src={authorsPhoto} alt='Author’s photo' />
                 </AuthorsPhoto>
             </Header>
-            {WEBSITE_TEXT.intro.body[props.lang].map((paragraph, k) => {
-                    return (
-                        <p key={k}>
-                            {paragraph}
-                        </p>
-                    )
-                }
-            )}
+            {WEBSITE_TEXT.intro.body[props.lang]}
             <p>
                 <SocialLinks>
                     {WEBSITE_TEXT.intro.social.map((link, k) => {
@@ -90,7 +83,7 @@ const Intro = (props) => {
                 voluptatibus? Doloremque ducimus ea natus.</p>
             <p>Dolor sit amet, consectetur adipisicing elit. Ab aperiam aut dolores ea, eum explicabo fuga ipsum iusto
                 mollitia nemo odit pariatur porro quam quasi recusandae rem repellendus, sed totam velit voluptatum?</p>
-            <p><AnchorLink href='#publications'>Publications</AnchorLink></p>
+            <p><AnchorLink href='#pubs'>Publications</AnchorLink></p>
             <p><AnchorLink href='#read'>Read</AnchorLink></p>
         </React.Fragment>
     );
