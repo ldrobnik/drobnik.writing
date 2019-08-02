@@ -33,13 +33,10 @@ const Intro = (props) => {
                 {WEBSITE_TEXT.intro.body[props.lang]}
             </Body>
             <SocialLinks/>
-
             <CentredButton
                 message={WEBSITE_TEXT.intro.patreon[props.lang].message}
                 path={WEBSITE_TEXT.intro.patreon[props.lang].path}
                 link={false}/>
-
-            <p><AnchorLink href='#read'>Read</AnchorLink></p>
         </React.Fragment>
     );
 };
