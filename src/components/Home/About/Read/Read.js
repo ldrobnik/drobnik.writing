@@ -33,7 +33,7 @@ const Read = (props) => {
                     let textLink = '/texts/' + text;
                     return (
                         <CentredButton
-                            message={TEXTS[props.lang][text].title}
+                            message={TEXTS[props.lang][text].title + ' (' + TEXTS[props.lang][text].subtitle + ')'}
                             path={textLink}
                             link={true}
                             capital={TEXTS[props.lang][text].title[0]}/>

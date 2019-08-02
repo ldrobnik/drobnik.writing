@@ -54,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="770" column="9" lean-forward="true" selection-start-line="770" selection-start-column="9" selection-end-line="770" selection-end-column="9" />
+            <state relative-caret-position="213">
+              <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -114,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Read/Read.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
+            <state relative-caret-position="299">
+              <caret line="35" column="113" selection-start-line="35" selection-start-column="113" selection-end-line="35" selection-end-column="113" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -146,7 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>contant</find>
       <find>TEXTS</find>
       <find>HOVER_KEYFRA</find>
       <find>hoverAnimation</find>
@@ -170,12 +169,13 @@
       <find>becoming my</find>
       <find>padding</find>
       <find>Poznan</find>
-      <find>bodySize</find>
       <find>consider</find>
       <find>anchorLInk</find>
       <find>Anchor</find>
       <find>reading ro</find>
       <find>;</find>
+      <find>tEXTS =</find>
+      <find>bodySize</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -506,12 +506,12 @@
       <workItem from="1564475607987" duration="605000" />
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
-      <workItem from="1564688734239" duration="29153000" />
+      <workItem from="1564688734239" duration="29346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225614000" />
+    <option name="totallyTimeSpent" value="225807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="76" y="9" width="1425" height="1038" extended-state="0" />
@@ -860,26 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="116" column="101" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="101" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/SocialLinks/SocialLinks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -920,16 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="770" column="9" lean-forward="true" selection-start-line="770" selection-start-column="9" selection-end-line="770" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
@@ -950,10 +920,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="116" column="101" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Read/Read.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
+        <state relative-caret-position="299">
+          <caret line="35" column="113" selection-start-line="35" selection-start-column="113" selection-end-line="35" selection-end-column="113" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
