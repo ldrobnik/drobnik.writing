@@ -6,7 +6,7 @@ import {WEBSITE_TEXT} from "../../../../data/constants";
 const Wrapper = styled.div`
     display: flex;
     justify-content: center;
-    font-size: ${props => props.theme.captionSize};
+    font-size: ${props => props.theme.bodySize};
     
     @media all and (max-width: ${props => props.theme.smallScr}) {
       font-size: 3vw;

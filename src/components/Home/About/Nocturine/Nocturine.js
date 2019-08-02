@@ -1,23 +1,28 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
-import { WEBSITE_TEXT } from '../../../../data/constants';
+import {connect} from 'react-redux';
+import {WEBSITE_TEXT} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 
-const StyledWrapper = styled.div`
-
+const Body = styled.div`
+  text-align: left;
+  font-size: ${props => props.theme.bodySize};
+  font-family: ${props => props.theme.serif};
+  line-height: 1.4em;
 `;
 
 const Nocturine = (props) => {
 
     return (
-        <StyledWrapper>
+        <React.Fragment>
             <SectionHeading
                 title={WEBSITE_TEXT.nocturine.title[props.lang]}
                 subtitle=""
             />
-            {WEBSITE_TEXT.nocturine.body[props.lang]}
-        </StyledWrapper>
+            <Body>
+                {WEBSITE_TEXT.nocturine.body[props.lang]}
+            </Body>
+        </React.Fragment>
     );
 };
 
