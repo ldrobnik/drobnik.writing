@@ -644,6 +644,10 @@ export const WEBSITE_TEXT = {
                 <p><Link to="/texts/nocturine"><b>NOCTURINE</b></Link> to minipowieść/zbiór krótkich próz, który zabiera czytelnika na niejednoznaczną gatunkowo podróż od Poznania pożeranego przez ośmiobiotową amebę przez dom złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze ludzkiego ciała. Każdy z&nbsp;sześciu rozdziałów/opowiadań ma innego narratora, który snuje opowieść w&nbsp;gorączkowym, acz melancholijnym stylu.</p>
                 <p>Książka została pierwotnie wydana po polsku w&nbsp;jednym tomie z&nbsp;inną minipowieścią pt. „Cunninghamella”. Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się jej autorski przekład na angielski.</p>
             </div>
+        },
+        button: {
+            en: 'Read an excerpt',
+            pl: 'Przeczytaj fragment'
         }
 
     },
