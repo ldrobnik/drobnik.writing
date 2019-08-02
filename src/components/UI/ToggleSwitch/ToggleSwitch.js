@@ -4,6 +4,7 @@ import Switch from "react-switch";
 
 const Wrapper = styled.div`
   padding: 0.1em;
+  opacity: ${props => props.theme.translucent};
 `;
 
 const ToggleSwitch = (props) => {

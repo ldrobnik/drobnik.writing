@@ -15,6 +15,7 @@ const Wrapper = styled.div`
 
 const Message = styled.p`
   font-size: ${props => props.theme.bodySize};
+  font-weight: bold;
 `;
 
 const SwitchPanel = styled.div`
@@ -36,6 +37,10 @@ const Label = styled.span`
   padding: 0.1em;
 `;
 
+const SubsectionHeading = styled.h1`
+  font-size: ${props => props.theme.subtitleSize};
+  margin-top: 1em;
+`;
 
 const Pubs = (props) => {
 
@@ -84,17 +89,17 @@ const Pubs = (props) => {
                     </SwitchWrapper>
                 </label>
             </SwitchPanel>
-            <h3>{WEBSITE_TEXT.publications.headlines[props.lang].books}</h3>
+            <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].books}</SubsectionHeading>
             <PubList
                 en={en}
                 pl={pl}
                 type="books"/>
-            <h3>{WEBSITE_TEXT.publications.headlines[props.lang].press}</h3>
+            <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].press}</SubsectionHeading>
             <PubList
                 en={en}
                 pl={pl}
                 type="press"/>
-            <h3>{WEBSITE_TEXT.publications.headlines[props.lang].collections}</h3>
+            <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].collections}</SubsectionHeading>
             <PubList
                 en={en}
                 pl={pl}
