@@ -64,12 +64,20 @@ const About = (props) => {
         props.onThemeChange(themeToUse);
     };
 
+    //shows the NavBar
+    const showNavbar = () => {
+        props.onSetNavbar(true);
+    };
+
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${fictionWriter}`;
 
         //change theme to a random one
         updateTheme();
+
+        //show Navbar
+        showNavbar();
     });
 
 
@@ -105,7 +113,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme})
+        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme}),
+        onSetNavbar: (newState) => dispatch({type: actionTypes.SET_NAVBAR_VISIBILITY, navbarVisible: newState})
     };
 };
 
