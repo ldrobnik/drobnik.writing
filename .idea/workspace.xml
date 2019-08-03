@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel/DescriptionPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Text/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Text/Text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+            <state relative-caret-position="138">
+              <caret line="93" column="2" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel/DescriptionPanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -40,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="213">
@@ -53,10 +68,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/About/About.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1288">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="31" column="2" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="51" />
+              <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="51" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -68,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+              <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="50" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -79,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="59" column="51" lean-forward="true" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+            <state relative-caret-position="-782">
+              <caret line="50" selection-start-line="50" selection-end-line="61" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -99,7 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test</find>
       <find>cunninghamella</find>
       <find>another novella</find>
       <find>HOVER</find>
@@ -129,6 +167,7 @@
       <find>btop</find>
       <find>quarterly west</find>
       <find>please</find>
+      <find>a new</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -159,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/BookTile/BookTile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PressTile/PressTile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Tile/Tile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Tile/PubTile.js" />
@@ -187,12 +225,10 @@
         <option value="$PROJECT_DIR$/src/data/texts/cellulose-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/cetacean-pl.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/SectionHeading/SectionHeading.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/CentredPhoto/CentredPhoto.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/CentredButton/CentredButton.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/About.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/SocialLinks/SocialLinks.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubList.js" />
         <option value="$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js" />
@@ -208,8 +244,11 @@
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/About.js" />
+        <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
       </list>
     </option>
   </component>
@@ -264,6 +303,15 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="About" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="About" type="462c0819:PsiDirectoryNode" />
+              <item name="Intro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
@@ -344,6 +392,20 @@
               <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="NavBar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="UI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -390,19 +452,19 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\UI" />
-      <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components" />
-      <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\Home\About\Pubs\PubList" />
-      <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\Home\About\Pubs" />
-      <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\Home" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\data\texts" />
       <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\UI\Modal" />
       <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\Texts\Polish\VostokPl" />
       <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\Texts\Polish\PhotosensitivityPl" />
       <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\Texts\Polish\ObrovskyPl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\Home\Text\DescriptionPanel" />
+      <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\UI" />
+      <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components" />
+      <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\Home\About\Pubs\PubList" />
+      <recent name="D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\Home\About\Pubs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -461,12 +523,12 @@
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
       <workItem from="1564688734239" duration="35498000" />
-      <workItem from="1564815223297" duration="1011000" />
+      <workItem from="1564815223297" duration="4042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232970000" />
+    <option name="totallyTimeSpent" value="236001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="698" y="9" width="1229" height="1038" extended-state="0" />
@@ -527,7 +589,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/UI/Modal/Modal.js" />
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -693,16 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="33" column="94" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="94" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -741,16 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/About.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -858,16 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -878,10 +909,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="643" column="146" selection-start-line="643" selection-start-column="146" selection-end-line="643" selection-end-column="146" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="31" column="2" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="51" />
+          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/About.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1288">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -890,30 +961,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="59" column="51" lean-forward="true" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+        <state relative-caret-position="-782">
+          <caret line="50" selection-start-line="50" selection-end-line="61" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel/DescriptionPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+        <state relative-caret-position="511">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="643" column="146" selection-start-line="643" selection-start-column="146" selection-end-line="643" selection-end-column="146" />
+        <state relative-caret-position="138">
+          <caret line="93" column="2" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>

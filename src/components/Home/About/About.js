@@ -16,7 +16,9 @@ const TopAnchor = styled.div`
 `;
 
 const Wrapper = styled.div`
-
+    
+    z-index: 10;
+    
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
       padding: 2em 3em;
     }

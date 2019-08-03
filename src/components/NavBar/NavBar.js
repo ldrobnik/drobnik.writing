@@ -18,11 +18,12 @@ const Toolbar = styled.header`
     align-items: center;
     box-sizing: border-box;
     background-color: ${props => props.theme.background};
-    opacity: ${props => props.theme.background};
     z-index: 90;
     font-weight: bold;
     user-select: none;
+    backdrop-filter: blur(8px);
 `;
+
 
 const LogoWrapper = styled.div`
   position: absolute;
@@ -157,6 +158,7 @@ const NavBar = (props) => {
                 </NavLink>
             </NavElement>
         </Toolbar>
+
     );
 };
 

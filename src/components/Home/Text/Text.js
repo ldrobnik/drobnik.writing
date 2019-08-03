@@ -7,6 +7,8 @@ import {Link} from 'react-router-dom';
 import * as actionTypes from '../../../store/actions';
 import {TEXTS, TEXT_NAMES, WEBSITE_TEXT} from '../../../data/constants';
 
+import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
+
 
 const TopAnchor = styled.div`
   position: absolute;
@@ -89,17 +91,6 @@ const TextBody = styled.div`
 const Credits = styled.p`
   font-size: ${props => props.theme.captionSize};
   font-family: ${props => props.theme.serif};
-`;
-
-const Description = styled.div`
-  background-color: ${props => props.theme.background};
-  font-size: ${props => props.theme.bodySize};
-  text-align: center;
-  padding: 0.5em 1em;
-  margin: 1em 0;
-  a {
-    font-weight: bold;
-  }
 `;
 
 const UpNext = styled.div`
@@ -206,9 +197,10 @@ const Text = (props) => {
             <Credits>
                 <i>{TEXTS[props.lang][textName].credits}</i>
             </Credits>
-            <Description>
-                {TEXTS[props.lang][textName].description}
-            </Description>
+            <DescriptionPanel
+                description={TEXTS[props.lang][textName].description}
+                capital={TEXTS[props.lang][textName].firstLetter}
+            />
             <UpNext>
                 {nextTextLink}
             </UpNext>
