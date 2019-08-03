@@ -8,6 +8,7 @@ import CentredPhoto from '../../../UI/CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import CentredButton from '../../../UI/CentredButton/CentredButton';
 import SectionLinks from '../SectionLinks/SectionLinks';
+import SectionSeparator from '../../../UI/SectionSeparator/SectionSeparator';
 
 const Body = styled.div`
   text-align: left;
@@ -48,6 +49,7 @@ const Intro = (props) => {
                     pubs={true}
                     read={true}
                 />
+                <SectionSeparator />
         </React.Fragment>
     );
 };
