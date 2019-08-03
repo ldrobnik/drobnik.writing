@@ -9,12 +9,9 @@ import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES} from '../../data/constants'
 
 const Wrapper = styled.div`
       .hidden {
-      visibility: hidden;
+      display: none;
     }
     
-    .visible {
-      visibility: visible;
-    }
 `;
 
 const Toolbar = styled.header`
@@ -140,8 +137,8 @@ const NavBar = (props) => {
         props.onBwModeChange(!props.bwMode);
     };
 
-    //class applied to the component content, depending on the loading status - the content is hidden when loading is ongoing
-    const contentClass = (props.isLoading) ? 'hidden' : 'visible';
+    //class applied to the component content, depending on the navbar visibility state in the Redux store
+    const contentClass = (props.showNavbar) ? '' : 'hidden';
 
     return (
         <Wrapper>
@@ -183,7 +180,7 @@ const mapStateToProps = state => {
         lang: state.language,
         bwMode: state.blackAndWhite,
         curText: state.currentText,
-        isLoading: state.loading
+        showNavbar: state.navbarVisible
     };
 };
 
