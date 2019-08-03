@@ -7,6 +7,16 @@ import Logo from './Logo/Logo';
 import * as actionTypes from '../../store/actions';
 import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES} from '../../data/constants';
 
+const Wrapper = styled.div`
+      .hidden {
+      visibility: hidden;
+    }
+    
+    .visible {
+      visibility: visible;
+    }
+`;
+
 const Toolbar = styled.header`
     height: 3em;
     width: 100%;
@@ -130,35 +140,41 @@ const NavBar = (props) => {
         props.onBwModeChange(!props.bwMode);
     };
 
-    return (
-        <Toolbar>
-            <LogoWrapper>
-                <Link to='/' className={'textLink'}>
-                    <Logo/>
-                </Link>
-            </LogoWrapper>
-            <NavElement>
-                <OptionButton>
-                    <div onClick={changeLanguage}>{langButton}</div>
-                </OptionButton>
-            </NavElement>
-            <NavElement>
-                <OptionButton>
-                    <div onClick={toggleBwMode}>{bwButton}</div>
-                </OptionButton>
-            </NavElement>
-            <NavElement>
-                <NavLink>
-                    <Link to={'/texts/' + prevLink}>&lt;</Link>
-                </NavLink>
-            </NavElement>
-            <NavElement>
-                <NavLink>
-                    <Link to={'/texts/' + nextLink}>&gt;</Link>
-                </NavLink>
-            </NavElement>
-        </Toolbar>
+    //class applied to the component content, depending on the loading status - the content is hidden when loading is ongoing
+    const contentClass = (props.isLoading) ? 'hidden' : 'visible';
 
+    return (
+        <Wrapper>
+            <div className={contentClass}>
+                <Toolbar>
+                    <LogoWrapper>
+                        <Link to='/' className={'textLink'}>
+                            <Logo/>
+                        </Link>
+                    </LogoWrapper>
+                    <NavElement>
+                        <OptionButton>
+                            <div onClick={changeLanguage}>{langButton}</div>
+                        </OptionButton>
+                    </NavElement>
+                    <NavElement>
+                        <OptionButton>
+                            <div onClick={toggleBwMode}>{bwButton}</div>
+                        </OptionButton>
+                    </NavElement>
+                    <NavElement>
+                        <NavLink>
+                            <Link to={'/texts/' + prevLink}>&lt;</Link>
+                        </NavLink>
+                    </NavElement>
+                    <NavElement>
+                        <NavLink>
+                            <Link to={'/texts/' + nextLink}>&gt;</Link>
+                        </NavLink>
+                    </NavElement>
+                </Toolbar>
+            </div>
+        </Wrapper>
     );
 };
 
@@ -166,14 +182,16 @@ const mapStateToProps = state => {
     return {
         lang: state.language,
         bwMode: state.blackAndWhite,
-        curText: state.currentText
+        curText: state.currentText,
+        isLoading: state.loading
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
         onLanguageChange: (newLang) => dispatch({type: actionTypes.SET_LANGUAGE, language: newLang}),
-        onBwModeChange: (newMode) => dispatch({type: actionTypes.SET_BW_MODE, blackAndWhite: newMode})
+        onBwModeChange: (newMode) => dispatch({type: actionTypes.SET_BW_MODE, blackAndWhite: newMode}),
+        onLoadingChange: (newState) => dispatch({type: actionTypes.SET_LOADING, loading: newState})
     };
 };
 
