@@ -800,7 +800,7 @@ export const WEBSITE_TEXT = {
 
 export const LINKS = [
     {
-        title: 'Official website',
+        title: 'Łukasz Drobnik’s website',
         subtitle: 'www.drobnik.com',
         url: '/'
     },
