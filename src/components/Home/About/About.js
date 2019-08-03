@@ -16,30 +16,30 @@ const TopAnchor = styled.div`
 `;
 
 const Wrapper = styled.div`
-    
+
     z-index: 10;
     
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-      padding: 2em 3em;
+      padding: 7em 3em 2em 3em;
     }
     
     @media all and (min-width: ${props => props.theme.smallScr}) {
-      padding: 2em 5%;
+      padding: 7em 5% 2em 5%;
     }
     
     @media all and (min-width: ${props => props.theme.mediumScr}) {
-      padding: 2em 20%;
+      padding: 7em 20% 2em 20%;
     }
     
     @media all and (min-width: ${props => props.theme.largeScr}) {
-      padding: 2em 22%;
+      padding: 7em 22% 2em 22%;
     }
     
     @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-      padding: 2em 25%;
+      padding: 7em 25% 2em 25%;
     }
     
-    padding: 2em 1em;
+    padding: 7em 1em 2em 1em;
 `;
 
 const SectionWrapper = styled.div`
