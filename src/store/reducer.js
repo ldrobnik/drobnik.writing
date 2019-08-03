@@ -4,7 +4,8 @@ const initialState = {
     language: 'en',
     theme: 'nocturine',
     blackAndWhite: false,
-    currentText: ''
+    currentText: '',
+    loading: true
 };
 
 const reducer = (state = initialState, action) => {
@@ -28,6 +29,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 currentText: action.currentText
+            };
+        case actionTypes.SET_LOADING:
+            return {
+                ...state,
+                loading: action.loading
             };
         default:
             return state;
