@@ -13,7 +13,7 @@ const App = (props) => {
         color1: THEME_COLORS[props.theme].color1,
         color2: THEME_COLORS[props.theme].color2,
         darkColor: '#0f0f0f',
-        background: 'rgba(40,40,40,0.25)',
+        background: 'rgba(40,40,40,0.1)',
 
         //fonts
         sansSerif: `'Maven Pro', sans-serif`,
