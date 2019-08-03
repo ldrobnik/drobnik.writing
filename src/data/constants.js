@@ -745,7 +745,7 @@ export const WEBSITE_TEXT = {
             pl: 'Czytelnia'
         },
         introduction: {
-            en: 'Here’s a handful of my pieces. Maybe you’d like to read them:',
+            en: 'Here are a handful of my pieces. Maybe you’d like to read them:',
             pl: 'Oto garstka moich tekstów. Może zechcesz je przeczytać:'
         }
     },

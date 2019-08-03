@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import {connect} from 'react-redux';
+import * as actionTypes from "../../../store/actions";
 
 const Wrapper = styled.div`
   text-align: center;
@@ -31,6 +33,12 @@ const Capital = styled.div`
 
 const CentredPhoto = (props) => {
 
+    //updates the count of loaded elements
+    const updateLoadedCount = () => {
+        //increase the Redux store loaded element count
+        props.onLoadCountChange(props.numberLoaded+1);
+    };
+
     return (
         <Wrapper>
             <Photo>
@@ -46,4 +54,16 @@ const CentredPhoto = (props) => {
     );
 };
 
-export default CentredPhoto;
+const mapStateToProps = state => {
+    return {
+        numberLoaded: state.loadedCount
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onLoadCountChange: (newCount) => dispatch({type: actionTypes.SET_LOADING, loadedCount: newCount})
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CentredPhoto);

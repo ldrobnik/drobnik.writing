@@ -41,7 +41,7 @@ const QuickLinks = (props) => {
     };
 
     useEffect(() => {
-        //Update page title with the piece title
+        //Update page title
         document.title = `Łukasz Drobnik - quick links`;
 
         //change theme to a random one
