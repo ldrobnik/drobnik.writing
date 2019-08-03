@@ -7,6 +7,7 @@ import {PUBLICATIONS, WEBSITE_TEXT, TEXT_NAMES, TEXTS} from '../../../../data/co
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import SectionLinks from "../SectionLinks/SectionLinks";
 import CentredButton from "../../../UI/CentredButton/CentredButton";
+import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
 
 const Wrapper = styled.div`
   text-align: center;
@@ -47,6 +48,7 @@ const Read = (props) => {
                 pubs={true}
                 read={false}
             />
+            <SectionSeparator />
         </Wrapper>
     );
 };

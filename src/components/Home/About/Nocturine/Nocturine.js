@@ -6,6 +6,7 @@ import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import CentredButton from "../../../UI/CentredButton/CentredButton";
 import SectionLinks from "../SectionLinks/SectionLinks";
 import QuoteList from '../QuoteList/QuoteList';
+import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
 
 const Body = styled.div`
   text-align: left;
@@ -44,6 +45,7 @@ const Nocturine = (props) => {
                 pubs={false}
                 read={true}
             />
+            <SectionSeparator />
         </React.Fragment>
     );
 };

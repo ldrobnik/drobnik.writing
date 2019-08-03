@@ -8,6 +8,7 @@ import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import ToggleSwitch from '../../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
 import SectionLinks from "../SectionLinks/SectionLinks";
+import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
 
 
 const Wrapper = styled.div`
@@ -112,6 +113,7 @@ const Pubs = (props) => {
                 pubs={true}
                 read={false}
             />
+            <SectionSeparator />
         </Wrapper>
     );
 };
