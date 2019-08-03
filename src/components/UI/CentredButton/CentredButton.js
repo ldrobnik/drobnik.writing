@@ -64,7 +64,7 @@ const Capital = styled.div`
 const CentredButton = (props) => {
 
     //constant holding the button content
-    const buttonContent = props.message;
+    const buttonMessage = props.message;
     console.log(props.message);
 
     //variable holding the button content wrapped in a QuickLink or a element
@@ -72,17 +72,22 @@ const CentredButton = (props) => {
 
     //decorative letter to be displayed on the button
     const capital = props.capital;
+    
+    //the content of the button
+    const buttonContent = (
+        <ButtonWrapper>
+            {buttonMessage}
+            <Capital>
+                {capital}
+            </Capital>
+        </ButtonWrapper>
+    );
 
     if (props.link) {
         workingButton = (
 
             <Link to={props.path}>
-                <ButtonWrapper>
-                    {buttonContent}
-                    <Capital>
-                        {capital}
-                    </Capital>
-                </ButtonWrapper>
+                {buttonContent}
             </Link>);
 
     } else {
@@ -92,12 +97,7 @@ const CentredButton = (props) => {
                 href={props.path}
                 target="_blank"
                 rel="noopener noreferrer">
-                <ButtonWrapper>
-                    {buttonContent}
-                    <Capital>
-                        {capital}
-                    </Capital>
-                </ButtonWrapper>
+                {buttonContent}
             </a>
         );
     }
