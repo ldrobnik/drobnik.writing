@@ -664,45 +664,45 @@ export const WEBSITE_TEXT = {
         quotes: {
             en: [
                 {
-                  quote: 'Drobnik wowed us with his free-wheeling sentence structure + utterly unique vision.',
+                  quote: <div>Drobnik wowed us with his free-wheeling sentence structure + utterly unique vision.</div>,
                   source: 'FATHOM BOOKS, the publisher'
                 },
                 {
-                    quote: 'To say Nocturine is oneiric isn’t enough — it’s a psychedelic. It kicks in slowly, swaying you from the very first sentences. Hypnotic phrase. Beautiful!',
+                    quote: <div>To say Nocturine is oneiric isn’t enough — it’s a psychedelic. It kicks in slowly, swaying you from the very first sentences. Hypnotic phrase. Beautiful!'</div>,
                     source: 'Patrycja Janowska, LAMPA 1–2/2012'
                 },
                 {
-                    quote: 'Drobnik creates an evocative, oppressive mood through the dangerous unknown; subtly, with a single shift outside the boundaries of what we are used to.',
+                    quote: <div>Drobnik creates an evocative, oppressive mood through the dangerous unknown; subtly, with a single shift outside the boundaries of what we are used to.'</div>,
                     source: 'Ilona Witkowska, ODRA 5/2012'
                 },
                 {
-                    quote: 'Drobnik’s strategy is to combine a fast-paced plot typical of popular literature with the highly metaphorical language of literary fiction.',
+                    quote: <div>Drobnik’s strategy is to combine a fast-paced plot typical of popular literature with the highly metaphorical language of literary fiction.</div>,
                     source: 'Rafał Derda, ELEWATOR 2/2012'
                 },
                 {
-                    quote: 'I’m not going to build suspense. Let me say it right away: this book will drag you in with its thousand tentacles (everyone gets their own, according to their liking).',
+                    quote: <div>I’m not going to build suspense. Let me say it right away: this book will drag you in with its thousand tentacles (everyone gets their own, according to their liking).</div>,
                     source: 'Marta Sawicka-Danielak, BLUSZCZ 2/2012'
                 }
             ],
             pl: [
                 {
-                    quote: 'Drobnik zachwycił nas swoją beztroską składnią i&nbsp;absolutnie wyjątkową wizją.',
+                    quote: <div>Drobnik zachwycił nas swoją beztroską składnią i&nbsp;absolutnie wyjątkową wizją.</div>,
                     source: 'FATHOM BOOKS, wydawca'
                 },
                 {
-                    quote: 'Powiedzieć, że Nocturine jest oniryczne, to za mało — to psychodelik jest. Wchodzi miękko, od pierwszych zdań już kołysze. Fraza hipnotyczna. Coś pięknego!',
+                    quote: <div>Powiedzieć, że Nocturine jest oniryczne, to za mało — to psychodelik jest. Wchodzi miękko, od pierwszych zdań już kołysze. Fraza hipnotyczna. Coś pięknego!</div>,
                     source: 'Patrycja Janowska, LAMPA 1–2/2012'
                 },
                 {
-                    quote: 'Drobnik tworzy sugestywnie nastrój osaczenia przez groźne nieznane; subtelnie, jednym przesunięciem poza ramy naszych przyzwyczajeń.',
+                    quote: <div>Drobnik tworzy sugestywnie nastrój osaczenia przez groźne nieznane; subtelnie, jednym przesunięciem poza ramy naszych przyzwyczajeń.</div>,
                     source: 'Ilona Witkowska, ODRA 5/2012'
                 },
                 {
-                    quote: 'Przyjęta przez Drobnika strategia polega na połączeniu przynależnej literaturze popularnej wartkości fabuły z&nbsp;gęstym, mocno zmetaforyzowanym językiem literatury pięknej.',
+                    quote: <div>Przyjęta przez Drobnika strategia polega na połączeniu przynależnej literaturze popularnej wartkości fabuły z&nbsp;gęstym, mocno zmetaforyzowanym językiem literatury pięknej.</div>,
                     source: 'Rafał Derda, ELEWATOR 2/2012'
                 },
                 {
-                    quote: 'Nie będę budowała suspensu. Zdradzę już na wstępie: ta książka wciągnie was tysiącem swoim macek (każdemu inna, wedle gustu).',
+                    quote: <div>Nie będę budowała suspensu. Zdradzę już na wstępie: ta książka wciągnie was tysiącem swoim macek (każdemu inna, wedle gustu).</div>,
                     source: 'Marta Sawicka-Danielak, BLUSZCZ 2/2012'
                 }
             ]
