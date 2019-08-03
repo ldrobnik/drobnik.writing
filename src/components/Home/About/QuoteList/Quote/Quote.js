@@ -30,6 +30,7 @@ const InvertedCommas = styled.div`
   top: 0;
   transform: translate(-70%, -20%);
   filter: blur( ${props => props.theme.lightBlur});
+  user-select: none;
 `;
 
 const Quote = (props) => {

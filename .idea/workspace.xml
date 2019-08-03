@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="102" column="50" selection-start-line="102" selection-start-column="50" selection-end-line="102" selection-end-column="50" />
+            <state relative-caret-position="166">
+              <caret line="98" column="23" lean-forward="true" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -99,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+            <state relative-caret-position="529">
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -173,9 +173,9 @@
       <find>newState</find>
       <find>a handfu</find>
       <find>checkTextId</find>
-      <find>anchor</find>
       <find>anc</find>
       <find>offset</find>
+      <find>anchor</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -233,7 +233,6 @@
         <option value="$PROJECT_DIR$/src/components/Home/Text/TextLinks/TextLinks.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel/DescriptionPanel.js" />
         <option value="$PROJECT_DIR$/src/components/UI/BackdropImage/BackdropImage.js" />
         <option value="$PROJECT_DIR$/src/components/Links/Links.js" />
@@ -259,6 +258,7 @@
         <option value="$PROJECT_DIR$/src/components/UI/CopyrightNote/CopyrightNote.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" />
       </list>
     </option>
   </component>
@@ -370,6 +370,16 @@
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="About" type="462c0819:PsiDirectoryNode" />
               <item name="QuoteList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="About" type="462c0819:PsiDirectoryNode" />
+              <item name="QuoteList" type="462c0819:PsiDirectoryNode" />
+              <item name="Quote" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
@@ -581,12 +591,12 @@
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
       <workItem from="1564688734239" duration="35498000" />
-      <workItem from="1564815223297" duration="24322000" />
+      <workItem from="1564815223297" duration="24361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256281000" />
+    <option name="totallyTimeSpent" value="256320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="698" y="9" width="1229" height="1038" extended-state="0" />
@@ -854,16 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/QuoteList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -1060,8 +1060,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="102" column="50" selection-start-line="102" selection-start-column="50" selection-end-line="102" selection-end-column="50" />
+        <state relative-caret-position="166">
+          <caret line="98" column="23" lean-forward="true" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
