@@ -45,6 +45,7 @@ const CentredPhoto = (props) => {
                 <img
                     src={props.source}
                     alt={props.altText}
+                    onLoad={updateLoadedCount}
                     />
             </Photo>
             <Capital>

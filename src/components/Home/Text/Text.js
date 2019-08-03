@@ -182,6 +182,12 @@ const Text = (props) => {
         props.onThemeChange(themeToUse);
     };
 
+    //updates the count of loaded elements
+    const updateLoadedCount = () => {
+        //increase the Redux store loaded element count
+        props.onLoadCountChange(props.numberLoaded+1);
+    };
+
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
@@ -218,6 +224,7 @@ const Text = (props) => {
                     <BackdropImg
                         src={BackdropImage}
                         alt='Backdrop image'
+                        onLoad={updateLoadedCount}
                     />
                 </TextBody>
                 <Credits>
@@ -243,14 +250,16 @@ const mapStateToProps = state => {
     return {
         lang: state.language,
         bwMode: state.blackAndWhite,
-        isLoading: state.loading
+        isLoading: state.loading,
+        numberLoaded: state.loadedCount
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
         onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme}),
-        onTextChange: (newText) => dispatch({type: actionTypes.SET_CURRENT_TEXT, currentText: newText})
+        onTextChange: (newText) => dispatch({type: actionTypes.SET_CURRENT_TEXT, currentText: newText}),
+        onLoadCountChange: (newCount) => dispatch({type: actionTypes.SET_LOADING, loadedCount: newCount})
     };
 };
 
