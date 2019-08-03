@@ -602,7 +602,7 @@ export const WEBSITE_TEXT = {
         body: {
             en: <div>
                 <p>I’m a bilingual writer who creates prose in his native Polish but recently mostly in English, his second language. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan. (Though I don’t shy away from longer forms.)</p>
-                <p><AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, my novella/short fiction collection is now forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>, and my work has been featured in <i>Atticus Review</i>, <i>Quarterly West</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and elsewhere. Below you can find a <AnchorLink href='#pubs' offset="60px"><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and also <AnchorLink href='#read' offset="60px"><b>READ</b></AnchorLink> some of my pieces.</p>
+                <p><AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, my novella/short fiction collection is now forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>, and my other work has been featured in <i>Atticus Review</i>, <i>Quarterly West</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and elsewhere. Below you can find a <AnchorLink href='#pubs' offset="60px"><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and also <AnchorLink href='#read' offset="60px"><b>READ</b></AnchorLink> some of my pieces.</p>
             </div>,
             pl: <div>
                 <p>Jestem dwujęzycznym pisarzem, który tworzy prozę po polsku (w&nbsp;moim ojczystym języku), ale ostatnio głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę wysokoartystyczną i&nbsp;wplatam w&nbsp;nią elementy innych gatunków, a&nbsp;do tego jestem ogromnym fanem <i>flash fiction</i> (czyli bardzo krótkich opowiadań). Nie stronię jednak od dłuższych form.</p>
@@ -611,11 +611,11 @@ export const WEBSITE_TEXT = {
         },
         patreon: {
             en: {
-                message: <div>Please consider supporting me on <FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon></div>,
+                message: <div>Please consider supporting me on&nbsp;&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon></div>,
                 path: 'https://www.patreon.com/drobnik'
             },
             pl: {
-                message: <div>Pomyśl, proszę, o&nbsp;wsparciu mnie na <FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon></div>,
+                message: <div>Pomyśl, proszę, o&nbsp;wsparciu mnie na&nbsp;&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon></div>,
                 path: 'https://www.patreon.com/drobnik'
             }
         },

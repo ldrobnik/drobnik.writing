@@ -5,7 +5,7 @@ const initialState = {
     theme: 'nocturine',
     blackAndWhite: false,
     currentText: '',
-    loading: true,
+    loading: false,
     loadedCount: 0
 };
 
