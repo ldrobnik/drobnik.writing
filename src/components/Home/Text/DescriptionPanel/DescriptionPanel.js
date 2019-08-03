@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   position: relative;
+  overflow: hidden;
 `;
 
 const Description = styled.div`
@@ -11,6 +12,8 @@ const Description = styled.div`
   text-align: center;
   padding: 0.5em 1em;
   margin: 1em 0;
+  position: relative;
+  overflow: hidden;
   a {
     font-weight: bold;
   }
@@ -35,10 +38,11 @@ const DescriptionPanel = (props) => {
         <Wrapper>
             <Description>
                 {props.description}
+                <Capital>
+                    {props.title}
+                </Capital>
             </Description>
-            <Capital>
-                {props.capital}
-            </Capital>
+
         </Wrapper>
     );
 };

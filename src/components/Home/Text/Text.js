@@ -199,7 +199,7 @@ const Text = (props) => {
             </Credits>
             <DescriptionPanel
                 description={TEXTS[props.lang][textName].description}
-                capital={TEXTS[props.lang][textName].firstLetter}
+                title={TEXTS[props.lang][textName].title}
             />
             <UpNext>
                 {nextTextLink}
