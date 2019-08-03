@@ -39,14 +39,7 @@ const Wrapper = styled.div`
     }
     
     padding: 7em 1em 2em 1em;
-    
-    .hidden {
-      visibility: hidden;
-    }
-    
-    .visible {
-      visibility: visible;
-    }
+
 `;
 
 const Header = styled.div`
@@ -182,11 +175,7 @@ const Text = (props) => {
         props.onThemeChange(themeToUse);
     };
 
-    //updates the count of loaded elements
-    const updateLoadedCount = () => {
-        //increase the Redux store loaded element count
-        props.onLoadCountChange(props.numberLoaded+1);
-    };
+
 
     useEffect(() => {
         //Update page title with the piece title
@@ -199,12 +188,9 @@ const Text = (props) => {
         updateText();
     });
 
-    //class applied to the component content, depending on the loading status - the content is hidden when loading is ongoing
-    const contentClass = (props.isLoading) ? 'hidden' : 'visible';
 
     return (
         <Wrapper>
-            <div className={contentClass}>
                 <TopAnchor>
                     <div id='top'></div>
                 </TopAnchor>
@@ -224,7 +210,6 @@ const Text = (props) => {
                     <BackdropImg
                         src={BackdropImage}
                         alt='Backdrop image'
-                        onLoad={updateLoadedCount}
                     />
                 </TextBody>
                 <Credits>
@@ -241,7 +226,6 @@ const Text = (props) => {
                     <div>{top}</div>
                     <div>{home}</div>
                 </Links>
-            </div>
         </Wrapper>
     );
 };
@@ -249,17 +233,14 @@ const Text = (props) => {
 const mapStateToProps = state => {
     return {
         lang: state.language,
-        bwMode: state.blackAndWhite,
-        isLoading: state.loading,
-        numberLoaded: state.loadedCount
+        bwMode: state.blackAndWhite
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
         onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme}),
-        onTextChange: (newText) => dispatch({type: actionTypes.SET_CURRENT_TEXT, currentText: newText}),
-        onLoadCountChange: (newCount) => dispatch({type: actionTypes.SET_LOADING, loadedCount: newCount})
+        onTextChange: (newText) => dispatch({type: actionTypes.SET_CURRENT_TEXT, currentText: newText})
     };
 };
 

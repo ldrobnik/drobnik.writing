@@ -57,9 +57,7 @@ const Home = (props) => {
                     <Route path="/" exact component={About}/>
                     <Route path="/texts/" exact component={Text}/>
                     <Route path="/texts/:id" component={Text}/>
-                </Layout>
-                <Layout>
-                <Route component={About}/>
+                    <Route component={About}/>
                 </Layout>
             </Switch>
         </React.Fragment>

@@ -190,8 +190,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onLanguageChange: (newLang) => dispatch({type: actionTypes.SET_LANGUAGE, language: newLang}),
-        onBwModeChange: (newMode) => dispatch({type: actionTypes.SET_BW_MODE, blackAndWhite: newMode}),
-        onLoadingChange: (newState) => dispatch({type: actionTypes.SET_LOADING, loading: newState})
+        onBwModeChange: (newMode) => dispatch({type: actionTypes.SET_BW_MODE, blackAndWhite: newMode})
     };
 };
 
