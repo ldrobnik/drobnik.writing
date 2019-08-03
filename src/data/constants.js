@@ -801,7 +801,7 @@ export const WEBSITE_TEXT = {
 export const LINKS = [
     {
         title: 'Łukasz Drobnik’s website',
-        subtitle: 'www.drobnik.com',
+        subtitle: 'www.drobnik.co',
         url: '/'
     },
     {
@@ -812,7 +812,7 @@ export const LINKS = [
     {
         title: 'Read “Spores”',
         subtitle: 'in X-R-A-Y Literary Magazine',
-        url: '/'
+        url: 'http://x-r-a-y.com/spores-lukasz-drobnik/fiction/'
     },
     {
         title: 'Patreon',
