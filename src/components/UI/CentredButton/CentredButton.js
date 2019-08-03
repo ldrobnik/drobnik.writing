@@ -67,7 +67,7 @@ const CentredButton = (props) => {
     const buttonContent = props.message;
     console.log(props.message);
 
-    //variable holding the button content wrapped in a Link or a element
+    //variable holding the button content wrapped in a QuickLink or a element
     let workingButton;
 
     //decorative letter to be displayed on the button

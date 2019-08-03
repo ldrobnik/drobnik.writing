@@ -8,9 +8,8 @@ const Wrapper = styled.div`
   margin: 1em 0;
 `;
 
-const ButtonWrapper = styled.div`
+const LinkWrapper = styled.div`
   background-color: ${props => props.theme.background};
-  font-size: ${props => props.theme.bodySize};
   font-weight: bold;
   padding: 0.8em;
   margin: 0 0.5em;
@@ -48,6 +47,14 @@ const ButtonWrapper = styled.div`
     
 `;
 
+const Title = styled.div`
+  font-size: ${props => props.theme.subtitleSize};
+`;
+
+const Subtitle = styled.div`
+  font-size: ${props => props.theme.bodySize};
+`;
+
 const Capital = styled.div`
   font-family: ${props => props.theme.cursive};
   font-size: 24em;
@@ -61,55 +68,57 @@ const Capital = styled.div`
 `;
 
 
-const CentredButton = (props) => {
+const QuickLink = (props) => {
 
     //constant holding the button content
     const linkTitle = props.title;
     const linkSubtitle = props.subtitle;
-    console.log(props.message);
 
-    //variable holding the button content wrapped in a Link or a element
-    let workingButton;
+    //variable holding the button content wrapped in a QuickLink or a element
+    let workingLink;
 
-    //decorative letter to be displayed on the button
-    const capital = props.capital;
+    //random decorative letter to be displayed on the button
+    const capital = linkTitle[(Math.floor(Math.random() * 3))];
+
+    //the content of the link
+    const linkContent = (
+        <LinkWrapper>
+            <Title>
+                {linkTitle}
+            </Title>
+            <Subtitle>
+                {linkSubtitle}
+            </Subtitle>
+            <Capital>
+                {capital}
+            </Capital>
+        </LinkWrapper>
+    );
 
     if (linkTitle[0] === '/') {
-        workingButton = (
+        workingLink = (
 
             <Link to={props.path}>
-                <ButtonWrapper>
-                    {linkTitle}
-                    {linkSubtitle}
-                    <Capital>
-                        {capital}
-                    </Capital>
-                </ButtonWrapper>
+                {linkContent}
             </Link>);
 
     } else {
-        workingButton = (
+        workingLink = (
 
             <a
                 href={props.path}
                 target="_blank"
                 rel="noopener noreferrer">
-                <ButtonWrapper>
-                    {linkTitle}
-                    {linkSubtitle}
-                    <Capital>
-                        {capital}
-                    </Capital>
-                </ButtonWrapper>
+                {linkContent}
             </a>
         );
     }
 
     return (
         <Wrapper>
-            {workingButton}
+            {workingLink}
         </Wrapper>
     );
 };
 
-export default CentredButton;
+export default QuickLink;
