@@ -860,8 +860,8 @@ export const PULSATE_KEYFRAMES = keyframes`
 //Keyframes for blur animation
 
 export const BLUR_KEYFRAMES = keyframes`
-
-  to {
+  
+  from {
     filter: blur(10px);
   }
   

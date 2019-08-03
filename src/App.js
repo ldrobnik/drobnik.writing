@@ -41,7 +41,11 @@ const App = (props) => {
         //animations
         pulsateAnimation: '0.8s ease-in-out infinite',
         blurAnimation: '6s ease-out alternate infinite',
-        popAnimation: '0.5s ease-in-out 1'
+        popAnimation: '0.5s ease-in-out 1',
+
+        //blur filter
+        lightBlur: '3px',
+        heavyBlur: '10px'
     };
 
 

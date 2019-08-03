@@ -26,9 +26,10 @@ const InvertedCommas = styled.div`
   text-transform: uppercase;
   opacity: ${props => props.theme.transparent};
   position: absolute;
-  left: 22vw;
+  left: 50%;
   top: 0;
-  transform: translateY(-20%);
+  transform: translate(-70%, -20%);
+  filter: blur( ${props => props.theme.lightBlur});
 `;
 
 const Quote = (props) => {
