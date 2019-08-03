@@ -9,6 +9,8 @@ import {TEXTS, TEXT_NAMES, WEBSITE_TEXT} from '../../../data/constants';
 import BackdropImage from '../../../assets/backdrop.png';
 
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
+import CopyrightNote from "../../UI/CopyrightNote/CopyrightNote";
+import SectionSeparator from "../../UI/SectionSeparator/SectionSeparator";
 
 
 const TopAnchor = styled.div`
@@ -232,6 +234,8 @@ const Text = (props) => {
                     <div>{top}</div>
                     <div>{home}</div>
                 </Links>
+                <SectionSeparator />
+                <CopyrightNote />
         </Wrapper>
     );
 };
