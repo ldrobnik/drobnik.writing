@@ -100,7 +100,7 @@ const PubTile = (props) => {
 
     //if the url property contains an anchor link, display AnchorLink, otherwise display normal link
     const tile = (props.url.charAt(0) === '#') ?
-        <AnchorLink href={props.url}>
+        <AnchorLink href={props.url} offset="60px">
             {tileContent}
         </AnchorLink> :
         <a href={props.url} target="_blank" rel="noopener noreferrer">
