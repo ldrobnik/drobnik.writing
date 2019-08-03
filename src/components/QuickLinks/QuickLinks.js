@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import {LINKS} from "../../data/constants";
+import {connect} from 'react-redux';
+import {LINKS, TEXT_NAMES} from "../../data/constants";
 import QuickLink from "./QuickLink/QuickLink";
+import * as actionTypes from "../../store/actions";
 
 const Wrapper = styled.div`
    @media all and (min-width: ${props => props.theme.extraSmallScr}) {
@@ -29,6 +31,23 @@ const Wrapper = styled.div`
 
 const QuickLinks = (props) => {
 
+    //updates current theme with a random theme
+    const updateTheme = () => {
+        //randomly selected theme
+        const randomTheme = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
+
+        //update Redux store with a new theme
+        props.onThemeChange(randomTheme);
+    };
+
+    useEffect(() => {
+        //Update page title with the piece title
+        document.title = `Łukasz Drobnik - useful links`;
+
+        //change theme to a random one
+        updateTheme();
+    });
+
     return (
         <Wrapper>
             {LINKS.map((link, k) => {
@@ -44,4 +63,11 @@ const QuickLinks = (props) => {
     );
 };
 
-export default QuickLinks;
+const mapDispatchToProps = dispatch => {
+    return {
+        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme})
+    };
+};
+
+
+export default connect(null, mapDispatchToProps)(QuickLinks);
