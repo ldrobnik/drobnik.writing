@@ -79,7 +79,7 @@ const About = (props) => {
         updateTheme();
     });
 
-    //class of the content loading on the loading status - hides the content if not yet laoded
+    //class applied to the component content, depending on the loading status - the content is hidden when loading is ongoing
     const contentClass = (props.isLoading) ? 'hidden' : 'visible';
 
     return (

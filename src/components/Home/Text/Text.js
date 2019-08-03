@@ -39,6 +39,14 @@ const Wrapper = styled.div`
     }
     
     padding: 7em 1em 2em 1em;
+    
+    .hidden {
+      visibility: hidden;
+    }
+    
+    .visible {
+      visibility: visible;
+    }
 `;
 
 const Header = styled.div`
@@ -185,45 +193,48 @@ const Text = (props) => {
         updateText();
     });
 
-    console.log(TEXTS[props.lang][textName].content);
+    //class applied to the component content, depending on the loading status - the content is hidden when loading is ongoing
+    const contentClass = (props.isLoading) ? 'hidden' : 'visible';
 
     return (
         <Wrapper>
-            <TopAnchor>
-                <div id='top'></div>
-            </TopAnchor>
-            <Header>
-                <TextTitle>
-                    {TEXTS[props.lang][textName].title}
-                </TextTitle>
-                <TextSubtitle>
-                    {TEXTS[props.lang][textName].subtitle}
-                </TextSubtitle>
-            </Header>
-            <TextBody>
-                <Capital>
-                    {TEXTS[props.lang][textName].firstLetter}
-                </Capital>
-                {TEXTS[props.lang][textName].content}
-                <BackdropImg
-                    src={BackdropImage}
-                    alt='Backdrop image'
+            <div className={contentClass}>
+                <TopAnchor>
+                    <div id='top'></div>
+                </TopAnchor>
+                <Header>
+                    <TextTitle>
+                        {TEXTS[props.lang][textName].title}
+                    </TextTitle>
+                    <TextSubtitle>
+                        {TEXTS[props.lang][textName].subtitle}
+                    </TextSubtitle>
+                </Header>
+                <TextBody>
+                    <Capital>
+                        {TEXTS[props.lang][textName].firstLetter}
+                    </Capital>
+                    {TEXTS[props.lang][textName].content}
+                    <BackdropImg
+                        src={BackdropImage}
+                        alt='Backdrop image'
+                    />
+                </TextBody>
+                <Credits>
+                    <i>{TEXTS[props.lang][textName].credits}</i>
+                </Credits>
+                <DescriptionPanel
+                    description={TEXTS[props.lang][textName].description}
+                    title={TEXTS[props.lang][textName].title}
                 />
-            </TextBody>
-            <Credits>
-                <i>{TEXTS[props.lang][textName].credits}</i>
-            </Credits>
-            <DescriptionPanel
-                description={TEXTS[props.lang][textName].description}
-                title={TEXTS[props.lang][textName].title}
-            />
-            <UpNext>
-                {nextTextLink}
-            </UpNext>
-            <Links>
-                <div>{top}</div>
-                <div>{home}</div>
-            </Links>
+                <UpNext>
+                    {nextTextLink}
+                </UpNext>
+                <Links>
+                    <div>{top}</div>
+                    <div>{home}</div>
+                </Links>
+            </div>
         </Wrapper>
     );
 };
@@ -231,7 +242,8 @@ const Text = (props) => {
 const mapStateToProps = state => {
     return {
         lang: state.language,
-        bwMode: state.blackAndWhite
+        bwMode: state.blackAndWhite,
+        isLoading: state.loading
     };
 };
 
