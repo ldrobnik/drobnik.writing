@@ -3,6 +3,7 @@ import {Route, Switch, withRouter} from 'react-router-dom';
 import styled, {createGlobalStyle} from 'styled-components';
 import {connect} from 'react-redux';
 
+import Links from '../Links/Links';
 import Layout from '../Layout/Layout';
 import About from './About/About';
 import Text from './Text/Text';
@@ -51,13 +52,14 @@ const Home = (props) => {
     return (
         <React.Fragment>
             <GlobalStyle/>
-            <Layout>
-                <Switch>
+            <Switch>
+                <Route path="/links/" exact component={Links}/>
+                <Layout>
                     <Route path="/" exact component={About}/>
                     <Route path="/texts/:id" component={Text}/>
                     <Route component={About}/>
-                </Switch>
-            </Layout>
+                </Layout>
+            </Switch>
         </React.Fragment>
     );
 };
