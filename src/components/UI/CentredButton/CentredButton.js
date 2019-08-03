@@ -83,7 +83,7 @@ const CentredButton = (props) => {
         </ButtonWrapper>
     );
 
-    if (props.link) {
+    if (props.path[0] === '/') {
         workingButton = (
 
             <Link to={props.path}>

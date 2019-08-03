@@ -31,7 +31,6 @@ const Nocturine = (props) => {
             <CentredButton
                 message={WEBSITE_TEXT.nocturine.button[props.lang].message}
                 path={WEBSITE_TEXT.nocturine.button[props.lang].path}
-                link={true}
                 capital='m'/>
             <SectionLinks
                 lang={props.lang}

@@ -36,7 +36,6 @@ const Intro = (props) => {
             <CentredButton
                 message={WEBSITE_TEXT.intro.patreon[props.lang].message}
                 path={WEBSITE_TEXT.intro.patreon[props.lang].path}
-                link={false}
                 capital='w'/>
                 <SectionLinks
                     lang={props.lang}
