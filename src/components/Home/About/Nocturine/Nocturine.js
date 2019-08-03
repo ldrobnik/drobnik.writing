@@ -12,6 +12,11 @@ const Body = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.serif};
   line-height: 1.4em;
+  
+    
+    a {
+      font-family: ${props => props.theme.sansSerif};
+    }
 `;
 
 const Nocturine = (props) => {

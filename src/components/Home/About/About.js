@@ -40,6 +40,14 @@ const Wrapper = styled.div`
     }
     
     padding: 7em 1em 2em 1em;
+    
+    .hidden {
+      visibility: hidden;
+    }
+    
+    .visible {
+      visibility: visible;
+    }
 `;
 
 const SectionWrapper = styled.div`
@@ -51,9 +59,6 @@ const About = (props) => {
 
     //part of page title to be displayed depending on the current language
     const fictionWriter = (props.lang === 'en') ? 'fiction writer' : 'prozaik';
-
-
-
 
 
     //updates current theme
@@ -74,23 +79,28 @@ const About = (props) => {
         updateTheme();
     });
 
+    //class of the content loading on the loading status - hides the content if not yet laoded
+    const contentClass = (props.isLoading) ? 'hidden' : 'visible';
+
     return (
         <Wrapper>
-            <TopAnchor>
-                <div id='top'></div>
-            </TopAnchor>
-            <SectionWrapper>
-                <Intro />
-            </SectionWrapper>
-            <SectionWrapper id='nocturine'>
-                <Nocturine/>
-            </SectionWrapper>
-            <SectionWrapper id='pubs'>
-                <Pubs/>
-            </SectionWrapper>
-            <SectionWrapper id='read'>
-                <Read />
-            </SectionWrapper>
+            <div className={contentClass}>
+                <TopAnchor>
+                    <div id='top'></div>
+                </TopAnchor>
+                <SectionWrapper>
+                    <Intro/>
+                </SectionWrapper>
+                <SectionWrapper id='nocturine'>
+                    <Nocturine/>
+                </SectionWrapper>
+                <SectionWrapper id='pubs'>
+                    <Pubs/>
+                </SectionWrapper>
+                <SectionWrapper id='read'>
+                    <Read/>
+                </SectionWrapper>
+            </div>
         </Wrapper>
     );
 };
@@ -98,7 +108,8 @@ const About = (props) => {
 const mapStateToProps = state => {
     return {
         lang: state.language,
-        bwMode: state.blackAndWhite
+        bwMode: state.blackAndWhite,
+        isLoading: state.loading
     };
 };
 
