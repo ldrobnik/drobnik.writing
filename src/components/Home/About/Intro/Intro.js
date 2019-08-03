@@ -29,6 +29,7 @@ const Intro = (props) => {
             <CentredPhoto
                 source={authorsPhoto}
                 altText='Author’s photo'
+                capital='Ł'
             />
             <Body>
                 {WEBSITE_TEXT.intro.body[props.lang]}

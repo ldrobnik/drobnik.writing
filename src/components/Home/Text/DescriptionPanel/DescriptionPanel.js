@@ -1,11 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  position: relative;
-  overflow: hidden;
-`;
-
 const Description = styled.div`
   background-color: ${props => props.theme.background};
   font-size: ${props => props.theme.bodySize};
@@ -19,7 +14,7 @@ const Description = styled.div`
   }
 `;
 
-const Capital = styled.div`
+const Inscription = styled.div`
   font-family: ${props => props.theme.cursive};
   font-size: 24em;
   text-transform: uppercase;
@@ -29,21 +24,19 @@ const Capital = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   filter: blur( ${props => props.theme.heavyBlur});
+  user-select: none;
 `;
 
 
 const DescriptionPanel = (props) => {
 
     return (
-        <Wrapper>
-            <Description>
-                {props.description}
-                <Capital>
-                    {props.title}
-                </Capital>
-            </Description>
-
-        </Wrapper>
+        <Description>
+            {props.description}
+            <Inscription>
+                {props.title}
+            </Inscription>
+        </Description>
     );
 };
 
