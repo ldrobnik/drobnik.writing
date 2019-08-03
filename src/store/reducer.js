@@ -5,7 +5,7 @@ const initialState = {
     theme: 'nocturine',
     blackAndWhite: false,
     currentText: '',
-    navbarVisible: true
+    navbarVisible: false
 };
 
 const reducer = (state = initialState, action) => {

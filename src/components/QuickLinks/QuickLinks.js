@@ -40,7 +40,16 @@ const QuickLinks = (props) => {
         props.onThemeChange(randomTheme);
     };
 
+    //hides the NavBar
+    const hideNavbar = () => {
+        props.onSetNavbar(false);
+    };
+
     useEffect(() => {
+
+        //hide navbar
+        hideNavbar();
+
         //Update page title
         document.title = `Łukasz Drobnik - quick links`;
 
@@ -65,7 +74,8 @@ const QuickLinks = (props) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme})
+        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme}),
+        onSetNavbar: (newState) => dispatch({type: actionTypes.SET_NAVBAR_VISIBILITY, navbarVisible: newState})
     };
 };
 
