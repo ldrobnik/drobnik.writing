@@ -51,15 +51,15 @@ const Home = (props) => {
     return (
         <React.Fragment>
             <GlobalStyle/>
-            <Switch>
-                <Route path="/links/" exact component={QuickLinks}/>
-                <Layout>
+            <Layout>
+                <Switch>
+                    <Route path="/links/" exact component={QuickLinks}/>
                     <Route path="/" exact component={About}/>
                     <Route path="/texts/" exact component={Text}/>
-                    <Route path="/texts/:id" component={Text}/>
+                    <Route path="/texts/:id" exact component={Text}/>
                     <Route component={About}/>
-                </Layout>
-            </Switch>
+                </Switch>
+            </Layout>
         </React.Fragment>
     );
 };
