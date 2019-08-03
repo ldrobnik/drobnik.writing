@@ -4,7 +4,8 @@ const initialState = {
     language: 'en',
     theme: 'nocturine',
     blackAndWhite: false,
-    currentText: ''
+    currentText: '',
+    navbarVisible: true
 };
 
 const reducer = (state = initialState, action) => {
@@ -29,6 +30,11 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 currentText: action.currentText
             };
+        case actionTypes.SET_NAVBAR_VISIBILITY:
+            return {
+                ...state,
+                navbarVisible: action.navbarVisible
+            }
         default:
             return state;
     }
