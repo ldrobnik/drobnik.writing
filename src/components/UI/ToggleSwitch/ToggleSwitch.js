@@ -14,10 +14,10 @@ const ToggleSwitch = (props) => {
             <Switch
                 checked={props.checked}
                 onChange={props.onChange}
-                offColor='#555'
-                onColor='#333'
-                onHandleColor='#0f0f0f'
-                offHandleColor='#0f0f0f'
+                offColor='#888'
+                onColor='#555'
+                onHandleColor='#333'
+                offHandleColor='#333'
                 uncheckedIcon={false}
                 checkedIcon={false}
                 height={20}
