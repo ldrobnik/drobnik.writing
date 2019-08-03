@@ -73,6 +73,7 @@ const QuickLink = (props) => {
     //constant holding the button content
     const linkTitle = props.title;
     const linkSubtitle = props.subtitle;
+    const linkUrl = props.url;
 
     //variable holding the button content wrapped in a QuickLink or a element
     let workingLink;
@@ -95,10 +96,11 @@ const QuickLink = (props) => {
         </LinkWrapper>
     );
 
-    if (linkTitle[0] === '/') {
+    //Display a Link or a element depending on the url type
+    if (linkUrl[0] === '/') {
         workingLink = (
 
-            <Link to={props.path}>
+            <Link to={linkUrl}>
                 {linkContent}
             </Link>);
 
@@ -106,7 +108,7 @@ const QuickLink = (props) => {
         workingLink = (
 
             <a
-                href={props.path}
+                href={linkUrl}
                 target="_blank"
                 rel="noopener noreferrer">
                 {linkContent}
