@@ -5,7 +5,8 @@ const initialState = {
     theme: 'nocturine',
     blackAndWhite: false,
     currentText: '',
-    loading: true
+    loading: true,
+    loadedCount: 0
 };
 
 const reducer = (state = initialState, action) => {
@@ -34,6 +35,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 loading: action.loading
+            };
+        case actionTypes.SET_LOADED_COUNT:
+            return {
+                ...state,
+                loadedCount: action.loadedCount
             };
         default:
             return state;
