@@ -862,7 +862,11 @@ export const PULSATE_KEYFRAMES = keyframes`
 export const BLUR_KEYFRAMES = keyframes`
   
   from {
-    filter: blur(10px);
+    filter: blur(8px);
+  }
+  
+  to {
+    filter: blur(0.1px);
   }
   
 `;

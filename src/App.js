@@ -45,7 +45,7 @@ const App = (props) => {
 
         //blur filter
         lightBlur: '3px',
-        heavyBlur: '10px'
+        heavyBlur: '8px'
     };
 
 

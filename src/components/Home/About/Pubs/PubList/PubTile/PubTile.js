@@ -30,12 +30,12 @@ const Capital = styled.div`
   font-family: ${props => props.theme.cursive};
   font-size: 24em;
   text-transform: uppercase;
-  //font-style: italic;
   opacity: ${props => props.theme.transparent};
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  filter: blur(${props => props.theme.heavyBlur});
   
   &:hover {
     animation: ${BLUR_KEYFRAMES} ${props => props.theme.blurAnimation}
