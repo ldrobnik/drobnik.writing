@@ -139,6 +139,7 @@ const Text = (props) => {
         return 'nocturine';
     };
 
+    //constant holding the name of the text to be displayed
     const textName = checkTextID(props.match.params.id);
 
     const textIndex = TEXT_NAMES.indexOf(textName);

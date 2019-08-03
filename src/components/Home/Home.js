@@ -56,6 +56,7 @@ const Home = (props) => {
                 <Layout>
                     <Route path="/" exact component={About}/>
                     <Route path="/texts/:id" component={Text}/>
+                    <Route path="/texts/" component={Text}/>
                 </Layout>
                 <Layout>
                 <Route component={About}/>
