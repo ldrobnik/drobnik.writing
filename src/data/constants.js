@@ -611,11 +611,11 @@ export const WEBSITE_TEXT = {
         },
         patreon: {
             en: {
-                message: <div>Please become my <FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atron</div>,
+                message: <div>Please consider supporting me on <FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon></div>,
                 path: 'https://www.patreon.com/drobnik'
             },
             pl: {
-                message: <div>Zostań, proszę, moim <FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon>atronem</div>,
+                message: <div>Pomyśl, proszę, o&nbsp;wsparciu mnie na <FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon></div>,
                 path: 'https://www.patreon.com/drobnik'
             }
         },
