@@ -16,6 +16,7 @@ const Wrapper = styled.div`
 const Message = styled.p`
   font-weight: bold;
   font-size: ${props => props.theme.bodySize};
+  margin: 2em 0;
 `;
 
 const Read = (props) => {
