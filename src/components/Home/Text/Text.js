@@ -75,6 +75,7 @@ const Capital = styled.div`
   top: 0;
   left: 0;
   transform: translate(-20%, 70%);
+  filter: blur( ${props => props.theme.lightBlur});
 `;
 
 
