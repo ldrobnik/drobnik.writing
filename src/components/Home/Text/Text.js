@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 import * as actionTypes from '../../../store/actions';
 import {TEXTS, TEXT_NAMES, WEBSITE_TEXT} from '../../../data/constants';
-import BackdropImage from '../../../assets/backdrop.png';
+
 
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
 import CopyrightNote from "../../UI/CopyrightNote/CopyrightNote";
@@ -81,7 +81,7 @@ const Capital = styled.div`
   top: 0;
   left: 0;
   transform: translate(-20%, 70%);
-  filter: blur( ${props => props.theme.lightBlur});
+  filter: blur( ${props => props.theme.heavyBlur});
 `;
 
 
@@ -95,16 +95,6 @@ const TextBody = styled.div`
 const Credits = styled.p`
   font-size: ${props => props.theme.captionSize};
   font-family: ${props => props.theme.serif};
-`;
-
-const BackdropImg = styled.img`
-  position: absolute;
-  z-index: 0;
-  filter: blur( ${props => props.theme.heavyBlur});
-  right: 0;
-  bottom: 0;
-  transform: translate(7vw, 10em) rotate(16deg) scale(0.3);
-  opacity: ${props => props.theme.transparent};
 `;
 
 const UpNext = styled.div`
@@ -215,10 +205,6 @@ const Text = (props) => {
                         {TEXTS[props.lang][textName].firstLetter}
                     </Capital>
                     {TEXTS[props.lang][textName].content}
-                    <BackdropImg
-                        src={BackdropImage}
-                        alt='Backdrop image'
-                    />
                 </TextBody>
                 <Credits>
                     <i>{TEXTS[props.lang][textName].credits}</i>
