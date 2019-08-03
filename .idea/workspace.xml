@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Links/Links.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Links/Links.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -76,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -100,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="506">
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -251,13 +250,13 @@
         <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" />
-        <option value="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel/DescriptionPanel.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
         <option value="$PROJECT_DIR$/src/components/UI/BackdropImage/BackdropImage.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/components/Links/Links.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
+        <option value="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" />
       </list>
     </option>
   </component>
@@ -556,12 +555,12 @@
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
       <workItem from="1564688734239" duration="35498000" />
-      <workItem from="1564815223297" duration="8380000" />
+      <workItem from="1564815223297" duration="8506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240339000" />
+    <option name="totallyTimeSpent" value="240465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="698" y="9" width="1229" height="1038" extended-state="0" />
@@ -952,16 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1016,6 +1005,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="704" column="163" selection-start-line="704" selection-start-column="163" selection-end-line="704" selection-end-column="163" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

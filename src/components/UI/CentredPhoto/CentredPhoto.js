@@ -26,6 +26,7 @@ const Capital = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   filter: blur( ${props => props.theme.heavyBlur});
+  user-select: none;
 `;
 
 const CentredPhoto = (props) => {
