@@ -5,6 +5,12 @@ import {WEBSITE_TEXT} from "../../../data/constants";
 import * as actionTypes from "../../../store/actions";
 
 const Wrapper = styled.div`
+  .hidden {
+    display: none;
+  }
+`;
+
+const Notice = styled.div`
   background-color: ${props => props.theme.darkColor};
   opacity: ${props => props.theme.translucent};
   padding: 1em 0;
@@ -55,14 +61,57 @@ const DismissButton = styled.div`
 
 const DataNotice = (props) => {
 
+    //updates Redux store, setting data notice acceptance to true and data notice visibility to false
+    const acceptDataNotice = () => {
+        props.onVisibilityChange(false); //sets data storage notice display to false
+        props.onAcceptanceChange(true); //sets data storage acceptance to true
+    };
+
+    //the class to be applied to the data storage notice to make it displayed or not displayed
+    let noticeContent;
+
+    useEffect(() => {
+
+
+            if (!props.noticeVisible) {
+                noticeContent = (<Notice>
+                        <Message>
+                            {WEBSITE_TEXT.dataNotice[props.lang].message}
+                        </Message>
+                        <DismissButton
+                            onClick={acceptDataNotice}
+                        >
+                            {WEBSITE_TEXT.dataNotice[props.lang].button}
+                        </DismissButton>
+                    </Notice>
+                );
+            } else {
+                noticeContent = <div></div>;
+            }
+
+
+        }, [props.noticeVisible]
+    );
+
+    if (!props.noticeVisible) {
+        noticeContent = (<Notice>
+                <Message>
+                    {WEBSITE_TEXT.dataNotice[props.lang].message}
+                </Message>
+                <DismissButton
+                    onClick={acceptDataNotice}
+                >
+                    {WEBSITE_TEXT.dataNotice[props.lang].button}
+                </DismissButton>
+            </Notice>
+        );
+    } else {
+        noticeContent = <div></div>;
+    }
+
     return (
         <Wrapper>
-            <Message>
-                {WEBSITE_TEXT.dataNotice[props.lang].message}
-            </Message>
-            <DismissButton>
-                {WEBSITE_TEXT.dataNotice[props.lang].button}
-            </DismissButton>
+            {noticeContent}
         </Wrapper>
     );
 };
@@ -77,8 +126,14 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onVisibilityChange: (newState) => dispatch({type: actionTypes.SET_DATA_NOTICE_VISIBLE, dataNoticeVisible: newState}),
-        onAcceptanceChange: (newState) => dispatch({type: actionTypes.SET_DATA_NOTICE_ACCEPTED, dataNoticeAccepted: newState})
+        onVisibilityChange: (newState) => dispatch({
+            type: actionTypes.SET_DATA_NOTICE_VISIBLE,
+            dataNoticeVisible: newState
+        }),
+        onAcceptanceChange: (newState) => dispatch({
+            type: actionTypes.SET_DATA_NOTICE_ACCEPTED,
+            dataNoticeAccepted: newState
+        })
     };
 };
 
