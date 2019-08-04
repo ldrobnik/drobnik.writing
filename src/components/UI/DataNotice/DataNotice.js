@@ -7,11 +7,26 @@ const Wrapper = styled.div`
   opacity: ${props => props.theme.translucent};
   margin: 0 auto;
   height: 6em;
-  width: 90%;
   position: fixed;
   bottom: 10px;
-  left: 0;
-  transform: translateX(5%);
+  left: 5%;
+  width: 90%;
+  
+
+    @media all and (min-width: ${props => props.theme.mediumScr}) {
+       left: 10%;
+       width: 80%;
+    }
+    
+    @media all and (min-width: ${props => props.theme.largeScr}) {
+       left: 15%;
+       width: 70%;
+    }
+    
+    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+       left: 20%;
+       width: 60%;
+    }
 `;
 
 const Message = styled.div`
