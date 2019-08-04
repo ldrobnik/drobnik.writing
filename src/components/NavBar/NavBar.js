@@ -122,9 +122,17 @@ const NavBar = (props) => {
     //Changes current language
     const changeLanguage = () => {
         if (props.lang === 'en') {
+            //change Redux state
             props.onLanguageChange('pl');
+
+            //store the state in localStorage
+            localStorage.setItem('language', 'pl');
         } else {
+            //change Redux state
             props.onLanguageChange('en');
+
+            //store the state in localStorage
+            localStorage.setItem('language', 'en');
         }
     };
 

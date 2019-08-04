@@ -46,13 +46,22 @@ const Home = (props) => {
     const checkLocalSTorage = () => {
         //check if data storage notice has been agreed to and if so, update Redux state accordingly
         const noticeAccepted = localStorage.getItem('dataNoticeAccepted');
-        console.log(noticeAccepted);
+
         if (noticeAccepted) {
             //store info that the notice has been accepted in Redux store
             props.onAcceptanceChange(true);
 
             //stop displaying the notice
             props.onVisibilityChange(false);
+
+        }
+
+        //check if the language is stored in localStorate and if so, update Redux state accordingly
+        const storedLanguage = localStorage.getItem('language');
+
+        //if there is a language stored, used it on the website
+        if (storedLanguage === 'en' || storedLanguage === 'pl') {
+            props.onLanguageChange(storedLanguage);
         }
     };
 
@@ -99,7 +108,13 @@ const mapDispatchToProps = dispatch => {
         onAcceptanceChange: (newState) => dispatch({
             type: actionTypes.SET_DATA_NOTICE_ACCEPTED,
             dataNoticeAccepted: newState
-        })
+        }),
+        onLanguageChange: (newLang) => dispatch({
+            type: actionTypes.SET_LANGUAGE,
+            language: newLang}),
+        onBwModeChange: (newMode) => dispatch({
+            type: actionTypes.SET_BW_MODE,
+            blackAndWhite: newMode})
     };
 };
 
