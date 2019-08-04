@@ -12,9 +12,16 @@ import DataNotice from '../UI/DataNotice/DataNotice';
 import {PULSATE_KEYFRAMES} from "../../data/constants";
 import * as actionTypes from "../../store/actions";
 
+//transtition timeout
+const timeout = 250;
+
 const RouteContainer = posed.div({
-    enter: {opacity: 1, delay: 150, beforeChildren: true},
-    exit: {opacity: 0}
+    enter: {
+        opacity: 1, filter: 'blur(0px)',
+    },
+    exit: {
+        opacity: 0, filter: 'blur(20px)'
+    },
 });
 
 const GlobalStyle = createGlobalStyle`

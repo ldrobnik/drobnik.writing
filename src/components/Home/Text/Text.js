@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
-import posed from 'react-pose';
+
 
 import * as actionTypes from '../../../store/actions';
 import {TEXTS, TEXT_NAMES, WEBSITE_TEXT} from '../../../data/constants';
@@ -121,17 +121,6 @@ const Links = styled.div`
   }
 `;
 
-/* POSE */
-const TransitionContainer = posed.div({
-    enter: {
-        opacity: 1
-    },
-    exit: {
-        opacity: 0,
-        delay: 500
-    }
-});
-
 
 const Text = (props) => {
 
@@ -187,58 +176,59 @@ const Text = (props) => {
     };
 
     useEffect(() => {
-        //Update page title with the piece title
-        document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
+            //Update page title with the piece title
+            document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
 
-        //update the theme depending on the text displayed
-        updateTheme();
+            //update the theme depending on the text displayed
+            updateTheme();
 
-        //update the currently displayed text
-        updateText();
+            //update the currently displayed text
+            updateText();
 
-        //show Navbar
-        showNavbar();
-    });
+            //show Navbar
+            showNavbar();
+        },
+        [props.match.params.id]);
 
 
     return (
-        <TransitionContainer>
-            <Wrapper>
-                <TopAnchor>
-                    <div id='top'></div>
-                </TopAnchor>
-                <Header>
-                    <TextTitle>
-                        {TEXTS[props.lang][textName].title}
-                    </TextTitle>
-                    <TextSubtitle>
-                        {TEXTS[props.lang][textName].subtitle}
-                    </TextSubtitle>
-                </Header>
-                <TextBody>
-                    <Capital>
-                        {TEXTS[props.lang][textName].firstLetter}
-                    </Capital>
-                    {TEXTS[props.lang][textName].content}
-                </TextBody>
-                <Credits>
-                    <i>{TEXTS[props.lang][textName].credits}</i>
-                </Credits>
-                <DescriptionPanel
-                    description={TEXTS[props.lang][textName].description}
-                    title={TEXTS[props.lang][textName].title}
-                />
-                <UpNext>
-                    {nextTextLink}
-                </UpNext>
-                <Links>
-                    <div>{top}</div>
-                    <div>{home}</div>
-                </Links>
-                <SectionSeparator/>
-                <CopyrightNote/>
-            </Wrapper>
-        </TransitionContainer>
+
+        <Wrapper>
+            <TopAnchor>
+                <div id='top'></div>
+            </TopAnchor>
+            <Header>
+                <TextTitle>
+                    {TEXTS[props.lang][textName].title}
+                </TextTitle>
+                <TextSubtitle>
+                    {TEXTS[props.lang][textName].subtitle}
+                </TextSubtitle>
+            </Header>
+            <TextBody>
+                <Capital>
+                    {TEXTS[props.lang][textName].firstLetter}
+                </Capital>
+                {TEXTS[props.lang][textName].content}
+            </TextBody>
+            <Credits>
+                <i>{TEXTS[props.lang][textName].credits}</i>
+            </Credits>
+            <DescriptionPanel
+                description={TEXTS[props.lang][textName].description}
+                title={TEXTS[props.lang][textName].title}
+            />
+            <UpNext>
+                {nextTextLink}
+            </UpNext>
+            <Links>
+                <div>{top}</div>
+                <div>{home}</div>
+            </Links>
+            <SectionSeparator/>
+            <CopyrightNote/>
+        </Wrapper>
+
     );
 };
 
