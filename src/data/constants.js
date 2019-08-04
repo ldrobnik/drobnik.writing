@@ -799,7 +799,7 @@ export const WEBSITE_TEXT = {
             button: 'I understand'
         },
         pl: {
-            message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór dotyczący języka i&nbsp;trybu czarno-białego.</div>,
+            message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór dotyczący języka i&nbsp;trybu czarno-białego).</div>,
             button: 'Rozumiem'
         }
     }

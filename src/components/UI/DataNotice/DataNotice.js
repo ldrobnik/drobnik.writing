@@ -69,13 +69,16 @@ const DataNotice = (props) => {
 
 const mapStateToProps = state => {
     return {
-        lang: state.language
+        lang: state.language,
+        noticeVisible: state.dataNoticeVisible,
+        noticeAccepted: state.dataNoticeAccepted
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        onLanguageChange: (newLang) => dispatch({type: actionTypes.SET_LANGUAGE, language: newLang})
+        onVisibilityChange: (newState) => dispatch({type: actionTypes.SET_DATA_NOTICE_VISIBLE, dataNoticeVisible: newState}),
+        onAcceptanceChange: (newState) => dispatch({type: actionTypes.SET_DATA_NOTICE_ACCEPTED, dataNoticeAccepted: newState})
     };
 };
 

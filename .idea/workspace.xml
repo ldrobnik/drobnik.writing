@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="747" column="85" selection-start-line="747" selection-start-column="85" selection-end-line="747" selection-end-column="85" />
+            <state relative-caret-position="212">
+              <caret line="801" column="152" selection-start-line="801" selection-start-column="152" selection-end-line="801" selection-end-column="152" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -27,11 +30,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/actions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/store/reducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="508">
+              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+            <state relative-caret-position="508">
+              <caret line="80" column="116" selection-start-line="80" selection-start-column="116" selection-end-line="80" selection-end-column="116" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -98,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>anchorLInk</find>
       <find>Anchor</find>
       <find>reading ro</find>
       <find>tEXTS =</find>
@@ -128,6 +148,7 @@
       <find>anchor</find>
       <find>this inclu</find>
       <find>data</find>
+      <find>trybu</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -204,13 +225,13 @@
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
-        <option value="$PROJECT_DIR$/src/store/actions.js" />
-        <option value="$PROJECT_DIR$/src/store/reducer.js" />
         <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js" />
+        <option value="$PROJECT_DIR$/src/store/actions.js" />
+        <option value="$PROJECT_DIR$/src/store/reducer.js" />
       </list>
     </option>
   </component>
@@ -535,12 +556,12 @@
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
       <workItem from="1564688734239" duration="35498000" />
-      <workItem from="1564815223297" duration="31978000" />
+      <workItem from="1564815223297" duration="32311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263937000" />
+    <option name="totallyTimeSpent" value="264270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="702" y="8" width="1225" height="1039" extended-state="0" />
@@ -548,9 +569,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.22575107" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.22575107" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.17045455" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -944,20 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2254">
@@ -1010,8 +1017,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="747" column="85" selection-start-line="747" selection-start-column="85" selection-end-line="747" selection-end-column="85" />
+        <state relative-caret-position="212">
+          <caret line="801" column="152" selection-start-line="801" selection-start-column="152" selection-end-line="801" selection-end-column="152" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1020,11 +1027,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+        <state relative-caret-position="508">
+          <caret line="80" column="116" selection-start-line="80" selection-start-column="116" selection-end-line="80" selection-end-column="116" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
         </state>
       </provider>
     </entry>
