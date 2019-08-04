@@ -4,12 +4,6 @@ import {connect} from 'react-redux';
 import {WEBSITE_TEXT} from "../../../data/constants";
 import * as actionTypes from "../../../store/actions";
 
-const Wrapper = styled.div`
-  .hidden {
-    display: none;
-  }
-`;
-
 const Notice = styled.div`
   background-color: ${props => props.theme.darkColor};
   opacity: ${props => props.theme.translucent};
@@ -61,7 +55,7 @@ const DismissButton = styled.div`
 
 const DataNotice = (props) => {
 
-    //updates Redux store, setting data notice acceptance to true and data notice visibility to false
+    //updates Redux store, setting data notice acceptance to true and data notice visibility to false, and stores the data in localStorage
     const acceptDataNotice = () => {
         props.onVisibilityChange(false); //sets data storage notice display to false
         props.onAcceptanceChange(true); //sets data storage acceptance to true
@@ -70,30 +64,8 @@ const DataNotice = (props) => {
     //the class to be applied to the data storage notice to make it displayed or not displayed
     let noticeContent;
 
-    useEffect(() => {
 
-
-            if (!props.noticeVisible) {
-                noticeContent = (<Notice>
-                        <Message>
-                            {WEBSITE_TEXT.dataNotice[props.lang].message}
-                        </Message>
-                        <DismissButton
-                            onClick={acceptDataNotice}
-                        >
-                            {WEBSITE_TEXT.dataNotice[props.lang].button}
-                        </DismissButton>
-                    </Notice>
-                );
-            } else {
-                noticeContent = <div></div>;
-            }
-
-
-        }, [props.noticeVisible]
-    );
-
-    if (!props.noticeVisible) {
+    if (props.noticeVisible) {
         noticeContent = (<Notice>
                 <Message>
                     {WEBSITE_TEXT.dataNotice[props.lang].message}
@@ -110,9 +82,9 @@ const DataNotice = (props) => {
     }
 
     return (
-        <Wrapper>
+        <React.Fragment>
             {noticeContent}
-        </Wrapper>
+        </React.Fragment>
     );
 };
 
