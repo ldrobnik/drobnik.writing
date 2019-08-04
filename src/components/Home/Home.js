@@ -1,12 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {Route, Switch, withRouter} from 'react-router-dom';
-import styled, {createGlobalStyle} from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 import {connect} from 'react-redux';
 
 import QuickLinks from '../QuickLinks/QuickLinks';
 import Layout from '../Layout/Layout';
 import About from './About/About';
 import Text from './Text/Text';
+import DataNotice from '../UI/DataNotice/DataNotice';
 import {PULSATE_KEYFRAMES} from "../../data/constants";
 
 const GlobalStyle = createGlobalStyle`
@@ -59,6 +60,7 @@ const Home = (props) => {
                     <Route path="/texts/:id" exact component={Text}/>
                     <Route component={About}/>
                 </Switch>
+                <DataNotice />
             </Layout>
         </React.Fragment>
     );
