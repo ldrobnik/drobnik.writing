@@ -55,6 +55,9 @@ const DismissButton = styled.div`
 
 const DataNotice = (props) => {
 
+    //notice content to be displayed
+    const [noticeVisible, setNoticeVisible] = useState(false);
+
     //updates Redux states, setting data notice acceptance to true and data notice visibility to false, and stores the data in localStorage
     const acceptDataNotice = () => {
         //update Redux states
@@ -66,29 +69,37 @@ const DataNotice = (props) => {
 
     };
 
-    //the class to be applied to the data storage notice to make it displayed or not displayed
-    let noticeContent;
+    //checks what notice content should be displayed - empty div if the notice shouldn't be displayed
+    const setContent = () => {
+
+        if (props.noticeVisible) {
+                setNoticeVisible(true);
+        }
+    };
+
+    //the content of notice to be displayed depending on the setNoticeVisible value
+    const notice =  (props.noticeVisible && noticeVisible) ?
+        (<Notice>
+        <Message>
+            {WEBSITE_TEXT.dataNotice[props.lang].message}
+        </Message>
+        <DismissButton
+            onClick={acceptDataNotice}
+        >
+            {WEBSITE_TEXT.dataNotice[props.lang].button}
+        </DismissButton>
+    </Notice>) :
+        <div></div>
+    ;
 
 
-    if (props.noticeVisible) {
-        noticeContent = (<Notice>
-                <Message>
-                    {WEBSITE_TEXT.dataNotice[props.lang].message}
-                </Message>
-                <DismissButton
-                    onClick={acceptDataNotice}
-                >
-                    {WEBSITE_TEXT.dataNotice[props.lang].button}
-                </DismissButton>
-            </Notice>
-        );
-    } else {
-        noticeContent = <div></div>;
-    }
+    useEffect(() => {
+        setTimeout(setContent, 1500);
+    });
 
     return (
         <React.Fragment>
-            {noticeContent}
+            {notice}
         </React.Fragment>
     );
 };
