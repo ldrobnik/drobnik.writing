@@ -12,8 +12,6 @@ import DataNotice from '../UI/DataNotice/DataNotice';
 import {PULSATE_KEYFRAMES} from "../../data/constants";
 import * as actionTypes from "../../store/actions";
 
-//transtition timeout
-const timeout = 250;
 
 const RouteContainer = posed.div({
     enter: {

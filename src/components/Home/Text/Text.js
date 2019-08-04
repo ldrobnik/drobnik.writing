@@ -187,8 +187,7 @@ const Text = (props) => {
 
             //show Navbar
             showNavbar();
-        },
-        [props.match.params.id]);
+        });
 
 
     return (
