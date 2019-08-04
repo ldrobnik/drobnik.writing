@@ -63,6 +63,16 @@ const Home = (props) => {
         if (storedLanguage === 'en' || storedLanguage === 'pl') {
             props.onLanguageChange(storedLanguage);
         }
+
+        //check if the language is stored in localStorate and if so, update Redux state accordingly
+        const storedColorMode = localStorage.getItem('colorMode');
+
+        //update the Redux state with value stored in localStorage if any
+            if (storedColorMode === 'b&w') {
+            props.onBwModeChange(true);
+            } else {
+                props.onBwModeChange(false);
+            }
     };
 
     //Scrolls to top initially and if the URL path changes

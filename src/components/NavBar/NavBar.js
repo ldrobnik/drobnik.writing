@@ -142,7 +142,15 @@ const NavBar = (props) => {
 
     //toggle the black-and-white mode
     const toggleBwMode = () => {
+
+        const newColorMode = (!props.bwMode) ? 'b&w' : 'color';
+
+        //update redux State
         props.onBwModeChange(!props.bwMode);
+
+        //store new state in localStorage
+        localStorage.setItem('colorMode', newColorMode);
+
     };
 
     //class applied to the component content, depending on the navbar visibility state in the Redux store
