@@ -34,7 +34,7 @@ const Wrapper = styled.div`
 
 const Message = styled.p`
     color: ${props => props.theme.lightColor};
-    font-size: ${props => props.theme.bodySize};
+    font-size: ${props => props.theme.captionSize};
     font-family: ${props => props.theme.serif};
     padding: 0 1em;
 `;
@@ -47,6 +47,10 @@ const DismissButton = styled.div`
     margin: 0 auto;
     padding: 0.3em;
     cursor: pointer;
+    
+    &:hover {
+      opacity: ${props => props.theme.translucent};
+    }
 `;
 
 const DataNotice = (props) => {
