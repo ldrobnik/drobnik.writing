@@ -851,13 +851,7 @@ export const LINKS = [
     }
 ];
 
-//number of elements to be loaded in order to turn off the loading state
-
-export const TO_LOAD = {
-  about: 1,
-  text: 1
-};
-
+/* Keyframes used for styled-components animations */
 
 //Keyframes of pulsating animation
 

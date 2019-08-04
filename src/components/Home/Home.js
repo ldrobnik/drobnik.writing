@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
 const Home = (props) => {
 
     //checks if any data is stored in localStorage and updates Redux state accordingly
-    const checkLocalSTorage = () => {
+    const checkLocalStorage = () => {
         //check if data storage notice has been agreed to and if so, update Redux state accordingly
         const noticeAccepted = localStorage.getItem('dataNoticeAccepted');
 
@@ -79,7 +79,7 @@ const Home = (props) => {
     useEffect(() => {
 
             //check localStorage and update Redux state accordingly
-            checkLocalSTorage();
+            checkLocalStorage();
 
             window.scrollTo(0, 0);
         },
