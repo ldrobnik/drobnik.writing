@@ -84,6 +84,7 @@ const Capital = styled.div`
   left: 0;
   transform: translate(-20%, 70%);
   filter: blur( ${props => props.theme.heavyBlur});
+  user-select: none;
 `;
 
 
