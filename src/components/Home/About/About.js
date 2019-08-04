@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
+import posed from 'react-pose';
 
 import Intro from './Intro/Intro';
 import Nocturine from './Nocturine/Nocturine';
@@ -10,7 +11,7 @@ import CopyrightNote from '../../UI/CopyrightNote/CopyrightNote';
 import * as actionTypes from "../../../store/actions";
 import {TEXT_NAMES} from '../../../data/constants';
 
-
+/* STYLED COMPONENTS */
 const TopAnchor = styled.div`
   position: absolute;
   top: 0;
@@ -48,6 +49,17 @@ const SectionWrapper = styled.div`
     margin-bottom: 5em;
 `;
 
+/* POSE */
+
+const TransitionContainer = posed.div({
+    enter: {
+        opacity: 1
+    },
+    exit: {
+        opacity: 0
+    }
+});
+
 const About = (props) => {
 
 
@@ -83,25 +95,26 @@ const About = (props) => {
 
 
     return (
-        <Wrapper>
-
-            <TopAnchor>
-                <div id='top'></div>
-            </TopAnchor>
-            <SectionWrapper>
-                <Intro/>
-            </SectionWrapper>
-            <SectionWrapper id='nocturine'>
-                <Nocturine/>
-            </SectionWrapper>
-            <SectionWrapper id='pubs'>
-                <Pubs/>
-            </SectionWrapper>
-            <SectionWrapper id='read'>
-                <Read/>
-            </SectionWrapper>
-            <CopyrightNote />
-        </Wrapper>
+        <TransitionContainer>
+            <Wrapper>
+                <TopAnchor>
+                    <div id='top'></div>
+                </TopAnchor>
+                <SectionWrapper>
+                    <Intro/>
+                </SectionWrapper>
+                <SectionWrapper id='nocturine'>
+                    <Nocturine/>
+                </SectionWrapper>
+                <SectionWrapper id='pubs'>
+                    <Pubs/>
+                </SectionWrapper>
+                <SectionWrapper id='read'>
+                    <Read/>
+                </SectionWrapper>
+                <CopyrightNote/>
+            </Wrapper>
+        </TransitionContainer>
     );
 };
 

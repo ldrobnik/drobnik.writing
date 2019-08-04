@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {Route, Switch, withRouter} from 'react-router-dom';
 import {createGlobalStyle} from 'styled-components';
 import {connect} from 'react-redux';
+import posed, {PoseGroup} from 'react-pose';
 
 import QuickLinks from '../QuickLinks/QuickLinks';
 import Layout from '../Layout/Layout';
@@ -10,6 +11,11 @@ import Text from './Text/Text';
 import DataNotice from '../UI/DataNotice/DataNotice';
 import {PULSATE_KEYFRAMES} from "../../data/constants";
 import * as actionTypes from "../../store/actions";
+
+const RouteContainer = posed.div({
+    enter: {opacity: 1, delay: 300, beforeChildren: true},
+    exit: {opacity: 0}
+});
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -68,11 +74,11 @@ const Home = (props) => {
         const storedColorMode = localStorage.getItem('colorMode');
 
         //update the Redux state with value stored in localStorage if any
-            if (storedColorMode === 'b&w') {
+        if (storedColorMode === 'b&w') {
             props.onBwModeChange(true);
-            } else {
-                props.onBwModeChange(false);
-            }
+        } else {
+            props.onBwModeChange(false);
+        }
     };
 
     //Scrolls to top initially and if the URL path changes
@@ -89,16 +95,24 @@ const Home = (props) => {
     return (
         <React.Fragment>
             <GlobalStyle/>
-            <Layout>
-                <Switch>
-                    <Route path="/links/" exact component={QuickLinks}/>
-                    <Route path="/" exact component={About}/>
-                    <Route path="/texts/" exact component={Text}/>
-                    <Route path="/texts/:id" exact component={Text}/>
-                    <Route component={About}/>
-                </Switch>
-                <DataNotice />
-            </Layout>
+            <Route
+                render={({location}) => (
+                    <Layout>
+                        <Switch location={location}>
+                            <PoseGroup>
+                                <RouteContainer key={location.pathname}>
+                                    <Route path="/links/" exact component={QuickLinks} key="links"/>
+                                    <Route path="/" exact component={About} key="home"/>
+                                    <Route path="/texts/" exact component={Text} key="texts"/>
+                                    <Route path="/texts/:id" exact component={Text} key="text"/>
+                                    {/*<Route component={About} key="default"/>*/}
+                                </RouteContainer>
+                            </PoseGroup>
+                        </Switch>
+                        <DataNotice/>
+                    </Layout>
+                )}
+            />
         </React.Fragment>
     );
 };
@@ -121,10 +135,12 @@ const mapDispatchToProps = dispatch => {
         }),
         onLanguageChange: (newLang) => dispatch({
             type: actionTypes.SET_LANGUAGE,
-            language: newLang}),
+            language: newLang
+        }),
         onBwModeChange: (newMode) => dispatch({
             type: actionTypes.SET_BW_MODE,
-            blackAndWhite: newMode})
+            blackAndWhite: newMode
+        })
     };
 };
 
