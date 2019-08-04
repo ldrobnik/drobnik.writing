@@ -17,6 +17,4 @@ A new version of my author website I’m building with **React**. Here is the [l
 * **React-Router**
 * **Redux**
 * **styled-components**
-
-## Technologies I’m planning to use:
-* **react-transition-group**
+* **Pose**
