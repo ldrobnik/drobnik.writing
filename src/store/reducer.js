@@ -5,7 +5,8 @@ const initialState = {
     theme: 'nocturine',
     blackAndWhite: false,
     currentText: '',
-    navbarVisible: false
+    navbarVisible: false,
+    dataNoticeAccepted: false
 };
 
 const reducer = (state = initialState, action) => {
@@ -34,6 +35,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 navbarVisible: action.navbarVisible
+            };
+        case actionTypes.SET_DATA_NOTICE_ACCEPTED:
+            return {
+                ...state,
+                dataNoticeAccepted: action.dataNoticeAccepted
             }
         default:
             return state;
