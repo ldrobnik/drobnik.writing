@@ -32,11 +32,11 @@ const Notice = styled.div`
     }
 `;
 
-const Message = styled.p`
+const Message = styled.div`
     color: ${props => props.theme.lightColor};
     font-size: ${props => props.theme.captionSize};
     font-family: ${props => props.theme.serif};
-    padding: 0 1em;
+    padding: 0.5em 1em;
 `;
 
 const DismissButton = styled.div`

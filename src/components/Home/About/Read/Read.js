@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   text-align: center;
 `;
 
-const Message = styled.p`
+const Message = styled.div`
   font-weight: bold;
   font-size: ${props => props.theme.bodySize};
   margin: 2em 0;

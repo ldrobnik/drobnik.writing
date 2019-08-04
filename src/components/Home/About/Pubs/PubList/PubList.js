@@ -16,7 +16,7 @@ const PubList = (props) => {
 
     return (
         <TileContainer>
-            {PUBLICATIONS[props.type].map((pub) => {
+            {PUBLICATIONS[props.type].map((pub, k) => {
                 if ((props.en && (pub.language === 'en')) || (props.pl && (pub.language == 'pl'))) {
                     return (
                         <PubTile
@@ -28,7 +28,7 @@ const PubList = (props) => {
                             descriptionEn={pub.descriptionEn}
                             language={pub.language}
                             pieceTitle={pub.pieceTitle}
-                            key={pub.title}/>
+                            key={k}/>
                     )
                 }
             })}

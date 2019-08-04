@@ -15,9 +15,10 @@ const Wrapper = styled.div`
   text-align: center;
 `;
 
-const Message = styled.p`
+const Message = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-weight: bold;
+  margin: 1em 0;
 `;
 
 const SwitchPanel = styled.div`

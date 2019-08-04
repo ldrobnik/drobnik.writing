@@ -65,7 +65,6 @@ const CentredButton = (props) => {
 
     //constant holding the button content
     const buttonMessage = props.message;
-    console.log(props.message);
 
     //variable holding the button content wrapped in a QuickLink or a element
     let workingButton;

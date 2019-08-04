@@ -92,7 +92,7 @@ const TextBody = styled.div`
     position: relative;
 `;
 
-const Credits = styled.p`
+const Credits = styled.div`
   font-size: ${props => props.theme.captionSize};
   font-family: ${props => props.theme.serif};
 `;

@@ -6,13 +6,13 @@ const Wrapper = styled.div`
     position: relative;
 `;
 
-const QuoteContent = styled.p`
+const QuoteContent = styled.div`
     font-family: ${props => props.theme.serif};
     font-size: ${props => props.theme.captionSize};
 
 `;
 
-const QuoteSource = styled.p`
+const QuoteSource = styled.div`
     font-family: ${props => props.theme.sansSerif};
     font-size: ${props => props.theme.smallCaptionSize};
     margin-top: 1em;
