@@ -795,11 +795,11 @@ export const WEBSITE_TEXT = {
     },
     dataNotice: {
         en: {
-            message: 'This website collects basic information about user preferences.',
+            message: <div>This website collects basic information about user preferences (language and black-and-white mode selection).</div>,
             button: 'I understand'
         },
         pl: {
-            message: 'Strona przechowuje podstawowe informacje na temat preferencji użytkownika.',
+            message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór dotyczący języka i&nbsp;trybu czarno-białego.</div>,
             button: 'Rozumiem'
         }
     }
