@@ -55,10 +55,15 @@ const DismissButton = styled.div`
 
 const DataNotice = (props) => {
 
-    //updates Redux store, setting data notice acceptance to true and data notice visibility to false, and stores the data in localStorage
+    //updates Redux states, setting data notice acceptance to true and data notice visibility to false, and stores the data in localStorage
     const acceptDataNotice = () => {
+        //update Redux states
         props.onVisibilityChange(false); //sets data storage notice display to false
         props.onAcceptanceChange(true); //sets data storage acceptance to true
+
+        //store information about accepting the notice in localStorage
+        localStorage.setItem('dataNoticeAccepted', true);
+
     };
 
     //the class to be applied to the data storage notice to make it displayed or not displayed
