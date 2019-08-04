@@ -1,9 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { Link } from "react-router-dom";
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { connect } from 'react-redux';
-import {PUBLICATIONS, WEBSITE_TEXT, TEXT_NAMES, TEXTS} from '../../../../data/constants';
+import {WEBSITE_TEXT, TEXT_NAMES, TEXTS} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import SectionLinks from "../SectionLinks/SectionLinks";
 import CentredButton from "../../../UI/CentredButton/CentredButton";

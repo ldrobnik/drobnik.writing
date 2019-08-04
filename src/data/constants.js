@@ -792,11 +792,21 @@ export const WEBSITE_TEXT = {
             en: 'home',
             pl: 'strona główna'
         }
+    },
+    dataNotice: {
+        en: {
+            message: 'This website collects basic information about user preferences.',
+            button: 'I understand'
+        },
+        pl: {
+            message: 'Strona przechowuje podstawowe informacje na temat preferencji użytkownika.',
+            button: 'Rozumiem'
+        }
     }
 
 };
 
-//Content of Instagram links
+//Content of quick links (to be used on Instagram)
 
 export const LINKS = [
     {
