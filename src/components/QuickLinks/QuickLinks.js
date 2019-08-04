@@ -45,6 +45,11 @@ const QuickLinks = (props) => {
         props.onSetNavbar(false);
     };
 
+    //turns of data storage notice
+    const hideDataNotice = () => {
+        props.onSetNotice(false)
+    };
+
     useEffect(() => {
 
         //hide navbar
@@ -55,6 +60,9 @@ const QuickLinks = (props) => {
 
         //change theme to a random one
         updateTheme();
+
+        //Hide data storage notice
+        hideDataNotice();
     });
 
     return (
@@ -74,8 +82,16 @@ const QuickLinks = (props) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme}),
-        onSetNavbar: (newState) => dispatch({type: actionTypes.SET_NAVBAR_VISIBILITY, navbarVisible: newState})
+        onThemeChange: (newTheme) => dispatch({
+            type: actionTypes.SET_THEME,
+            theme: newTheme}),
+        onSetNavbar: (newState) => dispatch({
+            type: actionTypes.SET_NAVBAR_VISIBILITY,
+            navbarVisible: newState}),
+        onSetNotice: (newState) => dispatch({
+            type: actionTypes.SET_DATA_NOTICE_VISIBLE,
+            dataNoticeVisible: newState
+        })
     };
 };
 

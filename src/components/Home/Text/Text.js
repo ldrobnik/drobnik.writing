@@ -115,6 +115,7 @@ const Links = styled.div`
   font-size: ${props => props.theme.captionSize}
   user-select: none;
   margin: 1em 0;
+  text-decoration: underline;
   
   div {
     padding: 0 0.3em;
@@ -175,6 +176,13 @@ const Text = (props) => {
         props.onSetNavbar(true);
     };
 
+    //checks whether the data storage notice should be displayed and turns it on if it is invisible but hasn't been confirmed yet
+    const checkDataNotice = () => {
+      if (!props.noticeAccepted) {
+          props.onSetNotice(true);
+      }
+    };
+
     useEffect(() => {
             //Update page title with the piece title
             document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
@@ -187,6 +195,9 @@ const Text = (props) => {
 
             //show Navbar
             showNavbar();
+
+            //checks whether data storage notice should be visible and if so, turn is on
+            checkDataNotice();
         });
 
 
@@ -234,15 +245,27 @@ const Text = (props) => {
 const mapStateToProps = state => {
     return {
         lang: state.language,
-        bwMode: state.blackAndWhite
+        bwMode: state.blackAndWhite,
+        noticeVisible: state.dataNoticeVisible,
+        noticeAccepted: state.dataNoticeAccepted
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme}),
-        onTextChange: (newText) => dispatch({type: actionTypes.SET_CURRENT_TEXT, currentText: newText}),
-        onSetNavbar: (newState) => dispatch({type: actionTypes.SET_NAVBAR_VISIBILITY, navbarVisible: newState})
+        onThemeChange: (newTheme) => dispatch({
+            type: actionTypes.SET_THEME,
+            theme: newTheme}),
+        onTextChange: (newText) => dispatch({
+            type: actionTypes.SET_CURRENT_TEXT,
+            currentText: newText}),
+        onSetNavbar: (newState) => dispatch({
+            type: actionTypes.SET_NAVBAR_VISIBILITY,
+            navbarVisible: newState}),
+        onSetNotice: (newState) => dispatch({
+            type: actionTypes.SET_DATA_NOTICE_VISIBLE,
+            dataNoticeVisible: newState
+        })
     };
 };
 

@@ -71,6 +71,13 @@ const About = (props) => {
         props.onSetNavbar(true);
     };
 
+    //checks whether the data storage notice should be displayed and turns it on if it is invisible but hasn't been confirmed yet
+    const checkDataNotice = () => {
+        if (!props.noticeAccepted) {
+            props.onSetNotice(true);
+        }
+    };
+
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${fictionWriter}`;
@@ -80,6 +87,9 @@ const About = (props) => {
 
         //show Navbar
         showNavbar();
+
+        //checks whether data storage notice should be visible and if so, turn is on
+        checkDataNotice();
     });
 
 
@@ -110,14 +120,24 @@ const About = (props) => {
 const mapStateToProps = state => {
     return {
         lang: state.language,
-        bwMode: state.blackAndWhite
+        bwMode: state.blackAndWhite,
+        noticeVisible: state.dataNoticeVisible,
+        noticeAccepted: state.dataNoticeAccepted
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        onThemeChange: (newTheme) => dispatch({type: actionTypes.SET_THEME, theme: newTheme}),
-        onSetNavbar: (newState) => dispatch({type: actionTypes.SET_NAVBAR_VISIBILITY, navbarVisible: newState})
+        onThemeChange: (newTheme) => dispatch({
+            type: actionTypes.SET_THEME,
+            theme: newTheme}),
+        onSetNavbar: (newState) => dispatch({
+            type: actionTypes.SET_NAVBAR_VISIBILITY,
+            navbarVisible: newState}),
+        onSetNotice: (newState) => dispatch({
+            type: actionTypes.SET_DATA_NOTICE_VISIBLE,
+            dataNoticeVisible: newState
+        })
     };
 };
 

@@ -106,11 +106,10 @@ const Home = (props) => {
                         <Switch location={location}>
                             <PoseGroup>
                                 <RouteContainer key={location.pathname}>
-                                    <Route path="/links/" exact component={QuickLinks} key="links"/>
                                     <Route path="/" exact component={About} key="home"/>
                                     <Route path="/texts/" exact component={Text} key="texts"/>
                                     <Route path="/texts/:id" exact component={Text} key="text"/>
-                                    <Route path="/:id" exact component={About} key="default"/>
+                                    <Route path="/links/" exact component={QuickLinks} key="links"/>
                                 </RouteContainer>
                             </PoseGroup>
                         </Switch>

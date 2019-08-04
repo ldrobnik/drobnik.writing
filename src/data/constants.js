@@ -668,11 +668,11 @@ export const WEBSITE_TEXT = {
                   source: 'FATHOM BOOKS, the publisher'
                 },
                 {
-                    quote: <div>To say Nocturine is oneiric isn’t enough — it’s a psychedelic. It kicks in slowly, swaying you from the very first sentences. Hypnotic phrase. Beautiful!'</div>,
+                    quote: <div>To say Nocturine is oneiric isn’t enough — it’s a psychedelic. It kicks in slowly, swaying you from the very first sentences. Hypnotic phrase. Beautiful!</div>,
                     source: 'Patrycja Janowska, LAMPA 1–2/2012'
                 },
                 {
-                    quote: <div>Drobnik creates an evocative, oppressive mood through the dangerous unknown; subtly, with a single shift outside the boundaries of what we are used to.'</div>,
+                    quote: <div>Drobnik creates an evocative, oppressive mood through the dangerous unknown; subtly, with a single shift outside the boundaries of what we are used to.</div>,
                     source: 'Ilona Witkowska, ODRA 5/2012'
                 },
                 {
