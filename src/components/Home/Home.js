@@ -105,7 +105,7 @@ const Home = (props) => {
                                     <Route path="/" exact component={About} key="home"/>
                                     <Route path="/texts/" exact component={Text} key="texts"/>
                                     <Route path="/texts/:id" exact component={Text} key="text"/>
-                                    {/*<Route component={About} key="default"/>*/}
+                                    <Route path="/:id" exact component={About} key="default"/>
                                 </RouteContainer>
                             </PoseGroup>
                         </Switch>
