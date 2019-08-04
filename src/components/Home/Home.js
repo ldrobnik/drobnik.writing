@@ -13,7 +13,7 @@ import {PULSATE_KEYFRAMES} from "../../data/constants";
 import * as actionTypes from "../../store/actions";
 
 const RouteContainer = posed.div({
-    enter: {opacity: 1, delay: 300, beforeChildren: true},
+    enter: {opacity: 1, delay: 150, beforeChildren: true},
     exit: {opacity: 0}
 });
 

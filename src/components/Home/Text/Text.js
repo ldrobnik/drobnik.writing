@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
+import posed from 'react-pose';
 
 import * as actionTypes from '../../../store/actions';
 import {TEXTS, TEXT_NAMES, WEBSITE_TEXT} from '../../../data/constants';
@@ -12,6 +13,7 @@ import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
 import CopyrightNote from "../../UI/CopyrightNote/CopyrightNote";
 import SectionSeparator from "../../UI/SectionSeparator/SectionSeparator";
 
+/* STYLED COMPONENTS */
 
 const TopAnchor = styled.div`
   position: absolute;
@@ -118,6 +120,17 @@ const Links = styled.div`
   }
 `;
 
+/* POSE */
+const TransitionContainer = posed.div({
+    enter: {
+        opacity: 1
+    },
+    exit: {
+        opacity: 0,
+        delay: 500
+    }
+});
+
 
 const Text = (props) => {
 
@@ -188,7 +201,8 @@ const Text = (props) => {
 
 
     return (
-        <Wrapper>
+        <TransitionContainer>
+            <Wrapper>
                 <TopAnchor>
                     <div id='top'></div>
                 </TopAnchor>
@@ -220,9 +234,10 @@ const Text = (props) => {
                     <div>{top}</div>
                     <div>{home}</div>
                 </Links>
-                <SectionSeparator />
-                <CopyrightNote />
-        </Wrapper>
+                <SectionSeparator/>
+                <CopyrightNote/>
+            </Wrapper>
+        </TransitionContainer>
     );
 };
 
