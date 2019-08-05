@@ -37,7 +37,7 @@ const AnimatedPic = posed.div({
         opacity: 1,
         filter: 'blur(0)',
         transition: {
-            ease: 'easeOut',
+            ease: 'easeInOut',
             duration: 200 }
     },
     hidden: {

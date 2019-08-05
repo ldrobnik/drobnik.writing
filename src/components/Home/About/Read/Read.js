@@ -33,7 +33,9 @@ const AnimatedList = posed.div({
 const AnimatedLink = posed.div({
     visible: {
         x: '0%',
-        transition: { type: 'spring', stiffness: 100 }
+        transition: {
+            type: 'spring',
+            stiffness: 100 }
     },
     hidden: {
         x: '200%'

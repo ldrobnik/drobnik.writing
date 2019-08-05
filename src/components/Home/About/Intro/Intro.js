@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import posed from 'react-pose';
+import {Waypoint} from "react-waypoint";
 import {connect} from 'react-redux';
 import authorsPhoto from '../../../../assets/authorsPhoto.jpg'
 import {WEBSITE_TEXT} from '../../../../data/constants';
@@ -10,6 +12,7 @@ import CentredButton from '../../../UI/CentredButton/CentredButton';
 import SectionLinks from '../SectionLinks/SectionLinks';
 import SectionSeparator from '../../../UI/SectionSeparator/SectionSeparator';
 
+/* STYLED COMPONENTS */
 const Body = styled.div`
   text-align: left;
   font-size: ${props => props.theme.bodySize};
@@ -21,8 +24,30 @@ const Body = styled.div`
     }
 `;
 
+/* POSE */
+const AnimatedLinks = posed.div({
+    visible: {
+        opacity: 1,
+        transform: 'scale(1,1)',
+        transition: {
+            type: 'spring',
+            stiffness: 100 }
+    },
+    hidden: {
+        opacity: 0,
+        transform: 'scale(0,0)'
+    }
+});
+
 const Intro = (props) => {
 
+    //specifies whether social links and Patreon button are visible
+    const [socialVisible, setSocialVisible] = useState(false);
+
+    //shows the social links and Patreon button
+    const showSocial = () => {
+        setSocialVisible(true);
+    };
     return (
         <React.Fragment>
             <SectionHeading
@@ -37,19 +62,25 @@ const Intro = (props) => {
             <Body>
                 {WEBSITE_TEXT.intro.body[props.lang]}
             </Body>
-            <SocialLinks/>
-            <CentredButton
-                message={WEBSITE_TEXT.intro.patreon[props.lang].message}
-                path={WEBSITE_TEXT.intro.patreon[props.lang].path}
-                capital='w'/>
-                <SectionLinks
-                    lang={props.lang}
-                    top={false}
-                    nocturine={false}
-                    pubs={true}
-                    read={true}
-                />
-                <SectionSeparator />
+            <Waypoint
+                onEnter={showSocial}
+            />
+            <AnimatedLinks
+                pose={socialVisible ? 'visible' : 'hidden'}>
+                <SocialLinks/>
+                <CentredButton
+                    message={WEBSITE_TEXT.intro.patreon[props.lang].message}
+                    path={WEBSITE_TEXT.intro.patreon[props.lang].path}
+                    capital='w'/>
+            </AnimatedLinks>
+            <SectionLinks
+                lang={props.lang}
+                top={false}
+                nocturine={false}
+                pubs={true}
+                read={true}
+            />
+            <SectionSeparator/>
         </React.Fragment>
     );
 };
