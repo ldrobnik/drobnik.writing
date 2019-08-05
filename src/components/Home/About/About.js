@@ -99,7 +99,7 @@ const About = (props) => {
 
         //lets the Redux store know that the Text page is not currently displayed
         setTextNotDisplayed();
-    }, [props.lang]);
+    });
 
 
     return (
