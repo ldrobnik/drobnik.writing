@@ -515,7 +515,7 @@ export const PUBLICATIONS = {
             year: '2017',
             url: 'http://www.wforma.eu/2017-antologia-wspolczesnych-polskich-opowiadan.html',
             descriptionPl: 'Zbiór opowiadań z moim tekstem „Jeśli zapłonę” (Forma)',
-            descriptionEn: 'A collection featuring my piece “Jeśli zapłonę” (Forma)',
+            descriptionEn: 'Collection featuring my piece “Jeśli zapłonę” (Forma)',
             language: 'pl',
             pieceTitle: 'Jeśli zapłonę'
         },
@@ -524,7 +524,7 @@ export const PUBLICATIONS = {
             year: '2014',
             url: 'http://www.wforma.eu/318,2014-antologia-wspolczesnych-polskich-opowiadan.html',
             descriptionPl: 'Zbiór opowiadań z moim tekstem „Biegnący człowiek” (Forma)',
-            descriptionEn: 'A collection featuring my piece “Biegnący człowiek” (Forma)',
+            descriptionEn: 'Collection featuring my piece “Biegnący człowiek” (Forma)',
             language: 'pl',
             pieceTitle: 'Biegnący człowiek'
         }
