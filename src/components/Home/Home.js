@@ -108,7 +108,7 @@ const Home = (props) => {
                     <Layout>
                         <Switch location={location}>
                             <PoseGroup>
-                                <RouteContainer key={location.key}>
+                                <RouteContainer key={location.pathname}>
                                     <Route path="/" exact component={About} key="home"/>
                                     <Route path="/texts/" exact component={Text} key="texts"/>
                                     <Route path="/texts/:id" exact component={Text} key="text"/>
