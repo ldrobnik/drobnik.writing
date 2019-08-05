@@ -43,8 +43,7 @@ export const TEXTS = {
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
             description: <p>“Nocturine” is a novella/short fiction collection forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><i>Fathom Books</i></a>. It was originally written <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">in Polish</a> and published in one volume with another novella, “Cunninghamella” (<i>Forma</i> 2011). Excerpts from “Nocturine” have been featured in a number of journals — both in Polish (<a href="https://www.dwutygodnik.com/wydanie/2011/57" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>) and in English (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
             content: NOCTURINE_EN,
-            theme: 'nocturine',
-            firstLetter: 'B'
+            theme: 'nocturine'
         },
 
         cetacean: {
@@ -53,8 +52,7 @@ export const TEXTS = {
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
             description: <p>The piece was originally published in <a href="https://www.quarterlywest.com/issue-94/cetacean" target="_blank" rel="noopener noreferrer"><i>Quarterly West</i></a> Issue 94. Its Polish translation was featured in <a href="https://afront.org.pl/" target="_blank" rel="noopener noreferrer"><i>Afront</i></a> Issue 2(5)/2018.</p>,
             content: CETACEAN_EN,
-            theme: 'cetacean',
-            firstLetter: 'T'
+            theme: 'cetacean'
         },
 
         cellulose: {
@@ -63,8 +61,7 @@ export const TEXTS = {
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
             description:   <p>The piece was originally published in September 2018 Issue of <a href="https://mojaveheart.com/cellulose/" target="_blank" rel="noopener noreferrer"><i>Mojave Heart Review</i></a>. Its Polish translation was featured in the inaugural issue of <a href="http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html" target="_blank" rel="noopener noreferrer"><i>Stoner Polski</i></a>.</p>,
             content: CELLULOSE_EN,
-            theme: 'cellulose',
-            firstLetter: 'D'
+            theme: 'cellulose'
         },
 
         moths: {
@@ -73,8 +70,7 @@ export const TEXTS = {
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Anna De Vaul.',
             description: <p>The piece was originally published in <a href="http://www.gatehousepress.com/lighthouse/" target="_blank" rel="noopener noreferrer"><i>Lighthouse</i></a> Issue 10. Its Polish translation was featured in <a href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank" rel="noopener noreferrer"><i>Fabularie</i></a> (incidentally, also Issue 10).</p>,
             content: MOTHS_EN,
-            theme: 'moths',
-            firstLetter: 'T'
+            theme: 'moths'
         },
 
         drones: {
@@ -83,8 +79,7 @@ export const TEXTS = {
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Robert Harper.',
             description: <p>The piece was originally published in <a href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/" target="_blank" rel="noopener noreferrer"><i>Bare Fiction</i></a> Issue 10. Its Polish translation was featured in  <a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank" rel="noopener noreferrer"><i>Helikopter</i></a> Issue 3/2018.</p>,
             content: DRONES_EN,
-            theme: 'drones',
-            firstLetter: 'H'
+            theme: 'drones'
         },
 
         landmines: {
@@ -93,8 +88,7 @@ export const TEXTS = {
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
             description: <p>The piece published in <a href="https://foglifterjournal.com/" target="_blank" rel="noopener noreferrer"><i>Foglifter</i></a> Volume 4 Issue 1.</p>,
             content: LANDMINES_EN,
-            theme: 'landmines',
-            firstLetter: 'I'
+            theme: 'landmines'
         },
 
         treasures: {
@@ -103,8 +97,7 @@ export const TEXTS = {
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Michelle Ross.',
             description: <p>The piece was published in May 2019 in <a href="https://atticusreview.org/treasures/" target="_blank" rel="noopener noreferrer"><i>Atticus Review</i></a>.</p>,
             content: TREASURES_EN,
-            theme: 'treasures',
-            firstLetter: 'S'
+            theme: 'treasures'
         }
 
     },
@@ -115,8 +108,7 @@ export const TEXTS = {
             credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
             description: <p>„Nocturine” to minipowieść/zbiór krótkich próz, który niedługo zostanie wydany nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><i>Fathom Books</i></a>. Książka pierwotnie ukazała się <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie z&nbsp;inną minipowieścią pt. „Cunninghamella” (<i>Forma</i> 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku czasopismach — zarówno po polsku (<a href="https://www.dwutygodnik.com/wydanie/2011/57" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>), jak i&nbsp;po angielsku (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
             content: NOCTURINE_PL,
-            theme: 'nocturine',
-            firstLetter: 'N'
+            theme: 'nocturine'
         },
 
         cetacean: {
@@ -125,8 +117,7 @@ export const TEXTS = {
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
             description:<p>Tekst ukazał się pierwotnie po angielsku w&nbsp;94. numerze <a href="https://www.quarterlywest.com/issue-94/cetacean" target="_blank" rel="noopener noreferrer"><i>Quarterly West</i></a>. Polski przekład zamieszczono w&nbsp;<a href="https://afront.org.pl/" target="_blank" rel="noopener noreferrer"><i>Afroncie</i></a> (numer 2(5)/2018).</p>,
             content: CETACEAN_PL,
-            theme: 'cetacean',
-            firstLetter: 'P'
+            theme: 'cetacean'
         },
 
 
@@ -136,8 +127,7 @@ export const TEXTS = {
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
             description: <div>Tekst ukazał się pierwotnie po angielsku w&nbsp;2018&nbsp;r. we wrześniowym numerze <a href="https://mojaveheart.com/cellulose/" target="_blank" rel="noopener noreferrer"><i>Mojave Heart Review</i></a>. Polski przekład zamieszczono w&nbsp;pierwszym numerze <a href="http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html" target="_blank" rel="noopener noreferrer"><i>Stonera Polskiego</i></a>.</div>,
             content: CELLULOSE_PL,
-            theme: 'cellulose',
-            firstLetter: 'D'
+            theme: 'cellulose'
         },
 
         moths: {
@@ -147,7 +137,6 @@ export const TEXTS = {
             description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;10. numerze <a href="http://www.gatehousepress.com/lighthouse/" target="_blank" rel="noopener noreferrer"><i>Lighthouse</i></a>. Polski przekład zamieszczono w&nbsp;<a href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank" rel="noopener noreferrer"><i>Fabulariach</i></a> (także w&nbsp;numerze 10.).</p>,
             content: MOTHS_PL,
             theme: 'moths',
-            firstLetter: 'P'
         },
 
         drones: {
@@ -156,8 +145,7 @@ export const TEXTS = {
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
             description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;10. numerze <a href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/" target="_blank" rel="noopener noreferrer"><i>Bare Fiction</i></a>. Polski przekład zamieszczono w&nbsp;<a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank" rel="noopener noreferrer"><i>Helikopterze</i></a> (numer 3/2018).</p>,
             content: DRONES_PL,
-            theme: 'drones',
-            firstLetter: 'J'
+            theme: 'drones'
         },
 
         landmines: {
@@ -166,8 +154,7 @@ export const TEXTS = {
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
             description: <p>Tekst ukazał się po angielsku w&nbsp;piśmie <a href="https://foglifterjournal.com/" target="_blank" rel="noopener noreferrer"><i>Foglifter</i></a> (Volume 4 Issue 1).</p>,
             content: LANDMINES_PL,
-            theme: 'landmines',
-            firstLetter: 'T'
+            theme: 'landmines'
         },
 
         treasures: {
@@ -176,8 +163,7 @@ export const TEXTS = {
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
             description: <p>Tekst ukazał się po angielsku w&nbsp;maju 2019&nbsp;r. w&nbsp;<a href="https://atticusreview.org/treasures/" target="_blank" rel="noopener noreferrer"><i>Atticus Review</i></a>.</p>,
             content: TREASURES_PL,
-            theme: 'treasures',
-            firstLetter: 'M'
+            theme: 'treasures'
         }
     }
 };
