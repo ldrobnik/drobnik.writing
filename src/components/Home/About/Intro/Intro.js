@@ -85,7 +85,6 @@ const Intro = (props) => {
             <CentredPhoto
                 source={authorsPhoto}
                 altText='Author’s photo'
-                capital='Ł'
             />
             <Body>
                 {WEBSITE_TEXT.intro.body[props.lang]}
@@ -99,7 +98,7 @@ const Intro = (props) => {
                 <CentredButton
                     message={WEBSITE_TEXT.intro.patreon[props.lang].message}
                     path={WEBSITE_TEXT.intro.patreon[props.lang].path}
-                    capital='w'/>
+                    />
             </AnimatedButton>
             <Waypoint
                 onEnter={showSocial}

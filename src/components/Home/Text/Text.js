@@ -77,19 +77,6 @@ const TextSubtitle = styled.div`
     
 `;
 
-const Capital = styled.div`
-  font-family: ${props => props.theme.cursive};
-  font-size: 12em;
-  text-transform: uppercase;
-  opacity: ${props => props.theme.transparent};
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-20%, 70%);
-  filter: blur( ${props => props.theme.heavyBlur});
-  user-select: none;
-`;
-
 
 const TextBody = styled.div`
     font-family: ${props => props.theme.serif};

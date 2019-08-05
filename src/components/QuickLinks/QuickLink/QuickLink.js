@@ -55,18 +55,6 @@ const Subtitle = styled.div`
   font-size: ${props => props.theme.bodySize};
 `;
 
-const Capital = styled.div`
-  font-family: ${props => props.theme.cursive};
-  font-size: 24em;
-  text-transform: uppercase;
-  opacity: ${props => props.theme.transparent};
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: blur( ${props => props.theme.heavyBlur});
-`;
-
 
 const QuickLink = (props) => {
 
@@ -78,9 +66,6 @@ const QuickLink = (props) => {
     //variable holding the button content wrapped in a QuickLink or a element
     let workingLink;
 
-    //random decorative letter to be displayed on the button
-    const capital = linkTitle[(Math.floor(Math.random() * 3))];
-
     //the content of the link
     const linkContent = (
         <LinkWrapper>
@@ -90,9 +75,6 @@ const QuickLink = (props) => {
             <Subtitle>
                 {linkSubtitle}
             </Subtitle>
-            <Capital>
-                {capital}
-            </Capital>
         </LinkWrapper>
     );
 

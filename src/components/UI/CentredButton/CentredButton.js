@@ -48,18 +48,6 @@ const ButtonWrapper = styled.div`
     
 `;
 
-const Capital = styled.div`
-  font-family: ${props => props.theme.cursive};
-  font-size: 24em;
-  text-transform: uppercase;
-  opacity: ${props => props.theme.transparent};
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: blur( ${props => props.theme.heavyBlur});
-`;
-
 
 const CentredButton = (props) => {
 
@@ -69,8 +57,6 @@ const CentredButton = (props) => {
     //variable holding the button content wrapped in a QuickLink or a element
     let workingButton;
 
-    //decorative letter to be displayed on the button
-    const capital = props.capital;
     
     //the content of the button
     const buttonContent = (
