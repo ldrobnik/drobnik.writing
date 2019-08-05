@@ -144,6 +144,11 @@ const Text = (props) => {
         setlinkVisible(true);
     };
 
+    //hides the 'up next' luunk
+    const hideLink = () => {
+        setlinkVisible(false);
+    };
+
     //Checks if the id in the current url matches any text; if not, returns 'nocturine'
     const checkTextID = (name) => {
 
@@ -248,6 +253,9 @@ const Text = (props) => {
                 </Capital>
                 {TEXTS[props.lang][textName].content}
             </TextBody>
+            <Waypoint
+                onEnter={hideLink}
+            />
             <Credits>
                 <i>{TEXTS[props.lang][textName].credits}</i>
             </Credits>
