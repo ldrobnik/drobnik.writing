@@ -6,6 +6,7 @@ import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import SectionLinks from "../SectionLinks/SectionLinks";
 import CentredButton from "../../../UI/CentredButton/CentredButton";
 import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
+import ReadListElement from './ReadListElement/ReadListElement';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -30,15 +31,14 @@ const Read = (props) => {
             />
             <Message>{WEBSITE_TEXT.read.introduction[props.lang]}</Message>
             {TEXT_NAMES.map((text, k) => {
-                    let textLink = '/texts/' + text;
-                    return (
-                        <CentredButton
-                            message={TEXTS[props.lang][text].title + ' (' + TEXTS[props.lang][text].subtitle + ')'}
-                            path={textLink}
-                            link={true}
-                            capital={letters[k]}
-                            key={k}/>
-                        )
+                let textLink = '/texts/' + text;
+                return (
+                    <ReadListElement
+                        title={TEXTS[props.lang][text].title}
+                        subtitle={TEXTS[props.lang][text].subtitle}
+                        path={textLink}
+                        key={k}/>
+                )
             })}
             <SectionLinks
                 lang={props.lang}
