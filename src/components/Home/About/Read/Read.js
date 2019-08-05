@@ -26,22 +26,17 @@ const Message = styled.div`
 const AnimatedList = posed.div({
     visible: {
         delayChildren: 200,
-        staggerChildren: 50
+        staggerChildren: 100
     }
 });
 
 const AnimatedLink = posed.div({
     visible: {
         x: '0%',
-        transition: {
-            duration: 500
-        }
+        transition: { type: 'spring', stiffness: 100 }
     },
     hidden: {
-        x: '100%',
-        transition: {
-            duration: 500
-        }
+        x: '200%'
     }
 });
 
