@@ -36,7 +36,9 @@ const PicWrapper = posed.div({
     visible: {
         opacity: 1,
         filter: 'blur(0)',
-        transition: { duration: 150 }
+        transition: {
+            ease: 'easeOut',
+            duration: 200 }
     },
     hidden: {
         opacity: 0,
