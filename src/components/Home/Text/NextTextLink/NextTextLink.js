@@ -1,5 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import {Link} from "react-router-dom";
+import {TEXTS, WEBSITE_TEXT} from "../../../../data/constants";
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 const UpNext = styled.div`
   text-align: center;
@@ -9,12 +17,32 @@ const UpNext = styled.div`
   margin: 1em 0;
 `;
 
+const Line = styled.div`
+  height: 0.5em;
+  width: 6em;
+  margin: 1em;
+  background-color: ${props => props.theme.darkColor};
+`;
+
 const NextTextLink = (props) => {
 
+
     return (
-        <UpNext>
-            {props.link}
-        </UpNext>
+
+        <Link
+            to={'/texts/' + props.textName}>
+            <Wrapper>
+                <Line/>
+                <UpNext>
+                    <div>
+                        <i>{WEBSITE_TEXT.text.nextText[props.lang]}{TEXTS[props.lang][props.textName].title}</i>
+                    </div>
+                </UpNext>
+                <Line/>
+            </Wrapper>
+        </Link>
+
+
     );
 };
 

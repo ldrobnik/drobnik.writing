@@ -230,7 +230,8 @@ const Text = (props) => {
                 title={TEXTS[props.lang][textName].title}
             />
             <NextTextLink
-                link={nextTextLink}
+                textName={nextTextName}
+                lang={props.lang}
             />
             <Links>
                 <div>{top}</div>
