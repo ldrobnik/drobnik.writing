@@ -76,9 +76,6 @@ const CentredButton = (props) => {
     const buttonContent = (
         <ButtonWrapper>
             {buttonMessage}
-            <Capital>
-                {capital}
-            </Capital>
         </ButtonWrapper>
     );
 

@@ -172,10 +172,6 @@ const Text = (props) => {
     //The next text name
     const nextTextName = TEXT_NAMES[nextTextId];
 
-    //The link to the next text
-    const nextTextLink = <Link
-        to={'/texts/' + nextTextName}>{WEBSITE_TEXT.text.nextText[props.lang]}<i>{TEXTS[props.lang][nextTextName].title}</i></Link>
-
     //The Back to Top link
     const top = <AnchorLink href='#top'>{WEBSITE_TEXT.text.top[props.lang]}</AnchorLink>;
 
@@ -248,9 +244,6 @@ const Text = (props) => {
                 </TextSubtitle>
             </Header>
             <TextBody>
-                <Capital>
-                    {TEXTS[props.lang][textName].firstLetter}
-                </Capital>
                 {TEXTS[props.lang][textName].content}
             </TextBody>
             <Waypoint

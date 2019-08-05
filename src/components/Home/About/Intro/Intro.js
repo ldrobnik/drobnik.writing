@@ -24,6 +24,13 @@ const Body = styled.div`
     }
 `;
 
+const Separator = styled.div`
+  margin: 2em auto 0.5em auto;
+  height: 0.6em;
+  width: 8em;
+  background-color: ${props => props.theme.darkColor};
+`;
+
 /* POSE */
 const AnimatedLinks = posed.div({
     visible: {
@@ -39,6 +46,8 @@ const AnimatedLinks = posed.div({
         transform: 'scale(0,0)'
     }
 });
+
+
 
 /* POSE */
 const AnimatedButton = posed.div({
@@ -72,6 +81,7 @@ const Intro = (props) => {
                 title={WEBSITE_TEXT.intro.title}
                 subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
             />
+            <Separator />
             <CentredPhoto
                 source={authorsPhoto}
                 altText='Author’s photo'

@@ -68,9 +68,6 @@ const CentredPhoto = (props) => {
                         onLoad={showPhoto}
                     />
                 </Photo>
-                <Capital>
-                    {props.capital}
-                </Capital>
             </AnimatedPic>
         </Wrapper>
     );
