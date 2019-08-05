@@ -21,7 +21,6 @@ const AnimatedQuote = posed.div({
     visible: {
         y: '0%',
         opacity: 1,
-        transform: 'blur(0)',
         transition: {
             duration: 2000
         }
@@ -29,7 +28,6 @@ const AnimatedQuote = posed.div({
     hidden: {
         y: '-10%',
         opacity: 0,
-        transform: 'blur(20px)',
         transition: {
             duration: 2000
         }

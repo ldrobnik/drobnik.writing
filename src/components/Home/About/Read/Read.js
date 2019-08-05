@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
+import posed from 'react-pose';
+import {Waypoint} from "react-waypoint";
+import {connect} from 'react-redux';
 import {WEBSITE_TEXT, TEXT_NAMES, TEXTS} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import SectionLinks from "../SectionLinks/SectionLinks";
-import CentredButton from "../../../UI/CentredButton/CentredButton";
 import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
 import ReadListElement from './ReadListElement/ReadListElement';
 
+/* STYLED COMPONENTS */
 const Wrapper = styled.div`
   text-align: center;
 `;
@@ -18,11 +20,40 @@ const Message = styled.div`
   margin: 2em 0;
 `;
 
+/* POSE */
+
+/* POSE */
+const AnimatedList = posed.div({
+    visible: {
+        delayChildren: 200,
+        staggerChildren: 50
+    }
+});
+
+const AnimatedLink = posed.div({
+    visible: {
+        x: '0%',
+        transition: {
+            duration: 500
+        }
+    },
+    hidden: {
+        x: '100%',
+        transition: {
+            duration: 500
+        }
+    }
+});
+
 const Read = (props) => {
 
-    //decorative letters to be displayed on the buttons
-    const letters = ['D', 'R', 'O', 'B', 'N', 'I', 'K'];
+    //specifies whether text links should be visible
+    const [linksVisible, setLinksVisible] = useState(false);
 
+    //shows the text links
+    const showLinks = () => {
+        setLinksVisible(true);
+    };
     return (
         <Wrapper>
             <SectionHeading
@@ -30,16 +61,26 @@ const Read = (props) => {
                 subtitle=""
             />
             <Message>{WEBSITE_TEXT.read.introduction[props.lang]}</Message>
-            {TEXT_NAMES.map((text, k) => {
-                let textLink = '/texts/' + text;
-                return (
-                    <ReadListElement
-                        title={TEXTS[props.lang][text].title}
-                        subtitle={TEXTS[props.lang][text].subtitle}
-                        path={textLink}
-                        key={k}/>
-                )
-            })}
+            <Waypoint
+                onEnter={showLinks}
+            />
+            <AnimatedList
+                pose={linksVisible ? 'visible' : 'hidden'}>
+                {TEXT_NAMES.map((text, k) => {
+                    let textLink = '/texts/' + text;
+                    return (
+                        <AnimatedLink
+                            pose={linksVisible ? 'visible' : 'hidden'}
+                            key={k}>
+                            <ReadListElement
+                                title={TEXTS[props.lang][text].title}
+                                subtitle={TEXTS[props.lang][text].subtitle}
+                                path={textLink}
+                            />
+                        </AnimatedLink>
+                    )
+                })}
+            </AnimatedList>
             <SectionLinks
                 lang={props.lang}
                 top={true}
@@ -47,7 +88,7 @@ const Read = (props) => {
                 pubs={true}
                 read={false}
             />
-            <SectionSeparator />
+            <SectionSeparator/>
         </Wrapper>
     );
 };
