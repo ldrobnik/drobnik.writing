@@ -31,6 +31,22 @@ const AnimatedLinks = posed.div({
         transform: 'scale(1,1)',
         transition: {
             type: 'spring',
+            stiffness: 80 }
+    },
+    hidden: {
+        opacity: 0,
+        transform: 'scale(0,0)'
+    }
+});
+
+/* POSE */
+const AnimatedButton = posed.div({
+    visible: {
+        opacity: 1,
+        transform: 'scale(1,1)',
+        delay: 100,
+        transition: {
+            type: 'spring',
             stiffness: 100 }
     },
     hidden: {
@@ -68,11 +84,14 @@ const Intro = (props) => {
             <AnimatedLinks
                 pose={socialVisible ? 'visible' : 'hidden'}>
                 <SocialLinks/>
+            </AnimatedLinks>
+            <AnimatedButton
+                pose={socialVisible ? 'visible' : 'hidden'}>
                 <CentredButton
                     message={WEBSITE_TEXT.intro.patreon[props.lang].message}
                     path={WEBSITE_TEXT.intro.patreon[props.lang].path}
                     capital='w'/>
-            </AnimatedLinks>
+            </AnimatedButton>
             <SectionLinks
                 lang={props.lang}
                 top={false}
