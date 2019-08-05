@@ -47,7 +47,7 @@ const LogoWrapper = styled.div`
 
 const NavElement = styled.div`
   cursor: pointer;
-  margin: 0 0.5em;
+  margin: 0 1em;
   Link, a, div {
       padding: 1em;
       display: block;
@@ -63,7 +63,7 @@ const NavElement = styled.div`
 
 const ToggledNavElement = styled.div`
   cursor: pointer;
-  margin: 0 0.5em;
+  margin: 0 1em;
   opacity: ${props => props.theme.translucent};\
   
   Link, a, div {
@@ -80,7 +80,7 @@ const ToggledNavElement = styled.div`
 
 const InactiveElement = styled.div`
   cursor: default;
-  margin: 0 0.5em;
+  margin: 0 1em;
   opacity: ${props => props.theme.translucent};
   
  Link, a, div {
@@ -113,7 +113,7 @@ const NavBar = (props) => {
     //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
     const readButton = (props.textDisplayed) ?
         <InactiveElement>
-            {WEBSITE_TEXT.navbar.read}
+            <div>{WEBSITE_TEXT.navbar.read}</div>
         </InactiveElement>
         :
         <NavElement>
