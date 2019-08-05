@@ -46,7 +46,7 @@ const LogoWrapper = styled.div`
 
 const NavElement = styled.div`
   cursor: pointer;
-  margin-left: 1em;
+  margin: 0 0.5em;
 
 
   
@@ -57,12 +57,13 @@ const NavElement = styled.div`
         }
 `;
 
-const OptionButton = styled.span`
+const OptionButton = styled.div`
     font-size: 1em;
     div {
       padding: 1em;
       display: block;
     }
+
 `;
 
 const NavLink = styled.div`
@@ -74,46 +75,28 @@ const NavLink = styled.div`
 
 `;
 
-
-const Translucent = styled.span`
-  opacity: ${props => props.theme.translucent};
+const Inactive = styled.div`
+  cursor: default;
+  &:hover {
+    animation: none;
+  }
 `;
 
 
+const Translucent = styled.div`
+  opacity: ${props => props.theme.translucent};
+`;
+
+const readIcon = styled.div`
+  font-size: 0.8em;
+`;
+
 const NavBar = (props) => {
 
-    //The currently displayed text
-    const currentText = props.curText;
 
-    //The prev button link - by default it is the last available text
-    let prevLink;
+    //The book icon link to a randomly chosen text
+    let randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
 
-    //The next button link -  by default it is the first available text
-    let nextLink;
-
-    //If any text is displayed, change the previous and next button links accordingly
-    if (currentText !== '') {
-        //The index of the currently displayed text
-        const textIndex = TEXT_NAMES.indexOf(props.curText);
-
-        //Index of the previous text to be displayed
-        const prevIndex = (textIndex > 0) ? textIndex - 1 : TEXT_NAMES.length - 1;
-
-        //Update the prev button link accordingly
-        prevLink = TEXT_NAMES[prevIndex];
-
-        //Index of the next text to be displayed
-        const nextIndex = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
-
-        //Update the prev button link accordingly
-        nextLink = TEXT_NAMES[nextIndex];
-
-    } else {
-
-        //If not texts are displayed, add set random links to both buttons
-        prevLink = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
-        nextLink = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
-    }
 
     //Content of the button used to change current language
     const langButton = (props.lang === 'en') ? WEBSITE_TEXT.navbar.language[props.lang] : WEBSITE_TEXT.navbar.language[props.lang];
@@ -136,9 +119,17 @@ const NavBar = (props) => {
         }
     };
 
-    //content of the button used to toggle the black-and-white mode - display translucent if the mode is toggled off
-    const bwButton = (props.bwMode) ? WEBSITE_TEXT.navbar.colourMode :
+    //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off
+    const bwButton = (props.bwMode) ?
+        WEBSITE_TEXT.navbar.colourMode :
         <Translucent>{WEBSITE_TEXT.navbar.colourMode}</Translucent>;
+
+    //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
+    const readButton = (props.textDisplayed) ?
+        <Inactive>
+            <Translucent>{WEBSITE_TEXT.navbar.read}</Translucent>
+        </Inactive> :
+        <Link to={'/texts/' + randomText}>{WEBSITE_TEXT.navbar.read}</Link>;
 
     //toggle the black-and-white mode
     const toggleBwMode = () => {
@@ -176,15 +167,11 @@ const NavBar = (props) => {
                         </OptionButton>
                     </NavElement>
                     <NavElement>
-                        <NavLink>
-                            <Link to={'/texts/' + prevLink}>&lt;</Link>
-                        </NavLink>
+                        <OptionButton>
+                            {readButton}
+                        </OptionButton>
                     </NavElement>
-                    <NavElement>
-                        <NavLink>
-                            <Link to={'/texts/' + nextLink}>&gt;</Link>
-                        </NavLink>
-                    </NavElement>
+
                 </Toolbar>
             </div>
         </Wrapper>
@@ -196,7 +183,8 @@ const mapStateToProps = state => {
         lang: state.language,
         bwMode: state.blackAndWhite,
         curText: state.currentText,
-        showNavbar: state.navbarVisible
+        showNavbar: state.navbarVisible,
+        textDisplayed: state.textPageDisplayed
     };
 };
 
