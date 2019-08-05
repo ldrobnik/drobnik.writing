@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import posed from 'react-pose';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
 
 import {BLUR_KEYFRAMES} from "../../../../../../data/constants";
 
+/* STYLED COMPONENTS */
 const Tile = styled.div`
     background-color: ${props => props.theme.background};
     position: relative;
@@ -42,8 +44,33 @@ const Capital = styled.div`
   }
 `;
 
+/* POSE */
+const AnimatedTile = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0)',
+        transform: 'skew(0, 0)',
+        transition: {
+            ease: 'easeOut',
+            duration: 200
+        }
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)',
+        transform: 'skew(5deg, 10deg)'
+    }
+});
 
 const PubTile = (props) => {
+
+    //specifies the tile visiblity
+    const [visible, setVisible] = useState(false);
+
+    //shows the tile after a random duration
+    const showTile = () => {
+        setVisible(true);
+    };
 
     //specifies whether additional content should be displayed on hover
     const [mouseEnter, setMouseEnter] = useState(false);
@@ -86,17 +113,20 @@ const PubTile = (props) => {
 
     //the above description wrapped in a tile element
     const tileContent =
-        <TileWrapper>
-            <Tile
-                onMouseEnter={mouseEnterHandler}
-                onMouseLeave={mouseLeaveHandler}
-            >
-                {tileDescription}
-                <Capital>
-                    {capital}
-                </Capital>
-            </Tile>
-        </TileWrapper>;
+        <AnimatedTile
+            pose={visible ? 'visible' : 'hidden'}>
+            <TileWrapper>
+                <Tile
+                    onMouseEnter={mouseEnterHandler}
+                    onMouseLeave={mouseLeaveHandler}
+                >
+                    {tileDescription}
+                    <Capital>
+                        {capital}
+                    </Capital>
+                </Tile>
+            </TileWrapper>
+        </AnimatedTile>;
 
     //if the url property contains an anchor link, display AnchorLink, otherwise display normal link
     const tile = (props.url.charAt(0) === '#') ?
@@ -106,6 +136,10 @@ const PubTile = (props) => {
         <a href={props.url} target="_blank" rel="noopener noreferrer">
             {tileContent}
         </a>;
+
+    useEffect(() => {
+        showTile();
+    });
 
     return (
         <div>

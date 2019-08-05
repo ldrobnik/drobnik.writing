@@ -32,7 +32,7 @@ const Capital = styled.div`
 `;
 
 /* POSE */
-const PicWrapper = posed.div({
+const AnimatedPic = posed.div({
     visible: {
         opacity: 1,
         filter: 'blur(0)',
@@ -59,7 +59,7 @@ const CentredPhoto = (props) => {
 
     return (
         <Wrapper>
-            <PicWrapper
+            <AnimatedPic
                 pose={visible ? 'visible' : 'hidden'}>
                 <Photo>
                     <img
@@ -71,7 +71,7 @@ const CentredPhoto = (props) => {
                 <Capital>
                     {props.capital}
                 </Capital>
-            </PicWrapper>
+            </AnimatedPic>
         </Wrapper>
     );
 };
