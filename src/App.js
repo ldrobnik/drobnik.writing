@@ -36,7 +36,7 @@ const App = (props) => {
         extraLargeScr: '1690px',
 
         //opacity
-        translucent: '0.7',
+        translucent: '0.5',
         transparent: '0.1',
 
         //animations

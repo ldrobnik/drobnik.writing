@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import styled, {keyframes} from 'styled-components';
 import {connect} from 'react-redux';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import Logo from './Logo/Logo';
 import * as actionTypes from '../../store/actions';
@@ -47,7 +48,10 @@ const LogoWrapper = styled.div`
 const NavElement = styled.div`
   cursor: pointer;
   margin: 0 0.5em;
-
+  Link, a, div {
+      padding: 1em;
+      display: block;
+  }
 
   
   @media all and (min-width: ${props => props.theme.smallScr}) {
@@ -57,36 +61,34 @@ const NavElement = styled.div`
         }
 `;
 
-const OptionButton = styled.div`
-    font-size: 1em;
-    div {
+const ToggledNavElement = styled.div`
+  cursor: pointer;
+  margin: 0 0.5em;
+  opacity: ${props => props.theme.translucent};\
+  
+  Link, a, div {
       padding: 1em;
       display: block;
-    }
-
-`;
-
-const NavLink = styled.div`
-  font-size: 1.3em;
-      a {
-    padding: 1em;
-    display: block;
   }
-
+  
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }
 `;
 
-const Inactive = styled.div`
+const InactiveElement = styled.div`
   cursor: default;
-  &:hover {
-    animation: none;
+  margin: 0 0.5em;
+  opacity: ${props => props.theme.translucent};
+  
+ Link, a, div {
+      padding: 1em;
+      display: block;
   }
 `;
 
-
-const Translucent = styled.div`
-  opacity: ${props => props.theme.translucent};
-  padding: 0;
-`;
 
 
 const NavBar = (props) => {
@@ -99,6 +101,24 @@ const NavBar = (props) => {
     //Content of the button used to change current language
     const langButton = (props.lang === 'en') ? WEBSITE_TEXT.navbar.language[props.lang] : WEBSITE_TEXT.navbar.language[props.lang];
 
+    //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off
+    const bwButton = (props.bwMode) ?
+        <NavElement>
+            {WEBSITE_TEXT.navbar.colourMode}
+        </NavElement> :
+        <ToggledNavElement>
+            {WEBSITE_TEXT.navbar.colourMode}
+        </ToggledNavElement>;
+
+    //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
+    const readButton = (props.textDisplayed) ?
+        <InactiveElement>
+            {WEBSITE_TEXT.navbar.read}
+        </InactiveElement>
+        :
+        <NavElement>
+            <Link to={'/texts/' + randomText}>{WEBSITE_TEXT.navbar.read}</Link>
+        </NavElement>;
 
     //Changes current language
     const changeLanguage = () => {
@@ -116,18 +136,6 @@ const NavBar = (props) => {
             localStorage.setItem('language', 'en');
         }
     };
-
-    //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off
-    const bwButton = (props.bwMode) ?
-        <div>WEBSITE_TEXT.navbar.colourMode</div> :
-        <Translucent>{WEBSITE_TEXT.navbar.colourMode}</Translucent>;
-
-    //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
-    const readButton = (props.textDisplayed) ?
-
-            <Translucent>{WEBSITE_TEXT.navbar.read}</Translucent>
-    :
-        <div><Link to={'/texts/' + randomText}>{WEBSITE_TEXT.navbar.read}</Link></div>;
 
     //toggle the black-and-white mode
     const toggleBwMode = () => {
@@ -155,21 +163,12 @@ const NavBar = (props) => {
                         </Link>
                     </LogoWrapper>
                     <NavElement>
-                        <OptionButton>
-                            <div onClick={changeLanguage}>{langButton}</div>
-                        </OptionButton>
+                        <div onClick={changeLanguage}>{langButton}</div>
                     </NavElement>
                     <NavElement>
-                        <OptionButton>
-                            <div onClick={toggleBwMode}>{bwButton}</div>
-                        </OptionButton>
+                        <div onClick={toggleBwMode}>{bwButton}</div>
                     </NavElement>
-                    <NavElement>
-                        <OptionButton>
-                            {readButton}
-                        </OptionButton>
-                    </NavElement>
-
+                    {readButton}
                 </Toolbar>
             </div>
         </Wrapper>
