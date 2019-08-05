@@ -38,29 +38,14 @@ const AnimatedQuote = posed.div({
 
 const QuoteList = (props) => {
 
-    //sets the visibility of the quote list
-    const [visible, setVisible] = useState(false);
-
-    //show the quote list
-    const showQuotes = () => {
-      setVisible(true);
-    };
-
-    useEffect(() => {
-        setTimeout(
-            () => {
-                showQuotes();
-            }, 1000
-        );
-    });
     return (
         <Wrapper>
             <AnimatedList
-                pose={visible ? 'visible' : 'hidden'}>
+                pose={props.visible ? 'visible' : 'hidden'}>
                 {WEBSITE_TEXT.nocturine.quotes[props.lang].map((text, k) => {
                     return (
                         <AnimatedQuote
-                            pose={visible ? 'visible' : 'hidden'}>
+                            pose={props.visible ? 'visible' : 'hidden'}>
                             <Quote
                                 quote={text.quote}
                                 source={text.source}

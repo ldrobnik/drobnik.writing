@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
+import {Waypoint} from 'react-waypoint';
 import {WEBSITE_TEXT} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import CentredButton from "../../../UI/CentredButton/CentredButton";
@@ -22,6 +23,14 @@ const Body = styled.div`
 
 const Nocturine = (props) => {
 
+    //specifies whether the quotes should be displayed - triggered by scrolling to the Waypoint element
+    const [quotesVisible, setQuotesVisible] = useState(false);
+
+    //sets quote visibility to true
+    const showQuotes = () => {
+      setQuotesVisible(true);
+    };
+
     return (
         <React.Fragment>
             <SectionHeading
@@ -31,8 +40,12 @@ const Nocturine = (props) => {
             <Body>
                 {WEBSITE_TEXT.nocturine.body[props.lang]}
             </Body>
+            <Waypoint
+                onEnter={showQuotes}
+            />
             <QuoteList
                 lang={props.lang}
+                visible={quotesVisible}
             />
             <CentredButton
                 message={WEBSITE_TEXT.nocturine.button[props.lang].message}
