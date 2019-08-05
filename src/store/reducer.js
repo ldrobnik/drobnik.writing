@@ -7,7 +7,8 @@ const initialState = {
     currentText: '',
     navbarVisible: false,
     dataNoticeVisible: true,
-    dataNoticeAccepted: false
+    dataNoticeAccepted: false,
+    textPageDisplayed: false
 };
 
 const reducer = (state = initialState, action) => {
@@ -47,6 +48,11 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 dataNoticeAccepted: action.dataNoticeAccepted
             };
+        case actionTypes.SET_TEXT_PAGE:
+            return {
+                ...state,
+                textPageDisplayed: action.textPageDisplayed
+            }
         default:
             return state;
     }

@@ -18,7 +18,7 @@ const RouteContainer = posed.div({
         opacity: 1, filter: 'blur(0px)',
     },
     exit: {
-        opacity: 0, filter: 'blur(20px)'
+        opacity: 0, filter: 'blur(10px)'
     },
 });
 
