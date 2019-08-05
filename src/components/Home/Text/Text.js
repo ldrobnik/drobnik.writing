@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
+import posed from 'react-pose';
+import {Waypoint} from "react-waypoint";
 
 
 import * as actionTypes from '../../../store/actions';
@@ -115,8 +117,31 @@ const Links = styled.div`
   }
 `;
 
+/* POSE */
+const AnimatedLink = posed.div({
+    visible: {
+        opacity: 1,
+        transform: 'scale(1,1)',
+        transition: {
+            type: 'spring',
+            stiffness: 100
+        }
+    },
+    hidden: {
+        opacity: 0,
+        transform: 'scale(0,0)'
+    }
+});
 
 const Text = (props) => {
+
+    //specifies whether 'up next' link should be displayed
+    const [linkVisible, setlinkVisible] = useState(false);
+
+    //shows the 'up next' luunk
+    const showLink = () => {
+        setlinkVisible(true);
+    };
 
     //Checks if the id in the current url matches any text; if not, returns 'nocturine'
     const checkTextID = (name) => {
@@ -171,9 +196,9 @@ const Text = (props) => {
 
     //checks whether the data storage notice should be displayed and turns it on if it is invisible but hasn't been confirmed yet
     const checkDataNotice = () => {
-      if (!props.noticeAccepted) {
-          props.onSetNotice(true);
-      }
+        if (!props.noticeAccepted) {
+            props.onSetNotice(true);
+        }
     };
 
     //lets the Redux store know that the Text page is currently displayed
@@ -182,24 +207,24 @@ const Text = (props) => {
     };
 
     useEffect(() => {
-            //Update page title with the piece title
-            document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
+        //Update page title with the piece title
+        document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
 
-            //update the theme depending on the text displayed
-            updateTheme();
+        //update the theme depending on the text displayed
+        updateTheme();
 
-            //update the currently displayed text
-            updateText();
+        //update the currently displayed text
+        updateText();
 
-            //show Navbar
-            showNavbar();
+        //show Navbar
+        showNavbar();
 
-            //checks whether data storage notice should be visible and if so, turn is on
-            checkDataNotice();
+        //checks whether data storage notice should be visible and if so, turn is on
+        checkDataNotice();
 
-            //lets the Redux store know that the Text page is currently displayed
-            setTextDisplayed();
-        });
+        //lets the Redux store know that the Text page is currently displayed
+        setTextDisplayed();
+    });
 
 
     return (
@@ -229,10 +254,17 @@ const Text = (props) => {
                 description={TEXTS[props.lang][textName].description}
                 title={TEXTS[props.lang][textName].title}
             />
-            <NextTextLink
-                textName={nextTextName}
-                lang={props.lang}
+            <Waypoint
+                onEnter={showLink}
             />
+            <AnimatedLink
+                pose={linkVisible ? 'visible' : 'hidden'}
+            >
+                <NextTextLink
+                    textName={nextTextName}
+                    lang={props.lang}
+                />
+            </AnimatedLink>
             <Links>
                 <div>{top}</div>
                 <div>{home}</div>
@@ -257,13 +289,16 @@ const mapDispatchToProps = dispatch => {
     return {
         onThemeChange: (newTheme) => dispatch({
             type: actionTypes.SET_THEME,
-            theme: newTheme}),
+            theme: newTheme
+        }),
         onTextChange: (newText) => dispatch({
             type: actionTypes.SET_CURRENT_TEXT,
-            currentText: newText}),
+            currentText: newText
+        }),
         onSetNavbar: (newState) => dispatch({
             type: actionTypes.SET_NAVBAR_VISIBILITY,
-            navbarVisible: newState}),
+            navbarVisible: newState
+        }),
         onSetNotice: (newState) => dispatch({
             type: actionTypes.SET_DATA_NOTICE_VISIBLE,
             dataNoticeVisible: newState
