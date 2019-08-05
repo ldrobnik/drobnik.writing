@@ -7,6 +7,11 @@ import {
     faInstagram,
     faPatreon
 } from '@fortawesome/free-brands-svg-icons';
+import {
+    faHome,
+    faBook,
+    faYinYang
+} from '@fortawesome/free-solid-svg-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Link} from 'react-router-dom';
 

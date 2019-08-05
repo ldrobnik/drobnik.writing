@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Home/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Text/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Text/Text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="184">
-                <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <first_editor relative-caret-position="46">
+                <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -56,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/About.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
+            <state relative-caret-position="299">
               <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
@@ -68,14 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="663" column="17" lean-forward="true" selection-start-line="663" selection-start-column="17" selection-end-line="663" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="207">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -84,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="110" column="84" lean-forward="true" selection-start-line="110" selection-start-column="84" selection-end-line="110" selection-end-column="84" />
+              <caret line="110" column="84" selection-start-line="110" selection-start-column="84" selection-end-line="110" selection-end-column="84" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -108,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="90" column="8" lean-forward="true" selection-start-line="90" selection-start-column="8" selection-end-line="93" selection-end-column="10" />
+              <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="93" selection-end-column="10" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -244,14 +236,14 @@
         <option value="$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js" />
         <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
         <option value="$PROJECT_DIR$/src/components/Layout/Layout.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" />
-        <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/store/reducer.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/About.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/data/constants.js" />
       </list>
     </option>
   </component>
@@ -593,12 +585,12 @@
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
       <workItem from="1564688734239" duration="35498000" />
-      <workItem from="1564815223297" duration="52684000" />
+      <workItem from="1564815223297" duration="54069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284643000" />
+    <option name="totallyTimeSpent" value="286028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="355" y="8" width="1572" height="1039" extended-state="0" />
@@ -609,7 +601,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.1739418" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.17045455" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" visible="true" weight="0.17045455" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
@@ -999,16 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="184">
-            <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1032,7 +1014,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="110" column="84" lean-forward="true" selection-start-line="110" selection-start-column="84" selection-end-line="110" selection-end-column="84" />
+          <caret line="110" column="84" selection-start-line="110" selection-start-column="84" selection-end-line="110" selection-end-column="84" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1059,19 +1041,9 @@
     <entry file="file://$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="90" column="8" lean-forward="true" selection-start-line="90" selection-start-column="8" selection-end-line="93" selection-end-column="10" />
+          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="93" selection-end-column="10" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="663" column="17" lean-forward="true" selection-start-line="663" selection-start-column="17" selection-end-line="663" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1088,11 +1060,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/About.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
+        <state relative-caret-position="299">
           <caret line="91" column="26" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
