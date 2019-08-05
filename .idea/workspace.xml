@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -52,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="368">
+              <caret line="64" column="42" lean-forward="true" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -64,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="322">
+              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -199,8 +198,8 @@
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/ReadListElement/ReadListElement.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
         <option value="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" />
-        <option value="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
+        <option value="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" />
       </list>
     </option>
   </component>
@@ -542,12 +541,12 @@
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
       <workItem from="1564688734239" duration="35498000" />
-      <workItem from="1564815223297" duration="65585000" />
+      <workItem from="1564815223297" duration="66121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="297544000" />
+    <option name="totallyTimeSpent" value="298080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="599" y="8" width="1328" height="1039" extended-state="0" />
@@ -555,9 +554,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20741326" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.20741326" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.17045455" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -1028,22 +1027,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="322">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        <state relative-caret-position="368">
+          <caret line="64" column="42" lean-forward="true" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

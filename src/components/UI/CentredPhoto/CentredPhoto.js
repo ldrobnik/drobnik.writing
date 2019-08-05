@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import posed from 'react-pose';
 import * as actionTypes from "../../../store/actions";
@@ -31,26 +31,47 @@ const Capital = styled.div`
   user-select: none;
 `;
 
+/* POSE */
+const PicWrapper = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0)'
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)'
+    }
+});
 
 
 const CentredPhoto = (props) => {
 
+    //specifies whether the photo is visible (it is turn visible when the photo is loaded
+    const [visible, setVisible] = useState(false);
+
+    //sets photo visibility to true
+    const showPhoto = () => {
+      setVisible(true);
+    };
 
     return (
         <Wrapper>
-            <Photo>
-                <img
-                    src={props.source}
-                    alt={props.altText}
+            <PicWrapper
+                pose={visible ? 'visible' : 'hidden'}>
+                <Photo>
+                    <img
+                        src={props.source}
+                        alt={props.altText}
+                        onLoad={showPhoto}
                     />
-            </Photo>
-            <Capital>
-                {props.capital}
-            </Capital>
+                </Photo>
+                <Capital>
+                    {props.capital}
+                </Capital>
+            </PicWrapper>
         </Wrapper>
     );
 };
-
 
 
 export default CentredPhoto;
