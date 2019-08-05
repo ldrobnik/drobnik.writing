@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import posed from 'react-pose';
 import {connect} from 'react-redux';
 import {WEBSITE_TEXT} from "../../../data/constants";
 import * as actionTypes from "../../../store/actions";
 
+/* STYLED COMPONENTS */
 const Notice = styled.div`
   background-color: ${props => props.theme.darkColor};
   opacity: ${props => props.theme.translucent};
