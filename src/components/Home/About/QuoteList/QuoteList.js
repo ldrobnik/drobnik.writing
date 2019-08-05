@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 const AnimatedList = posed.div({
     visible: {
         delayChildren: 200,
-        staggerChildren: 500
+        staggerChildren: 300
     }
 });
 

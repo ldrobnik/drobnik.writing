@@ -31,7 +31,8 @@ const AnimatedLinks = posed.div({
         transform: 'scale(1,1)',
         transition: {
             type: 'spring',
-            stiffness: 80 }
+            stiffness: 80
+        }
     },
     hidden: {
         opacity: 0,
@@ -47,7 +48,8 @@ const AnimatedButton = posed.div({
         delay: 100,
         transition: {
             type: 'spring',
-            stiffness: 100 }
+            stiffness: 100
+        }
     },
     hidden: {
         opacity: 0,

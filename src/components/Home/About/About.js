@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
+import posed from 'react-pose';
 
 import Intro from './Intro/Intro';
 import Nocturine from './Nocturine/Nocturine';
@@ -98,11 +99,10 @@ const About = (props) => {
 
         //lets the Redux store know that the Text page is not currently displayed
         setTextNotDisplayed();
-    });
+    }, [props.lang]);
 
 
     return (
-
         <Wrapper>
             <TopAnchor>
                 <div id='top'></div>
@@ -138,10 +138,12 @@ const mapDispatchToProps = dispatch => {
     return {
         onThemeChange: (newTheme) => dispatch({
             type: actionTypes.SET_THEME,
-            theme: newTheme}),
+            theme: newTheme
+        }),
         onSetNavbar: (newState) => dispatch({
             type: actionTypes.SET_NAVBAR_VISIBILITY,
-            navbarVisible: newState}),
+            navbarVisible: newState
+        }),
         onSetNotice: (newState) => dispatch({
             type: actionTypes.SET_DATA_NOTICE_VISIBLE,
             dataNoticeVisible: newState
