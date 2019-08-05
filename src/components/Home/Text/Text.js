@@ -122,6 +122,7 @@ const AnimatedLink = posed.div({
     visible: {
         opacity: 1,
         transform: 'scale(1,1)',
+        delay: 200,
         transition: {
             type: 'spring',
             stiffness: 100
