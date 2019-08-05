@@ -85,11 +85,9 @@ const Inactive = styled.div`
 
 const Translucent = styled.div`
   opacity: ${props => props.theme.translucent};
+  padding: 0;
 `;
 
-const readIcon = styled.div`
-  font-size: 0.8em;
-`;
 
 const NavBar = (props) => {
 
@@ -121,15 +119,15 @@ const NavBar = (props) => {
 
     //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off
     const bwButton = (props.bwMode) ?
-        WEBSITE_TEXT.navbar.colourMode :
+        <div>WEBSITE_TEXT.navbar.colourMode</div> :
         <Translucent>{WEBSITE_TEXT.navbar.colourMode}</Translucent>;
 
     //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
     const readButton = (props.textDisplayed) ?
-        <Inactive>
+
             <Translucent>{WEBSITE_TEXT.navbar.read}</Translucent>
-        </Inactive> :
-        <Link to={'/texts/' + randomText}>{WEBSITE_TEXT.navbar.read}</Link>;
+    :
+        <div><Link to={'/texts/' + randomText}>{WEBSITE_TEXT.navbar.read}</Link></div>;
 
     //toggle the black-and-white mode
     const toggleBwMode = () => {
