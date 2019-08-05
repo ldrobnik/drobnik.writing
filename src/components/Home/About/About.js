@@ -78,6 +78,11 @@ const About = (props) => {
         }
     };
 
+    //lets the Redux store know that the Text page is not currently displayed
+    const setTextNotDisplayed = () => {
+        props.onSetTextPage(false)
+    };
+
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${fictionWriter}`;
@@ -90,6 +95,9 @@ const About = (props) => {
 
         //checks whether data storage notice should be visible and if so, turn is on
         checkDataNotice();
+
+        //lets the Redux store know that the Text page is not currently displayed
+        setTextNotDisplayed();
     });
 
 
@@ -137,6 +145,10 @@ const mapDispatchToProps = dispatch => {
         onSetNotice: (newState) => dispatch({
             type: actionTypes.SET_DATA_NOTICE_VISIBLE,
             dataNoticeVisible: newState
+        }),
+        onSetTextPage: (newState) => dispatch({
+            type: actionTypes.SET_TEXT_PAGE,
+            textPageDisplayed: newState
         })
     };
 };
