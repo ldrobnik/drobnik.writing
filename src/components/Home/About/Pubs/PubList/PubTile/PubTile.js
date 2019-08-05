@@ -69,7 +69,10 @@ const PubTile = (props) => {
 
     //shows the tile after a random duration
     const showTile = () => {
-        setVisible(true);
+        setTimeout(() => {
+            setVisible(true);
+        }, Math.floor(Math.random()*500));
+
     };
 
     //specifies whether additional content should be displayed on hover
