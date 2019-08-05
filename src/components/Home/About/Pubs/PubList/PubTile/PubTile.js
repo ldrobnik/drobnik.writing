@@ -4,7 +4,7 @@ import posed, {PoseGroup} from 'react-pose';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
 
-import {BLUR_KEYFRAMES} from "../../../../../../data/constants";
+import {POP_KEYFRAMES} from "../../../../../../data/constants";
 
 /* STYLED COMPONENTS */
 const Tile = styled.div`
@@ -18,46 +18,48 @@ const Tile = styled.div`
     vertical-align: middle;
     overflow: hidden;
     
-    h4 {
-    text-transform: uppercase;
-    }
+
+    
 `;
 
 const TileWrapper = styled.div`
   display: table;
   margin: 0.8em 0;
+  
+    &:hover {
+        animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
+      }
 `;
 
-const Capital = styled.div`
-  font-family: ${props => props.theme.cursive};
-  font-size: 24em;
+const Year = styled.div`
+  font-size: ${props => props.theme.captionSize};
+  margin-bottom: 0.5em;
+`;
+
+const Title = styled.div`
+  font-size: ${props => props.theme.bodySize};
   text-transform: uppercase;
-  opacity: ${props => props.theme.transparent};
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: blur(${props => props.theme.heavyBlur});
+  font-weight: bold;
   
-  &:hover {
-    animation: ${BLUR_KEYFRAMES} ${props => props.theme.blurAnimation}
-  }
+`;
+
+const Separator = styled.div`
+  margin: 0.5em auto;
+  height: 0.5em;
+  width: 8em;
+  background-color: ${props => props.theme.darkColor};
+`;
+
+const Issue = styled.div`
+  font-size: ${props => props.theme.smallCaptionSize};
+  margin-bottom: 0.5em;
+`;
+
+const Description = styled.div`
+  font-size: ${props => props.theme.smallCaptionSize};
 `;
 
 const PubTile = (props) => {
-
-
-    //specifies whether additional content should be displayed on hover
-    const [mouseEnter, setMouseEnter] = useState(false);
-
-    //handles change of the hover state
-    const mouseEnterHandler = () => {
-        setMouseEnter(true);
-    };
-
-    const mouseLeaveHandler = () => {
-        setMouseEnter(false);
-    };
 
     //text to be displayed for forthcoming publications depending on the current language
     const forthcoming = (props.lang === 'en') ? 'forthcoming' : 'w przygotowaniu';
@@ -71,35 +73,19 @@ const PubTile = (props) => {
     //text to be displayed if the issue number/name is available
     const issue = (props.issue !== undefined) ? <p><i>{props.issue}</i></p> : <div></div>;
 
-    //the first letter of a title to be displayed in the tile
-    const capital = props.pieceTitle[0];
-
-    //info to be include in the tile (different when cursor is over the element)
-    const tileDescription = !mouseEnter ?
-        <React.Fragment>
-            <p><i>{year}</i></p>
-            <h4>{props.title}</h4>
-            <p>{props.language}</p>
-        </React.Fragment> :
-        <React.Fragment>
-            {issue}
-            <p>{description}</p>
-        </React.Fragment>;
 
     //the above description wrapped in a tile element
     const tileContent =
 
-                <TileWrapper>
-                    <Tile
-                        onMouseEnter={mouseEnterHandler}
-                        onMouseLeave={mouseLeaveHandler}
-                    >
-                        {tileDescription}
-                        <Capital>
-                            {capital}
-                        </Capital>
-                    </Tile>
-                </TileWrapper>;
+        <TileWrapper>
+            <Tile>
+                <Year><i>{year}</i></Year>
+                <Title>{props.title}</Title>
+                <Separator/>
+                <Issue>{issue}</Issue>
+                <Description>{description}</Description>
+            </Tile>
+        </TileWrapper>;
 
     //if the url property contains an anchor link, display AnchorLink, otherwise display normal link
     const tile = (props.url.charAt(0) === '#') ?
