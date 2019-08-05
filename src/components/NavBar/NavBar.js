@@ -48,12 +48,7 @@ const LogoWrapper = styled.div`
 const NavElement = styled.div`
   cursor: pointer;
   margin: ${props => props.theme.navIconMargin};
-  Link, a, div {
-      padding: ${props => props.theme.navIconPadding};
-      display: block;
-  }
 
-  
   @media all and (min-width: ${props => props.theme.smallScr}) {
              &:hover {
                       animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
@@ -65,12 +60,7 @@ const ToggledNavElement = styled.div`
   cursor: pointer;
   margin: ${props => props.theme.navIconMargin};
   opacity: ${props => props.theme.translucent};
-  
-  Link, a, div {
-      padding: ${props => props.theme.navIconPadding};
-      display: block;
-  }
-  
+
   @media all and (min-width: ${props => props.theme.smallScr}) {
              &:hover {
                       animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
@@ -81,50 +71,19 @@ const ToggledNavElement = styled.div`
 const InactiveElement = styled.div`
   cursor: default;
   margin: ${props => props.theme.navIconMargin};
-  opacity: ${props => props.theme.translucent};
-  
- Link, a, div {
-      padding: ${props => props.theme.navIconPadding};
+  opacity: ${props => props.theme.transparent};
+
+`;
+
+const LinkContent = styled.div`
+  padding: ${props => props.theme.navIconPadding};
       display: block;
-  }
+      min-width: 1.5em;
 `;
 
 
 const NavBar = (props) => {
 
-
-    //The book icon link to a randomly chosen text
-    let randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
-
-    //Content of the home button - if on the home page, make it an anchor link scrolling to top
-    const homeButton = (props.textDisplayed) ?
-        <NavElement>
-            <Link to={'/'}>{WEBSITE_TEXT.navbar.home}</Link>
-        </NavElement> :
-        <NavElement>
-            <AnchorLink href='#top'>{WEBSITE_TEXT.navbar.home}</AnchorLink>
-        </NavElement>;
-    //Content of the button used to change current language
-    const langButton = (props.lang === 'en') ? WEBSITE_TEXT.navbar.language[props.lang] : WEBSITE_TEXT.navbar.language[props.lang];
-
-    //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off
-    const bwButton = (props.bwMode) ?
-        <NavElement>
-            <div>{WEBSITE_TEXT.navbar.colourMode}</div>
-        </NavElement> :
-        <ToggledNavElement>
-            <div>{WEBSITE_TEXT.navbar.colourMode}</div>
-        </ToggledNavElement>;
-
-    //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
-    const readButton = (props.textDisplayed) ?
-        <InactiveElement>
-            <div>{WEBSITE_TEXT.navbar.read}</div>
-        </InactiveElement>
-        :
-        <NavElement>
-            <Link to={'/texts/' + randomText}>{WEBSITE_TEXT.navbar.read}</Link>
-        </NavElement>;
 
     //Changes current language
     const changeLanguage = () => {
@@ -156,6 +115,71 @@ const NavBar = (props) => {
 
     };
 
+    //The book icon link to a randomly chosen text
+    let randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
+
+    //Content of the home button - if on the home page, make it an anchor link scrolling to top
+    const homeButton = (props.textDisplayed) ?
+        <NavElement>
+            <Link to={'/'}>
+                <LinkContent>
+                    {WEBSITE_TEXT.navbar.home}
+                </LinkContent>
+            </Link>
+        </NavElement> :
+        <NavElement>
+            <AnchorLink href='#top'>
+                <LinkContent>
+                    {WEBSITE_TEXT.navbar.home}
+                </LinkContent>
+            </AnchorLink>
+        </NavElement>;
+    //Content of the button used to change current language
+    const langButton =
+        <NavElement>
+            <div onClick={changeLanguage}>
+                <LinkContent>
+                    {WEBSITE_TEXT.navbar.language[props.lang]}
+                </LinkContent>
+            </div>
+        </NavElement>;
+
+    //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off
+    const bwButton = (props.bwMode) ?
+        <NavElement>
+            <div onClick={toggleBwMode}>
+                <LinkContent>
+                    {WEBSITE_TEXT.navbar.colourMode}
+                </LinkContent>
+            </div>
+        </NavElement> :
+        <ToggledNavElement>
+            <div onClick={toggleBwMode}>
+                <LinkContent>
+                    {WEBSITE_TEXT.navbar.colourMode}
+                </LinkContent>
+            </div>
+        </ToggledNavElement>;
+
+    //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
+    const readButton = (props.textDisplayed) ?
+        <InactiveElement>
+            <div>
+                <LinkContent>
+                    {WEBSITE_TEXT.navbar.read}
+                </LinkContent>
+            </div>
+        </InactiveElement>
+        :
+        <NavElement>
+            <Link to={'/texts/' + randomText}>
+                <LinkContent>
+                    {WEBSITE_TEXT.navbar.read}
+                </LinkContent>
+            </Link>
+        </NavElement>;
+
+
     //class applied to the component content, depending on the navbar visibility state in the Redux store
     const contentClass = (props.showNavbar) ? '' : 'hidden';
 
@@ -169,12 +193,8 @@ const NavBar = (props) => {
                         </Link>
                     </LogoWrapper>
                     {homeButton}
-                    <NavElement>
-                        <div onClick={changeLanguage}>{langButton}</div>
-                    </NavElement>
-                    <NavElement>
-                        <div onClick={toggleBwMode}>{bwButton}</div>
-                    </NavElement>
+                    {langButton}
+                    {bwButton}
                     {readButton}
                 </Toolbar>
             </div>
