@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import posed from 'react-pose';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {WEBSITE_TEXT} from '../../../../data/constants';
@@ -9,6 +10,7 @@ import SectionLinks from "../SectionLinks/SectionLinks";
 import QuoteList from '../QuoteList/QuoteList';
 import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
 
+/* STYLED COMPONENTS */
 const Body = styled.div`
   text-align: left;
   font-size: ${props => props.theme.bodySize};
@@ -21,14 +23,39 @@ const Body = styled.div`
     }
 `;
 
+/* POSE */
+const AnimatedButton = posed.div({
+    visible: {
+        opacity: 1,
+        transform: 'scale(1,1)',
+        transition: {
+            type: 'spring',
+            stiffness: 100
+        }
+    },
+    hidden: {
+        opacity: 0,
+        transform: 'scale(0,0)'
+    }
+});
+
+
 const Nocturine = (props) => {
 
     //specifies whether the quotes should be displayed - triggered by scrolling to the Waypoint element
     const [quotesVisible, setQuotesVisible] = useState(false);
 
+    //specifies whether the excerpt button should be visible
+    const [buttonVisible, setButtonVisible] = useState(false);
+
     //sets quote visibility to true
     const showQuotes = () => {
-      setQuotesVisible(true);
+        setQuotesVisible(true);
+    };
+
+    //sets button visibility to true
+    const showButton = () => {
+        setButtonVisible(true);
     };
 
     return (
@@ -47,10 +74,16 @@ const Nocturine = (props) => {
                 lang={props.lang}
                 visible={quotesVisible}
             />
-            <CentredButton
-                message={WEBSITE_TEXT.nocturine.button[props.lang].message}
-                path={WEBSITE_TEXT.nocturine.button[props.lang].path}
-                capital='m'/>
+            <Waypoint
+                onEnter={showButton}
+            />
+            <AnimatedButton
+            pose={buttonVisible ? 'visible' : 'hidden'}>
+                <CentredButton
+                    message={WEBSITE_TEXT.nocturine.button[props.lang].message}
+                    path={WEBSITE_TEXT.nocturine.button[props.lang].path}
+                    capital='m'/>
+            </AnimatedButton>
             <SectionLinks
                 lang={props.lang}
                 top={true}
@@ -58,7 +91,7 @@ const Nocturine = (props) => {
                 pubs={false}
                 read={true}
             />
-            <SectionSeparator />
+            <SectionSeparator/>
         </React.Fragment>
     );
 };
