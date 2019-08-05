@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import posed from 'react-pose';
 import * as actionTypes from "../../../store/actions";
 
 const Wrapper = styled.div`
@@ -29,6 +30,8 @@ const Capital = styled.div`
   filter: blur( ${props => props.theme.heavyBlur});
   user-select: none;
 `;
+
+
 
 const CentredPhoto = (props) => {
 
