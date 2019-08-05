@@ -78,9 +78,6 @@ const Intro = (props) => {
             <Body>
                 {WEBSITE_TEXT.intro.body[props.lang]}
             </Body>
-            <Waypoint
-                onEnter={showSocial}
-            />
             <AnimatedLinks
                 pose={socialVisible ? 'visible' : 'hidden'}>
                 <SocialLinks/>
@@ -92,6 +89,9 @@ const Intro = (props) => {
                     path={WEBSITE_TEXT.intro.patreon[props.lang].path}
                     capital='w'/>
             </AnimatedButton>
+            <Waypoint
+                onEnter={showSocial}
+            />
             <SectionLinks
                 lang={props.lang}
                 top={false}

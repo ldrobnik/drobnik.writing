@@ -44,32 +44,17 @@ const GlobalStyle = createGlobalStyle`
 /* POSE */
 const RouteContainer = posed.div({
     enter: {
-        opacity: 1, filter: 'blur(0px)',
+        opacity: 1,
+        filter: 'blur(0px)'
     },
     exit: {
-        opacity: 0, filter: 'blur(20px)'
+        opacity: 0,
+        filter: 'blur(20px)'
     }
 });
 
-const AnimatedContent = posed.div({
-    visible: {
-        opacity: 1,
-        duration: 300
-    },
-    hidden: {
-        opacity: 0
-    }
-});
 
 const Home = (props) => {
-
-    //specifies content visibility
-    const [contentVisible, setContentVisible] = useState(false);
-
-    //shows the content
-    const showContent = () => {
-        setContentVisible(true);
-    };
 
     //checks if any data is stored in localStorage and updates Redux state accordingly
     const checkLocalStorage = () => {
@@ -107,11 +92,6 @@ const Home = (props) => {
     //Scrolls to top initially and if the URL path changes
     useEffect(() => {
 
-        setTimeout(
-            () => {
-                showContent();
-            }, 500
-        );
             //check localStorage and update Redux state accordingly
             checkLocalStorage();
 
@@ -121,8 +101,7 @@ const Home = (props) => {
     );
 
     return (
-        <AnimatedContent
-        pose={contentVisible ? 'visible' : 'hidden'}>
+        <React.Fragment>
             <GlobalStyle/>
             <Route
                 render={({location}) => (
@@ -141,7 +120,7 @@ const Home = (props) => {
                     </Layout>
                 )}
             />
-        </AnimatedContent>
+        </React.Fragment>
     );
 };
 
