@@ -1,12 +1,16 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
-import {TEXTS, WEBSITE_TEXT} from "../../../../data/constants";
+import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from "../../../../data/constants";
 
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  
+  &:hover {
+    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
+  }
 `;
 
 const UpNext = styled.div`
@@ -35,7 +39,10 @@ const NextTextLink = (props) => {
                 <Line/>
                 <UpNext>
                     <div>
-                        <i>{WEBSITE_TEXT.text.nextText[props.lang]}{TEXTS[props.lang][props.textName].title}</i>
+                        <i>
+                            {WEBSITE_TEXT.text.nextText[props.lang]}
+                            {TEXTS[props.lang][props.textName].title}
+                        </i>
                     </div>
                 </UpNext>
                 <Line/>
