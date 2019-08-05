@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Route, Switch, withRouter} from 'react-router-dom';
 import {createGlobalStyle} from 'styled-components';
 import {connect} from 'react-redux';
@@ -12,16 +12,7 @@ import DataNotice from '../UI/DataNotice/DataNotice';
 import {PULSATE_KEYFRAMES} from "../../data/constants";
 import * as actionTypes from "../../store/actions";
 
-
-const RouteContainer = posed.div({
-    enter: {
-        opacity: 1, filter: 'blur(0px)',
-    },
-    exit: {
-        opacity: 0, filter: 'blur(20px)'
-    },
-});
-
+/* STYLED COMPONENTS */
 const GlobalStyle = createGlobalStyle`
     body {
         font-family: ${props => props.theme.sansSerif};
@@ -50,8 +41,35 @@ const GlobalStyle = createGlobalStyle`
      }
 `;
 
+/* POSE */
+const RouteContainer = posed.div({
+    enter: {
+        opacity: 1, filter: 'blur(0px)',
+    },
+    exit: {
+        opacity: 0, filter: 'blur(20px)'
+    }
+});
+
+const AnimatedContent = posed.div({
+    visible: {
+        opacity: 1,
+        duration: 300
+    },
+    hidden: {
+        opacity: 0
+    }
+});
 
 const Home = (props) => {
+
+    //specifies content visibility
+    const [contentVisible, setContentVisible] = useState(false);
+
+    //shows the content
+    const showContent = () => {
+        setContentVisible(true);
+    };
 
     //checks if any data is stored in localStorage and updates Redux state accordingly
     const checkLocalStorage = () => {
@@ -89,6 +107,11 @@ const Home = (props) => {
     //Scrolls to top initially and if the URL path changes
     useEffect(() => {
 
+        setTimeout(
+            () => {
+                showContent();
+            }, 500
+        );
             //check localStorage and update Redux state accordingly
             checkLocalStorage();
 
@@ -98,14 +121,15 @@ const Home = (props) => {
     );
 
     return (
-        <React.Fragment>
+        <AnimatedContent
+        pose={contentVisible ? 'visible' : 'hidden'}>
             <GlobalStyle/>
             <Route
                 render={({location}) => (
                     <Layout>
                         <Switch location={location}>
                             <PoseGroup>
-                                <RouteContainer key={location.pathname}>
+                                <RouteContainer key={location.key}>
                                     <Route path="/" exact component={About} key="home"/>
                                     <Route path="/texts/" exact component={Text} key="texts"/>
                                     <Route path="/texts/:id" exact component={Text} key="text"/>
@@ -117,7 +141,7 @@ const Home = (props) => {
                     </Layout>
                 )}
             />
-        </React.Fragment>
+        </AnimatedContent>
     );
 };
 
