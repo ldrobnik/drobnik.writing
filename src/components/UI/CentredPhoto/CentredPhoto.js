@@ -35,7 +35,8 @@ const Capital = styled.div`
 const PicWrapper = posed.div({
     visible: {
         opacity: 1,
-        filter: 'blur(0)'
+        filter: 'blur(0)',
+        transition: { duration: 150 }
     },
     hidden: {
         opacity: 0,
