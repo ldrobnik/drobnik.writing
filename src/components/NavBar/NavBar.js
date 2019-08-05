@@ -115,8 +115,15 @@ const NavBar = (props) => {
 
     };
 
-    //The book icon link to a randomly chosen text
-    let randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
+    //Content of the logo link - if on the home page, make it an anchor link scrolling to top
+    const logoLink = (props.textDisplayed) ?
+        <Link to='/' className={'textLink'}>
+            <Logo/>
+        </Link> :
+        <AnchorLink href='#top'>
+            <Logo/>
+        </AnchorLink>;
+
 
     //Content of the home button - if on the home page, make it an anchor link scrolling to top
     const homeButton = (props.textDisplayed) ?
@@ -134,6 +141,7 @@ const NavBar = (props) => {
                 </LinkContent>
             </AnchorLink>
         </NavElement>;
+
     //Content of the button used to change current language
     const langButton =
         <NavElement>
@@ -160,6 +168,9 @@ const NavBar = (props) => {
                 </LinkContent>
             </div>
         </ToggledNavElement>;
+
+    //The book icon link to a randomly chosen text
+    let randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
 
     //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
     const readButton = (props.textDisplayed) ?
@@ -188,9 +199,7 @@ const NavBar = (props) => {
             <div className={contentClass}>
                 <Toolbar>
                     <LogoWrapper>
-                        <Link to='/' className={'textLink'}>
-                            <Logo/>
-                        </Link>
+                        {logoLink}
                     </LogoWrapper>
                     {homeButton}
                     {langButton}

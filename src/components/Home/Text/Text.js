@@ -10,8 +10,9 @@ import {TEXTS, TEXT_NAMES, WEBSITE_TEXT} from '../../../data/constants';
 
 
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
-import CopyrightNote from "../../UI/CopyrightNote/CopyrightNote";
+import NextTextLink from './NextTextLink/NextTextLink';
 import SectionSeparator from "../../UI/SectionSeparator/SectionSeparator";
+import CopyrightNote from "../../UI/CopyrightNote/CopyrightNote";
 
 /* STYLED COMPONENTS */
 
@@ -98,14 +99,6 @@ const TextBody = styled.div`
 const Credits = styled.div`
   font-size: ${props => props.theme.captionSize};
   font-family: ${props => props.theme.serif};
-`;
-
-const UpNext = styled.div`
-  text-align: center;
-  font-weight: bold;
-  font-size: ${props => props.theme.bodySize}
-  user-select: none;
-  margin: 1em 0;
 `;
 
 const Links = styled.div`
@@ -236,9 +229,9 @@ const Text = (props) => {
                 description={TEXTS[props.lang][textName].description}
                 title={TEXTS[props.lang][textName].title}
             />
-            <UpNext>
-                {nextTextLink}
-            </UpNext>
+            <NextTextLink
+                link={nextTextLink}
+            />
             <Links>
                 <div>{top}</div>
                 <div>{home}</div>
