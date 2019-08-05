@@ -587,16 +587,12 @@ export const THEME_COLORS = {
 
 export const WEBSITE_TEXT = {
     navbar: {
-        title: 'Łukasz Drobnik',
-        subtitle: {
-            en: 'fiction writer',
-            pl: 'prozaik'
-        },
+        home: '',
         language: {
             en: 'pl',
             pl: 'en'
         },
-        colourMode: 'b&w'
+        colourMode: <FontAwesomeIcon icon={faYinYang}></FontAwesomeIcon>
     },
     intro: {
         title: 'Łukasz Drobnik',
