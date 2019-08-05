@@ -12,7 +12,7 @@ const Tile = styled.div`
     position: relative;
     height: 12em;
     width: 15em;
-    padding: 0 0.5em;
+    padding: 0.2em 0.5em;
     text-align: center;
     display: table-cell;
     vertical-align: middle;

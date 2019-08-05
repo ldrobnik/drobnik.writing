@@ -44,8 +44,17 @@ const Label = styled.span`
 
 const SubsectionHeading = styled.h1`
   font-size: ${props => props.theme.subtitleSize};
-  margin-top: 1em;
+  //margin-top: 1em;
+  text-transform: uppercase;
 `;
+
+const Separator = styled.div`
+  margin: 2em auto 0 auto;
+  height: 0.6em;
+  width: 6em;
+  background-color: ${props => props.theme.darkColor};
+`;
+
 
 /* POSE */
 const AnimatedMessage = posed.div({
@@ -141,16 +150,19 @@ const Pubs = (props) => {
                     </label>
                 </SwitchPanel>
             </AnimatedPanel>
+            <Separator/>
             <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].books}</SubsectionHeading>
             <PubList
                 en={en}
                 pl={pl}
                 type="books"/>
+            <Separator/>
             <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].press}</SubsectionHeading>
             <PubList
                 en={en}
                 pl={pl}
                 type="press"/>
+            <Separator/>
             <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].collections}</SubsectionHeading>
             <PubList
                 en={en}

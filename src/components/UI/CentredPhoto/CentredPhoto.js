@@ -11,25 +11,13 @@ const Wrapper = styled.div`
 
 const Photo = styled.div`
   height: 12em;
-  opacity: ${props => props.theme.translucent};
+  opacity: ${props => props.theme.slightlyTranslucent};
   z-index: 60;
     img {
       height: 100%;
     }
 `;
 
-const Capital = styled.div`
-  font-family: ${props => props.theme.cursive};
-  font-size: 24em;
-  text-transform: uppercase;
-  opacity: ${props => props.theme.transparent};
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: blur( ${props => props.theme.heavyBlur});
-  user-select: none;
-`;
 
 /* POSE */
 const AnimatedPic = posed.div({

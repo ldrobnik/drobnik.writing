@@ -25,8 +25,8 @@ const Message = styled.div`
 /* POSE */
 const AnimatedList = posed.div({
     visible: {
-        delayChildren: 200,
-        staggerChildren: 100
+        delayChildren: 400,
+        staggerChildren: 150
     }
 });
 
