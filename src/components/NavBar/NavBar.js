@@ -45,11 +45,15 @@ const LogoWrapper = styled.div`
         }
 `;
 
+const NavElements = styled.div`
+  margin-right: 4px;
+`;
+
 const NavElement = styled.div`
   cursor: pointer;
-  margin: 0 1em;
+  margin: 0 0.3em 0 0.1em;
   Link, a, div {
-      padding: 1em;
+      padding: 0.8em;
       display: block;
   }
 
@@ -63,11 +67,11 @@ const NavElement = styled.div`
 
 const ToggledNavElement = styled.div`
   cursor: pointer;
-  margin: 0 1em;
+  margin: 0 0.3em 0 0.1em;
   opacity: ${props => props.theme.translucent};\
   
   Link, a, div {
-      padding: 1em;
+      padding: 0.8em;
       display: block;
   }
   
@@ -80,15 +84,14 @@ const ToggledNavElement = styled.div`
 
 const InactiveElement = styled.div`
   cursor: default;
-  margin: 0 1em;
+  margin: 0 0.3em 0 0.1em;
   opacity: ${props => props.theme.translucent};
   
  Link, a, div {
-      padding: 1em;
+      padding: 0.8em;
       display: block;
   }
 `;
-
 
 
 const NavBar = (props) => {
@@ -104,10 +107,10 @@ const NavBar = (props) => {
     //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off
     const bwButton = (props.bwMode) ?
         <NavElement>
-            {WEBSITE_TEXT.navbar.colourMode}
+            <div>{WEBSITE_TEXT.navbar.colourMode}</div>
         </NavElement> :
         <ToggledNavElement>
-            {WEBSITE_TEXT.navbar.colourMode}
+            <div>{WEBSITE_TEXT.navbar.colourMode}</div>
         </ToggledNavElement>;
 
     //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
