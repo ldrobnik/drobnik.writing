@@ -45,13 +45,9 @@ const LogoWrapper = styled.div`
         }
 `;
 
-const NavElements = styled.div`
-  margin-right: 4px;
-`;
-
 const NavElement = styled.div`
   cursor: pointer;
-  margin: 0 0.3em 0 0.1em;
+  margin: ${props => props.theme.navIconMargin};
   Link, a, div {
       padding: 0.8em;
       display: block;
@@ -67,8 +63,8 @@ const NavElement = styled.div`
 
 const ToggledNavElement = styled.div`
   cursor: pointer;
-  margin: 0 0.3em 0 0.1em;
-  opacity: ${props => props.theme.translucent};\
+  margin: ${props => props.theme.navIconMargin};
+  opacity: ${props => props.theme.translucent};
   
   Link, a, div {
       padding: 0.8em;
@@ -84,7 +80,7 @@ const ToggledNavElement = styled.div`
 
 const InactiveElement = styled.div`
   cursor: default;
-  margin: 0 0.3em 0 0.1em;
+  margin: ${props => props.theme.navIconMargin};
   opacity: ${props => props.theme.translucent};
   
  Link, a, div {

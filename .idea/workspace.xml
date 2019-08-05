@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -63,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="437">
+              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -87,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+            <state relative-caret-position="253">
+              <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -149,7 +150,6 @@
       <find>useState(</find>
       <find>console.log</find>
       <find>useEffec</find>
-      <find>black</find>
       <find>switch</find>
       <find>onSetNavbar</find>
       <find>navbarVisible</find>
@@ -159,14 +159,15 @@
       <find>non</find>
       <find>navElement</find>
       <find>&gt;W</find>
-      <find>translucent</find>
-      <find>translu</find>
       <find>optionBut</find>
       <find>option</find>
       <find>b&amp;w</find>
       <find>import AnchorLink from 'react-anchor-link-smooth-scroll';</find>
       <find>bwButton</find>
       <find>colourMode</find>
+      <find>black</find>
+      <find>translu</find>
+      <find>translucent</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -591,12 +592,12 @@
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
       <workItem from="1564688734239" duration="35498000" />
-      <workItem from="1564815223297" duration="60278000" />
+      <workItem from="1564815223297" duration="60627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292237000" />
+    <option name="totallyTimeSpent" value="292586000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="355" y="8" width="1572" height="1039" extended-state="0" />
@@ -1054,6 +1055,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -1064,27 +1082,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        <state relative-caret-position="253">
+          <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>

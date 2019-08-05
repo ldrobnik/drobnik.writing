@@ -46,7 +46,11 @@ const App = (props) => {
 
         //blur filter
         lightBlur: '3px',
-        heavyBlur: '8px'
+        heavyBlur: '8px',
+
+        //spacing
+        navIconMargin: '0 0.3em 0 0.1em',
+        navIconPadding: '0.08'
     };
 
 
