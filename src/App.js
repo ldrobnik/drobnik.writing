@@ -49,8 +49,8 @@ const App = (props) => {
         heavyBlur: '8px',
 
         //spacing
-        navIconMargin: '0 0.3em 0 0.1em',
-        navIconPadding: '0.08'
+        navIconMargin: '0.1em',
+        navIconPadding: '0.6em'
     };
 
 

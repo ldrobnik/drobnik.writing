@@ -49,7 +49,7 @@ const NavElement = styled.div`
   cursor: pointer;
   margin: ${props => props.theme.navIconMargin};
   Link, a, div {
-      padding: 0.8em;
+      padding: ${props => props.theme.navIconPadding};
       display: block;
   }
 
@@ -67,7 +67,7 @@ const ToggledNavElement = styled.div`
   opacity: ${props => props.theme.translucent};
   
   Link, a, div {
-      padding: 0.8em;
+      padding: ${props => props.theme.navIconPadding};
       display: block;
   }
   
@@ -84,7 +84,7 @@ const InactiveElement = styled.div`
   opacity: ${props => props.theme.translucent};
   
  Link, a, div {
-      padding: 0.8em;
+      padding: ${props => props.theme.navIconPadding};
       display: block;
   }
 `;
@@ -96,7 +96,14 @@ const NavBar = (props) => {
     //The book icon link to a randomly chosen text
     let randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
 
-
+    //Content of the home button - if on the home page, make it an anchor link scrolling to top
+    const homeButton = (props.textDisplayed) ?
+        <NavElement>
+            <Link to={'/'}>{WEBSITE_TEXT.navbar.home}</Link>
+        </NavElement> :
+        <NavElement>
+            <AnchorLink href='#top'>{WEBSITE_TEXT.navbar.home}</AnchorLink>
+        </NavElement>;
     //Content of the button used to change current language
     const langButton = (props.lang === 'en') ? WEBSITE_TEXT.navbar.language[props.lang] : WEBSITE_TEXT.navbar.language[props.lang];
 
@@ -161,6 +168,7 @@ const NavBar = (props) => {
                             <Logo/>
                         </Link>
                     </LogoWrapper>
+                    {homeButton}
                     <NavElement>
                         <div onClick={changeLanguage}>{langButton}</div>
                     </NavElement>

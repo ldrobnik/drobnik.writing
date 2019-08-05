@@ -587,7 +587,7 @@ export const THEME_COLORS = {
 
 export const WEBSITE_TEXT = {
     navbar: {
-        home: '<FontAwesomeIcon icon={faHome}></FontAwesomeIcon>',
+        home: <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>,
         language: {
             en: 'pl',
             pl: 'en'
