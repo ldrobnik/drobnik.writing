@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
+import posed from 'react-pose';
+import {Waypoint} from "react-waypoint";
 
 import {WEBSITE_TEXT} from '../../../../data/constants';
 
@@ -10,7 +12,7 @@ import PubList from './PubList/PubList';
 import SectionLinks from "../SectionLinks/SectionLinks";
 import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
 
-
+/* STYLED COMPONENTS */
 const Wrapper = styled.div`
   text-align: center;
 `;
@@ -45,6 +47,37 @@ const SubsectionHeading = styled.h1`
   margin-top: 1em;
 `;
 
+/* POSE */
+const AnimatedMessage = posed.div({
+    visible: {
+        opacity: 1,
+        x: '0',
+        transition: {
+            type: 'spring',
+            stiffness: 100
+        }
+    },
+    hidden: {
+        opacity: 0,
+        x: '-200%'
+    }
+});
+
+const AnimatedPanel = posed.div({
+    visible: {
+        opacity: 1,
+        x: '0',
+        transition: {
+            type: 'spring',
+            stiffness: 100
+        }
+    },
+    hidden: {
+        opacity: 0,
+        x: '200%'
+    }
+});
+
 const Pubs = (props) => {
 
     //specifies whether texts in English should be displayed
@@ -52,6 +85,9 @@ const Pubs = (props) => {
 
     //specifies whether texts in Polish should be displayed
     const [pl, setPl] = useState(true);
+
+    //specifies whether the message should be visible
+    const [messageVisible, setMessageVisible] = useState(false);
 
     //toggles the display of English pubs and if both en and pl are false, sets pl to true
     const setEnHandler = () => {
@@ -65,33 +101,46 @@ const Pubs = (props) => {
         if (!en && pl) setEn(true);
     };
 
+    //shows the message
+    const showMessage = () => {
+        setMessageVisible(true);
+    };
+
     return (
         <Wrapper>
             <SectionHeading
                 title={WEBSITE_TEXT.publications.title[props.lang]}
                 subtitle=""
             />
-            <Message>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</Message>
-            <SwitchPanel>
-                <label>
-                    <SwitchWrapper>
-                        <ToggleSwitch
-                            checked={en}
-                            onChange={setEnHandler}
-                        />
-                        <Label>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].english}</Label>
-                    </SwitchWrapper>
-                </label>
-                <label>
-                    <SwitchWrapper>
-                        <ToggleSwitch
-                            checked={pl}
-                            onChange={setPlHandler}
-                        />
-                        <Label>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].polish}</Label>
-                    </SwitchWrapper>
-                </label>
-            </SwitchPanel>
+            <Waypoint
+                onEnter={showMessage}/>
+            <AnimatedMessage
+                pose={messageVisible ? 'visible' : 'hidden'}>
+                <Message>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</Message>
+            </AnimatedMessage>
+            <AnimatedPanel
+                pose={messageVisible ? 'visible' : 'hidden'}>
+                <SwitchPanel>
+                    <label>
+                        <SwitchWrapper>
+                            <ToggleSwitch
+                                checked={en}
+                                onChange={setEnHandler}
+                            />
+                            <Label>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].english}</Label>
+                        </SwitchWrapper>
+                    </label>
+                    <label>
+                        <SwitchWrapper>
+                            <ToggleSwitch
+                                checked={pl}
+                                onChange={setPlHandler}
+                            />
+                            <Label>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].polish}</Label>
+                        </SwitchWrapper>
+                    </label>
+                </SwitchPanel>
+            </AnimatedPanel>
             <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].books}</SubsectionHeading>
             <PubList
                 en={en}
@@ -114,7 +163,7 @@ const Pubs = (props) => {
                 pubs={true}
                 read={false}
             />
-            <SectionSeparator />
+            <SectionSeparator/>
         </Wrapper>
     );
 };
