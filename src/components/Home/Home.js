@@ -1,16 +1,17 @@
 import React, {useEffect} from 'react';
 import {Route, Switch, withRouter} from 'react-router-dom';
 import {Redirect} from 'react-router';
-import {createGlobalStyle} from 'styled-components';
 import {connect} from 'react-redux';
+import {createGlobalStyle} from 'styled-components';
+
+import * as actionTypes from "../../store/actions";
+import {PULSATE_KEYFRAMES} from "../../data/constants";
 
 import QuickLinks from '../QuickLinks/QuickLinks';
 import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Text from '../Text/Text';
 import DataNotice from '../UI/DataNotice/DataNotice';
-import {PULSATE_KEYFRAMES} from "../../data/constants";
-import * as actionTypes from "../../store/actions";
 
 /* STYLED COMPONENTS */
 const GlobalStyle = createGlobalStyle`
@@ -21,19 +22,16 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         }
         
-     a {
+    a {
         text-decoration: none;
         color: ${props => props.theme.darkColor};
-        
         
         @media all and (min-width: ${props => props.theme.smallScr}) {
              &:hover {
                       animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
              }
-        }
-            
-        }
-     
+        }        
+    }
      
      ::selection {
         color: ${props => props.theme.color1};
@@ -41,12 +39,10 @@ const GlobalStyle = createGlobalStyle`
      }
 `;
 
-
 const Home = (props) => {
-
-
     //checks if any data is stored in localStorage and updates Redux state accordingly
     const checkLocalStorage = () => {
+
         //check if data storage notice has been agreed to and if so, update Redux state accordingly
         const noticeAccepted = localStorage.getItem('dataNoticeAccepted');
 
@@ -56,7 +52,6 @@ const Home = (props) => {
 
             //stop displaying the notice
             props.onVisibilityChange(false);
-
         }
 
         //check if the language is stored in localStorate and if so, update Redux state accordingly
@@ -80,17 +75,15 @@ const Home = (props) => {
 
     //Scrolls to top initially and if the URL path changes
     useEffect(() => {
-
             window.scrollTo(0, 0);
         },
         [props.location.pathname]
     );
 
     useEffect(() => {
-
             //check localStorage and update Redux state accordingly
             checkLocalStorage();
-  }
+        }
     );
 
     return (
