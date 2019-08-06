@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
+import {connect} from 'react-redux';
 import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from "../../../../data/constants";
+import * as actionTypes from "../../../../store/actions";
+import mapStateToProps from "react-redux/es/connect/mapStateToProps";
 
 const Wrapper = styled.div`
   display: flex;
@@ -30,11 +33,16 @@ const Line = styled.div`
 
 const NextTextLink = (props) => {
 
+    //sets off page reloading animation
+    const reloadPage = () => {
+        props.onReloadChange(true);
+    };
 
     return (
 
         <Link
-            to={'/texts/' + props.textName}>
+            to={'/texts/' + props.textName}
+            onClick={reloadPage}>
             <Wrapper>
                 <Line/>
                 <UpNext>
@@ -52,5 +60,13 @@ const NextTextLink = (props) => {
 
     );
 };
+const mapDispatchToProps = dispatch => {
+    return {
+        onReloadChange: (newState) => dispatch({
+            type: actionTypes.SET_PAGE_RELOAD,
+            pageReload: newState
+        })
+    };
+};
 
-export default NextTextLink;
+export default connect(null, mapDispatchToProps)(NextTextLink);

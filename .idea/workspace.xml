@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Text/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Text/Text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Text/NextTextLink/NextTextLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Text/NextTextLink/NextTextLink.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -77,11 +75,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="241" column="7" selection-start-line="241" selection-start-column="7" selection-end-line="241" selection-end-column="7" />
+            <state relative-caret-position="87">
+              <caret line="308" selection-start-line="308" selection-end-line="336" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/Text/NextTextLink/NextTextLink.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -204,7 +214,6 @@
         <option value="$PROJECT_DIR$/src/components/Layout/Layout.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/components/Home/Text/NextTextLink/NextTextLink.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/ReadListElement/ReadListElement.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubList.js" />
         <option value="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" />
@@ -228,6 +237,7 @@
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
         <option value="$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Text/NextTextLink/NextTextLink.js" />
       </list>
     </option>
   </component>
@@ -402,6 +412,15 @@
               <item name="Home" type="462c0819:PsiDirectoryNode" />
               <item name="Text" type="462c0819:PsiDirectoryNode" />
               <item name="DescriptionPanel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="Text" type="462c0819:PsiDirectoryNode" />
+              <item name="NextTextLink" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
@@ -610,12 +629,12 @@
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
       <workItem from="1564688734239" duration="35498000" />
-      <workItem from="1564815223297" duration="92671000" />
+      <workItem from="1564815223297" duration="92885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324630000" />
+    <option name="totallyTimeSpent" value="324844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="433" y="0" width="1494" height="1047" extended-state="0" />
@@ -623,9 +642,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.16806136" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.16806136" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -923,16 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/NextTextLink/NextTextLink.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="12" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -1103,8 +1112,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="241" column="7" selection-start-line="241" selection-start-column="7" selection-end-line="241" selection-end-column="7" />
+        <state relative-caret-position="87">
+          <caret line="308" selection-start-line="308" selection-end-line="336" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/NextTextLink/NextTextLink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
