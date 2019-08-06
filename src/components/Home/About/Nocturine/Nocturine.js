@@ -24,6 +24,18 @@ const Body = styled.div`
 `;
 
 /* POSE */
+
+const AnimatedContent = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0px)'
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)'
+    }
+});
+
 const AnimatedButton = posed.div({
     visible: {
         opacity: 1,
@@ -48,6 +60,14 @@ const Nocturine = (props) => {
     //specifies whether the excerpt button should be visible
     const [buttonVisible, setButtonVisible] = useState(false);
 
+    //specifies whether the content should be visible
+    const [contentVisible, setContentVisible] = useState(false);
+
+    //shows the content
+    const showContent = () => {
+        setContentVisible(true);
+    };
+
     //sets quote visibility to true
     const showQuotes = () => {
         setQuotesVisible(true);
@@ -58,40 +78,59 @@ const Nocturine = (props) => {
         setButtonVisible(true);
     };
 
+
+    useEffect(() => {
+
+        //show content after a while
+        setTimeout(
+            () => {
+                showContent();
+            }, 200
+        );
+
+    });
+
+
     return (
         <React.Fragment>
-            <SectionHeading
-                title={WEBSITE_TEXT.nocturine.title[props.lang]}
-                subtitle=""
-            />
-            <Body>
-                {WEBSITE_TEXT.nocturine.body[props.lang]}
-            </Body>
-            <Waypoint
-                onEnter={showQuotes}
-            />
-            <QuoteList
-                lang={props.lang}
-                visible={quotesVisible}
-            />
-            <Waypoint
-                onEnter={showButton}
-            />
+            <AnimatedContent
+                pose={contentVisible ? 'visible' : 'hidden'}>
+                <SectionHeading
+                    title={WEBSITE_TEXT.nocturine.title[props.lang]}
+                    subtitle=""
+                />
+                <Body>
+                    {WEBSITE_TEXT.nocturine.body[props.lang]}
+                </Body>
+                <Waypoint
+                    onEnter={showQuotes}
+                />
+                <QuoteList
+                    lang={props.lang}
+                    visible={quotesVisible}
+                />
+                <Waypoint
+                    onEnter={showButton}
+                />
+            </AnimatedContent>
             <AnimatedButton
-            pose={buttonVisible ? 'visible' : 'hidden'}>
+                pose={buttonVisible ? 'visible' : 'hidden'}>
                 <CentredButton
                     message={WEBSITE_TEXT.nocturine.button[props.lang].message}
                     path={WEBSITE_TEXT.nocturine.button[props.lang].path}
                     capital='m'/>
             </AnimatedButton>
-            <SectionLinks
-                lang={props.lang}
-                top={true}
-                nocturine={false}
-                pubs={false}
-                read={true}
-            />
-            <SectionSeparator/>
+            <AnimatedContent
+                pose={contentVisible ? 'visible' : 'hidden'}>
+                <SectionLinks
+                    lang={props.lang}
+                    top={true}
+                    nocturine={false}
+                    pubs={false}
+                    read={true}
+                />
+                <SectionSeparator/>
+            </AnimatedContent>
         </React.Fragment>
     );
 };

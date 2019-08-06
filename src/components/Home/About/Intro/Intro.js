@@ -94,7 +94,7 @@ const Intro = (props) => {
         setSocialVisible(true);
     };
 
-    //Scrolls to top initially and if the URL path changes
+
     useEffect(() => {
 
         //show content after a while
