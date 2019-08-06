@@ -22,11 +22,12 @@ const AnimatedQuote = posed.div({
         y: '0%',
         opacity: 1,
         transition: {
-            duration: 2000
+            ease: 'easeOut',
+            duration: 1500
         }
     },
     hidden: {
-        y: '-10%',
+        y: '50%',
         opacity: 0,
         transition: {
             duration: 2000
