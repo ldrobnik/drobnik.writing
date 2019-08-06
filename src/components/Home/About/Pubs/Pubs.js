@@ -228,7 +228,7 @@ const Pubs = (props) => {
                     lang={props.lang}
                     top={true}
                     nocturine={true}
-                    pubs={true}
+                    pubs={false}
                     read={true}
                 />
                 <SectionSeparator/>
