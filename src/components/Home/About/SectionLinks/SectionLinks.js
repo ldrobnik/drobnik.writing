@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   justify-content: center;
   font-weight: bold;
   font-size: ${props => props.theme.captionSize}
-  margin: 2em 0;
+  margin: 3.5em 0;
   text-decoration: underline;
   
   div {

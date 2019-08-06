@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 const Message = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-weight: bold;
-  margin: 1em 0;
+  margin: 2em 0 0.5em 0;
 `;
 
 const SwitchPanel = styled.div`
@@ -31,6 +31,7 @@ const SwitchPanel = styled.div`
   align-content: space-evenly;
   font-size: ${props => props.theme.bodySize};
   font-weight: bold;
+  margin-bottom: 2em;
 
 `;
 
