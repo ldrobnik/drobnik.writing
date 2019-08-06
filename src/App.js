@@ -1,10 +1,10 @@
 import React from 'react';
-import {ThemeProvider} from 'styled-components';
 import {connect} from 'react-redux';
-import Home from './components/Home/Home';
+import {ThemeProvider} from 'styled-components';
 
 import { THEME_COLORS } from "./data/constants";
 
+import Home from './components/Home/Home';
 
 const App = (props) => {
     // Theme to be used in the project, two primary colors depending on redux state
@@ -55,13 +55,12 @@ const App = (props) => {
         navIconPadding: '0.6em'
     };
 
-
     return (
         <ThemeProvider theme={theme}>
             <Home />
         </ThemeProvider>
     );
-}
+};
 
 const mapStateToProps = state => {
     return {
