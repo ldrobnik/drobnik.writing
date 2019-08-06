@@ -16,7 +16,7 @@ import * as actionTypes from "../../../../store/actions";
 
 /* STYLED COMPONENTS */
 const Body = styled.div`
-  text-align: left;
+  text-align: justify;
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.serif};
   line-height: 1.4em;
