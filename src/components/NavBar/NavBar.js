@@ -114,8 +114,6 @@ const NavBar = (props) => {
     //toggle the black-and-white mode
     const toggleBwMode = () => {
 
-        //play page reloading animation
-        props.onReloadChange(true);
 
         //set the opposite state to the current one
         const newColorMode = (!props.bwMode) ? 'b&w' : 'color';
