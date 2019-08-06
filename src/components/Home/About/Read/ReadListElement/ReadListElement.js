@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
+import {connect} from "react-redux";
 import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from "../../../../../data/constants";
+import * as actionTypes from "../../../../../store/actions";
 
 const Wrapper = styled.div`
   display: flex;
@@ -39,11 +41,17 @@ const Line = styled.div`
 
 const ReadListElement = (props) => {
 
+    //sets off page reloading animation
+    const reloadPage = () => {
+        props.onReloadChange(true);
+    };
 
     return (
 
         <Link
-            to={props.path}>
+            to={props.path}
+            onClick={reloadPage}
+        >
             <Wrapper>
                 <Line/>
                 <ElementContent>
@@ -62,4 +70,13 @@ const ReadListElement = (props) => {
     );
 };
 
-export default ReadListElement;
+const mapDispatchToProps = dispatch => {
+    return {
+        onReloadChange: (newState) => dispatch({
+            type: actionTypes.SET_PAGE_RELOAD,
+            pageReload: newState
+        })
+    };
+};
+
+export default connect(null, mapDispatchToProps)(ReadListElement);
