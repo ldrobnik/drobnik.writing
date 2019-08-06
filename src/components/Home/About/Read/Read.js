@@ -58,12 +58,9 @@ const Read = (props) => {
     //specifies whether text links should be visible
     const [linksVisible, setLinksVisible] = useState(false);
 
-    //specifies whether the content should be visible
-    const [contentVisible, setContentVisible] = useState(false);
-
     //shows the content
     const showContent = () => {
-        setContentVisible(true);
+        props.onReloadChange(false);
     };
 
     //shows the text links
@@ -84,7 +81,7 @@ const Read = (props) => {
     return (
         <Wrapper>
             <AnimatedContent
-                pose={contentVisible ? 'visible' : 'hidden'}>
+                pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionHeading
                     title={WEBSITE_TEXT.read.title[props.lang]}
                     subtitle=""
@@ -112,7 +109,7 @@ const Read = (props) => {
                 })}
             </AnimatedList>
             <AnimatedContent
-                pose={contentVisible ? 'visible' : 'hidden'}>
+                pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionLinks
                     lang={props.lang}
                     top={true}

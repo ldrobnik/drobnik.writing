@@ -111,12 +111,9 @@ const Pubs = (props) => {
     //specifies whether the message should be visible
     const [messageVisible, setMessageVisible] = useState(false);
 
-    //specifies whether the content should be visible
-    const [contentVisible, setContentVisible] = useState(false);
-
     //shows the content
     const showContent = () => {
-        setContentVisible(true);
+        props.onReloadChange(false);
     };
 
     //toggles the display of English pubs and if both en and pl are false, sets pl to true
@@ -150,7 +147,7 @@ const Pubs = (props) => {
     return (
         <Wrapper>
             <AnimatedContent
-                pose={contentVisible ? 'visible' : 'hidden'}>
+                pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionHeading
                     title={WEBSITE_TEXT.publications.title[props.lang]}
                     subtitle=""
@@ -186,7 +183,7 @@ const Pubs = (props) => {
                 </SwitchPanel>
             </AnimatedPanel>
             <AnimatedContent
-                pose={contentVisible ? 'visible' : 'hidden'}>
+                pose={!props.reload ? 'visible' : 'hidden'}>
                 <Separator/>
                 <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].books}</SubsectionHeading>
                 <PubList
