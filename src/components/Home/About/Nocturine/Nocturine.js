@@ -61,12 +61,10 @@ const Nocturine = (props) => {
     //specifies whether the excerpt button should be visible
     const [buttonVisible, setButtonVisible] = useState(false);
 
-    //specifies whether the content should be visible
-    const [contentVisible, setContentVisible] = useState(false);
 
     //shows the content
     const showContent = () => {
-        setContentVisible(true);
+        props.onReloadChange(false);
     };
 
     //sets quote visibility to true
@@ -95,7 +93,7 @@ const Nocturine = (props) => {
     return (
         <React.Fragment>
             <AnimatedContent
-                pose={contentVisible ? 'visible' : 'hidden'}>
+                pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionHeading
                     title={WEBSITE_TEXT.nocturine.title[props.lang]}
                     subtitle=""
@@ -122,7 +120,7 @@ const Nocturine = (props) => {
                     capital='m'/>
             </AnimatedButton>
             <AnimatedContent
-                pose={contentVisible ? 'visible' : 'hidden'}>
+                pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionLinks
                     lang={props.lang}
                     top={true}
