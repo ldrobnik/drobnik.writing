@@ -5,7 +5,7 @@ import {withRouter} from 'react-router-dom';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
-import {WEBSITE_TEXT, FADE_DURATION} from '../../../../data/constants';
+import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from '../../../../data/constants';
 
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import ToggleSwitch from '../../../UI/ToggleSwitch/ToggleSwitch';
@@ -59,17 +59,6 @@ const Separator = styled.div`
 
 
 /* POSE */
-const AnimatedContent = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0px)'
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});
-
 
 const AnimatedMessage = posed.div({
     visible: {
@@ -212,6 +201,8 @@ const Pubs = (props) => {
                     en={en}
                     pl={pl}
                     type="books"/>
+                <Waypoint
+                    onEnter={showMessage}/>
                 <Separator/>
                 <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].press}</SubsectionHeading>
                 <PubList

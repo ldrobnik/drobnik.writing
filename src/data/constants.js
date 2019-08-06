@@ -30,6 +30,7 @@ import {DRONES_EN} from './texts/drones-en';
 import {DRONES_PL} from './texts/drones-pl';
 import {TREASURES_EN} from './texts/treasures-en';
 import {TREASURES_PL} from './texts/treasures-pl';
+import posed from "react-pose";
 
 //Names of available texts
 export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'landmines', 'treasures'];
@@ -857,19 +858,6 @@ export const PULSATE_KEYFRAMES = keyframes`
   }
 `;
 
-//Keyframes for blur animation
-
-export const BLUR_KEYFRAMES = keyframes`
-  
-  from {
-    filter: blur(8px);
-  }
-  
-  to {
-    filter: blur(0.1px);
-  }
-  
-`;
 
 //Keyframes for 'popping' animation
 
@@ -894,3 +882,15 @@ export const POP_KEYFRAMES = keyframes`
 
 export const FADE_DURATION = 200;
 
+//Reusable posed component specifying the basic fade-in animation
+
+export const AnimatedContent = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0px)'
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)'
+    }
+});

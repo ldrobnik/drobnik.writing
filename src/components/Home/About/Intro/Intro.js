@@ -5,7 +5,7 @@ import {Waypoint} from "react-waypoint";
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import authorsPhoto from '../../../../assets/authorsPhoto.jpg'
-import {WEBSITE_TEXT, FADE_DURATION} from '../../../../data/constants';
+import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading';
 import CentredPhoto from '../../../UI/CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
@@ -34,17 +34,6 @@ const Separator = styled.div`
 `;
 
 /* POSE */
-
-const AnimatedContent = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0px)'
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});
 
 const AnimatedLinks = posed.div({
     visible: {
