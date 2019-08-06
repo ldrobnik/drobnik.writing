@@ -44,12 +44,9 @@ const AnimatedContent = posed.div({
 
 const QuickLinks = (props) => {
 
-    //specifies whether the content should be visible
-    const [contentVisible, setContentVisible] = useState(false);
-
     //shows the content
     const showContent = () => {
-        setContentVisible(true);
+        props.onReloadChange(false);
     };
 
     //updates current theme with a random theme
@@ -95,7 +92,7 @@ const QuickLinks = (props) => {
 
     return (
         <AnimatedContent
-            pose={contentVisible ? 'visible' : 'hidden'}>
+            pose={!props.reload ? 'visible' : 'hidden'}>
             <Wrapper>
                 {LINKS.map((link, k) => {
                     return (

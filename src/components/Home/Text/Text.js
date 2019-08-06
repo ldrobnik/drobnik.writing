@@ -139,12 +139,9 @@ const Text = (props) => {
     //specifies whether 'up next' link should be displayed
     const [linkVisible, setlinkVisible] = useState(false);
 
-    //specifies whether the content should be visible
-    const [contentVisible, setContentVisible] = useState(false);
-
     //shows the content
     const showContent = () => {
-        setContentVisible(true);
+        props.onReloadChange(false);
     };
 
     //shows the 'up next' luunk
@@ -241,8 +238,8 @@ const Text = (props) => {
                 showContent();
             }, FADE_DURATION
         );
-    });
 
+    });
 
     return (
 
@@ -251,7 +248,7 @@ const Text = (props) => {
                 <div id='top'></div>
             </TopAnchor>
             <AnimatedContent
-                pose={contentVisible ? 'visible' : 'hidden'}>
+                pose={!props.reload ? 'visible' : 'hidden'}>
                 <Header>
                     <TextTitle>
                         {TEXTS[props.lang][textName].title}
@@ -286,7 +283,7 @@ const Text = (props) => {
                 />
             </AnimatedLink>
             <AnimatedContent
-                pose={contentVisible ? 'visible' : 'hidden'}>
+                pose={!props.reload ? 'visible' : 'hidden'}>
                 <Links>
                     <div>{top}</div>
                     <div>{home}</div>
