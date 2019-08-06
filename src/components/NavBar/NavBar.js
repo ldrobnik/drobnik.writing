@@ -203,7 +203,9 @@ const NavBar = (props) => {
         </InactiveElement>
         :
         <NavElement>
-            <Link to={'/texts/' + randomText}>
+            <Link
+                to={'/texts/' + randomText}
+                onClick={reloadPage}>
                 <LinkContent>
                     {WEBSITE_TEXT.navbar.read}
                 </LinkContent>
