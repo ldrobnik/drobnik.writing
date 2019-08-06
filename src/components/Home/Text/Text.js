@@ -144,14 +144,19 @@ const Text = (props) => {
         props.onReloadChange(false);
     };
 
-    //shows the 'up next' luunk
+    //shows the 'up next' link
     const showLink = () => {
         setlinkVisible(true);
     };
 
-    //hides the 'up next' luunk
+    //hides the 'up next' link
     const hideLink = () => {
         setlinkVisible(false);
+    };
+
+    //sets off page reloading animation
+    const reloadPage = () => {
+        props.onReloadChange(true);
     };
 
     //Checks if the id in the current url matches any text; if not, returns 'nocturine'
@@ -181,7 +186,10 @@ const Text = (props) => {
     const top = <AnchorLink href='#top'>{WEBSITE_TEXT.text.top[props.lang]}</AnchorLink>;
 
     //The Home link
-    const home = <Link to={'/'}>{WEBSITE_TEXT.text.home[props.lang]}</Link>;
+    const home = <Link
+        to={'/'}
+        onClick={reloadPage}
+    >{WEBSITE_TEXT.text.home[props.lang]}</Link>;
 
     //updates the currently displayed text
     const updateText = () => {

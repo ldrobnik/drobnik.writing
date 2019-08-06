@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import {connect} from 'react-redux';
 import {POP_KEYFRAMES} from "../../../data/constants";
+import * as actionTypes from "../../../store/actions";
 
 const Wrapper = styled.div`
   text-align: center;
@@ -58,6 +60,11 @@ const Subtitle = styled.div`
 
 const QuickLink = (props) => {
 
+    //sets off page reloading animation
+    const reloadPage = () => {
+        props.onReloadChange(true);
+    };
+
     //constant holding the button content
     const linkTitle = props.title;
     const linkSubtitle = props.subtitle;
@@ -82,7 +89,10 @@ const QuickLink = (props) => {
     if (linkUrl[0] === '/') {
         workingLink = (
 
-            <Link to={linkUrl}>
+            <Link
+                to={linkUrl}
+                onClick={reloadPage}
+            >
                 {linkContent}
             </Link>);
 
@@ -105,4 +115,13 @@ const QuickLink = (props) => {
     );
 };
 
-export default QuickLink;
+const mapDispatchToProps = dispatch => {
+    return {
+        onReloadChange: (newState) => dispatch({
+            type: actionTypes.SET_PAGE_RELOAD,
+            pageReload: newState
+        })
+    };
+};
+
+export default connect(null, mapDispatchToProps)(QuickLink);
