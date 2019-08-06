@@ -32,7 +32,7 @@ const ButtonWrapper = styled.div`
     }
     
     @media all and (min-width: ${props => props.theme.smallScr}) {
-       margin: 0 1em;
+       margin: 0 4em;
     }
     
     @media all and (min-width: ${props => props.theme.mediumScr}) {

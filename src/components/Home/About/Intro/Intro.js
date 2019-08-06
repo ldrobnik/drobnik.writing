@@ -27,7 +27,7 @@ const Body = styled.div`
 `;
 
 const Separator = styled.div`
-  margin: 2em auto 0.5em auto;
+  margin: 2.8em auto 1.4em auto;
   height: 0.6em;
   width: 8em;
   background-color: ${props => props.theme.darkColor};
