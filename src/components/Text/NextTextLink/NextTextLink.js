@@ -1,10 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import {Link} from "react-router-dom";
 import {connect} from 'react-redux';
-import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from "./../../../data/constants";
-import * as actionTypes from "./../../../store/actions";
+import styled from 'styled-components';
 
+import * as actionTypes from "./../../../store/actions";
+import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from "./../../../data/constants";
+
+/*STYLED COMPONENTS*/
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -38,7 +40,6 @@ const NextTextLink = (props) => {
     };
 
     return (
-
         <Link
             to={'/texts/' + props.textName}
             onClick={reloadPage}>
@@ -55,8 +56,6 @@ const NextTextLink = (props) => {
                 <Line/>
             </Wrapper>
         </Link>
-
-
     );
 };
 
