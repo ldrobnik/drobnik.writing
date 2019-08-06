@@ -8,7 +8,8 @@ const initialState = {
     navbarVisible: false,
     dataNoticeVisible: true,
     dataNoticeAccepted: false,
-    textPageDisplayed: false
+    textPageDisplayed: false,
+    pageReload: true
 };
 
 const reducer = (state = initialState, action) => {
@@ -52,7 +53,12 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 textPageDisplayed: action.textPageDisplayed
-            }
+            };
+        case actionTypes.SET_PAGE_RELOAD:
+            return {
+                ...state,
+                pageReload: action.pageReload
+            };
         default:
             return state;
     }
