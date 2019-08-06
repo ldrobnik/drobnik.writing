@@ -111,6 +111,13 @@ const QuickLinks = (props) => {
     );
 };
 
+const mapStateToProps = state => {
+    return {
+        reload: state.pageReload
+    };
+};
+
+
 const mapDispatchToProps = dispatch => {
     return {
         onThemeChange: (newTheme) => dispatch({
@@ -133,4 +140,4 @@ const mapDispatchToProps = dispatch => {
 };
 
 
-export default connect(null, mapDispatchToProps)(QuickLinks);
+export default connect(mapStateToProps, mapDispatchToProps)(QuickLinks);

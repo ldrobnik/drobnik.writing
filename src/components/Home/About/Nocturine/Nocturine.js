@@ -138,7 +138,8 @@ const Nocturine = (props) => {
 
 const mapStateToProps = state => {
     return {
-        lang: state.language
+        lang: state.language,
+        reload: state.pageReload
     };
 };
 

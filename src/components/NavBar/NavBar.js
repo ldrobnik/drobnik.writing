@@ -216,7 +216,8 @@ const mapStateToProps = state => {
         bwMode: state.blackAndWhite,
         curText: state.currentText,
         showNavbar: state.navbarVisible,
-        textDisplayed: state.textPageDisplayed
+        textDisplayed: state.textPageDisplayed,
+        reload: state.pageReload
     };
 };
 

@@ -304,7 +304,8 @@ const mapStateToProps = state => {
         lang: state.language,
         bwMode: state.blackAndWhite,
         noticeVisible: state.dataNoticeVisible,
-        noticeAccepted: state.dataNoticeAccepted
+        noticeAccepted: state.dataNoticeAccepted,
+        reload: state.pageReload
     };
 };
 

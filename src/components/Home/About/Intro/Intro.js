@@ -82,12 +82,9 @@ const Intro = (props) => {
     //specifies whether social links and Patreon should be visible
     const [socialVisible, setSocialVisible] = useState(false);
 
-    //specifies whether the content should be visible
-    const [contentVisible, setContentVisible] = useState(false);
-
     //shows the content
     const showContent = () => {
-        setContentVisible(true);
+        props.onReloadChange(false);
     };
 
     //shows the social links and Patreon button
@@ -110,7 +107,7 @@ const Intro = (props) => {
     return (
         <React.Fragment>
             <AnimatedContent
-                pose={contentVisible ? 'visible' : 'hidden'}>
+                pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionHeading
                     title={WEBSITE_TEXT.intro.title}
                     subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
@@ -139,7 +136,7 @@ const Intro = (props) => {
                 onEnter={showSocial}
             />
             <AnimatedContent
-                pose={contentVisible ? 'visible' : 'hidden'}>
+                pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionLinks
                     lang={props.lang}
                     top={false}
@@ -155,7 +152,8 @@ const Intro = (props) => {
 
 const mapStateToProps = state => {
     return {
-        lang: state.language
+        lang: state.language,
+        reload: state.pageReload
     };
 };
 
