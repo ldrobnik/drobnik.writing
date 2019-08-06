@@ -13,7 +13,6 @@ import {
     faYinYang
 } from '@fortawesome/free-solid-svg-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {Link} from 'react-router-dom';
 
 //constants containing the content of individual pieces
 import {NOCTURINE_EN} from './texts/nocturine-en';

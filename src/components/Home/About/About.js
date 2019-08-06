@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
-import posed from 'react-pose';
 
 import Intro from './Intro/Intro';
 import Nocturine from './Nocturine/Nocturine';
@@ -9,7 +8,7 @@ import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
 import CopyrightNote from '../../UI/CopyrightNote/CopyrightNote';
 import * as actionTypes from "../../../store/actions";
-import {TEXT_NAMES, FADE_IN_KEYFRAMES} from '../../../data/constants';
+import {TEXT_NAMES} from '../../../data/constants';
 
 /* STYLED COMPONENTS */
 const TopAnchor = styled.div`
