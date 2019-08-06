@@ -5,18 +5,15 @@ import {WEBSITE_TEXT} from "../../../../data/constants";
 
 const Wrapper = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-size: ${props => props.theme.bodySize};
     margin: 1.5em 0;
     
     @media all and (max-width: ${props => props.theme.smallScr}) {
-      font-size: 3vw;
+      font-size: font-size: ${props => props.theme.captionSize};;
     }
-    
-    @media all and (max-width: ${props => props.theme.extraSmallScr}) {
-      font-size: 2vw;
-    }
-    
+
     div {
       padding: 8px;
     }
