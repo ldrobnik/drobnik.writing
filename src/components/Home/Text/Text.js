@@ -8,7 +8,7 @@ import {Waypoint} from "react-waypoint";
 
 
 import * as actionTypes from '../../../store/actions';
-import {TEXTS, TEXT_NAMES, WEBSITE_TEXT} from '../../../data/constants';
+import {TEXTS, TEXT_NAMES, WEBSITE_TEXT, FADE_DURATION} from '../../../data/constants';
 
 
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
@@ -105,6 +105,17 @@ const Links = styled.div`
 `;
 
 /* POSE */
+const AnimatedContent = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0px)'
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)'
+    }
+});
+
 const AnimatedLink = posed.div({
     visible: {
         opacity: 1,
@@ -125,6 +136,14 @@ const Text = (props) => {
 
     //specifies whether 'up next' link should be displayed
     const [linkVisible, setlinkVisible] = useState(false);
+
+    //specifies whether the content should be visible
+    const [contentVisible, setContentVisible] = useState(false);
+
+    //shows the content
+    const showContent = () => {
+        setContentVisible(true);
+    };
 
     //shows the 'up next' luunk
     const showLink = () => {
@@ -213,6 +232,13 @@ const Text = (props) => {
 
         //lets the Redux store know that the Text page is currently displayed
         setTextDisplayed();
+
+        //show content after a while
+        setTimeout(
+            () => {
+                showContent();
+            }, FADE_DURATION
+        );
     });
 
 
@@ -222,27 +248,30 @@ const Text = (props) => {
             <TopAnchor>
                 <div id='top'></div>
             </TopAnchor>
-            <Header>
-                <TextTitle>
-                    {TEXTS[props.lang][textName].title}
-                </TextTitle>
-                <TextSubtitle>
-                    {TEXTS[props.lang][textName].subtitle}
-                </TextSubtitle>
-            </Header>
-            <TextBody>
-                {TEXTS[props.lang][textName].content}
-            </TextBody>
-            <Waypoint
-                onEnter={hideLink}
-            />
-            <Credits>
-                <i>{TEXTS[props.lang][textName].credits}</i>
-            </Credits>
-            <DescriptionPanel
-                description={TEXTS[props.lang][textName].description}
-                title={TEXTS[props.lang][textName].title}
-            />
+            <AnimatedContent
+                pose={contentVisible ? 'visible' : 'hidden'}>
+                <Header>
+                    <TextTitle>
+                        {TEXTS[props.lang][textName].title}
+                    </TextTitle>
+                    <TextSubtitle>
+                        {TEXTS[props.lang][textName].subtitle}
+                    </TextSubtitle>
+                </Header>
+                <TextBody>
+                    {TEXTS[props.lang][textName].content}
+                </TextBody>
+                <Waypoint
+                    onEnter={hideLink}
+                />
+                <Credits>
+                    <i>{TEXTS[props.lang][textName].credits}</i>
+                </Credits>
+                <DescriptionPanel
+                    description={TEXTS[props.lang][textName].description}
+                    title={TEXTS[props.lang][textName].title}
+                />
+            </AnimatedContent>
             <Waypoint
                 onEnter={showLink}
             />
@@ -254,12 +283,15 @@ const Text = (props) => {
                     lang={props.lang}
                 />
             </AnimatedLink>
-            <Links>
-                <div>{top}</div>
-                <div>{home}</div>
-            </Links>
-            <SectionSeparator/>
-            <CopyrightNote/>
+            <AnimatedContent
+                pose={contentVisible ? 'visible' : 'hidden'}>
+                <Links>
+                    <div>{top}</div>
+                    <div>{home}</div>
+                </Links>
+                <SectionSeparator/>
+                <CopyrightNote/>
+            </AnimatedContent>
         </Wrapper>
 
     );
