@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/*STYLED COMPONENTS*/
 const Separator = styled.div`
   margin: 6em auto 3em auto;
   height: 0.8em;
@@ -8,8 +9,7 @@ const Separator = styled.div`
   background-color: ${props => props.theme.darkColor};
 `;
 
-
-const SectionSeparator = (props) => {
+const SectionSeparator = () => {
 
     return (
         <Separator />

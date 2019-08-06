@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import styled from 'styled-components';
 import {connect} from 'react-redux';
-import {WEBSITE_TEXT, AnimatedContent} from "../../../data/constants";
+import styled from 'styled-components';
+
 import * as actionTypes from "../../../store/actions";
+import {WEBSITE_TEXT, AnimatedContent} from "../../../data/constants";
 
 /* STYLED COMPONENTS */
 const Notice = styled.div`
@@ -16,20 +17,20 @@ const Notice = styled.div`
   text-align: center;
   
 
-    @media all and (min-width: ${props => props.theme.mediumScr}) {
+  @media all and (min-width: ${props => props.theme.mediumScr}) {
        left: 10%;
        width: 80%;
-    }
+  }
     
-    @media all and (min-width: ${props => props.theme.largeScr}) {
+  @media all and (min-width: ${props => props.theme.largeScr}) {
        left: 15%;
        width: 70%;
-    }
+  }
     
-    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
        left: 20%;
        width: 60%;
-    }
+  }
 `;
 
 const Message = styled.div`
@@ -53,7 +54,7 @@ const DismissButton = styled.div`
     }
 `;
 
-/* POSE */
+
 const DataNotice = (props) => {
 
     //notice content to be displayed
@@ -70,7 +71,6 @@ const DataNotice = (props) => {
 
         //store information about accepting the notice in localStorage
         localStorage.setItem('dataNoticeAccepted', true);
-
     };
 
     //sets the notice as visible and schedules fade-in animation
@@ -96,9 +96,7 @@ const DataNotice = (props) => {
                 </DismissButton>
             </AnimatedContent>
         </Notice>) :
-        <div></div>
-    ;
-
+        <div></div>;
 
     useEffect(() => {
         setTimeout(setContent, 1500);

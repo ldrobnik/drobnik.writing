@@ -1,6 +1,7 @@
-import React  from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
+/*STYLED COMPONENTS*/
 const Header = styled.div`
   text-align: center;
 `;

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Text/DescriptionPanel/DescriptionPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Text/DescriptionPanel/DescriptionPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Text/NextTextLink/NextTextLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Text/NextTextLink/NextTextLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/CopyrightNote/CopyrightNote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CopyrightNote/CopyrightNote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/SectionHeading/SectionHeading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/SectionHeading/SectionHeading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/SectionSeparator/SectionSeparator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/SectionSeparator/SectionSeparator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Text/Text.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1185">
-              <caret line="250" column="18" lean-forward="true" selection-start-line="250" selection-start-column="18" selection-end-line="250" selection-end-column="18" />
+              <caret line="250" column="18" selection-start-line="250" selection-start-column="18" selection-end-line="250" selection-end-column="18" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -40,11 +45,95 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Text/NextTextLink/NextTextLink.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="263">
               <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/UI/CopyrightNote/CopyrightNote.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-165">
+              <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/UI/SectionHeading/SectionHeading.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-197">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/UI/SectionSeparator/SectionSeparator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -129,9 +218,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/components/Links/QuickLinks.js" />
-        <option value="$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js" />
-        <option value="$PROJECT_DIR$/src/components/UI/SectionSeparator/SectionSeparator.js" />
-        <option value="$PROJECT_DIR$/src/components/UI/CopyrightNote/CopyrightNote.js" />
         <option value="$PROJECT_DIR$/src/components/Redirect/Redirect.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/SocialLinks/SocialLinks.js" />
         <option value="$PROJECT_DIR$/src/store/actions.js" />
@@ -139,8 +225,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/QuickLinks/QuickLink/QuickLink.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/NextTextLink/NextTextLink.js" />
-        <option value="$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js" />
-        <option value="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
@@ -150,13 +234,11 @@
         <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/About.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" />
-        <option value="$PROJECT_DIR$/src/components/UI/SectionHeading/SectionHeading.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/QuoteList/QuoteList.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/ReadListElement/ReadListElement.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubList.js" />
-        <option value="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" />
         <option value="$PROJECT_DIR$/src/components/About/Read/ReadListElement/ReadListElement.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
@@ -179,6 +261,13 @@
         <option value="$PROJECT_DIR$/src/components/Text/Credits/Credits.js" />
         <option value="$PROJECT_DIR$/src/components/Text/DescriptionPanel/DescriptionPanel.js" />
         <option value="$PROJECT_DIR$/src/components/Text/NextTextLink/NextTextLink.js" />
+        <option value="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" />
+        <option value="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" />
+        <option value="$PROJECT_DIR$/src/components/UI/CopyrightNote/CopyrightNote.js" />
+        <option value="$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js" />
+        <option value="$PROJECT_DIR$/src/components/UI/SectionHeading/SectionHeading.js" />
+        <option value="$PROJECT_DIR$/src/components/UI/SectionSeparator/SectionSeparator.js" />
+        <option value="$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js" />
       </list>
     </option>
   </component>
@@ -542,12 +631,12 @@
       <workItem from="1565091683809" duration="6178000" />
       <workItem from="1565099382477" duration="97000" />
       <workItem from="1565099534285" duration="435000" />
-      <workItem from="1565099999697" duration="2566000" />
+      <workItem from="1565099999697" duration="2911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336946000" />
+    <option name="totallyTimeSpent" value="337291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="754" y="0" width="1173" height="1047" extended-state="0" />
@@ -608,37 +697,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UI/CopyrightNote/CopyrightNote.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UI/SectionSeparator/SectionSeparator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="3" selection-start-line="3" selection-end-line="8" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -678,27 +740,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2359">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel/DescriptionPanel.js">
@@ -746,23 +788,6 @@
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubList.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UI/SectionHeading/SectionHeading.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/About/Read/ReadListElement/ReadListElement.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -953,7 +978,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/Text/Text.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1185">
-          <caret line="250" column="18" lean-forward="true" selection-start-line="250" selection-start-column="18" selection-end-line="250" selection-end-column="18" />
+          <caret line="250" column="18" selection-start-line="250" selection-start-column="18" selection-end-line="250" selection-end-column="18" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -974,6 +999,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/CopyrightNote/CopyrightNote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/SectionHeading/SectionHeading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-197">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/SectionSeparator/SectionSeparator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

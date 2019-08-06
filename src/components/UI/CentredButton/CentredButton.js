@@ -1,10 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {POP_KEYFRAMES} from "../../../data/constants";
-import * as actionTypes from "../../../store/actions";
+import styled from 'styled-components';
 
+import * as actionTypes from "../../../store/actions";
+import {POP_KEYFRAMES} from "../../../data/constants";
+
+/*STYLED COMPONENTS*/
 const Wrapper = styled.div`
   text-align: center;
   margin: 1em 0;
@@ -21,35 +23,31 @@ const ButtonWrapper = styled.div`
   position: relative;
   user-select: none;
   overflow: hidden;
-
         
-    &:hover {
+  &:hover {
       animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation}
-    }
+  }
     
-    @media all and (min-width: ${props => props.theme.extraSmallScr}) {
+  @media all and (min-width: ${props => props.theme.extraSmallScr}) {
        margin: 0 0.8em;;
-    }
+  }
     
-    @media all and (min-width: ${props => props.theme.smallScr}) {
+  @media all and (min-width: ${props => props.theme.smallScr}) {
        margin: 0 4em;
-    }
+  }
     
-    @media all and (min-width: ${props => props.theme.mediumScr}) {
+  @media all and (min-width: ${props => props.theme.mediumScr}) {
       margin: 0 2em;
-    }
-    
-    @media all and (min-width: ${props => props.theme.largeScr}) {
+  }
+   
+  @media all and (min-width: ${props => props.theme.largeScr}) {
        margin: 0 20%;
-    }
+  }
     
-    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
        margin: 0 25%;
-    }
-
-    
+  }  
 `;
-
 
 const CentredButton = (props) => {
 
@@ -64,7 +62,6 @@ const CentredButton = (props) => {
     //variable holding the button content wrapped in a QuickLink or a element
     let workingButton;
 
-    
     //the content of the button
     const buttonContent = (
         <ButtonWrapper>
@@ -74,16 +71,13 @@ const CentredButton = (props) => {
 
     if (props.path[0] === '/') {
         workingButton = (
-
             <Link
                 to={props.path}
                 onClick={reloadPage}>
                 {buttonContent}
             </Link>);
-
     } else {
         workingButton = (
-
             <a
                 href={props.path}
                 target="_blank"

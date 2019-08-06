@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import posed from 'react-pose';
 
+/*STYLED COMPONENTS*/
 const Wrapper = styled.div`
   text-align: center;
   padding: 2em;
@@ -12,11 +13,11 @@ const Photo = styled.div`
   height: 12em;
   opacity: ${props => props.theme.slightlyTranslucent};
   z-index: 60;
-    img {
+  
+  img {
       height: 100%;
-    }
+  }
 `;
-
 
 /* POSE */
 const AnimatedPic = posed.div({
@@ -32,7 +33,6 @@ const AnimatedPic = posed.div({
         filter: 'blur(20px)'
     }
 });
-
 
 const CentredPhoto = (props) => {
 
@@ -59,6 +59,5 @@ const CentredPhoto = (props) => {
         </Wrapper>
     );
 };
-
 
 export default CentredPhoto;

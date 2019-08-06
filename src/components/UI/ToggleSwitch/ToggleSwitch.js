@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Switch from "react-switch";
 
+/*STYLED COMPONENTS*/
 const Wrapper = styled.div`
   padding: 0.1em;
   opacity: ${props => props.theme.translucent};
