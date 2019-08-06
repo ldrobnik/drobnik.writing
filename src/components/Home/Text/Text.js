@@ -8,7 +8,7 @@ import {Waypoint} from "react-waypoint";
 
 
 import * as actionTypes from '../../../store/actions';
-import {TEXTS, TEXT_NAMES, WEBSITE_TEXT, FADE_DURATION} from '../../../data/constants';
+import {TEXTS, TEXT_NAMES, WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from '../../../data/constants';
 
 
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
@@ -107,17 +107,6 @@ const Links = styled.div`
 `;
 
 /* POSE */
-const AnimatedContent = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0px)'
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});
-
 const AnimatedLink = posed.div({
     visible: {
         opacity: 1,

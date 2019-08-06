@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import posed from 'react-pose';
 import {connect} from 'react-redux';
-import {WEBSITE_TEXT} from "../../../data/constants";
+import {WEBSITE_TEXT, AnimatedContent} from "../../../data/constants";
 import * as actionTypes from "../../../store/actions";
 
 /* STYLED COMPONENTS */
@@ -55,17 +54,6 @@ const DismissButton = styled.div`
 `;
 
 /* POSE */
-const AnimatedContent = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0px)'
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});
-
 const DataNotice = (props) => {
 
     //notice content to be displayed

@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
-import posed from 'react-pose';
-import {LINKS, TEXT_NAMES, FADE_DURATION} from "../../data/constants";
+import {LINKS, TEXT_NAMES, FADE_DURATION, AnimatedContent} from "../../data/constants";
 import QuickLink from "./QuickLink/QuickLink";
 import * as actionTypes from "../../store/actions";
 
@@ -29,18 +28,6 @@ const Wrapper = styled.div`
     
     padding: 1em 1em;
 `;
-
-/* POSE */
-const AnimatedContent = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0px)'
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});
 
 const QuickLinks = (props) => {
 
