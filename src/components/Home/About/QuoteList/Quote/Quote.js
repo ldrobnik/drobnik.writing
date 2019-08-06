@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     margin: 4em 0;
-    padding: 0 3em;
+    padding: 0 5em;
     position: relative;
     
     @media all and (max-width: ${props => props.theme.extraSmallScr}) {
@@ -12,6 +12,10 @@ const Wrapper = styled.div`
     
     @media all and (max-width: ${props => props.theme.smallScr}) {
        padding: 0 1em;
+    }
+    
+    @media all and (max-width: ${props => props.theme.mediumScr}) {
+       padding: 0 3em;
     }
 `;
 
