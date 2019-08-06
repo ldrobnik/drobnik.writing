@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 const Message = styled.div`
   font-weight: bold;
   font-size: ${props => props.theme.bodySize};
-  margin: 2em 0;
+  margin: 3em 0;
 `;
 
 /* POSE */
