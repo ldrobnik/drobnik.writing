@@ -1,14 +1,15 @@
 import React, {useEffect} from 'react';
-import styled from 'styled-components';
 import {connect} from 'react-redux';
+import styled from 'styled-components';
+
+import * as actionTypes from "./../../store/actions";
+import {TEXT_NAMES} from './../../data/constants';
 
 import Intro from './Intro/Intro';
 import Nocturine from './Nocturine/Nocturine';
 import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
 import CopyrightNote from './../UI/CopyrightNote/CopyrightNote';
-import * as actionTypes from "./../../store/actions";
-import {TEXT_NAMES} from './../../data/constants';
 
 /* STYLED COMPONENTS */
 const TopAnchor = styled.div`
@@ -17,8 +18,8 @@ const TopAnchor = styled.div`
 `;
 
 const Wrapper = styled.div`
-
     overflow: hidden;
+    padding: 7em 1em 2em 1em;
     
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
       padding: 7em 3em 2em 3em;
@@ -31,7 +32,7 @@ const Wrapper = styled.div`
     @media all and (min-width: ${props => props.theme.mediumScr}) {
       padding: 7em 20% 2em 20%;
     }
-    
+   
     @media all and (min-width: ${props => props.theme.largeScr}) {
       padding: 7em 22% 2em 22%;
     }
@@ -39,22 +40,15 @@ const Wrapper = styled.div`
     @media all and (min-width: ${props => props.theme.extraLargeScr}) {
       padding: 7em 25% 2em 25%;
     }
-    
-    padding: 7em 1em 2em 1em;
-    
 `;
 
 const SectionWrapper = styled.div`
     margin-bottom: 5em;
 `;
 
-
 const About = (props) => {
-
-
     //part of page title to be displayed depending on the current language
     const fictionWriter = (props.lang === 'en') ? 'fiction writer' : 'prozaik';
-
 
     //updates current theme
     const updateTheme = () => {
@@ -100,7 +94,6 @@ const About = (props) => {
         setTextNotDisplayed();
     });
 
-
     return (
         <Wrapper>
             <TopAnchor>
@@ -120,7 +113,6 @@ const About = (props) => {
             </SectionWrapper>
             <CopyrightNote/>
         </Wrapper>
-
     );
 };
 

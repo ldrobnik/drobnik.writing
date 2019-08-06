@@ -1,18 +1,20 @@
 import React, {useState, useEffect} from 'react';
+import {withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
 import styled from 'styled-components';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
-import {connect} from 'react-redux';
-import {withRouter} from 'react-router-dom';
-import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'
+
+import * as actionTypes from "./../../../store/actions";
 import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from '../../../data/constants';
+
+import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'
 import SectionHeading from './../../UI/SectionHeading/SectionHeading';
 import CentredPhoto from './../../UI/CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import CentredButton from './../../UI/CentredButton/CentredButton';
 import SectionLinks from '../SectionLinks/SectionLinks';
 import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';
-import * as actionTypes from "./../../../store/actions";
 
 /* STYLED COMPONENTS */
 const Body = styled.div`
@@ -20,7 +22,7 @@ const Body = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.serif};
   line-height: 1.4em;
-  
+ 
     a {
       font-family: ${props => props.theme.sansSerif};
     }
@@ -34,7 +36,6 @@ const Separator = styled.div`
 `;
 
 /* POSE */
-
 const AnimatedLinks = posed.div({
     visible: {
         opacity: 1,
@@ -49,7 +50,6 @@ const AnimatedLinks = posed.div({
         transform: 'scale(0,0)'
     }
 });
-
 
 const AnimatedButton = posed.div({
     visible: {
@@ -68,7 +68,6 @@ const AnimatedButton = posed.div({
 });
 
 const Intro = (props) => {
-
     //specifies whether social links and Patreon should be visible
     const [socialVisible, setSocialVisible] = useState(false);
 
@@ -84,29 +83,23 @@ const Intro = (props) => {
 
     //hides the social links and Patreon button
     const hideSocial = () => {
-      setSocialVisible(false);
+        setSocialVisible(false);
     };
 
-
     useEffect(() => {
-
         //show content after a while
         setTimeout(
             () => {
                 showContent();
             }, FADE_DURATION
         );
-
     });
 
     //hide social links whenever the pathname changes
     useEffect(() => {
-
             setTimeout(() => {
-
                 hideSocial();
             }, 100);
-
         },
         [props.location.pathname]
     );
