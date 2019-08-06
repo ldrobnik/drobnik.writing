@@ -207,7 +207,7 @@ const Pubs = (props) => {
                     top={true}
                     nocturine={true}
                     pubs={true}
-                    read={false}
+                    read={true}
                 />
                 <SectionSeparator/>
             </AnimatedContent>

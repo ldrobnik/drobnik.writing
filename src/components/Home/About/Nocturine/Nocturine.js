@@ -126,7 +126,7 @@ const Nocturine = (props) => {
                     lang={props.lang}
                     top={true}
                     nocturine={false}
-                    pubs={false}
+                    pubs={true}
                     read={true}
                 />
                 <SectionSeparator/>

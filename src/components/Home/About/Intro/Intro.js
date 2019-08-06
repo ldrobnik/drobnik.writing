@@ -140,7 +140,7 @@ const Intro = (props) => {
                 <SectionLinks
                     lang={props.lang}
                     top={false}
-                    nocturine={false}
+                    nocturine={true}
                     pubs={true}
                     read={true}
                 />
