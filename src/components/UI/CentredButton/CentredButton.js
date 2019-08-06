@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import {connect} from 'react-redux';
 import {POP_KEYFRAMES} from "../../../data/constants";
+import * as actionTypes from "../../../store/actions";
 
 const Wrapper = styled.div`
   text-align: center;
@@ -51,6 +53,11 @@ const ButtonWrapper = styled.div`
 
 const CentredButton = (props) => {
 
+    //sets off page reloading animation
+    const reloadPage = () => {
+        props.onReloadChange(true);
+    };
+
     //constant holding the button content
     const buttonMessage = props.message;
 
@@ -68,7 +75,9 @@ const CentredButton = (props) => {
     if (props.path[0] === '/') {
         workingButton = (
 
-            <Link to={props.path}>
+            <Link
+                to={props.path}
+                onClick={reloadPage}>
                 {buttonContent}
             </Link>);
 
@@ -91,4 +100,13 @@ const CentredButton = (props) => {
     );
 };
 
-export default CentredButton;
+const mapDispatchToProps = dispatch => {
+    return {
+        onReloadChange: (newState) => dispatch({
+            type: actionTypes.SET_PAGE_RELOAD,
+            pageReload: newState
+        })
+    };
+};
+
+export default connect(null, mapDispatchToProps)(CentredButton);

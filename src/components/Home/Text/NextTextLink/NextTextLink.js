@@ -59,6 +59,7 @@ const NextTextLink = (props) => {
 
     );
 };
+
 const mapDispatchToProps = dispatch => {
     return {
         onReloadChange: (newState) => dispatch({
