@@ -329,6 +329,10 @@ const mapDispatchToProps = dispatch => {
         onSetTextPage: (newState) => dispatch({
             type: actionTypes.SET_TEXT_PAGE,
             textPageDisplayed: newState
+        }),
+        onReloadChange: (newState) => dispatch({
+            type: actionTypes.SET_PAGE_RELOAD,
+            pageReload: newState
         })
     };
 };

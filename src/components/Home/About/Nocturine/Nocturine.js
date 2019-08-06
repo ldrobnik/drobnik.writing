@@ -9,6 +9,7 @@ import CentredButton from "../../../UI/CentredButton/CentredButton";
 import SectionLinks from "../SectionLinks/SectionLinks";
 import QuoteList from '../QuoteList/QuoteList';
 import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
+import * as actionTypes from "../../../../store/actions";
 
 /* STYLED COMPONENTS */
 const Body = styled.div`
@@ -141,4 +142,13 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps)(Nocturine);
+const mapDispatchToProps = dispatch => {
+    return {
+        onReloadChange: (newState) => dispatch({
+            type: actionTypes.SET_PAGE_RELOAD,
+            pageReload: newState
+        })
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Nocturine);

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Text/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Text/Text.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+            <state relative-caret-position="508">
+              <caret line="170" column="58" lean-forward="true" selection-start-line="170" selection-start-column="58" selection-end-line="170" selection-end-column="58" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -31,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="87" column="15" lean-forward="true" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="28" />
+            <state relative-caret-position="539">
+              <caret line="153" column="58" lean-forward="true" selection-start-line="153" selection-start-column="58" selection-end-line="153" selection-end-column="58" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -43,8 +48,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+            <state relative-caret-position="539">
+              <caret line="235" column="58" lean-forward="true" selection-start-line="235" selection-start-column="58" selection-end-line="235" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/About/Read/Read.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="631">
+              <caret line="143" column="58" selection-start-line="143" selection-start-column="58" selection-end-line="143" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,8 +72,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1035">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="31" />
+            <state relative-caret-position="401">
+              <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="33" column="57" lean-forward="true" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+            <state relative-caret-position="539">
+              <caret line="335" column="10" selection-start-line="335" selection-start-column="10" selection-end-line="335" selection-end-column="10" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -71,21 +94,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/store/reducer.js">
+        <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/About/Read/Read.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="85" column="61" lean-forward="true" selection-start-line="84" selection-start-column="12" selection-end-line="85" selection-end-column="61" />
+            <state relative-caret-position="539">
+              <caret line="237" column="38" selection-start-line="237" selection-start-column="37" selection-end-line="237" selection-end-column="38" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -228,18 +242,18 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/QuoteList/QuoteList.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/About.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
-        <option value="$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js" />
-        <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
         <option value="$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/store/actions.js" />
         <option value="$PROJECT_DIR$/src/store/reducer.js" />
+        <option value="$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
+        <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" />
       </list>
     </option>
   </component>
@@ -622,12 +636,12 @@
       <workItem from="1564587171489" duration="8714000" />
       <workItem from="1564641338979" duration="26469000" />
       <workItem from="1564688734239" duration="35498000" />
-      <workItem from="1564815223297" duration="91367000" />
+      <workItem from="1564815223297" duration="91644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323326000" />
+    <option name="totallyTimeSpent" value="323603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="848" y="0" width="1079" height="1047" extended-state="0" />
@@ -1009,63 +1023,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="87" column="15" lean-forward="true" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
           <caret line="894" column="31" selection-start-line="894" selection-start-column="31" selection-end-line="894" selection-end-column="31" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1035">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Read/Read.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="85" column="61" lean-forward="true" selection-start-line="84" selection-start-column="12" selection-end-line="85" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1097,20 +1060,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
+    <entry file="file://$PROJECT_DIR$/src/store/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="33" column="57" lean-forward="true" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+        <state relative-caret-position="148">
+          <caret line="44" column="29" lean-forward="true" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="170" column="58" lean-forward="true" selection-start-line="170" selection-start-column="58" selection-end-line="170" selection-end-column="58" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducer.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+        <state relative-caret-position="539">
+          <caret line="153" column="58" lean-forward="true" selection-start-line="153" selection-start-column="58" selection-end-line="153" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="235" column="58" lean-forward="true" selection-start-line="235" selection-start-column="58" selection-end-line="235" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Read/Read.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="143" column="58" selection-start-line="143" selection-start-column="58" selection-end-line="143" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/QuickLinks/QuickLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="335" column="10" selection-start-line="335" selection-start-column="10" selection-end-line="335" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="237" column="38" selection-start-line="237" selection-start-column="37" selection-end-line="237" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

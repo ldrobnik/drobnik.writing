@@ -8,6 +8,7 @@ import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import SectionLinks from "../SectionLinks/SectionLinks";
 import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
 import ReadListElement from './ReadListElement/ReadListElement';
+import * as actionTypes from "../../../../store/actions";
 
 /* STYLED COMPONENTS */
 const Wrapper = styled.div`
@@ -131,4 +132,13 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps)(Read);
+const mapDispatchToProps = dispatch => {
+    return {
+        onReloadChange: (newState) => dispatch({
+            type: actionTypes.SET_PAGE_RELOAD,
+            pageReload: newState
+        })
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Read);

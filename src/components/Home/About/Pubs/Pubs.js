@@ -11,6 +11,7 @@ import ToggleSwitch from '../../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
 import SectionLinks from "../SectionLinks/SectionLinks";
 import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
+import * as actionTypes from "../../../../store/actions";
 
 /* STYLED COMPONENTS */
 const Wrapper = styled.div`
@@ -223,4 +224,13 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps)(Pubs);
+const mapDispatchToProps = dispatch => {
+    return {
+        onReloadChange: (newState) => dispatch({
+            type: actionTypes.SET_PAGE_RELOAD,
+            pageReload: newState
+        })
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Pubs);

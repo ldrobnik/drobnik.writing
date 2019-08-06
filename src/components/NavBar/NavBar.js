@@ -222,8 +222,16 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onLanguageChange: (newLang) => dispatch({type: actionTypes.SET_LANGUAGE, language: newLang}),
-        onBwModeChange: (newMode) => dispatch({type: actionTypes.SET_BW_MODE, blackAndWhite: newMode})
+        onLanguageChange: (newLang) => dispatch({
+            type: actionTypes.SET_LANGUAGE,
+            language: newLang}),
+        onBwModeChange: (newMode) => dispatch({
+            type: actionTypes.SET_BW_MODE,
+            blackAndWhite: newMode}),
+        onReloadChange: (newState) => dispatch({
+        type: actionTypes.SET_PAGE_RELOAD,
+        pageReload: newState
+    })
     };
 };
 

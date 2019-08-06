@@ -124,6 +124,10 @@ const mapDispatchToProps = dispatch => {
         onSetNotice: (newState) => dispatch({
             type: actionTypes.SET_DATA_NOTICE_VISIBLE,
             dataNoticeVisible: newState
+        }),
+        onReloadChange: (newState) => dispatch({
+            type: actionTypes.SET_PAGE_RELOAD,
+            pageReload: newState
         })
     };
 };
