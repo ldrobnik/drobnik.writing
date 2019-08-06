@@ -78,8 +78,6 @@ const Nocturine = (props) => {
     };
 
 
-
-
     useEffect(() => {
 
         //show content after a while
@@ -106,14 +104,15 @@ const Nocturine = (props) => {
                 <Waypoint
                     onEnter={showQuotes}
                 />
-                <QuoteList
-                    lang={props.lang}
-                    visible={quotesVisible}
-                />
-                <Waypoint
-                    onEnter={showButton}
-                />
             </AnimatedContent>
+            <QuoteList
+                lang={props.lang}
+                visible={quotesVisible}
+            />
+            <Waypoint
+                onEnter={showButton}
+            />
+
             <AnimatedButton
                 pose={buttonVisible ? 'visible' : 'hidden'}>
                 <CentredButton
