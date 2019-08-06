@@ -44,11 +44,11 @@ const QuoteList = (props) => {
                 {WEBSITE_TEXT.nocturine.quotes[props.lang].map((text, k) => {
                     return (
                         <AnimatedQuote
+                            key={k}
                             pose={props.visible ? 'visible' : 'hidden'}>
                             <Quote
                                 quote={text.quote}
                                 source={text.source}
-                                key={k}
                             />
                         </AnimatedQuote>
                     )
