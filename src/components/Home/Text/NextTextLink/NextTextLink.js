@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import {connect} from 'react-redux';
 import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from "../../../../data/constants";
 import * as actionTypes from "../../../../store/actions";
-import mapStateToProps from "react-redux/es/connect/mapStateToProps";
 
 const Wrapper = styled.div`
   display: flex;

@@ -83,9 +83,16 @@ const LinkContent = styled.div`
 `;
 
 const NavBar = (props) => {
+    //Scrolls to top
+    window.scrollTo(0, 0);
 
     //Changes current language
     const changeLanguage = () => {
+        //play the page reloading animation
+        props.onReloadChange(true);
+
+
+
         if (props.lang === 'en') {
             //change Redux state
             props.onLanguageChange('pl');
@@ -114,9 +121,17 @@ const NavBar = (props) => {
 
     };
 
+    //sets off page reloading animation
+    const reloadPage = () => {
+        props.onReloadChange(true);
+    };
+
+
     //Content of the logo link - if on the home page, make it an anchor link scrolling to top
     const logoLink = (props.textDisplayed) ?
-        <Link to='/' className={'textLink'}>
+        <Link
+            to='/' className={'textLink'}
+            onClick={reloadPage}>
             <Logo/>
         </Link> :
         <AnchorLink href='#top'>
@@ -127,7 +142,9 @@ const NavBar = (props) => {
     //Content of the home button - if on the home page, make it an anchor link scrolling to top
     const homeButton = (props.textDisplayed) ?
         <NavElement>
-            <Link to={'/'}>
+            <Link to={'/'}
+                  onClick={reloadPage}
+            >
                 <LinkContent>
                     {WEBSITE_TEXT.navbar.home}
                 </LinkContent>
