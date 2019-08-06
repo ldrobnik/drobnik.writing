@@ -6,7 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import Logo from './Logo/Logo';
 import * as actionTypes from '../../store/actions';
-import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES, FADE_DURATION} from '../../data/constants';
+import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES} from '../../data/constants';
 
 /* STYLED COMPONENTS */
 const Wrapper = styled.div`

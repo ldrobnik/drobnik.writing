@@ -81,13 +81,16 @@ const Home = (props) => {
     //Scrolls to top initially and if the URL path changes
     useEffect(() => {
 
-            //check localStorage and update Redux state accordingly
-            checkLocalStorage();
-
-
             window.scrollTo(0, 0);
         },
         [props.location.pathname]
+    );
+
+    useEffect(() => {
+
+            //check localStorage and update Redux state accordingly
+            checkLocalStorage();
+  }
     );
 
     return (
