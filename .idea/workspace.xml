@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/Intro/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Intro/Intro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/Nocturine/Nocturine.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Nocturine/Nocturine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/Pubs/PubList/PubList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Pubs/PubList/PubList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/Pubs/PubList/PubTile/PubTile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Pubs/PubList/PubTile/PubTile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/Pubs/Pubs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Pubs/Pubs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/QuoteList/Quote/Quote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/QuoteList/Quote/Quote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/QuoteList/QuoteList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/QuoteList/QuoteList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/Read/Read.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Read/Read.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/SectionLinks/SectionLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/SectionLinks/SectionLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/SocialLinks/SocialLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/SocialLinks/SocialLinks.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/About/Pubs/Pubs.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1844">
-              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+              <caret line="139" selection-start-line="139" selection-end-line="139" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -46,12 +44,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/About/About.js">
+        <entry file="file://$PROJECT_DIR$/src/components/About/Read/Read.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+            <state relative-caret-position="-1048">
+              <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,8 +70,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/About/Pubs/PubList/PubTile/PubTile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+            <state relative-caret-position="-36">
+              <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/About/Pubs/PubList/PubList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -82,10 +92,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/About/Pubs/PubList/PubList.js">
+        <entry file="file://$PROJECT_DIR$/src/components/About/SocialLinks/SocialLinks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="424">
+              <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/About/QuoteList/QuoteList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-749">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/About/SectionLinks/SectionLinks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/About/QuoteList/Quote/Quote.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -169,7 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/UI/BackdropImage/BackdropImage.js" />
         <option value="$PROJECT_DIR$/src/components/Links/Links.js" />
         <option value="$PROJECT_DIR$/src/components/Links/Link/Link.js" />
         <option value="$PROJECT_DIR$/src/components/Links/QuickLinks.js" />
@@ -202,11 +244,7 @@
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/ReadListElement/ReadListElement.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubList.js" />
         <option value="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" />
-        <option value="$PROJECT_DIR$/src/components/About/Read/Read.js" />
         <option value="$PROJECT_DIR$/src/components/About/Read/ReadListElement/ReadListElement.js" />
-        <option value="$PROJECT_DIR$/src/components/About/SocialLinks/SocialLinks.js" />
-        <option value="$PROJECT_DIR$/src/components/About/SectionLinks/SectionLinks.js" />
-        <option value="$PROJECT_DIR$/src/components/About/QuoteList/QuoteList.js" />
         <option value="$PROJECT_DIR$/src/components/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/components/Text/NextTextLink/NextTextLink.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
@@ -220,6 +258,11 @@
         <option value="$PROJECT_DIR$/src/components/About/Pubs/Pubs.js" />
         <option value="$PROJECT_DIR$/src/components/About/Pubs/PubList/PubTile/PubTile.js" />
         <option value="$PROJECT_DIR$/src/components/About/Pubs/PubList/PubList.js" />
+        <option value="$PROJECT_DIR$/src/components/About/QuoteList/QuoteList.js" />
+        <option value="$PROJECT_DIR$/src/components/About/QuoteList/Quote/Quote.js" />
+        <option value="$PROJECT_DIR$/src/components/About/Read/Read.js" />
+        <option value="$PROJECT_DIR$/src/components/About/SectionLinks/SectionLinks.js" />
+        <option value="$PROJECT_DIR$/src/components/About/SocialLinks/SocialLinks.js" />
       </list>
     </option>
   </component>
@@ -315,6 +358,47 @@
               <item name="Pubs" type="462c0819:PsiDirectoryNode" />
               <item name="PubList" type="462c0819:PsiDirectoryNode" />
               <item name="PubTile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="About" type="462c0819:PsiDirectoryNode" />
+              <item name="QuoteList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="About" type="462c0819:PsiDirectoryNode" />
+              <item name="QuoteList" type="462c0819:PsiDirectoryNode" />
+              <item name="Quote" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="About" type="462c0819:PsiDirectoryNode" />
+              <item name="Read" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="About" type="462c0819:PsiDirectoryNode" />
+              <item name="SectionLinks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drobnik.writing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="About" type="462c0819:PsiDirectoryNode" />
+              <item name="SocialLinks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drobnik.writing" type="b2602c69:ProjectViewProjectNode" />
@@ -534,12 +618,12 @@
       <workItem from="1565091683809" duration="6178000" />
       <workItem from="1565099382477" duration="97000" />
       <workItem from="1565099534285" duration="435000" />
-      <workItem from="1565099999697" duration="1620000" />
+      <workItem from="1565099999697" duration="1892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336000000" />
+    <option name="totallyTimeSpent" value="336272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="754" y="0" width="1173" height="1047" extended-state="0" />
@@ -547,9 +631,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.21497798" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.21497798" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -600,13 +684,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="11" column="109" selection-start-line="11" selection-start-column="109" selection-end-line="11" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Text/TextLinks/TextLinks.js" />
     <entry file="file://$PROJECT_DIR$/src/components/UI/BackdropImage/BackdropImage.js" />
     <entry file="file://$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js">
@@ -771,50 +848,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/Read/Read.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/About/Read/ReadListElement/ReadListElement.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/SocialLinks/SocialLinks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/SectionLinks/SectionLinks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/QuoteList/QuoteList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -918,27 +955,74 @@
     <entry file="file://$PROJECT_DIR$/src/components/About/Pubs/Pubs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1844">
-          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/Pubs/PubList/PubTile/PubTile.js">
+    <entry file="file://$PROJECT_DIR$/src/components/About/Pubs/PubList/PubList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+        <state relative-caret-position="355">
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/Pubs/PubList/PubList.js">
+    <entry file="file://$PROJECT_DIR$/src/components/About/Pubs/PubList/PubTile/PubTile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="-36">
+          <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About/QuoteList/QuoteList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-749">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About/QuoteList/Quote/Quote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About/Read/Read.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1048">
+          <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About/SectionLinks/SectionLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About/SocialLinks/SocialLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

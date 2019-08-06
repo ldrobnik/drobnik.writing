@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import posed from 'react-pose';
+
 import {WEBSITE_TEXT} from "./../../../data/constants";
+
 import Quote from './Quote/Quote';
 
 /* STYLED COMPONENTS */

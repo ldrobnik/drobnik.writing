@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import {WEBSITE_TEXT} from "./../../../data/constants";
 
-
+/* STYLED COMPONENTS*/
 const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -19,11 +20,10 @@ const Wrapper = styled.div`
     }
 `;
 
-const SocialLinks = (props) => {
+const SocialLinks = () => {
 
     return (
         <Wrapper>
-
             {WEBSITE_TEXT.intro.social.map((link, k) => {
                     return (
                         <a key={k} href={link.url} target="_blank"
@@ -31,7 +31,6 @@ const SocialLinks = (props) => {
                     )
                 }
             )}
-
         </Wrapper>
     );
 };

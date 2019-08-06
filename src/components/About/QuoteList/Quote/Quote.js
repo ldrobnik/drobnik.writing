@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+/* STYLED COMPONENTS */
 const Wrapper = styled.div`
     margin: 4em 0;
     padding: 0 5em;
@@ -22,7 +23,6 @@ const Wrapper = styled.div`
 const QuoteContent = styled.div`
     font-family: ${props => props.theme.serif};
     font-size: ${props => props.theme.captionSize};
-
 `;
 
 const QuoteSource = styled.div`
@@ -30,20 +30,20 @@ const QuoteSource = styled.div`
     font-size: ${props => props.theme.smallCaptionSize};
     margin-top: 1em;
     font-weight: bold;
-        position: relative;
+    position: relative;
 `;
 
 const InvertedCommas = styled.div`
-  font-family: ${props => props.theme.cursive};
-  font-size: 10em;
-  text-transform: uppercase;
-  opacity: ${props => props.theme.transparent};
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-70%, -20%);
-  filter: blur( ${props => props.theme.lightBlur});
-  user-select: none;
+    font-family: ${props => props.theme.cursive};
+    font-size: 10em;
+    text-transform: uppercase;
+    opacity: ${props => props.theme.transparent};
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-70%, -20%);
+    filter: blur( ${props => props.theme.lightBlur});
+    user-select: none;
 `;
 
 const Quote = (props) => {

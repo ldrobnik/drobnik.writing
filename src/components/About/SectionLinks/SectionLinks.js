@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 import {WEBSITE_TEXT} from "./../../../data/constants";
 
 const Wrapper = styled.div`
@@ -39,8 +40,8 @@ const SectionLinks = (props) => {
                 <AnchorLink href={linkPath} offset="60px">{linkText}</AnchorLink>
             );
         }
-
     }
+
     return (
         <Wrapper>
             {linksToDisplay.map((link, k) => {
