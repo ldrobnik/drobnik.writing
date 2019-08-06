@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
+import {withRouter} from 'react-router-dom';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
@@ -133,6 +134,11 @@ const Pubs = (props) => {
         setMessageVisible(true);
     };
 
+    //hides the message
+    const hideMessage = () => {
+        setMessageVisible(false);
+    };
+
     useEffect(() => {
 
         //show content after a while
@@ -143,6 +149,18 @@ const Pubs = (props) => {
         );
 
     });
+
+    //hide message whenever the pathname changes
+    useEffect(() => {
+
+            setTimeout(() => {
+
+                hideMessage();
+            }, 100);
+
+        },
+        [props.location.pathname]
+    );
 
     return (
         <Wrapper>
@@ -231,4 +249,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Pubs);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Pubs));
