@@ -200,9 +200,13 @@ const Pubs = (props) => {
                     </label>
                 </SwitchPanel>
             </AnimatedPanel>
+            <Waypoint
+                onEnter={showMessage}/>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <Separator/>
+                <Waypoint
+                    onEnter={showMessage}/>
                 <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].books}</SubsectionHeading>
                 <PubList
                     en={en}

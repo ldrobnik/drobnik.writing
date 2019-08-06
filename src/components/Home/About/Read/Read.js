@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 import {connect} from 'react-redux';
+import {withRouter} from 'react-router-dom';
 import {WEBSITE_TEXT, TEXT_NAMES, TEXTS, FADE_DURATION} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import SectionLinks from "../SectionLinks/SectionLinks";
@@ -68,6 +69,23 @@ const Read = (props) => {
         setLinksVisible(true);
     };
 
+    //hides the text links
+    const hideLinks = () => {
+        setLinksVisible(false);
+    };
+
+    //hide message whenever the pathname changes
+    useEffect(() => {
+
+            setTimeout(() => {
+
+                hideLinks();
+            }, 100);
+
+        },
+        [props.location.pathname]
+    );
+
     useEffect(() => {
 
         //show content after a while
@@ -119,6 +137,9 @@ const Read = (props) => {
                 />
                 <SectionSeparator/>
             </AnimatedContent>
+            <Waypoint
+                onEnter={showLinks}
+            />
         </Wrapper>
     );
 };
@@ -139,4 +160,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Read);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Read));
