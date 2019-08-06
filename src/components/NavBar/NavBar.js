@@ -1,19 +1,19 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import styled from 'styled-components';
 import {connect} from 'react-redux';
+import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import Logo from './Logo/Logo';
 import * as actionTypes from '../../store/actions';
 import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES} from '../../data/constants';
 
+import Logo from './Logo/Logo';
+
 /* STYLED COMPONENTS */
 const Wrapper = styled.div`
-      .hidden {
-      display: none;
-    }
-    
+    .hidden {
+    display: none;
+    }    
 `;
 
 const Toolbar = styled.header`
@@ -33,28 +33,27 @@ const Toolbar = styled.header`
     backdrop-filter: blur(8px);
 `;
 
-
 const LogoWrapper = styled.div`
-  position: absolute;
-  top: -4px;
-  left: -2px;
+    position: absolute;
+    top: -4px;
+    left: -2px;
   
-   @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+         &:hover {
+                  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+         }
+    }
 `;
 
 const NavElement = styled.div`
-  cursor: pointer;
-  margin: ${props => props.theme.navIconMargin};
+    cursor: pointer;
+    margin: ${props => props.theme.navIconMargin};
 
-  @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+         &:hover {
+                  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+         }
+    }
 `;
 
 const ToggledNavElement = styled.div`
@@ -73,28 +72,22 @@ const InactiveElement = styled.div`
   cursor: default;
   margin: ${props => props.theme.navIconMargin};
   opacity: ${props => props.theme.transparent};
-
 `;
 
 const LinkContent = styled.div`
   padding: ${props => props.theme.navIconPadding};
-      display: block;
-      min-width: 1.5em;
+  display: block;
+  min-width: 1.5em;
 `;
 
 const NavBar = (props) => {
-
-
     //Changes current language
     const changeLanguage = () => {
-
         //Scrolls to top
         window.scrollTo(0, 0);
 
         //play the page reloading animation
         props.onReloadChange(true);
-
-
 
         if (props.lang === 'en') {
             //change Redux state
@@ -114,7 +107,6 @@ const NavBar = (props) => {
     //toggle the black-and-white mode
     const toggleBwMode = () => {
 
-
         //set the opposite state to the current one
         const newColorMode = (!props.bwMode) ? 'b&w' : 'color';
 
@@ -131,7 +123,6 @@ const NavBar = (props) => {
         props.onReloadChange(true);
     };
 
-
     //Content of the logo link - if on the home page, make it an anchor link scrolling to top
     const logoLink = (props.textDisplayed) ?
         <Link
@@ -142,7 +133,6 @@ const NavBar = (props) => {
         <AnchorLink href='#top'>
             <Logo/>
         </AnchorLink>;
-
 
     //Content of the home button - if on the home page, make it an anchor link scrolling to top
     const homeButton = (props.textDisplayed) ?
@@ -213,7 +203,6 @@ const NavBar = (props) => {
             </Link>
         </NavElement>;
 
-
     //class applied to the component content, depending on the navbar visibility state in the Redux store
     const contentClass = (props.showNavbar) ? '' : 'hidden';
 
@@ -249,14 +238,16 @@ const mapDispatchToProps = dispatch => {
     return {
         onLanguageChange: (newLang) => dispatch({
             type: actionTypes.SET_LANGUAGE,
-            language: newLang}),
+            language: newLang
+        }),
         onBwModeChange: (newMode) => dispatch({
             type: actionTypes.SET_BW_MODE,
-            blackAndWhite: newMode}),
+            blackAndWhite: newMode
+        }),
         onReloadChange: (newState) => dispatch({
-        type: actionTypes.SET_PAGE_RELOAD,
-        pageReload: newState
-    })
+            type: actionTypes.SET_PAGE_RELOAD,
+            pageReload: newState
+        })
     };
 };
 
