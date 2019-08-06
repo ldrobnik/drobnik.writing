@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 import {connect} from 'react-redux';
+import {withRouter} from 'react-router-dom';
 import authorsPhoto from '../../../../assets/authorsPhoto.jpg'
 import {WEBSITE_TEXT, FADE_DURATION} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading';
@@ -92,6 +93,11 @@ const Intro = (props) => {
         setSocialVisible(true);
     };
 
+    //hides the social links and Patreon button
+    const hideSocial = () => {
+      setSocialVisible(false);
+    };
+
 
     useEffect(() => {
 
@@ -103,6 +109,18 @@ const Intro = (props) => {
         );
 
     });
+
+    //hide social links whenever the pathname changes
+
+    //Scrolls to top initially and if the URL path changes
+    useEffect(() => {
+
+            //check localStorage and update Redux state accordingly
+            hideSocial();
+
+        },
+        [props.location.pathname]
+    );
 
     return (
         <React.Fragment>
@@ -166,4 +184,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Intro);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Intro));

@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {Route, Switch, withRouter} from 'react-router-dom';
 import {Redirect} from 'react-router';
 import {createGlobalStyle} from 'styled-components';
 import {connect} from 'react-redux';
-import posed, {PoseGroup} from 'react-pose';
 
 import QuickLinks from '../QuickLinks/QuickLinks';
 import Layout from '../Layout/Layout';
@@ -42,17 +41,6 @@ const GlobalStyle = createGlobalStyle`
      }
 `;
 
-/* POSE */
-const RouteContainer = posed.div({
-    enter: {
-        opacity: 1,
-        filter: 'blur(0px)'
-    },
-    exit: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});
 
 const Home = (props) => {
 
