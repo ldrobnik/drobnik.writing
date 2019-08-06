@@ -25,6 +25,8 @@ const TopAnchor = styled.div`
 
 const Wrapper = styled.div`
 
+  overflow: hidden;
+
     @media all and (min-width: ${props => props.theme.extraSmallScr}) {
       padding: 7em 3em 2em 3em;
     }
