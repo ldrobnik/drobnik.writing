@@ -7,14 +7,14 @@ import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
 
-import * as actionTypes from '../../../store/actions';
-import {TEXTS, TEXT_NAMES, WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from '../../../data/constants';
+import * as actionTypes from './../../store/actions';
+import {TEXTS, TEXT_NAMES, WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from './../../data/constants';
 
 
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
 import NextTextLink from './NextTextLink/NextTextLink';
-import SectionSeparator from "../../UI/SectionSeparator/SectionSeparator";
-import CopyrightNote from "../../UI/CopyrightNote/CopyrightNote";
+import SectionSeparator from "./../UI/SectionSeparator/SectionSeparator";
+import CopyrightNote from "./../UI/CopyrightNote/CopyrightNote";
 
 /* STYLED COMPONENTS */
 

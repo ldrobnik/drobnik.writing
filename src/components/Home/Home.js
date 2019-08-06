@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 import QuickLinks from '../QuickLinks/QuickLinks';
 import Layout from '../Layout/Layout';
 import About from '../About/About';
-import Text from './Text/Text';
+import Text from '../Text/Text';
 import DataNotice from '../UI/DataNotice/DataNotice';
 import {PULSATE_KEYFRAMES} from "../../data/constants";
 import * as actionTypes from "../../store/actions";

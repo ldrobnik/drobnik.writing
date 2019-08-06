@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
 import {connect} from 'react-redux';
-import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from "../../../../data/constants";
-import * as actionTypes from "../../../../store/actions";
+import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from "./../../../data/constants";
+import * as actionTypes from "./../../../store/actions";
 
 const Wrapper = styled.div`
   display: flex;
