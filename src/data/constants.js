@@ -168,9 +168,7 @@ export const TEXTS = {
     }
 };
 
-
 //List of publications used in the Pubs section
-
 export const PUBLICATIONS = {
     books: [
         {
@@ -532,7 +530,6 @@ export const PUBLICATIONS = {
 
 };
 
-
 //Colours used in themes
 export const THEME_COLORS = {
     nocturine: {
@@ -570,7 +567,6 @@ export const THEME_COLORS = {
 };
 
 //constant containing text used on the website:
-
 export const WEBSITE_TEXT = {
     navbar: {
         home: <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>,
@@ -695,7 +691,6 @@ export const WEBSITE_TEXT = {
                 }
             ]
         }
-
     },
     publications: {
         title: {
@@ -791,7 +786,6 @@ export const WEBSITE_TEXT = {
             button: 'Rozumiem'
         }
     }
-
 };
 
 //Content of quick links (to be used on Instagram)
@@ -842,7 +836,6 @@ export const LINKS = [
 /* Keyframes used for styled-components animations */
 
 //Keyframes of pulsating animation
-
 export const PULSATE_KEYFRAMES = keyframes`
   0% {
     opacity: 1;
@@ -859,9 +852,7 @@ export const PULSATE_KEYFRAMES = keyframes`
 
 
 //Keyframes for 'popping' animation
-
 export const POP_KEYFRAMES = keyframes`
-
   0% {
     transform: scale(1, 1);
   }
@@ -874,15 +865,12 @@ export const POP_KEYFRAMES = keyframes`
   100% {
     transform: scale(1, 1);
   }
-  
 `;
 
 //Duration of the fade-in animation used when loading new page
-
 export const FADE_DURATION = 200;
 
 //Reusable posed component specifying the basic fade-in animation
-
 export const AnimatedContent = posed.div({
     visible: {
         opacity: 1,

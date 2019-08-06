@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CentredButton/CentredButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CentredPhoto/CentredPhoto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/CopyrightNote/CopyrightNote.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/CopyrightNote/CopyrightNote.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/DataNotice/DataNotice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/SectionHeading/SectionHeading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/SectionHeading/SectionHeading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/SectionSeparator/SectionSeparator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/SectionSeparator/SectionSeparator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,30 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Text/Text.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1185">
-              <caret line="250" column="18" selection-start-line="250" selection-start-column="18" selection-end-line="250" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Text/DescriptionPanel/DescriptionPanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Text/NextTextLink/NextTextLink.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -137,6 +108,31 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="869" column="62" selection-start-line="869" selection-start-column="62" selection-end-line="869" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#472#522#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="23">
+                <caret line="1" selection-start-line="1" selection-end-line="1" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -222,7 +218,6 @@
         <option value="$PROJECT_DIR$/src/components/Home/About/SocialLinks/SocialLinks.js" />
         <option value="$PROJECT_DIR$/src/store/actions.js" />
         <option value="$PROJECT_DIR$/src/store/reducer.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/QuickLinks/QuickLink/QuickLink.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/NextTextLink/NextTextLink.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Intro/Intro.js" />
@@ -231,7 +226,6 @@
         <option value="$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel/DescriptionPanel.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
-        <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/About.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" />
@@ -268,6 +262,8 @@
         <option value="$PROJECT_DIR$/src/components/UI/SectionHeading/SectionHeading.js" />
         <option value="$PROJECT_DIR$/src/components/UI/SectionSeparator/SectionSeparator.js" />
         <option value="$PROJECT_DIR$/src/components/UI/ToggleSwitch/ToggleSwitch.js" />
+        <option value="$PROJECT_DIR$/src/data/constants.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -631,12 +627,12 @@
       <workItem from="1565091683809" duration="6178000" />
       <workItem from="1565099382477" duration="97000" />
       <workItem from="1565099534285" duration="435000" />
-      <workItem from="1565099999697" duration="2911000" />
+      <workItem from="1565099999697" duration="3048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337291000" />
+    <option name="totallyTimeSpent" value="337428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="754" y="0" width="1173" height="1047" extended-state="0" />
@@ -720,16 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Text/NextTextLink/NextTextLink.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -767,16 +753,6 @@
           <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1072,6 +1048,27 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="869" column="62" selection-start-line="869" selection-start-column="62" selection-end-line="869" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#472#522#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="23">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
