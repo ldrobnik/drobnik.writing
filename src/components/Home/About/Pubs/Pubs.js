@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
-import {WEBSITE_TEXT} from '../../../../data/constants';
+import {WEBSITE_TEXT, FADE_DURATION} from '../../../../data/constants';
 
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import ToggleSwitch from '../../../UI/ToggleSwitch/ToggleSwitch';
@@ -57,6 +57,18 @@ const Separator = styled.div`
 
 
 /* POSE */
+const AnimatedContent = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0px)'
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)'
+    }
+});
+
+
 const AnimatedMessage = posed.div({
     visible: {
         opacity: 1,
@@ -98,6 +110,14 @@ const Pubs = (props) => {
     //specifies whether the message should be visible
     const [messageVisible, setMessageVisible] = useState(false);
 
+    //specifies whether the content should be visible
+    const [contentVisible, setContentVisible] = useState(false);
+
+    //shows the content
+    const showContent = () => {
+        setContentVisible(true);
+    };
+
     //toggles the display of English pubs and if both en and pl are false, sets pl to true
     const setEnHandler = () => {
         setEn(!en);
@@ -115,14 +135,28 @@ const Pubs = (props) => {
         setMessageVisible(true);
     };
 
+    useEffect(() => {
+
+        //show content after a while
+        setTimeout(
+            () => {
+                showContent();
+            }, FADE_DURATION
+        );
+
+    });
+
     return (
         <Wrapper>
-            <SectionHeading
-                title={WEBSITE_TEXT.publications.title[props.lang]}
-                subtitle=""
-            />
-            <Waypoint
-                onEnter={showMessage}/>
+            <AnimatedContent
+                pose={contentVisible ? 'visible' : 'hidden'}>
+                <SectionHeading
+                    title={WEBSITE_TEXT.publications.title[props.lang]}
+                    subtitle=""
+                />
+                <Waypoint
+                    onEnter={showMessage}/>
+            </AnimatedContent>
             <AnimatedMessage
                 pose={messageVisible ? 'visible' : 'hidden'}>
                 <Message>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</Message>
@@ -150,32 +184,35 @@ const Pubs = (props) => {
                     </label>
                 </SwitchPanel>
             </AnimatedPanel>
-            <Separator/>
-            <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].books}</SubsectionHeading>
-            <PubList
-                en={en}
-                pl={pl}
-                type="books"/>
-            <Separator/>
-            <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].press}</SubsectionHeading>
-            <PubList
-                en={en}
-                pl={pl}
-                type="press"/>
-            <Separator/>
-            <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].collections}</SubsectionHeading>
-            <PubList
-                en={en}
-                pl={pl}
-                type="collections"/>
-            <SectionLinks
-                lang={props.lang}
-                top={true}
-                nocturine={true}
-                pubs={true}
-                read={false}
-            />
-            <SectionSeparator/>
+            <AnimatedContent
+                pose={contentVisible ? 'visible' : 'hidden'}>
+                <Separator/>
+                <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].books}</SubsectionHeading>
+                <PubList
+                    en={en}
+                    pl={pl}
+                    type="books"/>
+                <Separator/>
+                <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].press}</SubsectionHeading>
+                <PubList
+                    en={en}
+                    pl={pl}
+                    type="press"/>
+                <Separator/>
+                <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].collections}</SubsectionHeading>
+                <PubList
+                    en={en}
+                    pl={pl}
+                    type="collections"/>
+                <SectionLinks
+                    lang={props.lang}
+                    top={true}
+                    nocturine={true}
+                    pubs={true}
+                    read={false}
+                />
+                <SectionSeparator/>
+            </AnimatedContent>
         </Wrapper>
     );
 };

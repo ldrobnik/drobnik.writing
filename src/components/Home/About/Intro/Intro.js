@@ -4,7 +4,7 @@ import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 import {connect} from 'react-redux';
 import authorsPhoto from '../../../../assets/authorsPhoto.jpg'
-import {WEBSITE_TEXT} from '../../../../data/constants';
+import {WEBSITE_TEXT, FADE_DURATION} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading';
 import CentredPhoto from '../../../UI/CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
@@ -101,7 +101,7 @@ const Intro = (props) => {
         setTimeout(
             () => {
                 showContent();
-            }, 200
+            }, FADE_DURATION
         );
 
     });

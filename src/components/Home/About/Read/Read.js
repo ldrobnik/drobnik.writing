@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 import {connect} from 'react-redux';
-import {WEBSITE_TEXT, TEXT_NAMES, TEXTS} from '../../../../data/constants';
+import {WEBSITE_TEXT, TEXT_NAMES, TEXTS, FADE_DURATION} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import SectionLinks from "../SectionLinks/SectionLinks";
 import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
@@ -21,8 +21,17 @@ const Message = styled.div`
 `;
 
 /* POSE */
+const AnimatedContent = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0px)'
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)'
+    }
+});
 
-/* POSE */
 const AnimatedList = posed.div({
     visible: {
         delayChildren: 400,
@@ -35,7 +44,8 @@ const AnimatedLink = posed.div({
         x: '0%',
         transition: {
             type: 'spring',
-            stiffness: 100 }
+            stiffness: 100
+        }
     },
     hidden: {
         x: '200%'
@@ -47,17 +57,39 @@ const Read = (props) => {
     //specifies whether text links should be visible
     const [linksVisible, setLinksVisible] = useState(false);
 
+    //specifies whether the content should be visible
+    const [contentVisible, setContentVisible] = useState(false);
+
+    //shows the content
+    const showContent = () => {
+        setContentVisible(true);
+    };
+
     //shows the text links
     const showLinks = () => {
         setLinksVisible(true);
     };
+
+    useEffect(() => {
+
+        //show content after a while
+        setTimeout(
+            () => {
+                showContent();
+            }, FADE_DURATION
+        );
+
+    });
     return (
         <Wrapper>
-            <SectionHeading
-                title={WEBSITE_TEXT.read.title[props.lang]}
-                subtitle=""
-            />
-            <Message>{WEBSITE_TEXT.read.introduction[props.lang]}</Message>
+            <AnimatedContent
+                pose={contentVisible ? 'visible' : 'hidden'}>
+                <SectionHeading
+                    title={WEBSITE_TEXT.read.title[props.lang]}
+                    subtitle=""
+                />
+                <Message>{WEBSITE_TEXT.read.introduction[props.lang]}</Message>
+            </AnimatedContent>
             <Waypoint
                 onEnter={showLinks}
             />
@@ -78,14 +110,17 @@ const Read = (props) => {
                     )
                 })}
             </AnimatedList>
-            <SectionLinks
-                lang={props.lang}
-                top={true}
-                nocturine={true}
-                pubs={true}
-                read={false}
-            />
-            <SectionSeparator/>
+            <AnimatedContent
+                pose={contentVisible ? 'visible' : 'hidden'}>
+                <SectionLinks
+                    lang={props.lang}
+                    top={true}
+                    nocturine={true}
+                    pubs={true}
+                    read={false}
+                />
+                <SectionSeparator/>
+            </AnimatedContent>
         </Wrapper>
     );
 };

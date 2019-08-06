@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import posed from 'react-pose';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
-import {WEBSITE_TEXT} from '../../../../data/constants';
+import {WEBSITE_TEXT, FADE_DURATION} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
 import CentredButton from "../../../UI/CentredButton/CentredButton";
 import SectionLinks from "../SectionLinks/SectionLinks";
@@ -85,7 +85,7 @@ const Nocturine = (props) => {
         setTimeout(
             () => {
                 showContent();
-            }, 200
+            }, FADE_DURATION
         );
 
     });
