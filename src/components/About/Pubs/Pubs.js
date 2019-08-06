@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import styled from 'styled-components';
-import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+import styled from 'styled-components';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
+import * as actionTypes from "./../../../store/actions";
 import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from './../../../data/constants';
 
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
@@ -12,7 +13,6 @@ import ToggleSwitch from './../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
 import SectionLinks from "../SectionLinks/SectionLinks";
 import SectionSeparator from "./../../UI/SectionSeparator/SectionSeparator";
-import * as actionTypes from "./../../../store/actions";
 
 /* STYLED COMPONENTS */
 const Wrapper = styled.div`
@@ -32,14 +32,12 @@ const SwitchPanel = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-weight: bold;
   margin-bottom: 2em;
-
 `;
 
 const SwitchWrapper = styled.div`
   display: flex;
   margin: 0.5em;
 `;
-
 
 const Label = styled.span`
   padding: 0.1em;
@@ -58,9 +56,7 @@ const Separator = styled.div`
   background-color: ${props => props.theme.darkColor};
 `;
 
-
 /* POSE */
-
 const AnimatedMessage = posed.div({
     visible: {
         opacity: 1,
@@ -137,7 +133,6 @@ const Pubs = (props) => {
                 showContent();
             }, FADE_DURATION
         );
-
     });
 
     //hide message whenever the pathname changes

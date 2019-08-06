@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import posed, {PoseGroup} from 'react-pose';
+
 import {PUBLICATIONS} from "./../../../../data/constants";
+
 import PubTile from "./PubTile/PubTile";
 
 /* STYLED COMPONENTS */
@@ -51,12 +53,11 @@ const PubList = (props) => {
                                         descriptionEn={pub.descriptionEn}
                                         language={pub.language}
                                         pieceTitle={pub.pieceTitle}
+                                        key={k}
                                     />
                                 </AnimatedTile>
-                            )
-                        } else {
-                            return <div></div>
-                        }
+                            )}
+                        return null;
                     })
                 }
             </PoseGroup>

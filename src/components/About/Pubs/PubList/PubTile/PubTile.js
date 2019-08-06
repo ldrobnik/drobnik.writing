@@ -1,7 +1,7 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {connect} from 'react-redux';
 
 import {POP_KEYFRAMES} from "./../../../../../data/constants";
 
@@ -16,18 +16,15 @@ const Tile = styled.div`
     display: table-cell;
     vertical-align: middle;
     overflow: hidden;
-    
-
-    
 `;
 
 const TileWrapper = styled.div`
   display: table;
   margin: 0.8em 0;
   
-    &:hover {
-        animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
-      }
+  &:hover {
+     animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
+  }
 `;
 
 const Year = styled.div`
@@ -39,7 +36,6 @@ const Title = styled.div`
   font-size: ${props => props.theme.bodySize};
   text-transform: uppercase;
   font-weight: bold;
-  
 `;
 
 const Separator = styled.div`
@@ -72,11 +68,9 @@ const PubTile = (props) => {
     //text to be displayed if the issue number/name is available
     const issue = (props.issue !== undefined) ? <p><i>{props.issue}</i></p> : <div></div>;
 
-
     //the above description wrapped in a tile element
     const tileContent =
-
-        <TileWrapper>
+         <TileWrapper>
             <Tile>
                 <Year><i>{year}</i></Year>
                 <Title>{props.title}</Title>

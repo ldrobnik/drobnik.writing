@@ -47,6 +47,7 @@ const SectionWrapper = styled.div`
 `;
 
 const About = (props) => {
+
     //part of page title to be displayed depending on the current language
     const fictionWriter = (props.lang === 'en') ? 'fiction writer' : 'prozaik';
 

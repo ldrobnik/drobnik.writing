@@ -68,6 +68,7 @@ const AnimatedButton = posed.div({
 });
 
 const Intro = (props) => {
+
     //specifies whether social links and Patreon should be visible
     const [socialVisible, setSocialVisible] = useState(false);
 

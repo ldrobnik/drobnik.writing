@@ -51,6 +51,7 @@ const AnimatedButton = posed.div({
 });
 
 const Nocturine = (props) => {
+
     //specifies whether the quotes should be displayed - triggered by scrolling to the Waypoint element
     const [quotesVisible, setQuotesVisible] = useState(false);
 
@@ -96,7 +97,6 @@ const Nocturine = (props) => {
         },
         [props.location.pathname]
     );
-
 
     return (
         <React.Fragment>
