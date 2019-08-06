@@ -1,54 +1,49 @@
 import React, {useState, useEffect} from 'react';
-import styled from 'styled-components';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
+import {connect} from 'react-redux';
+import styled from 'styled-components';
 import posed from 'react-pose';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Waypoint} from "react-waypoint";
-
 
 import * as actionTypes from './../../store/actions';
 import {TEXTS, TEXT_NAMES, WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from './../../data/constants';
 
-
+import Credits from './Credits/Credits';
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
 import NextTextLink from './NextTextLink/NextTextLink';
 import SectionSeparator from "./../UI/SectionSeparator/SectionSeparator";
 import CopyrightNote from "./../UI/CopyrightNote/CopyrightNote";
 
 /* STYLED COMPONENTS */
-
 const TopAnchor = styled.div`
   position: absolute;
   top: 0;
 `;
 
 const Wrapper = styled.div`
-
   overflow: hidden;
+  padding: 7em 1em 2em 1em;
 
-    @media all and (min-width: ${props => props.theme.extraSmallScr}) {
+  @media all and (min-width: ${props => props.theme.extraSmallScr}) {
       padding: 7em 3em 2em 3em;
-    }
+  }
     
-    @media all and (min-width: ${props => props.theme.smallScr}) {
+  @media all and (min-width: ${props => props.theme.smallScr}) {
       padding: 7em 10% 2em 10%;
-    }
+  }
     
-    @media all and (min-width: ${props => props.theme.mediumScr}) {
+  @media all and (min-width: ${props => props.theme.mediumScr}) {
       padding: 7em 20% 2em 20%;
-    }
+  }
     
-    @media all and (min-width: ${props => props.theme.largeScr}) {
+  @media all and (min-width: ${props => props.theme.largeScr}) {
       padding: 7em 25% 2em 25%;
-    }
+  }
     
-    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
       padding: 7em 32% 2em 32%;
-    }
-    
-    padding: 7em 1em 2em 1em;
-
+  }
 `;
 
 const Header = styled.div`
@@ -76,9 +71,7 @@ const TextSubtitle = styled.div`
     @media all and (max-width: ${props => props.theme.smallScr}) {
       font-size: 8vw;
     }
-    
 `;
-
 
 const TextBody = styled.div`
     font-family: ${props => props.theme.serif};
@@ -86,12 +79,6 @@ const TextBody = styled.div`
     line-height: 1.4em;
     position: relative;
     margin-top: 2em;
-`;
-
-const Credits = styled.div`
-  font-size: ${props => props.theme.captionSize};
-  font-family: ${props => props.theme.serif};
-  margin-top: 2em;
 `;
 
 const Links = styled.div`
@@ -262,9 +249,9 @@ const Text = (props) => {
                 <Waypoint
                     onEnter={hideLink}
                 />
-                <Credits>
-                    <i>{TEXTS[props.lang][textName].credits}</i>
-                </Credits>
+                <Credits
+                    lang={props.lang}
+                    textName={textName} />
                 <DescriptionPanel
                     description={TEXTS[props.lang][textName].description}
                     title={TEXTS[props.lang][textName].title}
