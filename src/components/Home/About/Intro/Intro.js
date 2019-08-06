@@ -32,6 +32,18 @@ const Separator = styled.div`
 `;
 
 /* POSE */
+
+const AnimatedContent = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0px)'
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)'
+    }
+});
+
 const AnimatedLinks = posed.div({
     visible: {
         opacity: 1,
@@ -48,8 +60,6 @@ const AnimatedLinks = posed.div({
 });
 
 
-
-/* POSE */
 const AnimatedButton = posed.div({
     visible: {
         opacity: 1,
@@ -68,27 +78,51 @@ const AnimatedButton = posed.div({
 
 const Intro = (props) => {
 
-    //specifies whether social links and Patreon button are visible
+    //specifies whether social links and Patreon should be visible
     const [socialVisible, setSocialVisible] = useState(false);
+
+    //specifies whether the content should be visible
+    const [contentVisible, setContentVisible] = useState(false);
+
+    //shows the content
+    const showContent = () => {
+        setContentVisible(true);
+    };
 
     //shows the social links and Patreon button
     const showSocial = () => {
         setSocialVisible(true);
     };
+
+    //Scrolls to top initially and if the URL path changes
+    useEffect(() => {
+
+        //show content after a while
+        setTimeout(
+            () => {
+                showContent();
+            }, 200
+        );
+
+    });
+
     return (
         <React.Fragment>
-            <SectionHeading
-                title={WEBSITE_TEXT.intro.title}
-                subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
-            />
-            <Separator />
-            <CentredPhoto
-                source={authorsPhoto}
-                altText='Author’s photo'
-            />
-            <Body>
-                {WEBSITE_TEXT.intro.body[props.lang]}
-            </Body>
+            <AnimatedContent
+                pose={contentVisible ? 'visible' : 'hidden'}>
+                <SectionHeading
+                    title={WEBSITE_TEXT.intro.title}
+                    subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
+                />
+                <Separator/>
+                <CentredPhoto
+                    source={authorsPhoto}
+                    altText='Author’s photo'
+                />
+                <Body>
+                    {WEBSITE_TEXT.intro.body[props.lang]}
+                </Body>
+            </AnimatedContent>
             <AnimatedLinks
                 pose={socialVisible ? 'visible' : 'hidden'}>
                 <SocialLinks/>
@@ -98,19 +132,22 @@ const Intro = (props) => {
                 <CentredButton
                     message={WEBSITE_TEXT.intro.patreon[props.lang].message}
                     path={WEBSITE_TEXT.intro.patreon[props.lang].path}
-                    />
+                />
             </AnimatedButton>
             <Waypoint
                 onEnter={showSocial}
             />
-            <SectionLinks
-                lang={props.lang}
-                top={false}
-                nocturine={false}
-                pubs={true}
-                read={true}
-            />
-            <SectionSeparator/>
+            <AnimatedContent
+                pose={contentVisible ? 'visible' : 'hidden'}>
+                <SectionLinks
+                    lang={props.lang}
+                    top={false}
+                    nocturine={false}
+                    pubs={true}
+                    read={true}
+                />
+                <SectionSeparator/>
+            </AnimatedContent>
         </React.Fragment>
     );
 };

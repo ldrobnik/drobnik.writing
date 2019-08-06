@@ -54,27 +54,9 @@ const RouteContainer = posed.div({
     }
 });
 
-const AllContentWrapper = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0px)'
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});
-
-
 const Home = (props) => {
 
-    //specifies whether the content should be visible
-    const [contentVisible, setContentVisible] = useState(false);
 
-    //shows the content
-    const showContent = () => {
-        setContentVisible(true);
-    };
 
     //checks if any data is stored in localStorage and updates Redux state accordingly
     const checkLocalStorage = () => {
@@ -115,12 +97,6 @@ const Home = (props) => {
             //check localStorage and update Redux state accordingly
             checkLocalStorage();
 
-            //show content after a while
-            setTimeout(
-                () => {
-                    showContent();
-                }, 1000
-            );
 
             window.scrollTo(0, 0);
         },
@@ -130,8 +106,6 @@ const Home = (props) => {
     return (
         <React.Fragment>
             <GlobalStyle/>
-            <AllContentWrapper
-            pose={contentVisible ? 'visible' : 'hidden'}>
             <Route
                 render={({location}) => (
                     <Layout>
@@ -152,7 +126,6 @@ const Home = (props) => {
                     </Layout>
                 )}
             />
-            </AllContentWrapper>
         </React.Fragment>
     );
 };
