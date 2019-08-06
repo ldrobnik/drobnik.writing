@@ -4,12 +4,12 @@ import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
-import {WEBSITE_TEXT, TEXT_NAMES, TEXTS, FADE_DURATION, AnimatedContent} from '../../../../data/constants';
-import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
+import {WEBSITE_TEXT, TEXT_NAMES, TEXTS, FADE_DURATION, AnimatedContent} from './../../../data/constants';
+import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import SectionLinks from "../SectionLinks/SectionLinks";
-import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
+import SectionSeparator from "./../../UI/SectionSeparator/SectionSeparator";
 import ReadListElement from './ReadListElement/ReadListElement';
-import * as actionTypes from "../../../../store/actions";
+import * as actionTypes from "./../../../store/actions";
 
 /* STYLED COMPONENTS */
 const Wrapper = styled.div`

@@ -4,15 +4,15 @@ import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
-import authorsPhoto from '../../../../assets/authorsPhoto.jpg'
-import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from '../../../../data/constants';
-import SectionHeading from '../../../UI/SectionHeading/SectionHeading';
-import CentredPhoto from '../../../UI/CentredPhoto/CentredPhoto';
+import authorsPhoto from '../../../assets/authorsPhoto.jpg'
+import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from '../../../data/constants';
+import SectionHeading from './../../UI/SectionHeading/SectionHeading';
+import CentredPhoto from './../../UI/CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
-import CentredButton from '../../../UI/CentredButton/CentredButton';
+import CentredButton from './../../UI/CentredButton/CentredButton';
 import SectionLinks from '../SectionLinks/SectionLinks';
-import SectionSeparator from '../../../UI/SectionSeparator/SectionSeparator';
-import * as actionTypes from "../../../../store/actions";
+import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';
+import * as actionTypes from "./../../../store/actions";
 
 /* STYLED COMPONENTS */
 const Body = styled.div`

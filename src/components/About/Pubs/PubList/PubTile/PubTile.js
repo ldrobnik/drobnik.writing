@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {connect} from 'react-redux';
 
-import {POP_KEYFRAMES} from "../../../../../../data/constants";
+import {POP_KEYFRAMES} from "./../../../../../data/constants";
 
 /* STYLED COMPONENTS */
 const Tile = styled.div`

@@ -5,14 +5,14 @@ import {withRouter} from 'react-router-dom';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
-import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from '../../../../data/constants';
+import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from './../../../data/constants';
 
-import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
-import ToggleSwitch from '../../../UI/ToggleSwitch/ToggleSwitch';
+import SectionHeading from './../../UI/SectionHeading/SectionHeading'
+import ToggleSwitch from './../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
 import SectionLinks from "../SectionLinks/SectionLinks";
-import SectionSeparator from "../../../UI/SectionSeparator/SectionSeparator";
-import * as actionTypes from "../../../../store/actions";
+import SectionSeparator from "./../../UI/SectionSeparator/SectionSeparator";
+import * as actionTypes from "./../../../store/actions";
 
 /* STYLED COMPONENTS */
 const Wrapper = styled.div`

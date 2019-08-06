@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import posed, {PoseGroup} from 'react-pose';
-import {PUBLICATIONS} from "../../../../../data/constants";
+import {PUBLICATIONS} from "./../../../../data/constants";
 import PubTile from "./PubTile/PubTile";
 
 /* STYLED COMPONENTS */
