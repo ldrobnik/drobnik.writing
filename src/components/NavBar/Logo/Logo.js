@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import websiteLogo from '../../../assets/logo.png';
+import websiteLogo from '../../../assets/images/logo.png';
 
 const WebsiteLogo = styled.div`
   height: 3.5em;

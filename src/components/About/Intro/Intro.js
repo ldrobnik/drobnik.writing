@@ -4,7 +4,7 @@ import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
-import authorsPhoto from '../../../assets/authorsPhoto.jpg'
+import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'
 import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from '../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading';
 import CentredPhoto from './../../UI/CentredPhoto/CentredPhoto';
