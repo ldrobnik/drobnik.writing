@@ -111,12 +111,12 @@ const Intro = (props) => {
     });
 
     //hide social links whenever the pathname changes
-
-    //Scrolls to top initially and if the URL path changes
     useEffect(() => {
 
-            //check localStorage and update Redux state accordingly
-            hideSocial();
+            setTimeout(() => {
+
+                hideSocial();
+            }, 100);
 
         },
         [props.location.pathname]

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import posed from 'react-pose';
 import {connect} from 'react-redux';
+import {withRouter} from 'react-router-dom';
 import {Waypoint} from 'react-waypoint';
 import {WEBSITE_TEXT, FADE_DURATION} from '../../../../data/constants';
 import SectionHeading from '../../../UI/SectionHeading/SectionHeading'
@@ -77,6 +78,12 @@ const Nocturine = (props) => {
         setButtonVisible(true);
     };
 
+    //sets quotes and button visibility to false
+    const hideElements = () => {
+        setQuotesVisible(false);
+        setButtonVisible(false);
+    };
+
 
     useEffect(() => {
 
@@ -88,6 +95,18 @@ const Nocturine = (props) => {
         );
 
     });
+
+    //hide social links whenever the pathname changes
+    useEffect(() => {
+
+            setTimeout(() => {
+
+                hideElements();
+            }, 100);
+
+        },
+        [props.location.pathname]
+    );
 
 
     return (
@@ -108,6 +127,9 @@ const Nocturine = (props) => {
             <QuoteList
                 lang={props.lang}
                 visible={quotesVisible}
+            />
+            <Waypoint
+                onEnter={showQuotes}
             />
             <Waypoint
                 onEnter={showButton}
@@ -131,6 +153,12 @@ const Nocturine = (props) => {
                 />
                 <SectionSeparator/>
             </AnimatedContent>
+            <Waypoint
+                onEnter={showButton}
+            />
+            <Waypoint
+                onEnter={showQuotes}
+            />
         </React.Fragment>
     );
 };
@@ -151,4 +179,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Nocturine);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Nocturine));
