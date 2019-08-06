@@ -1,32 +1,35 @@
 import React, {useEffect} from 'react';
-import styled from 'styled-components';
 import {connect} from 'react-redux';
-import {LINKS, TEXT_NAMES, FADE_DURATION, AnimatedContent} from "../../data/constants";
-import QuickLink from "./QuickLink/QuickLink";
-import * as actionTypes from "../../store/actions";
+import styled from 'styled-components';
 
+import * as actionTypes from "../../store/actions";
+import {LINKS, TEXT_NAMES, FADE_DURATION, AnimatedContent} from "../../data/constants";
+
+import QuickLink from "./QuickLink/QuickLink";
+
+/*STYLED COMPONENTS*/
 const Wrapper = styled.div`
+   padding: 1em 1em;
+   
    @media all and (min-width: ${props => props.theme.extraSmallScr}) {
       padding: 1em 3em;
-    }
+   }
     
-    @media all and (min-width: ${props => props.theme.smallScr}) {
+   @media all and (min-width: ${props => props.theme.smallScr}) {
       padding: 1em 5%;
-    }
+   }
     
-    @media all and (min-width: ${props => props.theme.mediumScr}) {
+   @media all and (min-width: ${props => props.theme.mediumScr}) {
       padding: 1em 10%;
-    }
+   }
     
-    @media all and (min-width: ${props => props.theme.largeScr}) {
+   @media all and (min-width: ${props => props.theme.largeScr}) {
       padding: 1em 12%;
-    }
+   }
     
-    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+   @media all and (min-width: ${props => props.theme.extraLargeScr}) {
       padding: 1em 15%;
-    }
-    
-    padding: 1em 1em;
+   }
 `;
 
 const QuickLinks = (props) => {
@@ -101,7 +104,6 @@ const mapStateToProps = state => {
     };
 };
 
-
 const mapDispatchToProps = dispatch => {
     return {
         onThemeChange: (newTheme) => dispatch({
@@ -122,6 +124,5 @@ const mapDispatchToProps = dispatch => {
         })
     };
 };
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(QuickLinks);
