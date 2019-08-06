@@ -1,13 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import styled, {keyframes} from 'styled-components';
-import posed from 'react-pose';
 import {connect} from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import Logo from './Logo/Logo';
 import * as actionTypes from '../../store/actions';
-import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES} from '../../data/constants';
+import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES, FADE_DURATION} from '../../data/constants';
 
 /* STYLED COMPONENTS */
 const Wrapper = styled.div`
@@ -83,9 +82,7 @@ const LinkContent = styled.div`
       min-width: 1.5em;
 `;
 
-
 const NavBar = (props) => {
-
 
     //Changes current language
     const changeLanguage = () => {
@@ -197,19 +194,19 @@ const NavBar = (props) => {
     const contentClass = (props.showNavbar) ? '' : 'hidden';
 
     return (
-            <Wrapper>
-                <div className={contentClass}>
-                    <Toolbar>
-                        <LogoWrapper>
-                            {logoLink}
-                        </LogoWrapper>
-                        {homeButton}
-                        {langButton}
-                        {bwButton}
-                        {readButton}
-                    </Toolbar>
-                </div>
-            </Wrapper>
+        <Wrapper>
+            <div className={contentClass}>
+                <Toolbar>
+                    <LogoWrapper>
+                        {logoLink}
+                    </LogoWrapper>
+                    {homeButton}
+                    {langButton}
+                    {bwButton}
+                    {readButton}
+                </Toolbar>
+            </div>
+        </Wrapper>
     );
 };
 

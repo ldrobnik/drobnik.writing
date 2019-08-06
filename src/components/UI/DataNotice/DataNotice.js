@@ -8,7 +8,6 @@ import * as actionTypes from "../../../store/actions";
 /* STYLED COMPONENTS */
 const Notice = styled.div`
   background-color: ${props => props.theme.darkColor};
-  opacity: ${props => props.theme.translucent};
   padding: 1em 0;
   margin: 0 auto;
   position: fixed;
@@ -51,17 +50,32 @@ const DismissButton = styled.div`
     cursor: pointer;
     
     &:hover {
-      opacity: ${props => props.theme.translucent};
+      opacity: ${props => props.theme.slightlyTranslucent};
     }
 `;
+
+/* POSE */
+const AnimatedContent = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0px)'
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)'
+    }
+});
 
 const DataNotice = (props) => {
 
     //notice content to be displayed
     const [noticeVisible, setNoticeVisible] = useState(false);
 
+    //specifies whether the fade in animation should be played
+    const [noticeFadeIn, setNoticeFadeIn] = useState(false);
     //updates Redux states, setting data notice acceptance to true and data notice visibility to false, and stores the data in localStorage
     const acceptDataNotice = () => {
+
         //update Redux states
         props.onVisibilityChange(false); //sets data storage notice display to false
         props.onAcceptanceChange(true); //sets data storage acceptance to true
@@ -71,26 +85,29 @@ const DataNotice = (props) => {
 
     };
 
-    //checks what notice content should be displayed - empty div if the notice shouldn't be displayed
+    //sets the notice as visible and schedules fade-in animation
     const setContent = () => {
-
+        setNoticeVisible(true);
         if (props.noticeVisible) {
-                setNoticeVisible(true);
+            setNoticeFadeIn(true);
         }
     };
 
     //the content of notice to be displayed depending on the setNoticeVisible value
-    const notice =  (props.noticeVisible && noticeVisible) ?
+    const notice = (props.noticeVisible && noticeVisible) ?
         (<Notice>
-        <Message>
-            {WEBSITE_TEXT.dataNotice[props.lang].message}
-        </Message>
-        <DismissButton
-            onClick={acceptDataNotice}
-        >
-            {WEBSITE_TEXT.dataNotice[props.lang].button}
-        </DismissButton>
-    </Notice>) :
+            <AnimatedContent
+                pose={noticeFadeIn ? 'visible' : 'hidden'}>
+                <Message>
+                    {WEBSITE_TEXT.dataNotice[props.lang].message}
+                </Message>
+                <DismissButton
+                    onClick={acceptDataNotice}
+                >
+                    {WEBSITE_TEXT.dataNotice[props.lang].button}
+                </DismissButton>
+            </AnimatedContent>
+        </Notice>) :
         <div></div>
     ;
 
