@@ -6,7 +6,7 @@ const Description = styled.div`
   font-size: ${props => props.theme.bodySize};
   text-align: center;
   padding: 0.5em 1em;
-  margin: 2.5em 0;
+  margin: 3.5em 0 2.5em 0;
   a {
     font-weight: bold;
   }

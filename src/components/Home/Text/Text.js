@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     }
     
     @media all and (min-width: ${props => props.theme.smallScr}) {
-      padding: 7em 5% 2em 5%;
+      padding: 7em 10% 2em 10%;
     }
     
     @media all and (min-width: ${props => props.theme.mediumScr}) {
@@ -85,11 +85,13 @@ const TextBody = styled.div`
     font-size: ${props => props.theme.bodySize};
     line-height: 1.4em;
     position: relative;
+    margin-top: 2em;
 `;
 
 const Credits = styled.div`
   font-size: ${props => props.theme.captionSize};
   font-family: ${props => props.theme.serif};
+  margin-top: 2em;
 `;
 
 const Links = styled.div`
