@@ -57,7 +57,6 @@ const RouteContainer = posed.div({
 const Home = (props) => {
 
 
-
     //checks if any data is stored in localStorage and updates Redux state accordingly
     const checkLocalStorage = () => {
         //check if data storage notice has been agreed to and if so, update Redux state accordingly
@@ -106,26 +105,16 @@ const Home = (props) => {
     return (
         <React.Fragment>
             <GlobalStyle/>
-            <Route
-                render={({location}) => (
-                    <Layout>
-
-                        <PoseGroup >
-                            <RouteContainer key={location.pathname}>
-                                <Switch>
-                                    <Route path="/" exact component={About} key="home"/>
-                                    <Route path="/texts/" exact component={Text} key="texts"/>
-                                    <Route path="/texts/:id" exact component={Text} key="text"/>
-                                    <Route path="/links/" exact component={QuickLinks} key="links"/>
-                                    <Route render={() => (<Redirect to="/"/>)} key="default"/>
-                                </Switch>
-                            </RouteContainer>
-                        </PoseGroup>
-
-                        <DataNotice/>
-                    </Layout>
-                )}
-            />
+            <Layout>
+                <Switch>
+                    <Route path="/" exact component={About} key="home"/>
+                    <Route path="/texts/" exact component={Text} key="texts"/>
+                    <Route path="/texts/:id" exact component={Text} key="text"/>
+                    <Route path="/links/" exact component={QuickLinks} key="links"/>
+                    <Route render={() => (<Redirect to="/"/>)} key="default"/>
+                </Switch>
+                <DataNotice/>
+            </Layout>
         </React.Fragment>
     );
 };
