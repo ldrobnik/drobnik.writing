@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import posed from 'react-pose';
-import * as actionTypes from "../../../store/actions";
 
 const Wrapper = styled.div`
   text-align: center;

@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
-import styled, {keyframes} from 'styled-components';
+import styled from 'styled-components';
 import {connect} from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
