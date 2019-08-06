@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Route, Switch, withRouter} from 'react-router-dom';
+import {Redirect} from 'react-router';
 import {createGlobalStyle} from 'styled-components';
 import {connect} from 'react-redux';
 import posed, {PoseGroup} from 'react-pose';
@@ -106,16 +107,19 @@ const Home = (props) => {
             <Route
                 render={({location}) => (
                     <Layout>
-                        <Switch location={location}>
-                            <PoseGroup>
-                                <RouteContainer key={location.pathname}>
+
+                        <PoseGroup location={location}>
+                            <RouteContainer key={location.pathname}>
+                                <Switch>
                                     <Route path="/" exact component={About} key="home"/>
                                     <Route path="/texts/" exact component={Text} key="texts"/>
                                     <Route path="/texts/:id" exact component={Text} key="text"/>
                                     <Route path="/links/" exact component={QuickLinks} key="links"/>
-                                </RouteContainer>
-                            </PoseGroup>
-                        </Switch>
+                                    <Route render={() => (<Redirect to="/"/>)} key="default"/>
+                                </Switch>
+                            </RouteContainer>
+                        </PoseGroup>
+
                         <DataNotice/>
                     </Layout>
                 )}
