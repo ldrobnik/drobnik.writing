@@ -1,10 +1,16 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {ThemeProvider} from 'styled-components';
+import ReactGA from 'react-ga';
 
 import { THEME_COLORS } from "./data/constants";
 
 import Home from './components/Home/Home';
+
+//Google Analytics code
+ReactGA.initialize('ExampleApiKey');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 
 const App = (props) => {
     // Theme to be used in the project, two primary colors depending on redux state
