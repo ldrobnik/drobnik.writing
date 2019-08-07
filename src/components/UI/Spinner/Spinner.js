@@ -17,11 +17,6 @@ const SpinnerWrapper = styled.div`
   animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
 `;
 
-const BackdropWrapper = styled.div`
-  .hidden {
-    display: none;
-  }
-`;
 
 const Backdrop = styled.div`
   position: absolute;
@@ -57,9 +52,7 @@ const Spinner = () => {
                     </AnimatedContent>
                 </SpinnerWrapper>
             </Wrapper>
-            <BackdropWrapper>
-                <Backdrop/>
-            </BackdropWrapper>
+            <Backdrop/>
         </React.Fragment>
     );
 };
