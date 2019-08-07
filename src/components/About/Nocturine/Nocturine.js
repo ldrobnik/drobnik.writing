@@ -109,16 +109,13 @@ const Nocturine = (props) => {
                 <Body>
                     {WEBSITE_TEXT.nocturine.body[props.lang]}
                 </Body>
-                <Waypoint
-                    onEnter={showQuotes}
-                />
             </AnimatedContent>
+            <Waypoint
+                onEnter={showQuotes}
+            />
             <QuoteList
                 lang={props.lang}
                 visible={quotesVisible}
-            />
-            <Waypoint
-                onEnter={showQuotes}
             />
             <Waypoint
                 onEnter={showButton}
@@ -130,6 +127,12 @@ const Nocturine = (props) => {
                     path={WEBSITE_TEXT.nocturine.button[props.lang].path}
                     capital='m'/>
             </AnimatedButton>
+            <Waypoint
+                onEnter={showQuotes}
+            />
+            <Waypoint
+                onEnter={showButton}
+            />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionLinks
@@ -139,13 +142,19 @@ const Nocturine = (props) => {
                     pubs={true}
                     read={true}
                 />
+                <Waypoint
+                    onEnter={showQuotes}
+                />
+                <Waypoint
+                    onEnter={showButton}
+                />
                 <SectionSeparator/>
             </AnimatedContent>
             <Waypoint
-                onEnter={showButton}
+                onEnter={showQuotes}
             />
             <Waypoint
-                onEnter={showQuotes}
+                onEnter={showButton}
             />
         </React.Fragment>
     );

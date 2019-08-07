@@ -12,6 +12,7 @@ import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Text from '../Text/Text';
 import DataNotice from '../UI/DataNotice/DataNotice';
+import Spinner from '../UI/Spinner/Spinner';
 
 /* STYLED COMPONENTS */
 const GlobalStyle = createGlobalStyle`
@@ -95,6 +96,7 @@ const Home = (props) => {
                     <Route path="/texts/" exact component={Text} key="texts"/>
                     <Route path="/texts/:id" exact component={Text} key="text"/>
                     <Route path="/links/" exact component={QuickLinks} key="links"/>
+                    <Route component={Spinner} />
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>
                 <DataNotice/>
