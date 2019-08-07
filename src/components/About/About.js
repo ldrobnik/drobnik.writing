@@ -101,8 +101,9 @@ const About = (props) => {
         setTextNotDisplayed();
     });
 
-    return (
-        <Wrapper>
+    //do not show the content until the page is loaded
+    const pageContent = props.loaded ?
+        (<Wrapper>
             <TopAnchor>
                 <div id='top'></div>
             </TopAnchor>
@@ -119,8 +120,10 @@ const About = (props) => {
                 <Read/>
             </SectionWrapper>
             <CopyrightNote/>
-        </Wrapper>
-    );
+        </Wrapper>) :
+    <div></div>;
+
+    return pageContent;
 };
 
 const mapStateToProps = state => {
