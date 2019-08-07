@@ -12,13 +12,14 @@ import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Text from '../Text/Text';
 import DataNotice from '../UI/DataNotice/DataNotice';
+import Spinner from '../UI/Spinner/Spinner';
 
 /* STYLED COMPONENTS */
 const GlobalStyle = createGlobalStyle`
     body {
         font-family: ${props => props.theme.sansSerif};
         color: ${props => props.theme.darkColor};
-        background-image: linear-gradient(145deg, ${props => props.theme.color1}, ${props => props.theme.color2});
+        background: linear-gradient(145deg, ${props => props.theme.color1}, ${props => props.theme.color2});
         min-height: 100vh;
         }
         
@@ -98,6 +99,7 @@ const Home = (props) => {
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>
                 <DataNotice/>
+                <Spinner />
             </Layout>
         </React.Fragment>
     );

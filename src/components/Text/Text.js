@@ -288,7 +288,8 @@ const mapStateToProps = state => {
         bwMode: state.blackAndWhite,
         noticeVisible: state.dataNoticeVisible,
         noticeAccepted: state.dataNoticeAccepted,
-        reload: state.pageReload
+        reload: state.pageReload,
+        loaded: state.pageLoaded
     };
 };
 

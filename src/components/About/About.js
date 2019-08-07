@@ -10,6 +10,7 @@ import Nocturine from './Nocturine/Nocturine';
 import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
 import CopyrightNote from './../UI/CopyrightNote/CopyrightNote';
+import Spinner from './../UI/Spinner/Spinner';
 
 /* STYLED COMPONENTS */
 const TopAnchor = styled.div`
@@ -127,7 +128,8 @@ const mapStateToProps = state => {
         lang: state.language,
         bwMode: state.blackAndWhite,
         noticeVisible: state.dataNoticeVisible,
-        noticeAccepted: state.dataNoticeAccepted
+        noticeAccepted: state.dataNoticeAccepted,
+        loaded: state.pageLoaded
     };
 };
 

@@ -27,7 +27,7 @@ const Toolbar = styled.header`
     align-items: center;
     box-sizing: border-box;
     background-color: ${props => props.theme.background};
-    z-index: 90;
+    z-index: 50;
     font-weight: bold;
     user-select: none;
     backdrop-filter: blur(8px);
