@@ -585,7 +585,7 @@ export const WEBSITE_TEXT = {
         },
         body: {
             en: <div>
-                <p>I’m a bilingual writer who creates prose in his native Polish but recently mostly in English, his second language. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan. (Though I don’t shy away from longer forms.)</p>
+                <p>I’m a bilingual writer creating fiction in my native Polish but recently mostly in English. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan. (Though I don’t shy away from longer forms.)</p>
                 <p><AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, my novella/short fiction collection is now forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>, and my other work has been featured in <i>Atticus Review</i>, <i>Quarterly West</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and elsewhere. Below you can find a <AnchorLink href='#pubs' offset="60px"><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and also <AnchorLink href='#read' offset="60px"><b>READ</b></AnchorLink> some of my pieces.</p>
             </div>,
             pl: <div>
