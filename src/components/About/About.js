@@ -40,6 +40,11 @@ const Wrapper = styled.div`
     @media all and (min-width: ${props => props.theme.extraLargeScr}) {
       padding: 7em 25% 2em 25%;
     }
+    
+    .hidden {
+      display: none;
+    }
+
 `;
 
 const SectionWrapper = styled.div`

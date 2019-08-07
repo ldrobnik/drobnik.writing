@@ -12,7 +12,6 @@ import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Text from '../Text/Text';
 import DataNotice from '../UI/DataNotice/DataNotice';
-import Spinner from '../UI/Spinner/Spinner';
 
 /* STYLED COMPONENTS */
 const GlobalStyle = createGlobalStyle`

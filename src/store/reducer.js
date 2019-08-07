@@ -9,7 +9,8 @@ const initialState = {
     dataNoticeVisible: true,
     dataNoticeAccepted: false,
     textPageDisplayed: false,
-    pageReload: true
+    pageReload: true,
+    pageLoaded: false
 };
 
 const reducer = (state = initialState, action) => {
@@ -58,6 +59,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 pageReload: action.pageReload
+            };
+        case actionTypes.SET_PAGE_LOADED:
+            return {
+                ...state,
+                pageLoaded: action.pageLoaded
             };
         default:
             return state;
