@@ -96,7 +96,6 @@ const Home = (props) => {
                     <Route path="/texts/" exact component={Text} key="texts"/>
                     <Route path="/texts/:id" exact component={Text} key="text"/>
                     <Route path="/links/" exact component={QuickLinks} key="links"/>
-                    <Route component={Spinner} />
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>
                 <DataNotice/>

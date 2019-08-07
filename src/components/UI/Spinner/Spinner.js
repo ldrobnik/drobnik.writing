@@ -33,6 +33,7 @@ const Spinner = () => {
                     pose={spinnerVisible ? 'visible' : 'hidden'}>
                     <img
                         src={logoImage}
+                        alt='loading spinner'
                         onLoad={showSpinner}
                     />
                 </AnimatedContent>
