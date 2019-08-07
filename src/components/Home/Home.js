@@ -74,6 +74,13 @@ const Home = (props) => {
         }
     };
 
+    //sets page loading state as loaded and hides spinner
+    const hideSpinner = () => {
+
+        //set Redux page loaded state to true
+        props.onPageLoadedChange(true);
+    };
+
     //Scrolls to top initially and if the URL path changes
     useEffect(() => {
             window.scrollTo(0, 0);
@@ -84,8 +91,16 @@ const Home = (props) => {
     useEffect(() => {
             //check localStorage and update Redux state accordingly
             checkLocalStorage();
+
+            //set page as loaded and hide spinner after a while
+            setTimeout(() => {
+                hideSpinner();
+            }, 1500);
         }
     );
+
+    //if the page is loaded, do not show the spinner
+    const spinner = props.loaded ? <div></div> : <Spinner />;
 
     return (
         <React.Fragment>
@@ -99,7 +114,7 @@ const Home = (props) => {
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>
                 <DataNotice/>
-                <Spinner />
+                {spinner}
             </Layout>
         </React.Fragment>
     );
@@ -107,7 +122,8 @@ const Home = (props) => {
 
 const mapStateToProps = state => {
     return {
-        lang: state.language
+        lang: state.language,
+        loaded: state.pageLoaded
     };
 };
 
@@ -128,7 +144,11 @@ const mapDispatchToProps = dispatch => {
         onBwModeChange: (newMode) => dispatch({
             type: actionTypes.SET_BW_MODE,
             blackAndWhite: newMode
-        })
+        }),
+        onPageLoadedChange: (newState) => dispatch({
+        type: actionTypes.SET_PAGE_LOADED,
+        pageLoaded: newState
+    })
     };
 };
 
