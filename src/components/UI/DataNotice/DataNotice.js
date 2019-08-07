@@ -99,7 +99,7 @@ const DataNotice = (props) => {
         <div></div>;
 
     useEffect(() => {
-        setTimeout(setContent, 1500);
+        setTimeout(setContent, 2500);
     });
 
     return (
