@@ -84,11 +84,6 @@ const About = (props) => {
         props.onSetTextPage(false)
     };
 
-    //scroll to top on page reload
-    useEffect(() => {
-        window.scrollTo(0,0);
-    }, []);
-
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${fictionWriter}`;
