@@ -36,6 +36,10 @@ const NextTextLink = (props) => {
 
     //sets off page reloading animation
     const reloadPage = () => {
+        //scroll up for better transition
+        window.scrollTo(0,800);
+
+        //change page reload redux state
         props.onReloadChange(true);
     };
 
