@@ -218,18 +218,20 @@ const Text = (props) => {
         //lets the Redux store know that the Text page is currently displayed
         setTextDisplayed();
 
-        //show content after a while
-        setTimeout(
-            () => {
-                showContent();
-            }, FADE_DURATION
-        );
+        //show content after a while if page has loaded
+        if (props.loaded) {
+            setTimeout(
+                () => {
+                    showContent();
+                }, FADE_DURATION
+            );
+        }
 
     });
 
-    return (
-
-        <Wrapper>
+    //do not show the content until the page is loaded
+    return props.loaded ?
+        (<Wrapper>
             <TopAnchor>
                 <div id='top'></div>
             </TopAnchor>
@@ -251,7 +253,7 @@ const Text = (props) => {
                 />
                 <Credits
                     lang={props.lang}
-                    textName={textName} />
+                    textName={textName}/>
                 <DescriptionPanel
                     description={TEXTS[props.lang][textName].description}
                     title={TEXTS[props.lang][textName].title}
@@ -277,9 +279,8 @@ const Text = (props) => {
                 <SectionSeparator/>
                 <CopyrightNote/>
             </AnimatedContent>
-        </Wrapper>
-
-    );
+        </Wrapper>) :
+        <div></div>;
 };
 
 const mapStateToProps = state => {

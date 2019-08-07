@@ -102,7 +102,7 @@ const About = (props) => {
     });
 
     //do not show the content until the page is loaded
-    const pageContent = props.loaded ?
+    return props.loaded ?
         (<Wrapper>
             <TopAnchor>
                 <div id='top'></div>
@@ -121,9 +121,7 @@ const About = (props) => {
             </SectionWrapper>
             <CopyrightNote/>
         </Wrapper>) :
-    <div></div>;
-
-    return pageContent;
+        <div></div>;
 };
 
 const mapStateToProps = state => {
