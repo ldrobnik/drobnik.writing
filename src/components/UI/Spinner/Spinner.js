@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 
 import logoImage from '../../../assets/images/logo.png';
@@ -21,17 +21,20 @@ const Spinner = () => {
     //specifies spinner visibility
     const [spinnerVisible, setSpinnerVisible] = useState(false);
 
-    //turns the spinner visibility on
-    useEffect(() => {
+    //shows spinner
+    const showSpinner = () => {
         setSpinnerVisible(true);
-    });
+    };
 
     return (
         <Wrapper>
             <SpinnerWrapper>
                 <AnimatedContent
                     pose={spinnerVisible ? 'visible' : 'hidden'}>
-                    <img src={logoImage}/>
+                    <img
+                        src={logoImage}
+                        onLoad={showSpinner}
+                    />
                 </AnimatedContent>
             </SpinnerWrapper>
         </Wrapper>
