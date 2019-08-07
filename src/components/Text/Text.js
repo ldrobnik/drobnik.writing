@@ -199,6 +199,11 @@ const Text = (props) => {
         props.onSetTextPage(true)
     };
 
+    //scroll to top on page reload
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, []);
+
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
