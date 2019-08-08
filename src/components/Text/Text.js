@@ -151,6 +151,7 @@ const Text = (props) => {
     //constant holding the name of the text to be displayed
     const textName = checkTextID(props.match.params.id);
 
+    //the index of the text
     const textIndex = TEXT_NAMES.indexOf(textName);
 
     //The next text to be displayed;

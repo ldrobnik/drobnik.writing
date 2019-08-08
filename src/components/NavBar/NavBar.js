@@ -148,56 +148,55 @@ const NavBar = (props) => {
         </NavElement>;
 
     //Content of the button used to change current language
-    const langButton =
+    const langButton = (
         <NavElement>
             <div onClick={changeLanguage}>
                 <LinkContent>
                     {WEBSITE_TEXT.navbar.language[props.lang]}
                 </LinkContent>
             </div>
-        </NavElement>;
+        </NavElement>
+    );
 
     //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off
     const bwButton = (props.bwMode) ?
-        <NavElement>
+        (<NavElement>
             <div onClick={toggleBwMode}>
                 <LinkContent>
                     {WEBSITE_TEXT.navbar.colourMode}
                 </LinkContent>
             </div>
-        </NavElement> :
-        <ToggledNavElement>
+        </NavElement>) :
+        (<ToggledNavElement>
             <div onClick={toggleBwMode}>
                 <LinkContent>
                     {WEBSITE_TEXT.navbar.colourMode}
                 </LinkContent>
             </div>
-        </ToggledNavElement>;
+        </ToggledNavElement>);
 
-    //chooses a random text that is not the displayed text
-    const assignRandomText = () => {
+    //the index of the text
+    const textIndex = TEXT_NAMES.indexOf(props.curText);
 
-        //variable to hold a randomly chosen text
-        let newText;
+    //The index of the next text in line - if the last text, choose the first one
+    const nextTextIndex = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
 
-        //choose a random text and if it is the currently text, choose another one
-        do {
-            newText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
-            console.log(newText, props.textDisplayed, (newText === props.textDisplayed));
-        } while (newText === props.curText);
+    //The next text to be displayed
+    const nextText = TEXT_NAMES[nextTextIndex];
+    //A random text
+    const randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
 
-        return newText;
-    };
-
-    //The book icon link to a randomly chosen text
-    const randomText = assignRandomText();
+    /*If the Text page is currently displayed, assigned the next text to the read link.
+   //     * If the About page is displayed, assign a random text to it.
+   //     */
+    const chosenText = props.textDisplayed ? nextText : randomText;
 
 
     //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
     const readButton = (
         <NavElement>
             <Link
-                to={'/texts/' + randomText}
+                to={'/texts/' + chosenText}
                 onClick={reloadPage}>
                 <LinkContent>
                     {WEBSITE_TEXT.navbar.read}
