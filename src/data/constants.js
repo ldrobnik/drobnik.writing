@@ -185,7 +185,7 @@ export const PUBLICATIONS = {
             year: '2011',
             url: 'http://wforma.eu/12,nocturine.-cunninghamella.html',
             descriptionPl: 'Tom dwóch minipowieści opublikowany przez wydawnictwo Forma',
-            descriptionEn: 'A volume of two novellas published by Forma publishing house',
+            descriptionEn: 'Volume of two novellas published by Forma publishing house',
             language: 'pl',
             pieceTitle: 'Nocturine. Cunninghamella'
         }
@@ -239,7 +239,7 @@ export const PUBLICATIONS = {
             year: '2018',
             url: 'http://fathombooks.org/html/issueone.html',
             descriptionPl: '„8-bit Dreams” (fragment minipowieści „Nocturine”)',
-            descriptionEn: '“8-bit Dreams” (Fragment of the novella “Nocturine”)',
+            descriptionEn: '“8-bit Dreams” (a fragment of the novella “Nocturine”)',
             language: 'en',
             pieceTitle: '8-bit Dreams'
 
@@ -370,8 +370,8 @@ export const PUBLICATIONS = {
             issue: 'February 2018',
             year: '2018',
             url: 'https://thewritelaunch.com/2018/01/heart-mighty-power/',
-            descriptionPl: '„Heart Mighty Power”, fragment minipowieści „Nocturine”',
-            descriptionEn: '“Heart Mighty Power”, Fragment of the novella “Nocturine”',
+            descriptionPl: '„Heart Mighty Power” (fragment minipowieści „Nocturine”)',
+            descriptionEn: '“Heart Mighty Power” (a fragment of the novella “Nocturine”)',
             language: 'en',
             pieceTitle: 'Heart Mighty Power'
         },
@@ -513,7 +513,7 @@ export const PUBLICATIONS = {
             year: '2017',
             url: 'http://www.wforma.eu/2017-antologia-wspolczesnych-polskich-opowiadan.html',
             descriptionPl: 'Zbiór opowiadań z moim tekstem „Jeśli zapłonę” (Forma)',
-            descriptionEn: 'Collection featuring my piece “Jeśli zapłonę” (Forma)',
+            descriptionEn: 'Short story collection featuring my piece “Jeśli zapłonę” (Forma)',
             language: 'pl',
             pieceTitle: 'Jeśli zapłonę'
         },
@@ -522,7 +522,7 @@ export const PUBLICATIONS = {
             year: '2014',
             url: 'http://www.wforma.eu/318,2014-antologia-wspolczesnych-polskich-opowiadan.html',
             descriptionPl: 'Zbiór opowiadań z moim tekstem „Biegnący człowiek” (Forma)',
-            descriptionEn: 'Collection featuring my piece “Biegnący człowiek” (Forma)',
+            descriptionEn: 'Short story collection featuring my piece “Biegnący człowiek” (Forma)',
             language: 'pl',
             pieceTitle: 'Biegnący człowiek'
         }
@@ -625,7 +625,7 @@ export const WEBSITE_TEXT = {
         },
         body: {
             en: <div>
-                <p>The end of the world starts like an ad campaign. When black cubes appear above the city of Poznań, some think it’s just another mobile network operator entering the market. These include Mietek, an unemployed gay man in his twenties, suddenly abandoned by his boyfriend. Soon his best friend also disappears while the black cubes in the sky start multiplying, taking up more and more of the urban space.</p>
+                <p>The end of the world starts like an ad campaign. When black cubes appear above the city of Poznań, some think it’s just another mobile network operator entering the market. These include Mietek, an unemployed gay man in his twenties, suddenly abandoned by his boyfriend. Soon his best friend also disappears while the black cubes in the sky start to multiply, taking up more and more of the urban space.</p>
                 <p><span className='bookTitle'>NOCTURINE</span> is a novella/short fiction collection that takes you on a genre-bending journey from contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a homestead haunted by dummies, to the inside of a human body. Each of six chapters/stories is told by a different narrator in a frantic yet melancholic style.</p>
                 <p>The book was originally published in Polish, in one volume with another novella, “Cunninghamella” (Forma 2011). Now, my authorial translation into English is forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>.</p>
             </div>,
