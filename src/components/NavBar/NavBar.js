@@ -68,12 +68,6 @@ const ToggledNavElement = styled.div`
         }
 `;
 
-const InactiveElement = styled.div`
-  cursor: default;
-  margin: ${props => props.theme.navIconMargin};
-  opacity: ${props => props.theme.transparent};
-`;
-
 const LinkContent = styled.div`
   padding: ${props => props.theme.navIconPadding};
   display: block;
@@ -183,16 +177,9 @@ const NavBar = (props) => {
     //The book icon link to a randomly chosen text
     let randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
 
+
     //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
-    const readButton = (props.textDisplayed) ?
-        <InactiveElement>
-            <div>
-                <LinkContent>
-                    {WEBSITE_TEXT.navbar.read}
-                </LinkContent>
-            </div>
-        </InactiveElement>
-        :
+    const readButton = (
         <NavElement>
             <Link
                 to={'/texts/' + randomText}
@@ -201,7 +188,8 @@ const NavBar = (props) => {
                     {WEBSITE_TEXT.navbar.read}
                 </LinkContent>
             </Link>
-        </NavElement>;
+        </NavElement>
+    );
 
     //class applied to the component content, depending on the navbar visibility state in the Redux store
     const contentClass = (props.showNavbar) ? '' : 'hidden';
