@@ -271,14 +271,23 @@ const Text = (props) => {
                     lang={props.lang}
                 />
             </AnimatedLink>
+            <Waypoint
+                onEnter={showLink}
+            />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <Links>
                     <div>{top}</div>
                     <div>{home}</div>
                 </Links>
+                <Waypoint
+                    onEnter={showLink}
+                />
                 <SectionSeparator/>
                 <CopyrightNote/>
+                <Waypoint
+                    onEnter={showLink}
+                />
             </AnimatedContent>
         </Wrapper>) :
         <div></div>;
