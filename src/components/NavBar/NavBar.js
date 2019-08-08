@@ -174,8 +174,23 @@ const NavBar = (props) => {
             </div>
         </ToggledNavElement>;
 
+    //chooses a random text that is not the displayed text
+    const assignRandomText = () => {
+
+        //variable to hold a randomly chosen text
+        let newText;
+
+        //choose a random text and if it is the currently text, choose another one
+        do {
+            newText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
+            console.log(newText, props.textDisplayed, (newText === props.textDisplayed));
+        } while (newText === props.curText);
+
+        return newText;
+    };
+
     //The book icon link to a randomly chosen text
-    let randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
+    const randomText = assignRandomText();
 
 
     //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed

@@ -625,7 +625,7 @@ export const WEBSITE_TEXT = {
         },
         body: {
             en: <div>
-                <p>The end of the world starts like an ad campaign. When black cubes appear above the city of Poznań, some think it’s just another mobile network operator entering the market. These include Mietek, an unemployed gay man in his twenties, suddenly abandoned by his boyfriend. Soon his best friend also disappears, while the black cubes in the sky start multiplying, taking up more and more of the urban space.</p>
+                <p>The end of the world starts like an ad campaign. When black cubes appear above the city of Poznań, some think it’s just another mobile network operator entering the market. These include Mietek, an unemployed gay man in his twenties, suddenly abandoned by his boyfriend. Soon his best friend also disappears while the black cubes in the sky start multiplying, taking up more and more of the urban space.</p>
                 <p><span className='bookTitle'>NOCTURINE</span> is a novella/short fiction collection that takes you on a genre-bending journey from contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a homestead haunted by dummies, to the inside of a human body. Each of six chapters/stories is told by a different narrator in a frantic yet melancholic style.</p>
                 <p>The book was originally published in Polish, in one volume with another novella, “Cunninghamella” (Forma 2011). Now, my authorial translation into English is forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>.</p>
             </div>,
