@@ -86,6 +86,24 @@ export const TEXTS = {
             theme: 'drones'
         },
 
+        spores: {
+            title: 'Spores',
+            subtitle: 'flash fiction',
+            credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
+            description: <p>The piece was published in <a href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank" rel="noopener noreferrer"><i>X-R-A-Y Literary Magazine</i></a> Issue&nbsp;17.</p>,
+            content: SPORES_EN,
+            theme: 'spores'
+        },
+
+        devonian: {
+            title: 'Devonian',
+            subtitle: 'flash fiction',
+            credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Thea Prieto.',
+            description: <p>The piece was originally published in <a href="http://thegravityofthething.com/devonian-lukasz-drobnik/" target="_blank" rel="noopener noreferrer"><i>The Gravity of the Thing</i></a> (Winter 2018). Its Polish translation was featured in  <a href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/" target="_blank" rel="noopener noreferrer"><i>Inter-</i></a> Issue&nbsp;2(16)/2018.</p>,
+            content: DEVONIAN_EN,
+            theme: 'devonian'
+        },
+
         landmines: {
             title: 'Landmines',
             subtitle: 'flash fiction',
@@ -150,6 +168,24 @@ export const TEXTS = {
             description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;10. numerze <a href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/" target="_blank" rel="noopener noreferrer"><i>Bare Fiction</i></a>. Polski przekład zamieszczono w&nbsp;<a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank" rel="noopener noreferrer"><i>Helikopterze</i></a> (numer 3/2018).</p>,
             content: DRONES_PL,
             theme: 'drones'
+        },
+
+        spores: {
+            title: 'Zarodniki',
+            subtitle: 'flash fiction',
+            credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
+            description: <p>Tekst ukazał się po angielsku w&nbsp;17. numerze pisma <a href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank" rel="noopener noreferrer"><i>X-R-A-Y Literary Magazine</i></a>.</p>,
+            content: SPORES_PL,
+            theme: 'spores'
+        },
+
+        devonian: {
+            title: 'Dewon',
+            subtitle: 'flash fiction',
+            credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
+            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;piśmie <a href="http://thegravityofthething.com/devonian-lukasz-drobnik/" target="_blank" rel="noopener noreferrer"><i>The Gravity of the Thing</i></a> (numer Winter 2018). Polski przekład zamieszczono w&nbsp;czasopiśmie<a href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/" target="_blank" rel="noopener noreferrer"><i>Inter-</i></a> (numer&nbsp;2(16)/2018).</p>,
+            content: DEVONIAN_PL,
+            theme: 'devonian'
         },
 
         landmines: {
@@ -555,6 +591,14 @@ export const THEME_COLORS = {
     drones: {
         color1: '#ff6a7d',
         color2: '#ee5b7b'
+    },
+    spores: {
+        color1: '#fafafa',
+        color2: '#f4f4f4'
+    },
+    devonian: {
+        color1: '#fafafa',
+        color2: '#f4f4f4'
     },
     landmines: {
         color1: '#f4acca',

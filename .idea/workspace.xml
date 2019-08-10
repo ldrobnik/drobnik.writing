@@ -48,10 +48,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+            <state relative-caret-position="301">
+              <caret line="185" column="249" selection-start-line="185" selection-start-column="249" selection-end-line="185" selection-end-column="249" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#472#522#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-en.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-97">
+            <state relative-caret-position="18">
               <caret line="6" column="456" selection-start-line="6" selection-start-column="456" selection-end-line="6" selection-end-column="456" />
             </state>
           </provider>
@@ -71,15 +72,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
               <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/spores-en.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="5" column="254" selection-start-line="5" selection-start-column="254" selection-end-line="5" selection-end-column="254" />
             </state>
           </provider>
         </entry>
@@ -125,8 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>const AnimatedContent</find>
-      <find>scrollTo</find>
       <find>is a nove</find>
       <find>&lt;</find>
       <find>padding: 7em 1em 2em 1em;</find>
@@ -152,9 +142,11 @@
       <find>fragment</find>
       <find>, acz</find>
       <find>WAy</find>
-      <find>A</find>
-      <find>^(.+)$</find>
       <find>U</find>
+      <find>^(.+)$</find>
+      <find>A</find>
+      <find>spores</find>
+      <find>devonian</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -178,9 +170,9 @@
       <replace>ElementContent</replace>
       <replace>props.reloa</replace>
       <replace>!props.reload</replace>
-      <replace>Z&amp;nbsp;</replace>
-      <replace>&lt;p&gt;$1&lt;/p&gt;</replace>
       <replace>I&amp;nbsp;</replace>
+      <replace>&lt;p&gt;$1&lt;/p&gt;</replace>
+      <replace>Z&amp;nbsp;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\NavBar</dir>
@@ -604,12 +596,12 @@
       <workItem from="1565099999697" duration="3068000" />
       <workItem from="1565153400855" duration="25959000" />
       <workItem from="1565362255167" duration="3061000" />
-      <workItem from="1565416200335" duration="1391000" />
+      <workItem from="1565416200335" duration="2225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="367859000" />
+    <option name="totallyTimeSpent" value="368693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="532" y="6" width="1355" height="1047" extended-state="0" />
@@ -617,9 +609,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18841699" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18841699" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -1022,17 +1014,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-en.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/spores-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <caret line="6" column="456" selection-start-line="6" selection-start-column="456" selection-end-line="6" selection-end-column="456" />
+        <state relative-caret-position="161">
+          <caret line="3" column="179" selection-start-line="3" selection-start-column="179" selection-end-line="3" selection-end-column="179" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-pl.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-en.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+        <state relative-caret-position="18">
+          <caret line="6" column="456" selection-start-line="6" selection-start-column="456" selection-end-line="6" selection-end-column="456" />
         </state>
       </provider>
     </entry>
@@ -1043,19 +1035,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/spores-pl.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="3" column="179" selection-start-line="3" selection-start-column="179" selection-end-line="3" selection-end-column="179" />
+        <state relative-caret-position="299">
+          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+        <state relative-caret-position="301">
+          <caret line="185" column="249" selection-start-line="185" selection-start-column="249" selection-end-line="185" selection-end-column="249" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#472#522#0" expanded="true" />
           </folding>
         </state>
       </provider>
