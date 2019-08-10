@@ -183,7 +183,7 @@ export const TEXTS = {
             title: 'Dewon',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;piśmie <a href="http://thegravityofthething.com/devonian-lukasz-drobnik/" target="_blank" rel="noopener noreferrer"><i>The Gravity of the Thing</i></a> (numer Winter 2018). Polski przekład zamieszczono w&nbsp;czasopiśmie<a href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/" target="_blank" rel="noopener noreferrer"><i>Inter-</i></a> (numer&nbsp;2(16)/2018).</p>,
+            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;piśmie <a href="http://thegravityofthething.com/devonian-lukasz-drobnik/" target="_blank" rel="noopener noreferrer"><i>The Gravity of the Thing</i></a> (numer Winter 2018). Polski przekład zamieszczono w&nbsp;czasopiśmie <a href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/" target="_blank" rel="noopener noreferrer"><i>Inter-</i></a> (numer&nbsp;2(16)/2018).</p>,
             content: DEVONIAN_PL,
             theme: 'devonian'
         },
@@ -593,12 +593,12 @@ export const THEME_COLORS = {
         color2: '#ee5b7b'
     },
     spores: {
-        color1: '#fafafa',
-        color2: '#f4f4f4'
+        color1: '#00c590',
+        color2: '#04ae85'
     },
     devonian: {
-        color1: '#fafafa',
-        color2: '#f4f4f4'
+        color1: '#ffe91c',
+        color2: '#f1d20f'
     },
     landmines: {
         color1: '#f4acca',

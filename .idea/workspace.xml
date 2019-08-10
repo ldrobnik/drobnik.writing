@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="185" column="249" selection-start-line="185" selection-start-column="249" selection-end-line="185" selection-end-column="249" />
+            <state relative-caret-position="192">
+              <caret line="185" column="297" selection-start-line="185" selection-start-column="297" selection-end-line="185" selection-end-column="297" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#472#522#0" expanded="true" />
@@ -117,7 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>is a nove</find>
       <find>&lt;</find>
       <find>padding: 7em 1em 2em 1em;</find>
       <find>credits</find>
@@ -147,6 +146,7 @@
       <find>A</find>
       <find>spores</find>
       <find>devonian</find>
+      <find>Inter</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -596,12 +596,12 @@
       <workItem from="1565099999697" duration="3068000" />
       <workItem from="1565153400855" duration="25959000" />
       <workItem from="1565362255167" duration="3061000" />
-      <workItem from="1565416200335" duration="2225000" />
+      <workItem from="1565416200335" duration="2780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368693000" />
+    <option name="totallyTimeSpent" value="369248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="532" y="6" width="1355" height="1047" extended-state="0" />
@@ -1044,8 +1044,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="185" column="249" selection-start-line="185" selection-start-column="249" selection-end-line="185" selection-end-column="249" />
+        <state relative-caret-position="192">
+          <caret line="185" column="297" selection-start-line="185" selection-start-column="297" selection-end-line="185" selection-end-column="297" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#472#522#0" expanded="true" />
