@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/texts/devonian-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/devonian-pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/spores-en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/texts/spores-pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,14 +45,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="111" column="10" lean-forward="true" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
+            <state relative-caret-position="69">
+              <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#472#522#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/spores-pl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="6" column="165" selection-start-line="1" selection-start-column="30" selection-end-line="12" selection-end-column="432" />
+            <state relative-caret-position="161">
+              <caret line="3" column="179" selection-start-line="3" selection-start-column="179" selection-end-line="3" selection-end-column="179" />
             </state>
           </provider>
         </entry>
@@ -130,7 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>AnimateDc</find>
       <find>const AnimatedContent</find>
       <find>scrollTo</find>
       <find>is a nove</find>
@@ -160,6 +154,7 @@
       <find>WAy</find>
       <find>A</find>
       <find>^(.+)$</find>
+      <find>U</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -185,6 +180,7 @@
       <replace>!props.reload</replace>
       <replace>Z&amp;nbsp;</replace>
       <replace>&lt;p&gt;$1&lt;/p&gt;</replace>
+      <replace>I&amp;nbsp;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\NavBar</dir>
@@ -242,11 +238,11 @@
         <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.js" />
         <option value="$PROJECT_DIR$/src/data/texts/drones-pl.js" />
         <option value="$PROJECT_DIR$/src/components/Text/Text.js" />
-        <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/data/texts/devonian-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/devonian-pl.js" />
         <option value="$PROJECT_DIR$/src/data/texts/spores-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/spores-pl.js" />
+        <option value="$PROJECT_DIR$/src/data/constants.js" />
       </list>
     </option>
   </component>
@@ -608,12 +604,12 @@
       <workItem from="1565099999697" duration="3068000" />
       <workItem from="1565153400855" duration="25959000" />
       <workItem from="1565362255167" duration="3061000" />
-      <workItem from="1565416200335" duration="1273000" />
+      <workItem from="1565416200335" duration="1391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="367741000" />
+    <option name="totallyTimeSpent" value="367859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="532" y="6" width="1355" height="1047" extended-state="0" />
@@ -621,7 +617,7 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18841699" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18841699" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" weight="0.17045455" />
@@ -1026,17 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="111" column="10" lean-forward="true" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#472#522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-97">
@@ -1060,8 +1045,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/spores-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="6" column="165" selection-start-line="1" selection-start-column="30" selection-end-line="12" selection-end-column="432" />
+        <state relative-caret-position="161">
+          <caret line="3" column="179" selection-start-line="3" selection-start-column="179" selection-end-line="3" selection-end-column="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -23,16 +23,20 @@ import {MOTHS_EN} from './texts/moths-en';
 import {MOTHS_PL} from './texts/moths-pl';
 import {CELLULOSE_EN} from './texts/cellulose-en';
 import {CELLULOSE_PL} from './texts/cellulose-pl';
-import {LANDMINES_EN} from './texts/landmines-en';
-import {LANDMINES_PL} from './texts/landmines-pl';
 import {DRONES_EN} from './texts/drones-en';
 import {DRONES_PL} from './texts/drones-pl';
+import {SPORES_EN} from './texts/spores-en';
+import {SPORES_PL} from './texts/spores-pl';
+import {DEVONIAN_EN} from './texts/devonian-en';
+import {DEVONIAN_PL} from './texts/devonian-pl';
+import {LANDMINES_EN} from './texts/landmines-en';
+import {LANDMINES_PL} from './texts/landmines-pl';
 import {TREASURES_EN} from './texts/treasures-en';
 import {TREASURES_PL} from './texts/treasures-pl';
 import posed from "react-pose";
 
 //Names of available texts
-export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'landmines', 'treasures'];
+export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'spores', 'devonian', 'landmines', 'treasures'];
 
 //Content of pieces displayed in the Text component
 export const TEXTS = {
