@@ -776,8 +776,8 @@ export const WEBSITE_TEXT = {
             pl: 'Czytelnia'
         },
         introduction: {
-            en: <div>Here are a handful of my pieces.<br />Maybe you’d like to read them:</div>,
-            pl: <div>Oto garstka moich tekstów.<br />Może zechcesz je przeczytać:</div>
+            en: <div>Here are a handful of my pieces.<br />Maybe you’d like to read some of them:</div>,
+            pl: <div>Oto garstka moich tekstów.<br />Może zechcesz niektóre z&bsp;nich przeczytać:</div>
         }
     },
     sectionLinks: [
