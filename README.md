@@ -21,8 +21,6 @@ A new version of my author website I’m building with **React**. It is practica
 * **react-anchor-link-smooth-scroll**
 
 ## Basic project structure
-
-
        +---------+
        | App.js  |
        +----+----+
@@ -58,10 +56,6 @@ A new version of my author website I’m building with **React**. It is practica
                +------------+
 
 ## About component structure
-
-
-
-
        +----------+
        | About.js |
        +----+-----+
@@ -180,3 +174,28 @@ A new version of my author website I’m building with **React**. It is practica
            
 
 ## Text component structure
+        +---------+
+        | Text.js |
+        +----+----+
+             |
+             |   +------------+
+             +---+ Credits.js |
+             |   +------------+
+             |
+             |   +---------------------+
+             +---+ DescriptionPanel.js |
+             |   +---------------------+
+             |
+             |   +-----------------+
+             +---+ NextTextLink.js |
+             |   +-----------------+
+             |
+             |  +---------------------+
+             +--+ SectionSeparator.js |
+             |  +---------------------+
+             |
+             |   +------------------+
+             +---+ CopyrightNote.js |
+                 +------------------+
+
+       
