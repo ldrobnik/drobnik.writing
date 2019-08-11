@@ -55,6 +55,22 @@ A new version of my author website I’m building with **React**. It is practica
             +--+ Spinner.js |
                +------------+
 
+       
+## Layout component structure
+          +-----------+
+          | Layout.js |
+          +----+------+
+               |
+               |   +-----------+
+               +---+ NavBar.js |
+                   +----+------+
+                        |
+                        |  +---------+
+                        +--+ Logo.js |
+                           +---------+
+
+
+
 ## About component structure
        +----------+
        | About.js |
@@ -199,3 +215,12 @@ A new version of my author website I’m building with **React**. It is practica
                  +------------------+
 
        
+## QuickLinks component structure
+         +---------------+
+         | QuickLinks.js |
+         +----+----------+
+              |
+              |   +--------------+
+              +---+ QuickLink.js |
+                  +--------------+
+
