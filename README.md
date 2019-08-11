@@ -19,3 +19,44 @@ A new version of my author website I’m building with **React**. It is practica
 * **FontAwesome**
 * **React Waypoint**
 * **react-anchor-link-smooth-scroll**
+
+## Basic project structure
+
+
+       +---------+
+       | App.js  |
+       +----+----+
+            |
+            |
+       +----+----+
+       | Home.js |
+       +----+----+
+            |
+            |
+       +---------------Layout.js-----+
+       |    |                        |
+       |    |  +----------+          |
+       |    +--+ About.js |          |
+       |    |  +----------+          |
+       |    |                        |
+       |    |  +---------+           |
+       |    +--+ Text.js |           |
+       |    |  +---------+           |
+       |    |                        |
+       |    |  +---------------+     |
+       |    +--+ QuickLinks.js |     |
+       |    |  +---------------+     |
+       |    |                        |
+       +-----------------------------+
+            |
+            |  +---------------+
+            +--+ DataNotice.js |
+            |  +---------------+
+            |
+            |  +------------+
+            +--+ Spinner.js |
+               +------------+
+
+## About component structure
+
+## Text component structure

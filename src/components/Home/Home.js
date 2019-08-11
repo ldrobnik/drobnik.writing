@@ -7,10 +7,10 @@ import {createGlobalStyle} from 'styled-components';
 import * as actionTypes from "../../store/actions";
 import {PULSATE_KEYFRAMES} from "../../data/constants";
 
-import QuickLinks from '../QuickLinks/QuickLinks';
 import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Text from '../Text/Text';
+import QuickLinks from '../QuickLinks/QuickLinks';
 import DataNotice from '../UI/DataNotice/DataNotice';
 import Spinner from '../UI/Spinner/Spinner';
 
