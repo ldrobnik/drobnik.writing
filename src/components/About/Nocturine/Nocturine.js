@@ -9,9 +9,9 @@ import * as actionTypes from "./../../../store/actions";
 import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from './../../../data/constants';
 
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
+import QuoteList from '../QuoteList/QuoteList';
 import CentredButton from "./../../UI/CentredButton/CentredButton";
 import SectionLinks from "../SectionLinks/SectionLinks";
-import QuoteList from '../QuoteList/QuoteList';
 import SectionSeparator from "./../../UI/SectionSeparator/SectionSeparator";
 
 /* STYLED COMPONENTS */
