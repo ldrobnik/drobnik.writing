@@ -128,20 +128,13 @@ const Pubs = (props) => {
     useEffect(() => {
 
         //show content after a while
-        setTimeout(
-            () => {
-                showContent();
-            }, FADE_DURATION
-        );
+        setTimeout(showContent, FADE_DURATION);
     });
 
     //hide message whenever the pathname changes
     useEffect(() => {
 
-            setTimeout(() => {
-
-                hideMessage();
-            }, 100);
+            setTimeout(hideMessage,100);
 
         },
         [props.location.pathname]

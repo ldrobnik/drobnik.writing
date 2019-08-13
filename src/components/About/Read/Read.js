@@ -67,11 +67,7 @@ const Read = (props) => {
 
     //hide message whenever the pathname changes
     useEffect(() => {
-
-            setTimeout(() => {
-
-                hideLinks();
-            }, 100);
+            setTimeout(hideLinks,100);
         },
         [props.location.pathname]
     );
@@ -79,11 +75,7 @@ const Read = (props) => {
     useEffect(() => {
 
         //show content after a while
-        setTimeout(
-            () => {
-                showContent();
-            }, FADE_DURATION
-        );
+        setTimeout(showContent, FADE_DURATION);
     });
     return (
         <Wrapper>

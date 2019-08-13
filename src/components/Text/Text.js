@@ -221,11 +221,7 @@ const Text = (props) => {
 
         //show content after a while if page has loaded
         if (props.loaded) {
-            setTimeout(
-                () => {
-                    showContent();
-                }, FADE_DURATION
-            );
+            setTimeout(showContent, FADE_DURATION);
         }
 
     });

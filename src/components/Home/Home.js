@@ -93,9 +93,7 @@ const Home = (props) => {
             checkLocalStorage();
 
             //set page as loaded and hide spinner after a while
-            setTimeout(() => {
-                hideSpinner();
-            }, 1500);
+            setTimeout(hideSpinner,1500);
         }
     );
 

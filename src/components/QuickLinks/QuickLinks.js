@@ -73,11 +73,7 @@ const QuickLinks = (props) => {
         hideDataNotice();
 
         //show content after a while
-        setTimeout(
-            () => {
-                showContent();
-            }, FADE_DURATION
-        );
+        setTimeout(showContent, FADE_DURATION);
     });
 
     return (

@@ -89,18 +89,12 @@ const Intro = (props) => {
 
     useEffect(() => {
         //show content after a while
-        setTimeout(
-            () => {
-                showContent();
-            }, FADE_DURATION
-        );
+        setTimeout(showContent, FADE_DURATION);
     });
 
     //hide social links whenever the pathname changes
     useEffect(() => {
-            setTimeout(() => {
-                hideSocial();
-            }, 100);
+            setTimeout(hideSocial,100);
         },
         [props.location.pathname]
     );

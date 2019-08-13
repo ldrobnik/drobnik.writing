@@ -81,19 +81,12 @@ const Nocturine = (props) => {
 
     useEffect(() => {
         //show content after a while
-        setTimeout(
-            () => {
-                showContent();
-            }, FADE_DURATION
-        );
+        setTimeout(showContent, FADE_DURATION);
     });
 
     //hide social links whenever the pathname changes
     useEffect(() => {
-            setTimeout(() => {
-
-                hideElements();
-            }, 100);
+            setTimeout(hideElements,100);
         },
         [props.location.pathname]
     );
