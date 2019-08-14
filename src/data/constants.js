@@ -90,7 +90,7 @@ export const TEXTS = {
             title: 'Spores',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p>The piece was published in <a href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank" rel="noopener noreferrer"><i>X-R-A-Y Literary Magazine</i></a> Issue&nbsp;17.</p>,
+            description: <p>The piece was published in <a href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank" rel="noopener noreferrer"><i>X&#8209;R&#8209;A&#8209;Y Literary Magazine</i></a> Issue&nbsp;17.</p>,
             content: SPORES_EN,
             theme: 'spores'
         },
@@ -174,7 +174,7 @@ export const TEXTS = {
             title: 'Zarodniki',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się po angielsku w&nbsp;17. numerze pisma <a href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank" rel="noopener noreferrer"><i>X-R-A-Y Literary Magazine</i></a>.</p>,
+            description: <p>Tekst ukazał się po angielsku w&nbsp;17. numerze pisma <a href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank" rel="noopener noreferrer"><i>X&#8209;R&#8209;A&#8209;Y Literary Magazine</i></a>.</p>,
             content: SPORES_PL,
             theme: 'spores'
         },
@@ -634,11 +634,11 @@ export const WEBSITE_TEXT = {
         body: {
             en: <div>
                 <p>I’m a bilingual writer creating fiction in my native Polish but recently mostly in English. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan. (Though I don’t shy away from longer forms.)</p>
-                <p><AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, my novella/short fiction collection is now forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>, and my other work has been featured in <i>Atticus Review</i>, <i>Quarterly West</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and elsewhere. Below you can find a <AnchorLink href='#pubs' offset="60px"><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and also <AnchorLink href='#read' offset="60px"><b>READ</b></AnchorLink> some of my pieces.</p>
+                <p><AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, my novella/short fiction collection is now forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>, and my other work has been featured in <i>Atticus Review</i>, <i>Quarterly West</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i>, <i>X&#8209;R&#8209;A&#8209;Y Literary Magazine</i> and elsewhere. Below you can find a <AnchorLink href='#pubs' offset="60px"><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and also <AnchorLink href='#read' offset="60px"><b>READ</b></AnchorLink> some of my pieces.</p>
             </div>,
             pl: <div>
                 <p>Jestem dwujęzycznym pisarzem, który tworzy prozę po polsku (w&nbsp;moim ojczystym języku), ale ostatnio głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę wysokoartystyczną i&nbsp;wplatam w&nbsp;nią elementy innych gatunków, a&nbsp;do tego jestem ogromnym fanem <i>flash fiction</i> (czyli bardzo krótkich opowiadań). Nie stronię jednak od dłuższych form.</p>
-                <p>Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się napisana przeze mnie minipowieść/zbiór krótkich próz <AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, a&nbsp;moje utwory były publikowane m.in. w&nbsp;<i>Atticus Review</i>, <i>Quarterly West</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i> oraz <i>X-R-A-Y Literary Magazine</i>. Poniżej można znaleźć <AnchorLink href='#pubs' offset="60px"><b>PEŁNĄ LISTĘ PUBLIKACJI</b></AnchorLink>, a&nbsp;także <AnchorLink href='#read' offset="60px"><b>POCZYTAĆ</b></AnchorLink> kilka moich tekstów.</p>
+                <p>Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się napisana przeze mnie minipowieść/zbiór krótkich próz <AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, a&nbsp;moje utwory były publikowane m.in. w&nbsp;<i>Atticus Review</i>, <i>Quarterly West</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i> oraz <i>X&#8209;R&#8209;A&#8209;Y Literary Magazine</i>. Poniżej można znaleźć <AnchorLink href='#pubs' offset="60px"><b>PEŁNĄ LISTĘ PUBLIKACJI</b></AnchorLink>, a&nbsp;także <AnchorLink href='#read' offset="60px"><b>POCZYTAĆ</b></AnchorLink> kilka moich tekstów.</p>
             </div>
         },
         patreon: {
