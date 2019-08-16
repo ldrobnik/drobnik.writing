@@ -15,6 +15,10 @@ const SpinnerWrapper = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+  
+  img {
+    height: 140px;
+  }
 `;
 
 

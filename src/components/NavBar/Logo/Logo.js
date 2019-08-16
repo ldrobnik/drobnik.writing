@@ -5,8 +5,8 @@ import websiteLogo from '../../../assets/images/logo.png';
 
 /* STYLED COMPONENTS*/
 const WebsiteLogo = styled.div`
-  height: 3em;
-  padding: 0.25em;
+  height: 2.8em;
+  padding: 0.3em;
     img {
       height: 100%;
     }
