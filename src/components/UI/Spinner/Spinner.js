@@ -17,7 +17,7 @@ const SpinnerWrapper = styled.div`
   animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
   
   img {
-    height: 140px;
+    height: 110px;
   }
 `;
 
