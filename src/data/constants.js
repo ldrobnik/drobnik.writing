@@ -45,7 +45,7 @@ export const TEXTS = {
             title: 'Nocturine',
             subtitle: 'novella fragment',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
-            description: <p>“Nocturine” is a novella/short fiction collection forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><i>Fathom Books</i></a>. It was originally written <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">in Polish</a> and published in one volume with another novella, “Cunninghamella” (<i>Forma</i> 2011). Excerpts from “Nocturine” have been featured in a number of journals — both in Polish (<a href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>) and in English (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
+            description: <p><i>Nocturine</i> is a novella/short fiction collection forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was originally written <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">in Polish</a> and published in one volume with another novella, <i>Cunninghamella</i> (Forma 2011). Excerpts from <i>Nocturine</i> have been featured in a number of journals — both in Polish (<a href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>) and in English (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
             content: NOCTURINE_EN,
             theme: 'nocturine'
         },
@@ -128,7 +128,7 @@ export const TEXTS = {
             title: 'Nocturine',
             subtitle: 'fragment minipowieści',
             credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
-            description: <p>„Nocturine” to minipowieść/zbiór krótkich próz w&nbsp;przygotowaniu przez wydawnictwo <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><i>Fathom Books</i></a>. Książka pierwotnie ukazała się <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie z&nbsp;inną minipowieścią pt. „Cunninghamella” (<i>Forma</i> 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku czasopismach — zarówno po polsku (<a href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>), jak i&nbsp;po angielsku (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
+            description: <p>„Nocturine” to minipowieść/zbiór krótkich próz w&nbsp;przygotowaniu przez wydawnictwo <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka pierwotnie ukazała się <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie z&nbsp;inną minipowieścią pt. „Cunninghamella” (Forma 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku czasopismach — zarówno po polsku (<a href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>), jak i&nbsp;po angielsku (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
             content: NOCTURINE_PL,
             theme: 'nocturine'
         },
@@ -633,7 +633,7 @@ export const WEBSITE_TEXT = {
         },
         body: {
             en: <div>
-                <p>I’m a bilingual writer creating fiction in my native Polish but recently mostly in English. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan. (Though I don’t shy away from longer forms.)</p>
+                <p>I’m a bilingual writer creating fiction in my native Polish but recently mostly in English. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from longer forms).</p>
                 <p><AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, my novella/short fiction collection, is now forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>, and my other work has been featured in <i>Atticus Review</i>, <i>Quarterly West</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i>, <i>X&#8209;R&#8209;A&#8209;Y Literary Magazine</i> and elsewhere. Below you can find a <AnchorLink href='#pubs' offset="60px"><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and also <AnchorLink href='#read' offset="60px"><b>READ</b></AnchorLink> some of my pieces.</p>
             </div>,
             pl: <div>
@@ -674,12 +674,12 @@ export const WEBSITE_TEXT = {
         body: {
             en: <div>
                 <p>The end of the world starts like an ad campaign. When black cubes appear above the city of Poznań, some think it’s just another mobile network operator entering the market. These include Mietek, an unemployed man in his twenties, suddenly abandoned by his boyfriend. Soon his best friend also disappears while the black cubes in the sky start to multiply, taking up more and more of the urban space.</p>
-                <p><span className='bookTitle'>NOCTURINE</span> is a novella/short fiction collection that takes you on a genre-bending journey from contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a homestead haunted by dummies, to the inside of a human body. Each of six chapters/stories is told by a different narrator in a frantic yet melancholic style.</p>
-                <p>The book was originally published in Polish, in one volume with another novella, “Cunninghamella” (Forma 2011). Now, my authorial translation into English is forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>.</p>
+                <p><i>NOCTURINE</i> is a novella/short fiction collection that takes you on a genre-bending journey from contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a homestead haunted by dummies, to the inside of a human body. Each of six chapters/stories is told by a different narrator in a frantic yet melancholic style.</p>
+                <p>The book was originally published in Polish, in one volume with another novella, <i>Cunninghamella</i> (Forma 2011). Now, my authorial translation into English is forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>.</p>
             </div>,
             pl: <div>
                 <p>Koniec świata zaczyna się jak kampania reklamowa. Gdy nad Poznaniem zawisają czarne sześciany, niektórzy sądzą, że to po prostu kolejny operator sieci komórkowej wchodzi na rynek. Do tej grupy należy Mietek, bezrobotny dwudziestoparolatek, którego nagle opuszcza chłopak. Niedługa jego najlepsza przyjaciółka także znika, podczas gdy czarne sześciany na niebie zaczynają się mnożyć, zabierając coraz więcej miejskiej przestrzeni.</p>
-                <p><span className='bookTitle'>NOCTURINE</span> to minipowieść/zbiór krótkich próz, a&nbsp;tom ten zabiera czytelnika na niejednoznaczną gatunkowo podróż z&nbsp;Poznania pożeranego przez ośmiobiotową amebę przez dom złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze ludzkiego ciała. Każdy z&nbsp;sześciu rozdziałów/opowiadań ma innego narratora, który snuje opowieść w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
+                <p><i>NOCTURINE</i> to minipowieść/zbiór krótkich próz, a&nbsp;tom ten zabiera czytelnika na niejednoznaczną gatunkowo podróż z&nbsp;Poznania pożeranego przez ośmiobiotową amebę przez dom złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze ludzkiego ciała. Każdy z&nbsp;sześciu rozdziałów/opowiadań ma innego narratora, który snuje opowieść w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
                 <p>Książka została pierwotnie wydana po polsku w&nbsp;jednym tomie z&nbsp;inną minipowieścią pt. „Cunninghamella”. Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się jej autorski przekład na angielski.</p>
             </div>
         },
@@ -700,7 +700,7 @@ export const WEBSITE_TEXT = {
                   source: 'FATHOM BOOKS, the publisher'
                 },
                 {
-                    quote: <div>To say Nocturine is oneiric isn’t enough — it’s a psychedelic. It kicks in slowly, swaying you from the very first sentences. Hypnotic phrase. Beautiful!</div>,
+                    quote: <div>To say <i>Nocturine</i> is oneiric isn’t enough — it’s a psychedelic. It kicks in slowly, swaying you from the very first sentences. Hypnotic phrase. Beautiful!</div>,
                     source: 'Patrycja Janowska, LAMPA 1–2/2012'
                 },
                 {
@@ -722,7 +722,7 @@ export const WEBSITE_TEXT = {
                     source: 'FATHOM BOOKS, wydawca'
                 },
                 {
-                    quote: <div>Powiedzieć, że Nocturine jest oniryczne, to za mało — to psychodelik jest. Wchodzi miękko, od pierwszych zdań już kołysze. Fraza hipnotyczna. Coś pięknego!</div>,
+                    quote: <div>Powiedzieć, że „Nocturine” jest oniryczne, to za mało — to psychodelik jest. Wchodzi miękko, od pierwszych zdań już kołysze. Fraza hipnotyczna. Coś pięknego!</div>,
                     source: 'Patrycja Janowska, LAMPA 1–2/2012'
                 },
                 {

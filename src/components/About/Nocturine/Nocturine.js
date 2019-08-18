@@ -25,13 +25,6 @@ const Body = styled.div`
     a {
       font-family: ${props => props.theme.sansSerif};
     }
-    
-    .bookTitle {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-style: italic;
-    font-family: ${props => props.theme.sansSerif};
-    }
 `;
 
 /* POSE */
