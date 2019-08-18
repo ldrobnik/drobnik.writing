@@ -90,6 +90,12 @@ const Intro = (props) => {
     useEffect(() => {
         //show content after a while
         setTimeout(showContent, FADE_DURATION);
+
+        //For larger screens, show social links after a while, irrespective of the viewport position
+        if (window.innerWidth > 1800) {
+            setTimeout(showSocial, 2000);
+        }
+
     });
 
     //hide social links whenever the pathname changes
@@ -141,6 +147,9 @@ const Intro = (props) => {
                 />
                 <SectionSeparator/>
             </AnimatedContent>
+            <Waypoint
+                onEnter={showSocial}
+            />
         </React.Fragment>
     );
 };
