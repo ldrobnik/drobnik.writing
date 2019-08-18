@@ -300,7 +300,7 @@ export const PUBLICATIONS = {
             year: '2018',
             url: 'https://underwoodpress.com/inaugural-issue/september-2018/photosensitivity-by-lukasz-drobnik/',
             descriptionPl: 'Opowiadanie „Photosensitivity” (przekład tekstu „Światłoczułość”)',
-            descriptionEn: 'Short story “Photosensitivity” (translation of “Światłoczułość”',
+            descriptionEn: 'Short story “Photosensitivity” (translation of “Światłoczułość”)',
             language: 'en',
             pieceTitle: 'Photosensitivity'
         },
@@ -531,8 +531,8 @@ export const PUBLICATIONS = {
             issue: '6/2005',
             year: '2005',
             url: 'http://lampa.art.pl/',
-            descriptionPl: 'Opowiadanie „Astroskopia”',
-            descriptionEn: 'Short story “Astroskopia”',
+            descriptionPl: 'Opowiadanie „astroskopia”',
+            descriptionEn: 'Short story “astroskopia”',
             language: 'pl',
             pieceTitle: 'Astroskopia'
         }
@@ -777,7 +777,7 @@ export const WEBSITE_TEXT = {
         },
         introduction: {
             en: <div>Here are a handful of my pieces.<br />Maybe you’d like to read some of them:</div>,
-            pl: <div>Oto garstka moich tekstów.<br />Może zechcesz niektóre z&bsp;nich przeczytać:</div>
+            pl: <div>Oto garstka moich tekstów.<br />Może zechcesz niektóre z&nbsp;nich przeczytać:</div>
         }
     },
     sectionLinks: [
