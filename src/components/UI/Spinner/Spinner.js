@@ -27,8 +27,8 @@ const Backdrop = styled.div`
   left: 0;
   top: 0;
   z-index: 80;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(145deg, ${props => props.theme.color1}, ${props => props.theme.color2});
 `;
 
