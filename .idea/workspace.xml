@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/texts/spores-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/spores-pl.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -44,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="771" column="6" lean-forward="true" selection-start-line="771" selection-start-column="6" selection-end-line="771" selection-end-column="6" />
+            <state relative-caret-position="16997">
+              <caret line="771" column="6" selection-start-line="771" selection-start-column="6" selection-end-line="771" selection-end-column="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#472#522#0" expanded="true" />
@@ -57,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/texts/spores-pl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="7" column="230" selection-start-line="7" selection-start-column="230" selection-end-line="7" selection-end-column="230" />
+            <state relative-caret-position="69">
+              <caret line="2" column="179" selection-start-line="2" selection-start-column="179" selection-end-line="2" selection-end-column="179" />
             </state>
           </provider>
         </entry>
@@ -102,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/About/Intro/Intro.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="87" column="6" lean-forward="true" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
+            <state relative-caret-position="1633">
+              <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -279,7 +278,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -384,6 +382,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -490,12 +489,14 @@
       <workItem from="1565886386923" duration="18000" />
       <workItem from="1565933432149" duration="5389000" />
       <workItem from="1566044838204" duration="5811000" />
-      <workItem from="1566151420210" duration="1486000" />
+      <workItem from="1566151420210" duration="3146000" />
+      <workItem from="1566164864674" duration="98000" />
+      <workItem from="1566191755585" duration="541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="401604000" />
+    <option name="totallyTimeSpent" value="403903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="514" y="0" width="1373" height="1047" extended-state="0" />
@@ -503,9 +504,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18576778" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18576778" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -869,6 +870,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16997">
+          <caret line="771" column="6" selection-start-line="771" selection-start-column="6" selection-end-line="771" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#472#522#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/About/Nocturine/Nocturine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -899,6 +911,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About/Intro/Intro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1633">
+          <caret line="87" column="6" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -919,31 +941,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/Intro/Intro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="87" column="6" lean-forward="true" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="771" column="6" lean-forward="true" selection-start-line="771" selection-start-column="6" selection-end-line="771" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#472#522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/spores-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="7" column="230" selection-start-line="7" selection-start-column="230" selection-end-line="7" selection-end-column="230" />
+        <state relative-caret-position="69">
+          <caret line="2" column="179" selection-start-line="2" selection-start-column="179" selection-end-line="2" selection-end-column="179" />
         </state>
       </provider>
     </entry>
