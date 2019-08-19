@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/spores-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/spores-pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/texts/cetacean-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/cetacean-pl.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16997">
+            <state relative-caret-position="631">
               <caret line="771" column="6" selection-start-line="771" selection-start-column="6" selection-end-line="771" selection-end-column="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -54,10 +53,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/data/texts/spores-pl.js">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="2" column="179" selection-start-line="2" selection-start-column="179" selection-end-line="2" selection-end-column="179" />
+            <state relative-caret-position="360">
+              <caret line="7" column="208" selection-start-line="7" selection-start-column="208" selection-end-line="7" selection-end-column="208" />
             </state>
           </provider>
         </entry>
@@ -145,7 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>colo</find>
       <find>dwutygodnik</find>
       <find>const top =</find>
       <find>props.text</find>
@@ -175,6 +173,7 @@
       <find>translation of</find>
       <find>oto garstka</find>
       <find>musiała</find>
+      <find>rzadk</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -211,7 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Home/About/Pubs/Pubs.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Read/Read.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel/DescriptionPanel.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" />
@@ -262,6 +260,7 @@
         <option value="$PROJECT_DIR$/src/components/About/Intro/Intro.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/data/texts/spores-pl.js" />
+        <option value="$PROJECT_DIR$/src/data/texts/cetacean-pl.js" />
       </list>
     </option>
   </component>
@@ -491,12 +490,12 @@
       <workItem from="1566044838204" duration="5811000" />
       <workItem from="1566151420210" duration="3146000" />
       <workItem from="1566164864674" duration="98000" />
-      <workItem from="1566191755585" duration="541000" />
+      <workItem from="1566191755585" duration="1843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="403903000" />
+    <option name="totallyTimeSpent" value="405205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="514" y="0" width="1373" height="1047" extended-state="0" />
@@ -504,9 +503,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18576778" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18576778" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -557,7 +556,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/About.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" />
@@ -870,17 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16997">
-          <caret line="771" column="6" selection-start-line="771" selection-start-column="6" selection-end-line="771" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#472#522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/About/Nocturine/Nocturine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -943,8 +930,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/spores-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="2" column="179" selection-start-line="2" selection-start-column="179" selection-end-line="2" selection-end-column="179" />
+        <state relative-caret-position="206">
+          <caret line="9" column="436" selection-start-line="9" selection-start-column="436" selection-end-line="9" selection-end-column="436" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="771" column="6" selection-start-line="771" selection-start-column="6" selection-end-line="771" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#472#522#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="7" column="208" selection-start-line="7" selection-start-column="208" selection-end-line="7" selection-end-column="208" />
         </state>
       </provider>
     </entry>
