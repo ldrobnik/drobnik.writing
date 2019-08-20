@@ -6,7 +6,7 @@ import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
 import * as actionTypes from "./../../../store/actions";
-import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from '../../../data/constants';
+import {WEBSITE_TEXT, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from '../../../data/constants';
 
 import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'
 import SectionHeading from './../../UI/SectionHeading/SectionHeading';
@@ -25,6 +25,8 @@ const Body = styled.div`
  
     a {
       font-family: ${props => props.theme.sansSerif};
+      
+     
     }
 `;
 

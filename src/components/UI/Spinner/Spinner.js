@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 
-import logoImage from '../../../assets/images/logo.png';
+import logoImage from '../../../assets/images/logo.svg';
 import {PULSATE_KEYFRAMES, AnimatedContent} from "../../../data/constants";
 
 const Wrapper = styled.div`

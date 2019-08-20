@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import websiteLogo from '../../../assets/images/logo.png';
+import websiteLogo from '../../../assets/images/logo.svg';
 
 /* STYLED COMPONENTS*/
 const WebsiteLogo = styled.div`
