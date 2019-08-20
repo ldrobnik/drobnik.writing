@@ -6,7 +6,7 @@ import posed from 'react-pose';
 import {Waypoint} from 'react-waypoint';
 
 import * as actionTypes from "./../../../store/actions";
-import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from './../../../data/constants';
+import {WEBSITE_TEXT, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from './../../../data/constants';
 
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import QuoteList from '../QuoteList/QuoteList';
@@ -24,6 +24,12 @@ const Body = styled.div`
     
     a {
       font-family: ${props => props.theme.sansSerif};
+      
+       @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }  
     }
 `;
 

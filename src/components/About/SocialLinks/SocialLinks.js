@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import {WEBSITE_TEXT} from "./../../../data/constants";
+import {WEBSITE_TEXT, PULSATE_KEYFRAMES} from "./../../../data/constants";
 
 /* STYLED COMPONENTS*/
 const Wrapper = styled.div`
@@ -12,12 +12,18 @@ const Wrapper = styled.div`
     margin: 1.5em 0;
     
     @media all and (max-width: ${props => props.theme.smallScr}) {
-      font-size: font-size: ${props => props.theme.captionSize};;
+      font-size: ${props => props.theme.captionSize};
     }
 
     div {
       padding: 8px;
     }
+    
+     @media all and (min-width: ${props => props.theme.smallScr}) {
+             a:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }  
 `;
 
 const SocialLinks = () => {

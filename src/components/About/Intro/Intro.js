@@ -26,7 +26,12 @@ const Body = styled.div`
     a {
       font-family: ${props => props.theme.sansSerif};
       
-     
+      @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }  
+        
     }
 `;
 
