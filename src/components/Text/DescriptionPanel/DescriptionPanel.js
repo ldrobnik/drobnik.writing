@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import {PULSATE_KEYFRAMES} from "../../../data/constants";
+
 /*STYLED COMPONENTS*/
 const Description = styled.div`
   background-color: ${props => props.theme.background};
@@ -11,6 +13,12 @@ const Description = styled.div`
   
   a {
     font-weight: bold;
+    
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }  
   }
 `;
 

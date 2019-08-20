@@ -26,12 +26,7 @@ const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
         color: ${props => props.theme.darkColor};
-        
-        // @media all and (min-width: ${props => props.theme.smallScr}) {
-        //      &:hover {
-        //               animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-        //      }
-        // }        
+
     }
      
      ::selection {

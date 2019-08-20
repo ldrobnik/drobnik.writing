@@ -7,7 +7,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Waypoint} from "react-waypoint";
 
 import * as actionTypes from './../../store/actions';
-import {TEXTS, TEXT_NAMES, WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from './../../data/constants';
+import {TEXTS, TEXT_NAMES, WEBSITE_TEXT, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from './../../data/constants';
 
 import Credits from './Credits/Credits';
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
@@ -92,6 +92,12 @@ const Links = styled.div`
   
   div {
     padding: 0 0.3em;
+    
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }  
   }
 `;
 
