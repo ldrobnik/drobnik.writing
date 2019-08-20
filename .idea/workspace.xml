@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/data/texts/cetacean-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/cetacean-pl.js" afterDir="false" />
-    </list>
+    <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,18 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1955">
-              <caret line="99" column="47" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Text/Text.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,11 +38,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="7" column="208" selection-start-line="7" selection-start-column="208" selection-end-line="7" selection-end-column="208" />
+            <state relative-caret-position="94">
+              <caret line="6" column="67" lean-forward="true" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -144,8 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dwutygodnik</find>
-      <find>const top =</find>
       <find>props.text</find>
       <find>while</find>
       <find>chosenText</find>
@@ -174,6 +167,8 @@
       <find>oto garstka</find>
       <find>musiała</find>
       <find>rzadk</find>
+      <find>space-</find>
+      <find>nieczęstej</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -490,12 +485,12 @@
       <workItem from="1566044838204" duration="5811000" />
       <workItem from="1566151420210" duration="3146000" />
       <workItem from="1566164864674" duration="98000" />
-      <workItem from="1566191755585" duration="1843000" />
+      <workItem from="1566191755585" duration="6407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="405205000" />
+    <option name="totallyTimeSpent" value="409769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="514" y="0" width="1373" height="1047" extended-state="0" />
@@ -556,7 +551,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Text/Text.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/About.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/QuoteList.js" />
@@ -948,8 +942,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/cetacean-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="7" column="208" selection-start-line="7" selection-start-column="208" selection-end-line="7" selection-end-column="208" />
+        <state relative-caret-position="94">
+          <caret line="6" column="67" lean-forward="true" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
         </state>
       </provider>
     </entry>
