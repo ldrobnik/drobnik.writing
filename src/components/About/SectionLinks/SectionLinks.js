@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import {WEBSITE_TEXT} from "./../../../data/constants";
+import {WEBSITE_TEXT, PULSATE_KEYFRAMES} from "./../../../data/constants";
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,6 +14,12 @@ const Wrapper = styled.div`
   
   div {
     padding: 0 0.3em;
+    
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }  
   }
 `;
 
