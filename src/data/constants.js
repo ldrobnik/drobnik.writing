@@ -855,14 +855,14 @@ export const LINKS = [
         url: 'https://atticusreview.org/treasures/'
     },
     {
-        title: 'Read “Spores”',
-        subtitle: 'in X-R-A-Y Literary Magazine',
-        url: 'http://x-r-a-y.com/spores-lukasz-drobnik/fiction/'
-    },
-    {
         title: 'Patreon',
         subtitle: 'please consider supporting me',
         url: 'https://www.patreon.com/drobnik'
+    },
+    {
+        title: 'Read “Spores”',
+        subtitle: 'in X-R-A-Y Literary Magazine',
+        url: 'http://x-r-a-y.com/spores-lukasz-drobnik/fiction/'
     },
     {
         title: 'Buy Foglifter Vol. 4 Issue 1',
