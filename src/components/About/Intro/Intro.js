@@ -99,8 +99,12 @@ const Intro = (props) => {
         setTimeout(showContent, FADE_DURATION);
 
         //For larger screens, show social links after a while, irrespective of the viewport position
-        if (window.innerWidth > 2000) {
+        if (window.innerWidth > 1800) {
             setTimeout(showSocial, 2000);
+        } else if (window.innerWidth > 1500) {
+            setTimeout(showSocial, 4000);
+        } else {
+            setTimeout(showSocial, 7000);
         }
 
     });
