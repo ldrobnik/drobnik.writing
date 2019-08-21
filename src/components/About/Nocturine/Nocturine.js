@@ -16,11 +16,14 @@ import SectionSeparator from "./../../UI/SectionSeparator/SectionSeparator";
 
 /* STYLED COMPONENTS */
 const Body = styled.div`
-  text-align: justify;
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.serif};
   line-height: 1.4em;
   margin-top: 1.3em;
+  
+     @media all and (min-width: ${props => props.theme.smallScr}) {
+             text-align: justify;
+        }  
     
     a {
       font-family: ${props => props.theme.sansSerif};
