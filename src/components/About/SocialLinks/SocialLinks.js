@@ -10,10 +10,6 @@ const Wrapper = styled.div`
     justify-content: center;
     font-size: ${props => props.theme.bodySize};
     margin: 1.5em 0;
-    
-    @media all and (max-width: ${props => props.theme.smallScr}) {
-      font-size: ${props => props.theme.captionSize};
-    }
 
     div {
       padding: 8px;
