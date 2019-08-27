@@ -855,9 +855,9 @@ export const LINKS = [
         url: 'https://atticusreview.org/treasures/'
     },
     {
-        title: 'Patreon',
-        subtitle: 'please consider supporting me',
-        url: 'https://www.patreon.com/drobnik'
+        title: 'Buy me a coffee',
+        subtitle: 'please consider supporting me on Ko-fi',
+        url: 'https://ko-fi.com/drobnik'
     },
     {
         title: 'Read “Spores”',
