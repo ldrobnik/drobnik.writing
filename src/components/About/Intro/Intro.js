@@ -79,7 +79,7 @@ const AnimatedButton = posed.div({
 
 const Intro = (props) => {
 
-    //specifies whether social links and Patreon should be visible
+    //specifies whether social links and support button should be visible
     const [socialVisible, setSocialVisible] = useState(false);
 
     //shows the content
@@ -87,12 +87,12 @@ const Intro = (props) => {
         props.onReloadChange(false);
     };
 
-    //shows the social links and Patreon button
+    //shows the social links and support button
     const showSocial = () => {
         setSocialVisible(true);
     };
 
-    //hides the social links and Patreon button
+    //hides the social links and support button
     const hideSocial = () => {
         setSocialVisible(false);
     };
@@ -143,8 +143,8 @@ const Intro = (props) => {
             <AnimatedButton
                 pose={socialVisible ? 'visible' : 'hidden'}>
                 <CentredButton
-                    message={WEBSITE_TEXT.intro.patreon[props.lang].message}
-                    path={WEBSITE_TEXT.intro.patreon[props.lang].path}
+                    message={WEBSITE_TEXT.intro.support[props.lang].message}
+                    path={WEBSITE_TEXT.intro.support[props.lang].path}
                 />
             </AnimatedButton>
             <Waypoint

@@ -4,8 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faTwitterSquare,
     faFacebookSquare,
-    faInstagram,
-    faPatreon
+    faInstagram
 } from '@fortawesome/free-brands-svg-icons';
 import {
     faHome,
@@ -641,14 +640,14 @@ export const WEBSITE_TEXT = {
                 <p>Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się napisana przeze mnie minipowieść/zbiór krótkich próz <AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, a&nbsp;moje utwory były publikowane m.in. w&nbsp;<i>Atticus Review</i>, <i>Quarterly West</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i> oraz <i>X-R-A-Y Literary Magazine</i>. Poniżej można znaleźć <AnchorLink href='#pubs' offset="60px"><b>PEŁNĄ LISTĘ PUBLIKACJI</b></AnchorLink>, a&nbsp;także <AnchorLink href='#read' offset="60px"><b>POCZYTAĆ</b></AnchorLink> kilka moich tekstów.</p>
             </div>
         },
-        patreon: {
+        support: {
             en: {
-                message: <div>Please consider supporting me on&nbsp;&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon></div>,
-                path: 'https://www.patreon.com/drobnik'
+                message: <div>Buy me a coffee</div>,
+                path: 'https://ko-fi.com/drobnik'
             },
             pl: {
-                message: <div>Pomyśl, proszę, o&nbsp;wsparciu mnie na&nbsp;&nbsp;<FontAwesomeIcon icon={faPatreon}></FontAwesomeIcon></div>,
-                path: 'https://www.patreon.com/drobnik'
+                message: <div>Postaw mi kawę</div>,
+                path: 'https://ko-fi.com/drobnik'
             }
         },
         social: [
