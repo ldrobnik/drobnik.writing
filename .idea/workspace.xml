@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/About/Intro/Intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/Intro/Intro.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,9 +18,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            <state relative-caret-position="353">
+              <caret line="859" column="6" selection-start-line="859" selection-start-column="6" selection-end-line="859" selection-end-column="6" />
               <folding>
+                <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#472#522#0" expanded="true" />
               </folding>
             </state>
@@ -87,8 +87,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>spores</find>
-      <find>devonian</find>
       <find>Inter</find>
       <find>garstka</find>
       <find>color</find>
@@ -117,6 +115,8 @@
       <find>justify;</find>
       <find>patreon</find>
       <find>Patreon</find>
+      <find>Buy me a coffee</find>
+      <find>buy me a</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -209,7 +209,6 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="266" />
-    <option name="y" value="36" />
     <option name="width" value="1373" />
     <option name="height" value="1047" />
   </component>
@@ -473,22 +472,22 @@
       <workItem from="1566461423684" duration="1359000" />
       <workItem from="1566632053810" duration="1563000" />
       <workItem from="1566887534395" duration="369000" />
-      <workItem from="1566902022998" duration="604000" />
+      <workItem from="1566902022998" duration="1996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="424278000" />
+    <option name="totallyTimeSpent" value="425670000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="266" y="36" width="1373" height="1047" extended-state="0" />
+    <frame x="266" y="0" width="1373" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" sideWeight="0.501355" side_tool="true" weight="0.18576778" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49864498" visible="true" weight="0.18576778" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49864498" visible="true" weight="0.18576778" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16891892" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -936,9 +935,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="353">
+          <caret line="859" column="6" selection-start-line="859" selection-start-column="6" selection-end-line="859" selection-end-column="6" />
           <folding>
+            <element signature="e#0#26#0" expanded="true" />
             <element signature="e#472#522#0" expanded="true" />
           </folding>
         </state>
