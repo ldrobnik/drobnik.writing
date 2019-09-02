@@ -234,8 +234,8 @@ export const PUBLICATIONS = {
         {
             title: 'Pithead Chapel',
             issue: 'September 2019',
-            year: '',
-            url: 'https://pitheadchapel.com/',
+            year: '2019',
+            url: 'https://pitheadchapel.com/entrails/',
             descriptionPl: 'Flash fiction „Entrails”',
             descriptionEn: 'Flash fiction “Entrails”',
             language: 'en',
@@ -844,9 +844,9 @@ export const LINKS = [
         url: '/'
     },
     {
-        title: 'Read “Treasures”',
-        subtitle: 'in Atticus Review',
-        url: 'https://atticusreview.org/treasures/'
+        title: 'Read “Entrails”',
+        subtitle: 'in Pithead Chapel',
+        url: 'https://pitheadchapel.com/entrails/'
     },
     {
         title: 'Buy me a coffee',
@@ -857,6 +857,12 @@ export const LINKS = [
         title: 'Q&A at The Selkie',
         subtitle: 'by Robin Brown',
         url: 'https://theselkie.co.uk/lukasz-drobnik/'
+    },
+
+    {
+        title: 'Read “Treasures”',
+        subtitle: 'in Atticus Review',
+        url: 'https://atticusreview.org/treasures/'
     },
     {
         title: 'Read “Spores”',
