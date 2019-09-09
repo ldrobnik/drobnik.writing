@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/data/texts/vostok-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/vostok-en.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/texts/vostok-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/vostok-pl.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/texts/vostok-pl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="20" column="190" lean-forward="true" selection-start-line="20" selection-start-column="190" selection-end-line="20" selection-end-column="190" />
+            <state relative-caret-position="460">
+              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -150,10 +149,10 @@
       <find>U</find>
       <find>published in Polish</find>
       <find>wydawnictwa</find>
-      <find>#f</find>
       <find>^(.+)$</find>
       <find>najwyraźniej</find>
       <find>Kiedy</find>
+      <find>#f</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -179,9 +178,9 @@
       <replace>!props.reload</replace>
       <replace>I&amp;nbsp;</replace>
       <replace>W&amp;nbsp;</replace>
-      <replace>&lt;p&gt;$1&lt;/p&gt;</replace>
       <replace>o&amp;nbsp;</replace>
       <replace>z&amp;nbsp;</replace>
+      <replace>&lt;p&gt;$1&lt;/p&gt;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\NavBar</dir>
@@ -519,15 +518,16 @@
       <workItem from="1567790357744" duration="274000" />
       <workItem from="1567848887952" duration="599000" />
       <workItem from="1568011717607" duration="420000" />
-      <workItem from="1568049677370" duration="3176000" />
+      <workItem from="1568049677370" duration="3281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="437512000" />
+    <option name="totallyTimeSpent" value="437617000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="266" y="0" width="1396" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" sideWeight="0.501355" side_tool="true" weight="0.18576778" />
@@ -982,10 +982,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/vostok-en.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="345">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1000,17 +1000,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/vostok-en.js">
+    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="414">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/vostok-pl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="20" column="190" lean-forward="true" selection-start-line="20" selection-start-column="190" selection-end-line="20" selection-end-column="190" />
+        <state relative-caret-position="460">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
         </state>
       </provider>
     </entry>
