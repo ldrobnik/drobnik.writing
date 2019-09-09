@@ -100,7 +100,7 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'novel fragment',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p>Fragments of <i>Vostok</i> were published in Polish in <a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><i>Lampa</i></a> Issue&nbsp;3/2012 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><i>wydawnictwo j</i></a> website.</p>,
+            description: <p>Fragments of <i>Vostok</i> were published in Polish in <a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><i>Lampa</i></a> Issue&nbsp;3/2012 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><i>wydawnictwo&nbsp;j</i></a> website.</p>,
             content: VOSTOK_EN,
             theme: 'vostok'
         },
@@ -193,7 +193,7 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'fragment powieści',
             credits: 'Tekst: Łukasz Drobnik.',
-            description: <p>Fragmenty „Vostoku” ukazały się w&nbsp;<a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><i>Lampie</i></a> (numer&nbsp;3/2012) i&nbsp;na stronie <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><i>wydawnictwa j</i></a>.</p>,
+            description: <p>Fragmenty „Vostoku” ukazały się w&nbsp;<a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><i>Lampie</i></a> (numer&nbsp;3/2012) i&nbsp;na stronie <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><i>wydawnictwa&nbsp;j</i></a>.</p>,
             content: VOSTOK_PL,
             theme: 'vostok'
         },
@@ -616,8 +616,8 @@ export const THEME_COLORS = {
         color2: '#04ae85'
     },
     vostok: {
-        color1: '#e7eff6',
-        color2: '#c1e4f6'
+        color1: '#e7b84c',
+        color2: '#b88636'
     },
     devonian: {
         color1: '#ffe91c',
@@ -628,8 +628,8 @@ export const THEME_COLORS = {
         color2: '#f47ba1'
     },
     treasures: {
-        color1: '#e7b84c',
-        color2: '#b88636'
+        color1: '#ff7418',
+        color2: '#f05e23'
     },
     blackAndWhite: {
         color1: '#fafafa',
