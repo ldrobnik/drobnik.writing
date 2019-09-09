@@ -26,6 +26,8 @@ import {DRONES_EN} from './texts/drones-en';
 import {DRONES_PL} from './texts/drones-pl';
 import {SPORES_EN} from './texts/spores-en';
 import {SPORES_PL} from './texts/spores-pl';
+import {VOSTOK_EN} from "./texts/vostok-en";
+import {VOSTOK_PL} from "./texts/vostok-pl";
 import {DEVONIAN_EN} from './texts/devonian-en';
 import {DEVONIAN_PL} from './texts/devonian-pl';
 import {LANDMINES_EN} from './texts/landmines-en';
@@ -94,11 +96,20 @@ export const TEXTS = {
             theme: 'spores'
         },
 
+        vostok: {
+            title: 'Vostok',
+            subtitle: 'novel fragment',
+            credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
+            description: <p>Fragments of <i>Vostok</i> were published in Polish <a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><i>Lampa</i></a> Issue&nbsp;3/2012 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><i>wydawnictwo j</i></a> website.</p>,
+            content: VOSTOK_EN,
+            theme: 'vostok'
+        },
+
         devonian: {
             title: 'Devonian',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Thea Prieto.',
-            description: <p>The piece was originally published in <a href="http://thegravityofthething.com/devonian-lukasz-drobnik/" target="_blank" rel="noopener noreferrer"><i>The Gravity of the Thing</i></a> (Winter 2018). Its Polish translation was featured in  <a href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/" target="_blank" rel="noopener noreferrer"><i>Inter-</i></a> Issue&nbsp;2(16)/2018.</p>,
+            description: <p>The piece was originally published in <a href="http://thegravityofthething.com/devonian-lukasz-drobnik/" target="_blank" rel="noopener noreferrer"><i>The Gravity of the Thing</i></a> (Winter 2018). Its Polish translation was featured in <a href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/" target="_blank" rel="noopener noreferrer"><i>Inter-</i></a> Issue&nbsp;2(16)/2018.</p>,
             content: DEVONIAN_EN,
             theme: 'devonian'
         },
@@ -176,6 +187,15 @@ export const TEXTS = {
             description: <p>Tekst ukazał się po angielsku w&nbsp;17. numerze pisma <a href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank" rel="noopener noreferrer"><i>X&#8209;R&#8209;A&#8209;Y Literary Magazine</i></a>.</p>,
             content: SPORES_PL,
             theme: 'spores'
+        },
+
+        vostok: {
+            title: 'Vostok',
+            subtitle: 'fragment powieści',
+            credits: 'Tekst: Łukasz Drobnik.',
+            description: <p>Fragmenty „Vostoku” ukazały się w&nbsp;<a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><i>Lampie</i></a> (numer&nbsp;3/2012) i&nbsp;na stronie <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><i>wydawnictwa j</i></a>.</p>,
+            content: VOSTOK_PL,
+            theme: 'vostok'
         },
 
         devonian: {
