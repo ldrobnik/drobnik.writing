@@ -37,7 +37,7 @@ import {TREASURES_PL} from './texts/treasures-pl';
 import posed from "react-pose";
 
 //Names of available texts
-export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'spores', 'vostok', 'devonian', 'landmines', 'treasures'];
+export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'vostok', 'spores', 'devonian', 'landmines', 'treasures'];
 
 //Content of pieces displayed in the Text component
 export const TEXTS = {
