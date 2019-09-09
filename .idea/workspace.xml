@@ -15,14 +15,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="862" column="34" selection-start-line="862" selection-start-column="34" selection-end-line="862" selection-end-column="34" />
+            <state relative-caret-position="624">
+              <caret line="841" column="42" selection-start-line="841" selection-start-column="42" selection-end-line="841" selection-end-column="42" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/vostok-pl.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/texts/vostok-en.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1771">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -86,7 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>garstka</find>
       <find>color</find>
       <find>U</find>
       <find>A</find>
@@ -116,6 +129,7 @@
       <find>Buy me a coffee</find>
       <find>buy me a</find>
       <find>pithead</find>
+      <find>U</find>
     </findStrings>
     <replaceStrings>
       <replace>translation</replace>
@@ -141,6 +155,7 @@
       <replace>!props.reload</replace>
       <replace>&lt;p&gt;$1&lt;/p&gt;</replace>
       <replace>I&amp;nbsp;</replace>
+      <replace>W&amp;nbsp;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\webdev\drobnik writing - nowa strona\drobnik.writing\src\components\NavBar</dir>
@@ -152,8 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Home/Text/DescriptionPanel/DescriptionPanel.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/About/Nocturine/Nocturine.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Text/Text.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/About.js" />
         <option value="$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" />
@@ -203,14 +216,15 @@
         <option value="$PROJECT_DIR$/public/_redirects" />
         <option value="$PROJECT_DIR$/src/components/About/Intro/Intro.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
+        <option value="$PROJECT_DIR$/src/data/texts/treasures-pl.js" />
+        <option value="$PROJECT_DIR$/src/data/texts/vostok-en.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="266" />
-    <option name="y" value="2" />
     <option name="width" value="1373" />
-    <option name="height" value="1045" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -220,7 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -356,6 +369,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -475,20 +489,26 @@
       <workItem from="1566902022998" duration="4595000" />
       <workItem from="1567420575999" duration="3110000" />
       <workItem from="1567667612286" duration="599000" />
+      <workItem from="1567763197938" duration="1065000" />
+      <workItem from="1567790357744" duration="274000" />
+      <workItem from="1567848887952" duration="599000" />
+      <workItem from="1568011717607" duration="420000" />
+      <workItem from="1568049677370" duration="738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431978000" />
+    <option name="totallyTimeSpent" value="435074000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="266" y="2" width="1373" height="1045" extended-state="0" />
+    <frame x="266" y="0" width="1373" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" sideWeight="0.501355" side_tool="true" weight="0.18576778" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49864498" visible="true" weight="0.18576778" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49864498" visible="true" weight="0.18576778" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.16930023" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.17026107" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -539,9 +559,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/SectionLinks/SectionLinks.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/QuoteList.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Home/About/Read/ReadListElement/ReadListElement.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/QuoteList/Quote/Quote.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubTile/PubTile.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Home/About/Pubs/PubList/PubList.js" />
@@ -894,16 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="862" column="34" selection-start-line="862" selection-start-column="34" selection-end-line="862" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/About/Intro/Intro.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2990">
@@ -941,6 +948,33 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/vostok-pl.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/treasures-pl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="841" column="42" selection-start-line="841" selection-start-column="42" selection-end-line="841" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/vostok-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
         </state>
       </provider>
     </entry>
