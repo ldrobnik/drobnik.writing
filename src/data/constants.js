@@ -37,7 +37,7 @@ import {TREASURES_PL} from './texts/treasures-pl';
 import posed from "react-pose";
 
 //Names of available texts
-export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'spores', 'devonian', 'landmines', 'treasures'];
+export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'spores', 'vostok', 'devonian', 'landmines', 'treasures'];
 
 //Content of pieces displayed in the Text component
 export const TEXTS = {
@@ -100,7 +100,7 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'novel fragment',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p>Fragments of <i>Vostok</i> were published in Polish <a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><i>Lampa</i></a> Issue&nbsp;3/2012 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><i>wydawnictwo j</i></a> website.</p>,
+            description: <p>Fragments of <i>Vostok</i> were published in Polish in <a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><i>Lampa</i></a> Issue&nbsp;3/2012 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><i>wydawnictwo j</i></a> website.</p>,
             content: VOSTOK_EN,
             theme: 'vostok'
         },
@@ -614,6 +614,10 @@ export const THEME_COLORS = {
     spores: {
         color1: '#00c590',
         color2: '#04ae85'
+    },
+    vostok: {
+        color1: '#e7eff6',
+        color2: '#c1e4f6'
     },
     devonian: {
         color1: '#ffe91c',

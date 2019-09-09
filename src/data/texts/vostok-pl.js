@@ -8,7 +8,7 @@ export const VOSTOK_PL = <div>
         się nagle przełamać wpół, a&nbsp;jego północna i&nbsp;południowa część zamierzały (na kształt paszczy) oderwać się od
         ziemi, gwałtownie unieść ku sobie i&nbsp;z wielkim impetem zderzyć, aż piątkowskie bloki (jak zęby) wpasują się
         pomiędzy wildeckie kamienice.</p>
-    <p> </p>
+    <p>&nbsp;</p>
     <p>Gdyby wykonać, tuż przy jednej ze ścian, przekrój podłużny przez pub Kisielice, z&nbsp;lewej strony barwnego
         prostokąta widać by było bar, odwróconego tyłem barmana uwijającego się za barem, w&nbsp;tle ścianę pomalowaną w
         kolorowe pasy, czarno-białe grafiki na ścianie, a&nbsp;dalej w&nbsp;kierunku prawego końca przekroju: puste stoliki,
