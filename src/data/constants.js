@@ -99,7 +99,7 @@ export const TEXTS = {
         vostok: {
             title: 'Vostok',
             subtitle: 'novel fragment',
-            credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
+            credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick.',
             description: <p>Fragments of <i>Vostok</i> were published in Polish in <a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><i>Lampa</i></a> Issue&nbsp;3/2012 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><i>wydawnictwo&nbsp;j</i></a> website.</p>,
             content: VOSTOK_EN,
             theme: 'vostok'
