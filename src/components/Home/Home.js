@@ -5,7 +5,6 @@ import {connect} from 'react-redux';
 import {createGlobalStyle} from 'styled-components';
 
 import * as actionTypes from "../../store/actions";
-import {PULSATE_KEYFRAMES} from "../../data/constants";
 
 import Layout from '../Layout/Layout';
 import About from '../About/About';

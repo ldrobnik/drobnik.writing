@@ -10,7 +10,6 @@ import Nocturine from './Nocturine/Nocturine';
 import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
 import CopyrightNote from './../UI/CopyrightNote/CopyrightNote';
-import Spinner from './../UI/Spinner/Spinner';
 
 /* STYLED COMPONENTS */
 const TopAnchor = styled.div`
