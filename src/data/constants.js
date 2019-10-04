@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faTwitterSquare,
     faFacebookSquare,
-    faInstagram
+    faInstagram,
+    faMedium
 } from '@fortawesome/free-brands-svg-icons';
 import {
     faHome,
@@ -686,6 +687,10 @@ export const WEBSITE_TEXT = {
             {
                 name: <div><FontAwesomeIcon icon={faFacebookSquare} />&nbsp;@drobnikwrites</div>,
                 url: 'https://www.facebook.com/drobnikwrites'
+            },
+            {
+                name: <div><FontAwesomeIcon icon={faMedium} />&nbsp;@drobnik</div>,
+                url: 'https://medium.com/@drobnik'
             }
         ]
     },
