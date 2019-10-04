@@ -873,6 +873,11 @@ export const LINKS = [
         url: '/'
     },
     {
+        title: 'Read “Moths”',
+        subtitle: 'on Medium',
+        url: 'https://medium.com/@drobnik/moths-8b38b32b41fd?sk=2aaf8af08c174b145cc86b41de4d35b0'
+    },
+    {
         title: 'Read “Entrails”',
         subtitle: 'in Pithead Chapel',
         url: 'https://pitheadchapel.com/entrails/'
