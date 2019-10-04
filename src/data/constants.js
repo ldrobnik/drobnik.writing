@@ -883,35 +883,14 @@ export const LINKS = [
         url: 'https://pitheadchapel.com/entrails/'
     },
     {
-        title: 'Buy me a coffee',
-        subtitle: 'please consider supporting me on Ko-fi',
-        url: 'https://ko-fi.com/drobnik'
-    },
-    {
-        title: 'Q&A at The Selkie',
-        subtitle: 'by Robin Brown',
-        url: 'https://theselkie.co.uk/lukasz-drobnik/'
-    },
-
-    {
         title: 'Read “Treasures”',
         subtitle: 'in Atticus Review',
         url: 'https://atticusreview.org/treasures/'
     },
     {
-        title: 'Read “Spores”',
-        subtitle: 'in X-R-A-Y Literary Magazine',
-        url: 'http://x-r-a-y.com/spores-lukasz-drobnik/fiction/'
-    },
-    {
-        title: 'Buy Foglifter Vol. 4 Issue 1',
-        subtitle: 'with my piece “Landmines” inside',
-        url: 'https://foglifterjournal.com/shop/'
-    },
-    {
-        title: 'Buy Sharkpack Annual',
-        subtitle: 'with my piece “8-bit Dreams” inside',
-        url: 'https://shop.trycelery.com/page/5c2f6d549d2284130021165b'
+        title: 'Buy me a coffee',
+        subtitle: 'please consider supporting me on Ko-fi',
+        url: 'https://ko-fi.com/drobnik'
     },
     {
         title: 'Twitter',
@@ -922,7 +901,18 @@ export const LINKS = [
         title: 'Facebook',
         subtitle: '@drobnikwrites',
         url: 'https://www.facebook.com/drobnikwrites/'
+    },
+    {
+        title: 'Buy Foglifter Vol. 4 Issue 1',
+        subtitle: 'with my piece “Landmines” inside',
+        url: 'https://foglifterjournal.com/shop/'
+    },
+    {
+        title: 'Buy Sharkpack Annual',
+        subtitle: 'with my piece “8-bit Dreams” inside',
+        url: 'https://shop.trycelery.com/page/5c2f6d549d2284130021165b'
     }
+
 ];
 
 /* Keyframes used for styled-components animations */
