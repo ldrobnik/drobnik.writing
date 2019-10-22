@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/constants.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-en.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="6" column="576" lean-forward="true" selection-start-line="6" selection-start-column="576" selection-end-line="6" selection-end-column="576" />
+              <caret line="6" column="576" selection-start-line="6" selection-start-column="576" selection-end-line="6" selection-end-column="576" />
             </state>
           </provider>
         </entry>
@@ -78,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="319" column="82" lean-forward="true" selection-start-line="319" selection-start-column="82" selection-end-line="319" selection-end-column="82" />
+            <state relative-caret-position="316">
+              <caret line="1037" column="71" selection-start-line="1037" selection-start-column="71" selection-end-line="1037" selection-end-column="71" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -638,12 +639,12 @@
       <workItem from="1571296098915" duration="741000" />
       <workItem from="1571342633867" duration="2558000" />
       <workItem from="1571473333761" duration="697000" />
-      <workItem from="1571731164456" duration="2559000" />
+      <workItem from="1571731164456" duration="3904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455263000" />
+    <option name="totallyTimeSpent" value="456608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="430" y="15" width="1396" height="1006" extended-state="0" />
@@ -1131,14 +1132,14 @@
     <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-en.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="6" column="576" lean-forward="true" selection-start-line="6" selection-start-column="576" selection-end-line="6" selection-end-column="576" />
+          <caret line="6" column="576" selection-start-line="6" selection-start-column="576" selection-end-line="6" selection-end-column="576" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="319" column="82" lean-forward="true" selection-start-line="319" selection-start-column="82" selection-end-line="319" selection-end-column="82" />
+        <state relative-caret-position="316">
+          <caret line="1037" column="71" selection-start-line="1037" selection-start-column="71" selection-end-line="1037" selection-end-column="71" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
