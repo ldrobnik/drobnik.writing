@@ -1,6 +1,6 @@
 import React from 'react';
 import {keyframes} from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faTwitterSquare,
     faFacebookSquare,
@@ -47,7 +47,19 @@ export const TEXTS = {
             title: 'Nocturine',
             subtitle: 'novella fragment',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
-            description: <p><i>Nocturine</i> is a novella/short fiction collection forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was originally written <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">in Polish</a> and published in one volume with another novella, <i>Cunninghamella</i> (Forma 2011). Excerpts from <i>Nocturine</i> have been featured in a number of journals — both in Polish (<a href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>) and in English (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
+            description: <p><i>Nocturine</i> is a novella/short fiction collection forthcoming from <a
+                href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was
+                originally written <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
+                                      rel="noopener noreferrer">in Polish</a> and published in one volume with another
+                novella, <i>Cunninghamella</i> (Forma 2011). Excerpts from <i>Nocturine</i> have been featured in a
+                number of journals — both in Polish (<a
+                    href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank"
+                    rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a
+                    href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank"
+                    rel="noopener noreferrer"><i>Dodatek Literacki</i></a>) and in English (<a
+                    href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack
+                    Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank"
+                                       rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
             content: NOCTURINE_EN,
             theme: 'nocturine'
         },
@@ -56,7 +68,12 @@ export const TEXTS = {
             title: 'Cetacean',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p>The piece was originally published in <a href="https://www.quarterlywest.com/issue-94/cetacean" target="_blank" rel="noopener noreferrer"><i>Quarterly West</i></a> Issue&nbsp;94. Its Polish translation was featured in <a href="https://afront.org.pl/" target="_blank" rel="noopener noreferrer"><i>Afront</i></a> Issue 2(5)/2018.</p>,
+            description: <p>The piece was originally published in <a
+                href="https://www.quarterlywest.com/issue-94/cetacean" target="_blank" rel="noopener noreferrer"><i>Quarterly
+                West</i></a> Issue&nbsp;94. Its Polish translation was featured in <a href="https://afront.org.pl/"
+                                                                                      target="_blank"
+                                                                                      rel="noopener noreferrer"><i>Afront</i></a> Issue
+                2(5)/2018.</p>,
             content: CETACEAN_EN,
             theme: 'cetacean'
         },
@@ -65,7 +82,11 @@ export const TEXTS = {
             title: 'Cellulose',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description:   <p>The piece was originally published in September 2018 Issue of <a href="https://mojaveheart.com/cellulose/" target="_blank" rel="noopener noreferrer"><i>Mojave Heart Review</i></a>. Its Polish translation was featured in the inaugural issue of <a href="http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html" target="_blank" rel="noopener noreferrer"><i>Stoner Polski</i></a>.</p>,
+            description: <p>The piece was originally published in September 2018 Issue of <a
+                href="https://mojaveheart.com/cellulose/" target="_blank" rel="noopener noreferrer"><i>Mojave Heart
+                Review</i></a>. Its Polish translation was featured in the inaugural issue of <a
+                href="http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html" target="_blank"
+                rel="noopener noreferrer"><i>Stoner Polski</i></a>.</p>,
             content: CELLULOSE_EN,
             theme: 'cellulose'
         },
@@ -74,7 +95,12 @@ export const TEXTS = {
             title: 'Moths',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Anna De Vaul.',
-            description: <p>The piece was originally published in <a href="http://www.gatehousepress.com/lighthouse/" target="_blank" rel="noopener noreferrer"><i>Lighthouse</i></a> Issue&nbsp;10. Its Polish translation was featured in <a href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank" rel="noopener noreferrer"><i>Fabularie</i></a> (incidentally, also Issue&nbsp;10).</p>,
+            description: <p>The piece was originally published in <a href="http://www.gatehousepress.com/lighthouse/"
+                                                                     target="_blank"
+                                                                     rel="noopener noreferrer"><i>Lighthouse</i></a> Issue&nbsp;10.
+                Its Polish translation was featured in <a
+                    href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank"
+                    rel="noopener noreferrer"><i>Fabularie</i></a> (incidentally, also Issue&nbsp;10).</p>,
             content: MOTHS_EN,
             theme: 'moths'
         },
@@ -83,7 +109,11 @@ export const TEXTS = {
             title: 'Drones',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Robert Harper.',
-            description: <p>The piece was originally published in <a href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/" target="_blank" rel="noopener noreferrer"><i>Bare Fiction</i></a> Issue&nbsp;10. Its Polish translation was featured in  <a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank" rel="noopener noreferrer"><i>Helikopter</i></a> Issue&nbsp;3/2018.</p>,
+            description: <p>The piece was originally published in <a
+                href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/"
+                target="_blank" rel="noopener noreferrer"><i>Bare Fiction</i></a> Issue&nbsp;10. Its Polish translation
+                was featured in <a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank"
+                                   rel="noopener noreferrer"><i>Helikopter</i></a> Issue&nbsp;3/2018.</p>,
             content: DRONES_EN,
             theme: 'drones'
         },
@@ -92,7 +122,10 @@ export const TEXTS = {
             title: 'Spores',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p>The piece was published in <a href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank" rel="noopener noreferrer"><i>X&#8209;R&#8209;A&#8209;Y Literary Magazine</i></a> Issue&nbsp;17.</p>,
+            description: <p>The piece was published in <a href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/"
+                                                          target="_blank"
+                                                          rel="noopener noreferrer"><i>X&#8209;R&#8209;A&#8209;Y
+                Literary Magazine</i></a> Issue&nbsp;17.</p>,
             content: SPORES_EN,
             theme: 'spores'
         },
@@ -101,7 +134,11 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'novel fragment',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p>Fragments of <i>Vostok</i> were published in Polish in <a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><i>Lampa</i></a> Issue&nbsp;3/2012 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><i>wydawnictwo&nbsp;j</i></a> website.</p>,
+            description: <p>Fragments of <i>Vostok</i> were published in Polish in <a href="http://lampa.art.pl/"
+                                                                                      target="_blank"
+                                                                                      rel="noopener noreferrer"><i>Lampa</i></a> Issue&nbsp;3/2012
+                and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
+                          target="_blank" rel="noopener noreferrer"><i>wydawnictwo&nbsp;j</i></a> website.</p>,
             content: VOSTOK_EN,
             theme: 'vostok'
         },
@@ -110,7 +147,12 @@ export const TEXTS = {
             title: 'Devonian',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Thea Prieto.',
-            description: <p>The piece was originally published in <a href="http://thegravityofthething.com/devonian-lukasz-drobnik/" target="_blank" rel="noopener noreferrer"><i>The Gravity of the Thing</i></a> (Winter 2018). Its Polish translation was featured in <a href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/" target="_blank" rel="noopener noreferrer"><i>Inter-</i></a> Issue&nbsp;2(16)/2018.</p>,
+            description: <p>The piece was originally published in <a
+                href="http://thegravityofthething.com/devonian-lukasz-drobnik/" target="_blank"
+                rel="noopener noreferrer"><i>The Gravity of the Thing</i></a> (Winter 2018). Its Polish translation was
+                featured in <a
+                    href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/"
+                    target="_blank" rel="noopener noreferrer"><i>Inter-</i></a> Issue&nbsp;2(16)/2018.</p>,
             content: DEVONIAN_EN,
             theme: 'devonian'
         },
@@ -119,7 +161,9 @@ export const TEXTS = {
             title: 'Landmines',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p>The piece published in <a href="https://foglifterjournal.com/" target="_blank" rel="noopener noreferrer"><i>Foglifter</i></a> Volume&nbsp;4 Issue&nbsp;1.</p>,
+            description: <p>The piece published in <a href="https://foglifterjournal.com/" target="_blank"
+                                                      rel="noopener noreferrer"><i>Foglifter</i></a> Volume&nbsp;4
+                Issue&nbsp;1.</p>,
             content: LANDMINES_EN,
             theme: 'landmines'
         },
@@ -128,7 +172,12 @@ export const TEXTS = {
             title: 'Treasures',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick & Michelle Ross.',
-            description: <p>The piece was published in May 2019 in <a href="https://atticusreview.org/treasures/" target="_blank" rel="noopener noreferrer"><i>Atticus Review</i></a>.</p>,
+            description: <p>The piece was published in May 2019 in <a href="https://atticusreview.org/treasures/"
+                                                                      target="_blank" rel="noopener noreferrer"><i>Atticus
+                Review</i></a>. Its Polish translation was
+                featured in <a
+                    href="http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/"
+                    target="_blank" rel="noopener noreferrer"><i>Tlen Literacki</i></a> Issue&nbsp;4.</p>,
             content: TREASURES_EN,
             theme: 'treasures'
         }
@@ -139,7 +188,19 @@ export const TEXTS = {
             title: 'Nocturine',
             subtitle: 'fragment minipowieści',
             credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
-            description: <p>„Nocturine” to minipowieść/zbiór krótkich próz w&nbsp;przygotowaniu przez wydawnictwo <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka pierwotnie ukazała się <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank" rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie z&nbsp;inną minipowieścią pt. „Cunninghamella” (Forma 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku czasopismach — zarówno po polsku (<a href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank" rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank" rel="noopener noreferrer"><i>Dodatek Literacki</i></a>), jak i&nbsp;po angielsku (<a href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank" rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
+            description: <p>„Nocturine” to minipowieść/zbiór krótkich próz w&nbsp;przygotowaniu przez wydawnictwo <a
+                href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka
+                pierwotnie ukazała się <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
+                                          rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie z&nbsp;inną
+                minipowieścią pt. „Cunninghamella” (Forma 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku
+                czasopismach — zarówno po polsku (<a
+                    href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank"
+                    rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a
+                    href="http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf" target="_blank"
+                    rel="noopener noreferrer"><i>Dodatek Literacki</i></a>), jak i&nbsp;po angielsku (<a
+                    href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><i>Sharkpack
+                    Annual</i></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank"
+                                       rel="noopener noreferrer"><i>The Write Launch</i></a>).</p>,
             content: NOCTURINE_PL,
             theme: 'nocturine'
         },
@@ -148,7 +209,11 @@ export const TEXTS = {
             title: 'Waleń',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description:<p>Tekst ukazał się pierwotnie po angielsku w&nbsp;94. numerze <a href="https://www.quarterlywest.com/issue-94/cetacean" target="_blank" rel="noopener noreferrer"><i>Quarterly West</i></a>. Polski przekład zamieszczono w&nbsp;<a href="https://afront.org.pl/" target="_blank" rel="noopener noreferrer"><i>Afroncie</i></a> (numer 2(5)/2018).</p>,
+            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;94. numerze <a
+                href="https://www.quarterlywest.com/issue-94/cetacean" target="_blank" rel="noopener noreferrer"><i>Quarterly
+                West</i></a>. Polski przekład zamieszczono w&nbsp;<a href="https://afront.org.pl/" target="_blank"
+                                                                     rel="noopener noreferrer"><i>Afroncie</i></a> (numer
+                2(5)/2018).</p>,
             content: CETACEAN_PL,
             theme: 'cetacean'
         },
@@ -158,7 +223,11 @@ export const TEXTS = {
             title: 'Celuloza',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <div>Tekst ukazał się pierwotnie po angielsku w&nbsp;2018&nbsp;r. we wrześniowym numerze <a href="https://mojaveheart.com/cellulose/" target="_blank" rel="noopener noreferrer"><i>Mojave Heart Review</i></a>. Polski przekład zamieszczono w&nbsp;pierwszym numerze <a href="http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html" target="_blank" rel="noopener noreferrer"><i>Stonera Polskiego</i></a>.</div>,
+            description: <div>Tekst ukazał się pierwotnie po angielsku w&nbsp;2018&nbsp;r. we wrześniowym numerze <a
+                href="https://mojaveheart.com/cellulose/" target="_blank" rel="noopener noreferrer"><i>Mojave Heart
+                Review</i></a>. Polski przekład zamieszczono w&nbsp;pierwszym numerze <a
+                href="http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html" target="_blank"
+                rel="noopener noreferrer"><i>Stonera Polskiego</i></a>.</div>,
             content: CELLULOSE_PL,
             theme: 'cellulose'
         },
@@ -167,7 +236,11 @@ export const TEXTS = {
             title: 'Ćmy',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;10. numerze <a href="http://www.gatehousepress.com/lighthouse/" target="_blank" rel="noopener noreferrer"><i>Lighthouse</i></a>. Polski przekład zamieszczono w&nbsp;<a href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank" rel="noopener noreferrer"><i>Fabulariach</i></a> (także w&nbsp;numerze&nbsp;10.).</p>,
+            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;10. numerze <a
+                href="http://www.gatehousepress.com/lighthouse/" target="_blank"
+                rel="noopener noreferrer"><i>Lighthouse</i></a>. Polski przekład zamieszczono w&nbsp;<a
+                href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank"
+                rel="noopener noreferrer"><i>Fabulariach</i></a> (także w&nbsp;numerze&nbsp;10.).</p>,
             content: MOTHS_PL,
             theme: 'moths',
         },
@@ -176,7 +249,11 @@ export const TEXTS = {
             title: 'Drony',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;10. numerze <a href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/" target="_blank" rel="noopener noreferrer"><i>Bare Fiction</i></a>. Polski przekład zamieszczono w&nbsp;<a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank" rel="noopener noreferrer"><i>Helikopterze</i></a> (numer 3/2018).</p>,
+            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;10. numerze <a
+                href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/"
+                target="_blank" rel="noopener noreferrer"><i>Bare Fiction</i></a>. Polski przekład zamieszczono w&nbsp;
+                <a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank"
+                   rel="noopener noreferrer"><i>Helikopterze</i></a> (numer 3/2018).</p>,
             content: DRONES_PL,
             theme: 'drones'
         },
@@ -185,7 +262,9 @@ export const TEXTS = {
             title: 'Zarodniki',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się po angielsku w&nbsp;17. numerze pisma <a href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank" rel="noopener noreferrer"><i>X&#8209;R&#8209;A&#8209;Y Literary Magazine</i></a>.</p>,
+            description: <p>Tekst ukazał się po angielsku w&nbsp;17. numerze pisma <a
+                href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank"
+                rel="noopener noreferrer"><i>X&#8209;R&#8209;A&#8209;Y Literary Magazine</i></a>.</p>,
             content: SPORES_PL,
             theme: 'spores'
         },
@@ -194,7 +273,11 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'fragment powieści',
             credits: 'Tekst: Łukasz Drobnik.',
-            description: <p>Fragmenty „Vostoku” ukazały się w&nbsp;<a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><i>Lampie</i></a> (numer&nbsp;3/2012) i&nbsp;na stronie <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><i>wydawnictwa&nbsp;j</i></a>.</p>,
+            description: <p>Fragmenty „Vostoku” ukazały się w&nbsp;<a href="http://lampa.art.pl/" target="_blank"
+                                                                      rel="noopener noreferrer"><i>Lampie</i></a> (numer&nbsp;3/2012)
+                i&nbsp;na stronie <a
+                    href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
+                    target="_blank" rel="noopener noreferrer"><i>wydawnictwa&nbsp;j</i></a>.</p>,
             content: VOSTOK_PL,
             theme: 'vostok'
         },
@@ -203,7 +286,12 @@ export const TEXTS = {
             title: 'Dewon',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;piśmie <a href="http://thegravityofthething.com/devonian-lukasz-drobnik/" target="_blank" rel="noopener noreferrer"><i>The Gravity of the Thing</i></a> (numer Winter 2018). Polski przekład zamieszczono w&nbsp;czasopiśmie <a href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/" target="_blank" rel="noopener noreferrer"><i>Inter-</i></a> (numer&nbsp;2(16)/2018).</p>,
+            description: <p>Tekst ukazał się pierwotnie po angielsku w&nbsp;piśmie <a
+                href="http://thegravityofthething.com/devonian-lukasz-drobnik/" target="_blank"
+                rel="noopener noreferrer"><i>The Gravity of the Thing</i></a> (numer Winter 2018). Polski przekład
+                zamieszczono w&nbsp;czasopiśmie <a
+                    href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/"
+                    target="_blank" rel="noopener noreferrer"><i>Inter-</i></a> (numer&nbsp;2(16)/2018).</p>,
             content: DEVONIAN_PL,
             theme: 'devonian'
         },
@@ -212,7 +300,10 @@ export const TEXTS = {
             title: 'Miny',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się po angielsku w&nbsp;piśmie <a href="https://foglifterjournal.com/" target="_blank" rel="noopener noreferrer"><i>Foglifter</i></a> (Volume&nbsp;4 Issue&nbsp;1).</p>,
+            description: <p>Tekst ukazał się po angielsku w&nbsp;piśmie <a href="https://foglifterjournal.com/"
+                                                                           target="_blank"
+                                                                           rel="noopener noreferrer"><i>Foglifter</i></a> (Volume&nbsp;4
+                Issue&nbsp;1).</p>,
             content: LANDMINES_PL,
             theme: 'landmines'
         },
@@ -221,7 +312,12 @@ export const TEXTS = {
             title: 'Skarby',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się po angielsku w&nbsp;maju 2019&nbsp;r. w&nbsp;<a href="https://atticusreview.org/treasures/" target="_blank" rel="noopener noreferrer"><i>Atticus Review</i></a>.</p>,
+            description: <p>Tekst ukazał się po angielsku w&nbsp;maju 2019&nbsp;r. w&nbsp;<a
+                href="https://atticusreview.org/treasures/" target="_blank" rel="noopener noreferrer"><i>Atticus
+                Review</i></a>. Polski przekład
+                zamieszczono w&nbsp;czwartym numerze <a
+                    href="http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/"
+                    target="_blank" rel="noopener noreferrer"><i>Tlenu Literackiego</i></a>.</p>,
             content: TREASURES_PL,
             theme: 'treasures'
         }
@@ -252,6 +348,16 @@ export const PUBLICATIONS = {
     ],
 
     press: [
+        {
+            title: 'Tlen Literacki',
+            issue: '4',
+            year: '2019',
+            url: 'http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/',
+            descriptionPl: 'Flash fiction „Skarby” (przekład tekstu „Treasures”)',
+            descriptionEn: 'Flash fiction “Skarby” (translation of “Treasures”)',
+            language: 'pl',
+            pieceTitle: 'Skarby'
+        },
         {
             title: 'Pithead Chapel',
             issue: 'September 2019',
@@ -657,12 +763,33 @@ export const WEBSITE_TEXT = {
         },
         body: {
             en: <div>
-                <p>I’m a bilingual writer creating fiction in my native Polish but recently mostly in English. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from longer forms).</p>
-                <p><AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, my novella/short fiction collection, is now forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>, and my other work has been featured in <i>Atticus Review</i>, <i>Quarterly West</i>, <i>Pithead Chapel</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and elsewhere. Below you can find a <AnchorLink href='#pubs' offset="60px"><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and also <AnchorLink href='#read' offset="60px"><b>READ</b></AnchorLink> some of my pieces.</p>
+                <p>I’m a bilingual writer creating fiction in my native Polish but recently mostly in English. My
+                    favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous
+                    flash fiction fan (though I don’t shy away from longer forms).</p>
+                <p><AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, my novella/short fiction
+                    collection, is now forthcoming from <a href="http://fathombooks.org/" target="_blank"
+                                                           rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>, and my
+                    other work has been featured in <i>Atticus Review</i>, <i>Quarterly West</i>, <i>Pithead
+                        Chapel</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK
+                        Annual</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and elsewhere. Below you can find
+                    a <AnchorLink href='#pubs' offset="60px"><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and
+                    also <AnchorLink href='#read' offset="60px"><b>READ</b></AnchorLink> some of my pieces.</p>
             </div>,
             pl: <div>
-                <p>Jestem dwujęzycznym pisarzem, który tworzy prozę po polsku (w&nbsp;moim ojczystym języku), ale ostatnio głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę wysokoartystyczną i&nbsp;wplatam w&nbsp;nią elementy innych gatunków, a&nbsp;do tego jestem ogromnym fanem <i>flash fiction</i> (czyli bardzo krótkich opowiadań). Nie stronię jednak od dłuższych form.</p>
-                <p>Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się napisana przeze mnie minipowieść/zbiór krótkich próz <AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, a&nbsp;moje utwory były publikowane m.in. w&nbsp;<i>Atticus Review</i>, <i>Quarterly West</i>, <i>Pithead Chapel</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK Annual</i>, <i>Foglifter</i> oraz <i>X-R-A-Y Literary Magazine</i>. Poniżej można znaleźć <AnchorLink href='#pubs' offset="60px"><b>PEŁNĄ LISTĘ PUBLIKACJI</b></AnchorLink>, a&nbsp;także <AnchorLink href='#read' offset="60px"><b>POCZYTAĆ</b></AnchorLink> kilka moich tekstów.</p>
+                <p>Jestem dwujęzycznym pisarzem, który tworzy prozę po polsku (w&nbsp;moim ojczystym języku), ale
+                    ostatnio głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę wysokoartystyczną
+                    i&nbsp;wplatam w&nbsp;nią elementy innych gatunków, a&nbsp;do tego jestem ogromnym fanem <i>flash
+                        fiction</i> (czyli bardzo krótkich opowiadań). Nie stronię jednak od dłuższych form.</p>
+                <p>Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank"
+                                                    rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się napisana
+                    przeze mnie minipowieść/zbiór krótkich próz <AnchorLink href='#nocturine'
+                                                                            offset="60px"><b>NOCTURINE</b></AnchorLink>,
+                    a&nbsp;moje utwory były publikowane m.in. w&nbsp;<i>Atticus Review</i>, <i>Quarterly West</i>, <i>Pithead
+                        Chapel</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK
+                        Annual</i>, <i>Foglifter</i> oraz <i>X-R-A-Y Literary Magazine</i>. Poniżej można
+                    znaleźć <AnchorLink href='#pubs' offset="60px"><b>PEŁNĄ LISTĘ PUBLIKACJI</b></AnchorLink>,
+                    a&nbsp;także <AnchorLink href='#read' offset="60px"><b>POCZYTAĆ</b></AnchorLink> kilka moich
+                    tekstów.</p>
             </div>
         },
         support: {
@@ -677,19 +804,19 @@ export const WEBSITE_TEXT = {
         },
         social: [
             {
-                name: <div><FontAwesomeIcon icon={faTwitterSquare} />&nbsp;@drobnik</div>,
+                name: <div><FontAwesomeIcon icon={faTwitterSquare}/>&nbsp;@drobnik</div>,
                 url: 'https://twitter.com/drobnik'
             },
             {
-                name: <div><FontAwesomeIcon icon={faInstagram} />&nbsp;@drobnikwrites</div>,
+                name: <div><FontAwesomeIcon icon={faInstagram}/>&nbsp;@drobnikwrites</div>,
                 url: 'https://www.instagram.com/drobnikwrites/'
             },
             {
-                name: <div><FontAwesomeIcon icon={faFacebookSquare} />&nbsp;@drobnikwrites</div>,
+                name: <div><FontAwesomeIcon icon={faFacebookSquare}/>&nbsp;@drobnikwrites</div>,
                 url: 'https://www.facebook.com/drobnikwrites'
             },
             {
-                name: <div><FontAwesomeIcon icon={faMedium} />&nbsp;@drobnik</div>,
+                name: <div><FontAwesomeIcon icon={faMedium}/>&nbsp;@drobnik</div>,
                 url: 'https://medium.com/@drobnik'
             }
         ]
@@ -701,14 +828,35 @@ export const WEBSITE_TEXT = {
         },
         body: {
             en: <div>
-                <p>The end of the world starts like an ad campaign. When black cubes appear above the city of Poznań, some think it’s just another mobile network operator entering the market. These include Mietek, an unemployed man in his twenties, suddenly abandoned by his boyfriend. Soon his best friend also disappears while the black cubes in the sky start to multiply, taking up more and more of the urban space.</p>
-                <p><i>NOCTURINE</i> is a novella/short fiction collection that takes you on a genre-bending journey from contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a homestead haunted by dummies, to the inside of a human body. Each of six chapters/stories is told by a different narrator in a frantic yet melancholic style.</p>
-                <p>The book was originally published in Polish, in one volume with another novella, <i>Cunninghamella</i> (Forma 2011). Now, my authorial translation into English is forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>.</p>
+                <p>The end of the world starts like an ad campaign. When black cubes appear above the city of Poznań,
+                    some think it’s just another mobile network operator entering the market. These include Mietek, an
+                    unemployed man in his twenties, suddenly abandoned by his boyfriend. Soon his best friend also
+                    disappears while the black cubes in the sky start to multiply, taking up more and more of the urban
+                    space.</p>
+                <p><i>NOCTURINE</i> is a novella/short fiction collection that takes you on a genre-bending journey from
+                    contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a
+                    homestead haunted by dummies, to the inside of a human body. Each of six chapters/stories is told by
+                    a different narrator in a frantic yet melancholic style.</p>
+                <p>The book was originally published in Polish, in one volume with another
+                    novella, <i>Cunninghamella</i> (Forma 2011). Now, my authorial translation into English is
+                    forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM
+                        BOOKS</b></a>.</p>
             </div>,
             pl: <div>
-                <p>Koniec świata zaczyna się jak kampania reklamowa. Gdy nad Poznaniem zawisają czarne sześciany, niektórzy sądzą, że to po prostu kolejny operator sieci komórkowej wchodzi na rynek. Do tej grupy należy Mietek, bezrobotny dwudziestoparolatek, którego nagle opuszcza chłopak. Niedługa jego najlepsza przyjaciółka także znika, podczas gdy czarne sześciany na niebie zaczynają się mnożyć, zabierając coraz więcej miejskiej przestrzeni.</p>
-                <p><i>NOCTURINE</i> to minipowieść/zbiór krótkich próz, a&nbsp;tom ten zabiera czytelnika na niejednoznaczną gatunkowo podróż z&nbsp;Poznania pożeranego przez ośmiobiotową amebę przez dom złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze ludzkiego ciała. Każdy z&nbsp;sześciu rozdziałów/opowiadań ma innego narratora, który snuje opowieść w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
-                <p>Książka została pierwotnie wydana po polsku w&nbsp;jednym tomie z&nbsp;inną minipowieścią pt. „Cunninghamella”. Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się jej autorski przekład na angielski.</p>
+                <p>Koniec świata zaczyna się jak kampania reklamowa. Gdy nad Poznaniem zawisają czarne sześciany,
+                    niektórzy sądzą, że to po prostu kolejny operator sieci komórkowej wchodzi na rynek. Do tej grupy
+                    należy Mietek, bezrobotny dwudziestoparolatek, którego nagle opuszcza chłopak. Niedługa jego
+                    najlepsza przyjaciółka także znika, podczas gdy czarne sześciany na niebie zaczynają się mnożyć,
+                    zabierając coraz więcej miejskiej przestrzeni.</p>
+                <p><i>NOCTURINE</i> to minipowieść/zbiór krótkich próz, a&nbsp;tom ten zabiera czytelnika na
+                    niejednoznaczną gatunkowo podróż z&nbsp;Poznania pożeranego przez ośmiobiotową amebę przez dom
+                    złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze
+                    ludzkiego ciała. Każdy z&nbsp;sześciu rozdziałów/opowiadań ma innego narratora, który snuje opowieść
+                    w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
+                <p>Książka została pierwotnie wydana po polsku w&nbsp;jednym tomie z&nbsp;inną minipowieścią pt.
+                    „Cunninghamella”. Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank"
+                                                                       rel="noopener noreferrer"><b>FATHOM
+                        BOOKS</b></a> ukaże się jej autorski przekład na angielski.</p>
             </div>
         },
         button: {
@@ -724,23 +872,28 @@ export const WEBSITE_TEXT = {
         quotes: {
             en: [
                 {
-                  quote: <div>Drobnik wowed us with his free-wheeling sentence structure + utterly unique vision.</div>,
-                  source: 'FATHOM BOOKS, the publisher'
+                    quote: <div>Drobnik wowed us with his free-wheeling sentence structure + utterly unique
+                        vision.</div>,
+                    source: 'FATHOM BOOKS, the publisher'
                 },
                 {
-                    quote: <div>To say <i>Nocturine</i> is oneiric isn’t enough — it’s a psychedelic. It kicks in slowly, swaying you from the very first sentences. Hypnotic phrase. Beautiful!</div>,
+                    quote: <div>To say <i>Nocturine</i> is oneiric isn’t enough — it’s a psychedelic. It kicks in
+                        slowly, swaying you from the very first sentences. Hypnotic phrase. Beautiful!</div>,
                     source: 'Patrycja Janowska, LAMPA 1–2/2012'
                 },
                 {
-                    quote: <div>Drobnik creates an evocative, oppressive mood through the dangerous unknown; subtly, with a single shift outside the boundaries of what we are used to.</div>,
+                    quote: <div>Drobnik creates an evocative, oppressive mood through the dangerous unknown; subtly,
+                        with a single shift outside the boundaries of what we are used to.</div>,
                     source: 'Ilona Witkowska, ODRA 5/2012'
                 },
                 {
-                    quote: <div>Drobnik’s strategy is to combine a fast-paced plot typical of popular literature with the highly metaphorical language of literary fiction.</div>,
+                    quote: <div>Drobnik’s strategy is to combine a fast-paced plot typical of popular literature with
+                        the highly metaphorical language of literary fiction.</div>,
                     source: 'Rafał Derda, ELEWATOR 2/2012'
                 },
                 {
-                    quote: <div>I’m not going to build suspense. Let me say it right away: this book will drag you in with its thousand tentacles (everyone gets their own, according to their liking).</div>,
+                    quote: <div>I’m not going to build suspense. Let me say it right away: this book will drag you in
+                        with its thousand tentacles (everyone gets their own, according to their liking).</div>,
                     source: 'Marta Sawicka-Danielak, BLUSZCZ 2/2012'
                 }
             ],
@@ -750,19 +903,24 @@ export const WEBSITE_TEXT = {
                     source: 'FATHOM BOOKS, wydawca'
                 },
                 {
-                    quote: <div>Powiedzieć, że „Nocturine” jest oniryczne, to za mało — to psychodelik jest. Wchodzi miękko, od pierwszych zdań już kołysze. Fraza hipnotyczna. Coś pięknego!</div>,
+                    quote: <div>Powiedzieć, że „Nocturine” jest oniryczne, to za mało — to psychodelik jest. Wchodzi
+                        miękko, od pierwszych zdań już kołysze. Fraza hipnotyczna. Coś pięknego!</div>,
                     source: 'Patrycja Janowska, LAMPA 1–2/2012'
                 },
                 {
-                    quote: <div>Drobnik tworzy sugestywnie nastrój osaczenia przez groźne nieznane; subtelnie, jednym przesunięciem poza ramy naszych przyzwyczajeń.</div>,
+                    quote: <div>Drobnik tworzy sugestywnie nastrój osaczenia przez groźne nieznane; subtelnie, jednym
+                        przesunięciem poza ramy naszych przyzwyczajeń.</div>,
                     source: 'Ilona Witkowska, ODRA 5/2012'
                 },
                 {
-                    quote: <div>Przyjęta przez Drobnika strategia polega na połączeniu przynależnej literaturze popularnej wartkości fabuły z&nbsp;gęstym, mocno zmetaforyzowanym językiem literatury pięknej.</div>,
+                    quote: <div>Przyjęta przez Drobnika strategia polega na połączeniu przynależnej literaturze
+                        popularnej wartkości fabuły z&nbsp;gęstym, mocno zmetaforyzowanym językiem literatury
+                        pięknej.</div>,
                     source: 'Rafał Derda, ELEWATOR 2/2012'
                 },
                 {
-                    quote: <div>Nie będę budowała suspensu. Zdradzę już na wstępie: ta książka wciągnie was tysiącem swoim macek (każdemu inna, wedle gustu).</div>,
+                    quote: <div>Nie będę budowała suspensu. Zdradzę już na wstępie: ta książka wciągnie was tysiącem
+                        swoim macek (każdemu inna, wedle gustu).</div>,
                     source: 'Marta Sawicka-Danielak, BLUSZCZ 2/2012'
                 }
             ]
@@ -804,17 +962,17 @@ export const WEBSITE_TEXT = {
             pl: 'Czytelnia'
         },
         introduction: {
-            en: <div>Here are a handful of my pieces.<br />Maybe you’d like to read some of them:</div>,
-            pl: <div>Oto garstka moich tekstów.<br />Może zechcesz niektóre z&nbsp;nich przeczytać:</div>
+            en: <div>Here are a handful of my pieces.<br/>Maybe you’d like to read some of them:</div>,
+            pl: <div>Oto garstka moich tekstów.<br/>Może zechcesz niektóre z&nbsp;nich przeczytać:</div>
         }
     },
     sectionLinks: [
         {
-          id: 'top',
-          text: {
-              en: 'top',
-              pl: 'góra'
-          }
+            id: 'top',
+            text: {
+                en: 'top',
+                pl: 'góra'
+            }
         },
         {
             id: 'nocturine',
@@ -854,11 +1012,13 @@ export const WEBSITE_TEXT = {
     },
     dataNotice: {
         en: {
-            message: <div>This website collects basic information about user preferences (language and black-and-white mode selection).</div>,
+            message: <div>This website collects basic information about user preferences (language and black-and-white
+                mode selection).</div>,
             button: 'I understand'
         },
         pl: {
-            message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór dotyczący języka i&nbsp;trybu czarno-białego).</div>,
+            message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór dotyczący
+                języka i&nbsp;trybu czarno-białego).</div>,
             button: 'Rozumiem'
         }
     }
