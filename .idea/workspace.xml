@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/texts/devonian-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/devonian-en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/texts/devonian-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/devonian-pl.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,16 +36,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-en.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="3" column="201" selection-start-line="3" selection-start-column="201" selection-end-line="3" selection-end-column="201" />
+            <state relative-caret-position="69">
+              <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-pl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
@@ -250,8 +248,8 @@
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/data/constants.js" />
         <option value="$PROJECT_DIR$/src/data/texts/vostok-en.js" />
-        <option value="$PROJECT_DIR$/src/data/texts/devonian-en.js" />
         <option value="$PROJECT_DIR$/src/data/texts/devonian-pl.js" />
+        <option value="$PROJECT_DIR$/src/data/texts/devonian-en.js" />
       </list>
     </option>
   </component>
@@ -640,12 +638,12 @@
       <workItem from="1571296098915" duration="741000" />
       <workItem from="1571342633867" duration="2558000" />
       <workItem from="1571473333761" duration="697000" />
-      <workItem from="1571731164456" duration="41000" />
+      <workItem from="1571731164456" duration="321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="452745000" />
+    <option name="totallyTimeSpent" value="453025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="430" y="15" width="1396" height="1006" extended-state="0" />
@@ -653,9 +651,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" sideWeight="0.501355" side_tool="true" weight="0.18576778" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49864498" visible="true" weight="0.185567" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49864498" visible="true" weight="0.185567" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.17709564" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49933863" visible="true" weight="0.17709564" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006614" side_tool="true" weight="0.17045455" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -1133,17 +1131,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="3" column="201" selection-start-line="3" selection-start-column="201" selection-end-line="3" selection-end-column="201" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-pl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/texts/devonian-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
         </state>
       </provider>
     </entry>
