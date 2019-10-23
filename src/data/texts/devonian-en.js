@@ -10,4 +10,6 @@ export const DEVONIAN_EN = <div>
 <p>Maybe we’ll die before we get there, attacked by a wild animal. Our bones will be cleaned of flesh by insects, worms and small mammals. White and naked, they will sink deeper into the moss, under blankets of pine needles and autumn leaves, among the roots of generations of trees. Minerals from the soil might turn them to stone, buried deep under layers and layers of dust, with a kaleidoscope of forests and deserts and meadows and lakes high up on the surface. If members of a sentient race of robots excavate them millions of years from now, will they find the tumours on my mother’s bones?</p>
 <p>Meanwhile, we keep walking. The forest gets denser and darker, the ferns ever wilder. It seems to have no end or beginning, stretching endlessly in all directions with its pines and spruces and birches, with its groundcover sewn from moss and heather and studded with mushrooms. We can almost hear the distant murmur of tectonic plates.</p>
 <p>As we go deeper into the belly of the forest, full of insatiable flora and relentless fauna, I imagine she holds me and strokes my head as if I were five again. Tells me she’s going to be fine, she always is. If she survived our father, she can survive anything. Instead, she just stops, looks around and says, <i>We are lost</i>.</p>
-</div>;
+</div>
+
+;

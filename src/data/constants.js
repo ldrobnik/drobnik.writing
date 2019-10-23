@@ -1038,19 +1038,14 @@ export const LINKS = [
         url: 'http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/'
     },
     {
-        title: 'Read “Moths”',
+        title: 'Read “Treasures”',
         subtitle: 'on Medium',
-        url: 'https://medium.com/@drobnik/moths-8b38b32b41fd?sk=2aaf8af08c174b145cc86b41de4d35b0'
+        url: 'https://medium.com/@drobnik/treasures-7ce5c9e7383b?sk=42b29471ed888e50b78626f0d17620af'
     },
     {
         title: 'Read “Entrails”',
         subtitle: 'in Pithead Chapel',
         url: 'https://pitheadchapel.com/entrails/'
-    },
-    {
-        title: 'Read “Treasures”',
-        subtitle: 'in Atticus Review',
-        url: 'https://atticusreview.org/treasures/'
     },
     {
         title: 'Buy me a coffee',
