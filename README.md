@@ -16,7 +16,7 @@ A new version of my [author website](https://www.drobnik.co/) built with **React
 * app state controlled with **Redux**;
 * neat styles thanks to **Styled Components**;
 * **Pose** to add extra oomph to animations;
-* navigator bar buttons making use of **FontAwesome** icons;
+* navigation bar buttons making use of **FontAwesome** icons;
 * **React Waypoint** to display elements depending on the current scroll position;
 * smooth scrolling to anchors by means of **react-anchor-link-smooth-scroll**.
 
