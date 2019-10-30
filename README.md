@@ -225,7 +225,11 @@ They are all wrapped in a higher-order component **Layout.js** which contains a 
                  +------------------+
 
        
-## QuickLinks component structure
+## The QuickLinks component
+
+A simple list of quick links for Instagram users I made because I couldn’t afford [LikeShop](https://likeshop.me).
+
+### QuickLinks component structure
          +---------------+
          | QuickLinks.js |
          +----+----------+
