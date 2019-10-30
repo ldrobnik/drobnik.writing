@@ -4,7 +4,7 @@ A new version of my [author website](https://www.drobnik.co/) built with **React
 
 ## Main features:
 * a fully **bilingual** site — language can be changed with a single click;
-* a **showcase of literary works** dynamically loaded from a constant;
+* a **showcase of literary works** dynamically loaded from constants;
 * a dynamically rendered, easy-to-update  **interactive list of publications**;
 * **coloured** themes displayed depending on the current page;
 * an optional **black-and-white mode** for better readability.
@@ -68,7 +68,7 @@ They are all wrapped in a higher-order component **Layout.js** which contains a 
        
 ## The Layout.js component
 
-A higher-order component **Layout.js** that wraps around the three major components. It contains a navigation bar (**NavBar.js**).
+A higher-order component that wraps around the three major components. It contains a navigation bar (**NavBar.js**).
 
 The navigation bar’s minimalistic icon-based design contains the following elements:
 
