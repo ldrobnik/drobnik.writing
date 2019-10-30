@@ -66,7 +66,20 @@ They are all wrapped in a higher-order component **Layout.js** which contains a 
                +------------+
 
        
-## Layout component structure
+## The Layout.js component
+
+A higher-order component **Layout.js** that wraps around the three major components. It contains a navigation bar (**NavBar.js**).
+
+The navigation bar’s minimalistic icon-based design contains the following elements:
+
+* the logo which also acts as a home button;
+* the actual home button (pointing to **App.js**);
+* a button to change the language from English to Polish and vice versa;
+* a button to toggle the black-and-white mode;
+* a button displaying one of literary pieces available in the Reading Room.
+
+
+### Layout component structure
           +-----------+
           | Layout.js |
           +----+------+
