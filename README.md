@@ -3,7 +3,7 @@
 A new version of my [author website](https://www.drobnik.co/) built with **React**. You can also take a look at [the previous version](https://github.com/ldrobnik/drobnik.co) made with Angular.
 
 ## Main features:
-* a fully **bilingual** site – language can be changed with a single click;
+* a fully **bilingual** site — language can be changed with a single click;
 * a **showcase of literary works** dynamically loaded from a constant;
 * a dynamically rendered, easy to update  **interactive list of publications**;
 * **coloured** themes displayed depending on the current page;
@@ -20,7 +20,17 @@ A new version of my [author website](https://www.drobnik.co/) built with **React
 * **React Waypoint** to display elements depending on the current scroll position;
 * smooth scrolling to anchors by means of **react-anchor-link-smooth-scroll**.
 
-## Basic project structure
+## Overview
+
+The app comprises three main components:
+
+* **About.js** — the home page containing basic information about the author (i.e. yours truly);
+* **Text.js** — a component displaying pieces written by said author;
+* **QuickLinks.js** — a list of links for Instagram users.
+
+They are all wrapped in a higher-order component **Layout.js** which contains a navigation bar.
+
+### Basic project structure
        +---------+
        | App.js  |
        +----+----+
