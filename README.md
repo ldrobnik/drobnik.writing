@@ -5,7 +5,7 @@ A new version of my [author website](https://www.drobnik.co/) built with **React
 ## Main features:
 * a fully **bilingual** site — language can be changed with a single click;
 * a **showcase of literary works** dynamically loaded from a constant;
-* a dynamically rendered, easy to update  **interactive list of publications**;
+* a dynamically rendered, easy-to-update  **interactive list of publications**;
 * **coloured** themes displayed depending on the current page;
 * an optional **black-and-white mode** for better readability.
 
@@ -76,7 +76,7 @@ The navigation bar’s minimalistic icon-based design contains the following ele
 * the actual home button (pointing to **App.js**);
 * a button to change the language from English to Polish and vice versa;
 * a button to toggle the black-and-white mode;
-* a button displaying one of literary pieces available in the Reading Room.
+* a button displaying one of several literary pieces available in the Reading Room (**Text.js**).
 
 
 ### Layout component structure
@@ -212,7 +212,11 @@ The navigation bar’s minimalistic icon-based design contains the following ele
                 +------------------+
            
 
-## Text component structure
+## The Text.js component
+
+It hosts the Reading Room where the user can read some of my works. Information about the pieces as well as the pieces themselves are held in a number of easy-to-update constants.
+
+### Text component structure
         +---------+
         | Text.js |
         +----+----+
