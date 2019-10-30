@@ -94,7 +94,16 @@ The navigation bar’s minimalistic icon-based design contains the following ele
 
 
 
-## About component structure
+## The About.js component
+
+The home page of the website containing the following sections:
+
+* basic information about the author (**Intro.js**);
+* a teaser of the upcoming book (**Nocturine.js**);
+* an interactive list of publications — they are displayed as tiles and can be filtered by language (**Pubs.js**);
+* a list of links to several literary works (**Read.js**).
+
+### About component structure
        +----------+
        | About.js |
        +----+-----+
@@ -244,7 +253,7 @@ It hosts the Reading Room where the user can read some of my works. Information 
        
 ## The QuickLinks component
 
-A simple list of quick links for Instagram users I made because I couldn’t afford [LikeShop](https://likeshop.me).
+A simple list of links for Instagram users I made because I couldn’t afford [LikeShop](https://likeshop.me).
 
 ### QuickLinks component structure
          +---------------+
