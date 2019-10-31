@@ -1,6 +1,6 @@
 # Łukasz Drobnik’s Author Website
 
-A new version of my [author website](https://www.drobnik.co/) built with **React**. You can also take a look at [the previous version](https://github.com/ldrobnik/drobnik.co) made with Angular.
+A new version of my [author website](https://www.drobnik.co/) built with **React**. You can also take a look at the Angular-based [previous version](https://github.com/ldrobnik/drobnik.co).
 
 ## Main features:
 * a fully **bilingual** site — language can be changed with a single click;
