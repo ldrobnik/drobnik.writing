@@ -3,7 +3,7 @@
 A new version of my [author website](https://www.drobnik.co/) built with **React**. You can also take a look at the Angular-based [previous version](https://github.com/ldrobnik/drobnik.co).
 
 ## Main features:
-* a fully **bilingual** site — language can be changed with a single click;
+* a fully **bilingual** site — the language can be changed with a single click;
 * a **showcase of literary works** dynamically loaded from constants;
 * a dynamically rendered, easy-to-update  **interactive list of publications**;
 * **coloured** themes displayed depending on the current page;
@@ -72,7 +72,7 @@ A higher-order component that wraps around the three major components. It contai
 
 The navigation bar’s minimalistic icon-based design contains the following elements:
 
-* the logo which also acts as a home button;
+* a logo which also acts as a home button;
 * the actual home button (pointing to **App.js**);
 * a button to change the language from English to Polish and vice versa;
 * a button to toggle the black-and-white mode;
