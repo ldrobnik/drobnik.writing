@@ -11,14 +11,14 @@ A new version of my [author website](https://www.drobnik.co/) built with **React
 * [The QuickLinks.js component](#the-quicklinksjs-component)
 
 
-## Main features:
+## Main features
 * a fully **bilingual** site — the language can be changed with a single click;
 * a **showcase of literary works** dynamically loaded from constants;
 * a dynamically rendered, easy-to-update  **interactive list of publications**;
 * **coloured** themes displayed depending on the current page;
 * an optional **black-and-white mode** for better readability.
 
-## Technicalities:
+## Technicalities
 
 * a single-page app created with **React.js**;
 * routes managed with **React-Router**;
