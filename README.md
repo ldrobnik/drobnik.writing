@@ -2,6 +2,15 @@
 
 A new version of my [author website](https://www.drobnik.co/) built with **React**. You can also take a look at the Angular-based [previous version](https://github.com/ldrobnik/drobnik.co).
 
+* [Main features](#main-features)
+* [Technicalities](#technicalities)
+* [Overview](#overview)
+* [The Layout.js component](#the-layoutjs-component)
+* [The About.js component](#the-aboutjs-component)
+* [The Text.js component](#the-textjs-component)
+* [The QuickLinks.js component](#the-quicklinksjs-component)
+
+
 ## Main features:
 * a fully **bilingual** site — the language can be changed with a single click;
 * a **showcase of literary works** dynamically loaded from constants;
@@ -251,7 +260,7 @@ It hosts the Reading Room where the user can read some of my works. Information 
                  +------------------+
 
        
-## The QuickLinks component
+## The QuickLinks.js component
 
 A simple list of links for Instagram users I made because I couldn’t afford [LikeShop](https://likeshop.me).
 
