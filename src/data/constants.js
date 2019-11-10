@@ -349,6 +349,16 @@ export const PUBLICATIONS = {
 
     press: [
         {
+            title: 'Akashic Books',
+            issue: 'March 2020',
+            year: '',
+            url: 'http://www.akashicbooks.com/',
+            descriptionPl: 'Flash fiction „Nameless”',
+            descriptionEn: 'Flash fiction “Nameless”',
+            language: 'en',
+            pieceTitle: 'Nameless'
+        },
+        {
             title: 'Tlen Literacki',
             issue: '4',
             year: '2019',
