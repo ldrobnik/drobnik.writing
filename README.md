@@ -1,6 +1,6 @@
 # Łukasz Drobnik’s Author Website
 
-A new version of my [author website](https://www.drobnik.co/) built with **React**. You can also take a look at the Angular-based [previous version](https://github.com/ldrobnik/drobnik.co).
+A new version of my [author website](https://drobnik.co/) built with **React**. You can also take a look at the Angular-based [previous version](https://github.com/ldrobnik/drobnik-writing-ver-1).
 
 * [Main features](#main-features)
 * [Technicalities](#technicalities)
