@@ -33,11 +33,11 @@ A new version of my [author website](https://drobnik.co/) built with **React**. 
 
 The app comprises three main components:
 
-* **About.js** — the home page containing basic information about the author (i.e. yours truly);
-* **Text.js** — a component displaying pieces written by said author;
-* **QuickLinks.js** — a list of links for Instagram users.
+* [**About.js**](#the-aboutjs-component) — the home page containing basic information about the author (i.e. yours truly);
+* [**Text.js**](#the-textjs-component) — a component displaying pieces written by said author;
+* [**QuickLinks.js**](#the-quicklinksjs-component) — a list of links for Instagram users.
 
-They are all wrapped in a higher-order component **Layout.js** which contains a navigation bar.
+They are all wrapped in a higher-order component [**Layout.js**](#the-layoutjs-component) which contains a navigation bar.
 
 ### Basic project structure
        +---------+
