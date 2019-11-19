@@ -85,7 +85,7 @@ The navigation bar’s minimalistic icon-based design contains the following ele
 * the actual home button (pointing to **App.js**);
 * a button to change the language from English to Polish and vice versa;
 * a button to toggle the black-and-white mode;
-* a button displaying one of several literary pieces available in the Reading Room (**Text.js**).
+* a button displaying one of several literary pieces available in the Reading Room ([**Text.js**](#the-textjs-component)).
 
 
 ### Layout component structure
