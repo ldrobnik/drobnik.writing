@@ -360,7 +360,7 @@ export const PUBLICATIONS = {
         },
         {
             title: 'Akashic Books',
-            issue: 'March 2020',
+            issue: 'Fri-SciFi',
             year: '',
             url: 'http://www.akashicbooks.com/',
             descriptionPl: 'Flash fiction „Nameless”',
