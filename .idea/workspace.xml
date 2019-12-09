@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/data/texts/vostok-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/texts/vostok-en.js" afterDir="false" />
-    </list>
+    <list default="true" id="32211043-137b-492a-a3cd-3aff37a11f9e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -84,7 +82,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/texts/vostok-en.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
+            <state relative-caret-position="-384">
               <caret line="14" column="328" selection-start-line="14" selection-start-column="328" selection-end-line="14" selection-end-column="328" />
             </state>
           </provider>
@@ -258,7 +256,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="431" />
-    <option name="y" value="87" />
+    <option name="y" value="41" />
     <option name="width" value="1396" />
     <option name="height" value="1006" />
   </component>
@@ -463,16 +461,15 @@
       <workItem from="1573632093746" duration="1518000" />
       <workItem from="1574158184645" duration="1254000" />
       <workItem from="1575390702278" duration="718000" />
-      <workItem from="1575797124667" duration="584000" />
+      <workItem from="1575797124667" duration="1519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="469834000" />
+    <option name="totallyTimeSpent" value="470769000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="431" y="87" width="1396" height="1006" extended-state="0" />
-    <editor active="true" />
+    <frame x="431" y="41" width="1396" height="1006" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" sideWeight="0.501355" side_tool="true" weight="0.18576778" />
@@ -965,7 +962,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/texts/vostok-en.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
+        <state relative-caret-position="-384">
           <caret line="14" column="328" selection-start-line="14" selection-start-column="328" selection-end-line="14" selection-end-column="328" />
         </state>
       </provider>

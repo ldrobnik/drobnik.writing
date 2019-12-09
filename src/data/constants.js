@@ -349,6 +349,16 @@ export const PUBLICATIONS = {
 
     press: [
         {
+            title: 'STORGY',
+            issue: 'Flash Fiction Friday',
+            year: '',
+            url: 'https://storgy.com/',
+            descriptionPl: 'Flash fiction „Deadlines”',
+            descriptionEn: 'Flash fiction “Deadlines”',
+            language: 'en',
+            pieceTitle: 'Deadlines'
+        },
+        {
             title: 'Akashic Books',
             issue: 'March 2020',
             year: '',
