@@ -686,6 +686,15 @@ export const PUBLICATIONS = {
 
     collections: [
         {
+            title: '2020. Antologia współczesnych polskich opowiadań',
+            year: '',
+            url: 'http://wforma.eu/zapowiedzi,30.html',
+            descriptionPl: 'Zbiór opowiadań z moim tekstem „Niech nastanie Wisła” (Forma)',
+            descriptionEn: 'Short story collection featuring my piece “Niech nastanie Wisła” (Forma)',
+            language: 'pl',
+            pieceTitle: 'Niech nastanie Wisła'
+        },
+        {
             title: 'Transformation Anthology',
             year: '2019',
             url: 'http://theselkie.co.uk/anthology/',
