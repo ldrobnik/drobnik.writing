@@ -97,10 +97,8 @@ const Intro = (props) => {
         setSocialVisible(false);
     };
 
-    useEffect(() => {
-        //show content after a while
-        setTimeout(showContent, FADE_DURATION);
-
+    //show the social links after a while irrespective of waypoints
+    const showSocialAnyway = () => {
         //For larger screens, show social links after a while, irrespective of the viewport position
         if (window.innerWidth > 1800) {
             setTimeout(showSocial, 2000);
@@ -109,14 +107,24 @@ const Intro = (props) => {
         } else {
             setTimeout(showSocial, 7000);
         }
+    };
+
+    useEffect(() => {
+        //show content after a while
+        setTimeout(showContent, FADE_DURATION);
+
+        //For larger screens, show social links after a while, irrespective of the viewport position
+        showSocialAnyway();
 
     });
 
     //hide social links whenever the pathname changes
     useEffect(() => {
             setTimeout(hideSocial,100);
+            //For larger screens, show social links after a while, irrespective of the viewport position
+            showSocialAnyway();
         },
-        [props.location.pathname]
+        [props.location.pathname, props.lang]
     );
 
     // //hide social links and show them right away whenever the language changes
