@@ -86,11 +86,11 @@ const Nocturine = (props) => {
         setTimeout(showContent, FADE_DURATION);
     });
 
-    //hide elements whenever the pathname changes
+    //hide elements whenever the pathname or language change
     useEffect(() => {
             setTimeout(hideElements,100);
         },
-        [props.location.pathname]
+        [props.location.pathname, props.lang]
     );
     //
     // //hide elements and show them right away whenever the language changes

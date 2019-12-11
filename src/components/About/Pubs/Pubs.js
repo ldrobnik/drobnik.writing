@@ -131,13 +131,13 @@ const Pubs = (props) => {
         setTimeout(showContent, FADE_DURATION);
     });
 
-    //hide message whenever the pathname changes
+    //hide message whenever the pathname or language change
     useEffect(() => {
 
             setTimeout(hideMessage,100);
 
         },
-        [props.location.pathname]
+        [props.location.pathname, props.lang]
     );
 
     // //hide message and show them right away whenever the language changes

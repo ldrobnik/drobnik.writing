@@ -65,11 +65,11 @@ const Read = (props) => {
         setLinksVisible(false);
     };
 
-    //hide message whenever the pathname changes
+    //hide message whenever the pathname or language change
     useEffect(() => {
             setTimeout(hideLinks,100);
         },
-        [props.location.pathname]
+        [props.location.pathname, props.lang]
     );
 
     // //hide message and show it right away whenever the language changes
