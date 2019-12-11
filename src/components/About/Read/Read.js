@@ -41,7 +41,7 @@ const AnimatedLink = posed.div({
         }
     },
     hidden: {
-        x: '200%'
+        x: '800%'
     }
 });
 
@@ -72,13 +72,13 @@ const Read = (props) => {
         [props.location.pathname]
     );
 
-    //hide message and show it right away whenever the language changes
-    useEffect(() => {
-            setTimeout(hideLinks,100);
-            setTimeout(showLinks, 800);
-        },
-        [props.lang]
-    );
+    // //hide message and show it right away whenever the language changes
+    // useEffect(() => {
+    //         setTimeout(hideLinks,100);
+    //         setTimeout(showLinks, 800);
+    //     },
+    //     [props.lang]
+    // );
 
     useEffect(() => {
 
@@ -88,9 +88,9 @@ const Read = (props) => {
 
     return (
         <Wrapper>
-            <Waypoint
-                onEnter={hideLinks}
-            />
+            {/*<Waypoint*/}
+            {/*    onEnter={hideLinks}*/}
+            {/*/>*/}
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionHeading

@@ -92,15 +92,15 @@ const Nocturine = (props) => {
         },
         [props.location.pathname]
     );
-
-    //hide elements and show them right away whenever the language changes
-    useEffect(() => {
-            setTimeout(hideElements,100);
-            setTimeout(showQuotes, 1500);
-            setTimeout(showButton, 1500);
-        },
-        [props.lang]
-    );
+    //
+    // //hide elements and show them right away whenever the language changes
+    // useEffect(() => {
+    //         setTimeout(hideElements,100);
+    //         setTimeout(showQuotes, 1500);
+    //         setTimeout(showButton, 1500);
+    //     },
+    //     [props.lang]
+    // );
 
     return (
         <React.Fragment>
