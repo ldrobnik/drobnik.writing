@@ -78,7 +78,7 @@ const NavBar = (props) => {
     //Changes current language
     const changeLanguage = () => {
         //Scrolls to top
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
 
         //play the page reloading animation
         props.onReloadChange(true);

@@ -119,6 +119,14 @@ const Intro = (props) => {
         [props.location.pathname]
     );
 
+    //hide social links and show them right away whenever the language changes
+    useEffect(() => {
+            setTimeout(hideSocial,100);
+            setTimeout(showSocial, 500);
+        },
+        [props.lang]
+    );
+
     return (
         <React.Fragment>
             <AnimatedContent

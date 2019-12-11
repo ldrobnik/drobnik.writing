@@ -140,6 +140,14 @@ const Pubs = (props) => {
         [props.location.pathname]
     );
 
+    //hide message and show them right away whenever the language changes
+    useEffect(() => {
+            setTimeout(hideMessage,100);
+            setTimeout(showMessage, 500);
+        },
+        [props.lang]
+    );
+
     return (
         <Wrapper>
             <AnimatedContent

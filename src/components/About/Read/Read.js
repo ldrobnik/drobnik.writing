@@ -72,13 +72,25 @@ const Read = (props) => {
         [props.location.pathname]
     );
 
+    //hide message and show it right away whenever the language changes
+    useEffect(() => {
+            setTimeout(hideLinks,100);
+            setTimeout(showLinks, 800);
+        },
+        [props.lang]
+    );
+
     useEffect(() => {
 
         //show content after a while
         setTimeout(showContent, FADE_DURATION);
     });
+
     return (
         <Wrapper>
+            <Waypoint
+                onEnter={hideLinks}
+            />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionHeading
