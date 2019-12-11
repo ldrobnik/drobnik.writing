@@ -41,7 +41,7 @@ const AnimatedLink = posed.div({
         }
     },
     hidden: {
-        x: '800%'
+        x: '300%'
     }
 });
 
