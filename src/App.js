@@ -8,7 +8,8 @@ import { THEME_COLORS } from "./data/constants";
 import Home from './components/Home/Home';
 
 //Google Analytics code
-ReactGA.initialize('ExampleApiKey');
+const ANALYTICS_KEY = process.env.REACT_APP_ANALYTICS_KEY; // Google analytics API key
+ReactGA.initialize(ANALYTICS_KEY);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 
