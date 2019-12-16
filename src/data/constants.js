@@ -349,6 +349,16 @@ export const PUBLICATIONS = {
 
     press: [
         {
+            title: 'BULL',
+            issue: '',
+            year: '',
+            url: 'http://bullmensfiction.com/',
+            descriptionPl: 'Flash fiction „Riverweed”',
+            descriptionEn: 'Flash fiction “Riverweed”',
+            language: 'en',
+            pieceTitle: 'Riverweed'
+        },
+        {
             title: 'STORGY',
             issue: 'Flash Fiction Friday',
             year: '',
