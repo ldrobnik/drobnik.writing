@@ -96,7 +96,7 @@ const Home = (props) => {
 
     return (
         <React.Fragment>
-            <GlobalStyle/>
+            <GlobalStyle />
             <Layout>
                 <Switch>
                     <Route path="/" exact component={About} key="home"/>
