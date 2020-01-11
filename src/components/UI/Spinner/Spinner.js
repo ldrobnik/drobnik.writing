@@ -4,10 +4,6 @@ import styled from 'styled-components';
 import logoImage from '../../../assets/images/logo.svg';
 import {PULSATE_KEYFRAMES, AnimatedContent} from "../../../data/constants";
 
-const Wrapper = styled.div`
-  positon: relative;
-`;
-
 const SpinnerWrapper = styled.div`
   position: absolute;
   z-index: 90;
@@ -44,18 +40,18 @@ const Spinner = () => {
 
     return (
         <React.Fragment>
-            <Wrapper>
-                <SpinnerWrapper>
-                    <AnimatedContent
-                        pose={spinnerVisible ? 'visible' : 'hidden'}>
-                        <img
-                            src={logoImage}
-                            alt='loading spinner'
-                            onLoad={showSpinner}
-                        />
-                    </AnimatedContent>
-                </SpinnerWrapper>
-            </Wrapper>
+
+            <SpinnerWrapper>
+                <AnimatedContent
+                    pose={spinnerVisible ? 'visible' : 'hidden'}>
+                    <img
+                        src={logoImage}
+                        alt='loading spinner'
+                        onLoad={showSpinner}
+                    />
+                </AnimatedContent>
+            </SpinnerWrapper>
+
             <Backdrop/>
         </React.Fragment>
     );
