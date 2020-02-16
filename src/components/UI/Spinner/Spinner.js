@@ -40,7 +40,6 @@ const Spinner = () => {
 
     return (
         <React.Fragment>
-
             <SpinnerWrapper>
                 <AnimatedContent
                     pose={spinnerVisible ? 'visible' : 'hidden'}>
@@ -51,7 +50,6 @@ const Spinner = () => {
                     />
                 </AnimatedContent>
             </SpinnerWrapper>
-
             <Backdrop/>
         </React.Fragment>
     );
