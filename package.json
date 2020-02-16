@@ -133,7 +133,8 @@
     "watchPlugins": [
       "jest-watch-typeahead/filename",
       "jest-watch-typeahead/testname"
-    ]
+    ],
+    "setupFilesAfterEnv": ["<rootDir>/src/setupTests.js"]
   },
   "babel": {
     "presets": [
