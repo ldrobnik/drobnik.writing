@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import CenteredPhoto from './CentredPhoto';
-import { imageProps } from "../../../fixtures";
+import { imageProps } from "../../../data/fixtures";
 
 const props = imageProps;
 
