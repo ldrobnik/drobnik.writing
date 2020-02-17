@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
      }
 `;
 
-const Home = (props) => {
+export const Home = (props) => {
     //checks if any data is stored in localStorage and updates Redux state accordingly
     const checkLocalStorage = () => {
 
@@ -78,6 +78,7 @@ const Home = (props) => {
     //Scrolls to top initially and if the URL path changes
     useEffect(() => {
             window.scrollTo(0, 0);
+
         },
         [props.location.pathname]
     );
