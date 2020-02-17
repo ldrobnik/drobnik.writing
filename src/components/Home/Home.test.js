@@ -9,7 +9,6 @@ describe('Home', () => {
     const home = shallow(<Home {...props} />);
 
     it('renders the correct number of routes', () => {
-        console.log(home.debug());
         expect(home.find('Route').length).toEqual(5);
     });
 

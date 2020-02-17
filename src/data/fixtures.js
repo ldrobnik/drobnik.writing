@@ -9,6 +9,16 @@ export const homeProps = {
     }
 };
 
+export const aboutProps = {
+    loaded: true
+};
+
+export const pubListProps = {
+    en: true,
+    pl: true,
+    type: 'press'
+};
+
 export const imageProps = {
     source: 'http://example.com',
     altText: 'alt text'
