@@ -87,7 +87,7 @@ const AnimatedPanel = posed.div({
     }
 });
 
-const Pubs = (props) => {
+export const Pubs = (props) => {
 
     //specifies whether texts in English should be displayed
     const [en, setEn] = useState(true);

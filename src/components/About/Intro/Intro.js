@@ -121,8 +121,7 @@ const Intro = (props) => {
     //hide social links whenever the pathname or language change
     useEffect(() => {
             setTimeout(hideSocial,100);
-            //For larger screens, show social links after a while, irrespective of the viewport position
-            showSocialAnyway();
+
         },
         [props.location.pathname, props.lang]
     );

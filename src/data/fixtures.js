@@ -13,6 +13,13 @@ export const aboutProps = {
     loaded: true
 };
 
+export const pubsProps = {
+    lang: 'en',
+    location: {
+        pathname: '/'
+    }
+};
+
 export const pubListProps = {
     en: true,
     pl: true,
