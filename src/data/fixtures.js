@@ -7,3 +7,7 @@ export const toggleSwitchProps = {
   checked: true,
   onChange: () => {console.log('change')}
 };
+
+export const appProps = {
+    theme: 'nocturine'
+};
