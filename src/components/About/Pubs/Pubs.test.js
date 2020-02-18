@@ -9,7 +9,6 @@ const props = pubsProps;
 describe('Pubs', () => {
     const pubs = shallow(<Pubs {...props} />);
     it('renders SectionHeading', () => {
-        console.log(pubs.debug());
         expect(pubs.find('SectionHeading').exists()).toBe(true);
     });
 

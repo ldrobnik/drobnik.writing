@@ -26,4 +26,8 @@ describe('About', () => {
     it('renders CopyrightNote', () => {
         expect(about.find('CopyrightNote').exists()).toBe(true);
     });
+
+    it('renders the copyright note', () => {
+        expect(about.find('CopyrightNote').exists()).toBe(true);
+    });
 });

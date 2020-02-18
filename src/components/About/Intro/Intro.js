@@ -77,7 +77,7 @@ const AnimatedButton = posed.div({
     }
 });
 
-const Intro = (props) => {
+export const Intro = (props) => {
 
     //specifies whether social links and support button should be visible
     const [socialVisible, setSocialVisible] = useState(false);

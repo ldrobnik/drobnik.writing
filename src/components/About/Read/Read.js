@@ -45,7 +45,7 @@ const AnimatedLink = posed.div({
     }
 });
 
-const Read = (props) => {
+export const Read = (props) => {
 
     //specifies whether text links should be visible
     const [linksVisible, setLinksVisible] = useState(false);

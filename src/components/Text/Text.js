@@ -122,7 +122,7 @@ const AnimatedLink = posed.div({
     }
 });
 
-const Text = (props) => {
+export const Text = (props) => {
 
     //specifies whether 'up next' link should be displayed
     const [linkVisible, setlinkVisible] = useState(false);

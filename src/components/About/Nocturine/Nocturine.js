@@ -52,7 +52,7 @@ const AnimatedButton = posed.div({
     }
 });
 
-const Nocturine = (props) => {
+export const Nocturine = (props) => {
 
     //specifies whether the quotes should be displayed - triggered by scrolling to the Waypoint element
     const [quotesVisible, setQuotesVisible] = useState(false);
