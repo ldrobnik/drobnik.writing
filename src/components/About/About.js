@@ -1,8 +1,9 @@
 import React, {useEffect} from 'react';
+import {bindActionCreators} from "redux";
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import * as actionTypes from "../../actions/constants";
+import {setTheme, setNavbarVisibility, setDataNoticeVisible, setTextPage} from "../../actions";
 import {TEXT_NAMES} from './../../data/constants';
 
 import Intro from './Intro/Intro';
@@ -63,24 +64,24 @@ export const About = (props) => {
 
         //theme to be used - black-and-white if the black-and-white mode is on or the randomly selected theme
         const themeToUse = props.bwMode ? 'blackAndWhite' : randomTheme;
-        props.onThemeChange(themeToUse);
+        props.setTheme(themeToUse);
     };
 
     //shows the NavBar
     const showNavbar = () => {
-        props.onSetNavbar(true);
+        props.setNavbarVisibility(true);
     };
 
     //checks whether the data storage notice should be displayed and turns it on if it is invisible but hasn't been confirmed yet
     const checkDataNotice = () => {
         if (!props.noticeAccepted) {
-            props.onSetNotice(true);
+            props.setDataNoticeVisible(true);
         }
     };
 
     //lets the Redux store know that the Text page is not currently displayed
     const setTextNotDisplayed = () => {
-        props.onSetTextPage(false)
+        props.setTextPage(false)
     };
 
     useEffect(() => {
@@ -134,24 +135,12 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onThemeChange: (newTheme) => dispatch({
-            type: actionTypes.SET_THEME,
-            theme: newTheme
-        }),
-        onSetNavbar: (newState) => dispatch({
-            type: actionTypes.SET_NAVBAR_VISIBILITY,
-            navbarVisible: newState
-        }),
-        onSetNotice: (newState) => dispatch({
-            type: actionTypes.SET_DATA_NOTICE_VISIBLE,
-            dataNoticeVisible: newState
-        }),
-        onSetTextPage: (newState) => dispatch({
-            type: actionTypes.SET_TEXT_PAGE,
-            textPageDisplayed: newState
-        })
-    };
+    return bindActionCreators({
+        setTheme,
+        setNavbarVisibility,
+        setDataNoticeVisible,
+        setTextPage
+    }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(About);
