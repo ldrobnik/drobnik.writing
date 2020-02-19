@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import * as actionTypes from "../../../store/actions";
+import * as actionTypes from "../../../actions/constants";
 import {POP_KEYFRAMES} from "../../../data/constants";
 
 /*STYLED COMPONENTS*/

@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import * as actionTypes from "../../store/actions";
+import * as actionTypes from "../../actions/constants";
 import {LINKS, TEXT_NAMES, FADE_DURATION, AnimatedContent} from "../../data/constants";
 
 import QuickLink from "./QuickLink/QuickLink";

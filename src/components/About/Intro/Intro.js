@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
-import * as actionTypes from "./../../../store/actions";
+import * as actionTypes from "../../../actions/constants";
 import {WEBSITE_TEXT, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from '../../../data/constants';
 
 import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'

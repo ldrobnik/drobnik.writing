@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import * as actionTypes from "./../../store/actions";
+import * as actionTypes from "../../actions/constants";
 import {TEXT_NAMES} from './../../data/constants';
 
 import Intro from './Intro/Intro';

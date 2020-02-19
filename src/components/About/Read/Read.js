@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
-import * as actionTypes from "./../../../store/actions";
+import * as actionTypes from "../../../actions/constants";
 import {WEBSITE_TEXT, TEXT_NAMES, TEXTS, FADE_DURATION, AnimatedContent} from './../../../data/constants';
 
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'

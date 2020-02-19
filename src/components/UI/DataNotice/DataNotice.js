@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
+import { setDataNoticeVisible, setDataNoticeAccepted } from "../../../actions";
 
-import * as actionTypes from "../../../store/actions";
 import {WEBSITE_TEXT, AnimatedContent} from "../../../data/constants";
 
 /* STYLED COMPONENTS */
@@ -66,8 +67,8 @@ const DataNotice = (props) => {
     const acceptDataNotice = () => {
 
         //update Redux states
-        props.onVisibilityChange(false); //sets data storage notice display to false
-        props.onAcceptanceChange(true); //sets data storage acceptance to true
+        props.setDataNoticeVisible(false); //sets data storage notice display to false
+        props.setDataNoticeAccepted(true); //sets data storage acceptance to true
 
         //store information about accepting the notice in localStorage
         localStorage.setItem('dataNoticeAccepted', true);
@@ -118,16 +119,10 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onVisibilityChange: (newState) => dispatch({
-            type: actionTypes.SET_DATA_NOTICE_VISIBLE,
-            dataNoticeVisible: newState
-        }),
-        onAcceptanceChange: (newState) => dispatch({
-            type: actionTypes.SET_DATA_NOTICE_ACCEPTED,
-            dataNoticeAccepted: newState
-        })
-    };
+    return bindActionCreators({
+        setDataNoticeVisible,
+        setDataNoticeAccepted
+    }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(DataNotice);

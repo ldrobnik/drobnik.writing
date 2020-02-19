@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {POP_KEYFRAMES} from "../../../data/constants";
-import * as actionTypes from "../../../store/actions";
+import * as actionTypes from "../../../actions/constants";
 
 const Wrapper = styled.div`
   text-align: center;

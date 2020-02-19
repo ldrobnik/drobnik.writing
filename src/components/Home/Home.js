@@ -4,7 +4,7 @@ import {Redirect} from 'react-router';
 import {connect} from 'react-redux';
 import {createGlobalStyle} from 'styled-components';
 
-import * as actionTypes from "../../store/actions";
+import * as actionTypes from "../../actions/constants";
 
 import Layout from '../Layout/Layout';
 import About from '../About/About';
