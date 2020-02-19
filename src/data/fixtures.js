@@ -45,16 +45,6 @@ export const pubListProps = {
     type: 'press'
 };
 
-export const imageProps = {
-    source: 'http://example.com',
-    altText: 'alt text'
-};
-
-export const toggleSwitchProps = {
-  checked: true,
-  onChange: () => {console.log('change')}
-};
-
 export const readProps = {
     lang: 'en',
     location: {
@@ -80,6 +70,21 @@ export const textProps = {
 };
 
 export const textText = "Days are seconds to her.";
+
+export const imageProps = {
+    source: 'http://example.com',
+    altText: 'alt text'
+};
+
+export const sectionHeadingProps = {
+    title: 'title',
+    subtitle: 'subtitle'
+};
+
+export const toggleSwitchProps = {
+    checked: true,
+    onChange: () => {console.log('change')}
+};
 
 
 
