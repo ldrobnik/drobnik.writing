@@ -1,10 +1,11 @@
 import React, {useEffect} from 'react';
+import {bindActionCreators} from "redux";
 import {Route, Switch, withRouter} from 'react-router-dom';
 import {Redirect} from 'react-router';
 import {connect} from 'react-redux';
 import {createGlobalStyle} from 'styled-components';
 
-import * as actionTypes from "../../actions/constants";
+import {setDataNoticeVisible, setDataNoticeAccepted, setLanguage, setBWMode, setPageLoaded} from "../../actions";
 
 import Layout from '../Layout/Layout';
 import About from '../About/About';
@@ -43,10 +44,10 @@ export const Home = (props) => {
 
         if (noticeAccepted) {
             //store info that the notice has been accepted in Redux store
-            props.onAcceptanceChange(true);
+            props.setDataNoticeAccepted(true);
 
             //stop displaying the notice
-            props.onVisibilityChange(false);
+            props.setDataNoticeVisible(false);
         }
 
         //check if the language is stored in localStorate and if so, update Redux state accordingly
@@ -54,7 +55,7 @@ export const Home = (props) => {
 
         //if there is a language stored, used it on the website
         if (storedLanguage === 'en' || storedLanguage === 'pl') {
-            props.onLanguageChange(storedLanguage);
+            props.setLanguage(storedLanguage);
         }
 
         //check if the language is stored in localStorate and if so, update Redux state accordingly
@@ -62,9 +63,9 @@ export const Home = (props) => {
 
         //update the Redux state with value stored in localStorage if any
         if (storedColorMode === 'b&w') {
-            props.onBwModeChange(true);
+            props.setBWMode(true);
         } else {
-            props.onBwModeChange(false);
+            props.setBWMode(false);
         }
     };
 
@@ -72,7 +73,7 @@ export const Home = (props) => {
     const hideSpinner = () => {
 
         //set Redux page loaded state to true
-        props.onPageLoadedChange(true);
+        props.setPageLoaded(true);
     };
 
     //Scrolls to top initially and if the URL path changes
@@ -121,28 +122,13 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onVisibilityChange: (newState) => dispatch({
-            type: actionTypes.SET_DATA_NOTICE_VISIBLE,
-            dataNoticeVisible: newState
-        }),
-        onAcceptanceChange: (newState) => dispatch({
-            type: actionTypes.SET_DATA_NOTICE_ACCEPTED,
-            dataNoticeAccepted: newState
-        }),
-        onLanguageChange: (newLang) => dispatch({
-            type: actionTypes.SET_LANGUAGE,
-            language: newLang
-        }),
-        onBwModeChange: (newMode) => dispatch({
-            type: actionTypes.SET_BW_MODE,
-            blackAndWhite: newMode
-        }),
-        onPageLoadedChange: (newState) => dispatch({
-        type: actionTypes.SET_PAGE_LOADED,
-        pageLoaded: newState
-    })
-    };
+    return bindActionCreators({
+        setDataNoticeVisible,
+        setDataNoticeAccepted,
+        setLanguage,
+        setBWMode,
+        setPageLoaded
+    }, dispatch);
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home));

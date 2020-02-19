@@ -1,8 +1,9 @@
 import React, {useEffect} from 'react';
+import {bindActionCreators} from "redux";
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import * as actionTypes from "../../actions/constants";
+import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPageReload} from "../../actions";
 import {LINKS, TEXT_NAMES, FADE_DURATION, AnimatedContent} from "../../data/constants";
 
 import QuickLink from "./QuickLink/QuickLink";
@@ -36,7 +37,7 @@ const QuickLinks = (props) => {
 
     //shows the content
     const showContent = () => {
-        props.onReloadChange(false);
+        props.setPageReload(false);
     };
 
     //updates current theme with a random theme
@@ -45,17 +46,17 @@ const QuickLinks = (props) => {
         const randomTheme = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
 
         //update Redux store with a new theme
-        props.onThemeChange(randomTheme);
+        props.setTheme(randomTheme);
     };
 
     //hides the NavBar
     const hideNavbar = () => {
-        props.onSetNavbar(false);
+        props.setNavbarVisibility(false);
     };
 
     //turns of data storage notice
     const hideDataNotice = () => {
-        props.onSetNotice(false)
+        props.setDataNoticeVisible(false)
     };
 
     useEffect(() => {
@@ -101,24 +102,12 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onThemeChange: (newTheme) => dispatch({
-            type: actionTypes.SET_THEME,
-            theme: newTheme
-        }),
-        onSetNavbar: (newState) => dispatch({
-            type: actionTypes.SET_NAVBAR_VISIBILITY,
-            navbarVisible: newState
-        }),
-        onSetNotice: (newState) => dispatch({
-            type: actionTypes.SET_DATA_NOTICE_VISIBLE,
-            dataNoticeVisible: newState
-        }),
-        onReloadChange: (newState) => dispatch({
-            type: actionTypes.SET_PAGE_RELOAD,
-            pageReload: newState
-        })
-    };
+    return bindActionCreators({
+        setTheme,
+        setNavbarVisibility,
+        setDataNoticeVisible,
+        setPageReload
+    }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(QuickLinks);
