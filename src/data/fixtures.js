@@ -76,6 +76,11 @@ export const imageProps = {
     altText: 'alt text'
 };
 
+export const centredButtonProps = {
+    message: 'message',
+    path: 'http://example.com'
+};
+
 export const sectionHeadingProps = {
     title: 'title',
     subtitle: 'subtitle'

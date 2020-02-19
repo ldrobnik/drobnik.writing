@@ -130,7 +130,7 @@ export const Nocturine = (props) => {
                 <CentredButton
                     message={WEBSITE_TEXT.nocturine.button[props.lang].message}
                     path={WEBSITE_TEXT.nocturine.button[props.lang].path}
-                    capital='m'/>
+                />
             </AnimatedButton>
             <Waypoint
                 onEnter={showQuotes}

@@ -50,7 +50,7 @@ const ButtonWrapper = styled.div`
   }  
 `;
 
-const CentredButton = (props) => {
+export const CentredButton = (props) => {
 
     //sets off page reloading animation
     const reloadPage = () => {

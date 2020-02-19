@@ -56,7 +56,7 @@ const DismissButton = styled.div`
 `;
 
 
-const DataNotice = (props) => {
+export const DataNotice = (props) => {
 
     //notice content to be displayed
     const [noticeVisible, setNoticeVisible] = useState(false);
@@ -81,6 +81,7 @@ const DataNotice = (props) => {
             setNoticeFadeIn(true);
         }
     };
+
 
     //the content of notice to be displayed depending on the setNoticeVisible value
     const notice = (props.noticeVisible && noticeVisible) ?
