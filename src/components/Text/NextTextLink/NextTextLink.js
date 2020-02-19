@@ -1,9 +1,10 @@
 import React from 'react';
+import {bindActionCreators} from 'redux';
 import {Link} from "react-router-dom";
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import * as actionTypes from "../../../actions/constants";
+import {setPageReload} from "../../../actions";
 import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from "./../../../data/constants";
 
 /*STYLED COMPONENTS*/
@@ -40,7 +41,7 @@ const NextTextLink = (props) => {
         window.scrollTo(0,800);
 
         //change page reload redux state
-        props.onReloadChange(true);
+        props.setPageReload(true);
     };
 
     return (
@@ -64,12 +65,7 @@ const NextTextLink = (props) => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onReloadChange: (newState) => dispatch({
-            type: actionTypes.SET_PAGE_RELOAD,
-            pageReload: newState
-        })
-    };
+    return bindActionCreators({setPageReload}, dispatch);
 };
 
 export default connect(null, mapDispatchToProps)(NextTextLink);

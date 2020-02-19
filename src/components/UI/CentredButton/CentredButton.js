@@ -1,9 +1,10 @@
 import React from 'react';
+import {bindActionCreators} from 'redux';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import * as actionTypes from "../../../actions/constants";
+import {setPageReload} from "../../../actions";
 import {POP_KEYFRAMES} from "../../../data/constants";
 
 /*STYLED COMPONENTS*/
@@ -53,7 +54,7 @@ const CentredButton = (props) => {
 
     //sets off page reloading animation
     const reloadPage = () => {
-        props.onReloadChange(true);
+        props.setPageReload(true);
     };
 
     //constant holding the button content
@@ -95,12 +96,7 @@ const CentredButton = (props) => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onReloadChange: (newState) => dispatch({
-            type: actionTypes.SET_PAGE_RELOAD,
-            pageReload: newState
-        })
-    };
+    return bindActionCreators({setPageReload}, dispatch);
 };
 
 export default connect(null, mapDispatchToProps)(CentredButton);

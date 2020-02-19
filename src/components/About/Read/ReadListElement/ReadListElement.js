@@ -1,9 +1,10 @@
 import React from 'react';
+import {bindActionCreators} from 'redux';
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
 import {connect} from "react-redux";
 import {POP_KEYFRAMES} from "./../../../../data/constants";
-import * as actionTypes from "../../../../actions/constants";
+import {setPageReload} from "../../../../actions";
 
 const Wrapper = styled.div`
   display: flex;
@@ -43,7 +44,7 @@ const ReadListElement = (props) => {
 
     //sets off page reloading animation
     const reloadPage = () => {
-        props.onReloadChange(true);
+        props.setPageReload(true);
     };
 
     return (
@@ -71,12 +72,7 @@ const ReadListElement = (props) => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onReloadChange: (newState) => dispatch({
-            type: actionTypes.SET_PAGE_RELOAD,
-            pageReload: newState
-        })
-    };
+    return bindActionCreators({setPageReload}, dispatch);
 };
 
 export default connect(null, mapDispatchToProps)(ReadListElement);

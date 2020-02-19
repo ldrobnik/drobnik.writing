@@ -1,10 +1,11 @@
 import React from 'react';
+import {bindActionCreators} from 'redux';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import * as actionTypes from '../../actions/constants';
+import {setLanguage, setBWMode, setPageReload} from "../../actions";
 import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES} from '../../data/constants';
 
 import Logo from './Logo/Logo';
@@ -81,17 +82,17 @@ const NavBar = (props) => {
         window.scrollTo(0, 0);
 
         //play the page reloading animation
-        props.onReloadChange(true);
+        props.setPageReload(true);
 
         if (props.lang === 'en') {
             //change Redux state
-            props.onLanguageChange('pl');
+            props.setLanguage('pl');
 
             //store the state in localStorage
             localStorage.setItem('language', 'pl');
         } else {
             //change Redux state
-            props.onLanguageChange('en');
+            props.setLanguage('en');
 
             //store the state in localStorage
             localStorage.setItem('language', 'en');
@@ -105,7 +106,7 @@ const NavBar = (props) => {
         const newColorMode = (!props.bwMode) ? 'b&w' : 'color';
 
         //update redux State
-        props.onBwModeChange(!props.bwMode);
+        props.setBWMode(!props.bwMode);
 
         //store new state in localStorage
         localStorage.setItem('colorMode', newColorMode);
@@ -114,7 +115,7 @@ const NavBar = (props) => {
 
     //sets off page reloading animation
     const reloadPage = () => {
-        props.onReloadChange(true);
+        props.setPageReload(true);
     };
 
     //Content of the logo link - if on the home page, make it an anchor link scrolling to top
@@ -237,20 +238,11 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onLanguageChange: (newLang) => dispatch({
-            type: actionTypes.SET_LANGUAGE,
-            language: newLang
-        }),
-        onBwModeChange: (newMode) => dispatch({
-            type: actionTypes.SET_BW_MODE,
-            blackAndWhite: newMode
-        }),
-        onReloadChange: (newState) => dispatch({
-            type: actionTypes.SET_PAGE_RELOAD,
-            pageReload: newState
-        })
-    };
+    return bindActionCreators({
+        setLanguage,
+        setBWMode,
+        setPageReload
+    }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(NavBar);

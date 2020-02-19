@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
+import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
-import * as actionTypes from "../../../actions/constants";
+import { setPageReload } from "../../../actions";
 import {WEBSITE_TEXT, TEXT_NAMES, TEXTS, FADE_DURATION, AnimatedContent} from './../../../data/constants';
 
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
@@ -52,7 +53,7 @@ export const Read = (props) => {
 
     //shows the content
     const showContent = () => {
-        props.onReloadChange(false);
+        props.setPageReload(false);
     };
 
     //shows the text links
@@ -148,12 +149,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onReloadChange: (newState) => dispatch({
-            type: actionTypes.SET_PAGE_RELOAD,
-            pageReload: newState
-        })
-    };
+    return bindActionCreators({setPageReload}, dispatch);
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Read));

@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
+import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
-import * as actionTypes from "../../../actions/constants";
+import {setPageReload} from "../../../actions";
 import {WEBSITE_TEXT, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from '../../../data/constants';
 
 import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'
@@ -84,7 +85,7 @@ export const Intro = (props) => {
 
     //shows the content
     const showContent = () => {
-        props.onReloadChange(false);
+        props.setPageReload(false);
     };
 
     //shows the social links and support button
@@ -125,14 +126,6 @@ export const Intro = (props) => {
         },
         [props.location.pathname, props.lang]
     );
-
-    // //hide social links and show them right away whenever the language changes
-    // useEffect(() => {
-    //         setTimeout(hideSocial,100);
-    //         setTimeout(showSocial, 500);
-    //     },
-    //     [props.lang]
-    // );
 
     return (
         <React.Fragment>
@@ -191,12 +184,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onReloadChange: (newState) => dispatch({
-            type: actionTypes.SET_PAGE_RELOAD,
-            pageReload: newState
-        })
-    };
+    return bindActionCreators({setPageReload}, dispatch);
 };
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Intro));

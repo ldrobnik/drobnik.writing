@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {bindActionCreators} from 'redux';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
@@ -6,7 +7,7 @@ import posed from 'react-pose';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Waypoint} from "react-waypoint";
 
-import * as actionTypes from '../../actions/constants';
+import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setTextPage, setPageReload } from "../../actions";
 import {TEXTS, TEXT_NAMES, WEBSITE_TEXT, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from './../../data/constants';
 
 import Credits from './Credits/Credits';
@@ -129,7 +130,7 @@ export const Text = (props) => {
 
     //shows the content
     const showContent = () => {
-        props.onReloadChange(false);
+        props.setPageReload(false);
     };
 
     //shows the 'up next' link
@@ -144,7 +145,7 @@ export const Text = (props) => {
 
     //sets off page reloading animation
     const reloadPage = () => {
-        props.onReloadChange(true);
+        props.setPageReload(true);
     };
 
     //Checks if the id in the current url matches any text; if not, returns 'nocturine'
@@ -182,7 +183,7 @@ export const Text = (props) => {
 
     //updates the currently displayed text
     const updateText = () => {
-        props.onTextChange(textName);
+        props.setCurrentText(textName);
     };
 
     //theme to be used - based on the current text or black-and-white if the black-and-white mode is on
@@ -190,24 +191,24 @@ export const Text = (props) => {
 
     //updates current theme
     const updateTheme = () => {
-        props.onThemeChange(themeToUse);
+        props.setTheme(themeToUse);
     };
 
     //shows the NavBar
     const showNavbar = () => {
-        props.onSetNavbar(true);
+        props.setNavbarVisibility(true);
     };
 
     //checks whether the data storage notice should be displayed and turns it on if it is invisible but hasn't been confirmed yet
     const checkDataNotice = () => {
         if (!props.noticeAccepted) {
-            props.onSetNotice(true);
+            props.setDataNoticeVisible(true);
         }
     };
 
     //lets the Redux store know that the Text page is currently displayed
     const setTextDisplayed = () => {
-        props.onSetTextPage(true)
+        props.setTextPage(true)
     };
 
     useEffect(() => {
@@ -311,32 +312,14 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        onThemeChange: (newTheme) => dispatch({
-            type: actionTypes.SET_THEME,
-            theme: newTheme
-        }),
-        onTextChange: (newText) => dispatch({
-            type: actionTypes.SET_CURRENT_TEXT,
-            currentText: newText
-        }),
-        onSetNavbar: (newState) => dispatch({
-            type: actionTypes.SET_NAVBAR_VISIBILITY,
-            navbarVisible: newState
-        }),
-        onSetNotice: (newState) => dispatch({
-            type: actionTypes.SET_DATA_NOTICE_VISIBLE,
-            dataNoticeVisible: newState
-        }),
-        onSetTextPage: (newState) => dispatch({
-            type: actionTypes.SET_TEXT_PAGE,
-            textPageDisplayed: newState
-        }),
-        onReloadChange: (newState) => dispatch({
-            type: actionTypes.SET_PAGE_RELOAD,
-            pageReload: newState
-        })
-    };
+    return bindActionCreators({
+        setTheme,
+        setCurrentText,
+        setNavbarVisibility,
+        setDataNoticeVisible,
+        setTextPage,
+        setPageReload
+    }, dispatch);
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Text);
