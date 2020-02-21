@@ -1072,6 +1072,11 @@ export const LINKS = [
         url: '/'
     },
     {
+        title: 'Read “Deadlines”',
+        subtitle: 'in STORGY',
+        url: 'https://storgy.com/2020/02/21/deadlines-by-lukasz-drobnik/'
+    },
+    {
         title: 'Read “Skarby”',
         subtitle: 'in Tlen Literacki',
         url: 'http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/'
