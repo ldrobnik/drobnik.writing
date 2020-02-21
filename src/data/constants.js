@@ -359,16 +359,6 @@ export const PUBLICATIONS = {
             pieceTitle: 'Riverweed'
         },
         {
-            title: 'STORGY',
-            issue: 'Flash Fiction Friday',
-            year: '',
-            url: 'https://storgy.com/',
-            descriptionPl: 'Flash fiction „Deadlines”',
-            descriptionEn: 'Flash fiction “Deadlines”',
-            language: 'en',
-            pieceTitle: 'Deadlines'
-        },
-        {
             title: 'Akashic Books',
             issue: 'Fri-SciFi',
             year: '',
@@ -377,6 +367,16 @@ export const PUBLICATIONS = {
             descriptionEn: 'Flash fiction “Nameless”',
             language: 'en',
             pieceTitle: 'Nameless'
+        },
+        {
+            title: 'STORGY',
+            issue: 'Flash Fiction Friday',
+            year: '2020',
+            url: 'https://storgy.com/2020/02/21/deadlines-by-lukasz-drobnik/',
+            descriptionPl: 'Flash fiction „Deadlines”',
+            descriptionEn: 'Flash fiction “Deadlines”',
+            language: 'en',
+            pieceTitle: 'Deadlines'
         },
         {
             title: 'Tlen Literacki',
