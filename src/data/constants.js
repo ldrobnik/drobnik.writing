@@ -349,16 +349,6 @@ export const PUBLICATIONS = {
 
     press: [
         {
-            title: 'BULL',
-            issue: '',
-            year: '',
-            url: 'http://bullmensfiction.com/',
-            descriptionPl: 'Flash fiction „Riverweed”',
-            descriptionEn: 'Flash fiction “Riverweed”',
-            language: 'en',
-            pieceTitle: 'Riverweed'
-        },
-        {
             title: 'Akashic Books',
             issue: 'Fri-SciFi',
             year: '',
@@ -367,6 +357,16 @@ export const PUBLICATIONS = {
             descriptionEn: 'Flash fiction “Nameless”',
             language: 'en',
             pieceTitle: 'Nameless'
+        },
+        {
+            title: 'BULL',
+            issue: '#9: The LGBTQ Issue',
+            year: '2020',
+            url: 'https://www.amazon.com/dp/B0851LL5PL/ref=mp_s_a_1_2?keywords=bull+%239+lit&qid=1582738243&sr=8-2',
+            descriptionPl: 'Flash fiction „Riverweed”',
+            descriptionEn: 'Flash fiction “Riverweed”',
+            language: 'en',
+            pieceTitle: 'Riverweed'
         },
         {
             title: 'STORGY',
@@ -1077,6 +1077,11 @@ export const LINKS = [
         url: 'https://storgy.com/2020/02/21/deadlines-by-lukasz-drobnik/'
     },
     {
+        title: 'Buy BULL #9: The LGBTQ Issue',
+        subtitle: 'with my piece “Riverweed” inside',
+        url: 'https://www.amazon.com/dp/B0851LL5PL/ref=mp_s_a_1_2?keywords=bull+%239+lit&qid=1582738243&sr=8-2'
+    },
+    {
         title: 'Read “Skarby”',
         subtitle: 'in Tlen Literacki',
         url: 'http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/'
@@ -1105,18 +1110,7 @@ export const LINKS = [
         title: 'Facebook',
         subtitle: '@drobnikwrites',
         url: 'https://www.facebook.com/drobnikwrites/'
-    },
-    {
-        title: 'Buy Foglifter Vol. 4 Issue 1',
-        subtitle: 'with my piece “Landmines” inside',
-        url: 'https://foglifterjournal.com/shop/'
-    },
-    {
-        title: 'Buy Sharkpack Annual',
-        subtitle: 'with my piece “8-bit Dreams” inside',
-        url: 'https://shop.trycelery.com/page/5c2f6d549d2284130021165b'
     }
-
 ];
 
 /* Keyframes used for styled-components animations */
