@@ -80,17 +80,31 @@ const NavBar = (props) => {
     // Specifies the current window width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+    // Specifies the current window width
+    const [isMobile, setIsMobile] = useState(false);
+
     //specifies breakpoint for screens below which nav links are not displayed
-    const mobileBreakpoint = 800;
+    const mobileBreakpoint = 600;
 
     // Updates the window width
     const handleWindowSizeChange = () => {
         setWindowWidth(window.innerWidth); //update the window width state with the current window width
+        handleMobile();
     };
 
-
+    //checks whether the site is displayed on a mobile device
+    const handleMobile = () => {
+        if (windowWidth < mobileBreakpoint) {
+            setIsMobile(true);
+        } else {
+            setIsMobile(false);
+        }
+    };
 
     useEffect(() => {
+
+        //check whether the site is displayed on a mobile device
+        handleMobile();
 
         window.addEventListener('resize', handleWindowSizeChange); // Add an event listener to monitor the screen width
 
@@ -152,6 +166,9 @@ const NavBar = (props) => {
         <AnchorLink href='#top'>
             <Logo/>
         </AnchorLink>;
+
+    //Content of the navlinks - display on main page (not Text) and on screens larger than mobile
+    const navLinks = (!props.textDisplayed && !isMobile) ? <div>NAVLINKS</div> : <div></div>;
 
     //Content of the home button - if on the home page, make it an anchor link scrolling to top
     const homeButton = (props.textDisplayed) ?
@@ -240,6 +257,7 @@ const NavBar = (props) => {
                     <LogoWrapper>
                         {logoLink}
                     </LogoWrapper>
+                    {navLinks}
                     {homeButton}
                     {langButton}
                     {bwButton}
