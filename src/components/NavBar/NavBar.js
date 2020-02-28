@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
@@ -76,6 +76,30 @@ const LinkContent = styled.div`
 `;
 
 const NavBar = (props) => {
+
+    // Specifies the current window width
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    //specifies breakpoint for screens below which nav links are not displayed
+    const mobileBreakpoint = 800;
+
+    // Updates the window width
+    const handleWindowSizeChange = () => {
+        setWindowWidth(window.innerWidth); //update the window width state with the current window width
+    };
+
+
+
+    useEffect(() => {
+
+        window.addEventListener('resize', handleWindowSizeChange); // Add an event listener to monitor the screen width
+
+        return () => {
+
+            window.removeEventListener('resize', handleWindowSizeChange); //remove the listener when the component unmounts
+        }
+    });
+
     //Changes current language
     const changeLanguage = () => {
         //Scrolls to top
