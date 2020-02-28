@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   font-weight: bold;
   font-size: ${props => props.theme.captionSize}
   margin: 0 auto;
-  transform: translateX(5.5vw);
+  transform: translateX(6vw);
   
   div {
     padding: 0 0.3em;
