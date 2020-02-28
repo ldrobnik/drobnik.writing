@@ -9,6 +9,7 @@ import {setLanguage, setBWMode, setPageReload} from "../../actions";
 import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES} from '../../data/constants';
 
 import Logo from './Logo/Logo';
+import NavLinks from './NavLinks/NavLinks';
 
 /* STYLED COMPONENTS */
 const Wrapper = styled.div`
@@ -168,7 +169,7 @@ const NavBar = (props) => {
         </AnchorLink>;
 
     //Content of the navlinks - display on main page (not Text) and on screens larger than mobile
-    const navLinks = (!props.textDisplayed && !isMobile) ? <div>NAVLINKS</div> : <div></div>;
+    const navLinks = (!props.textDisplayed && !isMobile) ? <NavLinks /> : <div></div>;
 
     //Content of the home button - if on the home page, make it an anchor link scrolling to top
     const homeButton = (props.textDisplayed) ?
