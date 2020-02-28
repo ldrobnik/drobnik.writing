@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -10,7 +11,7 @@ const Wrapper = styled.div`
   font-weight: bold;
   font-size: ${props => props.theme.captionSize}
   margin: 0 auto;
-  text-decoration: underline;
+  transform: translateX(5vw);
   
   div {
     padding: 0 0.3em;
@@ -31,16 +32,21 @@ const NavLinks = (props) => {
     return (
         <Wrapper>
             {sectionLinks.map((link, k) => {
-                    if (k > 0) {
-                        return (<AnchorLink key={k} href={`#${sectionLinks[k].id}`} offset="60px">{sectionLinks[k].text[props.lang]}</AnchorLink>
-                        );
-                    } else {
-                        return <div key={k}></div>;
-                    }
+                    return (<div key={k}>
+                            <AnchorLink href={`#${sectionLinks[k].id}`}
+                                        offset="60px">{sectionLinks[k].text[props.lang]}</AnchorLink>
+                        </div>
+                    );
                 }
             )}
         </Wrapper>
     );
 };
 
-export default NavLinks;
+const mapStateToProps = state => {
+    return {
+        lang: state.language
+    };
+};
+
+export default connect(mapStateToProps)(NavLinks);
