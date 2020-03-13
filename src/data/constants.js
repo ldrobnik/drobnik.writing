@@ -885,6 +885,13 @@ export const WEBSITE_TEXT = {
             en: 'Nocturine',
             pl: 'Nocturine'
         },
+        slogan: {
+            en: <div>Forthcoming this summer from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM
+            BOOKS</b></a></div>,
+            pl: <div>Dostępna już latem nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM
+                BOOKS</b></a></div>,
+        }
+            ,
         body: {
             en: <div>
                 <p>The end of the world starts like an ad campaign. When black cubes appear above the city of Poznań,
@@ -896,10 +903,6 @@ export const WEBSITE_TEXT = {
                     contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a
                     homestead haunted by dummies, to the inside of a human body. Each of six chapters/stories is told by
                     a different narrator in a frantic yet melancholic style.</p>
-                <p>The book was originally published in Polish, in one volume with another
-                    novella, <i>Cunninghamella</i> (Forma 2011). Now, my authorial translation into English is
-                    forthcoming from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM
-                        BOOKS</b></a>.</p>
             </div>,
             pl: <div>
                 <p>Koniec świata zaczyna się jak kampania reklamowa. Gdy nad Poznaniem zawisają czarne sześciany,
@@ -912,10 +915,6 @@ export const WEBSITE_TEXT = {
                     złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze
                     ludzkiego ciała. Każdy z&nbsp;sześciu rozdziałów/opowiadań ma innego narratora, który snuje opowieść
                     w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
-                <p>Książka została pierwotnie wydana po polsku w&nbsp;jednym tomie z&nbsp;inną minipowieścią pt.
-                    „Cunninghamella”. Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank"
-                                                                       rel="noopener noreferrer"><b>FATHOM
-                        BOOKS</b></a> ukaże się jej autorski przekład na angielski.</p>
             </div>
         },
         button: {

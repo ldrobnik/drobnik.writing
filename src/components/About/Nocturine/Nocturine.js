@@ -29,10 +29,17 @@ const Body = styled.div`
      @media all and (min-width: ${props => props.theme.smallScr}) {
              text-align: justify;
         }  
-    
-    a {
-      font-family: ${props => props.theme.sansSerif};
-      
+   
+`;
+
+const Slogan = styled.div`
+  font-size: ${props => props.theme.bodySize};
+  font-family: ${props => props.theme.sansSerif};
+  line-height: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  
+      a {
        @media all and (min-width: ${props => props.theme.smallScr}) {
              &:hover {
                       animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
@@ -89,12 +96,15 @@ export const Nocturine = (props) => {
 
 
     useEffect(() => {
+
         //show content after a while
         setTimeout(showContent, FADE_DURATION);
     });
 
-    //hide elements whenever the pathname or language change
+    //whenever the pathname or language change
     useEffect(() => {
+
+            //hide elements
             setTimeout(hideElements,100);
         },
         [props.location.pathname, props.lang]
@@ -130,6 +140,9 @@ export const Nocturine = (props) => {
                     source={nocturineCover}
                     altText='Nocturine cover'
                 />
+                <Slogan>
+                    {WEBSITE_TEXT.nocturine.slogan[props.lang]}
+                </Slogan>
                 <Body>
                     {WEBSITE_TEXT.nocturine.body[props.lang]}
                 </Body>
