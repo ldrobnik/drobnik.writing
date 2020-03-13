@@ -57,6 +57,7 @@ export const About = (props) => {
     //part of page title to be displayed depending on the current language
     const fictionWriter = (props.lang === 'en') ? 'fiction writer' : 'prozaik';
 
+
     //updates current theme
     const updateTheme = () => {
         //randomly selected theme

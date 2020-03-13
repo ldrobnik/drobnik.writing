@@ -9,11 +9,14 @@ import {Waypoint} from 'react-waypoint';
 import {setPageReload} from "../../../actions";
 import {WEBSITE_TEXT, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from './../../../data/constants';
 
-import SectionHeading from './../../UI/SectionHeading/SectionHeading'
+import nocturineCover from '../../../assets/images/nocturineCover.jpg';
+import CentredPhoto from '../../UI/CentredPhoto/CentredPhoto';
+import SectionHeading from '../../UI/SectionHeading/SectionHeading'
 import QuoteList from '../QuoteList/QuoteList';
-import CentredButton from "./../../UI/CentredButton/CentredButton";
+import CentredButton from "../../UI/CentredButton/CentredButton";
 import SectionLinks from "../SectionLinks/SectionLinks";
-import SectionSeparator from "./../../UI/SectionSeparator/SectionSeparator";
+import SectionSeparator from "../../UI/SectionSeparator/SectionSeparator";
+import authorsPhoto from "../../../assets/images/authorsPhoto.jpg";
 
 /* STYLED COMPONENTS */
 const Body = styled.div`
@@ -93,15 +96,6 @@ export const Nocturine = (props) => {
         },
         [props.location.pathname, props.lang]
     );
-    //
-    // //hide elements and show them right away whenever the language changes
-    // useEffect(() => {
-    //         setTimeout(hideElements,100);
-    //         setTimeout(showQuotes, 1500);
-    //         setTimeout(showButton, 1500);
-    //     },
-    //     [props.lang]
-    // );
 
     return (
         <React.Fragment>
@@ -110,6 +104,10 @@ export const Nocturine = (props) => {
                 <SectionHeading
                     title={WEBSITE_TEXT.nocturine.title[props.lang]}
                     subtitle=""
+                />
+                <CentredPhoto
+                    source={nocturineCover}
+                    altText='Nocturine cover'
                 />
                 <Body>
                     {WEBSITE_TEXT.nocturine.body[props.lang]}
