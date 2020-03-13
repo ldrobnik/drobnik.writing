@@ -16,6 +16,7 @@ import SocialLinks from '../SocialLinks/SocialLinks';
 import CentredButton from './../../UI/CentredButton/CentredButton';
 import SectionLinks from '../SectionLinks/SectionLinks';
 import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';
+import SmallSeparator from './../../UI/SmallSeparator/SmallSeparator';
 
 /* STYLED COMPONENTS */
 const Body = styled.div`
@@ -37,13 +38,6 @@ const Body = styled.div`
         }  
         
     }
-`;
-
-const Separator = styled.div`
-  margin: 2.8em auto 1.4em auto;
-  height: 0.6em;
-  width: 8em;
-  background-color: ${props => props.theme.darkColor};
 `;
 
 /* POSE */
@@ -135,7 +129,7 @@ export const Intro = (props) => {
                     title={WEBSITE_TEXT.intro.title}
                     subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
                 />
-                <Separator/>
+                <SmallSeparator />
                 <CentredPhoto
                     source={authorsPhoto}
                     altText='Author’s photo'

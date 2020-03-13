@@ -16,7 +16,7 @@ import QuoteList from '../QuoteList/QuoteList';
 import CentredButton from "../../UI/CentredButton/CentredButton";
 import SectionLinks from "../SectionLinks/SectionLinks";
 import SectionSeparator from "../../UI/SectionSeparator/SectionSeparator";
-import authorsPhoto from "../../../assets/images/authorsPhoto.jpg";
+import SmallSeparator from "../../UI/SmallSeparator/SmallSeparator";
 
 /* STYLED COMPONENTS */
 const Body = styled.div`
@@ -39,6 +39,7 @@ const Body = styled.div`
         }  
     }
 `;
+
 
 /* POSE */
 const AnimatedButton = posed.div({
@@ -105,6 +106,7 @@ export const Nocturine = (props) => {
                     title={WEBSITE_TEXT.nocturine.title[props.lang]}
                     subtitle=""
                 />
+                <SmallSeparator />
                 <CentredPhoto
                     source={nocturineCover}
                     altText='Nocturine cover'
