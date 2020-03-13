@@ -171,7 +171,7 @@ const NavBar = (props) => {
     ;
 
     //Content of the navlinks - display on main page (not Text) and on screens larger than mobile
-    const navLinks = (props.mainDisplayed && !isMobile) ? <NavLinks /> : <div></div>;
+    const navLinks = (props.mainDisplayed && !isMobile) ? <NavLinks/> : <div></div>;
 
     //Content of the home button - if on the home page, make it an anchor link scrolling to top
     const homeButton = (props.mainDisplayed) ?
@@ -237,10 +237,10 @@ const NavBar = (props) => {
     //specifies whether the Nocturine subpage is displayed
 
     /*If the Text page is currently displayed, assigned the next text to the read link.
-   //     * If the About page is displayed, assign a random text to it.
    //     * If the Nocturine page is displayed, assing nocturine
+   //     * If the About page is displayed, assign a random text to it.
    //     */
-    const chosenText = props.mainDisplayed ? randomText : nextText;
+    const chosenText = props.mainDisplayed ? randomText : (props.nocturine ? 'nocturine' : nextText);
 
 
     //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
@@ -284,6 +284,7 @@ const mapStateToProps = state => {
         curText: state.currentText,
         showNavbar: state.navbarVisible,
         mainDisplayed: state.mainPageDisplayed,
+        nocturine: state.nocturinePageDisplayed,
         reload: state.pageReload
     };
 };
