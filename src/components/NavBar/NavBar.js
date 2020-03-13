@@ -10,7 +10,6 @@ import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES} from '../../data/constants'
 
 import Logo from './Logo/Logo';
 import NavLinks from './NavLinks/NavLinks';
-import posed from "react-pose";
 
 /* STYLED COMPONENTS */
 const Wrapper = styled.div`

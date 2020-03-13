@@ -334,7 +334,7 @@ export const PUBLICATIONS = {
         {
             title: 'Nocturine',
             year: '',
-            url: '#nocturine',
+            url: '/nocturine',
             cover: nocturineCover,
             altText: {
                 en: 'Nocturine novella cover',

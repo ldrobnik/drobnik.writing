@@ -1,9 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import {Link} from 'react-router-dom';
 
-import {POP_KEYFRAMES, PUBLICATIONS} from "./../../../../../data/constants";
+import {POP_KEYFRAMES} from "./../../../../../data/constants";
 
 import BookCover from './BookCover/BookCover';
 
@@ -116,10 +116,10 @@ const PubTile = (props) => {
         );
 
     //if the url property contains an anchor link, display AnchorLink, otherwise display normal link
-    const tile = (props.url.charAt(0) === '#') ?
-        <AnchorLink href={props.url} offset="60px">
+    const tile = (props.url.charAt(0) === '/') ?
+        <Link to={props.url}>
             {wrappedTileContent}
-        </AnchorLink> :
+        </Link> :
         <a href={props.url} target="_blank" rel="noopener noreferrer">
             {wrappedTileContent}
         </a>;
