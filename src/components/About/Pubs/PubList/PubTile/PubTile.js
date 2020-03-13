@@ -1,4 +1,5 @@
 import React from 'react';
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
@@ -6,6 +7,7 @@ import {Link} from 'react-router-dom';
 import {POP_KEYFRAMES} from "./../../../../../data/constants";
 
 import BookCover from './BookCover/BookCover';
+import {setBWMode, setLanguage, setPageReload} from "../../../../../actions";
 
 /* STYLED COMPONENTS */
 const Tile = styled.div`
@@ -70,6 +72,11 @@ const Description = styled.div`
 
 const PubTile = (props) => {
 
+    //sets off page reloading animation
+    const reloadPage = () => {
+        props.setPageReload(true);
+    };
+
     //text to be displayed for forthcoming publications depending on the current language
     const forthcoming = (props.lang === 'en') ? 'forthcoming' : 'w przygotowaniu';
 
@@ -117,7 +124,10 @@ const PubTile = (props) => {
 
     //if the url property contains an anchor link, display AnchorLink, otherwise display normal link
     const tile = (props.url.charAt(0) === '/') ?
-        <Link to={props.url}>
+        <Link
+            to={props.url}
+            onClick={reloadPage}
+        >
             {wrappedTileContent}
         </Link> :
         <a href={props.url} target="_blank" rel="noopener noreferrer">
@@ -138,4 +148,10 @@ const mapStateToProps = state => {
         lang: state.language
     };
 };
-export default connect(mapStateToProps)(PubTile);
+
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({
+        setPageReload
+    }, dispatch);
+};
+export default connect(mapStateToProps, mapDispatchToProps)(PubTile);
