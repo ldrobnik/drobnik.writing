@@ -3,7 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setPageReload } from "../../actions";
+import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setNocturinePage, setPageReload } from "../../actions";
 import {FADE_DURATION, AnimatedContent} from './../../data/constants';
 
 import Nocturine from '../About/Nocturine/Nocturine';
@@ -85,6 +85,11 @@ export const Text = (props) => {
         props.setMainPage(false)
     };
 
+    //lets the Redux store know that the Nocturine page is currently displayed
+    const setNocturineDisplayed = () => {
+      props.setNocturinePage(true);
+    };
+
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - Nocturine`;
@@ -100,6 +105,9 @@ export const Text = (props) => {
 
         //lets the Redux store know that the main page is currently not displayed
         setMainNotDisplayed();
+
+        ///lets the Redux store know that the Nocturine page is currently displayed
+        setNocturineDisplayed();
 
         //show content after a while if page has loaded
         if (props.loaded) {
@@ -146,6 +154,7 @@ const mapDispatchToProps = dispatch => {
         setNavbarVisibility,
         setDataNoticeVisible,
         setMainPage,
+        setNocturinePage,
         setPageReload
     }, dispatch);
 };

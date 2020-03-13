@@ -9,6 +9,7 @@ const initialState = {
     dataNoticeVisible: true,
     dataNoticeAccepted: false,
     mainPageDisplayed: true,
+    nocturinePageDisplayed: false,
     pageReload: true,
     pageLoaded: false
 };
@@ -54,6 +55,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 mainPageDisplayed: action.mainPageDisplayed
+            };
+        case actionTypes.SET_NOCTURINE_PAGE:
+            return {
+                ...state,
+                nocturinePageDisplayed: action.nocturinePageDisplayed
             };
         case actionTypes.SET_PAGE_RELOAD:
             return {

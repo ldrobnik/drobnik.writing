@@ -111,7 +111,7 @@ export const Nocturine = (props) => {
     );
 
     //checks whether the component is displayed as a standalone page rather than part of the main page
-    const isStandalone = props.location.pathname.includes("nocturine");
+    const isStandalone = props.nocturine;
 
     //if the component is displayed on the standalone book page, do not display the section links
     const sectionLinks = isStandalone ?
@@ -194,7 +194,8 @@ export const Nocturine = (props) => {
 const mapStateToProps = state => {
     return {
         lang: state.language,
-        reload: state.pageReload
+        reload: state.pageReload,
+        nocturine: state.nocturinePageDisplayed
     };
 };
 

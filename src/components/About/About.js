@@ -3,7 +3,7 @@ import {bindActionCreators} from "redux";
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import {setTheme, setNavbarVisibility, setDataNoticeVisible, setMainPage} from "../../actions";
+import {setTheme, setNavbarVisibility, setDataNoticeVisible, setMainPage, setNocturinePage} from "../../actions";
 import {TEXT_NAMES} from './../../data/constants';
 
 import Intro from './Intro/Intro';
@@ -85,6 +85,11 @@ export const About = (props) => {
         props.setMainPage(true)
     };
 
+    //lets the Redux store know that the Nocturine page is currently not displayed
+    const setNocturineNotDisplayed = () => {
+        props.setNocturinePage(false);
+    };
+
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${fictionWriter}`;
@@ -100,6 +105,9 @@ export const About = (props) => {
 
         //lets the Redux store know that the main page is currently displayed
         setMainDisplayed();
+
+        //lets the Redux store know that the Nocturine page is currently not displayed
+        setNocturineNotDisplayed();
     });
 
     //do not show the content until the page is loaded
@@ -140,7 +148,8 @@ const mapDispatchToProps = dispatch => {
         setTheme,
         setNavbarVisibility,
         setDataNoticeVisible,
-        setMainPage
+        setMainPage,
+        setNocturinePage
     }, dispatch);
 };
 

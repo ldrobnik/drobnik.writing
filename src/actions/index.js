@@ -56,13 +56,22 @@ export const setDataNoticeAccepted = (dataNoticeAccepted) => {
     }
 };
 
-//Specifies whether the Text component is currently displayed
+//Specifies whether the main page is currently displayed
 export const setMainPage = (mainPageDisplayed) => {
     return {
         type: actionTypes.SET_MAIN_PAGE,
         mainPageDisplayed
     }
 };
+
+//Specifies whether the Nocturine page is currently displayed
+export const setNocturinePage = (nocturinePageDisplayed) => {
+    return {
+        type: actionTypes.SET_NOCTURINE_PAGE,
+        nocturinePageDisplayed
+    }
+};
+
 
 //Specifies whether the page reloading animation should be played
 export const setPageReload = (pageReload) => {

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
-import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setPageReload } from "../../actions";
+import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setNocturinePage, setPageReload } from "../../actions";
 import {TEXTS, TEXT_NAMES, FADE_DURATION, AnimatedContent} from './../../data/constants';
 
 import Credits from './Credits/Credits';
@@ -181,6 +181,11 @@ export const Text = (props) => {
         props.setMainPage(false)
     };
 
+    //lets the Redux store know that the Nocturine page is currently not displayed
+    const setNocturineNotDisplayed = () => {
+        props.setNocturinePage(false);
+    };
+
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
@@ -199,6 +204,9 @@ export const Text = (props) => {
 
         //lets the Redux store know that the main page is currently not displayed
         setMainNotDisplayed();
+
+        //lets the Redux store know that the Nocturine page is currently not displayed
+        setNocturineNotDisplayed();
 
         //show content after a while if page has loaded
         if (props.loaded) {
@@ -288,6 +296,7 @@ const mapDispatchToProps = dispatch => {
         setNavbarVisibility,
         setDataNoticeVisible,
         setMainPage,
+        setNocturinePage,
         setPageReload
     }, dispatch);
 };
