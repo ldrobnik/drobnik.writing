@@ -336,12 +336,12 @@ export const PUBLICATIONS = {
             year: '',
             url: '#nocturine',
             cover: nocturineCover,
-            alt: {
+            altText: {
                 en: 'Nocturine novella cover',
                 pl: 'Okładka minipowieści Nocturine'
             },
-            descriptionPl: 'Angielska wersja minipowieści „Nocturine”, która ukaże się w 2019 r. nakładem wydawnictwa Fathom Books',
-            descriptionEn: 'English version of the novella “Nocturine” forthcoming in 2019 from Fathom Books',
+            descriptionPl: 'Angielska wersja minipowieści „Nocturine”, która ukaże się w 2020 r. nakładem wydawnictwa Fathom Books',
+            descriptionEn: 'English version of the novella “Nocturine” forthcoming in 2020 from Fathom Books',
             language: 'en',
             pieceTitle: 'Nocturine'
         },
@@ -349,7 +349,7 @@ export const PUBLICATIONS = {
             title: 'Nocturine. Cunninghamella',
             year: '2011',
             cover: nocCunCover,
-            alt: {
+            altText: {
                 en: 'Nocturine. Cunningamella cover',
                 pl: 'Okładka tomu Nocturine. Cunninghamella'
             },

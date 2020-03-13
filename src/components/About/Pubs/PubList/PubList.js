@@ -48,6 +48,8 @@ const PubList = (props) => {
                                         type={props.type}
                                         title={pub.title}
                                         year={pub.year}
+                                        cover={pub.cover}
+                                        altText={pub.altText}
                                         issue={pub.issue}
                                         url={pub.url}
                                         descriptionPl={pub.descriptionPl}

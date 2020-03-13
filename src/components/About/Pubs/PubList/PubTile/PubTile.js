@@ -3,7 +3,9 @@ import {connect} from 'react-redux';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import {POP_KEYFRAMES} from "./../../../../../data/constants";
+import {POP_KEYFRAMES, PUBLICATIONS} from "./../../../../../data/constants";
+
+import BookCover from './BookCover/BookCover';
 
 /* STYLED COMPONENTS */
 const Tile = styled.div`
@@ -11,6 +13,18 @@ const Tile = styled.div`
     position: relative;
     height: 12em;
     width: 15em;
+    padding: 0.2em 0.5em;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+`;
+
+const BookTile = styled.div`
+    background-color: ${props => props.theme.background};
+    position: relative;
+    height: 17em;
+    width: 19em;
     padding: 0.2em 0.5em;
     text-align: center;
     display: table-cell;
@@ -62,6 +76,11 @@ const PubTile = (props) => {
     //description to be diplayed depending on the current language
     const description = (props.lang === 'en') ? props.descriptionEn : props.descriptionPl;
 
+    //cover (displayed for books)
+
+    const bookCover = (props.type === 'books') ? <BookCover source={props.cover} altText={props.altText[props.lang]}/> :
+        <div></div>;
+
     //year to be displayed - if no year available, display the 'forthcoming' info
     const year = (props.year === '') ? forthcoming : props.year;
 
@@ -69,24 +88,40 @@ const PubTile = (props) => {
     const issue = (props.issue !== undefined) ? <p><i>{props.issue}</i></p> : <div></div>;
 
     //the above description wrapped in a tile element
-    const tileContent =
-         <TileWrapper>
-            <Tile>
-                <Year><i>{year}</i></Year>
-                <Title>{props.title}</Title>
-                <Separator/>
-                <Issue>{issue}</Issue>
-                <Description>{description}</Description>
-            </Tile>
-        </TileWrapper>;
+    const tileContent = <React.Fragment>
+        <Year><i>{year}</i></Year>
+        <Title>{props.title}</Title>
+        <Separator/>
+        {bookCover}
+        <Issue>{issue}</Issue>
+        <Description>{description}</Description>
+    </React.Fragment>;
+
+    //tile content formatted depending on its type
+
+    const wrappedTileContent = (props.type === "books") ?
+        (
+            <TileWrapper>
+                <BookTile>
+                    {tileContent}
+                </BookTile>
+            </TileWrapper>
+        ) :
+        (
+            <TileWrapper>
+                <Tile>
+                    {tileContent}
+                </Tile>
+            </TileWrapper>
+        );
 
     //if the url property contains an anchor link, display AnchorLink, otherwise display normal link
     const tile = (props.url.charAt(0) === '#') ?
         <AnchorLink href={props.url} offset="60px">
-            {tileContent}
+            {wrappedTileContent}
         </AnchorLink> :
         <a href={props.url} target="_blank" rel="noopener noreferrer">
-            {tileContent}
+            {wrappedTileContent}
         </a>;
 
 
