@@ -132,7 +132,7 @@ export const Intro = (props) => {
                 <SmallSeparator />
                 <CentredPhoto
                     source={authorsPhoto}
-                    altText='Author’s photo'
+                    altText={WEBSITE_TEXT.intro.altText[props.lang]}
                 />
                 <Body>
                     {WEBSITE_TEXT.intro.body[props.lang]}

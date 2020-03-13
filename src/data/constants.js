@@ -37,6 +37,10 @@ import {TREASURES_EN} from './texts/treasures-en';
 import {TREASURES_PL} from './texts/treasures-pl';
 import posed from "react-pose";
 
+//source urls for book covers
+import nocturineCover from '../assets/images/nocturineCover.jpg';
+import nocCunCover from '../assets/images/nocCunCover.jpg';
+
 //Names of available texts
 export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'vostok', 'spores', 'devonian', 'landmines', 'treasures'];
 
@@ -331,6 +335,11 @@ export const PUBLICATIONS = {
             title: 'Nocturine',
             year: '',
             url: '#nocturine',
+            cover: nocturineCover,
+            alt: {
+                en: 'Nocturine novella cover',
+                pl: 'Okładka minipowieści Nocturine'
+            },
             descriptionPl: 'Angielska wersja minipowieści „Nocturine”, która ukaże się w 2019 r. nakładem wydawnictwa Fathom Books',
             descriptionEn: 'English version of the novella “Nocturine” forthcoming in 2019 from Fathom Books',
             language: 'en',
@@ -339,6 +348,13 @@ export const PUBLICATIONS = {
         {
             title: 'Nocturine. Cunninghamella',
             year: '2011',
+            cover: nocCunCover,
+            alt: {
+                en: 'Nocturine. Cunningamella cover',
+                pl: 'Okładka tomu Nocturine. Cunninghamella'
+            },
+            altPl: "Okładka minipowieści Nocturine",
+            altEn: "Nocturine novella cover",
             url: 'http://wforma.eu/12,nocturine.-cunninghamella.html',
             descriptionPl: 'Tom dwóch minipowieści opublikowany przez wydawnictwo Forma',
             descriptionEn: 'Volume of two novellas published by Forma publishing house',
@@ -799,6 +815,10 @@ export const WEBSITE_TEXT = {
         subtitle: {
             en: 'fiction writer',
             pl: 'prozaik'
+        },
+        altText: {
+            en: 'Author’s photo',
+            pl: 'Fotografia autora'
         },
         body: {
             en: <div>

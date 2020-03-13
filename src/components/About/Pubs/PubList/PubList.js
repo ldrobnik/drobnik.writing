@@ -45,6 +45,7 @@ const PubList = (props) => {
                             return (
                                 <AnimatedTile key={k}>
                                     <PubTile
+                                        type={props.type}
                                         title={pub.title}
                                         year={pub.year}
                                         issue={pub.issue}
