@@ -57,10 +57,10 @@ export const setDataNoticeAccepted = (dataNoticeAccepted) => {
 };
 
 //Specifies whether the Text component is currently displayed
-export const setTextPage = (textPageDisplayed) => {
+export const setMainPage = (mainPageDisplayed) => {
     return {
-        type: actionTypes.SET_TEXT_PAGE,
-        textPageDisplayed
+        type: actionTypes.SET_MAIN_PAGE,
+        mainPageDisplayed
     }
 };
 

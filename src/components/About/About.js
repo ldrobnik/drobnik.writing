@@ -3,7 +3,7 @@ import {bindActionCreators} from "redux";
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import {setTheme, setNavbarVisibility, setDataNoticeVisible, setTextPage} from "../../actions";
+import {setTheme, setNavbarVisibility, setDataNoticeVisible, setMainPage} from "../../actions";
 import {TEXT_NAMES} from './../../data/constants';
 
 import Intro from './Intro/Intro';
@@ -80,9 +80,9 @@ export const About = (props) => {
         }
     };
 
-    //lets the Redux store know that the Text page is not currently displayed
-    const setTextNotDisplayed = () => {
-        props.setTextPage(false)
+    //lets the Redux store know that the main page is currently displayed
+    const setMainDisplayed = () => {
+        props.setMainPage(true)
     };
 
     useEffect(() => {
@@ -98,8 +98,8 @@ export const About = (props) => {
         //checks whether data storage notice should be visible and if so, turn is on
         checkDataNotice();
 
-        //lets the Redux store know that the Text page is not currently displayed
-        setTextNotDisplayed();
+        //lets the Redux store know that the main page is currently displayed
+        setMainDisplayed();
     });
 
     //do not show the content until the page is loaded
@@ -140,7 +140,7 @@ const mapDispatchToProps = dispatch => {
         setTheme,
         setNavbarVisibility,
         setDataNoticeVisible,
-        setTextPage
+        setMainPage
     }, dispatch);
 };
 

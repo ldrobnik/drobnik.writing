@@ -7,7 +7,7 @@ import posed from 'react-pose';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Waypoint} from "react-waypoint";
 
-import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setTextPage, setPageReload } from "../../actions";
+import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setPageReload } from "../../actions";
 import {TEXTS, TEXT_NAMES, WEBSITE_TEXT, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from './../../data/constants';
 
 import Credits from './Credits/Credits';
@@ -206,9 +206,9 @@ export const Text = (props) => {
         }
     };
 
-    //lets the Redux store know that the Text page is currently displayed
-    const setTextDisplayed = () => {
-        props.setTextPage(true)
+    //lets the Redux store know that the Main page is currently not displayed
+    const setMainNotDisplayed = () => {
+        props.setMainPage(false)
     };
 
     useEffect(() => {
@@ -227,8 +227,8 @@ export const Text = (props) => {
         //checks whether data storage notice should be visible and if so, turn is on
         checkDataNotice();
 
-        //lets the Redux store know that the Text page is currently displayed
-        setTextDisplayed();
+        //lets the Redux store know that the main page is currently not displayed
+        setMainNotDisplayed();
 
         //show content after a while if page has loaded
         if (props.loaded) {
@@ -317,7 +317,7 @@ const mapDispatchToProps = dispatch => {
         setCurrentText,
         setNavbarVisibility,
         setDataNoticeVisible,
-        setTextPage,
+        setMainPage,
         setPageReload
     }, dispatch);
 };

@@ -159,21 +159,31 @@ const NavBar = (props) => {
     };
 
     //Content of the logo link - if on the home page, make it an anchor link scrolling to top
-    const logoLink = (props.textDisplayed) ?
+    const logoLink = (props.mainDisplayed) ?
+        <AnchorLink href='#top'>
+            <Logo/>
+        </AnchorLink>
+        :
         <Link
             to='/' className={'textLink'}
             onClick={reloadPage}>
             <Logo/>
-        </Link> :
-        <AnchorLink href='#top'>
-            <Logo/>
-        </AnchorLink>;
+        </Link>
+    ;
 
     //Content of the navlinks - display on main page (not Text) and on screens larger than mobile
-    const navLinks = (!props.textDisplayed && !isMobile) ? <NavLinks /> : <div></div>;
+    const navLinks = (props.mainDisplayed && !isMobile) ? <NavLinks /> : <div></div>;
 
     //Content of the home button - if on the home page, make it an anchor link scrolling to top
-    const homeButton = (props.textDisplayed) ?
+    const homeButton = (props.mainDisplayed) ?
+        <NavElement>
+            <AnchorLink href='#top'>
+                <LinkContent>
+                    {WEBSITE_TEXT.navbar.home}
+                </LinkContent>
+            </AnchorLink>
+        </NavElement>
+        :
         <NavElement>
             <Link to={'/'}
                   onClick={reloadPage}
@@ -182,14 +192,8 @@ const NavBar = (props) => {
                     {WEBSITE_TEXT.navbar.home}
                 </LinkContent>
             </Link>
-        </NavElement> :
-        <NavElement>
-            <AnchorLink href='#top'>
-                <LinkContent>
-                    {WEBSITE_TEXT.navbar.home}
-                </LinkContent>
-            </AnchorLink>
-        </NavElement>;
+        </NavElement>
+    ;
 
     //Content of the button used to change current language
     const langButton = (
@@ -233,7 +237,7 @@ const NavBar = (props) => {
     /*If the Text page is currently displayed, assigned the next text to the read link.
    //     * If the About page is displayed, assign a random text to it.
    //     */
-    const chosenText = props.textDisplayed ? nextText : randomText;
+    const chosenText = props.mainDisplayed ? randomText : nextText;
 
 
     //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
@@ -276,7 +280,7 @@ const mapStateToProps = state => {
         bwMode: state.blackAndWhite,
         curText: state.currentText,
         showNavbar: state.navbarVisible,
-        textDisplayed: state.textPageDisplayed,
+        mainDisplayed: state.mainPageDisplayed,
         reload: state.pageReload
     };
 };

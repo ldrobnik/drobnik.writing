@@ -1,6 +1,5 @@
 import * as actionTypes from '../actions/constants';
 
-
 const initialState = {
     language: 'en',
     theme: 'nocturine',
@@ -9,7 +8,7 @@ const initialState = {
     navbarVisible: false,
     dataNoticeVisible: true,
     dataNoticeAccepted: false,
-    textPageDisplayed: false,
+    mainPageDisplayed: true,
     pageReload: true,
     pageLoaded: false
 };
@@ -51,10 +50,10 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 dataNoticeAccepted: action.dataNoticeAccepted
             };
-        case actionTypes.SET_TEXT_PAGE:
+        case actionTypes.SET_MAIN_PAGE:
             return {
                 ...state,
-                textPageDisplayed: action.textPageDisplayed
+                mainPageDisplayed: action.mainPageDisplayed
             };
         case actionTypes.SET_PAGE_RELOAD:
             return {

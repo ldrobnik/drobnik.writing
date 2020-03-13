@@ -11,6 +11,7 @@ import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Text from '../Text/Text';
 import QuickLinks from '../QuickLinks/QuickLinks';
+import Nocturine from '../About/Nocturine/Nocturine';
 import DataNotice from '../UI/DataNotice/DataNotice';
 import Spinner from '../UI/Spinner/Spinner';
 
@@ -104,6 +105,7 @@ export const Home = (props) => {
                     <Route path="/" exact component={About} key="home"/>
                     <Route path="/texts/" exact component={Text} key="texts"/>
                     <Route path="/texts/:id" exact component={Text} key="text"/>
+                    <Route path="/nocturine/" exact component={Nocturine} key="nocturine"/>
                     <Route path="/links/" exact component={QuickLinks} key="links"/>
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>
