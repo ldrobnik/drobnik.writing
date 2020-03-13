@@ -19,6 +19,7 @@ import SectionSeparator from "../../UI/SectionSeparator/SectionSeparator";
 import SmallSeparator from "../../UI/SmallSeparator/SmallSeparator";
 
 /* STYLED COMPONENTS */
+
 const Body = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.serif};
@@ -86,6 +87,7 @@ export const Nocturine = (props) => {
         setButtonVisible(false);
     };
 
+
     useEffect(() => {
         //show content after a while
         setTimeout(showContent, FADE_DURATION);
@@ -97,6 +99,23 @@ export const Nocturine = (props) => {
         },
         [props.location.pathname, props.lang]
     );
+
+    //checks whether the component is displayed as a standalone page rather than part of the main page
+    const isStandalone = props.location.pathname.includes("nocturine");
+
+    //if the component is displayed on the standalone book page, do not display the section links
+    const sectionLinks = isStandalone ?
+        <div></div> :
+        <SectionLinks
+        lang={props.lang}
+        top={true}
+        nocturine={false}
+        pubs={true}
+        read={true}
+    />;
+
+    //if the component is displayed on the standalone book page, do not display the section separator
+    const sectionSeparator = isStandalone ? <div></div> : <SectionSeparator/>;
 
     return (
         <React.Fragment>
@@ -140,20 +159,14 @@ export const Nocturine = (props) => {
             />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <SectionLinks
-                    lang={props.lang}
-                    top={true}
-                    nocturine={false}
-                    pubs={true}
-                    read={true}
-                />
+                {sectionLinks}
                 <Waypoint
                     onEnter={showQuotes}
                 />
                 <Waypoint
                     onEnter={showButton}
                 />
-                <SectionSeparator/>
+                {sectionSeparator}
             </AnimatedContent>
             <Waypoint
                 onEnter={showQuotes}

@@ -6,11 +6,9 @@ import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
 import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setPageReload } from "../../actions";
-import {TEXTS, TEXT_NAMES, FADE_DURATION, AnimatedContent} from './../../data/constants';
+import {TEXTS, TEXT_NAMES, WEBSITE_TEXT, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from './../../data/constants';
 
-import Credits from './Credits/Credits';
-import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
-import NextTextLink from './NextTextLink/NextTextLink';
+import Nocturine from '../About/Nocturine/Nocturine';
 import SectionSeparator from "../UI/SectionSeparator/SectionSeparator";
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from "../UI/CopyrightNote/CopyrightNote";
@@ -215,42 +213,9 @@ export const Text = (props) => {
             </TopAnchor>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <Header>
-                    <TextTitle>
-                        {TEXTS[props.lang][textName].title}
-                    </TextTitle>
-                    <TextSubtitle>
-                        {TEXTS[props.lang][textName].subtitle}
-                    </TextSubtitle>
-                </Header>
-                <TextBody>
-                    {TEXTS[props.lang][textName].content}
-                </TextBody>
-                <Waypoint
-                    onEnter={hideLink}
-                />
-                <Credits
-                    lang={props.lang}
-                    textName={textName}/>
-                <DescriptionPanel
-                    description={TEXTS[props.lang][textName].description}
-                    title={TEXTS[props.lang][textName].title}
-                />
+                <Nocturine />
             </AnimatedContent>
-            <Waypoint
-                onEnter={showLink}
-            />
-            <AnimatedLink
-                pose={linkVisible ? 'visible' : 'hidden'}
-            >
-                <NextTextLink
-                    textName={nextTextName}
-                    lang={props.lang}
-                />
-            </AnimatedLink>
-            <Waypoint
-                onEnter={showLink}
-            />
+
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SubpageLinks
