@@ -54,8 +54,7 @@ export const TEXTS = {
             description: <p><i>Nocturine</i> is a linked short story collection forthcoming from <a
                 href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was
                 originally written <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
-                                      rel="noopener noreferrer">in Polish</a> and published in one volume with
-                <i>Cunninghamella</i>, a novella (Forma 2011). Excerpts from <i>Nocturine</i> have been featured in a
+                                      rel="noopener noreferrer">in Polish</a> and published in one volume with a novella titled <i>Cunninghamella</i> (Forma 2011). Excerpts from <i>Nocturine</i> have been featured in a
                 number of journals — both in Polish (<a
                     href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank"
                     rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a
@@ -195,7 +194,7 @@ export const TEXTS = {
             description: <p>„Nocturine” to zbiór powiązanych fabularnie opowiadań w&nbsp;przygotowaniu przez wydawnictwo <a
                 href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka
                 pierwotnie ukazała się <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
-                                          rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie z&nbsp;minipowieścią pt. „Cunninghamella” (Forma 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku
+                                          rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie z&nbsp;minipowieścią „Cunninghamella” (Forma 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku
                 czasopismach — zarówno po polsku (<a
                     href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank"
                     rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a
@@ -339,8 +338,8 @@ export const PUBLICATIONS = {
                 en: 'Nocturine novella cover',
                 pl: 'Okładka minipowieści Nocturine'
             },
-            descriptionPl: 'Angielska wersja minipowieści „Nocturine”, która ukaże się w 2020 r. nakładem wydawnictwa Fathom Books',
-            descriptionEn: 'English version of the novella “Nocturine” forthcoming in 2020 from Fathom Books',
+            descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2020 r. nakładem wydawnictwa Fathom Books',
+            descriptionEn: 'Linked short story collection forthcoming in 2020 from Fathom Books',
             language: 'en',
             pieceTitle: 'Nocturine'
         },
@@ -355,8 +354,8 @@ export const PUBLICATIONS = {
             altPl: "Okładka minipowieści Nocturine",
             altEn: "Nocturine novella cover",
             url: 'http://wforma.eu/12,nocturine.-cunninghamella.html',
-            descriptionPl: 'Tom dwóch minipowieści opublikowany przez wydawnictwo Forma',
-            descriptionEn: 'Volume of two novellas published by Forma publishing house',
+            descriptionPl: 'Tom prozy opublikowany przez wydawnictwo Forma',
+            descriptionEn: 'Volume of fiction published by Forma',
             language: 'pl',
             pieceTitle: 'Nocturine. Cunninghamella'
         }
@@ -824,12 +823,12 @@ export const WEBSITE_TEXT = {
                 <p>I’m a bilingual writer creating fiction in my native Polish but recently mostly in English. My
                     favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous
                     flash fiction fan (though I don’t shy away from longer forms).</p>
-                <p><AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, my novella/short fiction
+                <p><AnchorLink href='#nocturine' offset="60px"><b>NOCTURINE</b></AnchorLink>, my linked short story
                     collection, is now forthcoming from <a href="http://fathombooks.org/" target="_blank"
                                                            rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>, and my
                     other work has been featured in <i>Atticus Review</i>, <i>Quarterly West</i>, <i>Pithead
                         Chapel</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK
-                        Annual</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and elsewhere. Below you can find
+                        Annual</i>, <i>STORGY</i>, <i>BULL</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and elsewhere. Below you can find
                     a <AnchorLink href='#pubs' offset="60px"><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and
                     also <AnchorLink href='#read' offset="60px"><b>READ</b></AnchorLink> some of my pieces.</p>
             </div>,
@@ -839,12 +838,12 @@ export const WEBSITE_TEXT = {
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków, a&nbsp;do tego jestem ogromnym fanem <i>flash
                         fiction</i> (czyli bardzo krótkich opowiadań). Nie stronię jednak od dłuższych form.</p>
                 <p>Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank"
-                                                    rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się napisana
-                    przeze mnie minipowieść/zbiór krótkich próz <AnchorLink href='#nocturine'
+                                                    rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się napisany
+                    przeze mnie zbiór powiązanych fabularnie opowiadań <AnchorLink href='#nocturine'
                                                                             offset="60px"><b>NOCTURINE</b></AnchorLink>,
                     a&nbsp;moje utwory były publikowane m.in. w&nbsp;<i>Atticus Review</i>, <i>Quarterly West</i>, <i>Pithead
                         Chapel</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK
-                        Annual</i>, <i>Foglifter</i> oraz <i>X-R-A-Y Literary Magazine</i>. Poniżej można
+                        Annual</i>, <i>Foglifter</i>, <i>STORGY</i>, <i>BULL</i> oraz <i>X-R-A-Y Literary Magazine</i>. Poniżej można
                     znaleźć <AnchorLink href='#pubs' offset="60px"><b>PEŁNĄ LISTĘ PUBLIKACJI</b></AnchorLink>,
                     a&nbsp;także <AnchorLink href='#read' offset="60px"><b>POCZYTAĆ</b></AnchorLink> kilka moich
                     tekstów.</p>
@@ -898,9 +897,9 @@ export const WEBSITE_TEXT = {
                     unemployed man in his twenties, suddenly abandoned by his boyfriend. Soon his best friend also
                     disappears while the black cubes in the sky start to multiply, taking up more and more of the urban
                     space.</p>
-                <p><i>NOCTURINE</i> is a novella/short fiction collection that takes you on a genre-bending journey from
+                <p><i>NOCTURINE</i> is a linked short story collection that takes you on a genre-bending journey from
                     contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a
-                    homestead haunted by dummies, to the inside of a human body. Each of six chapters/stories is told by
+                    homestead haunted by dummies, to the inside of a human body. Each of six pieces is told by
                     a different narrator in a frantic yet melancholic style.</p>
             </div>,
             pl: <div>
@@ -909,10 +908,10 @@ export const WEBSITE_TEXT = {
                     należy Mietek, bezrobotny dwudziestoparolatek, którego nagle opuszcza chłopak. Niedługa jego
                     najlepsza przyjaciółka także znika, podczas gdy czarne sześciany na niebie zaczynają się mnożyć,
                     zabierając coraz więcej miejskiej przestrzeni.</p>
-                <p><i>NOCTURINE</i> to minipowieść/zbiór krótkich próz, a&nbsp;tom ten zabiera czytelnika na
-                    niejednoznaczną gatunkowo podróż z&nbsp;Poznania pożeranego przez ośmiobiotową amebę przez dom
+                <p><i>NOCTURINE</i> to zbiór powiązanych fabularnie opowiadań, który zabiera czytelnika na
+                    niejednoznaczną gatunkowo podróż z&nbsp;Poznania pożeranego przez ośmiobitową amebę przez dom
                     złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze
-                    ludzkiego ciała. Każdy z&nbsp;sześciu rozdziałów/opowiadań ma innego narratora, który snuje opowieść
+                    ludzkiego ciała. Każdy z&nbsp;sześciu tekstów ma innego narratora, który snuje opowieść
                     w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
             </div>
         },
