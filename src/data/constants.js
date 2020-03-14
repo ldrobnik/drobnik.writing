@@ -1086,6 +1086,11 @@ export const WEBSITE_TEXT = {
 
 export const LINKS = [
     {
+        title: 'NOCTURINE',
+        subtitle: 'read about my forthcoming book',
+        url: '/nocturine/'
+    },
+    {
         title: 'Łukasz Drobnik’s website',
         subtitle: 'www.drobnik.co',
         url: '/'
