@@ -335,8 +335,8 @@ export const PUBLICATIONS = {
             url: '/nocturine',
             cover: nocturineCover,
             altText: {
-                en: 'Nocturine novella cover',
-                pl: 'Okładka minipowieści Nocturine'
+                en: 'Nocturine cover',
+                pl: 'Okładka Nocturine'
             },
             descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2020 r. nakładem wydawnictwa Fathom Books',
             descriptionEn: 'Linked short story collection forthcoming in 2020 from Fathom Books',
@@ -351,8 +351,8 @@ export const PUBLICATIONS = {
                 en: 'Nocturine. Cunningamella cover',
                 pl: 'Okładka tomu Nocturine. Cunninghamella'
             },
-            altPl: "Okładka minipowieści Nocturine",
-            altEn: "Nocturine novella cover",
+            altPl: "Okładka Nocturine",
+            altEn: "Nocturine cover",
             url: 'http://wforma.eu/12,nocturine.-cunninghamella.html',
             descriptionPl: 'Tom prozy opublikowany przez wydawnictwo Forma',
             descriptionEn: 'Volume of fiction published by Forma',
@@ -448,8 +448,8 @@ export const PUBLICATIONS = {
             issue: '#1/(#5)',
             year: '2018',
             url: 'http://fathombooks.org/html/issueone.html',
-            descriptionPl: '„8-bit Dreams” (fragment minipowieści „Nocturine”)',
-            descriptionEn: '“8-bit Dreams” (a fragment of the novella “Nocturine”)',
+            descriptionPl: '„8-bit Dreams” (opowiadanie ze zbioru „Nocturine”)',
+            descriptionEn: '“8-bit Dreams” (a short story from the collection “Nocturine”)',
             language: 'en',
             pieceTitle: '8-bit Dreams'
 
@@ -580,8 +580,8 @@ export const PUBLICATIONS = {
             issue: 'February 2018',
             year: '2018',
             url: 'https://thewritelaunch.com/2018/01/heart-mighty-power/',
-            descriptionPl: '„Heart Mighty Power” (fragment minipowieści „Nocturine”)',
-            descriptionEn: '“Heart Mighty Power” (a fragment of the novella “Nocturine”)',
+            descriptionPl: '„Heart Mighty Power” (opowiadanie ze zbioru „Nocturine”)',
+            descriptionEn: '“Heart Mighty Power” (a short story from the collection “Nocturine”)',
             language: 'en',
             pieceTitle: 'Heart Mighty Power'
         },
@@ -651,8 +651,8 @@ export const PUBLICATIONS = {
             issue: '#9',
             year: '2011',
             url: 'http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf',
-            descriptionPl: 'Fragment minipowieści „Nocturine”',
-            descriptionEn: 'Fragment of the novella “Nocturine”',
+            descriptionPl: 'Wyjątek ze zbioru „Nocturine”',
+            descriptionEn: 'Excerpt from the collection “Nocturine”',
             language: 'pl',
             pieceTitle: 'Nocturine'
         },
@@ -661,8 +661,8 @@ export const PUBLICATIONS = {
             issue: '#57',
             year: '2011',
             url: 'https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html',
-            descriptionPl: 'Fragment minipowieści „Nocturine”',
-            descriptionEn: 'Fragment of the novella “Nocturine”',
+            descriptionPl: 'Wyjątek ze zbioru „Nocturine”',
+            descriptionEn: 'Excerpt from the collection “Nocturine”',
             language: 'pl',
             pieceTitle: 'Nocturine'
         },
@@ -671,8 +671,8 @@ export const PUBLICATIONS = {
             issue: '1–2 (11–12) 2009/1 (13) 2010',
             year: '2009/2010',
             url: 'http://www.latarnia-morska.eu/pl/proza/513-nocturine',
-            descriptionPl: 'Fragment minipowieści „Nocturine”',
-            descriptionEn: 'Fragment of the novella “Nocturine”',
+            descriptionPl: 'Wyjątek ze zbioru „Nocturine”',
+            descriptionEn: 'Excerpt from the collection “Nocturine”',
             language: 'pl',
             pieceTitle: 'Nocturine'
         },
