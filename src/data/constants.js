@@ -49,7 +49,7 @@ export const TEXTS = {
     en: {
         nocturine: {
             title: 'Nocturine',
-            subtitle: 'fragment',
+            subtitle: 'excerpt from a linked short story collection',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
             description: <p><i>Nocturine</i> is a linked short story collection forthcoming from <a
                 href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was
@@ -189,7 +189,7 @@ export const TEXTS = {
     pl: {
         nocturine: {
             title: 'Nocturine',
-            subtitle: 'fragment minipowieści',
+            subtitle: 'wyjątek ze zbioru powiązanych fabularnie opowiadań',
             credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
             description: <p>„Nocturine” to zbiór powiązanych fabularnie opowiadań w&nbsp;przygotowaniu przez wydawnictwo <a
                 href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka
