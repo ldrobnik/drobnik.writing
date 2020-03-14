@@ -49,13 +49,13 @@ export const TEXTS = {
     en: {
         nocturine: {
             title: 'Nocturine',
-            subtitle: 'novella fragment',
+            subtitle: 'fragment',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
-            description: <p><i>Nocturine</i> is a novella/short fiction collection forthcoming from <a
+            description: <p><i>Nocturine</i> is a linked short story collection forthcoming from <a
                 href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was
                 originally written <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
-                                      rel="noopener noreferrer">in Polish</a> and published in one volume with another
-                novella, <i>Cunninghamella</i> (Forma 2011). Excerpts from <i>Nocturine</i> have been featured in a
+                                      rel="noopener noreferrer">in Polish</a> and published in one volume with
+                <i>Cunninghamella</i>, a novella (Forma 2011). Excerpts from <i>Nocturine</i> have been featured in a
                 number of journals — both in Polish (<a
                     href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank"
                     rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a
@@ -192,11 +192,10 @@ export const TEXTS = {
             title: 'Nocturine',
             subtitle: 'fragment minipowieści',
             credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
-            description: <p>„Nocturine” to minipowieść/zbiór krótkich próz w&nbsp;przygotowaniu przez wydawnictwo <a
+            description: <p>„Nocturine” to zbiór powiązanych fabularnie opowiadań w&nbsp;przygotowaniu przez wydawnictwo <a
                 href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka
                 pierwotnie ukazała się <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
-                                          rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie z&nbsp;inną
-                minipowieścią pt. „Cunninghamella” (Forma 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku
+                                          rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie z&nbsp;minipowieścią pt. „Cunninghamella” (Forma 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku
                 czasopismach — zarówno po polsku (<a
                     href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank"
                     rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a
