@@ -149,6 +149,7 @@ export const Nocturine = (props) => {
             </AnimatedContent>
             <Waypoint
                 onEnter={showQuotes}
+                bottomOffset="25%"
             />
             <QuoteList
                 lang={props.lang}
