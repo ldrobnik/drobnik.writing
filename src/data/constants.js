@@ -831,6 +831,7 @@ export const WEBSITE_TEXT = {
                         Annual</i>, <i>STORGY</i>, <i>BULL</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and elsewhere. Below you can find
                     a <AnchorLink href='#pubs' offset="60px"><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and
                     also <AnchorLink href='#read' offset="60px"><b>READ</b></AnchorLink> some of my pieces.</p>
+                <p>You can reach me at <b>drobniklukasz [at] gmail [dot] com</b>.</p>
             </div>,
             pl: <div>
                 <p>Jestem dwujęzycznym pisarzem, który tworzy prozę po polsku (w&nbsp;moim ojczystym języku), ale
@@ -847,6 +848,7 @@ export const WEBSITE_TEXT = {
                     znaleźć <AnchorLink href='#pubs' offset="60px"><b>PEŁNĄ LISTĘ PUBLIKACJI</b></AnchorLink>,
                     a&nbsp;także <AnchorLink href='#read' offset="60px"><b>POCZYTAĆ</b></AnchorLink> kilka moich
                     tekstów.</p>
+                <p>Można się ze mną skontaktować pod adresem <b>drobniklukasz [at] gmail [dot] com</b>.</p>
             </div>
         },
         support: {
