@@ -104,7 +104,7 @@ export const Home = (props) => {
                 <Switch>
                     <Route path="/" exact component={About} key="home"/>
                     <Route path="/texts/" exact component={Text} key="texts"/>
-                    <Route path="/textsblo/:id" exact component={Text} key="text"/>
+                    <Route path="/texts/:id" exact component={Text} key="text"/>
                     <Route path="/nocturine/" exact component={NocturinePage} key="nocturine"/>
                     <Route path="/links/" exact component={QuickLinks} key="links"/>
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
