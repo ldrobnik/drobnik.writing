@@ -38,6 +38,10 @@ const Body = styled.div`
         }  
         
     }
+    
+    .centered {
+      text-align: center;
+    }
 `;
 
 /* POSE */
