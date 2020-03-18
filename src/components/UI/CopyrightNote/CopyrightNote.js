@@ -11,7 +11,7 @@ const Note = styled.div`
 const CopyrightNote = () => {
     return (
         <Note>
-            &copy;&nbsp;Łukasz Drobnik 2019
+            &copy;&nbsp;2020 Łukasz Drobnik
         </Note>
     );
 };
