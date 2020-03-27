@@ -365,8 +365,8 @@ export const PUBLICATIONS = {
         {
             title: 'Akashic Books',
             issue: 'Fri-SciFi',
-            year: '',
-            url: 'http://www.akashicbooks.com/',
+            year: '2020',
+            url: 'http://www.akashicbooks.com/nameless-by-lukasz-drobnik/',
             descriptionPl: 'Flash fiction „Nameless”',
             descriptionEn: 'Flash fiction “Nameless”',
             language: 'en',
