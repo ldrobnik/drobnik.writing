@@ -88,7 +88,7 @@ export const TEXTS = {
             description: <p>The piece was originally published in September 2018 Issue of <a
                 href="https://mojaveheart.com/cellulose/" target="_blank" rel="noopener noreferrer"><i>Mojave Heart
                 Review</i></a>. Its Polish translation was featured in the inaugural issue of <a
-                href="http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html" target="_blank"
+                href="http://stonerpolski.pl/celuloza-lukasz-drobnik" target="_blank"
                 rel="noopener noreferrer"><i>Stoner Polski</i></a>.</p>,
             content: CELLULOSE_EN,
             theme: 'cellulose'
