@@ -228,7 +228,7 @@ export const TEXTS = {
             description: <div>Tekst ukazał się pierwotnie po angielsku w&nbsp;2018&nbsp;r. we wrześniowym numerze <a
                 href="https://mojaveheart.com/cellulose/" target="_blank" rel="noopener noreferrer"><i>Mojave Heart
                 Review</i></a>. Polski przekład zamieszczono w&nbsp;pierwszym numerze <a
-                href="http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html" target="_blank"
+                href="http://stonerpolski.pl/celuloza-lukasz-drobnik" target="_blank"
                 rel="noopener noreferrer"><i>Stonera Polskiego</i></a>.</div>,
             content: CELLULOSE_PL,
             theme: 'cellulose'
@@ -458,7 +458,7 @@ export const PUBLICATIONS = {
             title: 'Stoner Polski',
             issue: '#1',
             year: '2018',
-            url: 'http://www.stonerpolski.pl/numer-1/102-celuloza-lukasz-drobnik.html',
+            url: 'http://stonerpolski.pl/celuloza-lukasz-drobnik',
             descriptionPl: 'Flash fiction „Celuloza” (przekład tekstu „Cellulose”)',
             descriptionEn: 'Flash fiction “Celuloza” (translation of “Cellulose”)',
             language: 'pl',
