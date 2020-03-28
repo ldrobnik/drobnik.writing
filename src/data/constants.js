@@ -1091,7 +1091,17 @@ export const LINKS = [
         url: '/nocturine/'
     },
     {
-        title: 'Łukasz Drobnik’s website',
+        title: 'Read “Nameless”',
+        subtitle: 'in Akashic Books',
+        url: 'http://www.akashicbooks.com/nameless-by-lukasz-drobnik/'
+    },
+    {
+        title: 'Buy me a coffee',
+        subtitle: 'please consider supporting me on Ko-fi',
+        url: 'https://ko-fi.com/drobnik'
+    },
+    {
+        title: 'My official website',
         subtitle: 'www.drobnik.co',
         url: '/'
     },
@@ -1106,24 +1116,9 @@ export const LINKS = [
         url: 'https://www.amazon.com/dp/B0851LL5PL/ref=mp_s_a_1_2?keywords=bull+%239+lit&qid=1582738243&sr=8-2'
     },
     {
-        title: 'Read “Skarby”',
-        subtitle: 'in Tlen Literacki',
-        url: 'http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/'
-    },
-    {
-        title: 'Read “Treasures”',
-        subtitle: 'on Medium',
-        url: 'https://medium.com/@drobnik/treasures-7ce5c9e7383b?sk=42b29471ed888e50b78626f0d17620af'
-    },
-    {
         title: 'Read “Entrails”',
         subtitle: 'in Pithead Chapel',
         url: 'https://pitheadchapel.com/entrails/'
-    },
-    {
-        title: 'Buy me a coffee',
-        subtitle: 'please consider supporting me on Ko-fi',
-        url: 'https://ko-fi.com/drobnik'
     },
     {
         title: 'Twitter',
