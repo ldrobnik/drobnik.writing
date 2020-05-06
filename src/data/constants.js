@@ -712,7 +712,7 @@ export const PUBLICATIONS = {
         {
             title: '2020. Antologia współczesnych polskich opowiadań',
             year: '',
-            url: 'http://wforma.eu/zapowiedzi,30.html',
+            url: 'http://wforma.eu/2020-antologia-wspolczesnych-polskich-opowiadan.html',
             descriptionPl: 'Zbiór opowiadań z moim tekstem „Niech nastanie Wisła” (Forma)',
             descriptionEn: 'Short story collection featuring my piece “Niech nastanie Wisła” (Forma)',
             language: 'pl',
