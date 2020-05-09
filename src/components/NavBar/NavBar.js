@@ -123,19 +123,14 @@ const NavBar = (props) => {
         //play the page reloading animation
         props.setPageReload(true);
 
-        if (props.lang === 'en') {
-            //change Redux state
-            props.setLanguage('pl');
+        //new language that is different to the current language
+        const newLanguage = (props.lang === 'en') ? 'pl' : 'en';
 
-            //store the state in localStorage
-            localStorage.setItem('language', 'pl');
-        } else {
-            //change Redux state
-            props.setLanguage('en');
+        //change Redux state
+        props.setLanguage(newLanguage);
 
-            //store the state in localStorage
-            localStorage.setItem('language', 'en');
-        }
+        //store the state in localStorage
+        localStorage.setItem('language', newLanguage);
     };
 
     //toggle the black-and-white mode

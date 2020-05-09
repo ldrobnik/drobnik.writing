@@ -92,7 +92,7 @@ export const DataNotice = (props) => {
                     {WEBSITE_TEXT.dataNotice[props.lang].message}
                 </Message>
                 <DismissButton
-                    onClick={acceptDataNotice}
+                    onClick={acceptDataNotice}c
                 >
                     {WEBSITE_TEXT.dataNotice[props.lang].button}
                 </DismissButton>
