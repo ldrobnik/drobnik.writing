@@ -363,6 +363,16 @@ export const PUBLICATIONS = {
 
     press: [
         {
+            title: 'Flash Flood 2020',
+            issue: '',
+            year: '2020',
+            url: 'http://flashfloodjournal.blogspot.com/',
+            descriptionPl: 'Flash fiction „Cellulose” (utwór pierwotnie opublikowany w Mojave Heart Review)',
+            descriptionEn: 'Flash fiction “Cellulose” (originally published in Mojave Heart Review)',
+            language: 'en',
+            pieceTitle: 'Nameless'
+        },
+        {
             title: 'Akashic Books',
             issue: 'Fri-SciFi',
             year: '2020',
@@ -1091,6 +1101,11 @@ export const LINKS = [
         url: '/nocturine/'
     },
     {
+        title: 'Buy BULL #9: The LGBTQ Issue (ebook & print)',
+        subtitle: 'with my piece “Riverweed” inside',
+        url: 'https://www.amazon.com/dp/B0851LL5PL/ref=mp_s_a_1_2?keywords=bull+%239+lit&qid=1582738243&sr=8-2'
+    },
+    {
         title: 'Read “Nameless”',
         subtitle: 'in Akashic Books',
         url: 'http://www.akashicbooks.com/nameless-by-lukasz-drobnik/'
@@ -1109,11 +1124,6 @@ export const LINKS = [
         title: 'Read “Deadlines”',
         subtitle: 'in STORGY',
         url: 'https://storgy.com/2020/02/21/deadlines-by-lukasz-drobnik/'
-    },
-    {
-        title: 'Buy BULL #9: The LGBTQ Issue',
-        subtitle: 'with my piece “Riverweed” inside',
-        url: 'https://www.amazon.com/dp/B0851LL5PL/ref=mp_s_a_1_2?keywords=bull+%239+lit&qid=1582738243&sr=8-2'
     },
     {
         title: 'Read “Entrails”',
