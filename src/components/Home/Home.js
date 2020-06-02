@@ -94,9 +94,6 @@ export const Home = (props) => {
         }
     );
 
-    //if the page is loaded, do not show the spinner
-    const spinner = props.loaded ? <div></div> : <Spinner />;
-
     return (
         <React.Fragment>
             <GlobalStyle />
@@ -110,7 +107,7 @@ export const Home = (props) => {
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>
                 <DataNotice/>
-                {spinner}
+                {!props.loaded && <Spinner />}
             </Layout>
         </React.Fragment>
     );
