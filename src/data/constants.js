@@ -1108,7 +1108,7 @@ export const LINKS = [
         url: '/nocturine/'
     },
     {
-        title: 'Read “Cellulose”)',
+        title: 'Read “Cellulose”',
         subtitle: 'in FlashFlood',
         url: 'http://flashfloodjournal.blogspot.com/2020/06/cellulose-by-ukasz-drobnik.html'
     },
