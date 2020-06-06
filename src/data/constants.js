@@ -54,7 +54,8 @@ export const TEXTS = {
             description: <p><i>Nocturine</i> is a linked short story collection forthcoming from <a
                 href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was
                 originally written <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
-                                      rel="noopener noreferrer">in Polish</a> and published in one volume with a novella titled <i>Cunninghamella</i> (Forma 2011). Excerpts from <i>Nocturine</i> have been featured in a
+                                      rel="noopener noreferrer">in Polish</a> and published in one volume with a novella
+                titled <i>Cunninghamella</i> (Forma 2011). Excerpts from <i>Nocturine</i> have been featured in a
                 number of journals — both in Polish (<a
                     href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank"
                     rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a
@@ -191,10 +192,12 @@ export const TEXTS = {
             title: 'Nocturine',
             subtitle: 'fragment zbioru opowiadań',
             credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
-            description: <p>„Nocturine” to zbiór powiązanych fabularnie opowiadań w&nbsp;przygotowaniu przez wydawnictwo <a
-                href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka
+            description: <p>„Nocturine” to zbiór powiązanych fabularnie opowiadań w&nbsp;przygotowaniu przez
+                wydawnictwo <a
+                    href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka
                 pierwotnie ukazała się <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
-                                          rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie z&nbsp;minipowieścią „Cunninghamella” (Forma 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku
+                                          rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie
+                z&nbsp;minipowieścią „Cunninghamella” (Forma 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku
                 czasopismach — zarówno po polsku (<a
                     href="https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html" target="_blank"
                     rel="noopener noreferrer"><i>Dwutygodnik</i></a>, <a
@@ -363,10 +366,10 @@ export const PUBLICATIONS = {
 
     press: [
         {
-            title: 'Flash Flood 2020',
-            issue: '',
+            title: 'FlashFlood',
+            issue: 'National Flash Fiction Day 2020',
             year: '2020',
-            url: 'http://flashfloodjournal.blogspot.com/',
+            url: 'http://flashfloodjournal.blogspot.com/2020/06/cellulose-by-ukasz-drobnik.html',
             descriptionPl: 'Flash fiction „Cellulose” (utwór pierwotnie opublikowany w Mojave Heart Review)',
             descriptionEn: 'Flash fiction “Cellulose” (originally published in Mojave Heart Review)',
             language: 'en',
@@ -838,7 +841,8 @@ export const WEBSITE_TEXT = {
                                                            rel="noopener noreferrer"><b>FATHOM BOOKS</b></a>, and my
                     other work has been featured in <i>Atticus Review</i>, <i>Quarterly West</i>, <i>Pithead
                         Chapel</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK
-                        Annual</i>, <i>STORGY</i>, <i>BULL</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and elsewhere. Below you can find
+                        Annual</i>, <i>STORGY</i>, <i>BULL</i>, <i>Foglifter</i>, <i>X-R-A-Y Literary Magazine</i> and
+                    elsewhere. Below you can find
                     a <AnchorLink href='#pubs' offset="60px"><b>FULL LIST OF PUBLICATIONS</b></AnchorLink> and
                     also <AnchorLink href='#read' offset="60px"><b>READ</b></AnchorLink> some of my pieces.</p>
                 <p className="centered">email: <i>drobniklukasz [at] gmail [dot] com</i></p>
@@ -851,10 +855,11 @@ export const WEBSITE_TEXT = {
                 <p>Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank"
                                                     rel="noopener noreferrer"><b>FATHOM BOOKS</b></a> ukaże się napisany
                     przeze mnie zbiór powiązanych fabularnie opowiadań <AnchorLink href='#nocturine'
-                                                                            offset="60px"><b>NOCTURINE</b></AnchorLink>,
+                                                                                   offset="60px"><b>NOCTURINE</b></AnchorLink>,
                     a&nbsp;moje utwory były publikowane m.in. w&nbsp;<i>Atticus Review</i>, <i>Quarterly West</i>, <i>Pithead
                         Chapel</i>, <i>Lighthouse</i>, <i>Bare Fiction</i>, <i>SHARKPACK
-                        Annual</i>, <i>Foglifter</i>, <i>STORGY</i>, <i>BULL</i> oraz <i>X-R-A-Y Literary Magazine</i>. Poniżej można
+                        Annual</i>, <i>Foglifter</i>, <i>STORGY</i>, <i>BULL</i> oraz <i>X-R-A-Y Literary Magazine</i>.
+                    Poniżej można
                     znaleźć <AnchorLink href='#pubs' offset="60px"><b>PEŁNĄ LISTĘ PUBLIKACJI</b></AnchorLink>,
                     a&nbsp;także <AnchorLink href='#read' offset="60px"><b>POCZYTAĆ</b></AnchorLink> kilka moich
                     tekstów.</p>
@@ -896,12 +901,14 @@ export const WEBSITE_TEXT = {
             pl: 'Nocturine'
         },
         slogan: {
-            en: <div>Forthcoming this summer from <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM
-            BOOKS</b></a></div>,
-            pl: <div>Dostępna już latem nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer"><b>FATHOM
+            en: <div>Forthcoming this summer from <a href="http://fathombooks.org/" target="_blank"
+                                                     rel="noopener noreferrer"><b>FATHOM
+                BOOKS</b></a></div>,
+            pl: <div>Dostępna już latem nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank"
+                                                                rel="noopener noreferrer"><b>FATHOM
                 BOOKS</b></a></div>,
         }
-            ,
+        ,
         body: {
             en: <div>
                 <p>The end of the world starts like an ad campaign. When black cubes appear above the city of Poznań,
@@ -1099,6 +1106,11 @@ export const LINKS = [
         title: 'NOCTURINE',
         subtitle: 'read about my forthcoming book',
         url: '/nocturine/'
+    },
+    {
+        title: 'Read “Cellulose”)',
+        subtitle: 'in FlashFlood',
+        url: 'http://flashfloodjournal.blogspot.com/2020/06/cellulose-by-ukasz-drobnik.html'
     },
     {
         title: 'Buy BULL #9: The LGBTQ Issue (ebook & print)',
