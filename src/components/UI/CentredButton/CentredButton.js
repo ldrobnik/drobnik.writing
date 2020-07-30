@@ -60,9 +60,6 @@ export const CentredButton = (props) => {
     //constant holding the button content
     const buttonMessage = props.message;
 
-    //variable holding the button content wrapped in a QuickLink or a element
-    let workingButton = <div></div>;
-
     //the content of the button
     const buttonContent = (
         <ButtonWrapper>
@@ -70,27 +67,22 @@ export const CentredButton = (props) => {
         </ButtonWrapper>
     );
 
-    if (props.path[0] === '/') {
-        workingButton = (
-            <Link
-                to={props.path}
-                onClick={reloadPage}>
-                {buttonContent}
-            </Link>);
-    } else {
-        workingButton = (
-            <a
-                href={props.path}
-                target="_blank"
-                rel="noopener noreferrer">
-                {buttonContent}
-            </a>
-        );
-    }
 
     return (
         <Wrapper>
-            {workingButton}
+            {(props.path[0] === '/') ?
+                <Link
+                    to={props.path}
+                    onClick={reloadPage}>
+                    {buttonContent}
+                </Link> :
+                <a
+                    href={props.path}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    {buttonContent}
+                </a>
+            }
         </Wrapper>
     );
 };
