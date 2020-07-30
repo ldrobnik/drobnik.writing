@@ -61,7 +61,7 @@ export const CentredButton = (props) => {
     const buttonMessage = props.message;
 
     //variable holding the button content wrapped in a QuickLink or a element
-    let workingButton;
+    let workingButton = <div></div>;
 
     //the content of the button
     const buttonContent = (
