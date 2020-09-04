@@ -96,8 +96,8 @@ export const Pubs = (props) => {
     //specifies whether texts in Polish should be displayed
     const [pl, setPl] = useState(true);
 
-    //specifies whether the message should be visible
-    const [messageVisible, setMessageVisible] = useState(false);
+    //specifies whether the publications should be visible
+    const [pubsVisible, setPubsVisible] = useState(false);
 
     //shows the content
     const showContent = () => {
@@ -116,14 +116,14 @@ export const Pubs = (props) => {
         if (!en && pl) setEn(true);
     };
 
-    //shows the message
-    const showMessage = () => {
-        setMessageVisible(true);
+    //shows the publications
+    const showPubs = () => {
+        setPubsVisible(true);
     };
 
-    //hides the message
-    const hideMessage = () => {
-        setMessageVisible(false);
+    //hides the publications
+    const hidePubs = () => {
+        setPubsVisible(false);
     };
 
     useEffect(() => {
@@ -132,22 +132,15 @@ export const Pubs = (props) => {
         setTimeout(showContent, FADE_DURATION);
     });
 
-    //hide message whenever the pathname or language change
+    //hide publications whenever the pathname or language change
     useEffect(() => {
 
-            setTimeout(hideMessage,100);
+            setTimeout(hidePubs,100);
 
         },
         [props.location.pathname, props.lang]
     );
 
-    // //hide message and show them right away whenever the language changes
-    // useEffect(() => {
-    //         setTimeout(hideMessage,100);
-    //         setTimeout(showMessage, 500);
-    //     },
-    //     [props.lang]
-    // );
 
     return (
         <Wrapper>
@@ -158,14 +151,14 @@ export const Pubs = (props) => {
                     subtitle=""
                 />
                 <Waypoint
-                    onEnter={showMessage}/>
+                    onEnter={showPubs}/>
             </AnimatedContent>
             <AnimatedMessage
-                pose={messageVisible ? 'visible' : 'hidden'}>
+                pose={pubsVisible ? 'visible' : 'hidden'}>
                 <Message>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</Message>
             </AnimatedMessage>
             <AnimatedPanel
-                pose={messageVisible ? 'visible' : 'hidden'}>
+                pose={pubsVisible ? 'visible' : 'hidden'}>
                 <SwitchPanel>
                     <label>
                         <SwitchWrapper>
@@ -188,30 +181,34 @@ export const Pubs = (props) => {
                 </SwitchPanel>
             </AnimatedPanel>
             <Waypoint
-                onEnter={showMessage}/>
+                onEnter={showPubs}/>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <Separator/>
                 <Waypoint
-                    onEnter={showMessage}/>
+                    onEnter={showPubs}/>
                 <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].books}</SubsectionHeading>
                 <PubList
                     en={en}
                     pl={pl}
-                    type="books"/>
+                    visible={pubsVisible}
+                    type="books"
+                />
                 <Waypoint
-                    onEnter={showMessage}/>
+                    onEnter={showPubs}/>
                 <Separator/>
                 <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].press}</SubsectionHeading>
                 <PubList
                     en={en}
                     pl={pl}
+                    visible={pubsVisible}
                     type="press"/>
                 <Separator/>
                 <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].collections}</SubsectionHeading>
                 <PubList
                     en={en}
                     pl={pl}
+                    visible={pubsVisible}
                     type="collections"/>
                 <SectionLinks
                     lang={props.lang}

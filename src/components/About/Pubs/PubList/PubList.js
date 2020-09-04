@@ -41,7 +41,7 @@ const PubList = (props) => {
         <TileContainer>
             <PoseGroup>
                {PUBLICATIONS[props.type].map((pub, k) => {
-                        if ((props.en && (pub.language === 'en')) || (props.pl && (pub.language === 'pl'))) {
+                        if (props.visible && ((props.en && (pub.language === 'en')) || (props.pl && (pub.language === 'pl')))) {
                             return (
                                 <AnimatedTile key={k}>
                                     <PubTile
