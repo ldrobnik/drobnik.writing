@@ -44,6 +44,8 @@ import nocCunCover from '../assets/images/nocCunCover.jpg';
 //Names of available texts
 export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'vostok', 'spores', 'devonian', 'landmines', 'treasures'];
 
+//Texts to be displayed on the main page
+export const HIGHLIGHTS = ['nocturine', 'cetacean', 'cellulose', 'moths', 'landmines', 'treasures'];
 //Content of pieces displayed in the Text component
 export const TEXTS = {
     en: {

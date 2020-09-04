@@ -7,7 +7,7 @@ import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
 import { setPageReload } from "../../../actions";
-import {WEBSITE_TEXT, TEXT_NAMES, TEXTS, FADE_DURATION, AnimatedContent} from './../../../data/constants';
+import {WEBSITE_TEXT, TEXT_NAMES, HIGHLIGHTS, TEXTS, FADE_DURATION, AnimatedContent} from './../../../data/constants';
 
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import SectionLinks from "../SectionLinks/SectionLinks";
@@ -105,7 +105,7 @@ export const Read = (props) => {
             />
             <AnimatedList
                 pose={linksVisible ? 'visible' : 'hidden'}>
-                {TEXT_NAMES.map((text, k) => {
+                {HIGHLIGHTS.map((text, k) => {
                     let textLink = '/texts/' + text;
                     return (
                         <AnimatedLink
