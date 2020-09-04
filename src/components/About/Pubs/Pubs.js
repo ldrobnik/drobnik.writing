@@ -107,18 +107,24 @@ export const Pubs = (props) => {
         props.setPageReload(false);
     };
 
+    //switches the visibility of publications off and on
+    const refreshPubs = () => {
+      setPubsVisible(false);
+      setTimeout(() => setPubsVisible(true), 200);
+    };
     //toggles the display of English pubs and if both en and pl are false, sets pl to true
     const setEnHandler = () => {
         setEn(!en);
         if (en && !pl) setPl(true);
+        refreshPubs(); //switches the pub tiles off and on
     };
 
     //toggles the display of Polish pubs and if both en and pl are false, sets en to true
     const setPlHandler = () => {
         setPl(!pl);
         if (!en && pl) setEn(true);
+        refreshPubs(); //switches the pub tiles off and on
     };
-
 
     //shows the message and publications
     const showPubs = () => {
@@ -189,7 +195,7 @@ export const Pubs = (props) => {
             <Waypoint
                 onEnter={showPubs}/>
             <AnimatedContent
-                pose={(!props.reload && pubsVisible) ? 'visible' : 'hidden'}>
+                pose={pubsVisible ? 'visible' : 'hidden'}>
                 <Separator/>
                 <Waypoint
                     onEnter={showPubs}/>

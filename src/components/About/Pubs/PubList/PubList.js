@@ -18,7 +18,7 @@ const TileContainer = styled.div`
 
 /* POSE */
 const AnimatedTile = posed.div({
-    enter: {
+    visible: {
         opacity: 1,
         filter: 'blur(0)',
         transform: 'skew(0, 0)',
@@ -27,7 +27,7 @@ const AnimatedTile = posed.div({
             duration: 200
         }
     },
-    exit: {
+    hidden: {
         opacity: 0,
         filter: 'blur(20px)',
         transform: 'skew(5deg, 10deg)',
@@ -41,9 +41,11 @@ const PubList = (props) => {
         <TileContainer>
             <PoseGroup>
                {PUBLICATIONS[props.type].map((pub, k) => {
-                        if (props.visible && ((props.en && (pub.language === 'en')) || (props.pl && (pub.language === 'pl')))) {
+                        if ((props.en && (pub.language === 'en')) || (props.pl && (pub.language === 'pl'))) {
                             return (
-                                <AnimatedTile key={k}>
+                                <AnimatedTile
+                                    pose={props.visible ? 'visible' : 'hidden'}
+                                    key={k}>
                                     <PubTile
                                         type={props.type}
                                         title={pub.title}
