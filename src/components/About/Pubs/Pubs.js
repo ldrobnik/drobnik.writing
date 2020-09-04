@@ -96,6 +96,9 @@ export const Pubs = (props) => {
     //specifies whether texts in Polish should be displayed
     const [pl, setPl] = useState(true);
 
+    //specifies whether the message should be visible
+    const [messageVisible, setMessageVisible] = useState(false);
+
     //specifies whether the publications should be visible
     const [pubsVisible, setPubsVisible] = useState(false);
 
@@ -116,13 +119,16 @@ export const Pubs = (props) => {
         if (!en && pl) setEn(true);
     };
 
-    //shows the publications
+
+    //shows the message and publications
     const showPubs = () => {
-        setPubsVisible(true);
+        setMessageVisible(true); //shows the message immediately
+        setTimeout(() => setPubsVisible(true), 1000); //shows pub tiles after a while
     };
 
-    //hides the publications
+    //hides the message and publications
     const hidePubs = () => {
+        setMessageVisible(false);
         setPubsVisible(false);
     };
 
@@ -135,7 +141,7 @@ export const Pubs = (props) => {
     //hide publications whenever the pathname or language change
     useEffect(() => {
 
-            setTimeout(hidePubs,100);
+            setTimeout(hidePubs, 100);
 
         },
         [props.location.pathname, props.lang]
@@ -154,11 +160,11 @@ export const Pubs = (props) => {
                     onEnter={showPubs}/>
             </AnimatedContent>
             <AnimatedMessage
-                pose={pubsVisible ? 'visible' : 'hidden'}>
+                pose={messageVisible ? 'visible' : 'hidden'}>
                 <Message>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</Message>
             </AnimatedMessage>
             <AnimatedPanel
-                pose={pubsVisible ? 'visible' : 'hidden'}>
+                pose={messageVisible ? 'visible' : 'hidden'}>
                 <SwitchPanel>
                     <label>
                         <SwitchWrapper>
@@ -183,7 +189,7 @@ export const Pubs = (props) => {
             <Waypoint
                 onEnter={showPubs}/>
             <AnimatedContent
-                pose={!props.reload ? 'visible' : 'hidden'}>
+                pose={(!props.reload && pubsVisible) ? 'visible' : 'hidden'}>
                 <Separator/>
                 <Waypoint
                     onEnter={showPubs}/>
