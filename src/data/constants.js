@@ -815,13 +815,64 @@ export const THEME_COLORS = {
 //constant containing text used on the website:
 export const WEBSITE_TEXT = {
     navbar: {
-        home: <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>,
+        home: {
+            en: (<React.Fragment>
+                <FontAwesomeIcon
+                    icon={faHome}
+                    aria-hidden="true"
+                    title="Home page">
+                </FontAwesomeIcon>
+                <span className="sr-only">Home page</span>
+            </React.Fragment>),
+            pl: (<React.Fragment>
+                <FontAwesomeIcon
+                    icon={faHome}
+                    aria-hidden="true"
+                    title="Strona główna">
+                </FontAwesomeIcon>
+                <span className="sr-only">Strona główna</span>
+            </React.Fragment>)
+        },
         language: {
             en: 'pl',
             pl: 'en'
         },
-        colourMode: <FontAwesomeIcon icon={faYinYang}></FontAwesomeIcon>,
-        read: <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>
+        colourMode: {
+            en: (<React.Fragment>
+                <FontAwesomeIcon
+                    icon={faYinYang}
+                    aria-hidden="true"
+                    title="Toggle black-and-white mode">
+                </FontAwesomeIcon>
+                <span className="sr-only">Toggle black-and-white mode</span>
+            </React.Fragment>),
+            pl: (<React.Fragment>
+                <FontAwesomeIcon
+                    icon={faYinYang}
+                    aria-hidden="true"
+                    title="Przełącz tryb czarno-biały">
+                </FontAwesomeIcon>
+                <span className="sr-only">Przełącz tryb czarno-biały</span>
+            </React.Fragment>)
+        },
+        read: {
+            en: (<React.Fragment>
+                <FontAwesomeIcon
+                    icon={faBook}
+                    aria-hidden="true"
+                    title="Read sample stories">
+                </FontAwesomeIcon>
+                <span className="sr-only">Read sample stories</span>
+            </React.Fragment>),
+            pl: (<React.Fragment>
+                <FontAwesomeIcon
+                    icon={faBook}
+                    aria-hidden="true"
+                    title="Czytaj przykładowe opowiadania">
+                </FontAwesomeIcon>
+                <span className="sr-only">Czytaj przykładowe opowiadania</span>
+            </React.Fragment>)
+        }
     },
     intro: {
         title: 'Łukasz Drobnik',

@@ -173,7 +173,7 @@ const NavBar = (props) => {
         <NavElement>
             <AnchorLink href='#top'>
                 <LinkContent>
-                    {WEBSITE_TEXT.navbar.home}
+                    {WEBSITE_TEXT.navbar.home[props.lang]}
                 </LinkContent>
             </AnchorLink>
         </NavElement>
@@ -183,7 +183,7 @@ const NavBar = (props) => {
                   onClick={reloadPage}
             >
                 <LinkContent>
-                    {WEBSITE_TEXT.navbar.home}
+                    {WEBSITE_TEXT.navbar.home[props.lang]}
                 </LinkContent>
             </Link>
         </NavElement>
@@ -205,14 +205,14 @@ const NavBar = (props) => {
         (<NavElement>
             <div onClick={toggleBwMode}>
                 <LinkContent>
-                    {WEBSITE_TEXT.navbar.colourMode}
+                    {WEBSITE_TEXT.navbar.colourMode[props.lang]}
                 </LinkContent>
             </div>
         </NavElement>) :
         (<ToggledNavElement>
             <div onClick={toggleBwMode}>
                 <LinkContent>
-                    {WEBSITE_TEXT.navbar.colourMode}
+                    {WEBSITE_TEXT.navbar.colourMode[props.lang]}
                 </LinkContent>
             </div>
         </ToggledNavElement>);
@@ -245,7 +245,7 @@ const NavBar = (props) => {
                 to={'/texts/' + chosenText}
                 onClick={reloadPage}>
                 <LinkContent>
-                    {WEBSITE_TEXT.navbar.read}
+                    {WEBSITE_TEXT.navbar.read[props.lang]}
                 </LinkContent>
             </Link>
         </NavElement>
