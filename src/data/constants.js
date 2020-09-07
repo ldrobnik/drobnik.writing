@@ -880,19 +880,54 @@ export const WEBSITE_TEXT = {
         },
         social: [
             {
-                name: <div><FontAwesomeIcon icon={faTwitterSquare}/>&nbsp;@drobnik</div>,
+                name: (
+                    <div>
+                        <FontAwesomeIcon
+                            icon={faTwitterSquare}
+                            aria-hidden="true"
+                            title="Twitter"
+                        />&nbsp;@drobnik
+                        <span className="sr-only">Twitter</span>
+                    </div>),
                 url: 'https://twitter.com/drobnik'
             },
             {
-                name: <div><FontAwesomeIcon icon={faInstagram}/>&nbsp;@drobnikwrites</div>,
+                name: (
+                    <div>
+                        <FontAwesomeIcon
+                            icon={faInstagram}
+                            aria-hidden="true"
+                            title="Instagram">
+                        </FontAwesomeIcon>&nbsp;@drobnikwrites
+                        <span className="sr-only">Instagram</span>
+                    </div>
+                ),
                 url: 'https://www.instagram.com/drobnikwrites/'
             },
             {
-                name: <div><FontAwesomeIcon icon={faFacebookSquare}/>&nbsp;@drobnikwrites</div>,
+                name: (
+                    <div>
+                        <FontAwesomeIcon
+                            icon={faFacebookSquare}
+                            aria-hidden="true"
+                            title="Facebook">
+                        </FontAwesomeIcon>&nbsp;@drobnikwrites
+                        <span className="sr-only">Facebook</span>
+                    </div>
+                ),
                 url: 'https://www.facebook.com/drobnikwrites'
             },
             {
-                name: <div><FontAwesomeIcon icon={faMedium}/>&nbsp;@drobnik</div>,
+                name: (
+                    <div>
+                        <FontAwesomeIcon
+                            icon={faMedium}
+                            aria-hidden="true"
+                            title="Medium">
+                        </FontAwesomeIcon>&nbsp;@drobnik
+                        <span className="sr-only">Medium</span>
+                    </div>
+                ),
                 url: 'https://medium.com/@drobnik'
             }
         ]
