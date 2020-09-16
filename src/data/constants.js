@@ -989,10 +989,10 @@ export const WEBSITE_TEXT = {
             pl: 'Nocturine'
         },
         slogan: {
-            en: <div>Forthcoming this summer from <a href="http://fathombooks.org/" target="_blank"
+            en: <div>Forthcoming this year from <a href="http://fathombooks.org/" target="_blank"
                                                      rel="noopener noreferrer"><b>FATHOM
                 BOOKS</b></a></div>,
-            pl: <div>Dostępna już latem nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank"
+            pl: <div>Dostępna jeszcze w&nbsp;tym roku nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank"
                                                                 rel="noopener noreferrer"><b>FATHOM
                 BOOKS</b></a></div>,
         }
