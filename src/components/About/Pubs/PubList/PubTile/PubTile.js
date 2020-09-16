@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 import {POP_KEYFRAMES} from "./../../../../../data/constants";
 
 import BookCover from './BookCover/BookCover';
-import {setBWMode, setLanguage, setPageReload} from "../../../../../actions";
+import {setPageReload} from "../../../../../actions";
 
 /* STYLED COMPONENTS */
 const Tile = styled.div`
