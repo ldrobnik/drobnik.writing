@@ -726,8 +726,8 @@ export const PUBLICATIONS = {
     collections: [
         {
             title: '2020. Antologia współczesnych polskich opowiadań',
-            year: '',
-            url: 'http://wforma.eu/2020-antologia-wspolczesnych-polskich-opowiadan.html',
+            year: '2020',
+            url: 'http://www.wforma.eu/2020-antologia-wspolczesnych-polskich-opowiadan.html',
             descriptionPl: 'Zbiór opowiadań z moim tekstem „Niech nastanie Wisła” (Forma)',
             descriptionEn: 'Short story collection featuring my piece “Niech nastanie Wisła” (Forma)',
             language: 'pl',
@@ -1194,6 +1194,11 @@ export const LINKS = [
         title: 'NOCTURINE',
         subtitle: 'read about my forthcoming book',
         url: '/nocturine/'
+    },
+    {
+      title: '“2020. Antologia współczesnych polskich opowiadań”',
+      subtitle: 'featuring my short story “Niech nastatnie Wisła” (in Polish)',
+      url: 'http://www.wforma.eu/2020-antologia-wspolczesnych-polskich-opowiadan.html'
     },
     {
         title: 'Read “Cellulose”',
