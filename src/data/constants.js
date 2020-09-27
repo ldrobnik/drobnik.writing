@@ -368,6 +368,16 @@ export const PUBLICATIONS = {
 
     press: [
         {
+            title: 'Fractured Lit',
+            issue: '',
+            year: '',
+            url: 'https://fracturedlit.com/',
+            descriptionPl: 'Mikroopowiadanie „Echoes”',
+            descriptionEn: 'Micro “Echoes”',
+            language: 'en',
+            pieceTitle: 'Echoes'
+        },
+        {
             title: 'FlashFlood',
             issue: 'National Flash Fiction Day 2020',
             year: '2020',
@@ -990,10 +1000,11 @@ export const WEBSITE_TEXT = {
         },
         slogan: {
             en: <div>Forthcoming this year from <a href="http://fathombooks.org/" target="_blank"
-                                                     rel="noopener noreferrer"><b>FATHOM
+                                                   rel="noopener noreferrer"><b>FATHOM
                 BOOKS</b></a></div>,
-            pl: <div>Dostępna jeszcze w&nbsp;tym roku nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank"
-                                                                rel="noopener noreferrer"><b>FATHOM
+            pl: <div>Dostępna jeszcze w&nbsp;tym roku nakładem wydawnictwa <a href="http://fathombooks.org/"
+                                                                              target="_blank"
+                                                                              rel="noopener noreferrer"><b>FATHOM
                 BOOKS</b></a></div>,
         }
         ,
@@ -1196,9 +1207,9 @@ export const LINKS = [
         url: '/nocturine/'
     },
     {
-      title: '“2020. Antologia współczesnych polskich opowiadań”',
-      subtitle: 'featuring my short story “Niech nastatnie Wisła” (in Polish)',
-      url: 'http://www.wforma.eu/2020-antologia-wspolczesnych-polskich-opowiadan.html'
+        title: '“2020. Antologia współczesnych polskich opowiadań”',
+        subtitle: 'featuring my short story “Niech nastatnie Wisła” (in Polish)',
+        url: 'http://www.wforma.eu/2020-antologia-wspolczesnych-polskich-opowiadan.html'
     },
     {
         title: 'Read “Cellulose”',
