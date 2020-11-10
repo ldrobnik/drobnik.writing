@@ -368,6 +368,16 @@ export const PUBLICATIONS = {
 
     press: [
         {
+            title: 'HAD',
+            issue: '',
+            year: '',
+            url: 'https://www.havehashad.com/',
+            descriptionPl: 'Flash fiction „Coal and Glitter”',
+            descriptionEn: 'Flash fiction “Coal and Glitter”',
+            language: 'en',
+            pieceTitle: 'Echoes'
+        },
+        {
             title: 'Fractured Lit',
             issue: '',
             year: '',
