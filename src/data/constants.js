@@ -378,8 +378,8 @@ export const PUBLICATIONS = {
         {
             title: 'Fractured Lit',
             issue: '',
-            year: '',
-            url: 'https://fracturedlit.com/',
+            year: '2020',
+            url: 'https://fracturedlit.com/echoes/',
             descriptionPl: 'Mikroopowiadanie „Echoes”',
             descriptionEn: 'Micro “Echoes”',
             language: 'en',
@@ -1213,6 +1213,11 @@ export const LINKS = [
         title: 'NOCTURINE',
         subtitle: 'read about my forthcoming book',
         url: '/nocturine/'
+    },
+    {
+        title: 'Read “Echoes”',
+        subtitle: 'in Fractured Lit',
+        url: 'https://fracturedlit.com/echoes/'
     },
     {
         title: 'Watch me read my flash fiction',
