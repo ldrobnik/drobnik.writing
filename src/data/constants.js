@@ -368,12 +368,12 @@ export const PUBLICATIONS = {
         {
             title: 'HAD',
             issue: '',
-            year: '',
-            url: 'https://www.havehashad.com/',
+            year: '2020',
+            url: 'https://www.havehashad.com/hadposts/coal-and-glitter',
             descriptionPl: 'Flash fiction „Coal and Glitter”',
             descriptionEn: 'Flash fiction “Coal and Glitter”',
             language: 'en',
-            pieceTitle: 'Echoes'
+            pieceTitle: 'Coal and Glitter'
         },
         {
             title: 'Fractured Lit',
@@ -1215,6 +1215,11 @@ export const LINKS = [
         url: '/nocturine/'
     },
     {
+        title: 'Read “Coal and Glitter”',
+        subtitle: 'in HAD',
+        url: 'https://www.havehashad.com/hadposts/coal-and-glitter'
+    },
+    {
         title: 'Read “Echoes”',
         subtitle: 'in Fractured Lit',
         url: 'https://fracturedlit.com/echoes/'
@@ -1233,16 +1238,6 @@ export const LINKS = [
         title: 'Read “Cellulose”',
         subtitle: 'in FlashFlood',
         url: 'http://flashfloodjournal.blogspot.com/2020/06/cellulose-by-ukasz-drobnik.html'
-    },
-    {
-        title: 'Buy BULL #9: The LGBTQ Issue (ebook & print)',
-        subtitle: 'with my piece “Riverweed” inside',
-        url: 'https://www.amazon.com/dp/B0851LL5PL/ref=mp_s_a_1_2?keywords=bull+%239+lit&qid=1582738243&sr=8-2'
-    },
-    {
-        title: 'Read “Nameless”',
-        subtitle: 'in Akashic Books',
-        url: 'http://www.akashicbooks.com/nameless-by-lukasz-drobnik/'
     },
     {
         title: 'Buy me a coffee',
