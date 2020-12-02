@@ -1007,10 +1007,10 @@ export const WEBSITE_TEXT = {
             pl: 'Nocturine'
         },
         slogan: {
-            en: <div>Forthcoming this year from <a href="http://fathombooks.org/" target="_blank"
+            en: <div>Forthcoming early 2021 from <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
                                                    rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
-            pl: <div>Dostępna jeszcze w&nbsp;tym roku nakładem wydawnictwa <a href="http://fathombooks.org/"
+            pl: <div>Dostępna na początku 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a href="http://fathombooks.org/html/drobnik.html"
                                                                               target="_blank"
                                                                               rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,

@@ -19,6 +19,16 @@ const Photo = styled.div`
   }
 `;
 
+const PhotoLink = styled.div`
+  height: 24em;
+  opacity: ${props => props.theme.slightlyTranslucent};
+  z-index: 60;
+  
+  img {
+      height: 100%;
+  }
+`;
+
 /* POSE */
 const AnimatedPic = posed.div({
     visible: {
@@ -26,7 +36,8 @@ const AnimatedPic = posed.div({
         filter: 'blur(0)',
         transition: {
             ease: 'easeInOut',
-            duration: 200 }
+            duration: 200
+        }
     },
     hidden: {
         opacity: 0,
@@ -41,20 +52,31 @@ const CentredPhoto = (props) => {
 
     //sets photo visibility to true
     const showPhoto = () => {
-      setVisible(true);
+        setVisible(true);
     };
 
     return (
         <Wrapper>
             <AnimatedPic
                 pose={visible ? 'visible' : 'hidden'}>
-                <Photo>
-                    <img
-                        src={props.source}
-                        alt={props.altText}
-                        onLoad={showPhoto}
-                    />
-                </Photo>
+                {props.link ?
+                    <PhotoLink>
+                        <a href={props.link} target="_blank"
+                           rel="noopener noreferrer">
+                            <img
+                                src={props.source}
+                                alt={props.altText}
+                                onLoad={showPhoto}
+                            />
+                        </a>
+                    </PhotoLink>
+                    : <Photo>
+                        <img
+                            src={props.source}
+                            alt={props.altText}
+                            onLoad={showPhoto}
+                        />
+                    </Photo>}
             </AnimatedPic>
         </Wrapper>
     );

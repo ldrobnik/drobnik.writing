@@ -70,8 +70,11 @@ export const Nocturine = (props) => {
     //specifies whether the quotes should be displayed - triggered by scrolling to the Waypoint element
     const [quotesVisible, setQuotesVisible] = useState(false);
 
+    //specifies whether the preorder button should be visible
+    const [preorderBtnVisible, setPreorderBtnVisible] = useState(false);
+
     //specifies whether the excerpt button should be visible
-    const [buttonVisible, setButtonVisible] = useState(false);
+    const [excerptBtnVisible, setExcerptBtnVisible] = useState(false);
 
     //shows the content
     const showContent = () => {
@@ -85,13 +88,13 @@ export const Nocturine = (props) => {
 
     //sets button visibility to true
     const showButton = () => {
-        setButtonVisible(true);
+        setExcerptBtnVisible(true);
     };
 
     //sets quotes and button visibility to false
     const hideElements = () => {
         setQuotesVisible(false);
-        setButtonVisible(false);
+        setExcerptBtnVisible(false);
     };
 
 
@@ -139,6 +142,7 @@ export const Nocturine = (props) => {
                 <CentredPhoto
                     source={nocturineCover}
                     altText='Nocturine cover'
+                    link={'http://fathombooks.org/html/drobnik.html'}
                 />
                 <Slogan>
                     {WEBSITE_TEXT.nocturine.slogan[props.lang]}
@@ -159,7 +163,7 @@ export const Nocturine = (props) => {
                 onEnter={showButton}
             />
             <AnimatedButton
-                pose={buttonVisible ? 'visible' : 'hidden'}>
+                pose={excerptBtnVisible ? 'visible' : 'hidden'}>
                 <CentredButton
                     message={WEBSITE_TEXT.nocturine.button[props.lang].message}
                     path={WEBSITE_TEXT.nocturine.button[props.lang].path}
