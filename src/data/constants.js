@@ -55,7 +55,7 @@ export const TEXTS = {
             subtitle: 'excerpt from a short story collection',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
             description: <p><em>Nocturine</em> is a linked short story collection forthcoming from <a
-                href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was
+                href="http://fathombooks.org/html/drobnik.html" target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was
                 originally written <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
                                       rel="noopener noreferrer">in Polish</a> and published in one volume with a novella
                 titled <em>Cunninghamella</em> (Forma 2011). Excerpts from <em>Nocturine</em> have been featured in a
@@ -198,7 +198,7 @@ export const TEXTS = {
             credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
             description: <p>„Nocturine” to zbiór powiązanych fabularnie opowiadań w&nbsp;przygotowaniu przez
                 wydawnictwo <a
-                    href="http://fathombooks.org/" target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka
+                    href="http://fathombooks.org/html/drobnik.html" target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka
                 pierwotnie ukazała się <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
                                           rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie
                 z&nbsp;minipowieścią „Cunninghamella” (Forma 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku
