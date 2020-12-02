@@ -913,7 +913,7 @@ export const WEBSITE_TEXT = {
                     flash fiction fan (though I don’t shy away from longer forms).</p>
                 <p><AnchorLink href='#nocturine' offset="60px"><strong>NOCTURINE</strong></AnchorLink>, my linked short
                     story
-                    collection, is now forthcoming from <a href="http://fathombooks.org/" target="_blank"
+                    collection, is now forthcoming from <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
                                                            rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a>,
                     and my
                     other work has been featured in <em>Atticus Review</em>, <em>Quarterly West</em>, <em>Pithead
@@ -931,7 +931,7 @@ export const WEBSITE_TEXT = {
                     ostatnio głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę wysokoartystyczną
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków, a&nbsp;do tego jestem ogromnym fanem <em>flash
                         fiction</em> (czyli bardzo krótkich opowiadań). Nie stronię jednak od dłuższych form.</p>
-                <p>Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/" target="_blank"
+                <p>Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
                                                     rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a> ukaże
                     się napisany
                     przeze mnie zbiór powiązanych fabularnie opowiadań <AnchorLink href='#nocturine'
