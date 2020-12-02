@@ -81,13 +81,19 @@ export const Nocturine = (props) => {
         props.setPageReload(false);
     };
 
+    //sets preorder button visibility to true
+    const showPreorderBtn = () => {
+        setPreorderBtnVisible(true);
+    };
+
+
     //sets quote visibility to true
     const showQuotes = () => {
         setQuotesVisible(true);
     };
 
-    //sets button visibility to true
-    const showButton = () => {
+    //sets excerpt button visibility to true
+    const showExcerptBtn = () => {
         setExcerptBtnVisible(true);
     };
 
@@ -155,25 +161,35 @@ export const Nocturine = (props) => {
                 onEnter={showQuotes}
                 bottomOffset="25%"
             />
+            <Waypoint
+                onEnter={showPreorderBtn}
+            />
+            <AnimatedButton
+                pose={preorderBtnVisible ? 'visible' : 'hidden'}>
+                <CentredButton
+                    message={WEBSITE_TEXT.nocturine.preorderButton[props.lang].message}
+                    path={WEBSITE_TEXT.nocturine.preorderButton[props.lang].path}
+                />
+            </AnimatedButton>
             <QuoteList
                 lang={props.lang}
                 visible={quotesVisible}
             />
             <Waypoint
-                onEnter={showButton}
+                onEnter={showExcerptBtn}
             />
             <AnimatedButton
                 pose={excerptBtnVisible ? 'visible' : 'hidden'}>
                 <CentredButton
-                    message={WEBSITE_TEXT.nocturine.button[props.lang].message}
-                    path={WEBSITE_TEXT.nocturine.button[props.lang].path}
+                    message={WEBSITE_TEXT.nocturine.excerptButton[props.lang].message}
+                    path={WEBSITE_TEXT.nocturine.excerptButton[props.lang].path}
                 />
             </AnimatedButton>
             <Waypoint
                 onEnter={showQuotes}
             />
             <Waypoint
-                onEnter={showButton}
+                onEnter={showExcerptBtn}
             />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
@@ -182,7 +198,7 @@ export const Nocturine = (props) => {
                     onEnter={showQuotes}
                 />
                 <Waypoint
-                    onEnter={showButton}
+                    onEnter={showExcerptBtn}
                 />
                 {sectionSeparator}
             </AnimatedContent>
@@ -190,7 +206,7 @@ export const Nocturine = (props) => {
                 onEnter={showQuotes}
             />
             <Waypoint
-                onEnter={showButton}
+                onEnter={showExcerptBtn}
             />
         </React.Fragment>
     );
