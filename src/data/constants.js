@@ -339,7 +339,7 @@ export const PUBLICATIONS = {
         {
             title: 'Nocturine',
             year: '',
-            url: '/nocturine',
+            url: 'http://fathombooks.org/html/drobnik.html',
             cover: nocturineCover,
             altText: {
                 en: 'Nocturine cover',
