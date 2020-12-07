@@ -1261,16 +1261,16 @@ export const LINKS = [
         subtitle: 'at the the 16th International Short Story Festival',
         url: 'https://youtu.be/lEgFtba3WWM'
     },
-    {
-        title: '“2020. Antologia współczesnych polskich opowiadań”',
-        subtitle: 'featuring my short story “Niech nastatnie Wisła” (in Polish)',
-        url: 'http://www.wforma.eu/2020-antologia-wspolczesnych-polskich-opowiadan.html'
-    },
-    {
-        title: 'Read “Cellulose”',
-        subtitle: 'in FlashFlood',
-        url: 'http://flashfloodjournal.blogspot.com/2020/06/cellulose-by-ukasz-drobnik.html'
-    },
+    // {
+    //     title: '“2020. Antologia współczesnych polskich opowiadań”',
+    //     subtitle: 'featuring my short story “Niech nastatnie Wisła” (in Polish)',
+    //     url: 'http://www.wforma.eu/2020-antologia-wspolczesnych-polskich-opowiadan.html'
+    // },
+    // {
+    //     title: 'Read “Cellulose”',
+    //     subtitle: 'in FlashFlood',
+    //     url: 'http://flashfloodjournal.blogspot.com/2020/06/cellulose-by-ukasz-drobnik.html'
+    // },
     {
         title: 'Buy me a coffee',
         subtitle: 'please consider supporting me on Ko-fi',
@@ -1281,16 +1281,16 @@ export const LINKS = [
         subtitle: 'www.drobnik.co',
         url: '/'
     },
-    {
-        title: 'Read “Deadlines”',
-        subtitle: 'in STORGY',
-        url: 'https://storgy.com/2020/02/21/deadlines-by-lukasz-drobnik/'
-    },
-    {
-        title: 'Read “Entrails”',
-        subtitle: 'in Pithead Chapel',
-        url: 'https://pitheadchapel.com/entrails/'
-    },
+    // {
+    //     title: 'Read “Deadlines”',
+    //     subtitle: 'in STORGY',
+    //     url: 'https://storgy.com/2020/02/21/deadlines-by-lukasz-drobnik/'
+    // },
+    // {
+    //     title: 'Read “Entrails”',
+    //     subtitle: 'in Pithead Chapel',
+    //     url: 'https://pitheadchapel.com/entrails/'
+    // },
     {
         title: 'Twitter',
         subtitle: '@drobnik',
