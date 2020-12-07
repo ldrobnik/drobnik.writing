@@ -1242,9 +1242,9 @@ export const WEBSITE_TEXT = {
 
 export const LINKS = [
     {
-        title: 'NOCTURINE',
-        subtitle: 'read about my forthcoming book',
-        url: '/nocturine/'
+        title: 'Preorder NOCTURINE',
+        subtitle: 'from Fathom Books',
+        url: 'http://fathombooks.org/html/drobnik.html'
     },
     {
         title: 'Read “Coal and Glitter”',
