@@ -169,7 +169,7 @@ export const TEXTS = {
             title: 'Landmines',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p>The piece published in <a href="https://foglifterjournal.com/" target="_blank"
+            description: <p>The piece published in <a href="https://foglifterjournal.com/product/foglifter-journal-volume-4-issue-1/" target="_blank"
                                                       rel="noopener noreferrer"><em>Foglifter</em></a> Volume&nbsp;4
                 Issue&nbsp;1.</p>,
             content: LANDMINES_EN,
@@ -309,7 +309,7 @@ export const TEXTS = {
             title: 'Miny',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się po angielsku w&nbsp;piśmie <a href="https://foglifterjournal.com/"
+            description: <p>Tekst ukazał się po angielsku w&nbsp;piśmie <a href="https://foglifterjournal.com/product/foglifter-journal-volume-4-issue-1/"
                                                                            target="_blank"
                                                                            rel="noopener noreferrer"><em>Foglifter</em></a> (Volume&nbsp;4
                 Issue&nbsp;1).</p>,
@@ -463,7 +463,7 @@ export const PUBLICATIONS = {
             title: 'Foglifter',
             issue: 'Volume 4 Issue 1',
             year: '2019',
-            url: 'https://foglifterjournal.com/',
+            url: 'https://foglifterjournal.com/product/foglifter-journal-volume-4-issue-1/',
             descriptionPl: 'Flash fiction „Landmines”',
             descriptionEn: 'Flash fiction “Landmines”',
             language: 'en',
