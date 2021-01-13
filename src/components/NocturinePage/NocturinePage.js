@@ -94,6 +94,8 @@ export const Text = (props) => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - Nocturine`;
 
+        //during pre-release promotion --> redirect to preorder page
+
         //update the theme depending on the text displayed
         updateTheme();
 

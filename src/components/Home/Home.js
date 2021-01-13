@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import {bindActionCreators} from "redux";
-import {Route, Switch, withRouter} from 'react-router-dom';
-import {Redirect} from 'react-router';
+import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {createGlobalStyle} from 'styled-components';
 
@@ -102,7 +101,11 @@ export const Home = (props) => {
                     <Route path="/" exact component={About} key="home"/>
                     <Route path="/texts/" exact component={Text} key="texts"/>
                     <Route path="/texts/:id" exact component={Text} key="text"/>
-                    <Route path="/nocturine/" exact component={NocturinePage} key="nocturine"/>
+                    <Route path="/nocturine/" exact component={() => {
+                        window.location.href = "http://fathombooks.org/html/drobnik.html";
+                        return null;
+                    }}/>
+                    {/*<Route path="/nocturine/" exact component={NocturinePage} key="nocturine"/>*/}
                     <Route path="/links/" exact component={QuickLinks} key="links"/>
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>
