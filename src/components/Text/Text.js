@@ -5,8 +5,16 @@ import styled from 'styled-components';
 import posed from 'react-pose';
 import {Waypoint} from "react-waypoint";
 
-import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setNocturinePage, setPageReload } from "../../actions";
-import {TEXTS, TEXT_NAMES, FADE_DURATION, AnimatedContent} from './../../data/constants';
+import {
+    setTheme,
+    setCurrentText,
+    setNavbarVisibility,
+    setDataNoticeVisible,
+    setMainPage,
+    setNocturinePage,
+    setPageReload
+} from "../../actions";
+import {TEXTS, TEXT_NAMES, FADE_DURATION, AnimatedContent, WEBSITE_TEXT} from './../../data/constants';
 
 import Credits from './Credits/Credits';
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
@@ -14,6 +22,7 @@ import NextTextLink from './NextTextLink/NextTextLink';
 import SectionSeparator from "../UI/SectionSeparator/SectionSeparator";
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from "../UI/CopyrightNote/CopyrightNote";
+import CentredButton from "../UI/CentredButton/CentredButton";
 
 /* STYLED COMPONENTS */
 const TopAnchor = styled.div`
@@ -24,65 +33,65 @@ const TopAnchor = styled.div`
 const Wrapper = styled.div`
   overflow: hidden;
   padding: 7em 1em 2em 1em;
-  
+
   .centered {
     text-align: center;
   }
 
   @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-      padding: 7em 3em 2em 3em;
+    padding: 7em 3em 2em 3em;
   }
-    
+
   @media all and (min-width: ${props => props.theme.smallScr}) {
-      padding: 7em 10% 2em 10%;
+    padding: 7em 10% 2em 10%;
   }
-    
+
   @media all and (min-width: ${props => props.theme.mediumScr}) {
-      padding: 7em 20% 2em 20%;
+    padding: 7em 20% 2em 20%;
   }
-    
+
   @media all and (min-width: ${props => props.theme.largeScr}) {
-      padding: 7em 25% 2em 25%;
+    padding: 7em 25% 2em 25%;
   }
-    
+
   @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-      padding: 7em 32% 2em 32%;
+    padding: 7em 32% 2em 32%;
   }
 `;
 
 const Header = styled.div`
-    text-align: center;
-    
-    @media all and (min-width: ${props => props.theme.mediumScr}) {
-      padding-right: 1em;
-    }
+  text-align: center;
+
+  @media all and (min-width: ${props => props.theme.mediumScr}) {
+    padding-right: 1em;
+  }
 `;
 
 const TextTitle = styled.div`
-    font-size: ${props => props.theme.titleSize};
-    font-weight: bold;
-    
-    @media all and (max-width: ${props => props.theme.smallScr}) {
-      font-size: 15vw;
-    }
+  font-size: ${props => props.theme.titleSize};
+  font-weight: bold;
+
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    font-size: 15vw;
+  }
 `;
 
 const TextSubtitle = styled.div`
-    font-size: ${props => props.theme.subtitleSize};
-    font-weight: bold;
-    font-style: italic;
-    
-    @media all and (max-width: ${props => props.theme.smallScr}) {
-      font-size: 8vw;
-    }
+  font-size: ${props => props.theme.subtitleSize};
+  font-weight: bold;
+  font-style: italic;
+
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    font-size: 8vw;
+  }
 `;
 
 const TextBody = styled.div`
-    font-family: ${props => props.theme.serif};
-    font-size: ${props => props.theme.bodySize};
-    line-height: 1.4em;
-    position: relative;
-    margin-top: 2em;
+  font-family: ${props => props.theme.serif};
+  font-size: ${props => props.theme.bodySize};
+  line-height: 1.4em;
+  position: relative;
+  margin-top: 2em;
 `;
 
 /* POSE */
@@ -102,203 +111,246 @@ const AnimatedLink = posed.div({
     }
 });
 
+const AnimatedButton = posed.div({
+    visible: {
+        opacity: 1,
+        transform: 'scale(1,1)',
+        transition: {
+            type: 'spring',
+            stiffness: 100
+        }
+    },
+    hidden: {
+        opacity: 0,
+        transform: 'scale(0,0)'
+    }
+});
+
 export const Text = (props) => {
 
-    //specifies whether 'up next' link should be displayed
-    const [linkVisible, setlinkVisible] = useState(false);
+        //specifies whether 'up next' link should be displayed
+        const [linkVisible, setlinkVisible] = useState(false);
 
-    //shows the content
-    const showContent = () => {
-        props.setPageReload(false);
-    };
+        //specifies whether the preorder button should be visible
+        const [preorderBtnVisible, setPreorderBtnVisible] = useState(false);
 
-    //shows the 'up next' link
-    const showLink = () => {
-        setlinkVisible(true);
-    };
+        //shows the content
+        const showContent = () => {
+            props.setPageReload(false);
+        };
 
-    //hides the 'up next' link
-    const hideLink = () => {
-        setlinkVisible(false);
-    };
+        //shows the preorder button
+        const showPreorderBtn = () => {
+            setPreorderBtnVisible(true);
+        };
 
-    //sets off page reloading animation
-    const reloadPage = () => {
-        props.setPageReload(true);
-    };
+        //shows the 'up next' link
+        const showLink = () => {
+            setlinkVisible(true);
+        };
 
-    //Checks if the id in the current url matches any text; if not, returns 'nocturine'
-    const checkTextID = (name) => {
+        //hides the 'up next' link
+        const hideLink = () => {
+            setlinkVisible(false);
+        };
 
-        for (let i = 0; i < TEXT_NAMES.length; i++) {
-            if (TEXT_NAMES[i] === name) return name;
-        }
+        //sets off page reloading animation
+        const reloadPage = () => {
+            props.setPageReload(true);
+        };
 
-        //if unknown id, display 'nocturine'
-        return 'nocturine';
-    };
+        //Checks if the id in the current url matches any text; if not, returns 'nocturine'
+        const checkTextID = (name) => {
 
-    //constant holding the name of the text to be displayed
-    const textName = checkTextID(props.match.params.id);
+            for (let i = 0; i < TEXT_NAMES.length; i++) {
+                if (TEXT_NAMES[i] === name) return name;
+            }
 
-    //the index of the text
-    const textIndex = TEXT_NAMES.indexOf(textName);
+            //if unknown id, display 'nocturine'
+            return 'nocturine';
+        };
 
-    //The next text to be displayed;
-    const nextTextId = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
+        //constant holding the name of the text to be displayed
+        const textName = checkTextID(props.match.params.id);
+
+        //the index of the text
+        const textIndex = TEXT_NAMES.indexOf(textName);
+
+        //The next text to be displayed;
+        const nextTextId = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
 
 
-    //The next text name
-    const nextTextName = TEXT_NAMES[nextTextId];
+        //The next text name
+        const nextTextName = TEXT_NAMES[nextTextId];
 
-    //updates the currently displayed text
-    const updateText = () => {
-        props.setCurrentText(textName);
-    };
+        //updates the currently displayed text
+        const updateText = () => {
+            props.setCurrentText(textName);
+        };
 
-    //theme to be used - based on the current text or black-and-white if the black-and-white mode is on
-    const themeToUse = props.bwMode ? 'blackAndWhite' : TEXTS[props.lang][textName].theme;
+        //theme to be used - based on the current text or black-and-white if the black-and-white mode is on
+        const themeToUse = props.bwMode ? 'blackAndWhite' : TEXTS[props.lang][textName].theme;
 
-    //updates current theme
-    const updateTheme = () => {
-        props.setTheme(themeToUse);
-    };
+        //updates current theme
+        const updateTheme = () => {
+            props.setTheme(themeToUse);
+        };
 
-    //shows the NavBar
-    const showNavbar = () => {
-        props.setNavbarVisibility(true);
-    };
+        //shows the NavBar
+        const showNavbar = () => {
+            props.setNavbarVisibility(true);
+        };
 
-    //checks whether the data storage notice should be displayed and turns it on if it is invisible but hasn't been confirmed yet
-    const checkDataNotice = () => {
-        if (!props.noticeAccepted) {
-            props.setDataNoticeVisible(true);
-        }
-    };
+        //checks whether the data storage notice should be displayed and turns it on if it is invisible but hasn't been confirmed yet
+        const checkDataNotice = () => {
+            if (!props.noticeAccepted) {
+                props.setDataNoticeVisible(true);
+            }
+        };
 
-    //lets the Redux store know that the Main page is currently not displayed
-    const setMainNotDisplayed = () => {
-        props.setMainPage(false)
-    };
-
-    //lets the Redux store know that the Nocturine page is currently not displayed
-    const setNocturineNotDisplayed = () => {
-        props.setNocturinePage(false);
-    };
-
-    useEffect(() => {
-        //Update page title with the piece title
-        document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
-
-        //update the theme depending on the text displayed
-        updateTheme();
-
-        //update the currently displayed text
-        updateText();
-
-        //show Navbar
-        showNavbar();
-
-        //checks whether data storage notice should be visible and if so, turn is on
-        checkDataNotice();
-
-        //lets the Redux store know that the main page is currently not displayed
-        setMainNotDisplayed();
+        //lets the Redux store know that the Main page is currently not displayed
+        const setMainNotDisplayed = () => {
+            props.setMainPage(false)
+        };
 
         //lets the Redux store know that the Nocturine page is currently not displayed
-        setNocturineNotDisplayed();
+        const setNocturineNotDisplayed = () => {
+            props.setNocturinePage(false);
+        };
 
-        //show content after a while if page has loaded
-        if (props.loaded) {
-            setTimeout(showContent, FADE_DURATION);
-        }
+        useEffect(() => {
+            //Update page title with the piece title
+            document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
 
-    });
+            //update the theme depending on the text displayed
+            updateTheme();
 
-    //do not show the content until the page is loaded
-    return props.loaded ?
-        (<Wrapper>
-            <TopAnchor>
-                <div id='top'></div>
-            </TopAnchor>
-            <AnimatedContent
-                pose={!props.reload ? 'visible' : 'hidden'}>
-                <Header>
-                    <TextTitle>
-                        {TEXTS[props.lang][textName].title}
-                    </TextTitle>
-                    <TextSubtitle>
-                        {TEXTS[props.lang][textName].subtitle}
-                    </TextSubtitle>
-                </Header>
-                <TextBody>
-                    {TEXTS[props.lang][textName].content}
-                </TextBody>
-                <Waypoint
-                    onEnter={hideLink}
-                />
-                <Credits
-                    lang={props.lang}
-                    textName={textName}/>
-                <DescriptionPanel
-                    description={TEXTS[props.lang][textName].description}
-                    title={TEXTS[props.lang][textName].title}
-                />
-            </AnimatedContent>
-            <Waypoint
-                onEnter={showLink}
-            />
-            <AnimatedLink
-                pose={linkVisible ? 'visible' : 'hidden'}
-            >
-                <NextTextLink
-                    textName={nextTextName}
-                    lang={props.lang}
-                />
-            </AnimatedLink>
-            <Waypoint
-                onEnter={showLink}
-            />
-            <AnimatedContent
-                pose={!props.reload ? 'visible' : 'hidden'}>
-                <SubpageLinks
-                    lang={props.lang}
-                    reloadPage={reloadPage}
-                />
+            //update the currently displayed text
+            updateText();
+
+            //show Navbar
+            showNavbar();
+
+            //checks whether data storage notice should be visible and if so, turn is on
+            checkDataNotice();
+
+            //lets the Redux store know that the main page is currently not displayed
+            setMainNotDisplayed();
+
+            //lets the Redux store know that the Nocturine page is currently not displayed
+            setNocturineNotDisplayed();
+
+            //show content after a while if page has loaded
+            if (props.loaded) {
+                setTimeout(showContent, FADE_DURATION);
+            }
+
+        });
+
+        //do not show the content until the page is loaded
+        return props.loaded ?
+            (<Wrapper>
+                <TopAnchor>
+                    <div id='top'></div>
+                </TopAnchor>
+                <AnimatedContent
+                    pose={!props.reload ? 'visible' : 'hidden'}>
+                    <Header>
+                        <TextTitle>
+                            {TEXTS[props.lang][textName].title}
+                        </TextTitle>
+                        <TextSubtitle>
+                            {TEXTS[props.lang][textName].subtitle}
+                        </TextSubtitle>
+                    </Header>
+                    <TextBody>
+                        {TEXTS[props.lang][textName].content}
+                    </TextBody>
+                    <Waypoint
+                        onEnter={hideLink}
+                    />
+                    <Credits
+                        lang={props.lang}
+                        textName={textName}/>
+                </AnimatedContent>
+                {textName === "nocturine" &&
+                <React.Fragment>
+                    <Waypoint
+                        onEnter={showPreorderBtn}
+                    />
+                    <AnimatedButton
+                        pose={preorderBtnVisible ? 'visible' : 'hidden'}>
+                        <CentredButton
+                            message={WEBSITE_TEXT.nocturine.preorderButton[props.lang].message}
+                            path={WEBSITE_TEXT.nocturine.preorderButton[props.lang].path}
+                        />
+                    </AnimatedButton>
+                </React.Fragment>
+                }
+                <AnimatedContent
+                    pose={!props.reload ? 'visible' : 'hidden'}>
+                    <DescriptionPanel
+                        description={TEXTS[props.lang][textName].description}
+                        title={TEXTS[props.lang][textName].title}
+                    />
+                </AnimatedContent>
                 <Waypoint
                     onEnter={showLink}
                 />
-                <SectionSeparator/>
-                <CopyrightNote/>
+                <AnimatedLink
+                    pose={linkVisible ? 'visible' : 'hidden'}
+                >
+                    <NextTextLink
+                        textName={nextTextName}
+                        lang={props.lang}
+                    />
+                </AnimatedLink>
                 <Waypoint
                     onEnter={showLink}
                 />
-            </AnimatedContent>
-        </Wrapper>) :
-        <div></div>;
-};
+                <AnimatedContent
+                    pose={!props.reload ? 'visible' : 'hidden'}>
+                    <SubpageLinks
+                        lang={props.lang}
+                        reloadPage={reloadPage}
+                    />
+                    <Waypoint
+                        onEnter={showLink}
+                    />
+                    <SectionSeparator/>
+                    <CopyrightNote/>
+                    <Waypoint
+                        onEnter={showLink}
+                    />
+                </AnimatedContent>
+            </Wrapper>) :
+            <div></div>;
+    }
+;
 
 const mapStateToProps = state => {
-    return {
-        lang: state.language,
-        bwMode: state.blackAndWhite,
-        noticeVisible: state.dataNoticeVisible,
-        noticeAccepted: state.dataNoticeAccepted,
-        reload: state.pageReload,
-        loaded: state.pageLoaded
-    };
-};
+        return {
+            lang: state.language,
+            bwMode: state.blackAndWhite,
+            noticeVisible: state.dataNoticeVisible,
+            noticeAccepted: state.dataNoticeAccepted,
+            reload: state.pageReload,
+            loaded: state.pageLoaded
+        };
+    }
+;
 
 const mapDispatchToProps = dispatch => {
-    return bindActionCreators({
-        setTheme,
-        setCurrentText,
-        setNavbarVisibility,
-        setDataNoticeVisible,
-        setMainPage,
-        setNocturinePage,
-        setPageReload
-    }, dispatch);
-};
+        return bindActionCreators({
+            setTheme,
+            setCurrentText,
+            setNavbarVisibility,
+            setDataNoticeVisible,
+            setMainPage,
+            setNocturinePage,
+            setPageReload
+        }, dispatch);
+    }
+;
 
 export default connect(mapStateToProps, mapDispatchToProps)(Text);
