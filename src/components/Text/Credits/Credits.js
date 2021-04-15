@@ -7,7 +7,7 @@ import {TEXTS} from "../../../data/constants";
 const CreditWrapper = styled.div`
   font-size: ${props => props.theme.captionSize};
   font-family: ${props => props.theme.serif};
-  margin-top: 2em;
+  margin: 2em 0 2.5em 0;
 `;
 
 const Credits = (props) => {
