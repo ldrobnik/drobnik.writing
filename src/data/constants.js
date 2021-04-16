@@ -923,18 +923,12 @@ export const WEBSITE_TEXT = {
         },
         body: {
             en: <div>
-                <p>I’m a bilingual writer creating fiction in my native Polish but recently mostly in English. My
-                    favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous
-                    flash fiction fan (though I don’t shy away from longer forms).</p>
-                <p><AnchorLink href='#nocturine' offset="60px"><strong>NOCTURINE</strong></AnchorLink>, my linked short
-                    story
-                    collection, is now forthcoming from <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
-                                                           rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a>,
-                    and my
-                    other work has been featured in <em>Atticus Review</em>, <em>Quarterly West</em>, <em>Pithead
+                <p>I’m a bilingual writer creating fiction in my native Polish but recently mostly in English. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from longer forms). I live in Kraków, Poland.</p>
+                <p><AnchorLink href='#nocturine' offset="60px"><strong>NOCTURINE</strong></AnchorLink>, my linked short story collection, is available for preorder from <a href="http://fathombooks.org/html/drobnik.html" target="_blank" rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a>,
+                    and I have a novel <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> forthcoming from <a href="https://www.vraeydamedia.ca/literary" target="_blank" rel="noopener noreferrer"><strong>VRÆYDA LITERARY</strong></a>. My other work has been featured in <em>HAD</em>, <em>Atticus Review</em>, <em>Quarterly West</em>, <em>Pithead
                         Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
                         Annual</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y Literary
-                        Magazine</em> and
+                        Magazine</em>, and
                     elsewhere. Below you can find
                     a <AnchorLink href='#pubs' offset="60px"><strong>FULL LIST OF PUBLICATIONS</strong></AnchorLink> and
                     also <AnchorLink href='#read' offset="60px"><strong>READ</strong></AnchorLink> some of my pieces.
@@ -945,7 +939,7 @@ export const WEBSITE_TEXT = {
                 <p>Jestem dwujęzycznym pisarzem, który tworzy prozę po polsku (w&nbsp;moim ojczystym języku), ale
                     ostatnio głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę wysokoartystyczną
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków, a&nbsp;do tego jestem ogromnym fanem <em>flash
-                        fiction</em> (czyli bardzo krótkich opowiadań). Nie stronię jednak od dłuższych form.</p>
+                        fiction</em> (czyli bardzo krótkich opowiadań). Nie stronię jednak od dłuższych form. Mieszkam w Krakowie.</p>
                 <p>Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
                                                     rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a> ukaże
                     się napisany
