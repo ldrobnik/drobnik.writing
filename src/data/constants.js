@@ -279,7 +279,7 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'fragment powieści',
             credits: 'Tekst: Łukasz Drobnik.',
-            description: <p>„Vostok” ukaże się jeszcze w&nbsp;roku nakładem wydawnictwa <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><em>Vræyda Literary</em></a>. Fragmenty ksiązki można było przeczytać po polsku w&nbsp;<a href="http://lampa.art.pl/" target="_blank"
+            description: <p>„Vostok” ukaże się jeszcze w&nbsp;roku nakładem wydawnictwa <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><em>Vræyda Literary</em></a>. Fragmenty książki można było przeczytać po polsku w&nbsp;<a href="http://lampa.art.pl/" target="_blank"
                                                                       rel="noopener noreferrer"><em>Lampie</em></a> (numer&nbsp;3/2012)
                 i&nbsp;na stronie <a
                     href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
