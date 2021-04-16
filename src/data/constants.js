@@ -925,7 +925,7 @@ export const WEBSITE_TEXT = {
             en: <div>
                 <p>I’m a bilingual writer creating fiction in my native Polish but recently mostly in English. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from longer forms). I live in Kraków, Poland.</p>
                 <p><AnchorLink href='#nocturine' offset="60px"><strong>NOCTURINE</strong></AnchorLink>, my linked short story collection, is available for preorder from <a href="http://fathombooks.org/html/drobnik.html" target="_blank" rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a>,
-                    and I have a novel <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> forthcoming from <a href="https://www.vraeydamedia.ca/literary" target="_blank" rel="noopener noreferrer"><strong>VRÆYDA LITERARY</strong></a>. My other work has been featured in <em>HAD</em>, <em>Atticus Review</em>, <em>Quarterly West</em>, <em>Pithead
+                    and I have a novel <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> forthcoming later this year from <a href="https://www.vraeydamedia.ca/literary" target="_blank" rel="noopener noreferrer"><strong>VRÆYDA LITERARY</strong></a>. My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Quarterly West</em>, <em>Pithead
                         Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
                         Annual</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y Literary
                         Magazine</em>, and
@@ -940,12 +940,9 @@ export const WEBSITE_TEXT = {
                     ostatnio głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę wysokoartystyczną
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków, a&nbsp;do tego jestem ogromnym fanem <em>flash
                         fiction</em> (czyli bardzo krótkich opowiadań). Nie stronię jednak od dłuższych form. Mieszkam w Krakowie.</p>
-                <p>Niedługo nakładem wydawnictwa <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
-                                                    rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a> ukaże
-                    się napisany
-                    przeze mnie zbiór powiązanych fabularnie opowiadań <AnchorLink href='#nocturine'
-                                                                                   offset="60px"><strong>NOCTURINE</strong></AnchorLink>,
-                    a&nbsp;moje utwory były publikowane m.in. w&nbsp;<em>Atticus Review</em>, <em>Quarterly
+                <p>Ze strony wydawnictwa <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
+                                                    rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a> można już zamawiać napisany przeze mnie zbiór powiązanych fabularnie opowiadań <AnchorLink href='#nocturine'
+                                                                                   offset="60px"><strong>NOCTURINE</strong></AnchorLink>, a do końca roku nakładem wydawnictwa <a href="https://www.vraeydamedia.ca/literary" target="_blank" rel="noopener noreferrer"><strong>VRÆYDA LITERARY</strong></a> ukaże się moja powieść <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a>. Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Quarterly
                         West</em>, <em>Pithead
                         Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
                         Annual</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X-R-A-Y Literary
