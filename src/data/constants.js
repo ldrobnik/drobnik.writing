@@ -41,6 +41,7 @@ import posed from "react-pose";
 //source urls for book covers
 import nocturineCover from '../assets/images/nocturineCover.jpg';
 import nocCunCover from '../assets/images/nocCunCover.jpg';
+import tbaCover from '../assets/images/tbaCover.jpg';
 
 //Names of available texts
 export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'vostok', 'spores', 'devonian', 'landmines', 'treasures'];
@@ -337,6 +338,20 @@ export const TEXTS = {
 export const PUBLICATIONS = {
     books: [
         {
+            title: 'Vostok',
+            year: '',
+            url: 'https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj',
+            cover: tbaCover,
+            altText: {
+                en: 'Vostok cover',
+                pl: 'Okładka Vostok'
+            },
+            descriptionPl: 'Powieść, która ukaże się w 2021 r. nakładem wydawnictwa Vræyda Literary',
+            descriptionEn: 'Novel forthcoming in 2021 from Vræyda Literary',
+            language: 'en',
+            pieceTitle: 'Vostok'
+        },
+        {
             title: 'Nocturine',
             year: '',
             url: 'http://fathombooks.org/html/drobnik.html',
@@ -345,8 +360,8 @@ export const PUBLICATIONS = {
                 en: 'Nocturine cover',
                 pl: 'Okładka Nocturine'
             },
-            descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2020 r. nakładem wydawnictwa Fathom Books',
-            descriptionEn: 'Linked short story collection forthcoming in 2020 from Fathom Books',
+            descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2021 r. nakładem wydawnictwa Fathom Books',
+            descriptionEn: 'Linked short story collection forthcoming in 2021 from Fathom Books',
             language: 'en',
             pieceTitle: 'Nocturine'
         },
