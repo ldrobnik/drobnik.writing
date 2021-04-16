@@ -142,11 +142,7 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'novel fragment',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p>Fragments of <em>Vostok</em> were published in Polish in <a href="http://lampa.art.pl/"
-                                                                                        target="_blank"
-                                                                                        rel="noopener noreferrer"><em>Lampa</em></a> Issue&nbsp;3/2012
-                and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
-                          target="_blank" rel="noopener noreferrer"><em>wydawnictwo&nbsp;j</em></a> website.</p>,
+            description: <p><em>Vostok</em> is forthcoming later this year from <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><em>Vræyda Literary</em></a>. Its fragments were published in Polish in <a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><em>Lampa</em></a> Issue&nbsp;3/2012 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><em>wydawnictwo&nbsp;j</em></a> website.</p>,
             content: VOSTOK_EN,
             theme: 'vostok'
         },
@@ -283,7 +279,7 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'fragment powieści',
             credits: 'Tekst: Łukasz Drobnik.',
-            description: <p>Fragmenty „Vostoku” ukazały się w&nbsp;<a href="http://lampa.art.pl/" target="_blank"
+            description: <p>„Vostok” ukaże się jeszcze w&nbsp;roku nakładem wydawnictwa <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><em>Vræyda Literary</em></a>. Fragmenty ksiązki można było przeczytać po polsku w&nbsp;<a href="http://lampa.art.pl/" target="_blank"
                                                                       rel="noopener noreferrer"><em>Lampie</em></a> (numer&nbsp;3/2012)
                 i&nbsp;na stronie <a
                     href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
