@@ -971,11 +971,11 @@ export const WEBSITE_TEXT = {
         support: {
             en: {
                 message: <div>Buy me a coffee</div>,
-                path: 'https://ko-fi.com/drobnik'
+                path: KO_FI_URL
             },
             pl: {
                 message: <div>Postaw mi kawę</div>,
-                path: 'https://ko-fi.com/drobnik'
+                path: KO_FI_URL
             }
         },
         social: [
@@ -989,7 +989,7 @@ export const WEBSITE_TEXT = {
                         />&nbsp;@drobnik
                         <span className="sr-only">Twitter</span>
                     </div>),
-                url: 'https://twitter.com/drobnik'
+                url: TWITTER_URL
             },
             {
                 name: (
@@ -1002,7 +1002,7 @@ export const WEBSITE_TEXT = {
                         <span className="sr-only">Instagram</span>
                     </div>
                 ),
-                url: 'https://www.instagram.com/drobnikwrites/'
+                url: INSTAGRAM_URL
             },
             {
                 name: (
@@ -1015,7 +1015,7 @@ export const WEBSITE_TEXT = {
                         <span className="sr-only">Facebook</span>
                     </div>
                 ),
-                url: 'https://www.facebook.com/drobnikwrites'
+                url: FACEBOOK_URL
             },
             {
                 name: (
@@ -1028,7 +1028,7 @@ export const WEBSITE_TEXT = {
                         <span className="sr-only">Medium</span>
                     </div>
                 ),
-                url: 'https://medium.com/@drobnik'
+                url: MEDIUM_URL
             }
         ]
     },
@@ -1298,7 +1298,7 @@ export const LINKS = [
     {
         title: 'Buy me a coffee',
         subtitle: 'please consider supporting me on Ko-fi',
-        url: 'https://ko-fi.com/drobnik'
+        url: KO_FI_URL
     },
     {
         title: 'My official website',
@@ -1318,12 +1318,12 @@ export const LINKS = [
     {
         title: 'Twitter',
         subtitle: '@drobnik',
-        url: 'https://twitter.com/drobnik'
+        url: TWITTER_URL
     },
     {
         title: 'Facebook',
         subtitle: '@drobnikwrites',
-        url: 'https://www.facebook.com/drobnikwrites/'
+        url: FACEBOOK_URL
     }
 ];
 
