@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import styled from 'styled-components';
 
 import {setTheme, setNavbarVisibility, setDataNoticeVisible, setMainPage, setBookPage} from "../../actions";
-import {TEXT_NAMES} from './../../data/constants';
+import {BOOKS, TEXT_NAMES} from './../../data/constants';
 
 import Intro from './Intro/Intro';
 import Book from './Nocturine/Book';
@@ -119,9 +119,13 @@ export const About = (props) => {
             <SectionWrapper>
                 <Intro/>
             </SectionWrapper>
-            <SectionWrapper id='nocturine'>
-                <Book book={0}/>
-            </SectionWrapper>
+            {BOOKS.map((book, k) => {
+                return(
+                  book.displayOnMain &&  <SectionWrapper id={book.title}>
+                      <Book book={k}/>
+                  </SectionWrapper>
+                );
+            })}
             <SectionWrapper id='pubs'>
                 <Pubs/>
             </SectionWrapper>
