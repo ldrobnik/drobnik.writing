@@ -881,65 +881,6 @@ const EXCERPT_BUTTON = {
 //Content about books
 export const BOOKS = [
     {
-        id: 'vostok',
-        title: {
-            en: 'Vostok',
-            pl: 'Vostok'
-        },
-        slogan: {
-            en: <div>Forthcoming autumn 2021 from <a href={VOSTOK_URL} target="_blank"
-                                                     rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
-            pl: <div>Dostępna jesienią 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
-                href={VOSTOK_URL}
-                target="_blank"
-                rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
-        },
-        orderButton: {
-            en: {
-                message: ORDER_BUTTON["preorder"]["en"],
-                path: VOSTOK_URL
-            },
-            pl: {
-                message: ORDER_BUTTON["preorder"]["pl"],
-                path: VOSTOK_URL
-            }
-        },
-        excerptButton: {
-            en: {
-                message: EXCERPT_BUTTON["en"],
-                path: '/texts/' + this.id
-            },
-            pl: {
-                message: EXCERPT_BUTTON["pl"],
-                path: '/texts/' + this.id
-            }
-        },
-        body: {
-            en: <div>
-                <p>Poznań, Poland. The middle of a harsh winter. Weronika is in love with her best friend Wu, who has just told her about his new boyfriend. They spend most evenings drinking away their problems with a bunch of like-minded pub-goers. There’s been a terrorist attack. A girl gets murdered with a war scythe. The reality reveals a whole new layer when the friends mention a place called Vostok City.</p>
-                <p>On the surface, <em>VOSTOK</em> is a murder story. Dig deeper, and it will reveal itself as science fiction that only pretends to play by the rules of realism.</p>
-            </div>,
-            pl: <div>
-                <p>Poznań, środek mroźnej zimy. Weronika kocha się w&nbsp;swoim najlepszym przyjacielu Wu, który właśnie przedstawił jej swojego nowego chłopaka. Większość wieczorów przyjaciele spędzają w&nbsp;ulubionych knajpach, zapijając problemy z&nbsp;grupką znajomych. Niesie się wieść o&nbsp;ataku terrorystycznym. Dziewczyna ginie raniona kosą bojową. Rzeczywistość odkrywa całkiem nową warstwę, gdy znajomi wspominają o&nbsp;miejscu zwanym Vostok City.</p>
-                <p>Na pierwszy rzut oka <em>VOSTOK</em> to kryminał. Gdy jednak zajrzy się głębiej, powieść okazuje się science fiction, które tylko z&nbsp;pozoru gra według reguł realizmu.</p>
-            </div>
-        },
-        quotes: {
-            en: [
-                {
-                    quote: <div><em>Vostok</em>’s prose is of a singular beauty and purity. I cannot stop diving back into it.</div>,
-                    source: 'VRÆYDA LITERARY, the publisher'
-                }
-            ],
-            pl: [
-                {
-                    quote: <div><em>Vostok</em> pisany jest prozą o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę przestać do niej wracać.</div>,
-                    source: 'VRÆYDA LITERARY, wydawca'
-                }
-            ]
-        }
-    },
-    {
         id: 'nocturine',
         title: {
             en: 'Nocturine',
@@ -1062,6 +1003,65 @@ export const BOOKS = [
                     quote: <div>Nie będę budowała suspensu. Zdradzę już na wstępie: ta książka wciągnie was tysiącem
                         swoim macek (każdemu inna, wedle gustu).</div>,
                     source: 'Marta Sawicka-Danielak, BLUSZCZ 2/2012'
+                }
+            ]
+        }
+    },
+    {
+        id: 'vostok',
+        title: {
+            en: 'Vostok',
+            pl: 'Vostok'
+        },
+        slogan: {
+            en: <div>Forthcoming autumn 2021 from <a href={VOSTOK_URL} target="_blank"
+                                                     rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
+            pl: <div>Dostępna jesienią 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
+                href={VOSTOK_URL}
+                target="_blank"
+                rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
+        },
+        orderButton: {
+            en: {
+                message: ORDER_BUTTON["preorder"]["en"],
+                path: VOSTOK_URL
+            },
+            pl: {
+                message: ORDER_BUTTON["preorder"]["pl"],
+                path: VOSTOK_URL
+            }
+        },
+        excerptButton: {
+            en: {
+                message: EXCERPT_BUTTON["en"],
+                path: '/texts/' + this.id
+            },
+            pl: {
+                message: EXCERPT_BUTTON["pl"],
+                path: '/texts/' + this.id
+            }
+        },
+        body: {
+            en: <div>
+                <p>Poznań, Poland. The middle of a harsh winter. Weronika is in love with her best friend Wu, who has just told her about his new boyfriend. They spend most evenings drinking away their problems with a bunch of like-minded pub-goers. There’s been a terrorist attack. A girl gets murdered with a war scythe. The reality reveals a whole new layer when the friends mention a place called Vostok City.</p>
+                <p>On the surface, <em>VOSTOK</em> is a murder story. Dig deeper, and it will reveal itself as science fiction that only pretends to play by the rules of realism.</p>
+            </div>,
+            pl: <div>
+                <p>Poznań, środek mroźnej zimy. Weronika kocha się w&nbsp;swoim najlepszym przyjacielu Wu, który właśnie przedstawił jej swojego nowego chłopaka. Większość wieczorów przyjaciele spędzają w&nbsp;ulubionych knajpach, zapijając problemy z&nbsp;grupką znajomych. Niesie się wieść o&nbsp;ataku terrorystycznym. Dziewczyna ginie raniona kosą bojową. Rzeczywistość odkrywa całkiem nową warstwę, gdy znajomi wspominają o&nbsp;miejscu zwanym Vostok City.</p>
+                <p>Na pierwszy rzut oka <em>VOSTOK</em> to kryminał. Gdy jednak zajrzy się głębiej, powieść okazuje się science fiction, które tylko z&nbsp;pozoru gra według reguł realizmu.</p>
+            </div>
+        },
+        quotes: {
+            en: [
+                {
+                    quote: <div><em>Vostok</em>’s prose is of a singular beauty and purity. I cannot stop diving back into it.</div>,
+                    source: 'VRÆYDA LITERARY, the publisher'
+                }
+            ],
+            pl: [
+                {
+                    quote: <div><em>Vostok</em> pisany jest prozą o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę przestać do niej wracać.</div>,
+                    source: 'VRÆYDA LITERARY, wydawca'
                 }
             ]
         }
