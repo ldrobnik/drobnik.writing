@@ -106,6 +106,10 @@ export const Home = (props) => {
                         return null;
                     }}/>
                     {/*<Route path="/nocturine/" exact component={NocturinePage} key="nocturine"/>*/}
+                    <Route path="/vostok/" exact component={() => {
+                        window.location.href = "https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk";
+                        return null;
+                    }}/>
                     <Route path="/links/" exact component={QuickLinks} key="links"/>
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>
