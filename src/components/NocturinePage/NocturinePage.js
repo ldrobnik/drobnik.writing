@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setNocturinePage, setPageReload } from "../../actions";
 import {FADE_DURATION, AnimatedContent} from './../../data/constants';
 
-import Nocturine from '../About/Nocturine/Nocturine';
+import Nocturine from '../About/Nocturine/Book';
 import SectionSeparator from "../UI/SectionSeparator/SectionSeparator";
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from "../UI/CopyrightNote/CopyrightNote";
@@ -85,7 +85,7 @@ export const Text = (props) => {
         props.setMainPage(false)
     };
 
-    //lets the Redux store know that the Nocturine page is currently displayed
+    //lets the Redux store know that the Book page is currently displayed
     const setNocturineDisplayed = () => {
       props.setNocturinePage(true);
     };
@@ -108,7 +108,7 @@ export const Text = (props) => {
         //lets the Redux store know that the main page is currently not displayed
         setMainNotDisplayed();
 
-        ///lets the Redux store know that the Nocturine page is currently displayed
+        ///lets the Redux store know that the Book page is currently displayed
         setNocturineDisplayed();
 
         //show content after a while if page has loaded

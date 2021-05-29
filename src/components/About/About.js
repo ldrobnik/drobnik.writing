@@ -7,7 +7,7 @@ import {setTheme, setNavbarVisibility, setDataNoticeVisible, setMainPage, setNoc
 import {TEXT_NAMES} from './../../data/constants';
 
 import Intro from './Intro/Intro';
-import Nocturine from './Nocturine/Nocturine';
+import Nocturine from './Nocturine/Book';
 import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
 import CopyrightNote from './../UI/CopyrightNote/CopyrightNote';
@@ -85,7 +85,7 @@ export const About = (props) => {
         props.setMainPage(true)
     };
 
-    //lets the Redux store know that the Nocturine page is currently not displayed
+    //lets the Redux store know that the Book page is currently not displayed
     const setNocturineNotDisplayed = () => {
         props.setNocturinePage(false);
     };
@@ -106,7 +106,7 @@ export const About = (props) => {
         //lets the Redux store know that the main page is currently displayed
         setMainDisplayed();
 
-        //lets the Redux store know that the Nocturine page is currently not displayed
+        //lets the Redux store know that the Book page is currently not displayed
         setNocturineNotDisplayed();
     });
 

@@ -213,7 +213,7 @@ export const Text = (props) => {
             props.setMainPage(false)
         };
 
-        //lets the Redux store know that the Nocturine page is currently not displayed
+        //lets the Redux store know that the Book page is currently not displayed
         const setNocturineNotDisplayed = () => {
             props.setNocturinePage(false);
         };
@@ -237,7 +237,7 @@ export const Text = (props) => {
             //lets the Redux store know that the main page is currently not displayed
             setMainNotDisplayed();
 
-            //lets the Redux store know that the Nocturine page is currently not displayed
+            //lets the Redux store know that the Book page is currently not displayed
             setNocturineNotDisplayed();
 
             //show content after a while if page has loaded

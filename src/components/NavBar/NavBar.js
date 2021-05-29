@@ -229,10 +229,10 @@ const NavBar = (props) => {
     //A random text
     const randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
 
-    //specifies whether the Nocturine subpage is displayed
+    //specifies whether the Book subpage is displayed
 
     /*If the Text page is currently displayed, assigned the next text to the read link.
-   //     * If the Nocturine page is displayed, assing nocturine
+   //     * If the Book page is displayed, assing nocturine
    //     * If the About page is displayed, assign a random text to it.
    //     */
     const chosenText = props.mainDisplayed ? randomText : (props.nocturine ? 'nocturine' : nextText);

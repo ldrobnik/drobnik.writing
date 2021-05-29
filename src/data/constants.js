@@ -46,7 +46,7 @@ import tbaCover from '../assets/images/tbaCover.jpg';
 
 //Frequently used URLs
 
-export const NOCTURINE_URL = 'http://fathombooks.org/html/drobnik.html'; //Nocturine preorder
+export const NOCTURINE_URL = 'http://fathombooks.org/html/drobnik.html'; //Book preorder
 export const FATHOM_BOOKS_URL = 'http://fathombooks.org/'; //Fathom Books website
 export const VOSTOK_URL = 'https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk'; //Vostok preorder
 export const VRAEDA_URL = 'https://www.vraeydamedia.ca/literary'; //Vræyda Literary website
@@ -368,8 +368,8 @@ export const PUBLICATIONS = {
             url: NOCTURINE_URL,
             cover: nocturineCover,
             altText: {
-                en: 'Nocturine cover',
-                pl: 'Okładka Nocturine'
+                en: 'Book cover',
+                pl: 'Okładka Book'
             },
             descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2021 r. nakładem wydawnictwa Fathom Books',
             descriptionEn: 'Linked short story collection forthcoming in 2021 from Fathom Books',
@@ -377,20 +377,20 @@ export const PUBLICATIONS = {
             pieceTitle: 'Nocturine'
         },
         {
-            title: 'Nocturine. Cunninghamella',
+            title: 'Book. Cunninghamella',
             year: '2011',
             cover: nocCunCover,
             altText: {
-                en: 'Nocturine. Cunningamella cover',
-                pl: 'Okładka tomu Nocturine. Cunninghamella'
+                en: 'Book. Cunningamella cover',
+                pl: 'Okładka tomu Book. Cunninghamella'
             },
-            altPl: "Okładka Nocturine",
-            altEn: "Nocturine cover",
+            altPl: "Okładka Book",
+            altEn: "Book cover",
             url: 'http://wforma.eu/12,nocturine.-cunninghamella.html',
             descriptionPl: 'Tom prozy opublikowany przez wydawnictwo Forma',
             descriptionEn: 'Volume of fiction published by Forma',
             language: 'pl',
-            pieceTitle: 'Nocturine. Cunninghamella'
+            pieceTitle: 'Book. Cunninghamella'
         }
     ],
 
@@ -511,8 +511,8 @@ export const PUBLICATIONS = {
             issue: '#1/(#5)',
             year: '2018',
             url: 'http://fathombooks.org/html/issueone.html',
-            descriptionPl: '„8-bit Dreams” (opowiadanie ze zbioru „Nocturine”)',
-            descriptionEn: '“8-bit Dreams” (a short story from the collection “Nocturine”)',
+            descriptionPl: '„8-bit Dreams” (opowiadanie ze zbioru „Book”)',
+            descriptionEn: '“8-bit Dreams” (a short story from the collection “Book”)',
             language: 'en',
             pieceTitle: '8-bit Dreams'
 
@@ -643,8 +643,8 @@ export const PUBLICATIONS = {
             issue: 'February 2018',
             year: '2018',
             url: 'https://thewritelaunch.com/2018/01/heart-mighty-power/',
-            descriptionPl: '„Heart Mighty Power” (opowiadanie ze zbioru „Nocturine”)',
-            descriptionEn: '“Heart Mighty Power” (a short story from the collection “Nocturine”)',
+            descriptionPl: '„Heart Mighty Power” (opowiadanie ze zbioru „Book”)',
+            descriptionEn: '“Heart Mighty Power” (a short story from the collection “Book”)',
             language: 'en',
             pieceTitle: 'Heart Mighty Power'
         },
@@ -714,8 +714,8 @@ export const PUBLICATIONS = {
             issue: '#9',
             year: '2011',
             url: 'http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf',
-            descriptionPl: 'Wyjątek ze zbioru „Nocturine”',
-            descriptionEn: 'Excerpt from the collection “Nocturine”',
+            descriptionPl: 'Wyjątek ze zbioru „Book”',
+            descriptionEn: 'Excerpt from the collection “Book”',
             language: 'pl',
             pieceTitle: 'Nocturine'
         },
@@ -724,8 +724,8 @@ export const PUBLICATIONS = {
             issue: '#57',
             year: '2011',
             url: 'https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html',
-            descriptionPl: 'Wyjątek ze zbioru „Nocturine”',
-            descriptionEn: 'Excerpt from the collection “Nocturine”',
+            descriptionPl: 'Wyjątek ze zbioru „Book”',
+            descriptionEn: 'Excerpt from the collection “Book”',
             language: 'pl',
             pieceTitle: 'Nocturine'
         },
@@ -734,8 +734,8 @@ export const PUBLICATIONS = {
             issue: '1–2 (11–12) 2009/1 (13) 2010',
             year: '2009/2010',
             url: 'http://www.latarnia-morska.eu/pl/proza/513-nocturine',
-            descriptionPl: 'Wyjątek ze zbioru „Nocturine”',
-            descriptionEn: 'Excerpt from the collection “Nocturine”',
+            descriptionPl: 'Wyjątek ze zbioru „Book”',
+            descriptionEn: 'Excerpt from the collection “Book”',
             language: 'pl',
             pieceTitle: 'Nocturine'
         },
@@ -907,16 +907,6 @@ export const BOOKS = [
                 path: NOCTURINE_URL
             }
         },
-        excerptButton: {
-            en: {
-                message: EXCERPT_BUTTON["en"],
-                path: '/texts/' + this.id
-            },
-            pl: {
-                message: EXCERPT_BUTTON["pl"],
-                path: '/texts/' + this.id
-            }
-        },
         body: {
             en: <div>
                 <p>The end of the world starts like an ad campaign. When black cubes appear above the city of
@@ -1031,16 +1021,6 @@ export const BOOKS = [
             pl: {
                 message: ORDER_BUTTON["preorder"]["pl"],
                 path: VOSTOK_URL
-            }
-        },
-        excerptButton: {
-            en: {
-                message: EXCERPT_BUTTON["en"],
-                path: '/texts/' + this.id
-            },
-            pl: {
-                message: EXCERPT_BUTTON["pl"],
-                path: '/texts/' + this.id
             }
         },
         body: {

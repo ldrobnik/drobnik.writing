@@ -11,8 +11,8 @@ describe('About', () => {
         expect(about.find('withRouter(Connect(Intro))').exists()).toBe(true);
     });
 
-    it('renders Nocturine', () => {
-        expect(about.find('withRouter(Connect(Nocturine))').exists()).toBe(true);
+    it('renders Book', () => {
+        expect(about.find('withRouter(Connect(Book))').exists()).toBe(true);
     });
 
     it('renders Pubs', () => {

@@ -1,13 +1,13 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import { Nocturine } from './Nocturine';
+import { Book } from './Book';
 import { nocturineProps, nocturineText } from "../../../data/fixtures";
 
 
 const props = nocturineProps;
 
 describe('Nocturine', () => {
-    const nocturine = shallow(<Nocturine {...props} />);
+    const nocturine = shallow(<Book {...props} />);
 
     it('renders the section heading', () => {
         expect(nocturine.find('SectionHeading').exists()).toBe(true);

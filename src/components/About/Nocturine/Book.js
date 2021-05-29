@@ -66,7 +66,7 @@ const AnimatedButton = posed.div({
     }
 });
 
-export const Nocturine = (props) => {
+export const Book = (props) => {
 
     //specifies whether the quotes should be displayed - triggered by scrolling to the Waypoint element
     const [quotesVisible, setQuotesVisible] = useState(false);
@@ -148,7 +148,7 @@ export const Nocturine = (props) => {
                 <SmallSeparator />
                 <CentredPhoto
                     source={nocturineCover}
-                    altText='Nocturine cover'
+                    altText='Book cover'
                     link={'http://fathombooks.org/html/drobnik.html'}
                 />
                 <Slogan>
@@ -225,4 +225,4 @@ const mapDispatchToProps = dispatch => {
     return bindActionCreators({setPageReload}, dispatch);
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Nocturine));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Book));

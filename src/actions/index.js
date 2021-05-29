@@ -64,7 +64,7 @@ export const setMainPage = (mainPageDisplayed) => {
     }
 };
 
-//Specifies whether the Nocturine page is currently displayed
+//Specifies whether the Book page is currently displayed
 export const setNocturinePage = (nocturinePageDisplayed) => {
     return {
         type: actionTypes.SET_NOCTURINE_PAGE,
