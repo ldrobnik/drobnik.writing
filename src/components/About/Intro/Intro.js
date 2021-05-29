@@ -161,7 +161,7 @@ export const Intro = (props) => {
                 <SectionLinks
                     lang={props.lang}
                     top={false}
-                    nocturine={true}
+                    books={true}
                     pubs={true}
                     read={true}
                 />

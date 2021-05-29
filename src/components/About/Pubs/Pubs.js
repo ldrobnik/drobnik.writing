@@ -225,7 +225,7 @@ export const Pubs = (props) => {
                 <SectionLinks
                     lang={props.lang}
                     top={true}
-                    nocturine={true}
+                    books={true}
                     pubs={false}
                     read={true}
                 />

@@ -119,6 +119,7 @@ export const About = (props) => {
             <SectionWrapper>
                 <Intro/>
             </SectionWrapper>
+            <SectionWrapper id='books'>
             {BOOKS.reverse().map((book, k) => {
                 return(
                   book.displayOnMain &&  <SectionWrapper id={book.id}>
@@ -126,6 +127,7 @@ export const About = (props) => {
                   </SectionWrapper>
                 );
             })}
+            </SectionWrapper>
             <SectionWrapper id='pubs'>
                 <Pubs/>
             </SectionWrapper>

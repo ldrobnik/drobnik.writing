@@ -1310,17 +1310,10 @@ export const WEBSITE_TEXT = {
             }
         },
         {
-            id: 'vostok',
+            id: 'books',
             text: {
-                en: 'vostok',
-                pl: 'vostok'
-            }
-        },
-        {
-            id: 'nocturine',
-            text: {
-                en: 'nocturine',
-                pl: 'nocturine'
+                en: 'books',
+                pl: 'książki'
             }
         },
         {
