@@ -1305,6 +1305,13 @@ export const WEBSITE_TEXT = {
             }
         },
         {
+            id: 'vostok',
+            text: {
+                en: 'vostok',
+                pl: 'vostok'
+            }
+        },
+        {
             id: 'nocturine',
             text: {
                 en: 'nocturine',
