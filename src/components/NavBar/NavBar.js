@@ -85,7 +85,7 @@ const NavBar = (props) => {
     const [isMobile, setIsMobile] = useState(false);
 
     //specifies breakpoint for screens below which nav links are not displayed
-    const mobileBreakpoint = 660;
+    const mobileBreakpoint = 685;
 
     // Updates the window width
     const handleWindowSizeChange = () => {
