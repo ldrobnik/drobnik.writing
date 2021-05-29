@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import styled from 'styled-components';
 
 import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setBookPage, setPageReload } from "../../actions";
-import {FADE_DURATION, AnimatedContent} from './../../data/constants';
+import {BOOKS, FADE_DURATION, AnimatedContent} from './../../data/constants';
 
 import Book from '../About/Book/Book';
 import SectionSeparator from "../UI/SectionSeparator/SectionSeparator";
@@ -62,7 +62,7 @@ export const BookPage = (props) => {
 
 
     //theme to be used - based on the current text or black-and-white if the black-and-white mode is on
-    const themeToUse = props.bwMode ? 'blackAndWhite' : 'nocturine';
+    const themeToUse = props.bwMode ? 'blackAndWhite' : BOOKS[props.book].id;
 
     //updates current theme
     const updateTheme = () => {
