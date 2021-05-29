@@ -38,6 +38,7 @@ const Slogan = styled.div`
   line-height: 1.4em;
   text-align: center;
   text-transform: uppercase;
+  margin: 1.5em 0;
   
       a {
        @media all and (min-width: ${props => props.theme.smallScr}) {
@@ -153,6 +154,19 @@ export const Book = (props) => {
                 <Slogan>
                     {BOOKS[props.book].slogan[props.lang]}
                 </Slogan>
+            </AnimatedContent>
+                <Waypoint
+                    onEnter={showPreorderBtn}
+                />
+                <AnimatedButton
+                    pose={preorderBtnVisible ? 'visible' : 'hidden'}>
+                    <CentredButton
+                        message={BOOKS[props.book].orderButton[props.lang]}
+                        path={BOOKS[props.book].url}
+                    />
+                </AnimatedButton>
+            <AnimatedContent
+                pose={!props.reload ? 'visible' : 'hidden'}>
                 <Body>
                     {BOOKS[props.book].body[props.lang]}
                 </Body>
@@ -161,16 +175,6 @@ export const Book = (props) => {
                 onEnter={showQuotes}
                 bottomOffset="25%"
             />
-            <Waypoint
-                onEnter={showPreorderBtn}
-            />
-            <AnimatedButton
-                pose={preorderBtnVisible ? 'visible' : 'hidden'}>
-                <CentredButton
-                    message={BOOKS[props.book].orderButton[props.lang]}
-                    path={BOOKS[props.book].url}
-                />
-            </AnimatedButton>
             <QuoteList
                 book={props.book}
                 lang={props.lang}

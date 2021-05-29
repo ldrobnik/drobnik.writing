@@ -1058,7 +1058,7 @@ export const BOOKS = [
             ],
             pl: [
                 {
-                    quote: <div><em>Vostok</em> pisany jest prozą o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę
+                    quote: <div><em>Vostok</em> to proza o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę
                         przestać do niej wracać.</div>,
                     source: 'VRÆYDA LITERARY, wydawca'
                 }
