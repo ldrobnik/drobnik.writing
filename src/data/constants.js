@@ -1038,7 +1038,7 @@ export const BOOKS = [
                     bunch of like-minded pub-goers. There’s been a terrorist attack. A girl gets murdered with a war
                     scythe. The reality reveals a whole new layer when the friends mention a place called Vostok
                     City.</p>
-                <p>On the surface, <em>VOSTOK</em> is a murder story. Dig deeper, and it will reveal itself as science
+                <p>On the surface, <em>VOSTOK</em> is a murder story with a literary bent. Dig deeper, and it will reveal itself as science
                     fiction that only pretends to play by the rules of realism.</p>
             </div>,
             pl: <div>
@@ -1047,7 +1047,7 @@ export const BOOKS = [
                     knajpach, zapijając problemy z&nbsp;grupką znajomych. Niesie się wieść o&nbsp;ataku terrorystycznym.
                     Dziewczyna ginie raniona kosą bojową. Rzeczywistość odkrywa całkiem nową warstwę, gdy znajomi
                     wspominają o&nbsp;miejscu zwanym Vostok City.</p>
-                <p>Na pierwszy rzut oka <em>VOSTOK</em> to kryminał. Gdy jednak zajrzy się głębiej, powieść okazuje się
+                <p>Na pierwszy rzut oka <em>VOSTOK</em> to kryminał z wysokoartystycznym zacięciem. Gdy jednak zajrzy się głębiej, powieść okazuje się
                     science fiction, które tylko z&nbsp;pozoru gra według reguł realizmu.</p>
             </div>
         },
