@@ -3,7 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setNocturinePage, setPageReload } from "../../actions";
+import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setBookPage, setPageReload } from "../../actions";
 import {FADE_DURATION, AnimatedContent} from './../../data/constants';
 
 import Nocturine from '../About/Nocturine/Book';
@@ -86,8 +86,8 @@ export const Text = (props) => {
     };
 
     //lets the Redux store know that the Book page is currently displayed
-    const setNocturineDisplayed = () => {
-      props.setNocturinePage(true);
+    const setBookDisplayed = () => {
+      props.setBookPage(true);
     };
 
     useEffect(() => {
@@ -109,7 +109,7 @@ export const Text = (props) => {
         setMainNotDisplayed();
 
         ///lets the Redux store know that the Book page is currently displayed
-        setNocturineDisplayed();
+        setBookDisplayed();
 
         //show content after a while if page has loaded
         if (props.loaded) {
@@ -156,7 +156,7 @@ const mapDispatchToProps = dispatch => {
         setNavbarVisibility,
         setDataNoticeVisible,
         setMainPage,
-        setNocturinePage,
+        setBookPage,
         setPageReload
     }, dispatch);
 };

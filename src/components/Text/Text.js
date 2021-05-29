@@ -11,7 +11,7 @@ import {
     setNavbarVisibility,
     setDataNoticeVisible,
     setMainPage,
-    setNocturinePage,
+    setBookPage,
     setPageReload
 } from "../../actions";
 import {TEXTS, TEXT_NAMES, FADE_DURATION, AnimatedContent, WEBSITE_TEXT} from './../../data/constants';
@@ -214,8 +214,8 @@ export const Text = (props) => {
         };
 
         //lets the Redux store know that the Book page is currently not displayed
-        const setNocturineNotDisplayed = () => {
-            props.setNocturinePage(false);
+        const setBookNotDisplayed = () => {
+            props.setBookPage(false);
         };
 
         useEffect(() => {
@@ -238,7 +238,7 @@ export const Text = (props) => {
             setMainNotDisplayed();
 
             //lets the Redux store know that the Book page is currently not displayed
-            setNocturineNotDisplayed();
+            setBookNotDisplayed();
 
             //show content after a while if page has loaded
             if (props.loaded) {
@@ -347,7 +347,7 @@ const mapDispatchToProps = dispatch => {
             setNavbarVisibility,
             setDataNoticeVisible,
             setMainPage,
-            setNocturinePage,
+            setBookPage,
             setPageReload
         }, dispatch);
     }

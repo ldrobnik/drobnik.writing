@@ -6,6 +6,6 @@ export const SET_NAVBAR_VISIBILITY = 'SET_NAVBAR_VISIBILITY'; //Toggles NavBar v
 export const SET_DATA_NOTICE_VISIBLE = 'SET_DATA_NOTICE_VISIBLE'; //Toggles the visibility of the data storage notice
 export const SET_DATA_NOTICE_ACCEPTED = 'SET_DATA_NOTICE_ACCEPTED'; //Specifies whether the date storage notice was acknowledged by the user
 export const SET_MAIN_PAGE = 'SET_MAIN_PAGE'; //Specifies whether the main page is currently displayed
-export const SET_NOCTURINE_PAGE = 'SET_NOCTURINE_PAGE'; //Specifies whether the Book page is currently displayed
+export const SET_BOOK_PAGE = 'SET_BOOK_PAGE'; //Specifies whether the Book page is currently displayed
 export const SET_PAGE_RELOAD = 'SET_PAGE_RELOAD'; //Specifies whether the page reloading animation should be played
 export const SET_PAGE_LOADED = 'SET_PAGE_LOADED'; //Specifies whether the spinner or the content should be shown

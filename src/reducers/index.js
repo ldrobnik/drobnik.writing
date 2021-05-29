@@ -56,10 +56,10 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 mainPageDisplayed: action.mainPageDisplayed
             };
-        case actionTypes.SET_NOCTURINE_PAGE:
+        case actionTypes.SET_BOOK_PAGE:
             return {
                 ...state,
-                nocturinePageDisplayed: action.nocturinePageDisplayed
+                bookPageDisplayed: action.bookPageDisplayed
             };
         case actionTypes.SET_PAGE_RELOAD:
             return {

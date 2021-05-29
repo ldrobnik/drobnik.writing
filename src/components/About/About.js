@@ -3,11 +3,11 @@ import {bindActionCreators} from "redux";
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 
-import {setTheme, setNavbarVisibility, setDataNoticeVisible, setMainPage, setNocturinePage} from "../../actions";
+import {setTheme, setNavbarVisibility, setDataNoticeVisible, setMainPage, setBookPage} from "../../actions";
 import {TEXT_NAMES} from './../../data/constants';
 
 import Intro from './Intro/Intro';
-import Nocturine from './Nocturine/Book';
+import Book from './Nocturine/Book';
 import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
 import CopyrightNote from './../UI/CopyrightNote/CopyrightNote';
@@ -86,8 +86,8 @@ export const About = (props) => {
     };
 
     //lets the Redux store know that the Book page is currently not displayed
-    const setNocturineNotDisplayed = () => {
-        props.setNocturinePage(false);
+    const setBookNotDisplayed = () => {
+        props.setBookPage(false);
     };
 
     useEffect(() => {
@@ -107,7 +107,7 @@ export const About = (props) => {
         setMainDisplayed();
 
         //lets the Redux store know that the Book page is currently not displayed
-        setNocturineNotDisplayed();
+        setBookNotDisplayed();
     });
 
     //do not show the content until the page is loaded
@@ -120,7 +120,7 @@ export const About = (props) => {
                 <Intro/>
             </SectionWrapper>
             <SectionWrapper id='nocturine'>
-                <Nocturine/>
+                <Book book={0}/>
             </SectionWrapper>
             <SectionWrapper id='pubs'>
                 <Pubs/>
@@ -149,7 +149,7 @@ const mapDispatchToProps = dispatch => {
         setNavbarVisibility,
         setDataNoticeVisible,
         setMainPage,
-        setNocturinePage
+        setBookPage
     }, dispatch);
 };
 
