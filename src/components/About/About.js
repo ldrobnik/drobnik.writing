@@ -119,9 +119,9 @@ export const About = (props) => {
             <SectionWrapper>
                 <Intro/>
             </SectionWrapper>
-            {BOOKS.map((book, k) => {
+            {BOOKS.reverse().map((book, k) => {
                 return(
-                  book.displayOnMain &&  <SectionWrapper id={book.title}>
+                  book.displayOnMain &&  <SectionWrapper id={book.id}>
                       <Book book={k}/>
                   </SectionWrapper>
                 );

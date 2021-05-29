@@ -878,9 +878,9 @@ const ORDER_BUTTON = {
         en: 'Preorder your copy',
         pl: 'Zamów w przedsprzedaży'
     },
-    buy: {
-        en: 'Buy your copy',
-        pl: 'Kup teraz'
+    order: {
+        en: 'Order your copy',
+        pl: 'Zamów egzemplarz'
     }
 }
 
