@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setBookPage, setPageReload } from "../../actions";
 import {FADE_DURATION, AnimatedContent} from './../../data/constants';
 
-import Nocturine from '../About/Nocturine/Book';
+import Book from '../About/Book/Book';
 import SectionSeparator from "../UI/SectionSeparator/SectionSeparator";
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from "../UI/CopyrightNote/CopyrightNote";
@@ -124,7 +124,7 @@ export const Text = (props) => {
             <TopAnchor>
                 <div id='top'></div>
             </TopAnchor>
-            <Nocturine />
+            <Book book={props.book} />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SubpageLinks

@@ -6,7 +6,7 @@ import { nocturineProps, nocturineText } from "../../../data/fixtures";
 
 const props = nocturineProps;
 
-describe('Nocturine', () => {
+describe('Book', () => {
     const nocturine = shallow(<Book {...props} />);
 
     it('renders the section heading', () => {

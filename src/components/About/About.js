@@ -7,7 +7,7 @@ import {setTheme, setNavbarVisibility, setDataNoticeVisible, setMainPage, setBoo
 import {BOOKS, TEXT_NAMES} from './../../data/constants';
 
 import Intro from './Intro/Intro';
-import Book from './Nocturine/Book';
+import Book from './Book/Book';
 import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
 import CopyrightNote from './../UI/CopyrightNote/CopyrightNote';

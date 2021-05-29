@@ -14,7 +14,7 @@ import {
     setBookPage,
     setPageReload
 } from "../../actions";
-import {TEXTS, TEXT_NAMES, FADE_DURATION, AnimatedContent, WEBSITE_TEXT} from './../../data/constants';
+import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES, FADE_DURATION, AnimatedContent, WEBSITE_TEXT} from './../../data/constants';
 
 import Credits from './Credits/Credits';
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
@@ -273,7 +273,7 @@ export const Text = (props) => {
                         lang={props.lang}
                         textName={textName}/>
                 </AnimatedContent>
-                {textName === "nocturine" &&
+                {BOOK_LIST.includes(textName) &&
                 <React.Fragment>
                     <Waypoint
                         onEnter={showPreorderBtn}
@@ -281,8 +281,8 @@ export const Text = (props) => {
                     <AnimatedButton
                         pose={preorderBtnVisible ? 'visible' : 'hidden'}>
                         <CentredButton
-                            message={WEBSITE_TEXT.nocturine.preorderButton[props.lang].message}
-                            path={WEBSITE_TEXT.nocturine.preorderButton[props.lang].path}
+                            message={BOOKS[BOOK_LIST.indexOf(textName)].orderButton[props.lang]}
+                            path={BOOKS[BOOK_LIST.indexOf(textName)].url}
                         />
                     </AnimatedButton>
                 </React.Fragment>

@@ -108,7 +108,7 @@ The navigation bar’s minimalistic icon-based design contains the following ele
 The home page of the website containing the following sections:
 
 * basic information about the author (**Intro.js**);
-* a teaser of the upcoming book (**Book.js**);
+* a teaser of the upcoming books (**Book.js**);
 * an interactive list of publications — they are displayed as tiles and can be filtered by language (**Pubs.js**);
 * a list of links to several literary works (**Read.js**).
 
