@@ -157,7 +157,13 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'novel fragment',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p><em>Vostok</em> is forthcoming later this year from <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer"><em>Vræyda Literary</em></a>. Its fragments were published in Polish in <a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><em>Lampa</em></a> Issue&nbsp;3/2012 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><em>wydawnictwo&nbsp;j</em></a> website.</p>,
+            description: <p><em>Vostok</em> is forthcoming later this year from <a href={VOSTOK_URL} target="_blank"
+                                                                                   rel="noopener noreferrer"><em>Vræyda
+                Literary</em></a>. Its fragments were published in Polish in <a href="http://lampa.art.pl/"
+                                                                                target="_blank"
+                                                                                rel="noopener noreferrer"><em>Lampa</em></a> Issue&nbsp;3/2012
+                and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
+                          target="_blank" rel="noopener noreferrer"><em>wydawnictwo&nbsp;j</em></a> website.</p>,
             content: VOSTOK_EN,
             theme: 'vostok'
         },
@@ -181,8 +187,9 @@ export const TEXTS = {
             title: 'Landmines',
             subtitle: 'flash fiction',
             credits: 'Written by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p>The piece published in <a href="https://foglifterjournal.com/product/foglifter-journal-volume-4-issue-1/" target="_blank"
-                                                      rel="noopener noreferrer"><em>Foglifter</em></a> Volume&nbsp;4
+            description: <p>The piece published in <a
+                href="https://foglifterjournal.com/product/foglifter-journal-volume-4-issue-1/" target="_blank"
+                rel="noopener noreferrer"><em>Foglifter</em></a> Volume&nbsp;4
                 Issue&nbsp;1.</p>,
             content: LANDMINES_EN,
             theme: 'landmines'
@@ -294,8 +301,12 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'fragment powieści',
             credits: 'Tekst: Łukasz Drobnik.',
-            description: <p>„Vostok” ukaże się jeszcze w&nbsp;roku nakładem wydawnictwa <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer"><em>Vræyda Literary</em></a>. Fragmenty książki można było przeczytać po polsku w&nbsp;<a href="http://lampa.art.pl/" target="_blank"
-                                                                      rel="noopener noreferrer"><em>Lampie</em></a> (numer&nbsp;3/2012)
+            description: <p>„Vostok” ukaże się jeszcze w&nbsp;roku nakładem wydawnictwa <a href={VOSTOK_URL}
+                                                                                           target="_blank"
+                                                                                           rel="noopener noreferrer"><em>Vræyda
+                Literary</em></a>. Fragmenty książki można było przeczytać po polsku w&nbsp;<a
+                href="http://lampa.art.pl/" target="_blank"
+                rel="noopener noreferrer"><em>Lampie</em></a> (numer&nbsp;3/2012)
                 i&nbsp;na stronie <a
                     href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
                     target="_blank" rel="noopener noreferrer"><em>wydawnictwa&nbsp;j</em></a>.</p>,
@@ -321,9 +332,10 @@ export const TEXTS = {
             title: 'Miny',
             subtitle: 'flash fiction',
             credits: 'Tekst i przekład z angielskiego: Łukasz Drobnik.',
-            description: <p>Tekst ukazał się po angielsku w&nbsp;piśmie <a href="https://foglifterjournal.com/product/foglifter-journal-volume-4-issue-1/"
-                                                                           target="_blank"
-                                                                           rel="noopener noreferrer"><em>Foglifter</em></a> (Volume&nbsp;4
+            description: <p>Tekst ukazał się po angielsku w&nbsp;piśmie <a
+                href="https://foglifterjournal.com/product/foglifter-journal-volume-4-issue-1/"
+                target="_blank"
+                rel="noopener noreferrer"><em>Foglifter</em></a> (Volume&nbsp;4
                 Issue&nbsp;1).</p>,
             content: LANDMINES_PL,
             theme: 'landmines'
@@ -1005,7 +1017,8 @@ export const BOOKS = [
         url: VOSTOK_URL,
         slogan: {
             en: <div>Forthcoming autumn 2021 from <a href={VOSTOK_URL} target="_blank"
-                                                     rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
+                                                     rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>
+            </div>,
             pl: <div>Dostępna jesienią 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
                 href={VOSTOK_URL}
                 target="_blank"
@@ -1017,24 +1030,36 @@ export const BOOKS = [
         },
         body: {
             en: <div>
-                <p>Poznań, Poland. The middle of a harsh winter. Weronika is in love with her best friend Wu, who has just told her about his new boyfriend. They spend most evenings drinking away their problems with a bunch of like-minded pub-goers. There’s been a terrorist attack. A girl gets murdered with a war scythe. The reality reveals a whole new layer when the friends mention a place called Vostok City.</p>
-                <p>On the surface, <em>VOSTOK</em> is a murder story. Dig deeper, and it will reveal itself as science fiction that only pretends to play by the rules of realism.</p>
+                <p>Poznań, Poland. The middle of a harsh winter. Weronika is in love with her best friend Wu, who has
+                    just told her about his new boyfriend. They spend most evenings drinking away their problems with a
+                    bunch of like-minded pub-goers. There’s been a terrorist attack. A girl gets murdered with a war
+                    scythe. The reality reveals a whole new layer when the friends mention a place called Vostok
+                    City.</p>
+                <p>On the surface, <em>VOSTOK</em> is a murder story. Dig deeper, and it will reveal itself as science
+                    fiction that only pretends to play by the rules of realism.</p>
             </div>,
             pl: <div>
-                <p>Poznań, środek mroźnej zimy. Weronika kocha się w&nbsp;swoim najlepszym przyjacielu Wu, który właśnie przedstawił jej swojego nowego chłopaka. Większość wieczorów przyjaciele spędzają w&nbsp;ulubionych knajpach, zapijając problemy z&nbsp;grupką znajomych. Niesie się wieść o&nbsp;ataku terrorystycznym. Dziewczyna ginie raniona kosą bojową. Rzeczywistość odkrywa całkiem nową warstwę, gdy znajomi wspominają o&nbsp;miejscu zwanym Vostok City.</p>
-                <p>Na pierwszy rzut oka <em>VOSTOK</em> to kryminał. Gdy jednak zajrzy się głębiej, powieść okazuje się science fiction, które tylko z&nbsp;pozoru gra według reguł realizmu.</p>
+                <p>Poznań, środek mroźnej zimy. Weronika kocha się w&nbsp;swoim najlepszym przyjacielu Wu, który właśnie
+                    przedstawił jej swojego nowego chłopaka. Większość wieczorów przyjaciele spędzają w&nbsp;ulubionych
+                    knajpach, zapijając problemy z&nbsp;grupką znajomych. Niesie się wieść o&nbsp;ataku terrorystycznym.
+                    Dziewczyna ginie raniona kosą bojową. Rzeczywistość odkrywa całkiem nową warstwę, gdy znajomi
+                    wspominają o&nbsp;miejscu zwanym Vostok City.</p>
+                <p>Na pierwszy rzut oka <em>VOSTOK</em> to kryminał. Gdy jednak zajrzy się głębiej, powieść okazuje się
+                    science fiction, które tylko z&nbsp;pozoru gra według reguł realizmu.</p>
             </div>
         },
         quotes: {
             en: [
                 {
-                    quote: <div><em>Vostok</em>’s prose is of a singular beauty and purity. I cannot stop diving back into it.</div>,
+                    quote: <div><em>Vostok</em>’s prose is of a singular beauty and purity. I cannot stop diving back
+                        into it.</div>,
                     source: 'VRÆYDA LITERARY, the publisher'
                 }
             ],
             pl: [
                 {
-                    quote: <div><em>Vostok</em> pisany jest prozą o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę przestać do niej wracać.</div>,
+                    quote: <div><em>Vostok</em> pisany jest prozą o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę
+                        przestać do niej wracać.</div>,
                     source: 'VRÆYDA LITERARY, wydawca'
                 }
             ]
@@ -1116,33 +1141,50 @@ export const WEBSITE_TEXT = {
         },
         body: {
             en: <div>
-                <p>I’m a Polish writer writing mostly in English. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from longer forms). I live in Kraków, Poland.</p>
-                <p>I have two books coming out this year: a linked short story collection <AnchorLink href='#nocturine' offset="60px"><strong>NOCTURINE</strong></AnchorLink> to be published by <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>,
-                    and a novel <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> forthcoming from <a href={VRAEDA_URL} target="_blank" rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>.</p>
-                    <p>My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Quarterly West</em>, <em>Pithead
-                        Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
-                        Annual</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y Literary
-                        Magazine</em>, and
+                <p>I’m a Polish writer writing mostly in English. My favourite pastime is taking literary fiction and
+                    mixing it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from
+                    longer forms). I live in Kraków, Poland.</p>
+                <p>I have two books coming out this year: a linked short story collection <AnchorLink href='#nocturine'
+                                                                                                      offset="60px"><strong>NOCTURINE</strong></AnchorLink> to
+                    be published by <a href={NOCTURINE_URL} target="_blank"
+                                       rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>,
+                    and a novel <a href={VOSTOK_URL} target="_blank"
+                                   rel="noopener noreferrer"><strong>VOSTOK</strong></a> forthcoming from <a
+                        href={VRAEDA_URL} target="_blank"
+                        rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>.</p>
+                <p>My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
+                    Review</em>, <em>Quarterly West</em>, <em>Pithead
+                    Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
+                    Annual</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y Literary
+                    Magazine</em>, and
                     elsewhere.</p>
-                    <p>Below you can find
+                <p>Below you can find
                     a <AnchorLink href='#pubs' offset="60px"><strong>FULL LIST OF PUBLICATIONS</strong></AnchorLink> and
                     also <AnchorLink href='#read' offset="60px"><strong>READ</strong></AnchorLink> some of my pieces.
                 </p>
                 <p className="centered">email: <em>drobniklukasz [at] gmail [dot] com</em></p>
             </div>,
             pl: <div>
-                <p>Jestem polskim pisarzem piszącym głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę wysokoartystyczną
+                <p>Jestem polskim pisarzem piszącym głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę
+                    wysokoartystyczną
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków. Do tego jestem ogromnym fanem <em>flash
                         fiction</em> (nie stronię jednak od dłuższych form). Mieszkam w Krakowie.</p>
-                <p>W&nbsp;tym roku ukażą się moje dwie książki: zbiór powiązanych fabularnie opowiadań <AnchorLink href='#nocturine'
-                                                                                   offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href={NOCTURINE_URL} target="_blank"
-                                                                                                                                                                 rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>) i&nbsp;powieść <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> (wydawnictwo <a href={VRAEDA_URL} target="_blank" rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>).</p>
-                <p>Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Quarterly
-                        West</em>, <em>Pithead
-                        Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
-                        Annual</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X-R-A-Y Literary
-                        Magazine</em>.</p>
-                    <p>Poniżej można
+                <p>W&nbsp;tym roku ukażą się moje dwie książki: zbiór powiązanych fabularnie opowiadań <AnchorLink
+                    href='#nocturine'
+                    offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href={NOCTURINE_URL}
+                                                                                          target="_blank"
+                                                                                          rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>)
+                    i&nbsp;powieść <a href={VOSTOK_URL} target="_blank"
+                                      rel="noopener noreferrer"><strong>VOSTOK</strong></a> (wydawnictwo <a
+                        href={VRAEDA_URL} target="_blank"
+                        rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>).</p>
+                <p>Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
+                    Review</em>, <em>Quarterly
+                    West</em>, <em>Pithead
+                    Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
+                    Annual</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X-R-A-Y Literary
+                    Magazine</em>.</p>
+                <p>Poniżej można
                     znaleźć <AnchorLink href='#pubs' offset="60px"><strong>PEŁNĄ LISTĘ PUBLIKACJI</strong></AnchorLink>,
                     a&nbsp;także <AnchorLink href='#read' offset="60px"><strong>POCZYTAĆ</strong></AnchorLink> kilka
                     moich
@@ -1214,230 +1256,104 @@ export const WEBSITE_TEXT = {
             }
         ]
     },
-    nocturine: {
+    publications: {
         title: {
-            en: 'Nocturine',
-            pl: 'Nocturine'
+            en: 'Publications',
+            pl: 'Publikacje'
         },
-        slogan: {
-            en: <div>Forthcoming spring 2021 from <a href={NOCTURINE_URL} target="_blank"
-                                                    rel="noopener noreferrer"><strong>FATHOM
-                BOOKS</strong></a></div>,
-            pl: <div>Dostępna wiosną 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
-                href={NOCTURINE_URL}
-                target="_blank"
-                rel="noopener noreferrer"><strong>FATHOM
-                BOOKS</strong></a></div>,
-        },
-        preorderButton: {
+        headlines: {
             en: {
-                message: ORDER_BUTTON["preorder"]["en"],
-                path: NOCTURINE_URL
+                books: 'Books',
+                press: 'Press',
+                collections: 'Collections'
             },
             pl: {
-                message: ORDER_BUTTON["preorder"]["pl"],
-                path: NOCTURINE_URL
+                books: 'Książki',
+                press: 'Prasa',
+                collections: 'Zbiory'
             }
         },
-            body: {
-                en: <div>
-                    <p>The end of the world starts like an ad campaign. When black cubes appear above the city of
-                        Poznań,
-                        some think it’s just another mobile network operator entering the market. These include Mietek,
-                        an
-                        unemployed man in his twenties, suddenly abandoned by his boyfriend. Soon his best friend also
-                        disappears while the black cubes in the sky start to multiply, taking up more and more of the
-                        urban
-                        space.</p>
-                    <p><em>NOCTURINE</em> is a linked short story collection that takes you on a genre-bending journey
-                        from
-                        contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a
-                        homestead haunted by dummies, to the inside of a human body. Each of six pieces is told by
-                        a different narrator in a frantic yet melancholic style.</p>
-                </div>,
-                pl: <div>
-                    <p>Koniec świata zaczyna się jak kampania reklamowa. Gdy nad Poznaniem zawisają czarne sześciany,
-                        niektórzy sądzą, że to po prostu kolejny operator sieci komórkowej wchodzi na rynek. Do tej
-                        grupy
-                        należy Mietek, bezrobotny dwudziestoparolatek, którego nagle opuszcza chłopak. Niedługa jego
-                        najlepsza przyjaciółka także znika, podczas gdy czarne sześciany na niebie zaczynają się mnożyć,
-                        zabierając coraz więcej miejskiej przestrzeni.</p>
-                    <p><em>NOCTURINE</em> to zbiór powiązanych fabularnie opowiadań, który zabiera czytelnika na
-                        niejednoznaczną gatunkowo podróż z&nbsp;Poznania pożeranego przez ośmiobitową amebę przez dom
-                        złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze
-                        ludzkiego ciała. Każdy z&nbsp;sześciu tekstów ma innego narratora, który snuje opowieść
-                        w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
-                </div>
-            },
-            excerptButton: {
-                en: {
-                    message: 'Read an excerpt',
-                    path: '/texts/nocturine'
-                },
-                pl: {
-                    message: 'Przeczytaj fragment',
-                    path: '/texts/nocturine'
-                }
-            },
-            quotes: {
-                en: [
-                    {
-                        quote: <div>Drobnik wowed us with his free-wheeling sentence structure + utterly unique
-                            vision.</div>,
-                        source: 'FATHOM BOOKS, the publisher'
-                    },
-                    {
-                        quote: <div>To say <em>Nocturine</em> is oneiric isn’t enough — it’s a psychedelic. It kicks in
-                            slowly, swaying you from the very first sentences. Hypnotic phrase. Beautiful!</div>,
-                        source: 'Patrycja Janowska, LAMPA 1–2/2012'
-                    },
-                    {
-                        quote: <div>Drobnik creates an evocative, oppressive mood through the dangerous unknown; subtly,
-                            with a single shift outside the boundaries of what we are used to.</div>,
-                        source: 'Ilona Witkowska, ODRA 5/2012'
-                    },
-                    {
-                        quote: <div>Drobnik’s strategy is to combine a fast-paced plot typical of popular literature
-                            with
-                            the highly metaphorical language of literary fiction.</div>,
-                        source: 'Rafał Derda, ELEWATOR 2/2012'
-                    },
-                    {
-                        quote: <div>I’m not going to build suspense. Let me say it right away: this book will drag you
-                            in
-                            with its thousand tentacles (everyone gets their own, according to their liking).</div>,
-                        source: 'Marta Sawicka-Danielak, BLUSZCZ 2/2012'
-                    }
-                ],
-                pl: [
-                    {
-                        quote: <div>Drobnik zachwycił nas swoją beztroską składnią i&nbsp;absolutnie wyjątkową
-                            wizją.</div>,
-                        source: 'FATHOM BOOKS, wydawca'
-                    },
-                    {
-                        quote: <div>Powiedzieć, że „Nocturine” jest oniryczne, to za mało — to psychodelik jest. Wchodzi
-                            miękko, od pierwszych zdań już kołysze. Fraza hipnotyczna. Coś pięknego!</div>,
-                        source: 'Patrycja Janowska, LAMPA 1–2/2012'
-                    },
-                    {
-                        quote: <div>Drobnik tworzy sugestywnie nastrój osaczenia przez groźne nieznane; subtelnie,
-                            jednym
-                            przesunięciem poza ramy naszych przyzwyczajeń.</div>,
-                        source: 'Ilona Witkowska, ODRA 5/2012'
-                    },
-                    {
-                        quote: <div>Przyjęta przez Drobnika strategia polega na połączeniu przynależnej literaturze
-                            popularnej wartkości fabuły z&nbsp;gęstym, mocno zmetaforyzowanym językiem literatury
-                            pięknej.</div>,
-                        source: 'Rafał Derda, ELEWATOR 2/2012'
-                    },
-                    {
-                        quote: <div>Nie będę budowała suspensu. Zdradzę już na wstępie: ta książka wciągnie was tysiącem
-                            swoim macek (każdemu inna, wedle gustu).</div>,
-                        source: 'Marta Sawicka-Danielak, BLUSZCZ 2/2012'
-                    }
-                ]
-            }
-        },
-        publications: {
-            title: {
-                en: 'Publications',
-                pl: 'Publikacje'
-            },
-            headlines: {
-                en: {
-                    books: 'Books',
-                    press: 'Press',
-                    collections: 'Collections'
-                },
-                pl: {
-                    books: 'Książki',
-                    press: 'Prasa',
-                    collections: 'Zbiory'
-                }
-            },
-            chooseLanguage: {
-                en: {
-                    label: 'Display pieces written in:',
-                    english: 'English',
-                    polish: 'Polish'
-                },
-                pl: {
-                    label: 'Wyświetl teksty napisane po:',
-                    english: 'angielsku',
-                    polish: 'polsku'
-                }
-            }
-        },
-        read: {
-            title: {
-                en: 'Reading Room',
-                pl: 'Czytelnia'
-            },
-            introduction: {
-                en: <div>Here are a handful of my pieces.<br/>Maybe you’d like to read some of them:</div>,
-                pl: <div>Oto garstka moich tekstów.<br/>Może zechcesz niektóre z&nbsp;nich przeczytać:</div>
-            }
-        },
-        sectionLinks: [
-            {
-                id: 'top',
-                text: {
-                    en: 'top',
-                    pl: 'góra'
-                }
-            },
-            {
-                id: 'nocturine',
-                text: {
-                    en: 'nocturine',
-                    pl: 'nocturine'
-                }
-            },
-            {
-                id: 'pubs',
-                text: {
-                    en: 'publications',
-                    pl: 'publikacje'
-                }
-            },
-            {
-                id: 'read',
-                text: {
-                    en: 'reading room',
-                    pl: 'czytelnia'
-                }
-            }
-        ],
-        text: {
-            nextText: {
-                en: 'up next: ',
-                pl: 'następny tekst: '
-            },
-            top: {
-                en: 'top',
-                pl: 'góra'
-            },
-            home: {
-                en: 'home',
-                pl: 'strona główna'
-            }
-        },
-        dataNotice: {
+        chooseLanguage: {
             en: {
-                message: <div>This website collects basic information about user preferences (language and
-                    black-and-white
-                    mode selection).</div>,
-                button: 'I understand'
+                label: 'Display pieces written in:',
+                english: 'English',
+                polish: 'Polish'
             },
             pl: {
-                message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór dotyczący
-                    języka i&nbsp;trybu czarno-białego).</div>,
-                button: 'Rozumiem'
+                label: 'Wyświetl teksty napisane po:',
+                english: 'angielsku',
+                polish: 'polsku'
             }
         }
-    };
+    },
+    read: {
+        title: {
+            en: 'Reading Room',
+            pl: 'Czytelnia'
+        },
+        introduction: {
+            en: <div>Here are a handful of my pieces.<br/>Maybe you’d like to read some of them:</div>,
+            pl: <div>Oto garstka moich tekstów.<br/>Może zechcesz niektóre z&nbsp;nich przeczytać:</div>
+        }
+    },
+    sectionLinks: [
+        {
+            id: 'top',
+            text: {
+                en: 'top',
+                pl: 'góra'
+            }
+        },
+        {
+            id: 'nocturine',
+            text: {
+                en: 'nocturine',
+                pl: 'nocturine'
+            }
+        },
+        {
+            id: 'pubs',
+            text: {
+                en: 'publications',
+                pl: 'publikacje'
+            }
+        },
+        {
+            id: 'read',
+            text: {
+                en: 'reading room',
+                pl: 'czytelnia'
+            }
+        }
+    ],
+    text: {
+        nextText: {
+            en: 'up next: ',
+            pl: 'następny tekst: '
+        },
+        top: {
+            en: 'top',
+            pl: 'góra'
+        },
+        home: {
+            en: 'home',
+            pl: 'strona główna'
+        }
+    },
+    dataNotice: {
+        en: {
+            message: <div>This website collects basic information about user preferences (language and
+                black-and-white
+                mode selection).</div>,
+            button: 'I understand'
+        },
+        pl: {
+            message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór dotyczący
+                języka i&nbsp;trybu czarno-białego).</div>,
+            button: 'Rozumiem'
+        }
+    }
+};
 
 //Content of quick links (to be used on Instagram)
 
@@ -1516,11 +1432,11 @@ export const PULSATE_KEYFRAMES = keyframes`
   0% {
     opacity: 1;
   }
-  
+
   50% {
     opacity: 0.5;
   }
-  
+
   100% {
     opacity: 1;
   }
@@ -1532,12 +1448,12 @@ export const POP_KEYFRAMES = keyframes`
   0% {
     transform: scale(1, 1);
   }
-  
+
   30% {
     transform: scale(1.05, 1.05);
-   
+
   }
-  
+
   100% {
     transform: scale(1, 1);
   }
