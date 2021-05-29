@@ -23,7 +23,7 @@ const Body = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.serif};
   line-height: 1.4em;
-  margin-top: 1.3em;
+  margin-top: 2em;
   margin-bottom: 2.5em;
   
      @media all and (min-width: ${props => props.theme.smallScr}) {
@@ -38,7 +38,7 @@ const Slogan = styled.div`
   line-height: 1.4em;
   text-align: center;
   text-transform: uppercase;
-  margin: 1.5em 0;
+  margin: 1.5em 0 2em 0;
   
       a {
        @media all and (min-width: ${props => props.theme.smallScr}) {

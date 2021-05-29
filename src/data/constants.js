@@ -1151,9 +1151,10 @@ export const WEBSITE_TEXT = {
                                                                                                       offset="60px"><strong>NOCTURINE</strong></AnchorLink> to
                     be published by <a href={NOCTURINE_URL} target="_blank"
                                        rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>,
-                    and a novel <a href={VOSTOK_URL} target="_blank"
-                                   rel="noopener noreferrer"><strong>VOSTOK</strong></a> forthcoming from <a
-                        href={VRAEDA_URL} target="_blank"
+                    and a novel <AnchorLink
+                        href='#vostok'
+                        offset="60px"><strong>VOSTOK</strong></AnchorLink> forthcoming from <a
+                        href={VOSTOK_URL} target="_blank"
                         rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>.</p>
                 <p>My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly West</em>, <em>Pithead
@@ -1177,9 +1178,10 @@ export const WEBSITE_TEXT = {
                     offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href={NOCTURINE_URL}
                                                                                           target="_blank"
                                                                                           rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>)
-                    i&nbsp;powieść <a href={VOSTOK_URL} target="_blank"
-                                      rel="noopener noreferrer"><strong>VOSTOK</strong></a> (wydawnictwo <a
-                        href={VRAEDA_URL} target="_blank"
+                    i&nbsp;powieść <AnchorLink
+                        href='#vostok'
+                        offset="60px"><strong>VOSTOK</strong></AnchorLink> (wydawnictwo <a
+                        href={VOSTOK_URL} target="_blank"
                         rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>).</p>
                 <p>Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly
