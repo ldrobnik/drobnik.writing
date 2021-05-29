@@ -47,7 +47,7 @@ const Wrapper = styled.div`
 `;
 
 
-export const Text = (props) => {
+export const BookPage = (props) => {
 
     //shows the content
     const showContent = () => {
@@ -161,4 +161,4 @@ const mapDispatchToProps = dispatch => {
     }, dispatch);
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Text);
+export default connect(mapStateToProps, mapDispatchToProps)(BookPage);
