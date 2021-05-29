@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import posed from 'react-pose';
 
-import {WEBSITE_TEXT} from "./../../../data/constants";
+import {BOOKS} from "./../../../data/constants";
 
 import Quote from './Quote/Quote';
 
@@ -43,7 +43,7 @@ const QuoteList = (props) => {
         <Wrapper>
             <AnimatedList
                 pose={props.visible ? 'visible' : 'hidden'}>
-                {WEBSITE_TEXT.nocturine.quotes[props.lang].map((text, k) => {
+                {BOOKS[props.book].quotes[props.lang].map((text, k) => {
                     return (
                         <AnimatedQuote
                             key={k}
