@@ -873,7 +873,7 @@ const ORDER_BUTTON = {
 }
 
 //Excerpt button text
-const EXCERPT_BUTTON = {
+export const EXCERPT_BUTTON = {
     en: 'Read an excerpt',
     pl: 'Przeczytaj fragment'
 };
@@ -887,6 +887,8 @@ export const BOOKS = [
             pl: 'Nocturine'
         },
         displayOnMain: true,
+        cover: nocturineCover,
+        url: NOCTURINE_URL,
         slogan: {
             en: <div>Forthcoming spring 2021 from <a href={NOCTURINE_URL} target="_blank"
                                                      rel="noopener noreferrer"><strong>FATHOM
@@ -898,14 +900,8 @@ export const BOOKS = [
                 BOOKS</strong></a></div>,
         },
         orderButton: {
-            en: {
-                message: ORDER_BUTTON["preorder"]["en"],
-                path: NOCTURINE_URL
-            },
-            pl: {
-                message: ORDER_BUTTON["preorder"]["pl"],
-                path: NOCTURINE_URL
-            }
+            en: ORDER_BUTTON["preorder"]["en"],
+            pl: ORDER_BUTTON["preorder"]["pl"]
         },
         body: {
             en: <div>
@@ -1005,6 +1001,8 @@ export const BOOKS = [
             pl: 'Vostok'
         },
         displayOnMain: true,
+        cover: vostokCover,
+        url: VOSTOK_URL,
         slogan: {
             en: <div>Forthcoming autumn 2021 from <a href={VOSTOK_URL} target="_blank"
                                                      rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
@@ -1014,14 +1012,8 @@ export const BOOKS = [
                 rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
         },
         orderButton: {
-            en: {
-                message: ORDER_BUTTON["preorder"]["en"],
-                path: VOSTOK_URL
-            },
-            pl: {
-                message: ORDER_BUTTON["preorder"]["pl"],
-                path: VOSTOK_URL
-            }
+            en: ORDER_BUTTON["preorder"]["en"],
+            pl: ORDER_BUTTON["preorder"]["pl"]
         },
         body: {
             en: <div>

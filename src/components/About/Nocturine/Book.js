@@ -7,9 +7,8 @@ import posed from 'react-pose';
 import {Waypoint} from 'react-waypoint';
 
 import {setPageReload} from "../../../actions";
-import {WEBSITE_TEXT, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from './../../../data/constants';
+import {EXCERPT_BUTTON, BOOKS, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from './../../../data/constants';
 
-import nocturineCover from '../../../assets/images/nocturineCover.jpg';
 import CentredPhoto from '../../UI/CentredPhoto/CentredPhoto';
 import SectionHeading from '../../UI/SectionHeading/SectionHeading'
 import QuoteList from '../QuoteList/QuoteList';
@@ -142,20 +141,20 @@ export const Book = (props) => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionHeading
-                    title={WEBSITE_TEXT.nocturine.title[props.lang]}
+                    title={BOOKS[props.book].title[props.lang]}
                     subtitle=""
                 />
                 <SmallSeparator />
                 <CentredPhoto
-                    source={nocturineCover}
+                    source={BOOKS[props.book].cover}
                     altText='Book cover'
-                    link={'http://fathombooks.org/html/drobnik.html'}
+                    link={BOOKS[props.book].url}
                 />
                 <Slogan>
-                    {WEBSITE_TEXT.nocturine.slogan[props.lang]}
+                    {BOOKS[props.book].slogan[props.lang]}
                 </Slogan>
                 <Body>
-                    {WEBSITE_TEXT.nocturine.body[props.lang]}
+                    {BOOKS[props.book].body[props.lang]}
                 </Body>
             </AnimatedContent>
             <Waypoint
@@ -168,11 +167,12 @@ export const Book = (props) => {
             <AnimatedButton
                 pose={preorderBtnVisible ? 'visible' : 'hidden'}>
                 <CentredButton
-                    message={WEBSITE_TEXT.nocturine.preorderButton[props.lang].message}
-                    path={WEBSITE_TEXT.nocturine.preorderButton[props.lang].path}
+                    message={BOOKS[props.book].orderButton[props.lang]}
+                    path={BOOKS[props.book].url}
                 />
             </AnimatedButton>
             <QuoteList
+                book={props.book}
                 lang={props.lang}
                 visible={quotesVisible}
             />
@@ -182,8 +182,8 @@ export const Book = (props) => {
             <AnimatedButton
                 pose={excerptBtnVisible ? 'visible' : 'hidden'}>
                 <CentredButton
-                    message={WEBSITE_TEXT.nocturine.excerptButton[props.lang].message}
-                    path={WEBSITE_TEXT.nocturine.excerptButton[props.lang].path}
+                    message={EXCERPT_BUTTON[props.lang]}
+                    path={'/texts/' + BOOKS[props.book].id}
                 />
             </AnimatedButton>
             <Waypoint
