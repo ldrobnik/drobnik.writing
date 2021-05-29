@@ -41,6 +41,7 @@ import posed from "react-pose";
 //source urls for book covers
 import nocturineCover from '../assets/images/nocturineCover.jpg';
 import nocCunCover from '../assets/images/nocCunCover.jpg';
+import vostokCover from '../assets/images/vostokCover.jpg';
 import tbaCover from '../assets/images/tbaCover.jpg';
 
 //Names of available texts
@@ -336,8 +337,8 @@ export const PUBLICATIONS = {
         {
             title: 'Vostok',
             year: '',
-            url: 'https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj',
-            cover: tbaCover,
+            url: 'https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk',
+            cover: vostokCover,
             altText: {
                 en: 'Vostok cover',
                 pl: 'Okładka Vostok'
@@ -919,31 +920,33 @@ export const WEBSITE_TEXT = {
         },
         body: {
             en: <div>
-                <p>I’m a bilingual writer creating fiction in my native Polish but recently mostly in English. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from longer forms). I live in Kraków, Poland.</p>
-                <p><AnchorLink href='#nocturine' offset="60px"><strong>NOCTURINE</strong></AnchorLink>, my linked short story collection, is available for preorder from <a href="http://fathombooks.org/html/drobnik.html" target="_blank" rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>,
-                    and I have a novel <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> forthcoming later this year from <a href="https://www.vraeydamedia.ca/literary" target="_blank" rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>. My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Quarterly West</em>, <em>Pithead
+                <p>I’m a Polish writer writing mostly in English. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from longer forms). I live in Kraków, Poland.</p>
+                <p>I have two books coming out this year: a linked short story collection <AnchorLink href='#nocturine' offset="60px"><strong>NOCTURINE</strong></AnchorLink> to be published by <a href="http://fathombooks.org/html/drobnik.html" target="_blank" rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>,
+                    and a novel <a href="https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk" target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> forthcoming from <a href="https://www.vraeydamedia.ca/literary" target="_blank" rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>.</p>
+                    <p>My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Quarterly West</em>, <em>Pithead
                         Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
                         Annual</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y Literary
                         Magazine</em>, and
-                    elsewhere. Below you can find
+                    elsewhere.</p>
+                    <p>Below you can find
                     a <AnchorLink href='#pubs' offset="60px"><strong>FULL LIST OF PUBLICATIONS</strong></AnchorLink> and
                     also <AnchorLink href='#read' offset="60px"><strong>READ</strong></AnchorLink> some of my pieces.
                 </p>
                 <p className="centered">email: <em>drobniklukasz [at] gmail [dot] com</em></p>
             </div>,
             pl: <div>
-                <p>Jestem dwujęzycznym pisarzem, który tworzy prozę po polsku (w&nbsp;moim ojczystym języku), ale
-                    ostatnio głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę wysokoartystyczną
-                    i&nbsp;wplatam w&nbsp;nią elementy innych gatunków, a&nbsp;do tego jestem ogromnym fanem <em>flash
-                        fiction</em> (czyli bardzo krótkich opowiadań). Nie stronię jednak od dłuższych form. Mieszkam w Krakowie.</p>
-                <p>Ze strony wydawnictwa <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
-                                                    rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a> można już zamawiać mój zbiór powiązanych fabularnie opowiadań <AnchorLink href='#nocturine'
-                                                                                   offset="60px"><strong>NOCTURINE</strong></AnchorLink>, a do końca roku nakładem wydawnictwa <a href="https://www.vraeydamedia.ca/literary" target="_blank" rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a> ukaże się powieść <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a>. Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Quarterly
+                <p>Jestem polskim pisarzem piszącym głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę wysokoartystyczną
+                    i&nbsp;wplatam w&nbsp;nią elementy innych gatunków. Do tego jestem ogromnym fanem <em>flash
+                        fiction</em> (nie stronię jednak od dłuższych form). Mieszkam w Krakowie.</p>
+                <p>W&nbsp;tym roku ukażą się moje dwie książki: zbiór powiązanych fabularnie opowiadań <AnchorLink href='#nocturine'
+                                                                                   offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
+                                                                                                                                                                 rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>) i&nbsp;powieść <a href="https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk" target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> (wydawnictwo <a href="https://www.vraeydamedia.ca/literary" target="_blank" rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>).</p>
+                <p>Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Quarterly
                         West</em>, <em>Pithead
                         Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
                         Annual</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X-R-A-Y Literary
-                        Magazine</em>.
-                    Poniżej można
+                        Magazine</em>.</p>
+                    <p>Poniżej można
                     znaleźć <AnchorLink href='#pubs' offset="60px"><strong>PEŁNĄ LISTĘ PUBLIKACJI</strong></AnchorLink>,
                     a&nbsp;także <AnchorLink href='#read' offset="60px"><strong>POCZYTAĆ</strong></AnchorLink> kilka
                     moich
@@ -1021,10 +1024,10 @@ export const WEBSITE_TEXT = {
             pl: 'Nocturine'
         },
         slogan: {
-            en: <div>Forthcoming early 2021 from <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
+            en: <div>Forthcoming spring 2021 from <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
                                                     rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
-            pl: <div>Dostępna na początku 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
+            pl: <div>Dostępna wiosną 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
                 href="http://fathombooks.org/html/drobnik.html"
                 target="_blank"
                 rel="noopener noreferrer"><strong>FATHOM
