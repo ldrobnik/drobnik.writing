@@ -8,6 +8,7 @@ import {FADE_DURATION, AnimatedContent} from './../../data/constants';
 
 import Book from '../About/Book/Book';
 import SectionSeparator from "../UI/SectionSeparator/SectionSeparator";
+import InvisibleSeparator from "../UI/InvisibleSeparator/InvisibleSeparator";
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from "../UI/CopyrightNote/CopyrightNote";
 
@@ -125,6 +126,7 @@ export const BookPage = (props) => {
                 <div id='top'></div>
             </TopAnchor>
             <Book book={props.book} />
+            <InvisibleSeparator />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SubpageLinks
