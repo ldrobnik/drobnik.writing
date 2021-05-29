@@ -58,10 +58,10 @@ export const KO_FI_URL = 'https://ko-fi.com/drobnik';
 
 
 //Names of available texts
-export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'vostok', 'spores', 'devonian', 'landmines', 'treasures'];
+export const TEXT_NAMES = ['vostok', 'nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'spores', 'devonian', 'landmines', 'treasures'];
 
 //Texts to be displayed on the main page
-export const HIGHLIGHTS = ['nocturine', 'cetacean', 'cellulose', 'moths', 'devonian', 'landmines', 'treasures'];
+export const HIGHLIGHTS = ['vostok', 'nocturine', 'cetacean', 'cellulose', 'moths', 'devonian', 'landmines', 'treasures'];
 
 //Content of pieces displayed in the Text component
 export const TEXTS = {
