@@ -860,6 +860,214 @@ export const THEME_COLORS = {
     }
 };
 
+//Order button text
+const ORDER_BUTTON = {
+    preorder: {
+        en: 'Preorder your copy',
+        pl: 'Zamów w przedsprzedaży'
+    },
+    buy: {
+        en: 'Buy your copy',
+        pl: 'Kup teraz'
+    }
+}
+
+//Excerpt button text
+const EXCERPT_BUTTON = {
+    en: 'Read an excerpt',
+    pl: 'Przeczytaj fragment'
+};
+
+//Content about books
+export const BOOKS = [
+    {
+        id: 'vostok',
+        title: {
+            en: 'Vostok',
+            pl: 'Vostok'
+        },
+        slogan: {
+            en: <div>Forthcoming autumn 2021 from <a href={VOSTOK_URL} target="_blank"
+                                                     rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
+            pl: <div>Dostępna jesienią 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
+                href={VOSTOK_URL}
+                target="_blank"
+                rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
+        },
+        orderButton: {
+            en: {
+                message: ORDER_BUTTON["preorder"]["en"],
+                path: VOSTOK_URL
+            },
+            pl: {
+                message: ORDER_BUTTON["preorder"]["pl"],
+                path: VOSTOK_URL
+            }
+        },
+        excerptButton: {
+            en: {
+                message: EXCERPT_BUTTON["en"],
+                path: '/texts/' + this.id
+            },
+            pl: {
+                message: EXCERPT_BUTTON["pl"],
+                path: '/texts/' + this.id
+            }
+        },
+        body: {
+            en: <div>
+                <p>Poznań, Poland. The middle of a harsh winter. Weronika is in love with her best friend Wu, who has just told her about his new boyfriend. They spend most evenings drinking away their problems with a bunch of like-minded pub-goers. There’s been a terrorist attack. A girl gets murdered with a war scythe. The reality reveals a whole new layer when the friends mention a place called Vostok City.</p>
+                <p>On the surface, <em>VOSTOK</em> is a murder story. Dig deeper, and it will reveal itself as science fiction that only pretends to play by the rules of realism.</p>
+            </div>,
+            pl: <div>
+                <p>Poznań, środek mroźnej zimy. Weronika kocha się w&nbsp;swoim najlepszym przyjacielu Wu, który właśnie przedstawił jej swojego nowego chłopaka. Większość wieczorów przyjaciele spędzają w&nbsp;ulubionych knajpach, zapijając problemy z&nbsp;grupką znajomych. Niesie się wieść o&nbsp;ataku terrorystycznym. Dziewczyna ginie raniona kosą bojową. Rzeczywistość odkrywa całkiem nową warstwę, gdy znajomi wspominają o&nbsp;miejscu zwanym Vostok City.</p>
+                <p>Na pierwszy rzut oka <em>VOSTOK</em> to kryminał. Gdy jednak zajrzy się głębiej, powieść okazuje się science fiction, które tylko z&nbsp;pozoru gra według reguł realizmu.</p>
+            </div>
+        },
+        quotes: {
+            en: [
+                {
+                    quote: <div><em>Vostok</em>’s prose is of a singular beauty and purity. I cannot stop diving back into it.</div>,
+                    source: 'VRÆYDA LITERARY, the publisher'
+                }
+            ],
+            pl: [
+                {
+                    quote: <div><em>Vostok</em> pisany jest prozą o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę przestać do niej wracać.</div>,
+                    source: 'VRÆYDA LITERARY, wydawca'
+                }
+            ]
+        }
+    },
+    {
+        id: 'nocturine',
+        title: {
+            en: 'Nocturine',
+            pl: 'Nocturine'
+        },
+        slogan: {
+            en: <div>Forthcoming spring 2021 from <a href={NOCTURINE_URL} target="_blank"
+                                                     rel="noopener noreferrer"><strong>FATHOM
+                BOOKS</strong></a></div>,
+            pl: <div>Dostępna wiosną 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
+                href={NOCTURINE_URL}
+                target="_blank"
+                rel="noopener noreferrer"><strong>FATHOM
+                BOOKS</strong></a></div>,
+        },
+        orderButton: {
+            en: {
+                message: ORDER_BUTTON["preorder"]["en"],
+                path: NOCTURINE_URL
+            },
+            pl: {
+                message: ORDER_BUTTON["preorder"]["pl"],
+                path: NOCTURINE_URL
+            }
+        },
+        excerptButton: {
+            en: {
+                message: EXCERPT_BUTTON["en"],
+                path: '/texts/' + this.id
+            },
+            pl: {
+                message: EXCERPT_BUTTON["pl"],
+                path: '/texts/' + this.id
+            }
+        },
+        body: {
+            en: <div>
+                <p>The end of the world starts like an ad campaign. When black cubes appear above the city of
+                    Poznań,
+                    some think it’s just another mobile network operator entering the market. These include Mietek,
+                    an
+                    unemployed man in his twenties, suddenly abandoned by his boyfriend. Soon his best friend also
+                    disappears while the black cubes in the sky start to multiply, taking up more and more of the
+                    urban
+                    space.</p>
+                <p><em>NOCTURINE</em> is a linked short story collection that takes you on a genre-bending journey
+                    from
+                    contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a
+                    homestead haunted by dummies, to the inside of a human body. Each of six pieces is told by
+                    a different narrator in a frantic yet melancholic style.</p>
+            </div>,
+            pl: <div>
+                <p>Koniec świata zaczyna się jak kampania reklamowa. Gdy nad Poznaniem zawisają czarne sześciany,
+                    niektórzy sądzą, że to po prostu kolejny operator sieci komórkowej wchodzi na rynek. Do tej
+                    grupy
+                    należy Mietek, bezrobotny dwudziestoparolatek, którego nagle opuszcza chłopak. Niedługa jego
+                    najlepsza przyjaciółka także znika, podczas gdy czarne sześciany na niebie zaczynają się mnożyć,
+                    zabierając coraz więcej miejskiej przestrzeni.</p>
+                <p><em>NOCTURINE</em> to zbiór powiązanych fabularnie opowiadań, który zabiera czytelnika na
+                    niejednoznaczną gatunkowo podróż z&nbsp;Poznania pożeranego przez ośmiobitową amebę przez dom
+                    złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze
+                    ludzkiego ciała. Każdy z&nbsp;sześciu tekstów ma innego narratora, który snuje opowieść
+                    w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
+            </div>
+        },
+        quotes: {
+            en: [
+                {
+                    quote: <div>Drobnik wowed us with his free-wheeling sentence structure + utterly unique
+                        vision.</div>,
+                    source: 'FATHOM BOOKS, the publisher'
+                },
+                {
+                    quote: <div>To say <em>Nocturine</em> is oneiric isn’t enough — it’s a psychedelic. It kicks in
+                        slowly, swaying you from the very first sentences. Hypnotic phrase. Beautiful!</div>,
+                    source: 'Patrycja Janowska, LAMPA 1–2/2012'
+                },
+                {
+                    quote: <div>Drobnik creates an evocative, oppressive mood through the dangerous unknown; subtly,
+                        with a single shift outside the boundaries of what we are used to.</div>,
+                    source: 'Ilona Witkowska, ODRA 5/2012'
+                },
+                {
+                    quote: <div>Drobnik’s strategy is to combine a fast-paced plot typical of popular literature
+                        with
+                        the highly metaphorical language of literary fiction.</div>,
+                    source: 'Rafał Derda, ELEWATOR 2/2012'
+                },
+                {
+                    quote: <div>I’m not going to build suspense. Let me say it right away: this book will drag you
+                        in
+                        with its thousand tentacles (everyone gets their own, according to their liking).</div>,
+                    source: 'Marta Sawicka-Danielak, BLUSZCZ 2/2012'
+                }
+            ],
+            pl: [
+                {
+                    quote: <div>Drobnik zachwycił nas swoją beztroską składnią i&nbsp;absolutnie wyjątkową
+                        wizją.</div>,
+                    source: 'FATHOM BOOKS, wydawca'
+                },
+                {
+                    quote: <div>Powiedzieć, że „Nocturine” jest oniryczne, to za mało — to psychodelik jest. Wchodzi
+                        miękko, od pierwszych zdań już kołysze. Fraza hipnotyczna. Coś pięknego!</div>,
+                    source: 'Patrycja Janowska, LAMPA 1–2/2012'
+                },
+                {
+                    quote: <div>Drobnik tworzy sugestywnie nastrój osaczenia przez groźne nieznane; subtelnie,
+                        jednym
+                        przesunięciem poza ramy naszych przyzwyczajeń.</div>,
+                    source: 'Ilona Witkowska, ODRA 5/2012'
+                },
+                {
+                    quote: <div>Przyjęta przez Drobnika strategia polega na połączeniu przynależnej literaturze
+                        popularnej wartkości fabuły z&nbsp;gęstym, mocno zmetaforyzowanym językiem literatury
+                        pięknej.</div>,
+                    source: 'Rafał Derda, ELEWATOR 2/2012'
+                },
+                {
+                    quote: <div>Nie będę budowała suspensu. Zdradzę już na wstępie: ta książka wciągnie was tysiącem
+                        swoim macek (każdemu inna, wedle gustu).</div>,
+                    source: 'Marta Sawicka-Danielak, BLUSZCZ 2/2012'
+                }
+            ]
+        }
+    }
+];
+
 //constant containing text used on the website:
 export const WEBSITE_TEXT = {
     navbar: {
@@ -1049,11 +1257,11 @@ export const WEBSITE_TEXT = {
         },
         preorderButton: {
             en: {
-                message: 'Preorder now',
+                message: ORDER_BUTTON["preorder"]["en"],
                 path: NOCTURINE_URL
             },
             pl: {
-                message: 'Zamów teraz',
+                message: ORDER_BUTTON["preorder"]["pl"],
                 path: NOCTURINE_URL
             }
         },
