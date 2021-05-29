@@ -886,6 +886,7 @@ export const BOOKS = [
             en: 'Nocturine',
             pl: 'Nocturine'
         },
+        displayOnMain: true,
         slogan: {
             en: <div>Forthcoming spring 2021 from <a href={NOCTURINE_URL} target="_blank"
                                                      rel="noopener noreferrer"><strong>FATHOM
@@ -1013,6 +1014,7 @@ export const BOOKS = [
             en: 'Vostok',
             pl: 'Vostok'
         },
+        displayOnMain: true,
         slogan: {
             en: <div>Forthcoming autumn 2021 from <a href={VOSTOK_URL} target="_blank"
                                                      rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
