@@ -8,7 +8,6 @@ const Wrapper = styled.div`
   padding: 2em;
   position: relative; 
 `;
-
 const Photo = styled.div`
   height: 12em;
   opacity: ${props => props.theme.slightlyTranslucent};
