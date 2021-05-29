@@ -19,44 +19,43 @@ const TopAnchor = styled.div`
 `;
 
 const Wrapper = styled.div`
-    overflow: hidden;
-    padding: 7em 1em 2em 1em;
-    
-    @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-      padding: 7em 3em 2em 3em;
-    }
-    
-    @media all and (min-width: ${props => props.theme.smallScr}) {
-      padding: 7em 5% 2em 5%;
-    }
-    
-    @media all and (min-width: ${props => props.theme.mediumScr}) {
-      padding: 7em 20% 2em 20%;
-    }
-   
-    @media all and (min-width: ${props => props.theme.largeScr}) {
-      padding: 7em 22% 2em 22%;
-    }
-    
-    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-      padding: 7em 25% 2em 25%;
-    }
-    
-    .hidden {
-      display: none;
-    }
+  overflow: hidden;
+  padding: 7em 1em 2em 1em;
+
+  @media all and (min-width: ${props => props.theme.extraSmallScr}) {
+    padding: 7em 3em 2em 3em;
+  }
+
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    padding: 7em 5% 2em 5%;
+  }
+
+  @media all and (min-width: ${props => props.theme.mediumScr}) {
+    padding: 7em 20% 2em 20%;
+  }
+
+  @media all and (min-width: ${props => props.theme.largeScr}) {
+    padding: 7em 22% 2em 22%;
+  }
+
+  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+    padding: 7em 25% 2em 25%;
+  }
+
+  .hidden {
+    display: none;
+  }
 
 `;
 
 const SectionWrapper = styled.div`
-    margin-bottom: 5em;
+  margin-bottom: 5em;
 `;
 
 export const About = (props) => {
 
     //part of page title to be displayed depending on the current language
     const fictionWriter = (props.lang === 'en') ? 'fiction writer' : 'prozaik';
-
 
     //updates current theme
     const updateTheme = () => {
@@ -120,13 +119,13 @@ export const About = (props) => {
                 <Intro/>
             </SectionWrapper>
             <SectionWrapper id='books'>
-            {BOOKS.reverse().map((book, k) => {
-                return(
-                  book.displayOnMain &&  <SectionWrapper id={book.id}>
-                      <Book book={k}/>
-                  </SectionWrapper>
-                );
-            })}
+                {BOOKS.slice().reverse().map((book, k) => {
+                    return (
+                        book.displayOnMain && <SectionWrapper id={book.id} key={book.id}>
+                            <Book book={BOOKS.indexOf(book)}/>
+                        </SectionWrapper>
+                    );
+                })}
             </SectionWrapper>
             <SectionWrapper id='pubs'>
                 <Pubs/>
