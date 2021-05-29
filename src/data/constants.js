@@ -44,11 +44,25 @@ import nocCunCover from '../assets/images/nocCunCover.jpg';
 import vostokCover from '../assets/images/vostokCover.jpg';
 import tbaCover from '../assets/images/tbaCover.jpg';
 
+//Frequently used URLs
+
+export const NOCTURINE_URL = 'http://fathombooks.org/html/drobnik.html'; //Nocturine preorder
+export const FATHOM_BOOKS_URL = 'http://fathombooks.org/'; //Fathom Books website
+export const VOSTOK_URL = 'https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk'; //Vostok preorder
+export const VRAEDA_URL = 'https://www.vraeydamedia.ca/literary'; //Vræyda Literary website
+export const TWITTER_URL = 'https://twitter.com/drobnik';
+export const FACEBOOK_URL = 'https://www.facebook.com/drobnikwrites';
+export const INSTAGRAM_URL = 'https://www.instagram.com/drobnikwrites/';
+export const MEDIUM_URL = 'https://medium.com/@drobnik';
+export const KO_FI_URL = 'https://ko-fi.com/drobnik';
+
+
 //Names of available texts
 export const TEXT_NAMES = ['nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'vostok', 'spores', 'devonian', 'landmines', 'treasures'];
 
 //Texts to be displayed on the main page
 export const HIGHLIGHTS = ['nocturine', 'cetacean', 'cellulose', 'moths', 'devonian', 'landmines', 'treasures'];
+
 //Content of pieces displayed in the Text component
 export const TEXTS = {
     en: {
@@ -57,7 +71,7 @@ export const TEXTS = {
             subtitle: 'excerpt from a short story collection',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
             description: <p><em>Nocturine</em> is a linked short story collection forthcoming from <a
-                href="http://fathombooks.org/html/drobnik.html" target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was
+                href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was
                 originally written <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
                                       rel="noopener noreferrer">in Polish</a> and published in one volume with a novella
                 titled <em>Cunninghamella</em> (Forma 2011). Excerpts from <em>Nocturine</em> have been featured in a
@@ -143,7 +157,7 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'novel fragment',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p><em>Vostok</em> is forthcoming later this year from <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><em>Vræyda Literary</em></a>. Its fragments were published in Polish in <a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><em>Lampa</em></a> Issue&nbsp;3/2012 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><em>wydawnictwo&nbsp;j</em></a> website.</p>,
+            description: <p><em>Vostok</em> is forthcoming later this year from <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer"><em>Vræyda Literary</em></a>. Its fragments were published in Polish in <a href="http://lampa.art.pl/" target="_blank" rel="noopener noreferrer"><em>Lampa</em></a> Issue&nbsp;3/2012 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/" target="_blank" rel="noopener noreferrer"><em>wydawnictwo&nbsp;j</em></a> website.</p>,
             content: VOSTOK_EN,
             theme: 'vostok'
         },
@@ -196,7 +210,7 @@ export const TEXTS = {
             credits: 'Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.',
             description: <p>„Nocturine” to zbiór powiązanych fabularnie opowiadań w&nbsp;przygotowaniu przez
                 wydawnictwo <a
-                    href="http://fathombooks.org/html/drobnik.html" target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka
+                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">Fathom Books</a>. Książka
                 pierwotnie ukazała się <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
                                           rel="noopener noreferrer">po polsku</a> w&nbsp;jednym tomie
                 z&nbsp;minipowieścią „Cunninghamella” (Forma 2011). Fragmenty „Nocturine” opublikowano w&nbsp;kilku
@@ -280,7 +294,7 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'fragment powieści',
             credits: 'Tekst: Łukasz Drobnik.',
-            description: <p>„Vostok” ukaże się jeszcze w&nbsp;roku nakładem wydawnictwa <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/2/1/press-release-lukasz-drobnik-signs-with-vraeyda-literary-8tzhj" target="_blank" rel="noopener noreferrer"><em>Vræyda Literary</em></a>. Fragmenty książki można było przeczytać po polsku w&nbsp;<a href="http://lampa.art.pl/" target="_blank"
+            description: <p>„Vostok” ukaże się jeszcze w&nbsp;roku nakładem wydawnictwa <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer"><em>Vræyda Literary</em></a>. Fragmenty książki można było przeczytać po polsku w&nbsp;<a href="http://lampa.art.pl/" target="_blank"
                                                                       rel="noopener noreferrer"><em>Lampie</em></a> (numer&nbsp;3/2012)
                 i&nbsp;na stronie <a
                     href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
@@ -337,7 +351,7 @@ export const PUBLICATIONS = {
         {
             title: 'Vostok',
             year: '',
-            url: 'https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk',
+            url: VOSTOK_URL,
             cover: vostokCover,
             altText: {
                 en: 'Vostok cover',
@@ -351,7 +365,7 @@ export const PUBLICATIONS = {
         {
             title: 'Nocturine',
             year: '',
-            url: 'http://fathombooks.org/html/drobnik.html',
+            url: NOCTURINE_URL,
             cover: nocturineCover,
             altText: {
                 en: 'Nocturine cover',
@@ -921,8 +935,8 @@ export const WEBSITE_TEXT = {
         body: {
             en: <div>
                 <p>I’m a Polish writer writing mostly in English. My favourite pastime is taking literary fiction and mixing it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from longer forms). I live in Kraków, Poland.</p>
-                <p>I have two books coming out this year: a linked short story collection <AnchorLink href='#nocturine' offset="60px"><strong>NOCTURINE</strong></AnchorLink> to be published by <a href="http://fathombooks.org/html/drobnik.html" target="_blank" rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>,
-                    and a novel <a href="https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk" target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> forthcoming from <a href="https://www.vraeydamedia.ca/literary" target="_blank" rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>.</p>
+                <p>I have two books coming out this year: a linked short story collection <AnchorLink href='#nocturine' offset="60px"><strong>NOCTURINE</strong></AnchorLink> to be published by <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>,
+                    and a novel <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> forthcoming from <a href={VRAEDA_URL} target="_blank" rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>.</p>
                     <p>My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Quarterly West</em>, <em>Pithead
                         Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
                         Annual</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y Literary
@@ -939,8 +953,8 @@ export const WEBSITE_TEXT = {
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków. Do tego jestem ogromnym fanem <em>flash
                         fiction</em> (nie stronię jednak od dłuższych form). Mieszkam w Krakowie.</p>
                 <p>W&nbsp;tym roku ukażą się moje dwie książki: zbiór powiązanych fabularnie opowiadań <AnchorLink href='#nocturine'
-                                                                                   offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
-                                                                                                                                                                 rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>) i&nbsp;powieść <a href="https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk" target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> (wydawnictwo <a href="https://www.vraeydamedia.ca/literary" target="_blank" rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>).</p>
+                                                                                   offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href={NOCTURINE_URL} target="_blank"
+                                                                                                                                                                 rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>) i&nbsp;powieść <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer"><strong>VOSTOK</strong></a> (wydawnictwo <a href={VRAEDA_URL} target="_blank" rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>).</p>
                 <p>Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Quarterly
                         West</em>, <em>Pithead
                         Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
@@ -1024,11 +1038,11 @@ export const WEBSITE_TEXT = {
             pl: 'Nocturine'
         },
         slogan: {
-            en: <div>Forthcoming spring 2021 from <a href="http://fathombooks.org/html/drobnik.html" target="_blank"
+            en: <div>Forthcoming spring 2021 from <a href={NOCTURINE_URL} target="_blank"
                                                     rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
             pl: <div>Dostępna wiosną 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
-                href="http://fathombooks.org/html/drobnik.html"
+                href={NOCTURINE_URL}
                 target="_blank"
                 rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
@@ -1036,11 +1050,11 @@ export const WEBSITE_TEXT = {
         preorderButton: {
             en: {
                 message: 'Preorder now',
-                path: 'http://fathombooks.org/html/drobnik.html'
+                path: NOCTURINE_URL
             },
             pl: {
                 message: 'Zamów teraz',
-                path: 'http://fathombooks.org/html/drobnik.html'
+                path: NOCTURINE_URL
             }
         },
             body: {
@@ -1247,9 +1261,14 @@ export const WEBSITE_TEXT = {
 
 export const LINKS = [
     {
+        title: 'Preorder VOSTOK',
+        subtitle: 'from Vræyda Literary',
+        url: VOSTOK_URL
+    },
+    {
         title: 'Preorder NOCTURINE',
         subtitle: 'from Fathom Books',
-        url: 'http://fathombooks.org/html/drobnik.html'
+        url: NOCTURINE_URL
     },
     {
         title: 'Read “Coal and Glitter”',
