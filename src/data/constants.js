@@ -1374,6 +1374,11 @@ export const LINKS = [
         url: NOCTURINE_URL
     },
     {
+        title: 'Check out “błyski”',
+        subtitle: 'my journal with flash in Polish translation',
+        url: 'https://blyski.org'
+    },
+    {
         title: 'Read “Coal and Glitter”',
         subtitle: 'in HAD',
         url: 'https://www.havehashad.com/hadposts/coal-and-glitter'
