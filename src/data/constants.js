@@ -55,6 +55,7 @@ export const FACEBOOK_URL = 'https://www.facebook.com/drobnikwrites';
 export const INSTAGRAM_URL = 'https://www.instagram.com/drobnikwrites/';
 export const MEDIUM_URL = 'https://medium.com/@drobnik';
 export const KO_FI_URL = 'https://ko-fi.com/drobnik';
+export const BLYSKI_URL = 'https://blyski.org'; // błyski literary magazine
 
 
 //Names of available texts
@@ -1162,6 +1163,9 @@ export const WEBSITE_TEXT = {
                     Annual</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y Literary
                     Magazine</em>, and
                     elsewhere.</p>
+                <p>I’m also the editor-in-chief of <a
+                    href={BLYSKI_URL} target="_blank"
+                    rel="noopener noreferrer"><strong>BŁYSKI</strong></a>, a journal publishing flash fiction in Polish translation.</p>
                 <p>Below you can find
                     a <AnchorLink href='#pubs' offset="60px"><strong>FULL LIST OF PUBLICATIONS</strong></AnchorLink> and
                     also <AnchorLink href='#read' offset="60px"><strong>READ</strong></AnchorLink> some of my pieces.
@@ -1189,6 +1193,9 @@ export const WEBSITE_TEXT = {
                     Chapel</em>, <em>Lighthouse</em>, <em>Bare Fiction</em>, <em>SHARKPACK
                     Annual</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X-R-A-Y Literary
                     Magazine</em>.</p>
+                <p>Jestem też redaktorem naczelnym <a
+                    href={BLYSKI_URL} target="_blank"
+                    rel="noopener noreferrer"><strong>BŁYSKÓW</strong></a>, pisma publikującego flash fiction w&nbsp;polskim przekładzie.</p>
                 <p>Poniżej można
                     znaleźć <AnchorLink href='#pubs' offset="60px"><strong>PEŁNĄ LISTĘ PUBLIKACJI</strong></AnchorLink>,
                     a&nbsp;także <AnchorLink href='#read' offset="60px"><strong>POCZYTAĆ</strong></AnchorLink> kilka
@@ -1298,7 +1305,7 @@ export const WEBSITE_TEXT = {
         },
         introduction: {
             en: <div>Here are a handful of my pieces.<br/>Maybe you’d like to read some of them:</div>,
-            pl: <div>Oto garstka moich tekstów.<br/>Może zechcesz niektóre z&nbsp;nich przeczytać:</div>
+            pl: <div>Oto garstka moich tekstów<br/>do niezobowiązującej lektury:</div>
         }
     },
     sectionLinks: [
