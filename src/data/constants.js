@@ -53,7 +53,7 @@ export const VRAEDA_URL = 'https://www.vraeydamedia.ca/literary'; //Vræyda Lite
 export const TWITTER_URL = 'https://twitter.com/drobnik';
 export const FACEBOOK_URL = 'https://www.facebook.com/drobnikwrites';
 export const INSTAGRAM_URL = 'https://www.instagram.com/drobnikwrites/';
-export const MEDIUM_URL = 'https://medium.com/@drobnik';
+export const MEDIUM_URL = 'https://drobnik.medium.com';
 export const KO_FI_URL = 'https://ko-fi.com/drobnik';
 export const BLYSKI_URL = 'https://blyski.org'; // błyski literary magazine
 
