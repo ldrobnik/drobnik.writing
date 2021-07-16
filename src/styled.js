@@ -166,3 +166,14 @@ export const PubsSeparator = styled.div`
   width: 6em;
   background-color: ${props => props.theme.darkColor};
 `;
+
+/* PubList.js */
+
+export const PubTileContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  cursor: pointer;
+`;

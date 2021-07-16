@@ -96,3 +96,23 @@ export const PubsAnimatedPanel = posed.div({
         x: '200%'
     }
 });
+
+/* PubList */
+
+export const PubAnimatedTile = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0)',
+        transform: 'skew(0, 0)',
+        transition: {
+            ease: 'easeOut',
+            duration: 200
+        }
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)',
+        transform: 'skew(5deg, 10deg)',
+        transition: {duration: 200}
+    }
+});
