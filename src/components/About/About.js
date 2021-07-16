@@ -1,56 +1,15 @@
 import React, {useEffect} from 'react';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
-
-import {setTheme, setNavbarVisibility, setDataNoticeVisible, setMainPage, setBookPage} from "../../actions";
+import {setTheme, setNavbarVisibility, setDataNoticeVisible, setMainPage, setBookPage} from '../../actions';
+import {AboutWrapper, AboutTopAnchor, AboutSectionWrapper} from '../../styled';
 import {BOOKS, TEXT_NAMES} from './../../data/constants';
-
 import Intro from './Intro/Intro';
 import Book from './Book/Book';
 import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
 import CopyrightNote from './../UI/CopyrightNote/CopyrightNote';
 
-/* STYLED COMPONENTS */
-const TopAnchor = styled.div`
-  position: absolute;
-  top: 0;
-`;
-
-const Wrapper = styled.div`
-  overflow: hidden;
-  padding: 7em 1em 2em 1em;
-
-  @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-    padding: 7em 3em 2em 3em;
-  }
-
-  @media all and (min-width: ${props => props.theme.smallScr}) {
-    padding: 7em 5% 2em 5%;
-  }
-
-  @media all and (min-width: ${props => props.theme.mediumScr}) {
-    padding: 7em 20% 2em 20%;
-  }
-
-  @media all and (min-width: ${props => props.theme.largeScr}) {
-    padding: 7em 22% 2em 22%;
-  }
-
-  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-    padding: 7em 25% 2em 25%;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-`;
-
-const SectionWrapper = styled.div`
-  margin-bottom: 5em;
-`;
 
 export const About = (props) => {
 
@@ -111,30 +70,30 @@ export const About = (props) => {
 
     //do not show the content until the page is loaded
     return props.loaded ?
-        (<Wrapper>
-            <TopAnchor>
+        (<AboutWrapper>
+            <AboutTopAnchor>
                 <div id='top'></div>
-            </TopAnchor>
-            <SectionWrapper>
+            </AboutTopAnchor>
+            <AboutSectionWrapper>
                 <Intro/>
-            </SectionWrapper>
-            <SectionWrapper id='books'>
+            </AboutSectionWrapper>
+            <AboutSectionWrapper id='books'>
                 {BOOKS.slice().reverse().map((book, k) => {
                     return (
-                        book.displayOnMain && <SectionWrapper id={book.id} key={book.id}>
+                        book.displayOnMain && <AboutSectionWrapper id={book.id} key={book.id}>
                             <Book book={BOOKS.indexOf(book)}/>
-                        </SectionWrapper>
+                        </AboutSectionWrapper>
                     );
                 })}
-            </SectionWrapper>
-            <SectionWrapper id='pubs'>
+            </AboutSectionWrapper>
+            <AboutSectionWrapper id='pubs'>
                 <Pubs/>
-            </SectionWrapper>
-            <SectionWrapper id='read'>
+            </AboutSectionWrapper>
+            <AboutSectionWrapper id='read'>
                 <Read/>
-            </SectionWrapper>
+            </AboutSectionWrapper>
             <CopyrightNote/>
-        </Wrapper>) :
+        </AboutWrapper>) :
         <div></div>;
 };
 
