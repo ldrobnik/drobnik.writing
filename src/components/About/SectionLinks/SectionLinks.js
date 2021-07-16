@@ -1,27 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import {SectionLinksWrapper} from '../../../styled';
+import {WEBSITE_TEXT} from './../../../data/constants';
 
-import {WEBSITE_TEXT, PULSATE_KEYFRAMES} from "./../../../data/constants";
-
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  font-size: ${props => props.theme.captionSize}
-  margin: 4em 0;
-  text-decoration: underline;
-  
-  div {
-    padding: 0 0.3em;
-    
-    @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }  
-  }
-`;
 
 const SectionLinks = (props) => {
 
@@ -49,15 +30,15 @@ const SectionLinks = (props) => {
     }
 
     return (
-        <Wrapper>
+        <SectionLinksWrapper>
             {linksToDisplay.map((link, k) => {
                     return (<div key={k}>
                             {link}
-                    </div>
+                        </div>
                     )
                 }
             )}
-        </Wrapper>
+        </SectionLinksWrapper>
     );
 };
 

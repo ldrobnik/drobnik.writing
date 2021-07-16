@@ -276,3 +276,61 @@ export const ReadMessage = styled.div`
   font-size: ${props => props.theme.bodySize};
   margin: 3em 0;
 `;
+
+/* ReadListElement.js */
+
+export const ReadListElementWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:hover {
+    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
+  }
+`;
+
+export const ReadListElementContent = styled.div`
+  text-align: center;
+  font-weight: bold;
+
+  user-select: none;
+  margin: 1em 0;
+`;
+
+export const ReadListElementTitle = styled.div`
+    font-size: ${props => props.theme.subtitleSize}
+      text-transform: uppercase;
+`;
+
+export const ReadListElementSubtitle = styled.div`
+    font-size: ${props => props.theme.smallCaptionSize}
+`;
+
+export const ReadListElementLine = styled.div`
+  height: 0.8em;
+  width: 10em;
+  margin: 1em;
+  background-color: ${props => props.theme.darkColor};
+`;
+
+/* SectionLinks.js */
+
+export
+const SectionLinksWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: ${props => props.theme.captionSize}
+  margin: 4em 0;
+  text-decoration: underline;
+  
+  div {
+    padding: 0 0.3em;
+    
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }  
+  }
+`;
