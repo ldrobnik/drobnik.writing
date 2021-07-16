@@ -71,7 +71,7 @@ export const TEXTS = {
             title: 'Nocturine',
             subtitle: 'excerpt from a short story collection',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick & Joseph Spece.',
-            description: <p><em>Nocturine</em> is a linked short story collection forthcoming from <a
+            description: <p><em>Nocturine</em> is a collection of interlinked stories forthcoming from <a
                 href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">Fathom Books</a>. It was
                 originally written <a href="http://wforma.eu/12,nocturine.-cunninghamella.html" target="_blank"
                                       rel="noopener noreferrer">in Polish</a> and published in one volume with a novella
@@ -385,7 +385,7 @@ export const PUBLICATIONS = {
                 pl: 'Okładka Nocturine'
             },
             descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2021 r. nakładem wydawnictwa Fathom Books',
-            descriptionEn: 'Linked short story collection forthcoming in 2021 from Fathom Books',
+            descriptionEn: 'Collection of interlinked stories forthcoming in 2021 from Fathom Books',
             language: 'en',
             pieceTitle: 'Nocturine'
         },
@@ -929,7 +929,7 @@ export const BOOKS = [
                     disappears while the black cubes in the sky start to multiply, taking up more and more of the
                     urban
                     space.</p>
-                <p><em>NOCTURINE</em> is a linked short story collection that takes you on a genre-bending journey
+                <p><em>NOCTURINE</em> is a collection of interlinked stories that takes you on a genre-bending journey
                     from
                     contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a
                     homestead haunted by dummies, to the inside of a human body. Each of six pieces is told by
@@ -1146,9 +1146,9 @@ export const WEBSITE_TEXT = {
         body: {
             en: <div>
                 <p>I’m a Polish writer writing mostly in English. My favourite pastime is taking literary fiction and
-                    mixing it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from
+                    blending it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from
                     longer forms). I live in Kraków, Poland.</p>
-                <p>I have two books coming out this year: a linked short story collection <AnchorLink href='#nocturine'
+                <p>I have two books coming out this year: a collection of interlinked stories <AnchorLink href='#nocturine'
                                                                                                       offset="60px"><strong>NOCTURINE</strong></AnchorLink> to
                     be published by <a href={NOCTURINE_URL} target="_blank"
                                        rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>,
@@ -1166,8 +1166,7 @@ export const WEBSITE_TEXT = {
                     href={BLYSKI_URL} target="_blank"
                     rel="noopener noreferrer"><strong>BŁYSKI</strong></a>, a journal publishing flash fiction in Polish translation.</p>
                 <p>Below you can find
-                    a <AnchorLink href='#pubs' offset="60px"><strong>FULL LIST OF PUBLICATIONS</strong></AnchorLink> and
-                    also <AnchorLink href='#read' offset="60px"><strong>READ</strong></AnchorLink> some of my pieces.
+                    a <AnchorLink href='#pubs' offset="60px"><strong>FULL LIST OF PUBLICATIONS</strong></AnchorLink> and <AnchorLink href='#read' offset="60px"><strong>READ</strong></AnchorLink> some of my pieces.
                 </p>
                 <p className="centered">email: <em>drobniklukasz [at] gmail [dot] com</em></p>
             </div>,
