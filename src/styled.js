@@ -334,3 +334,23 @@ const SectionLinksWrapper = styled.div`
         }  
   }
 `;
+
+/* SocialLinks.js */
+
+export const SocialLinksWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: ${props => props.theme.bodySize};
+    margin: 1.5em 0;
+
+    div {
+      padding: 8px;
+    }
+    
+     @media all and (min-width: ${props => props.theme.smallScr}) {
+             a:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }  
+`;
