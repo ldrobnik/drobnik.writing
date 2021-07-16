@@ -96,3 +96,30 @@ export const BookSlogan = styled.div`
         }  
     }
 `;
+
+/* Intro.js */
+
+export const IntroBody = styled.div`
+  font-size: ${props => props.theme.bodySize};
+  font-family: ${props => props.theme.serif};
+  line-height: 1.4em;
+  
+   @media all and (min-width: ${props => props.theme.smallScr}) {
+             text-align: justify;
+        }  
+           
+    a {
+      font-family: ${props => props.theme.sansSerif};
+      
+      @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }  
+        
+    }
+    
+    .centered {
+      text-align: center;
+    }
+`;
