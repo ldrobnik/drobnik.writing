@@ -1258,19 +1258,6 @@ export const WEBSITE_TEXT = {
                     </div>
                 ),
                 url: FACEBOOK_URL
-            },
-            {
-                name: (
-                    <div>
-                        <FontAwesomeIcon
-                            icon={faMedium}
-                            aria-hidden="true"
-                            title="Medium">
-                        </FontAwesomeIcon>&nbsp;@drobnik
-                        <span className="sr-only">Medium</span>
-                    </div>
-                ),
-                url: MEDIUM_URL
             }
         ]
     },
