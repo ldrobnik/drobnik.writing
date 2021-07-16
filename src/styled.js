@@ -390,3 +390,69 @@ export const BookPageWrapper = styled.div`
       padding: 7em 32% 2em 32%;
   }
 `;
+
+/* NavBar.js */
+
+export const NavBarWrapper = styled.div`
+    .hidden {
+    display: none;
+    }    
+`;
+
+export const NavToolbar = styled.header`
+    height: 3em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: ${props => props.theme.background};
+    z-index: 50;
+    font-weight: bold;
+    user-select: none;
+    backdrop-filter: blur(8px);
+`;
+
+export const LogoWrapper = styled.div`
+    position: absolute;
+    top: -4px;
+    left: -2px;
+  
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+         &:hover {
+                  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+         }
+    }
+`;
+
+export const NavElement = styled.div`
+    cursor: pointer;
+    margin: ${props => props.theme.navIconMargin};
+
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+         &:hover {
+                  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+         }
+    }
+`;
+
+export const ToggledNavElement = styled.div`
+  cursor: pointer;
+  margin: ${props => props.theme.navIconMargin};
+  opacity: ${props => props.theme.translucent};
+
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }
+`;
+
+export const NavLinkContent = styled.div`
+  padding: ${props => props.theme.navIconPadding};
+  display: block;
+  min-width: 1.5em;
+`;
