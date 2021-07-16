@@ -2,9 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {ThemeProvider} from 'styled-components';
 import ReactGA from 'react-ga';
-
-import { THEME_COLORS } from "./data/constants";
-
+import {THEME_COLORS} from './data/constants';
 import Home from './components/Home/Home';
 
 //Google Analytics code
@@ -12,7 +10,6 @@ const ANALYTICS_KEY = process.env.REACT_APP_ANALYTICS_KEY; // Google analytics A
 ReactGA.initialize(ANALYTICS_KEY);
 // ReactGA.initialize(ANALYTICS_KEY, { testMode: true });
 ReactGA.pageview(window.location.pathname + window.location.search);
-
 
 
 export const App = (props) => {
@@ -54,7 +51,7 @@ export const App = (props) => {
         pulsateAnimation: '0.8s ease-in-out infinite',
         blurAnimation: '6s ease-out alternate infinite',
         popAnimation: '0.5s ease-in-out 1',
-        fadeInAnimation:'0.7s ease-in-out 1',
+        fadeInAnimation: '0.7s ease-in-out 1',
 
         //blur filter
         lightBlur: '3px',
@@ -67,7 +64,7 @@ export const App = (props) => {
 
     return (
         <ThemeProvider theme={theme}>
-            <Home />
+            <Home/>
         </ThemeProvider>
     );
 };
