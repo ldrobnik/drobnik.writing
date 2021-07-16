@@ -1,6 +1,6 @@
 /* STYLED-COMPONENTS */
 import styled, {createGlobalStyle} from 'styled-components';
-import {PULSATE_KEYFRAMES} from './data/constants';
+import {POP_KEYFRAMES, PULSATE_KEYFRAMES} from './data/constants';
 
 /* General */
 
@@ -176,4 +176,66 @@ export const PubTileContainer = styled.div`
   flex-wrap: wrap;
   width: 100%;
   cursor: pointer;
+`;
+
+/* PubTitle.js */
+
+export const PublicationTile = styled.div`
+    background-color: ${props => props.theme.background};
+    position: relative;
+    height: 12em;
+    width: 15em;
+    padding: 0.2em 0.5em;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+`;
+
+export const PubBookTile = styled.div`
+    background-color: ${props => props.theme.background};
+    position: relative;
+    height: 17em;
+    width: 19em;
+    padding: 0.2em 0.5em;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+`;
+
+export const PubTileWrapper = styled.div`
+  display: table;
+  margin: 0.8em 0;
+  
+  &:hover {
+     animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
+  }
+`;
+
+export const PubYear = styled.div`
+  font-size: ${props => props.theme.captionSize};
+  margin-bottom: 0.5em;
+`;
+
+export const PubTitle = styled.div`
+  font-size: ${props => props.theme.bodySize};
+  text-transform: uppercase;
+  font-weight: bold;
+`;
+
+export const PubSeparator = styled.div`
+  margin: 0.5em auto;
+  height: 0.5em;
+  width: 8em;
+  background-color: ${props => props.theme.darkColor};
+`;
+
+export const PubIssue = styled.div`
+  font-size: ${props => props.theme.smallCaptionSize};
+  margin-bottom: 0.5em;
+`;
+
+export const PubDescription = styled.div`
+  font-size: ${props => props.theme.smallCaptionSize};
 `;

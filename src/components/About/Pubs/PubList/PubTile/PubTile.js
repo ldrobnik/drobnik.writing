@@ -3,72 +3,18 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-
-import {POP_KEYFRAMES} from "./../../../../../data/constants";
-
+import {
+    PublicationTile,
+    PubBookTile,
+    PubTileWrapper,
+    PubYear,
+    PubTitle,
+    PubSeparator,
+    PubIssue,
+    PubDescription
+} from '../../../../../styled';
 import BookCover from './BookCover/BookCover';
-import {setPageReload} from "../../../../../actions";
-
-/* STYLED COMPONENTS */
-const Tile = styled.div`
-    background-color: ${props => props.theme.background};
-    position: relative;
-    height: 12em;
-    width: 15em;
-    padding: 0.2em 0.5em;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    overflow: hidden;
-`;
-
-const BookTile = styled.div`
-    background-color: ${props => props.theme.background};
-    position: relative;
-    height: 17em;
-    width: 19em;
-    padding: 0.2em 0.5em;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    overflow: hidden;
-`;
-
-const TileWrapper = styled.div`
-  display: table;
-  margin: 0.8em 0;
-  
-  &:hover {
-     animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
-  }
-`;
-
-const Year = styled.div`
-  font-size: ${props => props.theme.captionSize};
-  margin-bottom: 0.5em;
-`;
-
-const Title = styled.div`
-  font-size: ${props => props.theme.bodySize};
-  text-transform: uppercase;
-  font-weight: bold;
-`;
-
-const Separator = styled.div`
-  margin: 0.5em auto;
-  height: 0.5em;
-  width: 8em;
-  background-color: ${props => props.theme.darkColor};
-`;
-
-const Issue = styled.div`
-  font-size: ${props => props.theme.smallCaptionSize};
-  margin-bottom: 0.5em;
-`;
-
-const Description = styled.div`
-  font-size: ${props => props.theme.smallCaptionSize};
-`;
+import {setPageReload} from '../../../../../actions';
 
 const PubTile = (props) => {
 
@@ -96,30 +42,30 @@ const PubTile = (props) => {
 
     //the above description wrapped in a tile element
     const tileContent = <React.Fragment>
-        <Year><i>{year}</i></Year>
-        <Title>{props.title}</Title>
-        <Separator/>
+        <PubYear><i>{year}</i></PubYear>
+        <PubTitle>{props.title}</PubTitle>
+        <PubSeparator/>
         {bookCover}
-        <Issue>{issue}</Issue>
-        <Description>{description}</Description>
+        <PubIssue>{issue}</PubIssue>
+        <PubDescription>{description}</PubDescription>
     </React.Fragment>;
 
     //tile content formatted depending on its type
 
-    const wrappedTileContent = (props.type === "books") ?
+    const wrappedTileContent = (props.type === 'books') ?
         (
-            <TileWrapper>
-                <BookTile>
+            <PubTileWrapper>
+                <PubBookTile>
                     {tileContent}
-                </BookTile>
-            </TileWrapper>
+                </PubBookTile>
+            </PubTileWrapper>
         ) :
         (
-            <TileWrapper>
-                <Tile>
+            <PubTileWrapper>
+                <PublicationTile>
                     {tileContent}
-                </Tile>
-            </TileWrapper>
+                </PublicationTile>
+            </PubTileWrapper>
         );
 
     //if the url property contains an anchor link, display AnchorLink, otherwise display normal link
