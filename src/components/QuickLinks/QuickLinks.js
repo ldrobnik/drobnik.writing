@@ -1,37 +1,11 @@
 import React, {useEffect} from 'react';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
-
-import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPageReload} from "../../actions";
-import {LINKS, TEXT_NAMES, FADE_DURATION, AnimatedContent} from "../../data/constants";
-
-import QuickLink from "./QuickLink/QuickLink";
-
-/*STYLED COMPONENTS*/
-const Wrapper = styled.div`
-   padding: 1em 1em;
-   
-   @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-      padding: 1em 3em;
-   }
-    
-   @media all and (min-width: ${props => props.theme.smallScr}) {
-      padding: 1em 5%;
-   }
-    
-   @media all and (min-width: ${props => props.theme.mediumScr}) {
-      padding: 1em 10%;
-   }
-    
-   @media all and (min-width: ${props => props.theme.largeScr}) {
-      padding: 1em 12%;
-   }
-    
-   @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-      padding: 1em 15%;
-   }
-`;
+import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPageReload} from '../../actions';
+import {QuickLinksWrapper} from '../../styled';
+import {AnimatedContent} from '../../posed';
+import {LINKS, TEXT_NAMES, FADE_DURATION} from '../../data/constants';
+import QuickLink from './QuickLink/QuickLink';
 
 const QuickLinks = (props) => {
 
@@ -80,7 +54,7 @@ const QuickLinks = (props) => {
     return (
         <AnimatedContent
             pose={!props.reload ? 'visible' : 'hidden'}>
-            <Wrapper>
+            <QuickLinksWrapper>
                 {LINKS.map((link, k) => {
                     return (
                         <QuickLink
@@ -90,7 +64,7 @@ const QuickLinks = (props) => {
                             key={k}/>
                     )
                 })}
-            </Wrapper>
+            </QuickLinksWrapper>
         </AnimatedContent>
     );
 };
