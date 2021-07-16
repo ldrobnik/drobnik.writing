@@ -5,23 +5,23 @@ import {POP_KEYFRAMES, PULSATE_KEYFRAMES} from './data/constants';
 /* General */
 
 export const GlobalStyle = createGlobalStyle`
-    body {
-        font-family: ${props => props.theme.sansSerif};
-        color: ${props => props.theme.darkColor};
-        background: linear-gradient(145deg, ${props => props.theme.color1}, ${props => props.theme.color2});
-        min-height: 100vh;
-        }
-        
-    a {
-        text-decoration: none;
-        color: ${props => props.theme.darkColor};
+  body {
+    font-family: ${props => props.theme.sansSerif};
+    color: ${props => props.theme.darkColor};
+    background: linear-gradient(145deg, ${props => props.theme.color1}, ${props => props.theme.color2});
+    min-height: 100vh;
+  }
 
-    }
-     
-     ::selection {
-        color: ${props => props.theme.color1};
-        background-color: ${props => props.theme.darkColor};
-     }
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.darkColor};
+
+  }
+
+  ::selection {
+    color: ${props => props.theme.color1};
+    background-color: ${props => props.theme.darkColor};
+  }
 `;
 
 /* About.js */
@@ -73,11 +73,11 @@ export const BookBody = styled.div`
   line-height: 1.4em;
   margin-top: 2em;
   margin-bottom: 2.5em;
-  
-     @media all and (min-width: ${props => props.theme.smallScr}) {
-             text-align: justify;
-        }  
-   
+
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    text-align: justify;
+  }
+
 `;
 
 export const BookSlogan = styled.div`
@@ -87,14 +87,14 @@ export const BookSlogan = styled.div`
   text-align: center;
   text-transform: uppercase;
   margin: 1.5em 0 2em 0;
-  
-      a {
-       @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }  
+
+  a {
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+      &:hover {
+        animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+      }
     }
+  }
 `;
 
 /* Intro.js */
@@ -103,25 +103,25 @@ export const IntroBody = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.serif};
   line-height: 1.4em;
-  
-   @media all and (min-width: ${props => props.theme.smallScr}) {
-             text-align: justify;
-        }  
-           
-    a {
-      font-family: ${props => props.theme.sansSerif};
-      
-      @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }  
-        
+
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    text-align: justify;
+  }
+
+  a {
+    font-family: ${props => props.theme.sansSerif};
+
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+      &:hover {
+        animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+      }
     }
-    
-    .centered {
-      text-align: center;
-    }
+
+  }
+
+  .centered {
+    text-align: center;
+  }
 `;
 
 /* Pubs.js */
@@ -181,35 +181,35 @@ export const PubTileContainer = styled.div`
 /* PubTitle.js */
 
 export const PublicationTile = styled.div`
-    background-color: ${props => props.theme.background};
-    position: relative;
-    height: 12em;
-    width: 15em;
-    padding: 0.2em 0.5em;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    overflow: hidden;
+  background-color: ${props => props.theme.background};
+  position: relative;
+  height: 12em;
+  width: 15em;
+  padding: 0.2em 0.5em;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
 `;
 
 export const PubBookTile = styled.div`
-    background-color: ${props => props.theme.background};
-    position: relative;
-    height: 17em;
-    width: 19em;
-    padding: 0.2em 0.5em;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    overflow: hidden;
+  background-color: ${props => props.theme.background};
+  position: relative;
+  height: 17em;
+  width: 19em;
+  padding: 0.2em 0.5em;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
 `;
 
 export const PubTileWrapper = styled.div`
   display: table;
   margin: 0.8em 0;
-  
+
   &:hover {
-     animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
+    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
   }
 `;
 
@@ -245,16 +245,16 @@ export const PubDescription = styled.div`
 export const BookCoverWrapper = styled.div`
   text-align: center;
   padding: 0.5em;
-  position: relative; 
+  position: relative;
 `;
 
 export const BookCoverPhoto = styled.div`
   height: 5em;
   opacity: ${props => props.theme.slightlyTranslucent};
   z-index: 60;
-  
+
   img {
-      height: 100%;
+    height: 100%;
   }
 `;
 
@@ -283,7 +283,7 @@ export const ReadListElementWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   &:hover {
     animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
   }
@@ -298,12 +298,12 @@ export const ReadListElementContent = styled.div`
 `;
 
 export const ReadListElementTitle = styled.div`
-    font-size: ${props => props.theme.subtitleSize}
-      text-transform: uppercase;
+  font-size: ${props => props.theme.subtitleSize}
+  text-transform: uppercase;
 `;
 
 export const ReadListElementSubtitle = styled.div`
-    font-size: ${props => props.theme.smallCaptionSize}
+  font-size: ${props => props.theme.smallCaptionSize}
 `;
 
 export const ReadListElementLine = styled.div`
@@ -315,44 +315,43 @@ export const ReadListElementLine = styled.div`
 
 /* SectionLinks.js */
 
-export
-const SectionLinksWrapper = styled.div`
+export const SectionLinksWrapper = styled.div`
   display: flex;
   justify-content: center;
   font-weight: bold;
   font-size: ${props => props.theme.captionSize}
   margin: 4em 0;
   text-decoration: underline;
-  
+
   div {
     padding: 0 0.3em;
-    
+
     @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }  
+      &:hover {
+        animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+      }
+    }
   }
 `;
 
 /* SocialLinks.js */
 
 export const SocialLinksWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: ${props => props.theme.bodySize};
-    margin: 1.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: ${props => props.theme.bodySize};
+  margin: 1.5em 0;
 
-    div {
-      padding: 8px;
+  div {
+    padding: 8px;
+  }
+
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    a:hover {
+      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
     }
-    
-     @media all and (min-width: ${props => props.theme.smallScr}) {
-             a:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }  
+  }
 `;
 
 /* BookPage.js */
@@ -365,78 +364,78 @@ export const BookPageTopAnchor = styled.div`
 export const BookPageWrapper = styled.div`
   overflow: hidden;
   padding: 7em 1em 2em 1em;
-  
+
   .centered {
     text-align: center;
   }
 
   @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-      padding: 7em 3em 2em 3em;
+    padding: 7em 3em 2em 3em;
   }
-    
+
   @media all and (min-width: ${props => props.theme.smallScr}) {
-      padding: 7em 10% 2em 10%;
+    padding: 7em 10% 2em 10%;
   }
-    
+
   @media all and (min-width: ${props => props.theme.mediumScr}) {
-      padding: 7em 20% 2em 20%;
+    padding: 7em 20% 2em 20%;
   }
-    
+
   @media all and (min-width: ${props => props.theme.largeScr}) {
-      padding: 7em 25% 2em 25%;
+    padding: 7em 25% 2em 25%;
   }
-    
+
   @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-      padding: 7em 32% 2em 32%;
+    padding: 7em 32% 2em 32%;
   }
 `;
 
 /* NavBar.js */
 
 export const NavBarWrapper = styled.div`
-    .hidden {
+  .hidden {
     display: none;
-    }    
+  }
 `;
 
 export const NavToolbar = styled.header`
-    height: 3em;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: ${props => props.theme.background};
-    z-index: 50;
-    font-weight: bold;
-    user-select: none;
-    backdrop-filter: blur(8px);
+  height: 3em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: ${props => props.theme.background};
+  z-index: 50;
+  font-weight: bold;
+  user-select: none;
+  backdrop-filter: blur(8px);
 `;
 
 export const LogoWrapper = styled.div`
-    position: absolute;
-    top: -4px;
-    left: -2px;
-  
-    @media all and (min-width: ${props => props.theme.smallScr}) {
-         &:hover {
-                  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-         }
+  position: absolute;
+  top: -4px;
+  left: -2px;
+
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    &:hover {
+      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
     }
+  }
 `;
 
 export const NavElement = styled.div`
-    cursor: pointer;
-    margin: ${props => props.theme.navIconMargin};
+  cursor: pointer;
+  margin: ${props => props.theme.navIconMargin};
 
-    @media all and (min-width: ${props => props.theme.smallScr}) {
-         &:hover {
-                  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-         }
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    &:hover {
+      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
     }
+  }
 `;
 
 export const ToggledNavElement = styled.div`
@@ -445,10 +444,10 @@ export const ToggledNavElement = styled.div`
   opacity: ${props => props.theme.translucent};
 
   @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }
+    &:hover {
+      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+    }
+  }
 `;
 
 export const NavLinkContent = styled.div`
@@ -462,7 +461,29 @@ export const NavLinkContent = styled.div`
 export const WebsiteLogo = styled.div`
   height: 2.8em;
   padding: 0.3em;
-    img {
-      height: 100%;
+
+  img {
+    height: 100%;
+  }
+`;
+
+/* NavLinks.js */
+
+export const NavLinksWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: ${props => props.theme.captionSize}
+  margin: 0 auto;
+  transform: translateX(6vw);
+
+  div {
+    padding: 0 0.3em;
+
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+      &:hover {
+        animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+      }
     }
+  }
 `;

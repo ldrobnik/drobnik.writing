@@ -1,28 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
-import {WEBSITE_TEXT, PULSATE_KEYFRAMES, AnimatedContent} from "./../../../data/constants";
-
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  font-size: ${props => props.theme.captionSize}
-  margin: 0 auto;
-  transform: translateX(6vw);
-  
-  div {
-    padding: 0 0.3em;
-    
-    @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }  
-  }
-`;
+import {NavLinksWrapper} from '../../../styled';
+import {AnimatedContent} from '../../../posed';
+import {WEBSITE_TEXT} from './../../../data/constants';
 
 const NavLinks = (props) => {
 
@@ -30,9 +11,7 @@ const NavLinks = (props) => {
     const sectionLinks = WEBSITE_TEXT.sectionLinks;
 
     return (
-
-        <Wrapper>
-
+        <NavLinksWrapper>
             {sectionLinks.map((link, k) => {
                     return (
                         <AnimatedContent
@@ -46,7 +25,7 @@ const NavLinks = (props) => {
                     );
                 }
             )}
-        </Wrapper>
+        </NavLinksWrapper>
 
     );
 };
