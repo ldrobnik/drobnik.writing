@@ -456,3 +456,13 @@ export const NavLinkContent = styled.div`
   display: block;
   min-width: 1.5em;
 `;
+
+/* Logo.js */
+
+export const WebsiteLogo = styled.div`
+  height: 2.8em;
+  padding: 0.3em;
+    img {
+      height: 100%;
+    }
+`;
