@@ -10,7 +10,6 @@ import Pubs from './Pubs/Pubs';
 import Read from './Read/Read';
 import CopyrightNote from './../UI/CopyrightNote/CopyrightNote';
 
-
 export const About = (props) => {
 
     //part of page title to be displayed depending on the current language

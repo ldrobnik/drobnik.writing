@@ -1,5 +1,6 @@
 /* STYLED-COMPONENTS */
 import styled, {createGlobalStyle} from 'styled-components';
+import {PULSATE_KEYFRAMES} from './data/constants';
 
 /* General */
 
@@ -64,3 +65,34 @@ export const AboutSectionWrapper = styled.div`
   margin-bottom: 5em;
 `;
 
+/* Book.js */
+
+export const BookBody = styled.div`
+  font-size: ${props => props.theme.bodySize};
+  font-family: ${props => props.theme.serif};
+  line-height: 1.4em;
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+  
+     @media all and (min-width: ${props => props.theme.smallScr}) {
+             text-align: justify;
+        }  
+   
+`;
+
+export const BookSlogan = styled.div`
+  font-size: ${props => props.theme.bodySize};
+  font-family: ${props => props.theme.sansSerif};
+  line-height: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1.5em 0 2em 0;
+  
+      a {
+       @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }  
+    }
+`;
