@@ -78,20 +78,23 @@ const AnimatedButton = posed.div({
 
 export const Intro = (props) => {
 
-    //specifies whether social links and support button should be visible
+    //specifies whether social links and CTA button should be visible
     const [socialVisible, setSocialVisible] = useState(false);
+
+    //gets a random CTA button out of available options
+    const ctaIndex = Math.floor(Math.random()*WEBSITE_TEXT.intro.cta[props.lang].length);
 
     //shows the content
     const showContent = () => {
         props.setPageReload(false);
     };
 
-    //shows the social links and support button
+    //shows the social links and CTA button
     const showSocial = () => {
         setSocialVisible(true);
     };
 
-    //hides the social links and support button
+    //hides the social links and CTA button
     const hideSocial = () => {
         setSocialVisible(false);
     };
@@ -149,8 +152,8 @@ export const Intro = (props) => {
             <AnimatedButton
                 pose={socialVisible ? 'visible' : 'hidden'}>
                 <CentredButton
-                    message={WEBSITE_TEXT.intro.support[props.lang].message}
-                    path={WEBSITE_TEXT.intro.support[props.lang].path}
+                    message={WEBSITE_TEXT.intro.cta[props.lang][ctaIndex].message}
+                    path={WEBSITE_TEXT.intro.cta[props.lang][ctaIndex].path}
                 />
             </AnimatedButton>
             <Waypoint

@@ -46,7 +46,7 @@ import tbaCover from '../assets/images/tbaCover.jpg';
 
 //Frequently used URLs
 
-export const NOCTURINE_URL = 'http://fathombooks.org/html/drobnik.html'; //Book preorder
+export const NOCTURINE_URL = 'http://fathombooks.org/html/drobnik.html'; //Nocturine preorder
 export const FATHOM_BOOKS_URL = 'http://fathombooks.org/'; //Fathom Books website
 export const VOSTOK_URL = 'https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk'; //Vostok preorder
 export const VRAEDA_URL = 'https://www.vraeydamedia.ca/literary'; //Vræyda Literary website
@@ -1202,15 +1202,23 @@ export const WEBSITE_TEXT = {
                 <p className="centered">e-mail: <em>drobniklukasz [at] gmail [dot] com</em></p>
             </div>
         },
-        support: {
-            en: {
-                message: <div>Buy me a coffee</div>,
-                path: KO_FI_URL
+        cta: {
+            en: [
+                {
+                message: <div>Pre-order NOCTURINE</div>,
+                path: NOCTURINE_URL
             },
-            pl: {
-                message: <div>Postaw mi kawę</div>,
-                path: KO_FI_URL
+                {
+                    message: <div>Pre-order VOSTOK</div>,
+                    path: VOSTOK_URL
+                },
+            ],
+            pl: [
+                {
+                message: <div>Czytaj BŁYSKI</div>,
+                path: BLYSKI_URL
             }
+            ]
         },
         social: [
             {
