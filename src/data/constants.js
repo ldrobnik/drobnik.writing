@@ -1162,7 +1162,7 @@ export const WEBSITE_TEXT = {
                     Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y Literary
                     Magazine</em>, and
                     elsewhere.</p>
-                <p>I’m also the editor-in-chief at <a
+                <p>I’m also editor-in-chief at <a
                     href={BLYSKI_URL} target="_blank"
                     rel="noopener noreferrer"><strong>BŁYSKI</strong></a>, a journal publishing flash fiction in Polish translation.</p>
                 <p>Below you can find
