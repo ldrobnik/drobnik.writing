@@ -263,3 +263,16 @@ export const BookCoverPhoto = styled.div`
 export const QuoteListWrapper = styled.div`
   text-align: center;
 `;
+
+
+/* Read.js */
+
+export const ReadWrapper = styled.div`
+  text-align: center;
+`;
+
+export const ReadMessage = styled.div`
+  font-weight: bold;
+  font-size: ${props => props.theme.bodySize};
+  margin: 3em 0;
+`;
