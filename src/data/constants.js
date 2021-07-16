@@ -46,9 +46,9 @@ import tbaCover from '../assets/images/tbaCover.jpg';
 
 //Frequently used URLs
 
-export const NOCTURINE_URL = 'http://fathombooks.org/html/drobnik.html'; //Nocturine preorder
+export const NOCTURINE_URL = 'http://fathombooks.org/html/drobnik.html'; //Nocturine pre-order
 export const FATHOM_BOOKS_URL = 'http://fathombooks.org/'; //Fathom Books website
-export const VOSTOK_URL = 'https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk'; //Vostok preorder
+export const VOSTOK_URL = 'https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk'; //Vostok pre-order
 export const VRAEDA_URL = 'https://www.vraeydamedia.ca/literary'; //Vræyda Literary website
 export const TWITTER_URL = 'https://twitter.com/drobnik';
 export const FACEBOOK_URL = 'https://www.facebook.com/drobnikwrites';
@@ -876,7 +876,7 @@ export const THEME_COLORS = {
 //Order button text
 const ORDER_BUTTON = {
     preorder: {
-        en: 'Preorder your copy',
+        en: 'Pre-order your copy',
         pl: 'Zamów w przedsprzedaży'
     },
     order: {
@@ -1364,12 +1364,12 @@ export const WEBSITE_TEXT = {
 
 export const LINKS = [
     {
-        title: 'Preorder VOSTOK',
+        title: 'Pre-order VOSTOK',
         subtitle: 'from Vræyda Literary',
         url: VOSTOK_URL
     },
     {
-        title: 'Preorder NOCTURINE',
+        title: 'Pre-order NOCTURINE',
         subtitle: 'from Fathom Books',
         url: NOCTURINE_URL
     },
