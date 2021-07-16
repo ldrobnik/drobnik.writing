@@ -123,3 +123,46 @@ export const IntroBody = styled.div`
       text-align: center;
     }
 `;
+
+/* Pubs.js */
+
+export const PubsWrapper = styled.div`
+  text-align: center;
+`;
+
+export const PubsMessage = styled.div`
+  font-size: ${props => props.theme.bodySize};
+  font-weight: bold;
+  margin: 2em 0 0.5em 0;
+`;
+
+export const PubsSwitchPanel = styled.div`
+  display: flex;
+  justify-content: center;
+  align-content: space-evenly;
+  font-size: ${props => props.theme.bodySize};
+  font-weight: bold;
+  margin-bottom: 2em;
+`;
+
+export const PubsSwitchWrapper = styled.div`
+  display: flex;
+  margin: 0.5em;
+`;
+
+export const PubsLabel = styled.span`
+  padding: 0.1em;
+`;
+
+export const PubsSubsectionHeading = styled.h1`
+  font-size: ${props => props.theme.subtitleSize};
+  //margin-top: 1em;
+  text-transform: uppercase;
+`;
+
+export const PubsSeparator = styled.div`
+  margin: 2em auto 0 auto;
+  height: 0.6em;
+  width: 6em;
+  background-color: ${props => props.theme.darkColor};
+`;

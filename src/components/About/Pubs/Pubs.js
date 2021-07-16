@@ -1,92 +1,26 @@
 import React, {useState, useEffect} from 'react';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
 import posed from 'react-pose';
-import {Waypoint} from "react-waypoint";
-
-import {setPageReload} from "../../../actions";
-import {WEBSITE_TEXT, FADE_DURATION, AnimatedContent} from './../../../data/constants';
-
+import {Waypoint} from 'react-waypoint';
+import {setPageReload} from '../../../actions';
+import {
+    PubsWrapper,
+    PubsMessage,
+    PubsSwitchPanel,
+    PubsSwitchWrapper,
+    PubsLabel,
+    PubsSubsectionHeading,
+    PubsSeparator
+} from '../../../styled';
+import {AnimatedContent, PubsAnimatedMessage, PubsAnimatedPanel} from '../../../posed';
+import {WEBSITE_TEXT, FADE_DURATION} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import ToggleSwitch from './../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
-import SectionLinks from "../SectionLinks/SectionLinks";
-import SectionSeparator from "./../../UI/SectionSeparator/SectionSeparator";
-
-/* STYLED COMPONENTS */
-const Wrapper = styled.div`
-  text-align: center;
-`;
-
-const Message = styled.div`
-  font-size: ${props => props.theme.bodySize};
-  font-weight: bold;
-  margin: 2em 0 0.5em 0;
-`;
-
-const SwitchPanel = styled.div`
-  display: flex;
-  justify-content: center;
-  align-content: space-evenly;
-  font-size: ${props => props.theme.bodySize};
-  font-weight: bold;
-  margin-bottom: 2em;
-`;
-
-const SwitchWrapper = styled.div`
-  display: flex;
-  margin: 0.5em;
-`;
-
-const Label = styled.span`
-  padding: 0.1em;
-`;
-
-const SubsectionHeading = styled.h1`
-  font-size: ${props => props.theme.subtitleSize};
-  //margin-top: 1em;
-  text-transform: uppercase;
-`;
-
-const Separator = styled.div`
-  margin: 2em auto 0 auto;
-  height: 0.6em;
-  width: 6em;
-  background-color: ${props => props.theme.darkColor};
-`;
-
-/* POSE */
-const AnimatedMessage = posed.div({
-    visible: {
-        opacity: 1,
-        x: '0',
-        transition: {
-            type: 'spring',
-            stiffness: 100
-        }
-    },
-    hidden: {
-        opacity: 0,
-        x: '-200%'
-    }
-});
-
-const AnimatedPanel = posed.div({
-    visible: {
-        opacity: 1,
-        x: '0',
-        transition: {
-            type: 'spring',
-            stiffness: 100
-        }
-    },
-    hidden: {
-        opacity: 0,
-        x: '200%'
-    }
-});
+import SectionLinks from '../SectionLinks/SectionLinks';
+import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';
 
 export const Pubs = (props) => {
 
@@ -109,8 +43,8 @@ export const Pubs = (props) => {
 
     //switches the visibility of publications off and on
     const refreshPubs = () => {
-      setPubsVisible(false);
-      setTimeout(() => setPubsVisible(true), 200);
+        setPubsVisible(false);
+        setTimeout(() => setPubsVisible(true), 200);
     };
     //toggles the display of English pubs and if both en and pl are false, sets pl to true
     const setEnHandler = () => {
@@ -155,7 +89,7 @@ export const Pubs = (props) => {
 
 
     return (
-        <Wrapper>
+        <PubsWrapper>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionHeading
@@ -165,41 +99,41 @@ export const Pubs = (props) => {
                 <Waypoint
                     onEnter={showPubs}/>
             </AnimatedContent>
-            <AnimatedMessage
+            <PubsAnimatedMessage
                 pose={messageVisible ? 'visible' : 'hidden'}>
-                <Message>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</Message>
-            </AnimatedMessage>
-            <AnimatedPanel
+                <PubsMessage>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</PubsMessage>
+            </PubsAnimatedMessage>
+            <PubsAnimatedPanel
                 pose={messageVisible ? 'visible' : 'hidden'}>
-                <SwitchPanel>
+                <PubsSwitchPanel>
                     <label>
-                        <SwitchWrapper>
+                        <PubsSwitchWrapper>
                             <ToggleSwitch
                                 checked={en}
                                 onChange={setEnHandler}
                             />
-                            <Label>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].english}</Label>
-                        </SwitchWrapper>
+                            <PubsLabel>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].english}</PubsLabel>
+                        </PubsSwitchWrapper>
                     </label>
                     <label>
-                        <SwitchWrapper>
+                        <PubsSwitchWrapper>
                             <ToggleSwitch
                                 checked={pl}
                                 onChange={setPlHandler}
                             />
-                            <Label>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].polish}</Label>
-                        </SwitchWrapper>
+                            <PubsLabel>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].polish}</PubsLabel>
+                        </PubsSwitchWrapper>
                     </label>
-                </SwitchPanel>
-            </AnimatedPanel>
+                </PubsSwitchPanel>
+            </PubsAnimatedPanel>
             <Waypoint
                 onEnter={showPubs}/>
             <AnimatedContent
                 pose={pubsVisible ? 'visible' : 'hidden'}>
-                <Separator/>
+                <PubsSeparator/>
                 <Waypoint
                     onEnter={showPubs}/>
-                <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].books}</SubsectionHeading>
+                <PubsSubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].books}</PubsSubsectionHeading>
                 <PubList
                     en={en}
                     pl={pl}
@@ -208,15 +142,15 @@ export const Pubs = (props) => {
                 />
                 <Waypoint
                     onEnter={showPubs}/>
-                <Separator/>
-                <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].press}</SubsectionHeading>
+                <PubsSeparator/>
+                <PubsSubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].press}</PubsSubsectionHeading>
                 <PubList
                     en={en}
                     pl={pl}
                     visible={pubsVisible}
                     type="press"/>
-                <Separator/>
-                <SubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].collections}</SubsectionHeading>
+                <PubsSeparator/>
+                <PubsSubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].collections}</PubsSubsectionHeading>
                 <PubList
                     en={en}
                     pl={pl}
@@ -231,7 +165,7 @@ export const Pubs = (props) => {
                 />
                 <SectionSeparator/>
             </AnimatedContent>
-        </Wrapper>
+        </PubsWrapper>
     );
 };
 

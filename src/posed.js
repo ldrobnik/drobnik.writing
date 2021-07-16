@@ -64,3 +64,35 @@ export const IntroAnimatedButton = posed.div({
         transform: 'scale(0,0)'
     }
 });
+
+/* Pubs.js */
+
+export const PubsAnimatedMessage = posed.div({
+    visible: {
+        opacity: 1,
+        x: '0',
+        transition: {
+            type: 'spring',
+            stiffness: 100
+        }
+    },
+    hidden: {
+        opacity: 0,
+        x: '-200%'
+    }
+});
+
+export const PubsAnimatedPanel = posed.div({
+    visible: {
+        opacity: 1,
+        x: '0',
+        transition: {
+            type: 'spring',
+            stiffness: 100
+        }
+    },
+    hidden: {
+        opacity: 0,
+        x: '200%'
+    }
+});
