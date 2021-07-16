@@ -239,3 +239,27 @@ export const PubIssue = styled.div`
 export const PubDescription = styled.div`
   font-size: ${props => props.theme.smallCaptionSize};
 `;
+
+/* BookCover.js */
+
+export const BookCoverWrapper = styled.div`
+  text-align: center;
+  padding: 0.5em;
+  position: relative; 
+`;
+
+export const BookCoverPhoto = styled.div`
+  height: 5em;
+  opacity: ${props => props.theme.slightlyTranslucent};
+  z-index: 60;
+  
+  img {
+      height: 100%;
+  }
+`;
+
+/* QuoteList.js */
+
+export const QuoteListWrapper = styled.div`
+  text-align: center;
+`;

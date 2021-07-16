@@ -116,3 +116,46 @@ export const PubAnimatedTile = posed.div({
         transition: {duration: 200}
     }
 });
+
+/* BookCover.js */
+
+export const BookCoverAnimatedPic = posed.div({
+    visible: {
+        opacity: 1,
+        filter: 'blur(0)',
+        transition: {
+            ease: 'easeInOut',
+            duration: 200 }
+    },
+    hidden: {
+        opacity: 0,
+        filter: 'blur(20px)'
+    }
+});
+
+/* QuoteList.js */
+
+export const AnimatedQuoteList = posed.div({
+    visible: {
+        delayChildren: 200,
+        staggerChildren: 400
+    }
+});
+
+export const AnimatedQuote = posed.div({
+    visible: {
+        y: '0%',
+        opacity: 1,
+        transition: {
+            ease: 'easeOut',
+            duration: 1500
+        }
+    },
+    hidden: {
+        y: '50%',
+        opacity: 0,
+        transition: {
+            duration: 2000
+        }
+    }
+});

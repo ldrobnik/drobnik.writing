@@ -1,38 +1,6 @@
 import React, {useState} from 'react';
-import styled from 'styled-components';
-import posed from 'react-pose';
-
-/*STYLED COMPONENTS*/
-const Wrapper = styled.div`
-  text-align: center;
-  padding: 0.5em;
-  position: relative; 
-`;
-
-const Photo = styled.div`
-  height: 5em;
-  opacity: ${props => props.theme.slightlyTranslucent};
-  z-index: 60;
-  
-  img {
-      height: 100%;
-  }
-`;
-
-/* POSE */
-const AnimatedPic = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0)',
-        transition: {
-            ease: 'easeInOut',
-            duration: 200 }
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});
+import {BookCoverWrapper, BookCoverPhoto} from '../../../../../../styled';
+import {BookCoverAnimatedPic} from '../../../../../../posed';
 
 const BookCover = (props) => {
 
@@ -45,18 +13,18 @@ const BookCover = (props) => {
     };
 
     return (
-        <Wrapper>
-            <AnimatedPic
+        <BookCoverWrapper>
+            <BookCoverAnimatedPic
                 pose={visible ? 'visible' : 'hidden'}>
-                <Photo>
+                <BookCoverPhoto>
                     <img
                         src={props.source}
                         alt={props.altText}
                         onLoad={showPhoto}
                     />
-                </Photo>
-            </AnimatedPic>
-        </Wrapper>
+                </BookCoverPhoto>
+            </BookCoverAnimatedPic>
+        </BookCoverWrapper>
     );
 };
 
