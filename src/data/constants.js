@@ -385,7 +385,7 @@ export const PUBLICATIONS = {
                 pl: 'Okładka Nocturine'
             },
             descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2021 r. nakładem wydawnictwa Fathom Books',
-            descriptionEn: 'A collection of interlinked stories forthcoming in 2021 from Fathom Books',
+            descriptionEn: 'Collection of interlinked stories forthcoming in 2021 from Fathom Books',
             language: 'en',
             pieceTitle: 'Nocturine'
         },
