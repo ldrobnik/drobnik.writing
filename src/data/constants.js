@@ -1,12 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {keyframes} from 'styled-components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faTwitterSquare,
     faFacebookSquare,
-    faInstagram,
-    faMedium
+    faInstagram
 } from '@fortawesome/free-brands-svg-icons';
 import {
     faHome,
@@ -36,13 +34,12 @@ import {LANDMINES_EN} from './texts/landmines-en';
 import {LANDMINES_PL} from './texts/landmines-pl';
 import {TREASURES_EN} from './texts/treasures-en';
 import {TREASURES_PL} from './texts/treasures-pl';
-import posed from 'react-pose';
 
 //source urls for book covers
 import nocturineCover from '../assets/images/nocturineCover.jpg';
 import nocCunCover from '../assets/images/nocCunCover.jpg';
 import vostokCover from '../assets/images/vostokCover.jpg';
-import tbaCover from '../assets/images/tbaCover.jpg';
+// import tbaCover from '../assets/images/tbaCover.jpg';
 
 //Frequently used URLs
 

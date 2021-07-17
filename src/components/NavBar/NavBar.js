@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {setLanguage, setBWMode, setPageReload} from '../../actions';
 import {NavBarWrapper, NavToolbar, LogoWrapper, NavElement, ToggledNavElement, NavLinkContent} from '../../styled';
-import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES} from '../../data/constants';
+import {WEBSITE_TEXT, TEXT_NAMES} from '../../data/constants';
 import Logo from './Logo/Logo';
 import NavLinks from './NavLinks/NavLinks';
 

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {setPageReload} from '../../../actions';
 import {NextTextWrapper, UpNext, NextTextLine} from '../../../styled';
-import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from './../../../data/constants';
+import {TEXTS, WEBSITE_TEXT} from './../../../data/constants';
 
 const NextTextLink = (props) => {
 

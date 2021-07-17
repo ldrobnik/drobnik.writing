@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import posed from 'react-pose';
 import {Waypoint} from 'react-waypoint';
 import {
     setTheme,

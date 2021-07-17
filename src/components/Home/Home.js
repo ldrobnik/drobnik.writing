@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import {bindActionCreators} from "redux";
 import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {createGlobalStyle} from 'styled-components';
 import {setDataNoticeVisible, setDataNoticeAccepted, setLanguage, setBWMode, setPageLoaded} from "../../actions";
 import Layout from '../Layout/Layout';
 import About from '../About/About';

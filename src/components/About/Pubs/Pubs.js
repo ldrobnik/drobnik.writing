@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
-import posed from 'react-pose';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
 import {
