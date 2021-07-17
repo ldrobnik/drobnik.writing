@@ -683,3 +683,39 @@ export const CentredButtonButtonWrapper = styled.div`
        margin: 0 25%;
   }  
 `;
+
+/* CentredPhoto.js */
+
+export const CentredPhotoWrapper = styled.div`
+  text-align: center;
+  padding: 2em;
+  position: relative; 
+`;
+
+export const Photo = styled.div`
+  height: 12em;
+  opacity: ${props => props.theme.slightlyTranslucent};
+  z-index: 60;
+  
+  img {
+      height: 100%;
+  }
+`;
+
+export const PhotoLink = styled.div`
+  height: 24em;
+  opacity: ${props => props.theme.slightlyTranslucent};
+  z-index: 60;
+  
+  img {
+      height: 100%;
+  }
+`;
+
+/* CopyrightNote.js */
+
+export const Note = styled.div`
+  margin: 1em 0;
+  font-size: ${props => props.theme.smallCaptionSize};
+  text-align: center;
+`;

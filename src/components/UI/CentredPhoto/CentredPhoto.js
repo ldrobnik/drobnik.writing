@@ -1,48 +1,6 @@
 import React, {useState} from 'react';
-import styled from 'styled-components';
-import posed from 'react-pose';
-
-/*STYLED COMPONENTS*/
-const Wrapper = styled.div`
-  text-align: center;
-  padding: 2em;
-  position: relative; 
-`;
-const Photo = styled.div`
-  height: 12em;
-  opacity: ${props => props.theme.slightlyTranslucent};
-  z-index: 60;
-  
-  img {
-      height: 100%;
-  }
-`;
-
-const PhotoLink = styled.div`
-  height: 24em;
-  opacity: ${props => props.theme.slightlyTranslucent};
-  z-index: 60;
-  
-  img {
-      height: 100%;
-  }
-`;
-
-/* POSE */
-const AnimatedPic = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0)',
-        transition: {
-            ease: 'easeInOut',
-            duration: 200
-        }
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});
+import {CentredPhotoWrapper, Photo, PhotoLink} from '../../../styled';
+import {AnimatedPhoto} from '../../../posed';
 
 const CentredPhoto = (props) => {
 
@@ -55,8 +13,8 @@ const CentredPhoto = (props) => {
     };
 
     return (
-        <Wrapper>
-            <AnimatedPic
+        <CentredPhotoWrapper>
+            <AnimatedPhoto
                 pose={visible ? 'visible' : 'hidden'}>
                 {props.link ?
                     <PhotoLink>
@@ -76,8 +34,8 @@ const CentredPhoto = (props) => {
                             onLoad={showPhoto}
                         />
                     </Photo>}
-            </AnimatedPic>
-        </Wrapper>
+            </AnimatedPhoto>
+        </CentredPhotoWrapper>
     );
 };
 
