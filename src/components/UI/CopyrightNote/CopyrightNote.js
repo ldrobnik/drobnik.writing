@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Note} from '../../../styled';
 
 const CopyrightNote = () => {
     return (

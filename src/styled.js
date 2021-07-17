@@ -719,3 +719,53 @@ export const Note = styled.div`
   font-size: ${props => props.theme.smallCaptionSize};
   text-align: center;
 `;
+
+/* DataNotice.js */
+
+export const Notice = styled.div`
+  background-color: ${props => props.theme.darkColor};
+  padding: 1em 0;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 10px;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  
+
+  @media all and (min-width: ${props => props.theme.mediumScr}) {
+       left: 10%;
+       width: 80%;
+  }
+    
+  @media all and (min-width: ${props => props.theme.largeScr}) {
+       left: 15%;
+       width: 70%;
+  }
+    
+  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+       left: 20%;
+       width: 60%;
+  }
+`;
+
+export const NoticeMessage = styled.div`
+    color: ${props => props.theme.lightColor};
+    font-size: ${props => props.theme.captionSize};
+    font-family: ${props => props.theme.serif};
+    padding: 0.5em 1em;
+`;
+
+export const NoticeDismissButton = styled.div`
+    background-color: ${props => props.theme.lightColor};
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 8em;
+    margin: 0 auto;
+    padding: 0.3em;
+    cursor: pointer;
+    
+    &:hover {
+      opacity: ${props => props.theme.slightlyTranslucent};
+    }
+`;
