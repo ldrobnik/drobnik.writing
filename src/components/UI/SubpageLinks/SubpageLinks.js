@@ -1,30 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
+import {SubLinks} from '../../../styled';
+import {WEBSITE_TEXT} from '../../../data/constants';
 
-import {WEBSITE_TEXT, PULSATE_KEYFRAMES} from "../../../data/constants";
-
-
-const Links = styled.div`
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  font-size: ${props => props.theme.captionSize}
-  user-select: none;
-  margin: 1em 0;
-  text-decoration: underline;
-  
-  div {
-    padding: 0 0.3em;
-    
-    @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }  
-  }
-`;
 
 const SubpageLinks = props => {
     //The Back to Top link
@@ -37,13 +16,12 @@ const SubpageLinks = props => {
     >{WEBSITE_TEXT.text.home[props.lang]}</Link>;
 
     return (
-        <Links>
+        <SubLinks>
             <div>{top}</div>
             <div>{home}</div>
-        </Links>
+        </SubLinks>
     );
 };
-
 
 
 export default SubpageLinks;

@@ -845,3 +845,25 @@ export const SpinnerBackdrop = styled.div`
   height: 100%;
   background: linear-gradient(145deg, ${props => props.theme.color1}, ${props => props.theme.color2});
 `;
+
+/* SubpageLinks.js */
+
+export const SubLinks = styled.div`
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: ${props => props.theme.captionSize}
+  user-select: none;
+  margin: 1em 0;
+  text-decoration: underline;
+  
+  div {
+    padding: 0 0.3em;
+    
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+             &:hover {
+                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+             }
+        }  
+  }
+`;
