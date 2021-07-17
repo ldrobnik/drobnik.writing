@@ -819,3 +819,29 @@ export const SmSeparator = styled.div`
   width: 8em;
   background-color: ${props => props.theme.darkColor};
 `;
+
+/* Spinner.js */
+
+export const SpinnerWrapper = styled.div`
+  position: absolute;
+  z-index: 90;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+  
+  img {
+    height: 110px;
+  }
+`;
+
+
+export const SpinnerBackdrop = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 80;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(145deg, ${props => props.theme.color1}, ${props => props.theme.color2});
+`;
