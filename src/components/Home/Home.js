@@ -2,38 +2,14 @@ import React, {useEffect} from 'react';
 import {bindActionCreators} from "redux";
 import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {createGlobalStyle} from 'styled-components';
-
 import {setDataNoticeVisible, setDataNoticeAccepted, setLanguage, setBWMode, setPageLoaded} from "../../actions";
-
 import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Text from '../Text/Text';
 import QuickLinks from '../QuickLinks/QuickLinks';
-import BookPage from '../BookPage/BookPage';
 import DataNotice from '../UI/DataNotice/DataNotice';
 import Spinner from '../UI/Spinner/Spinner';
-
-/* STYLED COMPONENTS */
-const GlobalStyle = createGlobalStyle`
-    body {
-        font-family: ${props => props.theme.sansSerif};
-        color: ${props => props.theme.darkColor};
-        background: linear-gradient(145deg, ${props => props.theme.color1}, ${props => props.theme.color2});
-        min-height: 100vh;
-        }
-        
-    a {
-        text-decoration: none;
-        color: ${props => props.theme.darkColor};
-
-    }
-     
-     ::selection {
-        color: ${props => props.theme.color1};
-        background-color: ${props => props.theme.darkColor};
-     }
-`;
+import {GlobalStyle} from '../../styled';
 
 export const Home = (props) => {
     //checks if any data is stored in localStorage and updates Redux state accordingly

@@ -1,12 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-/*STYLED COMPONENTS*/
-const Note = styled.div`
-  margin: 1em 0;
-  font-size: ${props => props.theme.smallCaptionSize};
-  text-align: center;
-`;
+import {Note} from '../../../styled';
 
 const CopyrightNote = () => {
     return (

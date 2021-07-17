@@ -1,51 +1,23 @@
 import React, {useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
-
-import { setTheme, setCurrentText, setNavbarVisibility, setDataNoticeVisible, setMainPage, setBookPage, setPageReload } from "../../actions";
-import {BOOKS, FADE_DURATION, AnimatedContent} from './../../data/constants';
-
+import {
+    setTheme,
+    setCurrentText,
+    setNavbarVisibility,
+    setDataNoticeVisible,
+    setMainPage,
+    setBookPage,
+    setPageReload
+} from '../../actions';
+import {BookPageTopAnchor, BookPageWrapper} from '../../styled';
+import {AnimatedContent} from '../../posed';
+import {BOOKS, FADE_DURATION} from './../../data/constants';
 import Book from '../About/Book/Book';
-import SectionSeparator from "../UI/SectionSeparator/SectionSeparator";
-import InvisibleSeparator from "../UI/InvisibleSeparator/InvisibleSeparator";
+import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
+import InvisibleSeparator from '../UI/InvisibleSeparator/InvisibleSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
-import CopyrightNote from "../UI/CopyrightNote/CopyrightNote";
-
-/* STYLED COMPONENTS */
-const TopAnchor = styled.div`
-  position: absolute;
-  top: 0;
-`;
-
-const Wrapper = styled.div`
-  overflow: hidden;
-  padding: 7em 1em 2em 1em;
-  
-  .centered {
-    text-align: center;
-  }
-
-  @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-      padding: 7em 3em 2em 3em;
-  }
-    
-  @media all and (min-width: ${props => props.theme.smallScr}) {
-      padding: 7em 10% 2em 10%;
-  }
-    
-  @media all and (min-width: ${props => props.theme.mediumScr}) {
-      padding: 7em 20% 2em 20%;
-  }
-    
-  @media all and (min-width: ${props => props.theme.largeScr}) {
-      padding: 7em 25% 2em 25%;
-  }
-    
-  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-      padding: 7em 32% 2em 32%;
-  }
-`;
+import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
 
 export const BookPage = (props) => {
@@ -88,7 +60,7 @@ export const BookPage = (props) => {
 
     //lets the Redux store know that the Book page is currently displayed
     const setBookDisplayed = () => {
-      props.setBookPage(true);
+        props.setBookPage(true);
     };
 
     useEffect(() => {
@@ -121,12 +93,12 @@ export const BookPage = (props) => {
 
     //do not show the content until the page is loaded
     return props.loaded ?
-        (<Wrapper>
-            <TopAnchor>
+        (<BookPageWrapper>
+            <BookPageTopAnchor>
                 <div id='top'></div>
-            </TopAnchor>
-            <Book book={props.book} />
-            <InvisibleSeparator />
+            </BookPageTopAnchor>
+            <Book book={props.book}/>
+            <InvisibleSeparator/>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SubpageLinks
@@ -136,7 +108,7 @@ export const BookPage = (props) => {
                 <SectionSeparator/>
                 <CopyrightNote/>
             </AnimatedContent>
-        </Wrapper>) :
+        </BookPageWrapper>) :
         <div></div>;
 };
 

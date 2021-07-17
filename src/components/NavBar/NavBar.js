@@ -2,79 +2,13 @@ import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
-import {setLanguage, setBWMode, setPageReload} from "../../actions";
-import {WEBSITE_TEXT, TEXT_NAMES, PULSATE_KEYFRAMES} from '../../data/constants';
-
+import {setLanguage, setBWMode, setPageReload} from '../../actions';
+import {NavBarWrapper, NavToolbar, LogoWrapper, NavElement, ToggledNavElement, NavLinkContent} from '../../styled';
+import {WEBSITE_TEXT, TEXT_NAMES} from '../../data/constants';
 import Logo from './Logo/Logo';
 import NavLinks from './NavLinks/NavLinks';
 
-/* STYLED COMPONENTS */
-const Wrapper = styled.div`
-    .hidden {
-    display: none;
-    }    
-`;
-
-const Toolbar = styled.header`
-    height: 3em;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: ${props => props.theme.background};
-    z-index: 50;
-    font-weight: bold;
-    user-select: none;
-    backdrop-filter: blur(8px);
-`;
-
-const LogoWrapper = styled.div`
-    position: absolute;
-    top: -4px;
-    left: -2px;
-  
-    @media all and (min-width: ${props => props.theme.smallScr}) {
-         &:hover {
-                  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-         }
-    }
-`;
-
-const NavElement = styled.div`
-    cursor: pointer;
-    margin: ${props => props.theme.navIconMargin};
-
-    @media all and (min-width: ${props => props.theme.smallScr}) {
-         &:hover {
-                  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-         }
-    }
-`;
-
-const ToggledNavElement = styled.div`
-  cursor: pointer;
-  margin: ${props => props.theme.navIconMargin};
-  opacity: ${props => props.theme.translucent};
-
-  @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }
-`;
-
-const LinkContent = styled.div`
-  padding: ${props => props.theme.navIconPadding};
-  display: block;
-  min-width: 1.5em;
-`;
 
 const NavBar = (props) => {
 
@@ -172,9 +106,9 @@ const NavBar = (props) => {
     const homeButton = (props.mainDisplayed) ?
         <NavElement>
             <AnchorLink href='#top'>
-                <LinkContent>
+                <NavLinkContent>
                     {WEBSITE_TEXT.navbar.home[props.lang]}
-                </LinkContent>
+                </NavLinkContent>
             </AnchorLink>
         </NavElement>
         :
@@ -182,9 +116,9 @@ const NavBar = (props) => {
             <Link to={'/'}
                   onClick={reloadPage}
             >
-                <LinkContent>
+                <NavLinkContent>
                     {WEBSITE_TEXT.navbar.home[props.lang]}
-                </LinkContent>
+                </NavLinkContent>
             </Link>
         </NavElement>
     ;
@@ -193,9 +127,9 @@ const NavBar = (props) => {
     const langButton = (
         <NavElement>
             <div onClick={changeLanguage}>
-                <LinkContent>
+                <NavLinkContent>
                     {WEBSITE_TEXT.navbar.language[props.lang]}
-                </LinkContent>
+                </NavLinkContent>
             </div>
         </NavElement>
     );
@@ -204,16 +138,16 @@ const NavBar = (props) => {
     const bwButton = (props.bwMode) ?
         (<NavElement>
             <div onClick={toggleBwMode}>
-                <LinkContent>
+                <NavLinkContent>
                     {WEBSITE_TEXT.navbar.colourMode[props.lang]}
-                </LinkContent>
+                </NavLinkContent>
             </div>
         </NavElement>) :
         (<ToggledNavElement>
             <div onClick={toggleBwMode}>
-                <LinkContent>
+                <NavLinkContent>
                     {WEBSITE_TEXT.navbar.colourMode[props.lang]}
-                </LinkContent>
+                </NavLinkContent>
             </div>
         </ToggledNavElement>);
 
@@ -244,9 +178,9 @@ const NavBar = (props) => {
             <Link
                 to={'/texts/' + chosenText}
                 onClick={reloadPage}>
-                <LinkContent>
+                <NavLinkContent>
                     {WEBSITE_TEXT.navbar.read[props.lang]}
-                </LinkContent>
+                </NavLinkContent>
             </Link>
         </NavElement>
     );
@@ -255,9 +189,9 @@ const NavBar = (props) => {
     const contentClass = (props.showNavbar) ? '' : 'hidden';
 
     return (
-        <Wrapper>
+        <NavBarWrapper>
             <div className={contentClass}>
-                <Toolbar>
+                <NavToolbar>
                     <LogoWrapper>
                         {logoLink}
                     </LogoWrapper>
@@ -266,9 +200,9 @@ const NavBar = (props) => {
                     {langButton}
                     {bwButton}
                     {readButton}
-                </Toolbar>
+                </NavToolbar>
             </div>
-        </Wrapper>
+        </NavBarWrapper>
     );
 };
 

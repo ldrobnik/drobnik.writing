@@ -1,70 +1,19 @@
 import React, {useState, useEffect} from 'react';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
-import posed from 'react-pose';
 import {Waypoint} from 'react-waypoint';
-
-import {setPageReload} from "../../../actions";
-import {EXCERPT_BUTTON, BOOKS, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from './../../../data/constants';
-
+import {setPageReload} from '../../../actions';
+import {BookBody, BookSlogan} from '../../../styled';
+import {AnimatedContent, BookAnimatedButton} from '../../../posed';
+import {EXCERPT_BUTTON, BOOKS, FADE_DURATION} from './../../../data/constants';
 import CentredPhoto from '../../UI/CentredPhoto/CentredPhoto';
 import SectionHeading from '../../UI/SectionHeading/SectionHeading'
 import QuoteList from '../QuoteList/QuoteList';
-import CentredButton from "../../UI/CentredButton/CentredButton";
-import SectionLinks from "../SectionLinks/SectionLinks";
-import SectionSeparator from "../../UI/SectionSeparator/SectionSeparator";
-import SmallSeparator from "../../UI/SmallSeparator/SmallSeparator";
-
-/* STYLED COMPONENTS */
-
-const Body = styled.div`
-  font-size: ${props => props.theme.bodySize};
-  font-family: ${props => props.theme.serif};
-  line-height: 1.4em;
-  margin-top: 2em;
-  margin-bottom: 2.5em;
-  
-     @media all and (min-width: ${props => props.theme.smallScr}) {
-             text-align: justify;
-        }  
-   
-`;
-
-const Slogan = styled.div`
-  font-size: ${props => props.theme.bodySize};
-  font-family: ${props => props.theme.sansSerif};
-  line-height: 1.4em;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 1.5em 0 2em 0;
-  
-      a {
-       @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }  
-    }
-`;
-
-
-/* POSE */
-const AnimatedButton = posed.div({
-    visible: {
-        opacity: 1,
-        transform: 'scale(1,1)',
-        transition: {
-            type: 'spring',
-            stiffness: 100
-        }
-    },
-    hidden: {
-        opacity: 0,
-        transform: 'scale(0,0)'
-    }
-});
+import CentredButton from '../../UI/CentredButton/CentredButton';
+import SectionLinks from '../SectionLinks/SectionLinks';
+import SectionSeparator from '../../UI/SectionSeparator/SectionSeparator';
+import SmallSeparator from '../../UI/SmallSeparator/SmallSeparator';
 
 export const Book = (props) => {
 
@@ -115,7 +64,7 @@ export const Book = (props) => {
     useEffect(() => {
 
             //hide elements
-            setTimeout(hideElements,100);
+            setTimeout(hideElements, 100);
         },
         [props.location.pathname, props.lang]
     );
@@ -127,12 +76,12 @@ export const Book = (props) => {
     const sectionLinks = isStandalone ?
         <div></div> :
         <SectionLinks
-        lang={props.lang}
-        top={true}
-        books={false}
-        pubs={true}
-        read={true}
-    />;
+            lang={props.lang}
+            top={true}
+            books={false}
+            pubs={true}
+            read={true}
+        />;
 
     //if the component is displayed on the standalone book page, do not display the section separator
     const sectionSeparator = isStandalone ? <div></div> : <SectionSeparator/>;
@@ -145,31 +94,31 @@ export const Book = (props) => {
                     title={BOOKS[props.book].title[props.lang]}
                     subtitle=""
                 />
-                <SmallSeparator />
+                <SmallSeparator/>
                 <CentredPhoto
                     source={BOOKS[props.book].cover}
                     altText='Book cover'
                     link={BOOKS[props.book].url}
                 />
-                <Slogan>
+                <BookSlogan>
                     {BOOKS[props.book].slogan[props.lang]}
-                </Slogan>
+                </BookSlogan>
             </AnimatedContent>
-                <Waypoint
-                    onEnter={showPreorderBtn}
+            <Waypoint
+                onEnter={showPreorderBtn}
+            />
+            <BookAnimatedButton
+                pose={preorderBtnVisible ? 'visible' : 'hidden'}>
+                <CentredButton
+                    message={BOOKS[props.book].orderButton[props.lang]}
+                    path={BOOKS[props.book].url}
                 />
-                <AnimatedButton
-                    pose={preorderBtnVisible ? 'visible' : 'hidden'}>
-                    <CentredButton
-                        message={BOOKS[props.book].orderButton[props.lang]}
-                        path={BOOKS[props.book].url}
-                    />
-                </AnimatedButton>
+            </BookAnimatedButton>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <Body>
+                <BookBody>
                     {BOOKS[props.book].body[props.lang]}
-                </Body>
+                </BookBody>
             </AnimatedContent>
             <Waypoint
                 onEnter={showQuotes}
@@ -183,13 +132,13 @@ export const Book = (props) => {
             <Waypoint
                 onEnter={showExcerptBtn}
             />
-            <AnimatedButton
+            <BookAnimatedButton
                 pose={excerptBtnVisible ? 'visible' : 'hidden'}>
                 <CentredButton
                     message={EXCERPT_BUTTON[props.lang]}
                     path={'/texts/' + BOOKS[props.book].id}
                 />
-            </AnimatedButton>
+            </BookAnimatedButton>
             <Waypoint
                 onEnter={showQuotes}
             />

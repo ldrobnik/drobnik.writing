@@ -20,7 +20,7 @@ export const introProps = {
     }
 };
 
-export const introText = "I’m a bilingual writer creating fiction in my native Polish but recently mostly in English.";
+export const introText = 'I’m a bilingual writer creating fiction in my native Polish but recently mostly in English.';
 
 export const nocturineProps = {
     lang: 'en',
@@ -29,7 +29,7 @@ export const nocturineProps = {
     }
 };
 
-export const nocturineText = "The end of the world starts like an ad campaign.";
+export const nocturineText = 'The end of the world starts like an ad campaign.';
 
 export const pubsProps = {
     lang: 'en',
@@ -52,7 +52,7 @@ export const readProps = {
     }
 };
 
-export const readText = "Here are a handful of my pieces.";
+export const readText = 'Here are a handful of my pieces.';
 
 
 export const textProps = {
@@ -69,7 +69,7 @@ export const textProps = {
     }
 };
 
-export const textText = "Days are seconds to her.";
+export const textText = 'Days are seconds to her.';
 
 export const imageProps = {
     source: 'http://example.com',
@@ -88,7 +88,9 @@ export const sectionHeadingProps = {
 
 export const toggleSwitchProps = {
     checked: true,
-    onChange: () => {console.log('change')}
+    onChange: () => {
+        console.log('change')
+    }
 };
 
 

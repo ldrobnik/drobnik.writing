@@ -2,13 +2,11 @@ import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
-import posed from 'react-pose';
-import {Waypoint} from "react-waypoint";
-
-import {setPageReload} from "../../../actions";
-import {WEBSITE_TEXT, FADE_DURATION, PULSATE_KEYFRAMES, AnimatedContent} from '../../../data/constants';
-
+import {Waypoint} from 'react-waypoint';
+import {setPageReload} from '../../../actions';
+import {IntroBody} from '../../../styled';
+import {AnimatedContent, IntroAnimatedLinks, IntroAnimatedButton} from '../../../posed';
+import {WEBSITE_TEXT, FADE_DURATION} from '../../../data/constants';
 import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'
 import SectionHeading from './../../UI/SectionHeading/SectionHeading';
 import CentredPhoto from './../../UI/CentredPhoto/CentredPhoto';
@@ -18,71 +16,13 @@ import SectionLinks from '../SectionLinks/SectionLinks';
 import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';
 import SmallSeparator from './../../UI/SmallSeparator/SmallSeparator';
 
-/* STYLED COMPONENTS */
-const Body = styled.div`
-  font-size: ${props => props.theme.bodySize};
-  font-family: ${props => props.theme.serif};
-  line-height: 1.4em;
-  
-   @media all and (min-width: ${props => props.theme.smallScr}) {
-             text-align: justify;
-        }  
-           
-    a {
-      font-family: ${props => props.theme.sansSerif};
-      
-      @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }  
-        
-    }
-    
-    .centered {
-      text-align: center;
-    }
-`;
-
-/* POSE */
-const AnimatedLinks = posed.div({
-    visible: {
-        opacity: 1,
-        transform: 'scale(1,1)',
-        transition: {
-            type: 'spring',
-            stiffness: 80
-        }
-    },
-    hidden: {
-        opacity: 0,
-        transform: 'scale(0,0)'
-    }
-});
-
-const AnimatedButton = posed.div({
-    visible: {
-        opacity: 1,
-        transform: 'scale(1,1)',
-        delay: 100,
-        transition: {
-            type: 'spring',
-            stiffness: 100
-        }
-    },
-    hidden: {
-        opacity: 0,
-        transform: 'scale(0,0)'
-    }
-});
-
 export const Intro = (props) => {
 
     //specifies whether social links and CTA button should be visible
     const [socialVisible, setSocialVisible] = useState(false);
 
     //gets a random CTA button out of available options
-    const ctaIndex = Math.floor(Math.random()*WEBSITE_TEXT.intro.cta[props.lang].length);
+    const ctaIndex = Math.floor(Math.random() * WEBSITE_TEXT.intro.cta[props.lang].length);
 
     //shows the content
     const showContent = () => {
@@ -122,7 +62,7 @@ export const Intro = (props) => {
 
     //hide social links whenever the pathname or language change
     useEffect(() => {
-            setTimeout(hideSocial,100);
+            setTimeout(hideSocial, 100);
 
         },
         [props.location.pathname, props.lang]
@@ -136,26 +76,26 @@ export const Intro = (props) => {
                     title={WEBSITE_TEXT.intro.title}
                     subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
                 />
-                <SmallSeparator />
+                <SmallSeparator/>
                 <CentredPhoto
                     source={authorsPhoto}
                     altText={WEBSITE_TEXT.intro.altText[props.lang]}
                 />
-                <Body>
+                <IntroBody>
                     {WEBSITE_TEXT.intro.body[props.lang]}
-                </Body>
+                </IntroBody>
             </AnimatedContent>
-            <AnimatedLinks
+            <IntroAnimatedLinks
                 pose={socialVisible ? 'visible' : 'hidden'}>
                 <SocialLinks/>
-            </AnimatedLinks>
-            <AnimatedButton
+            </IntroAnimatedLinks>
+            <IntroAnimatedButton
                 pose={socialVisible ? 'visible' : 'hidden'}>
                 <CentredButton
                     message={WEBSITE_TEXT.intro.cta[props.lang][ctaIndex].message}
                     path={WEBSITE_TEXT.intro.cta[props.lang][ctaIndex].path}
                 />
-            </AnimatedButton>
+            </IntroAnimatedButton>
             <Waypoint
                 onEnter={showSocial}
             />

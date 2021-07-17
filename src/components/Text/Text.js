@@ -1,10 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
-import posed from 'react-pose';
-import {Waypoint} from "react-waypoint";
-
+import {Waypoint} from 'react-waypoint';
 import {
     setTheme,
     setCurrentText,
@@ -13,118 +10,17 @@ import {
     setMainPage,
     setBookPage,
     setPageReload
-} from "../../actions";
-import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES, FADE_DURATION, AnimatedContent, WEBSITE_TEXT} from './../../data/constants';
-
+} from '../../actions';
+import {TextTopAnchor, TextWrapper, TextHeader, TextTitle, TextSubtitle, TextBody} from '../../styled';
+import {AnimatedContent, AnimatedTextLink, AnimatedTextButton} from '../../posed';
+import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES, FADE_DURATION} from './../../data/constants';
 import Credits from './Credits/Credits';
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
 import NextTextLink from './NextTextLink/NextTextLink';
-import SectionSeparator from "../UI/SectionSeparator/SectionSeparator";
+import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
-import CopyrightNote from "../UI/CopyrightNote/CopyrightNote";
-import CentredButton from "../UI/CentredButton/CentredButton";
-
-/* STYLED COMPONENTS */
-const TopAnchor = styled.div`
-  position: absolute;
-  top: 0;
-`;
-
-const Wrapper = styled.div`
-  overflow: hidden;
-  padding: 7em 1em 2em 1em;
-
-  .centered {
-    text-align: center;
-  }
-
-  @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-    padding: 7em 3em 2em 3em;
-  }
-
-  @media all and (min-width: ${props => props.theme.smallScr}) {
-    padding: 7em 10% 2em 10%;
-  }
-
-  @media all and (min-width: ${props => props.theme.mediumScr}) {
-    padding: 7em 20% 2em 20%;
-  }
-
-  @media all and (min-width: ${props => props.theme.largeScr}) {
-    padding: 7em 25% 2em 25%;
-  }
-
-  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-    padding: 7em 32% 2em 32%;
-  }
-`;
-
-const Header = styled.div`
-  text-align: center;
-
-  @media all and (min-width: ${props => props.theme.mediumScr}) {
-    padding-right: 1em;
-  }
-`;
-
-const TextTitle = styled.div`
-  font-size: ${props => props.theme.titleSize};
-  font-weight: bold;
-
-  @media all and (max-width: ${props => props.theme.smallScr}) {
-    font-size: 15vw;
-  }
-`;
-
-const TextSubtitle = styled.div`
-  font-size: ${props => props.theme.subtitleSize};
-  font-weight: bold;
-  font-style: italic;
-
-  @media all and (max-width: ${props => props.theme.smallScr}) {
-    font-size: 8vw;
-  }
-`;
-
-const TextBody = styled.div`
-  font-family: ${props => props.theme.serif};
-  font-size: ${props => props.theme.bodySize};
-  line-height: 1.4em;
-  position: relative;
-  margin-top: 2em;
-`;
-
-/* POSE */
-const AnimatedLink = posed.div({
-    visible: {
-        opacity: 1,
-        transform: 'scale(1,1)',
-        delay: 200,
-        transition: {
-            type: 'spring',
-            stiffness: 100
-        }
-    },
-    hidden: {
-        opacity: 0,
-        transform: 'scale(0,0)'
-    }
-});
-
-const AnimatedButton = posed.div({
-    visible: {
-        opacity: 1,
-        transform: 'scale(1,1)',
-        transition: {
-            type: 'spring',
-            stiffness: 100
-        }
-    },
-    hidden: {
-        opacity: 0,
-        transform: 'scale(0,0)'
-    }
-});
+import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
+import CentredButton from '../UI/CentredButton/CentredButton';
 
 export const Text = (props) => {
 
@@ -249,20 +145,20 @@ export const Text = (props) => {
 
         //do not show the content until the page is loaded
         return props.loaded ?
-            (<Wrapper>
-                <TopAnchor>
+            (<TextWrapper>
+                <TextTopAnchor>
                     <div id='top'></div>
-                </TopAnchor>
+                </TextTopAnchor>
                 <AnimatedContent
                     pose={!props.reload ? 'visible' : 'hidden'}>
-                    <Header>
+                    <TextHeader>
                         <TextTitle>
                             {TEXTS[props.lang][textName].title}
                         </TextTitle>
                         <TextSubtitle>
                             {TEXTS[props.lang][textName].subtitle}
                         </TextSubtitle>
-                    </Header>
+                    </TextHeader>
                     <TextBody>
                         {TEXTS[props.lang][textName].content}
                     </TextBody>
@@ -278,13 +174,13 @@ export const Text = (props) => {
                     <Waypoint
                         onEnter={showPreorderBtn}
                     />
-                    <AnimatedButton
+                    <AnimatedTextButton
                         pose={preorderBtnVisible ? 'visible' : 'hidden'}>
                         <CentredButton
                             message={BOOKS[BOOK_LIST.indexOf(textName)].orderButton[props.lang]}
                             path={BOOKS[BOOK_LIST.indexOf(textName)].url}
                         />
-                    </AnimatedButton>
+                    </AnimatedTextButton>
                 </React.Fragment>
                 }
                 <AnimatedContent
@@ -297,14 +193,14 @@ export const Text = (props) => {
                 <Waypoint
                     onEnter={showLink}
                 />
-                <AnimatedLink
+                <AnimatedTextLink
                     pose={linkVisible ? 'visible' : 'hidden'}
                 >
                     <NextTextLink
                         textName={nextTextName}
                         lang={props.lang}
                     />
-                </AnimatedLink>
+                </AnimatedTextLink>
                 <Waypoint
                     onEnter={showLink}
                 />
@@ -323,7 +219,7 @@ export const Text = (props) => {
                         onEnter={showLink}
                     />
                 </AnimatedContent>
-            </Wrapper>) :
+            </TextWrapper>) :
             <div></div>;
     }
 ;

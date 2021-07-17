@@ -1,12 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {keyframes} from 'styled-components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faTwitterSquare,
     faFacebookSquare,
-    faInstagram,
-    faMedium
+    faInstagram
 } from '@fortawesome/free-brands-svg-icons';
 import {
     faHome,
@@ -28,21 +26,20 @@ import {DRONES_EN} from './texts/drones-en';
 import {DRONES_PL} from './texts/drones-pl';
 import {SPORES_EN} from './texts/spores-en';
 import {SPORES_PL} from './texts/spores-pl';
-import {VOSTOK_EN} from "./texts/vostok-en";
-import {VOSTOK_PL} from "./texts/vostok-pl";
+import {VOSTOK_EN} from './texts/vostok-en';
+import {VOSTOK_PL} from './texts/vostok-pl';
 import {DEVONIAN_EN} from './texts/devonian-en';
 import {DEVONIAN_PL} from './texts/devonian-pl';
 import {LANDMINES_EN} from './texts/landmines-en';
 import {LANDMINES_PL} from './texts/landmines-pl';
 import {TREASURES_EN} from './texts/treasures-en';
 import {TREASURES_PL} from './texts/treasures-pl';
-import posed from "react-pose";
 
 //source urls for book covers
 import nocturineCover from '../assets/images/nocturineCover.jpg';
 import nocCunCover from '../assets/images/nocCunCover.jpg';
 import vostokCover from '../assets/images/vostokCover.jpg';
-import tbaCover from '../assets/images/tbaCover.jpg';
+// import tbaCover from '../assets/images/tbaCover.jpg';
 
 //Frequently used URLs
 
@@ -56,7 +53,6 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/drobnikwrites/';
 export const MEDIUM_URL = 'https://drobnik.medium.com';
 export const KO_FI_URL = 'https://ko-fi.com/drobnik';
 export const BLYSKI_URL = 'https://blyski.org'; // błyski literary magazine
-
 
 //Names of available texts
 export const TEXT_NAMES = ['vostok', 'nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'spores', 'devonian', 'landmines', 'treasures'];
@@ -397,8 +393,8 @@ export const PUBLICATIONS = {
                 en: 'Nocturine. Cunningamella cover',
                 pl: 'Okładka tomu Nocturine. Cunninghamella'
             },
-            altPl: "Okładka Nocturine. Cunningamella",
-            altEn: "Nocturine. Cunningamella cover",
+            altPl: 'Okładka Nocturine. Cunningamella',
+            altEn: 'Nocturine. Cunningamella cover',
             url: 'http://wforma.eu/12,nocturine.-cunninghamella.html',
             descriptionPl: 'Tom prozy opublikowany przez wydawnictwo Forma',
             descriptionEn: 'Volume of fiction published by Forma',
@@ -907,7 +903,7 @@ export const BOOKS = [
         url: NOCTURINE_URL,
         slogan: {
             en: <div>Forthcoming in 2021 from <a href={NOCTURINE_URL} target="_blank"
-                                                     rel="noopener noreferrer"><strong>FATHOM
+                                                 rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
             pl: <div>Dostępna w&nbsp;2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
                 href={NOCTURINE_URL}
@@ -916,8 +912,8 @@ export const BOOKS = [
                 BOOKS</strong></a></div>,
         },
         orderButton: {
-            en: ORDER_BUTTON["preorder"]["en"],
-            pl: ORDER_BUTTON["preorder"]["pl"]
+            en: ORDER_BUTTON['preorder']['en'],
+            pl: ORDER_BUTTON['preorder']['pl']
         },
         body: {
             en: <div>
@@ -1029,8 +1025,8 @@ export const BOOKS = [
                 rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
         },
         orderButton: {
-            en: ORDER_BUTTON["preorder"]["en"],
-            pl: ORDER_BUTTON["preorder"]["pl"]
+            en: ORDER_BUTTON['preorder']['en'],
+            pl: ORDER_BUTTON['preorder']['pl']
         },
         body: {
             en: <div>
@@ -1039,7 +1035,8 @@ export const BOOKS = [
                     bunch of like-minded pub-goers. There’s been a terrorist attack. A girl gets murdered with a war
                     scythe. The reality reveals a whole new layer when the friends mention a place called Vostok
                     City.</p>
-                <p>On the surface, <em>VOSTOK</em> is a murder story with a literary bent. Dig deeper, and it will reveal itself as science
+                <p>On the surface, <em>VOSTOK</em> is a murder story with a literary bent. Dig deeper, and it will
+                    reveal itself as science
                     fiction that only pretends to play by the rules of realism.</p>
             </div>,
             pl: <div>
@@ -1048,7 +1045,8 @@ export const BOOKS = [
                     knajpach, zapijając problemy z&nbsp;grupką znajomych. Niesie się wieść o&nbsp;ataku terrorystycznym.
                     Dziewczyna ginie raniona kosą bojową. Rzeczywistość odkrywa całkiem nową warstwę, gdy znajomi
                     wspominają o&nbsp;miejscu zwanym Vostok City.</p>
-                <p>Na pierwszy rzut oka <em>VOSTOK</em> to kryminał z wysokoartystycznym zacięciem. Gdy jednak zajrzy się głębiej, powieść okazuje się
+                <p>Na pierwszy rzut oka <em>VOSTOK</em> to kryminał z wysokoartystycznym zacięciem. Gdy jednak zajrzy
+                    się głębiej, powieść okazuje się
                     science fiction, które tylko z&nbsp;pozoru gra według reguł realizmu.</p>
             </div>
         },
@@ -1148,8 +1146,9 @@ export const WEBSITE_TEXT = {
                 <p>I’m a Polish writer writing mostly in English. My favourite pastime is taking literary fiction and
                     blending it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from
                     longer forms). I live in Kraków, Poland.</p>
-                <p>I have two books coming out this year: a collection of interlinked stories <AnchorLink href='#nocturine'
-                                                                                                      offset="60px"><strong>NOCTURINE</strong></AnchorLink> to
+                <p>I have two books coming out this year: a collection of interlinked stories <AnchorLink
+                    href='#nocturine'
+                    offset="60px"><strong>NOCTURINE</strong></AnchorLink> to
                     be published by <a href={NOCTURINE_URL} target="_blank"
                                        rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>,
                     and a novel <AnchorLink
@@ -1159,14 +1158,19 @@ export const WEBSITE_TEXT = {
                         rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>.</p>
                 <p>My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly West</em>, <em>Pithead
-                    Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y Literary
+                    Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y
+                    Literary
                     Magazine</em>, and
                     elsewhere.</p>
                 <p>I’m also editor-in-chief at <a
                     href={BLYSKI_URL} target="_blank"
-                    rel="noopener noreferrer"><strong>BŁYSKI</strong></a>, a journal publishing flash fiction in Polish translation.</p>
+                    rel="noopener noreferrer"><strong>BŁYSKI</strong></a>, a journal publishing flash fiction in Polish
+                    translation.</p>
                 <p>Below you can find
-                    a <AnchorLink href='#pubs' offset="60px"><strong>FULL LIST OF PUBLICATIONS</strong></AnchorLink> and <AnchorLink href='#read' offset="60px"><strong>READ</strong></AnchorLink> some of my pieces.
+                    a <AnchorLink href='#pubs' offset="60px"><strong>FULL LIST OF
+                        PUBLICATIONS</strong></AnchorLink> and <AnchorLink href='#read'
+                                                                           offset="60px"><strong>READ</strong></AnchorLink> some
+                    of my pieces.
                 </p>
                 <p className="centered">email: <em>drobniklukasz [at] gmail [dot] com</em></p>
             </div>,
@@ -1188,11 +1192,13 @@ export const WEBSITE_TEXT = {
                 <p>Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly
                     West</em>, <em>Pithead
-                    Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X-R-A-Y Literary
+                    Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X-R-A-Y
+                    Literary
                     Magazine</em>.</p>
                 <p>Jestem też redaktorem naczelnym <a
                     href={BLYSKI_URL} target="_blank"
-                    rel="noopener noreferrer"><strong>BŁYSKÓW</strong></a>, pisma publikującego flash fiction w&nbsp;polskim przekładzie.</p>
+                    rel="noopener noreferrer"><strong>BŁYSKÓW</strong></a>, pisma publikującego flash fiction
+                    w&nbsp;polskim przekładzie.</p>
                 <p>Poniżej można
                     znaleźć <AnchorLink href='#pubs' offset="60px"><strong>PEŁNĄ LISTĘ PUBLIKACJI</strong></AnchorLink>,
                     a&nbsp;także <AnchorLink href='#read' offset="60px"><strong>POCZYTAĆ</strong></AnchorLink> kilka
@@ -1204,9 +1210,9 @@ export const WEBSITE_TEXT = {
         cta: {
             en: [
                 {
-                message: <div>Pre-order NOCTURINE</div>,
-                path: NOCTURINE_URL
-            },
+                    message: <div>Pre-order NOCTURINE</div>,
+                    path: NOCTURINE_URL
+                },
                 {
                     message: <div>Pre-order VOSTOK</div>,
                     path: VOSTOK_URL
@@ -1214,9 +1220,9 @@ export const WEBSITE_TEXT = {
             ],
             pl: [
                 {
-                message: <div>Czytaj BŁYSKI</div>,
-                path: BLYSKI_URL
-            }
+                    message: <div>Czytaj BŁYSKI</div>,
+                    path: BLYSKI_URL
+                }
             ]
         },
         social: [
@@ -1470,15 +1476,3 @@ export const POP_KEYFRAMES = keyframes`
 
 //Duration of the fade-in animation used when loading new page
 export const FADE_DURATION = 200;
-
-//Reusable posed component specifying the basic fade-in animation
-export const AnimatedContent = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0px)'
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});

@@ -2,49 +2,16 @@ import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
-import posed from 'react-pose';
-import {Waypoint} from "react-waypoint";
-
-import { setPageReload } from "../../../actions";
-import {WEBSITE_TEXT, HIGHLIGHTS, TEXTS, FADE_DURATION, AnimatedContent} from './../../../data/constants';
-
+import {Waypoint} from 'react-waypoint';
+import {ReadWrapper, ReadMessage} from '../../../styled';
+import {AnimatedContent, AnimatedReadList, AnimatedReadLink} from '../../../posed';
+import {setPageReload} from '../../../actions';
+import {WEBSITE_TEXT, HIGHLIGHTS, TEXTS, FADE_DURATION} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
-import SectionLinks from "../SectionLinks/SectionLinks";
-import SectionSeparator from "./../../UI/SectionSeparator/SectionSeparator";
+import SectionLinks from '../SectionLinks/SectionLinks';
+import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';
 import ReadListElement from './ReadListElement/ReadListElement';
 
-/* STYLED COMPONENTS */
-const Wrapper = styled.div`
-  text-align: center;
-`;
-
-const Message = styled.div`
-  font-weight: bold;
-  font-size: ${props => props.theme.bodySize};
-  margin: 3em 0;
-`;
-
-/* POSE */
-const AnimatedList = posed.div({
-    visible: {
-        delayChildren: 400,
-        staggerChildren: 150
-    }
-});
-
-const AnimatedLink = posed.div({
-    visible: {
-        x: '0%',
-        transition: {
-            type: 'spring',
-            stiffness: 100
-        }
-    },
-    hidden: {
-        x: '300%'
-    }
-});
 
 export const Read = (props) => {
 
@@ -68,18 +35,10 @@ export const Read = (props) => {
 
     //hide message whenever the pathname or language change
     useEffect(() => {
-            setTimeout(hideLinks,100);
+            setTimeout(hideLinks, 100);
         },
         [props.location.pathname, props.lang]
     );
-
-    // //hide message and show it right away whenever the language changes
-    // useEffect(() => {
-    //         setTimeout(hideLinks,100);
-    //         setTimeout(showLinks, 800);
-    //     },
-    //     [props.lang]
-    // );
 
     useEffect(() => {
 
@@ -88,27 +47,25 @@ export const Read = (props) => {
     });
 
     return (
-        <Wrapper>
-            {/*<Waypoint*/}
-            {/*    onEnter={hideLinks}*/}
-            {/*/>*/}
+        <ReadWrapper>
+
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionHeading
                     title={WEBSITE_TEXT.read.title[props.lang]}
                     subtitle=""
                 />
-                <Message>{WEBSITE_TEXT.read.introduction[props.lang]}</Message>
+                <ReadMessage>{WEBSITE_TEXT.read.introduction[props.lang]}</ReadMessage>
             </AnimatedContent>
             <Waypoint
                 onEnter={showLinks}
             />
-            <AnimatedList
+            <AnimatedReadList
                 pose={linksVisible ? 'visible' : 'hidden'}>
                 {HIGHLIGHTS.map((text, k) => {
                     let textLink = '/texts/' + text;
                     return (
-                        <AnimatedLink
+                        <AnimatedReadLink
                             pose={linksVisible ? 'visible' : 'hidden'}
                             key={k}>
                             <ReadListElement
@@ -116,10 +73,10 @@ export const Read = (props) => {
                                 subtitle={TEXTS[props.lang][text].subtitle}
                                 path={textLink}
                             />
-                        </AnimatedLink>
+                        </AnimatedReadLink>
                     )
                 })}
-            </AnimatedList>
+            </AnimatedReadList>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionLinks
@@ -137,7 +94,7 @@ export const Read = (props) => {
             <Waypoint
                 onEnter={showLinks}
             />
-        </Wrapper>
+        </ReadWrapper>
     );
 };
 

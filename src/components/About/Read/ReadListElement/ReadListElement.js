@@ -1,44 +1,15 @@
 import React from 'react';
 import {bindActionCreators} from 'redux';
-import styled from 'styled-components';
-import {Link} from "react-router-dom";
-import {connect} from "react-redux";
-import {POP_KEYFRAMES} from "./../../../../data/constants";
-import {setPageReload} from "../../../../actions";
-
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  &:hover {
-    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
-  }
-`;
-
-const ElementContent = styled.div`
-  text-align: center;
-  font-weight: bold;
-
-  user-select: none;
-  margin: 1em 0;
-`;
-
-const Title = styled.div`
-    font-size: ${props => props.theme.subtitleSize}
-      text-transform: uppercase;
-`;
-
-const Subtitle = styled.div`
-    font-size: ${props => props.theme.smallCaptionSize}
-`;
-
-const Line = styled.div`
-  height: 0.8em;
-  width: 10em;
-  margin: 1em;
-  background-color: ${props => props.theme.darkColor};
-`;
+import {Link} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {
+    ReadListElementWrapper,
+    ReadListElementContent,
+    ReadListElementTitle,
+    ReadListElementSubtitle,
+    ReadListElementLine
+} from '../../../../styled';
+import {setPageReload} from '../../../../actions';
 
 const ReadListElement = (props) => {
 
@@ -53,18 +24,18 @@ const ReadListElement = (props) => {
             to={props.path}
             onClick={reloadPage}
         >
-            <Wrapper>
-                <Line/>
-                <ElementContent>
-                    <Title>
+            <ReadListElementWrapper>
+                <ReadListElementLine/>
+                <ReadListElementContent>
+                    <ReadListElementTitle>
                         {props.title}
-                    </Title>
-                    <Subtitle>
+                    </ReadListElementTitle>
+                    <ReadListElementSubtitle>
                         {props.subtitle}
-                    </Subtitle>
-                </ElementContent>
-                <Line/>
-            </Wrapper>
+                    </ReadListElementSubtitle>
+                </ReadListElementContent>
+                <ReadListElementLine/>
+            </ReadListElementWrapper>
         </Link>
 
 
