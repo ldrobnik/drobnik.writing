@@ -769,3 +769,44 @@ export const NoticeDismissButton = styled.div`
       opacity: ${props => props.theme.slightlyTranslucent};
     }
 `;
+
+/* InvisibleSeparator.js */
+
+export const InvSeparator = styled.div`
+  height: 3em;
+`;
+
+/* SectionHeading.js */
+
+export const SectionHeader = styled.div`
+  text-align: center;
+`;
+
+export const SectionTitle = styled.div`
+    font-size: ${props => props.theme.titleSize};
+    font-weight: bold;
+    
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      font-size: 12vw;
+    }
+`;
+
+export const SectionSubtitle = styled.div`
+    font-size: ${props => props.theme.subtitleSize};
+    font-weight: bold;
+    font-style: italic;
+    
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      font-size: 6vw;
+    }
+    
+`
+
+/* SectionSeparator.js */
+
+export const SectSeparator = styled.div`
+  margin: 6em auto 3em auto;
+  height: 0.8em;
+  width: 15em;
+  background-color: ${props => props.theme.darkColor};
+`;

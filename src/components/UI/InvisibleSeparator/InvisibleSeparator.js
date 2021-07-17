@@ -1,15 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-
-/*STYLED COMPONENTS*/
-const Separator = styled.div`
-  height: 3em;
-`;
+import {InvSeparator} from '../../../styled';
 
 const InvisibleSeparator = () => {
 
     return (
-        <Separator />
+        <InvSeparator/>
     );
 };
 
