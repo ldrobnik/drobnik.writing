@@ -1479,15 +1479,3 @@ export const POP_KEYFRAMES = keyframes`
 
 //Duration of the fade-in animation used when loading new page
 export const FADE_DURATION = 200;
-
-//Reusable posed component specifying the basic fade-in animation
-export const AnimatedContent = posed.div({
-    visible: {
-        opacity: 1,
-        filter: 'blur(0px)'
-    },
-    hidden: {
-        opacity: 0,
-        filter: 'blur(20px)'
-    }
-});

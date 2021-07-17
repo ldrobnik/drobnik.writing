@@ -867,3 +867,10 @@ export const SubLinks = styled.div`
         }  
   }
 `;
+
+/* ToggleSwitch.js */
+
+export const ToggleWrapper = styled.div`
+  padding: 0.1em;
+  opacity: ${props => props.theme.translucent};
+`;
