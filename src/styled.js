@@ -612,3 +612,31 @@ export const Description = styled.div`
         }  
   }
 `;
+
+/* NextTextLink.js */
+
+export const NextTextWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:hover {
+    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
+  }
+`;
+
+export const UpNext = styled.div`
+  text-align: center;
+  font-weight: bold;
+  font-size: ${props => props.theme.bodySize}
+  user-select: none;
+  margin: 1em 0;
+`;
+
+export const NextTextLine = styled.div`
+  height: 0.5em;
+  width: 6em;
+  margin: 1em;
+  background-color: ${props => props.theme.darkColor};
+`;
+

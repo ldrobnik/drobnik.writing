@@ -1,44 +1,17 @@
 import React from 'react';
 import {bindActionCreators} from 'redux';
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import styled from 'styled-components';
-
-import {setPageReload} from "../../../actions";
-import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from "./../../../data/constants";
-
-/*STYLED COMPONENTS*/
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  &:hover {
-    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
-  }
-`;
-
-const UpNext = styled.div`
-  text-align: center;
-  font-weight: bold;
-  font-size: ${props => props.theme.bodySize}
-  user-select: none;
-  margin: 1em 0;
-`;
-
-const Line = styled.div`
-  height: 0.5em;
-  width: 6em;
-  margin: 1em;
-  background-color: ${props => props.theme.darkColor};
-`;
+import {setPageReload} from '../../../actions';
+import {NextTextWrapper, UpNext, NextTextLine} from '../../../styled';
+import {TEXTS, WEBSITE_TEXT, POP_KEYFRAMES} from './../../../data/constants';
 
 const NextTextLink = (props) => {
 
     //sets off page reloading animation
     const reloadPage = () => {
         //scroll up for better transition
-        window.scrollTo(0,800);
+        window.scrollTo(0, 800);
 
         //change page reload redux state
         props.setPageReload(true);
@@ -48,8 +21,8 @@ const NextTextLink = (props) => {
         <Link
             to={'/texts/' + props.textName}
             onClick={reloadPage}>
-            <Wrapper>
-                <Line/>
+            <NextTextWrapper>
+                <NextTextLine/>
                 <UpNext>
                     <div>
                         <i>
@@ -58,8 +31,8 @@ const NextTextLink = (props) => {
                         </i>
                     </div>
                 </UpNext>
-                <Line/>
-            </Wrapper>
+                <NextTextLine/>
+            </NextTextWrapper>
         </Link>
     );
 };
