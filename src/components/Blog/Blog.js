@@ -81,6 +81,7 @@ export const Blog = props => {
     });
 
     useEffect(() => {
+        //imports markdown documents and coverts it into text
         import('./markdown.md')
             .then(res => {
                 fetch(res.default)

@@ -14,7 +14,7 @@ To install Visual Studio Code on your desktop computer, follow these steps:
 
 The Visual Studio Code user interface is divided into five areas.
 
-![Visual Studio Code user interface layout](img/figures/vsc-layout.jpg)
+![Visual Studio Code user interface layout](http://localhost:3000/assets/images/vsc-layout.jpg)
 
 1. **Editor**: the main area where you edit your files.
 2. **Side bar**: an area containing different views such as the Explorer.
@@ -35,7 +35,7 @@ To display whitespace characters in the editor, go to **View > Render Whitespace
 When working in the editor, you can display a list of suggestions by pressing `Ctrl+Space`.
 
 ## Previewing Markdown files
-To open a preview of your Markdown file, click ![The preview icon in Visual Studio Code](img/figures/vsc-open-preview.jpg) in the top right-hand corner of the editor.
+To open a preview of your Markdown file, click ![The preview icon in Visual Studio Code](http://localhost:3000/assets/images/vsc-open-preview.jpg) in the top right-hand corner of the editor.
 
 ## Document outline
 
@@ -47,7 +47,7 @@ Visual Studio Code lets you browse and install numerous extensions from within t
 
 1. Go to **View > Extensions**.
 2. Start typing and choose an extension from the list.
-    ![Installing Visual Studio Code extensions](img/figures/vsc-extensions.jpg)
+    ![Installing Visual Studio Code extensions](http://localhost:3000/assets/images/vsc-extensions.jpg)
 3. Click **Install**.
 
 ## Markdown All in One
