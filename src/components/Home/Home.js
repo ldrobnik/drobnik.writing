@@ -7,6 +7,7 @@ import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Text from '../Text/Text';
 import QuickLinks from '../QuickLinks/QuickLinks';
+import Blog from '../Blog/Blog';
 import DataNotice from '../UI/DataNotice/DataNotice';
 import Spinner from '../UI/Spinner/Spinner';
 import {GlobalStyle} from '../../styled';
@@ -88,6 +89,7 @@ export const Home = (props) => {
                     }}/>
                     {/*<Route path="/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>*/}
                     <Route path="/links/" exact component={QuickLinks} key="links"/>
+                    <Route path="/blog/" exact component={Blog} key="blog"/>
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>
                 <DataNotice/>

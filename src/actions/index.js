@@ -72,6 +72,13 @@ export const setBookPage = (bookPageDisplayed) => {
     }
 };
 
+//Specifies whether the Book page is currently displayed
+export const setBlogPage = (blogPageDisplayed) => {
+    return {
+        type: actionTypes.SET_BOOK_PAGE,
+        blogPageDisplayed
+    }
+};
 
 //Specifies whether the page reloading animation should be played
 export const setPageReload = (pageReload) => {
