@@ -5,6 +5,7 @@ export const SET_CURRENT_TEXT = 'SET_CURRENT_TEXT'; //Sets the currently display
 export const SET_NAVBAR_VISIBILITY = 'SET_NAVBAR_VISIBILITY'; //Toggles NavBar visibility
 export const SET_DATA_NOTICE_VISIBLE = 'SET_DATA_NOTICE_VISIBLE'; //Toggles the visibility of the data storage notice
 export const SET_DATA_NOTICE_ACCEPTED = 'SET_DATA_NOTICE_ACCEPTED'; //Specifies whether the date storage notice was acknowledged by the user
+export const SET_PAGE = 'SET_PAGE'; //Specifies which page is currently displayed
 export const SET_MAIN_PAGE = 'SET_MAIN_PAGE'; //Specifies whether the main page is currently displayed
 export const SET_BOOK_PAGE = 'SET_BOOK_PAGE'; //Specifies whether the Book page is currently displayed
 export const SET_BLOG_PAGE = 'SET_BLOG_PAGE'; //Specifies whether the Book page is currently displayed

@@ -8,6 +8,7 @@ const initialState = {
     navbarVisible: false,
     dataNoticeVisible: true,
     dataNoticeAccepted: false,
+    pageDisplayed: 'main',
     mainPageDisplayed: true,
     bookPageDisplayed: false,
     blogPageDisplayed: false,
@@ -52,6 +53,11 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 dataNoticeAccepted: action.dataNoticeAccepted
             };
+        case actionTypes.SET_PAGE:
+            return {
+                ...state,
+                pageDisplayed: action.pageDisplayed
+            }
         case actionTypes.SET_MAIN_PAGE:
             return {
                 ...state,
