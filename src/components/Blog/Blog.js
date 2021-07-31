@@ -8,7 +8,7 @@ import {
     setNavbarVisibility,
     setDataNoticeVisible,
     setPage,
-    setPageReload, setBookPage
+    setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
 import {FADE_DURATION, TEXT_NAMES, TEXTS} from './../../data/constants';
@@ -18,6 +18,9 @@ import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
 export const Blog = props => {
+
+    //filepath to a sample markdown document
+    const filepath = '../../';
 
     //shows the content
     const showContent = () => {

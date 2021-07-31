@@ -123,8 +123,8 @@ const NavBar = (props) => {
         </NavElement>
     ;
 
-    //Content of the button used to change current language
-    const langButton = (
+    //Content of the button used to change current language; don't show on the blog page (it's only in English)
+    const langButton = (props.page !== 'blog') ?
         <NavElement>
             <div onClick={changeLanguage}>
                 <NavLinkContent>
@@ -132,7 +132,7 @@ const NavBar = (props) => {
                 </NavLinkContent>
             </div>
         </NavElement>
-    );
+        : null;
 
     //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off; don't display
     const bwButton = (props.bwMode) ?
@@ -150,13 +150,6 @@ const NavBar = (props) => {
                 </NavLinkContent>
             </div>
         </ToggledNavElement>);
-
-    //the language and black-and-white button combined - not to be displayed on the blog page
-    const langAndBwButtons = (props.page === 'blog') ? null :
-        <React.Fragment>
-            {langButton}
-            {bwButton}
-        </React.Fragment>
 
     //the index of the text
     const textIndex = TEXT_NAMES.indexOf(props.curText);
@@ -204,7 +197,8 @@ const NavBar = (props) => {
                     </LogoWrapper>
                     {navLinks}
                     {homeButton}
-                    {langAndBwButtons}
+                    {langButton}
+                    {bwButton}
                     {readButton}
                 </NavToolbar>
             </div>
