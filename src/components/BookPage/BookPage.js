@@ -83,8 +83,8 @@ export const BookPage = (props) => {
     });
 
     //do not show the content until the page is loaded
-    return props.loaded ?
-        (<BookPageWrapper>
+    return props.loaded &&
+        <BookPageWrapper>
             <BookPageTopAnchor>
                 <div id='top'></div>
             </BookPageTopAnchor>
@@ -99,8 +99,7 @@ export const BookPage = (props) => {
                 <SectionSeparator/>
                 <CopyrightNote/>
             </AnimatedContent>
-        </BookPageWrapper>) :
-        <div></div>;
+        </BookPageWrapper>;
 };
 
 const mapStateToProps = state => {

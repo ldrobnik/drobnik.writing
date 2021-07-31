@@ -135,8 +135,8 @@ export const Text = (props) => {
         });
 
         //do not show the content until the page is loaded
-        return props.loaded ?
-            (<TextWrapper>
+        return props.loaded &&
+            <TextWrapper>
                 <TextTopAnchor>
                     <div id='top'></div>
                 </TextTopAnchor>
@@ -210,8 +210,7 @@ export const Text = (props) => {
                         onEnter={showLink}
                     />
                 </AnimatedContent>
-            </TextWrapper>) :
-            <div></div>;
+            </TextWrapper>;
     }
 ;
 

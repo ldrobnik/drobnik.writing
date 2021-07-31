@@ -66,7 +66,7 @@ export const Blog = props => {
     });
 
     //do not show the content until the page is loaded
-    return props.loaded && (
+    return props.loaded &&
         <React.Fragment>
             <p>Blog</p>
             <p>Blog</p>
@@ -78,8 +78,7 @@ export const Blog = props => {
             <p>Blog</p>
             <p>Blog</p>
             <p>Blog</p>
-        </React.Fragment>
-    );
+        </React.Fragment>;
 };
 
 const mapStateToProps = state => {
