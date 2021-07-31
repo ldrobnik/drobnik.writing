@@ -70,7 +70,7 @@ export const Book = (props) => {
     );
 
     //checks whether the component is displayed as a standalone page rather than part of the main page
-    const isStandalone = props.bookPage;
+    const isStandalone = props.page === 'book';
 
     //if the component is displayed on the standalone book page, do not display the section links
     const sectionLinks = isStandalone ?
@@ -170,8 +170,7 @@ const mapStateToProps = state => {
     return {
         lang: state.language,
         reload: state.pageReload,
-        page: state.pageDisplayed,
-        bookPage: state.bookPageDisplayed
+        page: state.pageDisplayed
     };
 };
 

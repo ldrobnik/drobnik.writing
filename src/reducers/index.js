@@ -9,9 +9,6 @@ const initialState = {
     dataNoticeVisible: true,
     dataNoticeAccepted: false,
     pageDisplayed: 'main',
-    mainPageDisplayed: true,
-    bookPageDisplayed: false,
-    blogPageDisplayed: false,
     pageReload: true,
     pageLoaded: false
 };
@@ -58,21 +55,6 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 pageDisplayed: action.pageDisplayed
             }
-        case actionTypes.SET_MAIN_PAGE:
-            return {
-                ...state,
-                mainPageDisplayed: action.mainPageDisplayed
-            };
-        case actionTypes.SET_BOOK_PAGE:
-            return {
-                ...state,
-                bookPageDisplayed: action.bookPageDisplayed
-            };
-        case actionTypes.SET_BLOG_PAGE:
-            return {
-                ...state,
-                blogPageDisplayed: action.blogPageDisplayed
-            };
         case actionTypes.SET_PAGE_RELOAD:
             return {
                 ...state,

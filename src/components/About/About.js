@@ -42,16 +42,6 @@ export const About = (props) => {
         props.setPage(page);
     }
 
-    //lets the Redux store know that the main page is currently displayed
-    const setMainDisplayed = () => {
-        props.setMainPage(true)
-    };
-
-    //lets the Redux store know that the Book page is currently not displayed
-    const setBookNotDisplayed = () => {
-        props.setBookPage(false);
-    };
-
     useEffect(() => {
         //Update page title with the piece title
         document.title = `Łukasz Drobnik - ${fictionWriter}`;

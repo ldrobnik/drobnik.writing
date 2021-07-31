@@ -219,9 +219,6 @@ const mapStateToProps = state => {
         curText: state.currentText,
         showNavbar: state.navbarVisible,
         page: state.pageDisplayed,
-        mainDisplayed: state.mainPageDisplayed,
-        bookDisplayed: state.bookPageDisplayed,
-        blogDisplayed: state.blogPageDisplayed,
         reload: state.pageReload
     };
 };
