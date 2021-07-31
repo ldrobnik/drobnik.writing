@@ -9,7 +9,7 @@ const initialState = {
     dataNoticeVisible: true,
     dataNoticeAccepted: false,
     mainPageDisplayed: true,
-    nocturinePageDisplayed: false,
+    bookPageDisplayed: false,
     pageReload: true,
     pageLoaded: false
 };

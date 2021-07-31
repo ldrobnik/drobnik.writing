@@ -213,7 +213,7 @@ const mapStateToProps = state => {
         curText: state.currentText,
         showNavbar: state.navbarVisible,
         mainDisplayed: state.mainPageDisplayed,
-        nocturine: state.nocturinePageDisplayed,
+        bookDisplayed: state.bookPageDisplayed,
         reload: state.pageReload
     };
 };
