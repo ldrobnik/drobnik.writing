@@ -1,6 +1,7 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import Markdown from 'markdown-to-jsx';
 import {
     setTheme,
     setCurrentText,
