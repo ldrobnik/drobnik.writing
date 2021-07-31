@@ -126,11 +126,6 @@ export const Text = (props) => {
 
             //lets the Redux store know that the Text page is currently displayed
             setCurrentPage('text');
-            // //lets the Redux store know that the main page is currently not displayed
-            // setMainNotDisplayed();
-            //
-            // //lets the Redux store know that the Book page is currently not displayed
-            // setBookNotDisplayed();
 
             //show content after a while if page has loaded
             if (props.loaded) {
