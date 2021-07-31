@@ -6,6 +6,7 @@ import {setDataNoticeVisible, setDataNoticeAccepted, setLanguage, setBWMode, set
 import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Text from '../Text/Text';
+import BookPage from '../BookPage/BookPage';
 import QuickLinks from '../QuickLinks/QuickLinks';
 import Blog from '../Blog/Blog';
 import DataNotice from '../UI/DataNotice/DataNotice';
@@ -78,16 +79,16 @@ export const Home = (props) => {
                     <Route path="/" exact component={About} key="home"/>
                     <Route path="/texts/" exact component={Text} key="texts"/>
                     <Route path="/texts/:id" exact component={Text} key="text"/>
-                    <Route path="/nocturine/" exact component={() => {
+                    {/*<Route path="/nocturine/" exact component={() => {*/}
                         window.location.href = "http://fathombooks.org/html/drobnik.html";
                         return null;
                     }}/>
-                    {/*<Route path="/nocturine/" exact component={() => <BookPage book={0}/>} key="nocturine"/>*/}
-                    <Route path="/vostok/" exact component={() => {
+                    <Route path="/nocturine/" exact component={() => <BookPage book={0}/>} key="nocturine"/>
+                    {/*<Route path="/vostok/" exact component={() => {*/}
                         window.location.href = "https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk";
                         return null;
                     }}/>
-                    {/*<Route path="/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>*/}
+                    <Route path="/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>
                     <Route path="/links/" exact component={QuickLinks} key="links"/>
                     <Route path="/blog/" exact component={Blog} key="blog"/>
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>

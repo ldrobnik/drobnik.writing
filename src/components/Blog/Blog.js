@@ -6,8 +6,7 @@ import {
     setCurrentText,
     setNavbarVisibility,
     setDataNoticeVisible,
-    setMainPage,
-    setBlogPage,
+    setPage,
     setPageReload, setBookPage
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
@@ -41,8 +40,7 @@ const mapDispatchToProps = dispatch => {
         setCurrentText,
         setNavbarVisibility,
         setDataNoticeVisible,
-        setMainPage,
-        setBlogPage,
+        setPage,
         setPageReload
     }, dispatch);
 };
