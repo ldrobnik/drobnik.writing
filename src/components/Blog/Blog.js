@@ -20,7 +20,7 @@ import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 export const Blog = props => {
 
     //filepath to a sample markdown document
-    const filename = '../../data/blognotes/markdown.md';
+    const filename = 'github-teamwork';
 
     //blogpost to be displayed
     const [post, setPost] = useState('');
@@ -82,7 +82,7 @@ export const Blog = props => {
 
     useEffect(() => {
         //imports markdown documents and coverts it into text
-        import('./markdown.md')
+        import(`./../../data/blognotes/${filename}.md`)
             .then(res => {
                 fetch(res.default)
                     .then(res => res.text())
