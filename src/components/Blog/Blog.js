@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import Markdown from 'markdown-to-jsx';
+import Markdown from 'markdown-to-jsx/dist/index.js';
 import {
     setTheme,
     setCurrentText,
@@ -20,7 +20,10 @@ import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 export const Blog = props => {
 
     //filepath to a sample markdown document
-    const filepath = '../../';
+    const filename = '../../data/blognotes/markdown.md';
+
+    //blogpost to be displayed
+    const [post, setPost] = useState('');
 
     //shows the content
     const showContent = () => {
@@ -77,19 +80,26 @@ export const Blog = props => {
 
     });
 
+    useEffect(() => {
+        import('./markdown.md')
+            .then(res => {
+                fetch(res.default)
+                    .then(res => res.text())
+                    .then(res => setPost(res))
+                    .catch(err => console.log(err));
+            })
+            .catch(err => console.log(err));
+    });
+
     //do not show the content until the page is loaded
     return props.loaded &&
         <React.Fragment>
-            <p>Blog</p>
-            <p>Blog</p>
-            <p>Blog</p>
-            <p>Blog</p>
-            <p>Blog</p>
-            <p>Blog</p>
-            <p>Blog</p>
-            <p>Blog</p>
-            <p>Blog</p>
-            <p>Blog</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <Markdown>
+                {post}
+            </Markdown>
         </React.Fragment>;
 };
 
