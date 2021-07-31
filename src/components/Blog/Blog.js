@@ -56,7 +56,7 @@ export const Blog = props => {
         checkDataNotice();
 
         //lets the Redux store know that the Text page is currently displayed
-        setCurrentPage('text');
+        setCurrentPage('blog');
 
         //show content after a while if page has loaded
         if (props.loaded) {

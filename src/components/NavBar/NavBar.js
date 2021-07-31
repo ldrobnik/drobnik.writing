@@ -99,11 +99,11 @@ const NavBar = (props) => {
         </Link>
     ;
 
-    //Content of the navlinks - display on main page (not Text) and on screens larger than mobile
-    const navLinks = (props.mainDisplayed && !isMobile) ? <NavLinks/> : <div></div>;
+    //Content of the navlinks - display on the main page and on screens larger than mobile
+    const navLinks = (props.page === 'main' && !isMobile) ? <NavLinks/> : <div></div>;
 
     //Content of the home button - if on the home page, make it an anchor link scrolling to top
-    const homeButton = (props.mainDisplayed) ?
+    const homeButton = (props.page === 'main') ?
         <NavElement>
             <AnchorLink href='#top'>
                 <NavLinkContent>
@@ -134,7 +134,7 @@ const NavBar = (props) => {
         </NavElement>
     );
 
-    //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off
+    //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off; don't display
     const bwButton = (props.bwMode) ?
         (<NavElement>
             <div onClick={toggleBwMode}>
@@ -150,6 +150,13 @@ const NavBar = (props) => {
                 </NavLinkContent>
             </div>
         </ToggledNavElement>);
+
+    //the language and black-and-white button combined - not to be displayed on the blog page
+    const langAndBwButtons = (props.page === 'blog') ? null :
+        <React.Fragment>
+            {langButton}
+            {bwButton}
+        </React.Fragment>
 
     //the index of the text
     const textIndex = TEXT_NAMES.indexOf(props.curText);
@@ -197,8 +204,7 @@ const NavBar = (props) => {
                     </LogoWrapper>
                     {navLinks}
                     {homeButton}
-                    {langButton}
-                    {bwButton}
+                    {langAndBwButtons}
                     {readButton}
                 </NavToolbar>
             </div>
