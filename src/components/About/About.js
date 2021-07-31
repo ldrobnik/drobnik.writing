@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPage, setMainPage, setBookPage} from '../../actions';
+import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPage} from '../../actions';
 import {AboutWrapper, AboutTopAnchor, AboutSectionWrapper} from '../../styled';
 import {BOOKS, TEXT_NAMES} from './../../data/constants';
 import Intro from './Intro/Intro';
@@ -37,6 +37,11 @@ export const About = (props) => {
         }
     };
 
+    //lets the Redux store know which page is currently displayed
+    const setCurrentPage = (page) => {
+        props.setPage(page);
+    }
+
     //lets the Redux store know that the main page is currently displayed
     const setMainDisplayed = () => {
         props.setMainPage(true)
@@ -60,11 +65,8 @@ export const About = (props) => {
         //checks whether data storage notice should be visible and if so, turn is on
         checkDataNotice();
 
-        //lets the Redux store know that the main page is currently displayed
-        setMainDisplayed();
-
-        //lets the Redux store know that the Book page is currently not displayed
-        setBookNotDisplayed();
+        //lets the Redux store that the main page is currently displayed
+        setCurrentPage('main');
     });
 
     //do not show the content until the page is loaded
@@ -111,9 +113,7 @@ const mapDispatchToProps = dispatch => {
         setTheme,
         setNavbarVisibility,
         setDataNoticeVisible,
-        setPage,
-        setMainPage,
-        setBookPage
+        setPage
     }, dispatch);
 };
 
