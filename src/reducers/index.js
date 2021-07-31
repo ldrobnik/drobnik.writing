@@ -10,6 +10,7 @@ const initialState = {
     dataNoticeAccepted: false,
     mainPageDisplayed: true,
     bookPageDisplayed: false,
+    blogPageDisplayed: false,
     pageReload: true,
     pageLoaded: false
 };
@@ -60,6 +61,11 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 bookPageDisplayed: action.bookPageDisplayed
+            };
+        case actionTypes.SET_BLOG_PAGE:
+            return {
+                ...state,
+                blogPageDisplayed: action.blogPageDisplayed
             };
         case actionTypes.SET_PAGE_RELOAD:
             return {
