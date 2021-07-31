@@ -7,8 +7,7 @@ import {
     setCurrentText,
     setNavbarVisibility,
     setDataNoticeVisible,
-    setMainPage,
-    setBookPage,
+    setPage,
     setPageReload
 } from '../../actions';
 import {TextTopAnchor, TextWrapper, TextHeader, TextTitle, TextSubtitle, TextBody} from '../../styled';
@@ -104,15 +103,10 @@ export const Text = (props) => {
             }
         };
 
-        //lets the Redux store know that the Main page is currently not displayed
-        const setMainNotDisplayed = () => {
-            props.setMainPage(false)
-        };
-
-        //lets the Redux store know that the Book page is currently not displayed
-        const setBookNotDisplayed = () => {
-            props.setBookPage(false);
-        };
+        //lets the Redux store know which page is currently displayed
+        const setCurrentPage = (page) => {
+            props.setPage(page);
+        }
 
         useEffect(() => {
             //Update page title with the piece title
@@ -130,11 +124,13 @@ export const Text = (props) => {
             //checks whether data storage notice should be visible and if so, turn is on
             checkDataNotice();
 
-            //lets the Redux store know that the main page is currently not displayed
-            setMainNotDisplayed();
-
-            //lets the Redux store know that the Book page is currently not displayed
-            setBookNotDisplayed();
+            //lets the Redux store know that the Text page is currently displayed
+            setCurrentPage('text');
+            // //lets the Redux store know that the main page is currently not displayed
+            // setMainNotDisplayed();
+            //
+            // //lets the Redux store know that the Book page is currently not displayed
+            // setBookNotDisplayed();
 
             //show content after a while if page has loaded
             if (props.loaded) {
@@ -242,8 +238,7 @@ const mapDispatchToProps = dispatch => {
             setCurrentText,
             setNavbarVisibility,
             setDataNoticeVisible,
-            setMainPage,
-            setBookPage,
+            setPage,
             setPageReload
         }, dispatch);
     }

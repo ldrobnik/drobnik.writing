@@ -87,7 +87,7 @@ const NavBar = (props) => {
     };
 
     //Content of the logo link - if on the home page, make it an anchor link scrolling to top
-    const logoLink = (props.mainDisplayed) ?
+    const logoLink = (props.page === 'main') ?
         <AnchorLink href='#top'>
             <Logo/>
         </AnchorLink>
@@ -212,6 +212,7 @@ const mapStateToProps = state => {
         bwMode: state.blackAndWhite,
         curText: state.currentText,
         showNavbar: state.navbarVisible,
+        page: state.pageDisplayed,
         mainDisplayed: state.mainPageDisplayed,
         bookDisplayed: state.bookPageDisplayed,
         blogDisplayed: state.blogPageDisplayed,

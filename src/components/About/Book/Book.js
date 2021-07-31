@@ -170,6 +170,7 @@ const mapStateToProps = state => {
     return {
         lang: state.language,
         reload: state.pageReload,
+        page: state.pageDisplayed,
         bookPage: state.bookPageDisplayed
     };
 };

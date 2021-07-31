@@ -57,7 +57,7 @@ export const setDataNoticeAccepted = (dataNoticeAccepted) => {
 };
 
 //Specifies which page is currently displayed
-export const SetPage = (pageDisplayed) => {
+export const setPage = (pageDisplayed) => {
   return {
       type: actionTypes.SET_PAGE,
       pageDisplayed

@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {setTheme, setNavbarVisibility, setDataNoticeVisible, setMainPage, setBookPage} from '../../actions';
+import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPage, setMainPage, setBookPage} from '../../actions';
 import {AboutWrapper, AboutTopAnchor, AboutSectionWrapper} from '../../styled';
 import {BOOKS, TEXT_NAMES} from './../../data/constants';
 import Intro from './Intro/Intro';
@@ -111,6 +111,7 @@ const mapDispatchToProps = dispatch => {
         setTheme,
         setNavbarVisibility,
         setDataNoticeVisible,
+        setPage,
         setMainPage,
         setBookPage
     }, dispatch);
