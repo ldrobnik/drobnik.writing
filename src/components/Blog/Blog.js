@@ -10,7 +10,7 @@ import {
     setPageReload, setBookPage
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
-import {FADE_DURATION, TEXTS} from './../../data/constants';
+import {FADE_DURATION, TEXT_NAMES, TEXTS} from './../../data/constants';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import InvisibleSeparator from '../UI/InvisibleSeparator/InvisibleSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
@@ -40,6 +40,11 @@ export const Blog = props => {
         props.setNavbarVisibility(true);
     };
 
+    //sets black and white theme
+    const setBwTheme = () => {
+        props.setTheme('blackAndWhite');
+    };
+
     //lets the Redux store know which page is currently displayed
     const setCurrentPage = (page) => {
         props.setPage(page);
@@ -48,6 +53,9 @@ export const Blog = props => {
     useEffect(() => {
         //Update page title with the piece title
         document.title = 'Łukasz Drobnik - Blog';
+
+        //sets theme to black and white
+        setBwTheme();
 
         //show Navbar
         showNavbar();
