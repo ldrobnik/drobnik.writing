@@ -92,16 +92,6 @@ export const Blog = props => {
             })
             .catch(err => console.log(err));
 
-        //makes all links pointing to other sites open in a new window
-        let links = document.links;
-
-        for (let i = 0, linksLength = links.length; i < linksLength; i++) {
-            if (links[i].hostname != window.location.hostname) {
-                links[i].target = '_blank';
-                links[i].rel = 'noopener noreferrer';
-            }
-        }
-
     });
 
     //do not show the content until the page is loaded
@@ -110,7 +100,18 @@ export const Blog = props => {
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <Markdown>
+            <Markdown
+                options={{
+                    overrides: {
+                        a: {
+                            props: {
+                                target: '_blank',
+                                rel: 'noopener noreferrer'
+                            },
+                        },
+                    },
+                }}
+            >
                 {post}
             </Markdown>
         </React.Fragment>;
