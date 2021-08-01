@@ -39,7 +39,7 @@ const NavLinks = (props) => {
                                 </div>
                             </AnimatedContent>
                         );
-                    } else {
+                    } else if (blogLink) {
                         return (
                             <AnimatedContent
                                 key={k}

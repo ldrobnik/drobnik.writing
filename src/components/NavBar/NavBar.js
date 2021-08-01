@@ -26,8 +26,10 @@ const NavBar = (props) => {
     // Specifies the current window width
     const [isMobile, setIsMobile] = useState(false);
 
-    //specifies breakpoint for screens below which nav links are not displayed
-    const mobileBreakpoint = 685;
+    //specifies breakpoint for screens below which nav links are not displayed (higher for English version as there's one extra link)
+    const mobileBreakpoint = (props.lang === 'en') ? 725 : 685;
+
+    console.log(props.lang, mobileBreakpoint);
 
     // Updates the window width
     const handleWindowSizeChange = () => {

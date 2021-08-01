@@ -12,6 +12,7 @@ import {
     faStickyNote
 } from '@fortawesome/free-solid-svg-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import {Link} from 'react-router-dom';
 
 //source urls for book covers
 import nocturineCover from '../assets/images/nocturineCover.jpg';
@@ -1300,7 +1301,8 @@ export const WEBSITE_TEXT = {
         introduction: {
             en: <div>Here are a handful of my pieces.<br/>Maybe you’d like to read some of them:</div>,
             pl: <div>Oto garstka moich tekstów<br/>do niezobowiązującej lektury:</div>
-        }
+        },
+        blogPassage: <div>You can also <Link to={'/blog'}>check out my blog</Link>.</div>
     },
     sectionLinks: [
         {
