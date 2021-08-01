@@ -1331,6 +1331,13 @@ export const WEBSITE_TEXT = {
                 en: 'reading room',
                 pl: 'czytelnia'
             }
+        },
+        {
+            id: 'blog',
+            text: {
+                en: 'blog',
+                pl: 'blog'
+            }
         }
     ],
     text: {
