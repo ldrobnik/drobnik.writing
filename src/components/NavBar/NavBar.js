@@ -181,14 +181,13 @@ const NavBar = (props) => {
     //specifies whether the Book subpage is displayed
 
     /*If the Text page is currently displayed, assigned the next text to the read link.
-   //     * If the Book page is displayed, assing nocturine
    //     * If the About page is displayed, assign a random text to it.
    //     */
-    const chosenText = props.mainDisplayed ? randomText : (props.nocturine ? 'nocturine' : nextText);
+    const chosenText = (props.page === 'main') ? randomText : nextText;
 
 
     //content of the icon linking to the Text component
-    const readButton = (
+    const readButton =
         <NavElement>
             <Link
                 to={'/texts/' + chosenText}
@@ -197,11 +196,10 @@ const NavBar = (props) => {
                     {WEBSITE_TEXT.navbar.read[props.lang]}
                 </NavLinkContent>
             </Link>
-        </NavElement>
-    );
+        </NavElement>;
 
     //content of the icon linking to the Text component - display translucent inactive icon if the Blog component is displayed
-    const blogButton = (props.page !== 'blog') ?
+    const blogButton =
         <NavElement>
             <Link
                 to={'/blog'}
@@ -210,14 +208,7 @@ const NavBar = (props) => {
                     {WEBSITE_TEXT.navbar.blog[props.lang]}
                 </NavLinkContent>
             </Link>
-        </NavElement> :
-        <ToggledNavElement>
-            <NavElement>
-                <NavLinkContent>
-                    {WEBSITE_TEXT.navbar.blog[props.lang]}
-                </NavLinkContent>
-            </NavElement>
-        </ToggledNavElement>;
+        </NavElement>;
 
     //class applied to the component content, depending on the navbar visibility state in the Redux store
     const contentClass = (props.showNavbar) ? '' : 'hidden';
