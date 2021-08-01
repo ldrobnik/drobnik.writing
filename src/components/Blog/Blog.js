@@ -11,7 +11,8 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
-import {FADE_DURATION, TEXT_NAMES, TEXTS} from './../../data/constants';
+import {FADE_DURATION} from '../../styled';
+import {TEXT_NAMES, TEXTS} from './../../data/constants';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import InvisibleSeparator from '../UI/InvisibleSeparator/InvisibleSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';

@@ -11,10 +11,11 @@ import {
     PubsSwitchWrapper,
     PubsLabel,
     PubsSubsectionHeading,
-    PubsSeparator
+    PubsSeparator,
+    FADE_DURATION
 } from '../../../styled';
 import {AnimatedContent, PubsAnimatedMessage, PubsAnimatedPanel} from '../../../posed';
-import {WEBSITE_TEXT, FADE_DURATION} from './../../../data/constants';
+import {WEBSITE_TEXT} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import ToggleSwitch from './../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';

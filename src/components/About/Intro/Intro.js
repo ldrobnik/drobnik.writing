@@ -4,9 +4,9 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {IntroBody} from '../../../styled';
+import {IntroBody, FADE_DURATION} from '../../../styled';
 import {AnimatedContent, IntroAnimatedLinks, IntroAnimatedButton} from '../../../posed';
-import {WEBSITE_TEXT, FADE_DURATION} from '../../../data/constants';
+import {WEBSITE_TEXT} from '../../../data/constants';
 import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'
 import SectionHeading from './../../UI/SectionHeading/SectionHeading';
 import CentredPhoto from './../../UI/CentredPhoto/CentredPhoto';

@@ -9,9 +9,9 @@ import {
     setPage,
     setPageReload
 } from '../../actions';
-import {BookPageTopAnchor, BookPageWrapper} from '../../styled';
+import {BookPageTopAnchor, BookPageWrapper, FADE_DURATION} from '../../styled';
 import {AnimatedContent} from '../../posed';
-import {BOOKS, FADE_DURATION} from './../../data/constants';
+import {BOOKS} from './../../data/constants';
 import Book from '../About/Book/Book';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import InvisibleSeparator from '../UI/InvisibleSeparator/InvisibleSeparator';

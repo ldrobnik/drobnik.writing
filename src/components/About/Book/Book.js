@@ -4,9 +4,9 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {BookBody, BookSlogan} from '../../../styled';
+import {BookBody, BookSlogan, FADE_DURATION} from '../../../styled';
 import {AnimatedContent, BookAnimatedButton} from '../../../posed';
-import {EXCERPT_BUTTON, BOOKS, FADE_DURATION} from './../../../data/constants';
+import {EXCERPT_BUTTON, BOOKS} from './../../../data/constants';
 import CentredPhoto from '../../UI/CentredPhoto/CentredPhoto';
 import SectionHeading from '../../UI/SectionHeading/SectionHeading'
 import QuoteList from '../QuoteList/QuoteList';

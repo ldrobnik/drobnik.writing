@@ -1,6 +1,41 @@
 /* STYLED-COMPONENTS */
-import styled, {createGlobalStyle} from 'styled-components';
-import {POP_KEYFRAMES, PULSATE_KEYFRAMES} from './data/constants';
+import styled, {createGlobalStyle, keyframes} from 'styled-components';
+
+/* Keyframes */
+
+export const PULSATE_KEYFRAMES = keyframes`
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`;
+
+
+//Keyframes for 'popping' animation
+export const POP_KEYFRAMES = keyframes`
+  0% {
+    transform: scale(1, 1);
+  }
+
+  30% {
+    transform: scale(1.05, 1.05);
+
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+`;
+
+//Duration of the fade-in animation used when loading new page
+export const FADE_DURATION = 200;
 
 /* General */
 
@@ -518,6 +553,59 @@ export const QuickLinksWrapper = styled.div`
    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
       padding: 1em 15%;
    }
+`;
+
+/* QuickLink.js */
+
+export const QuickLinkWrapper = styled.div`
+  text-align: center;
+  margin: 1em 0;
+`;
+
+export const QuickLinkContentWrapper = styled.div`
+  background-color: ${props => props.theme.background};
+  font-weight: bold;
+  padding: 0.8em;
+  margin: 0 0.5em;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+
+        
+    &:hover {
+      animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation}
+    }
+    
+    @media all and (min-width: ${props => props.theme.extraSmallScr}) {
+       margin: 0 0.8em;;
+    }
+    
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+       margin: 0 1em;
+    }
+    
+    @media all and (min-width: ${props => props.theme.mediumScr}) {
+      margin: 0 2em;
+    }
+    
+    @media all and (min-width: ${props => props.theme.largeScr}) {
+       margin: 0 20%;
+    }
+    
+    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+       margin: 0 25%;
+    }
+  
+`;
+
+export const QuickLinkTitle = styled.div`
+  font-size: ${props => props.theme.subtitleSize};
+`;
+
+export const QuickLinkSubtitle = styled.div`
+  font-size: ${props => props.theme.bodySize};
 `;
 
 /* Text.js */

@@ -3,10 +3,10 @@ import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
-import {ReadWrapper, ReadMessage} from '../../../styled';
-import {AnimatedContent, AnimatedReadList, AnimatedReadLink} from '../../../posed';
 import {setPageReload} from '../../../actions';
-import {WEBSITE_TEXT, HIGHLIGHTS, TEXTS, FADE_DURATION} from './../../../data/constants';
+import {ReadWrapper, ReadMessage, FADE_DURATION} from '../../../styled';
+import {AnimatedContent, AnimatedReadList, AnimatedReadLink} from '../../../posed';
+import {WEBSITE_TEXT, HIGHLIGHTS, TEXTS} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import SectionLinks from '../SectionLinks/SectionLinks';
 import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';

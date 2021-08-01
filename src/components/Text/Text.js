@@ -10,9 +10,9 @@ import {
     setPage,
     setPageReload
 } from '../../actions';
-import {TextTopAnchor, TextWrapper, TextHeader, TextTitle, TextSubtitle, TextBody} from '../../styled';
+import {TextTopAnchor, TextWrapper, TextHeader, TextTitle, TextSubtitle, TextBody, FADE_DURATION} from '../../styled';
 import {AnimatedContent, AnimatedTextLink, AnimatedTextButton} from '../../posed';
-import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES, FADE_DURATION} from './../../data/constants';
+import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES} from './../../data/constants';
 import Credits from './Credits/Credits';
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
 import NextTextLink from './NextTextLink/NextTextLink';

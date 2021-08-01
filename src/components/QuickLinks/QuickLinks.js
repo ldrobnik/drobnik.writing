@@ -2,9 +2,9 @@ import React, {useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPageReload} from '../../actions';
-import {QuickLinksWrapper} from '../../styled';
+import {QuickLinksWrapper, FADE_DURATION} from '../../styled';
 import {AnimatedContent} from '../../posed';
-import {LINKS, TEXT_NAMES, FADE_DURATION} from '../../data/constants';
+import {LINKS, TEXT_NAMES} from '../../data/constants';
 import QuickLink from './QuickLink/QuickLink';
 
 const QuickLinks = (props) => {
