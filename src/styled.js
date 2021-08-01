@@ -438,6 +438,12 @@ export const NavElement = styled.div`
   }
 `;
 
+export const NavInactiveElement = styled.div`
+  cursor: not-allowed;
+  margin: ${props => props.theme.navIconMargin};
+  opacity: ${props => props.theme.translucent};
+`;
+
 export const ToggledNavElement = styled.div`
   cursor: pointer;
   margin: ${props => props.theme.navIconMargin};

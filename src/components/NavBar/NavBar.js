@@ -4,7 +4,15 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {setLanguage, setBWMode, setPageReload} from '../../actions';
-import {NavBarWrapper, NavToolbar, LogoWrapper, NavElement, ToggledNavElement, NavLinkContent} from '../../styled';
+import {
+    NavBarWrapper,
+    NavToolbar,
+    LogoWrapper,
+    NavElement,
+    NavInactiveElement,
+    ToggledNavElement,
+    NavLinkContent
+} from '../../styled';
 import {WEBSITE_TEXT, TEXT_NAMES} from '../../data/constants';
 import Logo from './Logo/Logo';
 import NavLinks from './NavLinks/NavLinks';
@@ -132,7 +140,14 @@ const NavBar = (props) => {
                 </NavLinkContent>
             </div>
         </NavElement>
-        : null;
+        :
+            <NavInactiveElement>
+                <div>
+                    <NavLinkContent>
+                        {WEBSITE_TEXT.navbar.language[props.lang]}
+                    </NavLinkContent>
+                </div>
+            </NavInactiveElement>;
 
     //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off; don't display
     const bwButton = (props.bwMode) ?
@@ -197,11 +212,11 @@ const NavBar = (props) => {
             </Link>
         </NavElement> :
         <ToggledNavElement>
-        <NavElement>
+            <NavElement>
                 <NavLinkContent>
                     {WEBSITE_TEXT.navbar.blog[props.lang]}
                 </NavLinkContent>
-        </NavElement>
+            </NavElement>
         </ToggledNavElement>;
 
     //class applied to the component content, depending on the navbar visibility state in the Redux store
