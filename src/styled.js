@@ -1,5 +1,6 @@
 /* STYLED-COMPONENTS */
 import styled, {createGlobalStyle, keyframes} from 'styled-components';
+import {THEME_COLORS} from './data/constants';
 
 /* Keyframes */
 
@@ -967,4 +968,27 @@ export const SubLinks = styled.div`
 export const ToggleWrapper = styled.div`
   padding: 0.1em;
   opacity: ${props => props.theme.translucent};
+`;
+
+
+/* Blog.js */
+
+/* Wrappers for different categories of blog posts */
+
+export const NocturineTheme = styled.div`
+  h1, h1, h3, h4, h5, h6, a, b, strong {
+    color: ${props => props.theme.nocturineColor}
+  }
+`;
+
+export const VostokTheme = styled.div`
+  h1, h1, h3, h4, h5, h6, a, b, strong {
+    color: ${props => props.theme.vostokColor}
+  }
+`;
+
+export const TechTheme = styled.div`
+  h1, h1, h3, h4, h5, h6, a, b, strong {
+    color: ${props => props.theme.techColor}
+  }
 `;
