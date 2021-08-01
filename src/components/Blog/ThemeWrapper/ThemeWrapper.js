@@ -1,9 +1,19 @@
 import React from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 import {NocturineTheme, VostokTheme, TechTheme} from '../../../styled';
 
 const ThemeWrapper = (props) => {
 
-    if (props.theme === 'nocturine') {
+    //Don't style text if the black and white mode is on
+    //Add appropriate styling to blog posts of different categories
+    if (props.bwMode) {
+        return (
+            <React.Fragment>
+                {props.children}
+            </React.Fragment>
+        )
+    } else if (props.theme === 'nocturine') {
         return (
             <NocturineTheme>
                 {props.children}
@@ -17,9 +27,9 @@ const ThemeWrapper = (props) => {
         );
     } else if (props.theme === 'tech') {
         return (
-            <NocturineTheme>
+            <TechTheme>
                 {props.children}
-            </NocturineTheme>
+            </TechTheme>
         );
     } else {
         return (
@@ -31,4 +41,11 @@ const ThemeWrapper = (props) => {
 
 };
 
-export default Layout;
+const mapStateToProps = state => {
+        return {
+            bwMode: state.blackAndWhite
+        };
+    }
+;
+
+export default connect(mapStateToProps)(ThemeWrapper);

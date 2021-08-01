@@ -11,8 +11,9 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
-import {FADE_DURATION} from '../../styled';
+import {BlogNote, FADE_DURATION} from '../../styled';
 import {TEXT_NAMES, TEXTS} from './../../data/constants';
+import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import InvisibleSeparator from '../UI/InvisibleSeparator/InvisibleSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
@@ -100,20 +101,24 @@ export const Blog = props => {
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <Markdown
-                options={{
-                    overrides: {
-                        a: {
-                            props: {
-                                target: '_blank',
-                                rel: 'noopener noreferrer'
+            <ThemeWrapper theme={'tech'}>
+                <BlogNote>
+                    <Markdown
+                        options={{
+                            overrides: {
+                                a: {
+                                    props: {
+                                        target: '_blank',
+                                        rel: 'noopener noreferrer'
+                                    },
+                                },
                             },
-                        },
-                    },
-                }}
-            >
-                {post}
-            </Markdown>
+                        }}
+                    >
+                        {post}
+                    </Markdown>
+                </BlogNote>
+            </ThemeWrapper>
         </React.Fragment>;
 };
 

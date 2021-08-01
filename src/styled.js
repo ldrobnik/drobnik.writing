@@ -976,19 +976,36 @@ export const ToggleWrapper = styled.div`
 /* Wrappers for different categories of blog posts */
 
 export const NocturineTheme = styled.div`
-  h1, h1, h3, h4, h5, h6, a, b, strong {
+  h1, h2, h3, h4, h5, h6, a, b, strong {
     color: ${props => props.theme.nocturineColor}
   }
+  
 `;
 
 export const VostokTheme = styled.div`
-  h1, h1, h3, h4, h5, h6, a, b, strong {
+  h1, h2, h3, h4, h5, h6, a, b, strong {
     color: ${props => props.theme.vostokColor}
   }
 `;
 
 export const TechTheme = styled.div`
-  h1, h1, h3, h4, h5, h6, a, b, strong {
+  h1, h2, h3, h4, h5, h6, a, b, strong {
     color: ${props => props.theme.techColor}
   }
+
+`;
+
+export const BlogNote = styled.div`
+
+    a {
+      text-decoration: underline;
+      font-weight: bold;
+
+      @media all and (min-width: ${props => props.theme.smallScr}) {
+        &:hover {
+          animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+        }
+      }
+    }
+
 `;
