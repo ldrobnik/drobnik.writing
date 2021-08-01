@@ -997,6 +997,18 @@ export const TechTheme = styled.div`
 
 export const BlogNote = styled.div`
 
+    h1 {
+      font-size: 3em;
+
+      @media all and (max-width: ${props => props.theme.smallScr}) {
+        font-size: 2.5em;
+      }
+
+      @media all and (max-width: ${props => props.theme.extraSmallScr}) {
+        font-size: 1.8em;
+      }
+    }
+  
     a {
       text-decoration: underline;
       font-weight: bold;
