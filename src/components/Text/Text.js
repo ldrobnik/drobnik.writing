@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import Markdown from 'markdown-to-jsx/dist/index.js';
 import {Waypoint} from 'react-waypoint';
 import {
     setTheme,
@@ -22,6 +23,10 @@ import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 import CentredButton from '../UI/CentredButton/CentredButton';
 
 export const Text = (props) => {
+
+
+        //blogpost to be displayed
+        const [piece, setPiece] = useState('');
 
         //specifies whether 'up next' link should be displayed
         const [linkVisible, setlinkVisible] = useState(false);
@@ -65,8 +70,12 @@ export const Text = (props) => {
             return 'nocturine';
         };
 
-        //constant holding the name of the text to be displayed
+        //the name of the text to be displayed
         const textName = checkTextID(props.match.params.id);
+
+
+        //the markdown file name of the text to be displayed
+        const filename = TEXTS[props.lang][textName].filename;
 
         //the index of the text
         const textIndex = TEXT_NAMES.indexOf(textName);
@@ -112,6 +121,18 @@ export const Text = (props) => {
             //Update page title with the piece title
             document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
 
+
+            //imports markdown documents and coverts it into text
+            import(`./../../data/texts/${filename}.md`)
+                .then(res => {
+                    fetch(res.default)
+                        .then(res => res.text())
+                        .then(res => setPiece(res))
+                        .catch(err => console.log(err));
+                })
+                .catch(err => console.log(err));
+
+
             //update the theme depending on the text displayed
             updateTheme();
 
@@ -127,8 +148,8 @@ export const Text = (props) => {
             //lets the Redux store know that the Text page is currently displayed
             setCurrentPage('text');
 
-            //show content after a while if page has loaded
-            if (props.loaded) {
+            //show content after a while if page has loaded and the markdown file has been successfully fetched
+            if (props.loaded && piece.length > 0) {
                 setTimeout(showContent, FADE_DURATION);
             }
 
@@ -151,7 +172,10 @@ export const Text = (props) => {
                         </TextSubtitle>
                     </TextHeader>
                     <TextBody>
-                        {TEXTS[props.lang][textName].content}
+                        <Markdown>
+                            {piece}
+                        </Markdown>
+                        {/*{TEXTS[props.lang][textName].content}*/}
                     </TextBody>
                     <Waypoint
                         onEnter={hideLink}
