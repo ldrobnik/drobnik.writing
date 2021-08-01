@@ -995,6 +995,13 @@ export const TechTheme = styled.div`
 
 `;
 
+/* Other components */
+
+export const BlogTopAnchor = styled.div`
+  position: absolute;
+  top: 0;
+`;
+
 export const BlogNote = styled.div`
 
     h1 {

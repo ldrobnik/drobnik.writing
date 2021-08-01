@@ -11,7 +11,7 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
-import {BlogNote, BlogWrapper, FADE_DURATION} from '../../styled';
+import {BlogTopAnchor, BlogNote, BlogWrapper, FADE_DURATION} from '../../styled';
 import {TEXT_NAMES, TEXTS} from './../../data/constants';
 import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
@@ -98,6 +98,9 @@ export const Blog = props => {
     //do not show the content until the page is loaded
     return props.loaded &&
         <BlogWrapper>
+            <BlogTopAnchor>
+                <div id='top'></div>
+            </BlogTopAnchor>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <ThemeWrapper theme={'tech'}>
