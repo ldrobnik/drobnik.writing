@@ -1369,6 +1369,14 @@ export const WEBSITE_TEXT = {
             pl: 'strona główna'
         }
     },
+    blog: {
+        title: 'Łukasz Drobnik’s blog',
+        latestPost: 'Latest post:',
+        olderPosts: 'Older posts:',
+        nextPost: 'up next: ',
+        top: 'top',
+        home: 'home'
+    },
     dataNotice: {
         en: {
             message: <div>This website collects basic information about user preferences (language and
