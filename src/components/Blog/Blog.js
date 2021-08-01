@@ -98,24 +98,27 @@ export const Blog = props => {
     //do not show the content until the page is loaded
     return props.loaded &&
         <BlogWrapper>
-            <ThemeWrapper theme={'tech'}>
-                <BlogNote>
-                    <Markdown
-                        options={{
-                            overrides: {
-                                a: {
-                                    props: {
-                                        target: '_blank',
-                                        rel: 'noopener noreferrer'
+            <AnimatedContent
+                pose={!props.reload ? 'visible' : 'hidden'}>
+                <ThemeWrapper theme={'tech'}>
+                    <BlogNote>
+                        <Markdown
+                            options={{
+                                overrides: {
+                                    a: {
+                                        props: {
+                                            target: '_blank',
+                                            rel: 'noopener noreferrer'
+                                        },
                                     },
                                 },
-                            },
-                        }}
-                    >
-                        {post}
-                    </Markdown>
-                </BlogNote>
-            </ThemeWrapper>
+                            }}
+                        >
+                            {post}
+                        </Markdown>
+                    </BlogNote>
+                </ThemeWrapper>
+            </AnimatedContent>
         </BlogWrapper>;
 };
 
