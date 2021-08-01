@@ -21,7 +21,7 @@ import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 export const Blog = props => {
 
     //filepath to a sample markdown document
-    const filename = 'github-teamwork';
+    const filename = 'github-pages';
 
     //blogpost to be displayed
     const [post, setPost] = useState('');

@@ -82,6 +82,7 @@ export const TEXTS = {
                     Annual</em></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank"
                                         rel="noopener noreferrer"><em>The Write Launch</em></a>).</p>,
             content: NOCTURINE_EN,
+            filename: 'nocturine-en',
             theme: 'nocturine'
         },
 
@@ -96,6 +97,7 @@ export const TEXTS = {
                                                                                        rel="noopener noreferrer"><em>Afront</em></a> Issue
                 2(5)/2018.</p>,
             content: CETACEAN_EN,
+            filename: 'cetacean-en',
             theme: 'cetacean'
         },
 
@@ -108,6 +110,7 @@ export const TEXTS = {
                 href="http://stonerpolski.pl/celuloza-lukasz-drobnik" target="_blank"
                 rel="noopener noreferrer"><em>Stoner Polski</em></a>.</p>,
             content: CELLULOSE_EN,
+            filename: 'cellulose-en',
             theme: 'cellulose'
         },
 
@@ -122,6 +125,7 @@ export const TEXTS = {
                     href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank"
                     rel="noopener noreferrer"><em>Fabularie</em></a> (incidentally, also Issue&nbsp;10).</p>,
             content: MOTHS_EN,
+            filename: 'moths-en',
             theme: 'moths'
         },
 
@@ -136,6 +140,7 @@ export const TEXTS = {
                 was featured in <a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank"
                                    rel="noopener noreferrer"><em>Helikopter</em></a> Issue&nbsp;3/2018.</p>,
             content: DRONES_EN,
+            filename: 'drones-en',
             theme: 'drones'
         },
 
@@ -148,6 +153,7 @@ export const TEXTS = {
                                                           rel="noopener noreferrer"><em>X&#8209;R&#8209;A&#8209;Y
                 Literary Magazine</em></a> Issue&nbsp;17.</p>,
             content: SPORES_EN,
+            filename: 'spores-en',
             theme: 'spores'
         },
 
@@ -163,6 +169,7 @@ export const TEXTS = {
                 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
                           target="_blank" rel="noopener noreferrer"><em>wydawnictwo&nbsp;j</em></a> website.</p>,
             content: VOSTOK_EN,
+            filename: 'vostok-en',
             theme: 'vostok'
         },
 
@@ -178,6 +185,7 @@ export const TEXTS = {
                     href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/"
                     target="_blank" rel="noopener noreferrer"><em>Inter-</em></a> Issue&nbsp;2(16)/2018.</p>,
             content: DEVONIAN_EN,
+            filename: 'devonian-en',
             theme: 'devonian'
         },
 
@@ -190,6 +198,7 @@ export const TEXTS = {
                 rel="noopener noreferrer"><em>Foglifter</em></a> Volume&nbsp;4
                 Issue&nbsp;1.</p>,
             content: LANDMINES_EN,
+            filename: 'landmines-en',
             theme: 'landmines'
         },
 
@@ -204,6 +213,7 @@ export const TEXTS = {
                     href="http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/"
                     target="_blank" rel="noopener noreferrer"><em>Tlen Literacki</em></a> Issue&nbsp;4.</p>,
             content: TREASURES_EN,
+            filename: 'treasures-en',
             theme: 'treasures'
         }
 
@@ -228,6 +238,7 @@ export const TEXTS = {
                     Annual</em></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank"
                                         rel="noopener noreferrer"><em>The Write Launch</em></a>).</p>,
             content: NOCTURINE_PL,
+            filename: 'nocturine-pl',
             theme: 'nocturine'
         },
 
@@ -241,6 +252,7 @@ export const TEXTS = {
                                                                       rel="noopener noreferrer"><em>Afroncie</em></a> (numer
                 2(5)/2018).</p>,
             content: CETACEAN_PL,
+            filename: 'cetacean-pl',
             theme: 'cetacean'
         },
 
@@ -254,6 +266,7 @@ export const TEXTS = {
                 href="http://stonerpolski.pl/celuloza-lukasz-drobnik" target="_blank"
                 rel="noopener noreferrer"><em>Stonera Polskiego</em></a>.</div>,
             content: CELLULOSE_PL,
+            filename: 'cellulose-pl',
             theme: 'cellulose'
         },
 
@@ -267,6 +280,7 @@ export const TEXTS = {
                 href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank"
                 rel="noopener noreferrer"><em>Fabulariach</em></a> (także w&nbsp;numerze&nbsp;10.).</p>,
             content: MOTHS_PL,
+            filename: 'moths-pl',
             theme: 'moths',
         },
 
@@ -281,6 +295,7 @@ export const TEXTS = {
                 <a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank"
                    rel="noopener noreferrer"><em>Helikopterze</em></a> (numer 3/2018).</p>,
             content: DRONES_PL,
+            filename: 'drones-pl',
             theme: 'drones'
         },
 
@@ -292,6 +307,7 @@ export const TEXTS = {
                 href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank"
                 rel="noopener noreferrer"><em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em></a>.</p>,
             content: SPORES_PL,
+            filename: 'spores-pl',
             theme: 'spores'
         },
 
@@ -309,6 +325,7 @@ export const TEXTS = {
                     href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
                     target="_blank" rel="noopener noreferrer"><em>wydawnictwa&nbsp;j</em></a>.</p>,
             content: VOSTOK_PL,
+            filename: 'vostok-pl',
             theme: 'vostok'
         },
 
@@ -323,6 +340,7 @@ export const TEXTS = {
                     href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/"
                     target="_blank" rel="noopener noreferrer"><em>Inter-</em></a> (numer&nbsp;2(16)/2018).</p>,
             content: DEVONIAN_PL,
+            filename: 'devonian-pl',
             theme: 'devonian'
         },
 
@@ -336,6 +354,7 @@ export const TEXTS = {
                 rel="noopener noreferrer"><em>Foglifter</em></a> (Volume&nbsp;4
                 Issue&nbsp;1).</p>,
             content: LANDMINES_PL,
+            filename: 'landmines-pl',
             theme: 'landmines'
         },
 
@@ -350,6 +369,7 @@ export const TEXTS = {
                     href="http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/"
                     target="_blank" rel="noopener noreferrer"><em>Tlenu Literackiego</em></a>.</p>,
             content: TREASURES_PL,
+            filename: 'treasures-pl',
             theme: 'treasures'
         }
     }
