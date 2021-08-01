@@ -9,7 +9,8 @@ import {
 import {
     faHome,
     faBook,
-    faYinYang
+    faYinYang,
+    faStickyNote
 } from '@fortawesome/free-solid-svg-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -1128,6 +1129,24 @@ export const WEBSITE_TEXT = {
                     title="Czytaj przykładowe opowiadania">
                 </FontAwesomeIcon>
                 <span className="sr-only">Czytaj przykładowe opowiadania</span>
+            </React.Fragment>)
+        },
+        blog: {
+            en: (<React.Fragment>
+                <FontAwesomeIcon
+                    icon={faStickyNote}
+                    aria-hidden="true"
+                    title="Read the blog">
+                </FontAwesomeIcon>
+                <span className="sr-only">Read the blog</span>
+            </React.Fragment>),
+            pl: (<React.Fragment>
+                <FontAwesomeIcon
+                    icon={faStickyNote}
+                    aria-hidden="true"
+                    title="Czytaj blog (po angielsku)">
+                </FontAwesomeIcon>
+                <span className="sr-only">Czytaj blog (po angielsku)</span>
             </React.Fragment>)
         }
     },

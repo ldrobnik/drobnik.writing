@@ -100,7 +100,7 @@ const NavBar = (props) => {
     ;
 
     //Content of the navlinks - display on the main page and on screens larger than mobile
-    const navLinks = (props.page === 'main' && !isMobile) ? <NavLinks/> : <div></div>;
+    const navLinks = (props.page === 'main' && !isMobile) ? <NavLinks/> : null;
 
     //Content of the home button - if on the home page, make it an anchor link scrolling to top
     const homeButton = (props.page === 'main') ?
@@ -172,7 +172,7 @@ const NavBar = (props) => {
     const chosenText = props.mainDisplayed ? randomText : (props.nocturine ? 'nocturine' : nextText);
 
 
-    //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
+    //content of the icon linking to the Text component
     const readButton = (
         <NavElement>
             <Link
@@ -184,6 +184,25 @@ const NavBar = (props) => {
             </Link>
         </NavElement>
     );
+
+    //content of the icon linking to the Text component - display translucent inactive icon if the Blog component is displayed
+    const blogButton = (props.page !== 'blog') ?
+        <NavElement>
+            <Link
+                to={'/blog'}
+                onClick={reloadPage}>
+                <NavLinkContent>
+                    {WEBSITE_TEXT.navbar.blog[props.lang]}
+                </NavLinkContent>
+            </Link>
+        </NavElement> :
+        <ToggledNavElement>
+        <NavElement>
+                <NavLinkContent>
+                    {WEBSITE_TEXT.navbar.blog[props.lang]}
+                </NavLinkContent>
+        </NavElement>
+        </ToggledNavElement>;
 
     //class applied to the component content, depending on the navbar visibility state in the Redux store
     const contentClass = (props.showNavbar) ? '' : 'hidden';
@@ -200,6 +219,7 @@ const NavBar = (props) => {
                     {langButton}
                     {bwButton}
                     {readButton}
+                    {blogButton}
                 </NavToolbar>
             </div>
         </NavBarWrapper>
