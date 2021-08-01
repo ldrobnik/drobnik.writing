@@ -1,0 +1,19 @@
+Jej futro ma kolor smoły. Jest głodna. Gdy zawiodło miauczenie, dała susa na łóżko, by wspiąć się na moje zawinięte w pościel ciało. Doskonale wiedząc, że nie śpię, zaczyna mnie pacać czubkiem łapy po spoconym czole, gdy półśnię o wnętrznościach, perłach, gubieniu zębów, falach i pszczołach-robotach.
+
+Nieswojo jest mi budzić się w tym miejscu. Być może to przez białe dywany i meble na wymiar. Obrazy. Ekspres do kawy, na który nigdy nie byłoby mnie stać. Mruczy i ociera się o nogi, gdy kroję cielęce płucka w cienkie plastry. Zostawiam ją przy misce, zmywam krew z rąk, po czym biorę kawę i siadam na sofie. Nie działa Wi-Fi. Może nie zapłacili rachunku.
+
+Zakochałem się w twoich polach i dolinach. Sprzątając kuwetę, wspominam wakacje, które spędziliśmy na tej odosobnionej plaży, trzymając się za ręce, pijąc piwo i wpatrując w fale. To wtedy usłyszałem, że jest ci najbezpieczniej w życiu. Biorę do ręki telefon, by sprawdzić pocztę, ale aplikacja nie chce się połączyć.
+
+W czasie protestu robili zdjęcia. Później zobaczyłem parę twarzy w lokalnej gazecie. Transparenty nad głowami, usta skandujące hasła, czarne parasolki wymierzone w ulewny deszcz. Poczułem ulgę, że nie znalazłem tam siebie. Zaraz potem wstyd, że tak się poczułem. Chodząc po salonie, zbieram rzeczy z listy: skarpety i bieliznę, ładowarkę, przybory toaletowe, bluzę, gaz pieprzowy, z którym się nie rozstaję od tamtego sierpniowego wieczoru.
+
+Nie mogę do ciebie zadzwonić, nie po ostatniej nocy. Moi jedyni przyjaciele są gdzieś w drodze, a ostatnio widuję ich rzadziej niż ich kota. Oddalały nas zawsze drobne rzeczy: restauracja, która była dla mnie zbyt wykwintna, podróże do odległych krajów, spotkania z dekoratorem wnętrz. Wczoraj, obudzony twoim „odchodzę”, kompletnym upiciem, wściekłością i niechęcią do wyjaśnień, przypomniałem sobie, ile było w nas nadziei, gdy sprowadziliśmy się do tego miasta. Ostrzegali mnie, że telewizor nie działa, ale i tak próbuję go włączyć.
+
+Powinienem był wziąć tę pracę i wyjechać z kraju. Mogło się udać. Pożyczyłem dość pieniędzy, a pracodawca zaproponował lokum, w którym mógłbym przemieszkać miesiąc lub dwa. Wtedy usłyszałem, jak zwykle, że się zmienisz i przestaniesz pić, że znowu pojedziemy na tę plażę, jeszcze raz odwiedzimy wszystkie pola, jeziora i doliny, że mnie kochasz i że — błagam — nie możesz beze mnie żyć, a ja — kolejny raz — ci uwierzyłem.
+
+Dlaczego w tym mieszkaniu nie ma radia? Radia zawsze działają. Zakładam buty, płaszcz i plecak. Sprawdzam, czy wyłączyłem krany i zgasiłem światła. Wygładzam pościel. Żegnam się z kotką. Biorę worek ze śmieciami, rozglądam się ostatni raz i wychodzę. Klucz zgrzyta w zamku i nagle znowu jest ta sierpniowa noc.
+
+Nie użyli słowa _pedały_, ledwie mówili. Niższy poprosił cię o chusteczkę, wymachując pięścią z krwawiącymi kłykciami. Dwóch dwudziestolatków w szortach i obcisłych koszulkach: ich mięśnie rozedrgane, a twarze rozmyte już tak, że mogliby być kimkolwiek. Wnętrzności jak podroby, kości z porcelany. Strzelanie stawów i trzeszczenie ścięgien. Skóra, wkrótce cała pomalowana w sińce. Poruszaliśmy się w jak układzie nieudolnego choreografa, przyjmując ciosy i gubiąc zęby.
+
+Zostawiam śmieci przy windzie i wychodzę na dach, gdzie mieści się taras. Miasto jest nieruchome. Właśnie przestało padać. Zapalam papierosa, otoczony przez kamienice, parę wieżowców i odległe bloki. Jest prawie, jakby nie zmieniło się nic. Miarowy szum samochodów. Krzyki mew zmierzających na wysypisko. Reklamówka, która wznosi się nad dachy niczym duch. Nagłe bicie dzwonów kościelnych wież.
+
+Zaciągam się głęboko, czekając, aż nadlecą drony.

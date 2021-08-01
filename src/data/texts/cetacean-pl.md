@@ -1,0 +1,15 @@
+Plaża, w tej chwili cmentarz, rozciąga się daleko w dole na tle cichego morza. Jest pełna gapiów. Roją się wszędzie, trzymając aparaty i telefony, wszystkie skierowane w jeden punkt. My siedzimy na klifie. Z torbą pełną piw, na znienawidzonym przez ciebie, zszarzałym kocu w kwiecisty wzór urządzamy piknik, który musi starczyć za stypę. Ona leży na posłaniu z piasku, brunatnych wodorostów i plastiku wyrzuconego na brzeg.
+
+Odkąd się tu sprowadziłem, niemal do T nie pisałem. To nie fair, ale zwyczajnie nie chciałem pamiętać. Wiem, że ma mi za złe, widzę to w jego oczach, w niepewnym ruchu silnego, włochatego ramienia, gdy podaje mi kolejną butelkę, ale nie mówi nic. Potrzeba będzie jeszcze kilku piw, nim to z siebie wykrztusi.
+
+Na razie się śmiejemy, mówiąc o tobie, o dniu, w którym postanowiłaś wrócić do biegania i kupiłaś te okropne różowe trampki pod kolor przeciwdeszczowej kurtki. O tamtej porze roku deszcz niemal nie ustawał. T drapie się po gęstej brodzie i kładzie rękę na dużym brzuchu powleczonym czarną bluzą. Spogląda ku chmurnemu niebu i mówi, że zanosi się na deszcz.
+
+Podobno była w ciąży. Tak ponoć stwierdzili w czasie przybrzeżnej sekcji. Teraz spoczywa rozpłatana na piaszczystej plaży, czekając, aż ciężarówka z naczepą zabierze ją na wysypisko. T mówi, że tak już będzie zawsze. To nigdy nie minie, nie do końca. Musimy to po prostu przyjąć jako część codzienności. Nauczyć się z tym jakoś żyć.
+
+To kaszalot, jej szara skóra odbija błękit nieba, wciąż pokryta ręcznikami zostawionymi przez tych, co sądzili, że można ją ocalić. Zmarła w ciągu kilku godzin, zredukowana do tego, czym jest teraz: nieczęstej turystycznej atrakcji w tej ospałej wiosce. T otwiera zębami kolejną butelkę. Zawsze, gdy tak robi, przechodzą mnie ciarki. Potem wraca do opowieści o dziewczynie, z którą zaczął się widywać, która jest cudowna i którą poznam, gdy w końcu go odwiedzę.
+
+Nigdy nie znaleźli twojego ciała. Ktoś natknął się na twój but, ów wściekle różowy trampek, kilka mil w dół rzeki od naszego miasta, ale to tyle. Zupełnie, jakbyś się rozpuściła w zimnej, wartkiej wodzie, przeistoczyła w rzeczną pianę. Przemienienie w pianę brzmi zawsze dużo mniej strasznie niż chwytanie się wodorostów i próby złapania oddechu, i kłucie igieł w głębi płuc.
+
+Lubię myśleć, że stałaś się tą rzeką, wypełniając koryto od źródła aż po ujście, rozprzestrzeniając się dalej, w morze, w ocean, owijając Ziemię grubym płaszczem wody, a teraz śląc mi wyrzuconego na plażę wieloryba jako spóźnione pożegnanie. A może się w nią przeobraziłaś. Może to ty tam teraz leżysz, w zaawansowanej ciąży, otwarta na oścież i cała w pąklach, z jedną płetwą złamaną i zarytą w piasku.
+
+T patrzy na mnie i się uśmiecha. Mówi, że za mną tęsknił. Następnie zerka w dół na plażę, na dziesiątki rąk trzymających telefony, dziesiątki stóp kroczących po piasku i omijających małe kałuże, na błyski lamp. Bierze łyk, odkłada butelkę i wyciąga dłoń, by poczuć, że zaczęło mżyć. Ciężarówka nadjeżdża.
