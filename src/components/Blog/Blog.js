@@ -21,7 +21,7 @@ import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 export const Blog = props => {
 
     //filepath to a sample markdown document
-    const filename = 'github-pages';
+    const filename = 'markdown';
 
     //blogpost to be displayed
     const [post, setPost] = useState('');
@@ -91,6 +91,16 @@ export const Blog = props => {
                     .catch(err => console.log(err));
             })
             .catch(err => console.log(err));
+
+        //makes all links pointing to other sites open in a new window
+        let links = document.links;
+
+        for (let i = 0, linksLength = links.length; i < linksLength; i++) {
+            if (links[i].hostname != window.location.hostname) {
+                links[i].target = '_blank';
+            }
+        }
+
     });
 
     //do not show the content until the page is loaded
