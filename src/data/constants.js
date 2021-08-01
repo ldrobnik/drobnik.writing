@@ -1370,8 +1370,41 @@ export const WEBSITE_TEXT = {
     }
 };
 
-//Content of quick links (to be used on Instagram)
+//Content and data of blog notes
+export const BLOG_NOTES = [
+    {
+        title: 'Basic Markdown syntax',
+        filename: 'markdown',
+        date: ['2021', '08', '01'],
+        category: 'nocturine'
+    },
+    {
+        title: 'Publishing on GitHub Pages',
+        filename: 'github-pages',
+        date: ['2021', '07', '15'],
+        category: 'tech'
+    },
+    {
+        title: 'Visual Studio Code basics',
+        filename: 'visual-studio-code',
+        date: ['2021', '07', '01'],
+        category: 'vostok'
+    },
+    {
+        title: 'GitHub and teamwork',
+        filename: 'github-teamwork',
+        date: ['2021', '06', '01'],
+        category: 'tech'
+    },
+    {
+        title: 'Getting started with GitHub',
+        filename: 'github-basics',
+        date: ['2021', '05', '21'],
+        category: 'tech'
+    },
+];
 
+//Content of quick links (to be used on Instagram)
 export const LINKS = [
     {
         title: 'Pre-order VOSTOK',

@@ -11,7 +11,7 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
-import {BlogNote, FADE_DURATION} from '../../styled';
+import {BlogNote, BlogWrapper, FADE_DURATION} from '../../styled';
 import {TEXT_NAMES, TEXTS} from './../../data/constants';
 import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
@@ -97,10 +97,7 @@ export const Blog = props => {
 
     //do not show the content until the page is loaded
     return props.loaded &&
-        <React.Fragment>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
+        <BlogWrapper>
             <ThemeWrapper theme={'tech'}>
                 <BlogNote>
                     <Markdown
@@ -119,7 +116,7 @@ export const Blog = props => {
                     </Markdown>
                 </BlogNote>
             </ThemeWrapper>
-        </React.Fragment>;
+        </BlogWrapper>;
 };
 
 const mapStateToProps = state => {
