@@ -1,6 +1,5 @@
 /* STYLED-COMPONENTS */
 import styled, {createGlobalStyle, keyframes} from 'styled-components';
-import {THEME_COLORS} from './data/constants';
 
 /* Keyframes */
 
@@ -347,6 +346,10 @@ export const ReadListElementLine = styled.div`
   width: 10em;
   margin: 1em;
   background-color: ${props => props.theme.darkColor};
+`;
+
+export const ReadBlogBtnWrapper = styled.div`
+  margin-top: 3em;
 `;
 
 /* SectionLinks.js */

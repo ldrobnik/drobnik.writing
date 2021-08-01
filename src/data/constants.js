@@ -1302,7 +1302,7 @@ export const WEBSITE_TEXT = {
             en: <div>Here are a handful of my pieces.<br/>Maybe you’d like to read some of them:</div>,
             pl: <div>Oto garstka moich tekstów<br/>do niezobowiązującej lektury:</div>
         },
-        blogPassage: <div>You can also <Link to={'/blog'}>check out my blog</Link>.</div>
+        blogButton: '…or check out my blog'
     },
     sectionLinks: [
         {
