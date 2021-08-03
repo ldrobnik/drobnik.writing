@@ -49,8 +49,6 @@ const NavBar = props => {
         //check whether the site is displayed on a mobile device
         handleMobile();
 
-        console.log(props.match.params);
-
         window.addEventListener('resize', handleWindowSizeChange); // Add an event listener to monitor the screen width
 
         return () => {
@@ -200,8 +198,9 @@ const NavBar = props => {
             </Link>
         </NavElement>;
 
-    //content of the icon linking to the Text component; if the main blog page is displayed, scroll to top
-    const blogButton = (props.page === 'blog' && !props.match.params.id) ?
+    //content of the icon linking to the Text component; if the main blog page is displayed, scroll to top;
+    // if one of blog posts, make it link to the main blog page
+    const blogButton = (props.page === 'blog' && props.location.pathname.length < 7) ?
         <NavElement>
             <AnchorLink href='#top'>
                 <NavLinkContent>

@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
-import {bindActionCreators} from "redux";
+import {bindActionCreators} from 'redux';
 import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {setDataNoticeVisible, setDataNoticeAccepted, setLanguage, setBWMode, setPageLoaded} from "../../actions";
+import {setDataNoticeVisible, setDataNoticeAccepted, setLanguage, setBWMode, setPageLoaded} from '../../actions';
 import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Text from '../Text/Text';
@@ -67,26 +67,26 @@ export const Home = (props) => {
             checkLocalStorage();
 
             //set page as loaded and hide spinner after a while
-            setTimeout(hideSpinner,800);
+            setTimeout(hideSpinner, 800);
         }
     );
 
     return (
         <React.Fragment>
-            <GlobalStyle />
+            <GlobalStyle/>
             <Layout {...props}>
                 <Switch>
                     <Route path="/" exact component={About} key="home"/>
                     <Route path="/texts/" exact component={Text} key="texts"/>
                     <Route path="/texts/:id" exact component={Text} key="text"/>
                     {/*<Route path="/nocturine/" exact component={() => {*/}
-                        window.location.href = "http://fathombooks.org/html/drobnik.html";
-                        return null;
+                    window.location.href = "http://fathombooks.org/html/drobnik.html";
+                    return null;
                     }}/>
                     <Route path="/nocturine/" exact component={() => <BookPage book={0}/>} key="nocturine"/>
                     {/*<Route path="/vostok/" exact component={() => {*/}
-                        window.location.href = "https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk";
-                        return null;
+                    window.location.href = "https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk";
+                    return null;
                     }}/>
                     <Route path="/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>
                     <Route path="/links/" exact component={QuickLinks} key="links"/>
@@ -95,7 +95,7 @@ export const Home = (props) => {
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>
                 <DataNotice/>
-                {!props.loaded && <Spinner />}
+                {!props.loaded && <Spinner/>}
             </Layout>
         </React.Fragment>
     );
