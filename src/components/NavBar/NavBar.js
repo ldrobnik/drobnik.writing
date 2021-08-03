@@ -18,7 +18,7 @@ import Logo from './Logo/Logo';
 import NavLinks from './NavLinks/NavLinks';
 
 
-const NavBar = (props) => {
+const NavBar = props => {
 
     // Specifies the current window width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -48,6 +48,8 @@ const NavBar = (props) => {
 
         //check whether the site is displayed on a mobile device
         handleMobile();
+
+        console.log(props.match.params);
 
         window.addEventListener('resize', handleWindowSizeChange); // Add an event listener to monitor the screen width
 
@@ -141,13 +143,13 @@ const NavBar = (props) => {
             </div>
         </NavElement>
         :
-            <NavInactiveElement>
-                <div>
-                    <NavLinkContent>
-                        {WEBSITE_TEXT.navbar.language[props.lang]}
-                    </NavLinkContent>
-                </div>
-            </NavInactiveElement>;
+        <NavInactiveElement>
+            <div>
+                <NavLinkContent>
+                    {WEBSITE_TEXT.navbar.language[props.lang]}
+                </NavLinkContent>
+            </div>
+        </NavInactiveElement>;
 
     //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off; don't display
     const bwButton = (props.bwMode) ?
@@ -198,8 +200,15 @@ const NavBar = (props) => {
             </Link>
         </NavElement>;
 
-    //content of the icon linking to the Text component - display translucent inactive icon if the Blog component is displayed
-    const blogButton =
+    //content of the icon linking to the Text component; if the main blog page is displayed, scroll to top
+    const blogButton = (props.page === 'blog' && !props.match.params.id) ?
+        <NavElement>
+            <AnchorLink href='#top'>
+                <NavLinkContent>
+                    {WEBSITE_TEXT.navbar.blog[props.lang]}
+                </NavLinkContent>
+            </AnchorLink>
+        </NavElement> :
         <NavElement>
             <Link
                 to={'/blog'}
