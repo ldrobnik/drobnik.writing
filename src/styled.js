@@ -1005,7 +1005,7 @@ export const BlogTopAnchor = styled.div`
   top: 0;
 `;
 
-export const BlogNote = styled.div`
+export const BlogPost = styled.div`
 
     h1 {
       font-size: 3em;

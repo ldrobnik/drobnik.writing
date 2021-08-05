@@ -92,7 +92,7 @@ export const Home = (props) => {
                     <Route path="/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>
                     <Route path="/links/" exact component={QuickLinks} key="links"/>
                     <Route path="/blog/" exact component={Blog} key="blog"/>
-                    <Route path="/blog/:id" exact component={BlogNote} key="blognote"/>
+                    <Route path="/blog/:id" exact component={BlogNote} key="blognote" {...props}/>
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>
                 <DataNotice/>

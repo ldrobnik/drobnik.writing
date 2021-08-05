@@ -1381,32 +1381,32 @@ export const WEBSITE_TEXT = {
 //Content and data of blog notes
 export const BLOG_NOTES = [
     {
+        id: 'markdown',
         title: 'Basic Markdown syntax',
-        filename: 'markdown',
         date: ['2021', '08', '01'],
         category: 'nocturine'
     },
     {
+        id: 'github-pages',
         title: 'Publishing on GitHub Pages',
-        filename: 'github-pages',
         date: ['2021', '07', '15'],
         category: 'tech'
     },
     {
+        id: 'visual-studio-code',
         title: 'Visual Studio Code basics',
-        filename: 'visual-studio-code',
         date: ['2021', '07', '01'],
         category: 'vostok'
     },
     {
+        id: 'github-teamwork',
         title: 'GitHub and teamwork',
-        filename: 'github-teamwork',
         date: ['2021', '06', '01'],
         category: 'tech'
     },
     {
+        id: 'github-basics',
         title: 'Getting started with GitHub',
-        filename: 'github-basics',
         date: ['2021', '05', '21'],
         category: 'tech'
     },

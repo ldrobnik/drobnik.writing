@@ -11,7 +11,7 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
-import {BlogTopAnchor, BlogNote, BlogWrapper, FADE_DURATION} from '../../styled';
+import {BlogTopAnchor, BlogPost, BlogWrapper, FADE_DURATION} from '../../styled';
 import {TEXT_NAMES, TEXTS} from './../../data/constants';
 import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
@@ -104,7 +104,7 @@ export const Blog = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <ThemeWrapper theme={'tech'}>
-                    <BlogNote>
+                    <BlogPost>
                         <Markdown
                             options={{
                                 overrides: {
@@ -119,7 +119,7 @@ export const Blog = props => {
                         >
                             {post}
                         </Markdown>
-                    </BlogNote>
+                    </BlogPost>
                 </ThemeWrapper>
             </AnimatedContent>
         </BlogWrapper>;

@@ -22,7 +22,7 @@ import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 import CentredButton from '../UI/CentredButton/CentredButton';
 
-export const Text = (props) => {
+export const Text = props => {
 
 
         //blogpost to be displayed
