@@ -1412,6 +1412,13 @@ export const BLOG_NOTES = [
     },
 ];
 
+//Titles of blog note categories
+export const BLOG_CATEGORIES = {
+    tech: 'The Tech of Writing',
+    nocturine: 'Notes on NOCTURINE',
+    vostok: 'VOSTOK Vibes'
+}
+
 //Content of quick links (to be used on Instagram)
 export const LINKS = [
     {
