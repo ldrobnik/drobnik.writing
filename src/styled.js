@@ -998,6 +998,13 @@ export const TechTheme = styled.div`
 
 `;
 
+export const CodeTheme = styled.div`
+  h1, h2, h3, h4, h5, h6, a, b, strong {
+    color: ${props => props.theme.codeColor}
+  }
+
+`;
+
 /* Other components */
 
 export const BlogTopAnchor = styled.div`

@@ -22,6 +22,7 @@ export const App = (props) => {
         nocturineColor: THEME_COLORS.nocturine.color2,
         vostokColor: THEME_COLORS.vostok.color1,
         techColor: THEME_COLORS.devonian.color2,
+        codeColor: THEME_COLORS.moths.color1,
         darkColor: '#0f0f0f',
         lightColor: '#bbbbbb',
         background: 'rgba(40,40,40,0.1)',

@@ -1,7 +1,7 @@
 import React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {NocturineTheme, VostokTheme, TechTheme} from '../../../styled';
+import {NocturineTheme, VostokTheme, TechTheme, CodeTheme} from '../../../styled';
 
 const ThemeWrapper = (props) => {
 
@@ -30,6 +30,12 @@ const ThemeWrapper = (props) => {
             <TechTheme>
                 {props.children}
             </TechTheme>
+        );
+    } else if (props.theme === 'code') {
+        return (
+            <CodeTheme>
+                {props.children}
+            </CodeTheme>
         );
     } else {
         return (
