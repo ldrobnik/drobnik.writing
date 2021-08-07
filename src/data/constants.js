@@ -1408,7 +1408,7 @@ export const BLOG_NOTES = [
         id: 'github-basics',
         title: 'Getting started with GitHub',
         date: ['2021', '05', '21'],
-        category: 'tech'
+        category: 'biology'
     },
 ];
 
@@ -1417,7 +1417,8 @@ export const BLOG_CATEGORIES = {
     tech: 'The Tech of Writing',
     nocturine: 'Notes on NOCTURINE',
     vostok: 'VOSTOK as a Book',
-    code: 'Code the Pain Away'
+    code: 'Code the Pain Away',
+    biology: 'Biology Porn'
 }
 
 //Content of quick links (to be used on Instagram)
