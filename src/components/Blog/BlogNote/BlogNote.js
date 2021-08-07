@@ -55,7 +55,7 @@ export const BlogNote = props => {
         for (let note of BLOG_NOTES) {
 
             //if the URL includes the blog note ID, set the data of this note
-            if ('/blog/notes/' + note.id === props.location.pathname) {
+            if (('/blog/notes/' + note.id === props.location.pathname) || ('/blog/notes/' + note.id + '/' === props.location.pathname)) {
 
                 //set note data
                 setNoteId(note.id); //ID
