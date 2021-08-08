@@ -985,6 +985,10 @@ export const NocturineTheme = styled.div`
     color: ${props => props.theme.nocturineColor}
   }
 
+  .colouredBackground {
+    background-color: ${props => props.theme.nocturineColor};
+  }
+
   & ::selection {
     color: white;
     background-color: ${props => props.theme.nocturineColor};
@@ -997,6 +1001,10 @@ export const VostokTheme = styled.div`
     color: ${props => props.theme.vostokColor}
   }
 
+  .colouredBackground {
+    background-color: ${props => props.theme.vostokColor};
+  }
+
   & ::selection {
     color: white;
     background-color: ${props => props.theme.vostokColor};
@@ -1006,6 +1014,10 @@ export const VostokTheme = styled.div`
 export const TechTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
     color: ${props => props.theme.techColor}
+  }
+
+  .colouredBackground {
+    background-color: ${props => props.theme.techColor};
   }
 
   & ::selection {
@@ -1020,6 +1032,10 @@ export const CodeTheme = styled.div`
     color: ${props => props.theme.codeColor}
   }
 
+  .colouredBackground {
+    background-color: ${props => props.theme.codeColor};
+  }
+
   & ::selection {
     color: white;
     background-color: ${props => props.theme.codeColor};
@@ -1030,6 +1046,11 @@ export const CodeTheme = styled.div`
 export const BiologyTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
     color: ${props => props.theme.biologyColor}
+    
+  }
+
+  .colouredBackground {
+    background-color: ${props => props.theme.biologyColor};
   }
 
   & ::selection {
@@ -1115,6 +1136,7 @@ export const BlogNoteListWrapper = styled.div`
   margin: 5em 0;
 `;
 
+
 /* BlogNoteListElement.js */
 
 export const BlogNoteListElementWrapper = styled.div`
@@ -1146,9 +1168,8 @@ export const BlogNoteListElementSubtitle = styled.div`
   }
 `;
 
-export const BlogNoteListElementLine = styled.div`
-  height: 0.8em;
+export const BlogNoteListElementSeparator = styled.div`
+  margin: 1em auto;
+  height: 0.6em;
   width: 10em;
-  margin: 1em;
-  background-color: ${props => props.theme.darkColor};
-`;
+ `;

@@ -7,7 +7,7 @@ import {
     BlogNoteListElementContent,
     BlogNoteListElementTitle,
     BlogNoteListElementSubtitle,
-    BlogNoteListElementLine
+    BlogNoteListElementSeparator
 } from '../../../../styled';
 import {setPageReload} from '../../../../actions';
 import {BLOG_CATEGORIES, WEBSITE_TEXT} from '../../../../data/constants';

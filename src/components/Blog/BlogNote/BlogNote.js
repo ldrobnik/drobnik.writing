@@ -106,9 +106,22 @@ export const BlogNote = props => {
         props.setPage(page);
     }
 
+    //imports blog note
+    const importBlogNote = noteId => {
+        //imports markdown documents and coverts it into text
+        import(`./../../../data/blognotes/${noteId}.md`)
+            .then(res => {
+                fetch(res.default)
+                    .then(res => res.text())
+                    .then(res => setPost(res))
+                    .catch(err => console.log(err));
+            })
+            .catch(err => console.log(err));
+    }
+
     useEffect(() => {
         //Update page title with the piece title
-        document.title = 'Łukasz Drobnik - Blog';
+        document.title = 'Łukasz Drobnik - ' + noteTitle;
 
 
         //sets theme to black and white
@@ -136,16 +149,20 @@ export const BlogNote = props => {
         if (post.length < 1) identifyBlogNote();
 
         //imports markdown documents and coverts it into text
-        import(`./../../../data/blognotes/${noteId}.md`)
-            .then(res => {
-                fetch(res.default)
-                    .then(res => res.text())
-                    .then(res => setPost(res))
-                    .catch(err => console.log(err));
-            })
-            .catch(err => console.log(err));
+        importBlogNote(noteId);
 
     });
+
+    //load a new blog note anytime the path changes
+    useEffect(() => {
+
+        //identify the blog note based on the URL
+        identifyBlogNote();
+
+        //imports markdown documents and coverts it into text
+        importBlogNote(noteId);
+
+    }, [props.location.pathname]);
 
     //do not show the content until the page is loaded
     return props.loaded &&
