@@ -1169,7 +1169,7 @@ export const BlogNoteListElementSubtitle = styled.div`
 `;
 
 export const BlogNoteListElementSeparator = styled.div`
-  margin: 1em auto;
-  height: 0.6em;
+  margin: 0.5em auto;
+  height: 0.4em;
   width: 10em;
  `;

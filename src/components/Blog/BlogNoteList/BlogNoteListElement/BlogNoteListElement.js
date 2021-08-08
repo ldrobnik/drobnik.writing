@@ -12,7 +12,6 @@ import {
 import {setPageReload} from '../../../../actions';
 import {BLOG_CATEGORIES, WEBSITE_TEXT} from '../../../../data/constants';
 import ThemeWrapper from '../../ThemeWrapper/ThemeWrapper';
-import SmallSeparator from '../../../UI/SmallSeparator/SmallSeparator';
 
 const BlogNoteListElement = (props) => {
 
@@ -34,6 +33,7 @@ const BlogNoteListElement = (props) => {
                             {props.title}
                         </BlogNoteListElementTitle>
                     </Link>
+                    <BlogNoteListElementSeparator className={'colouredBackground'}/>
                     <Link
                         to={`/blog/${props.category}`}
                         onClick={reloadPage}
