@@ -982,12 +982,22 @@ export const NocturineTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong {
     color: ${props => props.theme.nocturineColor}
   }
+
+  & ::selection {
+    color: white;
+    background-color: ${props => props.theme.nocturineColor};
+  }
   
 `;
 
 export const VostokTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong {
     color: ${props => props.theme.vostokColor}
+  }
+
+  & ::selection {
+    color: white;
+    background-color: ${props => props.theme.vostokColor};
   }
 `;
 
@@ -996,17 +1006,33 @@ export const TechTheme = styled.div`
     color: ${props => props.theme.techColor}
   }
 
+  & ::selection {
+    color: white;
+    background-color: ${props => props.theme.techColor};
+  }
+
 `;
 
 export const CodeTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong {
     color: ${props => props.theme.codeColor}
   }
+  
+  & ::selection {
+    color: white;
+    background-color: ${props => props.theme.codeColor};
+  }
+  
 `;
 
 export const BiologyTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong {
     color: ${props => props.theme.biologyColor}
+  }
+
+  & ::selection {
+    color: white;
+    background-color: ${props => props.theme.biologyColor};
   }
 `;
 
