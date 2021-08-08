@@ -7,6 +7,7 @@ import {setPageReload} from '../../../actions';
 import {BlogNoteListWrapper, FADE_DURATION} from '../../../styled';
 import {AnimatedContent, AnimatedBlogNoteList, AnimatedBlogNoteLink} from '../../../posed';
 import {WEBSITE_TEXT, BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
+import BlogNoteListElement from './BlogNoteListElement/BlogNoteListElement';
 
 
 export const BlogNoteList = props => {
@@ -57,7 +58,11 @@ export const BlogNoteList = props => {
                         <AnimatedBlogNoteLink
                             pose={linksVisible ? 'visible' : 'hidden'}
                             key={k}>
-                            {k}
+                            <BlogNoteListElement
+                                id={link.id}
+                                title={link.title}
+                                category={link.category}
+                            />
                         </AnimatedBlogNoteLink>
                     )
                 })}

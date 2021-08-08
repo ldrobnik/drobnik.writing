@@ -1362,7 +1362,7 @@ export const WEBSITE_TEXT = {
         nextPost: 'up next: ',
         top: 'top',
         home: 'home',
-        blog: 'blog'
+        blog: 'all notes'
     },
     dataNotice: {
         en: {

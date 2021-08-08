@@ -312,6 +312,11 @@ export const ReadMessage = styled.div`
   margin: 3em 0;
 `;
 
+
+export const ReadBlogBtnWrapper = styled.div`
+  margin-top: 3em;
+`;
+
 /* ReadListElement.js */
 
 export const ReadListElementWrapper = styled.div`
@@ -348,9 +353,6 @@ export const ReadListElementLine = styled.div`
   background-color: ${props => props.theme.darkColor};
 `;
 
-export const ReadBlogBtnWrapper = styled.div`
-  margin-top: 3em;
-`;
 
 /* SectionLinks.js */
 
@@ -1111,4 +1113,40 @@ export const BlogWrapper = styled.div`
 export const BlogNoteListWrapper = styled.div`
   text-align: center;
   margin: 5em 0;
+`;
+
+/* BlogNoteListElement.js */
+
+export const BlogNoteListElementWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
+  }
+`;
+
+export const BlogNoteListElementContent = styled.div`
+  text-align: center;
+  font-weight: bold;
+
+  user-select: none;
+  margin: 1em 0;
+`;
+
+export const BlogNoteListElementTitle = styled.div`
+  font-size: ${props => props.theme.subtitleSize}
+  text-transform: uppercase;
+`;
+
+export const BlogNoteListElementSubtitle = styled.div`
+  font-size: ${props => props.theme.smallCaptionSize}
+`;
+
+export const BlogNoteListElementLine = styled.div`
+  height: 0.8em;
+  width: 10em;
+  margin: 1em;
+  background-color: ${props => props.theme.darkColor};
 `;

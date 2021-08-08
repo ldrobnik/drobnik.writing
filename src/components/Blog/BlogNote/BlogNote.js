@@ -176,7 +176,7 @@ export const BlogNote = props => {
                     </BlogPost>
                 </ThemeWrapper>
             </AnimatedContent>
-            <BlogNoteList linklist={[1, 2, 3, 4, 5, 6]}/>
+            <BlogNoteList linklist={BLOG_NOTES}/>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
