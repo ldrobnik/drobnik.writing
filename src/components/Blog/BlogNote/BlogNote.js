@@ -3,6 +3,7 @@ import {useHistory} from 'react-router-dom';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import Markdown from 'markdown-to-jsx/dist/index.js';
+import Highlight from 'react-highlight';
 import {
     setTheme,
     setCurrentText,
@@ -156,20 +157,22 @@ export const BlogNote = props => {
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <ThemeWrapper theme={noteCategory}>
                     <BlogPost>
-                        <Markdown
-                            options={{
-                                overrides: {
-                                    a: {
-                                        props: {
-                                            target: '_blank',
-                                            rel: 'noopener noreferrer'
+                        <Highlight>
+                            <Markdown
+                                options={{
+                                    overrides: {
+                                        a: {
+                                            props: {
+                                                target: '_blank',
+                                                rel: 'noopener noreferrer'
+                                            },
                                         },
                                     },
-                                },
-                            }}
-                        >
-                            {post}
-                        </Markdown>
+                                }}
+                            >
+                                {post}
+                            </Markdown>
+                        </Highlight>
                     </BlogPost>
                 </ThemeWrapper>
             </AnimatedContent>
