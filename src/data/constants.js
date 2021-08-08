@@ -1410,6 +1410,12 @@ export const BLOG_NOTES = [
         date: ['2021', '05', '21'],
         category: 'biology'
     },
+    {
+        id: 'highlightjs',
+        title: 'Highlight.js',
+        date: ['2021', '05', '22'],
+        category: 'code'
+    }
 ];
 
 //Titles of blog note categories
