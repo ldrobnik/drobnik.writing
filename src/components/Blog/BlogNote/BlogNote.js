@@ -175,6 +175,16 @@ export const BlogNote = props => {
                     </BlogPost>
                 </ThemeWrapper>
             </AnimatedContent>
+            <AnimatedContent
+                pose={!props.reload ? 'visible' : 'hidden'}
+            >
+                <SubpageLinks
+                    lang={'en'}
+                    reloadPage={reloadPage}
+                />
+                <SectionSeparator/>
+                <CopyrightNote/>
+            </AnimatedContent>
         </BlogWrapper>;
 };
 
