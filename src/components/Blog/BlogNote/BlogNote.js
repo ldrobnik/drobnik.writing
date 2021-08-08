@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import Markdown from 'markdown-to-jsx/dist/index.js';
-import Highlight from 'react-highlight';
+import {HighlightedMarkdown} from '../highlighted-markdown';
 import {
     setTheme,
     setCurrentText,
@@ -144,7 +144,6 @@ export const BlogNote = props => {
             })
             .catch(err => console.log(err));
 
-
     });
 
     //do not show the content until the page is loaded
@@ -157,7 +156,7 @@ export const BlogNote = props => {
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <ThemeWrapper theme={noteCategory}>
                     <BlogPost>
-                        <Highlight>
+                        <HighlightedMarkdown>
                             <Markdown
                                 options={{
                                     overrides: {
@@ -172,7 +171,7 @@ export const BlogNote = props => {
                             >
                                 {post}
                             </Markdown>
-                        </Highlight>
+                        </HighlightedMarkdown>
                     </BlogPost>
                 </ThemeWrapper>
             </AnimatedContent>
