@@ -18,6 +18,7 @@ import {Link} from 'react-router-dom';
 import nocturineCover from '../assets/images/nocturineCover.jpg';
 import nocCunCover from '../assets/images/nocCunCover.jpg';
 import vostokCover from '../assets/images/vostokCover.jpg';
+import {Note} from '../styled';
 // import tbaCover from '../assets/images/tbaCover.jpg';
 
 //Frequently used URLs
@@ -1376,7 +1377,8 @@ export const WEBSITE_TEXT = {
                 języka i&nbsp;trybu czarno-białego).</div>,
             button: 'Rozumiem'
         }
-    }
+    },
+    copyright: <React.Fragment>&copy;&nbsp;2019–2021 Łukasz Drobnik</React.Fragment>
 };
 
 //Content and data of blog notes

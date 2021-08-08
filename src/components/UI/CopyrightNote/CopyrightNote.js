@@ -1,10 +1,11 @@
 import React from 'react';
 import {Note} from '../../../styled';
+import {WEBSITE_TEXT} from '../../../data/constants';
 
 const CopyrightNote = () => {
     return (
         <Note>
-            &copy;&nbsp;2020 Łukasz Drobnik
+            {WEBSITE_TEXT.copyright}
         </Note>
     );
 };

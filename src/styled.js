@@ -1164,7 +1164,7 @@ export const BlogNoteListElementTitle = styled.div`
 export const BlogNoteListElementSubtitle = styled.div`
   font-size: ${props => props.theme.smallCaptionSize}
   &:hover {
-    animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+   animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
   }
 `;
 
