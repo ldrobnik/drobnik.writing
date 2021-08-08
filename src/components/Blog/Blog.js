@@ -12,12 +12,13 @@ import {
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
 import {BlogTopAnchor, BlogPost, BlogWrapper, FADE_DURATION} from '../../styled';
-import {TEXT_NAMES, TEXTS} from './../../data/constants';
+import {BLOG_NOTES, TEXT_NAMES, TEXTS} from './../../data/constants';
 import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import InvisibleSeparator from '../UI/InvisibleSeparator/InvisibleSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
+import BlogNoteList from './BlogNoteList/BlogNoteList';
 
 export const Blog = props => {
 
@@ -123,6 +124,7 @@ export const Blog = props => {
                     </BlogPost>
                 </ThemeWrapper>
             </AnimatedContent>
+            <BlogNoteList linklist={BLOG_NOTES}/>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
