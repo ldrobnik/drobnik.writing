@@ -105,6 +105,7 @@ export const Blog = props => {
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <ThemeWrapper theme={'tech'}>
                     <BlogPost>
+                        <div>BLOG</div>
                         <Markdown
                             options={{
                                 overrides: {

@@ -52,10 +52,14 @@ export const BlogNote = props => {
     //checks blog note data
     const identifyBlogNote = () => {
 
+        //the base URL for all blog notes
+        let baseUrl = '/blog/notes/';
+
+
         for (let note of BLOG_NOTES) {
 
             //if the URL includes the blog note ID, set the data of this note
-            if (('/blog/notes/' + note.id === props.location.pathname) || ('/blog/notes/' + note.id + '/' === props.location.pathname)) {
+            if ((baseUrl + note.id === props.location.pathname) || (baseUrl + note.id + '/' === props.location.pathname)) {
 
                 //set note data
                 setNoteId(note.id); //ID
