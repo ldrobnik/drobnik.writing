@@ -183,6 +183,7 @@ export const BlogNote = props => {
                 <SubpageLinks
                     lang={'en'}
                     reloadPage={reloadPage}
+                    blog={true}
                 />
                 <SectionSeparator/>
                 <CopyrightNote/>

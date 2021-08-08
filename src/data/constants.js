@@ -1361,7 +1361,8 @@ export const WEBSITE_TEXT = {
         olderPosts: 'Older posts:',
         nextPost: 'up next: ',
         top: 'top',
-        home: 'home'
+        home: 'home',
+        blog: 'blog'
     },
     dataNotice: {
         en: {
