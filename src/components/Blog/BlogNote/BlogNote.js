@@ -16,6 +16,7 @@ import {AnimatedContent} from '../../../posed';
 import {BlogTopAnchor, BlogPost, BlogWrapper, FADE_DURATION} from '../../../styled';
 import {TEXT_NAMES, TEXTS, BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
+import BlogNoteList from '../BlogNoteList/BlogNoteList';
 import SectionSeparator from '../../UI/SectionSeparator/SectionSeparator';
 import InvisibleSeparator from '../../UI/InvisibleSeparator/InvisibleSeparator';
 import SubpageLinks from '../../UI/SubpageLinks/SubpageLinks';
@@ -175,6 +176,7 @@ export const BlogNote = props => {
                     </BlogPost>
                 </ThemeWrapper>
             </AnimatedContent>
+            <BlogNoteList linklist={[1, 2, 3, 4, 5, 6]}/>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >

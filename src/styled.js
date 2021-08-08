@@ -536,27 +536,27 @@ export const NavLinksWrapper = styled.div`
 /* QuickLinks.js */
 
 export const QuickLinksWrapper = styled.div`
-   padding: 1em 1em;
-   
-   @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-      padding: 1em 3em;
-   }
-    
-   @media all and (min-width: ${props => props.theme.smallScr}) {
-      padding: 1em 5%;
-   }
-    
-   @media all and (min-width: ${props => props.theme.mediumScr}) {
-      padding: 1em 10%;
-   }
-    
-   @media all and (min-width: ${props => props.theme.largeScr}) {
-      padding: 1em 12%;
-   }
-    
-   @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-      padding: 1em 15%;
-   }
+  padding: 1em 1em;
+
+  @media all and (min-width: ${props => props.theme.extraSmallScr}) {
+    padding: 1em 3em;
+  }
+
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    padding: 1em 5%;
+  }
+
+  @media all and (min-width: ${props => props.theme.mediumScr}) {
+    padding: 1em 10%;
+  }
+
+  @media all and (min-width: ${props => props.theme.largeScr}) {
+    padding: 1em 12%;
+  }
+
+  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+    padding: 1em 15%;
+  }
 `;
 
 /* QuickLink.js */
@@ -577,31 +577,31 @@ export const QuickLinkContentWrapper = styled.div`
   user-select: none;
   overflow: hidden;
 
-        
-    &:hover {
-      animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation}
-    }
-    
-    @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-       margin: 0 0.8em;;
-    }
-    
-    @media all and (min-width: ${props => props.theme.smallScr}) {
-       margin: 0 1em;
-    }
-    
-    @media all and (min-width: ${props => props.theme.mediumScr}) {
-      margin: 0 2em;
-    }
-    
-    @media all and (min-width: ${props => props.theme.largeScr}) {
-       margin: 0 20%;
-    }
-    
-    @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-       margin: 0 25%;
-    }
-  
+
+  &:hover {
+    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation}
+  }
+
+  @media all and (min-width: ${props => props.theme.extraSmallScr}) {
+    margin: 0 0.8em;;
+  }
+
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    margin: 0 1em;
+  }
+
+  @media all and (min-width: ${props => props.theme.mediumScr}) {
+    margin: 0 2em;
+  }
+
+  @media all and (min-width: ${props => props.theme.largeScr}) {
+    margin: 0 20%;
+  }
+
+  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+    margin: 0 25%;
+  }
+
 `;
 
 export const QuickLinkTitle = styled.div`
@@ -699,15 +699,15 @@ export const Description = styled.div`
   text-align: center;
   padding: 0.5em 1em;
   margin: 2.5em 0;
-  
+
   a {
     font-weight: bold;
-    
+
     @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }  
+      &:hover {
+        animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+      }
+    }
   }
 `;
 
@@ -717,7 +717,7 @@ export const NextTextWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   &:hover {
     animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
   }
@@ -756,30 +756,30 @@ export const CentredButtonButtonWrapper = styled.div`
   position: relative;
   user-select: none;
   overflow: hidden;
-        
+
   &:hover {
-      animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation}
+    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation}
   }
-    
+
   @media all and (min-width: ${props => props.theme.extraSmallScr}) {
-       margin: 0 0.8em;;
+    margin: 0 0.8em;;
   }
-    
+
   @media all and (min-width: ${props => props.theme.smallScr}) {
-       margin: 0 4em;
+    margin: 0 4em;
   }
-    
+
   @media all and (min-width: ${props => props.theme.mediumScr}) {
-      margin: 0 2em;
+    margin: 0 2em;
   }
-   
+
   @media all and (min-width: ${props => props.theme.largeScr}) {
-       margin: 0 20%;
+    margin: 0 20%;
   }
-    
+
   @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-       margin: 0 25%;
-  }  
+    margin: 0 25%;
+  }
 `;
 
 /* CentredPhoto.js */
@@ -787,16 +787,16 @@ export const CentredButtonButtonWrapper = styled.div`
 export const CentredPhotoWrapper = styled.div`
   text-align: center;
   padding: 2em;
-  position: relative; 
+  position: relative;
 `;
 
 export const Photo = styled.div`
   height: 12em;
   opacity: ${props => props.theme.slightlyTranslucent};
   z-index: 60;
-  
+
   img {
-      height: 100%;
+    height: 100%;
   }
 `;
 
@@ -804,9 +804,9 @@ export const PhotoLink = styled.div`
   height: 24em;
   opacity: ${props => props.theme.slightlyTranslucent};
   z-index: 60;
-  
+
   img {
-      height: 100%;
+    height: 100%;
   }
 `;
 
@@ -829,43 +829,43 @@ export const Notice = styled.div`
   left: 5%;
   width: 90%;
   text-align: center;
-  
+
 
   @media all and (min-width: ${props => props.theme.mediumScr}) {
-       left: 10%;
-       width: 80%;
+    left: 10%;
+    width: 80%;
   }
-    
+
   @media all and (min-width: ${props => props.theme.largeScr}) {
-       left: 15%;
-       width: 70%;
+    left: 15%;
+    width: 70%;
   }
-    
+
   @media all and (min-width: ${props => props.theme.extraLargeScr}) {
-       left: 20%;
-       width: 60%;
+    left: 20%;
+    width: 60%;
   }
 `;
 
 export const NoticeMessage = styled.div`
-    color: ${props => props.theme.lightColor};
-    font-size: ${props => props.theme.captionSize};
-    font-family: ${props => props.theme.serif};
-    padding: 0.5em 1em;
+  color: ${props => props.theme.lightColor};
+  font-size: ${props => props.theme.captionSize};
+  font-family: ${props => props.theme.serif};
+  padding: 0.5em 1em;
 `;
 
 export const NoticeDismissButton = styled.div`
-    background-color: ${props => props.theme.lightColor};
-    text-transform: uppercase;
-    font-weight: bold;
-    max-width: 8em;
-    margin: 0 auto;
-    padding: 0.3em;
-    cursor: pointer;
-    
-    &:hover {
-      opacity: ${props => props.theme.slightlyTranslucent};
-    }
+  background-color: ${props => props.theme.lightColor};
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 8em;
+  margin: 0 auto;
+  padding: 0.3em;
+  cursor: pointer;
+
+  &:hover {
+    opacity: ${props => props.theme.slightlyTranslucent};
+  }
 `;
 
 /* InvisibleSeparator.js */
@@ -881,23 +881,23 @@ export const SectionHeader = styled.div`
 `;
 
 export const SectionTitle = styled.div`
-    font-size: ${props => props.theme.titleSize};
-    font-weight: bold;
-    
-    @media all and (max-width: ${props => props.theme.smallScr}) {
-      font-size: 12vw;
-    }
+  font-size: ${props => props.theme.titleSize};
+  font-weight: bold;
+
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    font-size: 12vw;
+  }
 `;
 
 export const SectionSubtitle = styled.div`
-    font-size: ${props => props.theme.subtitleSize};
-    font-weight: bold;
-    font-style: italic;
-    
-    @media all and (max-width: ${props => props.theme.smallScr}) {
-      font-size: 6vw;
-    }
-    
+  font-size: ${props => props.theme.subtitleSize};
+  font-weight: bold;
+  font-style: italic;
+
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    font-size: 6vw;
+  }
+
 `
 
 /* SectionSeparator.js */
@@ -927,7 +927,7 @@ export const SpinnerWrapper = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-  
+
   img {
     height: 110px;
   }
@@ -954,15 +954,15 @@ export const SubLinks = styled.div`
   user-select: none;
   margin: 1em 0;
   text-decoration: underline;
-  
+
   div {
     padding: 0 0.3em;
-    
+
     @media all and (min-width: ${props => props.theme.smallScr}) {
-             &:hover {
-                      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-             }
-        }  
+      &:hover {
+        animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+      }
+    }
   }
 `;
 
@@ -987,7 +987,7 @@ export const NocturineTheme = styled.div`
     color: white;
     background-color: ${props => props.theme.nocturineColor};
   }
-  
+
 `;
 
 export const VostokTheme = styled.div`
@@ -1017,12 +1017,12 @@ export const CodeTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong {
     color: ${props => props.theme.codeColor}
   }
-  
+
   & ::selection {
     color: white;
     background-color: ${props => props.theme.codeColor};
   }
-  
+
 `;
 
 export const BiologyTheme = styled.div`
@@ -1045,28 +1045,28 @@ export const BlogTopAnchor = styled.div`
 
 export const BlogPost = styled.div`
 
-    h1 {
-      font-size: 3em;
+  h1 {
+    font-size: 3em;
 
-      @media all and (max-width: ${props => props.theme.smallScr}) {
-        font-size: 2.5em;
-      }
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      font-size: 2.5em;
+    }
 
-      @media all and (max-width: ${props => props.theme.extraSmallScr}) {
-        font-size: 1.8em;
+    @media all and (max-width: ${props => props.theme.extraSmallScr}) {
+      font-size: 1.8em;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+      &:hover {
+        animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
       }
     }
-  
-    a {
-      text-decoration: underline;
-      font-weight: bold;
-
-      @media all and (min-width: ${props => props.theme.smallScr}) {
-        &:hover {
-          animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-        }
-      }
-    }
+  }
 
 `;
 
@@ -1077,7 +1077,7 @@ export const BlogWrapper = styled.div`
   .centered {
     text-align: center;
   }
-  
+
   img {
     max-width: 100%;
     display: block;
@@ -1104,4 +1104,11 @@ export const BlogWrapper = styled.div`
   @media all and (min-width: ${props => props.theme.extraLargeScr}) {
     padding: 7em 32% 2em 32%;
   }
+`;
+
+/* BlogNoteList.js */
+
+export const BlogNoteListWrapper = styled.div`
+  text-align: center;
+  margin: 5em 0;
 `;
