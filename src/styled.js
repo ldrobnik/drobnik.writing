@@ -981,7 +981,7 @@ export const ToggleWrapper = styled.div`
 /* Wrappers for different categories of blog posts */
 
 export const NocturineTheme = styled.div`
-  h1, h2, h3, h4, h5, h6, a, b, strong {
+  h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
     color: ${props => props.theme.nocturineColor}
   }
 
@@ -993,7 +993,7 @@ export const NocturineTheme = styled.div`
 `;
 
 export const VostokTheme = styled.div`
-  h1, h2, h3, h4, h5, h6, a, b, strong {
+  h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
     color: ${props => props.theme.vostokColor}
   }
 
@@ -1004,7 +1004,7 @@ export const VostokTheme = styled.div`
 `;
 
 export const TechTheme = styled.div`
-  h1, h2, h3, h4, h5, h6, a, b, strong {
+  h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
     color: ${props => props.theme.techColor}
   }
 
@@ -1016,7 +1016,7 @@ export const TechTheme = styled.div`
 `;
 
 export const CodeTheme = styled.div`
-  h1, h2, h3, h4, h5, h6, a, b, strong {
+  h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
     color: ${props => props.theme.codeColor}
   }
 
@@ -1028,7 +1028,7 @@ export const CodeTheme = styled.div`
 `;
 
 export const BiologyTheme = styled.div`
-  h1, h2, h3, h4, h5, h6, a, b, strong {
+  h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
     color: ${props => props.theme.biologyColor}
   }
 
@@ -1121,10 +1121,6 @@ export const BlogNoteListElementWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &:hover {
-    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
-  }
 `;
 
 export const BlogNoteListElementContent = styled.div`
@@ -1138,10 +1134,16 @@ export const BlogNoteListElementContent = styled.div`
 export const BlogNoteListElementTitle = styled.div`
   font-size: ${props => props.theme.subtitleSize}
   text-transform: uppercase;
+  &:hover {
+    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
+  }
 `;
 
 export const BlogNoteListElementSubtitle = styled.div`
   font-size: ${props => props.theme.smallCaptionSize}
+  &:hover {
+    animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+  }
 `;
 
 export const BlogNoteListElementLine = styled.div`

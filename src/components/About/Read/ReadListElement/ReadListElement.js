@@ -27,10 +27,10 @@ const ReadListElement = (props) => {
             <ReadListElementWrapper>
                 <ReadListElementLine/>
                 <ReadListElementContent>
-                    <ReadListElementTitle>
+                    <ReadListElementTitle className={'coloured'}>
                         {props.title}
                     </ReadListElementTitle>
-                    <ReadListElementSubtitle>
+                    <ReadListElementSubtitle className={'coloured'}>
                         {props.subtitle}
                     </ReadListElementSubtitle>
                 </ReadListElementContent>

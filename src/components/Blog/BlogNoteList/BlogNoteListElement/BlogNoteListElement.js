@@ -11,6 +11,8 @@ import {
 } from '../../../../styled';
 import {setPageReload} from '../../../../actions';
 import {BLOG_CATEGORIES, WEBSITE_TEXT} from '../../../../data/constants';
+import ThemeWrapper from '../../ThemeWrapper/ThemeWrapper';
+import SmallSeparator from '../../../UI/SmallSeparator/SmallSeparator';
 
 const BlogNoteListElement = (props) => {
 
@@ -21,30 +23,28 @@ const BlogNoteListElement = (props) => {
 
     return (
 
-
-        <BlogNoteListElementWrapper>
-            <BlogNoteListElementLine/>
-            <BlogNoteListElementContent>
-                <Link
-                    to={`/blog/notes/${props.id}`}
-                    onClick={reloadPage}
-                >
-                    <BlogNoteListElementTitle>
-                        {props.title}
-                    </BlogNoteListElementTitle>
-                </Link>
-                <Link
-                    to={`/blog/${props.category}`}
-                    onClick={reloadPage}
-                >
-                    <BlogNoteListElementSubtitle>
-                        {BLOG_CATEGORIES[props.category]}
-                    </BlogNoteListElementSubtitle>
-                </Link>
-            </BlogNoteListElementContent>
-            <BlogNoteListElementLine/>
-        </BlogNoteListElementWrapper>
-
+        <ThemeWrapper theme={props.category}>
+            <BlogNoteListElementWrapper>
+                <BlogNoteListElementContent>
+                    <Link
+                        to={`/blog/notes/${props.id}`}
+                        onClick={reloadPage}
+                    >
+                        <BlogNoteListElementTitle>
+                            {props.title}
+                        </BlogNoteListElementTitle>
+                    </Link>
+                    <Link
+                        to={`/blog/${props.category}`}
+                        onClick={reloadPage}
+                    >
+                        <BlogNoteListElementSubtitle>
+                            {BLOG_CATEGORIES[props.category]}
+                        </BlogNoteListElementSubtitle>
+                    </Link>
+                </BlogNoteListElementContent>
+            </BlogNoteListElementWrapper>
+        </ThemeWrapper>
 
     );
 };

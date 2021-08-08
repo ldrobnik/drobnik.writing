@@ -62,6 +62,7 @@ export const BlogNoteList = props => {
                                 id={link.id}
                                 title={link.title}
                                 category={link.category}
+                                linksVisible={linksVisible}
                             />
                         </AnimatedBlogNoteLink>
                     )
