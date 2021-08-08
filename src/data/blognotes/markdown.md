@@ -6,7 +6,7 @@
 
 To format a line of text as the document title, underline it with any number of = characters.
 
-```
+```md
 Document title
 ==============
 ```
@@ -19,7 +19,7 @@ Document title
 
 To create a heading, add one or more number signs (#) before a line of text.
 
-```
+```md
 # Heading level 1
 
 ## Heading level 2
@@ -41,7 +41,7 @@ To create a heading, add one or more number signs (#) before a line of text.
 
 To create paragraphs, separate portions of text with a blank line.
 
-```
+```md
 Mrs. Dalloway said she would buy the flowers herself.
 
 For Lucy had her work cut out for her.
@@ -62,7 +62,8 @@ You can add emphasis using asterisks or underscores.
 ### Bold
 
 To bold a word or phrase, add two asterisks or underscores before and after the text.
-```
+
+```md
 This is some **bold text**.
 
 This is some more __bold text__.
@@ -76,7 +77,7 @@ This is some more __bold text__.
 
 To italicize a word or phrase, add one asterisk or underscore before and after the text.
 
-```
+```md
 This is some *italic text*.
 
 This is some more _italic text_.
@@ -94,7 +95,7 @@ You can create both ordered and unordered lists.
 
 To create an unordered list, start each line with a dash (-), asterisk (*), or plus sign (+). You can create a nested list by indenting lines.
 
-```
+```md
 - First item
 - Second item
 - Third item
@@ -122,7 +123,7 @@ To create an unordered list, start each line with a dash (-), asterisk (*), or p
 
 To create an ordered list, start each line with a number followed by a period. You can create a nested list by indenting lines.
 
-```
+```md
 1. First item
 2. Second item
 3. Third item
@@ -144,7 +145,7 @@ To create an ordered list, start each line with a number followed by a period. Y
 
 If you want to create a link, enclose the text to be displayed in square brackets and follow it immediately with the URL in round brackets.
 
-```
+```md
 [Example website](https://example.com)
 ```
 
@@ -156,7 +157,7 @@ If you want to create a link, enclose the text to be displayed in square bracket
 
 To add an image, type an exclamation mark (!) and follow it by the alt text in square brackets and the image URL in round brackets.
 
-```
+```md
 ![Markdown logo](images/markdown-logo.png)
 ```
 
@@ -168,7 +169,7 @@ To add an image, type an exclamation mark (!) and follow it by the alt text in s
 
 To create a blockquote, start a paragraph with a > sign.
 
-```
+```md
 > What a lark! What a plunge!
 ```
 
@@ -180,7 +181,7 @@ To create a blockquote, start a paragraph with a > sign.
 
 If you want to insert a table, add three or more dashes (-) to create column headers and use pipes (\|) to separate each column. Optionally, you can add pipes on either side of the table.
 
-```
+```md
 | Header | Header | Header |
 | ------ | ------ | ------ |
 | Item   | Item   | Item   |
@@ -196,7 +197,7 @@ If you want to insert a table, add three or more dashes (-) to create column hea
 
 To denote a portion of text as code, enclose it in backticks (`).
 
-```
+```md
 Type `git add .` in the command line.
 ```
 
@@ -208,7 +209,7 @@ Type `git add .` in the command line.
 
 To create a code block, add three backticks (```) on the lines before and after the code block.
 
-~~~
+~~~md
 ```
 <div>
     <p>Hello world!</p>
