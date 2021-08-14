@@ -19,7 +19,6 @@ import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
 import BlogBio from './BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
 import SectionSeparator from '../../UI/SectionSeparator/SectionSeparator';
-import InvisibleSeparator from '../../UI/InvisibleSeparator/InvisibleSeparator';
 import SubpageLinks from '../../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../../UI/CopyrightNote/CopyrightNote';
 
@@ -44,6 +43,10 @@ export const BlogNote = props => {
     //category of the blog note
     const [noteCategory, setNoteCategory] = useState('');
 
+    //related notes displayed below the text
+    const [relatedNotes, setRelatedNotes] = useState([]);
+
+
     //blogpost to be displayed
     const [post, setPost] = useState('');
 
@@ -51,6 +54,24 @@ export const BlogNote = props => {
     const showContent = () => {
         props.setPageReload(false);
     };
+
+    //creates an array of related notes
+    const createRelatedNotes = relatedNoteIds => {
+
+        //an array to hold all notes that match the IDs
+        let relatedNotes = [];
+
+        for (let id of relatedNoteIds) {
+            for (let note of BLOG_NOTES) {
+                //if the id of the note matches the related note id, add it to the array
+                if (note.id === id) {
+                    relatedNotes.push(note);
+                }
+            }
+        }
+
+        return relatedNotes;
+    }
 
     //checks blog note data
     const identifyBlogNote = () => {
@@ -69,6 +90,7 @@ export const BlogNote = props => {
                 setNoteTitle(note.title); //Title
                 setNoteDate(new Date(note.date[0], note.date[1], note.date[2])); //Date
                 setNoteCategory(note.category);
+                setRelatedNotes(createRelatedNotes(note.related));
 
                 return true;
             }
@@ -200,7 +222,7 @@ export const BlogNote = props => {
                     </BlogPost>
                 </ThemeWrapper>
             </AnimatedContent>
-            <BlogNoteList linklist={BLOG_NOTES}/>
+            <BlogNoteList linklist={relatedNotes}/>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
