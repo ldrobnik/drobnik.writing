@@ -1059,6 +1059,22 @@ export const BiologyTheme = styled.div`
   }
 `;
 
+export const PopTheme = styled.div`
+  h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
+    color: ${props => props.theme.popColor}
+    
+  }
+
+  .colouredBackground {
+    background-color: ${props => props.theme.popColor};
+  }
+
+  & ::selection {
+    color: white;
+    background-color: ${props => props.theme.biologyColor};
+  }
+`;
+
 /* Other components */
 
 export const BlogTopAnchor = styled.div`

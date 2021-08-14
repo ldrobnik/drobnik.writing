@@ -1396,7 +1396,7 @@ export const BLOG_NOTES = [
         id: 'github-pages',
         title: 'Publishing on GitHub Pages',
         date: ['2021', '07', '15'],
-        category: 'code'
+        category: 'pop'
     },
     {
         id: 'visual-studio-code',
@@ -1430,7 +1430,8 @@ export const BLOG_CATEGORIES = {
     nocturine: 'Notes on NOCTURINE',
     vostok: 'VOSTOK as a Book',
     code: 'Code the Pain Away',
-    biology: 'Biology Porn'
+    biology: 'Biology Porn',
+    pop: 'This Is How We Pop'
 }
 
 //Content of quick links (to be used on Instagram)
