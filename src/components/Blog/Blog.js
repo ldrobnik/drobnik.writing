@@ -56,8 +56,25 @@ export const Blog = props => {
     };
 
     //lets the Redux store know which page is currently displayed
-    const setCurrentPage = (page) => {
+    const setCurrentPage = page => {
         props.setPage(page);
+    }
+
+    //filters blog notes by category
+    const filterByCategory = category => {
+
+        //an array to hold all notes matching the category
+        let filteredNotes = [];
+
+
+        for (let note of BLOG_NOTES) {
+            //if the category of the note matches the selected category, add it to the array
+            if (note.category === category) {
+                filteredNotes.push(note);
+            }
+        }
+
+        return filteredNotes;
     }
 
     useEffect(() => {
