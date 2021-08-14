@@ -34,14 +34,14 @@ const BlogNoteListElement = (props) => {
                         </BlogNoteListElementTitle>
                     </Link>
                     <BlogNoteListElementSeparator className={'colouredBackground'}/>
-                    <Link
+                    {props.showCategories && <Link
                         to={`/blog/${props.category}`}
                         onClick={reloadPage}
                     >
                         <BlogNoteListElementSubtitle>
                             {BLOG_CATEGORIES[props.category]}
                         </BlogNoteListElementSubtitle>
-                    </Link>
+                    </Link>}
                 </BlogNoteListElementContent>
             </BlogNoteListElementWrapper>
         </ThemeWrapper>

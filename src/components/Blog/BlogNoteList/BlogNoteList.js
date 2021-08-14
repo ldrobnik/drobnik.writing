@@ -72,6 +72,7 @@ export const BlogNoteList = props => {
                                 category={link.category}
                                 linksVisible={linksVisible}
                                 onClick={setPageReload()}
+                                showCategories={props.showCategories}
                             />
                         </AnimatedBlogNoteLink>
                     )

@@ -31,6 +31,10 @@ export const Blog = props => {
     // list of blog notes to be linked under the latest blog note
     const [olderNotes, setOlderNotes] = useState([])
 
+
+    //specifies whether category filtering is on
+    const [isFiltered, setIsFiltered] = useState(false);
+
     //shows the content
     const showContent = () => {
         props.setPageReload(false);
@@ -72,11 +76,13 @@ export const Blog = props => {
         //check if the url contains the name of any category
         for (let category of blogCategories) {
             if (props.location.pathname.includes(category)) {
+                setIsFiltered(true); //turns on the filtered mode
                 return category;
             }
         };
 
         //if the url doesn't match any category, return false
+        setIsFiltered(false); //turns off the filtered mode
         return false
     }
 
@@ -166,6 +172,7 @@ export const Blog = props => {
             <BlogNoteList
                 linklist={olderNotes}
                 showImmediately={true}
+                showCategories={!isFiltered}
             />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
