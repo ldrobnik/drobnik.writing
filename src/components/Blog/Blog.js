@@ -70,8 +70,10 @@ export const Blog = props => {
         let blogCategories = Object.keys(BLOG_CATEGORIES);
 
         //check if the url contains the name of any category
-        for (let category in blogCategories) {
-            if (props.location.pathname.includes(category)) return category;
+        for (let category of blogCategories) {
+            if (props.location.pathname.includes(category)) {
+                return category;
+            }
         };
 
         //if the url doesn't match any category, return false
@@ -105,7 +107,7 @@ export const Blog = props => {
         let filteredCategory = checkFiltering();
 
         if (checkFiltering()) {
-            setOlderNotes(filterByCategory());
+            setOlderNotes(filterByCategory(filteredCategory));
         } else {
             setOlderNotes(BLOG_NOTES);
         }
