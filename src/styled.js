@@ -1011,18 +1011,18 @@ export const VostokTheme = styled.div`
   }
 `;
 
-export const TechTheme = styled.div`
+export const WritingTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
-    color: ${props => props.theme.techColor}
+    color: ${props => props.theme.writingColor}
   }
 
   .colouredBackground {
-    background-color: ${props => props.theme.techColor};
+    background-color: ${props => props.theme.writingColor};
   }
 
   & ::selection {
     color: white;
-    background-color: ${props => props.theme.techColor};
+    background-color: ${props => props.theme.writingColor};
   }
 
 `;

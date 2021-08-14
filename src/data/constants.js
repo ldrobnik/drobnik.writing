@@ -1408,7 +1408,7 @@ export const BLOG_NOTES = [
         id: 'github-teamwork',
         title: 'GitHub and teamwork',
         date: ['2021', '06', '01'],
-        category: 'tech'
+        category: 'writing'
     },
     {
         id: 'github-basics',
@@ -1426,7 +1426,7 @@ export const BLOG_NOTES = [
 
 //Titles of blog note categories
 export const BLOG_CATEGORIES = {
-    tech: 'The Tech of Writing',
+    writing: 'The Tech of Writing',
     nocturine: 'Notes on NOCTURINE',
     vostok: 'VOSTOK as a Book',
     code: 'Code the Pain Away',

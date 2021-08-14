@@ -104,7 +104,7 @@ export const Blog = props => {
             </BlogTopAnchor>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <ThemeWrapper theme={'tech'}>
+                <ThemeWrapper theme={'writing'}>
                     <BlogPost>
                         <div>BLOG</div>
                         <Markdown

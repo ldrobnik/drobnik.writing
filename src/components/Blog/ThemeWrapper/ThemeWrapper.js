@@ -1,7 +1,7 @@
 import React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {NocturineTheme, VostokTheme, TechTheme, CodeTheme, BiologyTheme, PopTheme} from '../../../styled';
+import {NocturineTheme, VostokTheme, WritingTheme, CodeTheme, BiologyTheme, PopTheme} from '../../../styled';
 
 const ThemeWrapper = (props) => {
 
@@ -29,11 +29,11 @@ const ThemeWrapper = (props) => {
                         {props.children}
                     </VostokTheme>
                 );
-            case 'tech':
+            case 'writing':
                 return (
-                    <TechTheme>
+                    <WritingTheme>
                         {props.children}
-                    </TechTheme>
+                    </WritingTheme>
                 );
             case 'code':
                 return (
