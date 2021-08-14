@@ -16,6 +16,7 @@ import {AnimatedContent} from '../../../posed';
 import {BlogTopAnchor, BlogPost, BlogWrapper, FADE_DURATION} from '../../../styled';
 import {TEXT_NAMES, TEXTS, BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
+import BlogBio from './BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
 import SectionSeparator from '../../UI/SectionSeparator/SectionSeparator';
 import InvisibleSeparator from '../../UI/InvisibleSeparator/InvisibleSeparator';
@@ -191,6 +192,7 @@ export const BlogNote = props => {
                             </Markdown>
                         </HighlightedMarkdown>
                     </BlogPost>
+                    <BlogBio />
                 </ThemeWrapper>
             </AnimatedContent>
             <BlogNoteList linklist={BLOG_NOTES}/>
