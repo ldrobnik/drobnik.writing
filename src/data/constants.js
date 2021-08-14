@@ -1390,37 +1390,43 @@ export const BLOG_NOTES = [
         id: 'markdown',
         title: 'Basic Markdown syntax',
         date: ['2021', '08', '01'],
-        category: 'nocturine'
+        category: 'nocturine',
+        related: ['github-pages', 'visual-studio-code', 'highlightjs']
     },
     {
         id: 'github-pages',
         title: 'Publishing on GitHub Pages',
         date: ['2021', '07', '15'],
-        category: 'pop'
+        category: 'pop',
+        related: ['markdown', 'visual-studio-code', 'highlightjs']
     },
     {
         id: 'visual-studio-code',
         title: 'Visual Studio Code basics',
         date: ['2021', '07', '01'],
-        category: 'vostok'
+        category: 'vostok',
+        related: ['github-teamwork', 'highlightjs']
     },
     {
         id: 'github-teamwork',
         title: 'GitHub and teamwork',
         date: ['2021', '06', '01'],
-        category: 'writing'
+        category: 'writing',
+        related: ['github-pages', 'highlightjs', 'markdown']
     },
     {
         id: 'github-basics',
         title: 'Getting started with GitHub',
         date: ['2021', '05', '21'],
-        category: 'biology'
+        category: 'biology',
+        related: ['github-pages', 'highlightjs', 'markdown', 'visual-studio-code']
     },
     {
         id: 'highlightjs',
         title: 'Highlight.js',
         date: ['2021', '05', '22'],
-        category: 'code'
+        category: 'code',
+        related: ['markdown', 'github-teamwork', 'visual-studio-code']
     }
 ];
 
