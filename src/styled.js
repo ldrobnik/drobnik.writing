@@ -1071,7 +1071,7 @@ export const PopTheme = styled.div`
 
   & ::selection {
     color: white;
-    background-color: ${props => props.theme.biologyColor};
+    background-color: ${props => props.theme.popColor};
   }
 `;
 
