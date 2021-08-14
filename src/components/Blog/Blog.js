@@ -12,7 +12,7 @@ import {
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
 import {BlogTopAnchor, BlogPost, BlogWrapper, FADE_DURATION} from '../../styled';
-import {BLOG_NOTES, TEXT_NAMES, TEXTS} from './../../data/constants';
+import {BLOG_NOTES, TEXT_NAMES, TEXTS, WEBSITE_TEXT} from './../../data/constants';
 import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import InvisibleSeparator from '../UI/InvisibleSeparator/InvisibleSeparator';
@@ -22,11 +22,14 @@ import BlogNoteList from './BlogNoteList/BlogNoteList';
 
 export const Blog = props => {
 
-    //filepath to a sample markdown document
-    const filename = 'markdown';
+    // //filepath to a sample markdown document
+    // const filename = 'markdown';
 
-    //blogpost to be displayed
-    const [post, setPost] = useState('');
+    // //blogpost to be displayed
+    // const [post, setPost] = useState('');
+
+    // list of blog notes to be linked under the latest blog note
+    const [olderNotes, setOlderNotes] = useState([])
 
     //shows the content
     const showContent = () => {
@@ -79,7 +82,7 @@ export const Blog = props => {
 
     useEffect(() => {
         //Update page title with the piece title
-        document.title = 'Łukasz Drobnik - Blog';
+        document.title = WEBSITE_TEXT.blog.title;
 
         //sets theme to black and white
         setBwTheme();
@@ -100,18 +103,18 @@ export const Blog = props => {
 
     });
 
-    useEffect(() => {
-        //imports markdown documents and coverts it into text
-        import(`./../../data/blognotes/${filename}.md`)
-            .then(res => {
-                fetch(res.default)
-                    .then(res => res.text())
-                    .then(res => setPost(res))
-                    .catch(err => console.log(err));
-            })
-            .catch(err => console.log(err));
-
-    });
+    // useEffect(() => {
+    //     //imports markdown documents and coverts it into text
+    //     import(`./../../data/blognotes/${filename}.md`)
+    //         .then(res => {
+    //             fetch(res.default)
+    //                 .then(res => res.text())
+    //                 .then(res => setPost(res))
+    //                 .catch(err => console.log(err));
+    //         })
+    //         .catch(err => console.log(err));
+    //
+    // });
 
     //do not show the content until the page is loaded
     return props.loaded &&
@@ -123,25 +126,13 @@ export const Blog = props => {
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <ThemeWrapper theme={'writing'}>
                     <BlogPost>
-                        <div>BLOG</div>
-                        <Markdown
-                            options={{
-                                overrides: {
-                                    a: {
-                                        props: {
-                                            target: '_blank',
-                                            rel: 'noopener noreferrer'
-                                        },
-                                    },
-                                },
-                            }}
-                        >
-                            {post}
-                        </Markdown>
                     </BlogPost>
                 </ThemeWrapper>
             </AnimatedContent>
-            <BlogNoteList linklist={BLOG_NOTES}/>
+            <BlogNoteList
+                linklist={BLOG_NOTES}
+                showImmediately={true}
+            />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
