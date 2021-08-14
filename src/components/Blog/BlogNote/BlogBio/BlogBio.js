@@ -3,7 +3,8 @@ import {WEBSITE_TEXT} from '../../../../data/constants';
 
 const BlogBio = props => {
 
-return <div>Bio</div>
+return WEBSITE_TEXT.blog.bio;
+
 };
 
 

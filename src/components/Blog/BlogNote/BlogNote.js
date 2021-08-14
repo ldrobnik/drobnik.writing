@@ -191,8 +191,8 @@ export const BlogNote = props => {
                                 {post}
                             </Markdown>
                         </HighlightedMarkdown>
+                        <BlogBio />
                     </BlogPost>
-                    <BlogBio />
                 </ThemeWrapper>
             </AnimatedContent>
             <BlogNoteList linklist={BLOG_NOTES}/>
