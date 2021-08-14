@@ -1,9 +1,14 @@
 import React from 'react';
+import {BlogBioWrapper} from '../../../../styled';
 import {WEBSITE_TEXT} from '../../../../data/constants';
 
 const BlogBio = props => {
 
-return WEBSITE_TEXT.blog.bio;
+    return (
+        <BlogBioWrapper>
+            {WEBSITE_TEXT.blog.bio}
+        </BlogBioWrapper>
+    );
 
 };
 

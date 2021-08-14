@@ -38,6 +38,7 @@ export const App = (props) => {
         titleSize: '5em',
         subtitleSize: '1.5em',
         bodySize: '1.3em',
+        blogSize: '1.1em',
         captionSize: '1em',
         smallCaptionSize: '0.8em',
 

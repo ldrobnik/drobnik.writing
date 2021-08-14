@@ -105,7 +105,7 @@ export const AboutSectionWrapper = styled.div`
 export const BookBody = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.serif};
-  line-height: 1.4em;
+  line-height: 1.4;
   margin-top: 2em;
   margin-bottom: 2.5em;
 
@@ -118,7 +118,7 @@ export const BookBody = styled.div`
 export const BookSlogan = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.sansSerif};
-  line-height: 1.4em;
+  line-height: 1.4;
   text-align: center;
   text-transform: uppercase;
   margin: 1.5em 0 2em 0;
@@ -137,7 +137,7 @@ export const BookSlogan = styled.div`
 export const IntroBody = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.serif};
-  line-height: 1.4em;
+  line-height: 1.4;
 
   @media all and (min-width: ${props => props.theme.smallScr}) {
     text-align: justify;
@@ -680,7 +680,7 @@ export const TextSubtitle = styled.div`
 export const TextBody = styled.div`
   font-family: ${props => props.theme.serif};
   font-size: ${props => props.theme.bodySize};
-  line-height: 1.4em;
+  line-height: 1.4;
   position: relative;
   margin-top: 2em;
 `;
@@ -1084,6 +1084,9 @@ export const BlogTopAnchor = styled.div`
 
 export const BlogPost = styled.div`
 
+ font-size: ${props => props.theme.blogSize};
+ line-height: 1.4;
+ 
   h1 {
     font-size: 3em;
 
@@ -1145,6 +1148,12 @@ export const BlogWrapper = styled.div`
   }
 `;
 
+export const BlogSeparator = styled.div`
+  margin: 3em auto;
+  height: 0.6em;
+  width: 6em;
+ `;
+
 /* BlogNoteList.js */
 
 export const BlogNoteListWrapper = styled.div`
@@ -1178,7 +1187,7 @@ export const BlogNoteListElementTitle = styled.div`
 `;
 
 export const BlogNoteListElementSubtitle = styled.div`
-  font-size: ${props => props.theme.smallCaptionSize}
+  font-size: ${props => props.theme.smallCaptionSize};
   &:hover {
    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
   }
@@ -1189,3 +1198,9 @@ export const BlogNoteListElementSeparator = styled.div`
   height: 0.4em;
   width: 10em;
  `;
+
+/* BlogBio.js */
+
+export const BlogBioWrapper = styled.div`
+  font-size: ${props => props.theme.captionSize};
+`;
