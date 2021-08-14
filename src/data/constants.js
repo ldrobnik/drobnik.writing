@@ -1366,7 +1366,11 @@ export const WEBSITE_TEXT = {
         readNext: 'Read next:',
         top: 'top',
         home: 'home',
-        blog: 'all notes'
+        blog: 'all notes',
+        bio: <React.Fragment>Łukasz Drobnik is the author of <a
+            href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
+            href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose published in HAD, Fractured Lit, Atticus Review, Pithead Chapel, X-R-A-Y Literary Magazine, and elsewhere. Sometimes he tweets as <a
+            href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of publications and fiction samples, <Link to={'/'}>go to the main page</Link>.</React.Fragment>
     },
     dataNotice: {
         en: {
