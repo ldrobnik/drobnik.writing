@@ -1159,7 +1159,7 @@ export const WEBSITE_TEXT = {
                     Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y
                     Literary
                     Magazine</em>, and
-                    elsewhere. One of my stories was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
+                    elsewhere. My writing was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
                 <p>I’m also editor-in-chief at <a
                     href={BLYSKI_URL} target="_blank"
                     rel="noopener noreferrer"><strong>BŁYSKI</strong></a>, a journal publishing flash fiction in Polish
@@ -1192,7 +1192,7 @@ export const WEBSITE_TEXT = {
                     West</em>, <em>Pithead
                     Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X-R-A-Y
                     Literary
-                    Magazine</em>. Jedno z moich opowiadań trafiło na longlistę <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
+                    Magazine</em>. Moja proza trafiła na longlistę <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
                 <p>Jestem też redaktorem naczelnym <a
                     href={BLYSKI_URL} target="_blank"
                     rel="noopener noreferrer"><strong>BŁYSKÓW</strong></a>, pisma publikującego flash fiction
@@ -1369,7 +1369,7 @@ export const WEBSITE_TEXT = {
         blog: 'all notes',
         bio: <React.Fragment><Link to={'/'}>ŁUKASZ DROBNIK</Link> is the author of <a
             href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
-            href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose published in <em>HAD</em>, <em>X-R-A-Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Pithead Chapel</em>, and elsewhere. One of his stories was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
+            href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> as well as shorter prose published in <em>HAD</em>, <em>X-R-A-Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
             href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of publications and fiction samples, <Link to={'/'}>go to the main page</Link>.</React.Fragment>
     },
     dataNotice: {
