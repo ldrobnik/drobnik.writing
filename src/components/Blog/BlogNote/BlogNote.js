@@ -13,8 +13,8 @@ import {
     setPageReload
 } from '../../../actions';
 import {AnimatedContent} from '../../../posed';
-import {BlogTopAnchor, BlogPost, BlogWrapper, BlogSeparator, FADE_DURATION} from '../../../styled';
-import {TEXT_NAMES, TEXTS, BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
+import {BlogTopAnchor, BlogPost, BlogWrapper, BlogSeparator, BlogNoteReadMore, FADE_DURATION} from '../../../styled';
+import {WEBSITE_TEXT, BLOG_NOTES} from './../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
 import BlogBio from './BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
@@ -193,6 +193,10 @@ export const BlogNote = props => {
                         </HighlightedMarkdown>
                         <BlogSeparator className={'colouredBackground'}/>
                         <BlogBio />
+                        <BlogSeparator className={'colouredBackground'}/>
+                        <BlogNoteReadMore className={'coloured'}>
+                            {WEBSITE_TEXT.blog.readMore}
+                        </BlogNoteReadMore>
                     </BlogPost>
                 </ThemeWrapper>
             </AnimatedContent>

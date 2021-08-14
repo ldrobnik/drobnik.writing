@@ -1046,7 +1046,7 @@ export const CodeTheme = styled.div`
 export const BiologyTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
     color: ${props => props.theme.biologyColor}
-    
+
   }
 
   .colouredBackground {
@@ -1062,7 +1062,7 @@ export const BiologyTheme = styled.div`
 export const PopTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
     color: ${props => props.theme.popColor}
-    
+
   }
 
   .colouredBackground {
@@ -1084,9 +1084,9 @@ export const BlogTopAnchor = styled.div`
 
 export const BlogPost = styled.div`
 
- font-size: ${props => props.theme.blogSize};
- line-height: 1.4;
- 
+  font-size: ${props => props.theme.blogSize};
+  line-height: 1.4;
+
   h1 {
     font-size: 3em;
 
@@ -1152,13 +1152,22 @@ export const BlogSeparator = styled.div`
   margin: 3em auto;
   height: 0.6em;
   width: 6em;
- `;
+`;
+
+/* BlogNote.js */
+
+export const BlogNoteReadMore = styled.div`
+  font-weight: bold;
+  font-size: ${props => props.theme.subtitleSize};
+  text-align: center;
+  text-transform: uppercase;
+`;
 
 /* BlogNoteList.js */
 
 export const BlogNoteListWrapper = styled.div`
   text-align: center;
-  margin: 5em 0;
+  margin: 3em 0;
 `;
 
 
@@ -1181,6 +1190,7 @@ export const BlogNoteListElementContent = styled.div`
 export const BlogNoteListElementTitle = styled.div`
   font-size: ${props => props.theme.subtitleSize}
   text-transform: uppercase;
+
   &:hover {
     animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
   }
@@ -1188,8 +1198,9 @@ export const BlogNoteListElementTitle = styled.div`
 
 export const BlogNoteListElementSubtitle = styled.div`
   font-size: ${props => props.theme.smallCaptionSize};
+
   &:hover {
-   animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
+    animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
   }
 `;
 
@@ -1197,7 +1208,7 @@ export const BlogNoteListElementSeparator = styled.div`
   margin: 0.5em auto;
   height: 0.4em;
   width: 10em;
- `;
+`;
 
 /* BlogBio.js */
 
