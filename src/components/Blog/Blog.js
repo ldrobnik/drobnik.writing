@@ -12,7 +12,7 @@ import {
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
 import {BlogTopAnchor, BlogPost, BlogWrapper, FADE_DURATION} from '../../styled';
-import {BLOG_NOTES, TEXT_NAMES, TEXTS, WEBSITE_TEXT} from './../../data/constants';
+import {BLOG_CATEGORIES, BLOG_NOTES, TEXT_NAMES, TEXTS, WEBSITE_TEXT} from './../../data/constants';
 import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import InvisibleSeparator from '../UI/InvisibleSeparator/InvisibleSeparator';
@@ -63,6 +63,22 @@ export const Blog = props => {
         props.setPage(page);
     }
 
+    //checks if the blog notes should be filtered by category
+    const checkFiltering = () => {
+
+        //get property names of the blog categories
+        let blogCategories = Object.keys(BLOG_CATEGORIES);
+
+        //check if the url contains the name of any category
+        for (let category in blogCategories) {
+            if (props.location.pathname.includes(category)) return category;
+        };
+
+        //if the url doesn't match any category, return false
+        return false
+    }
+
+
     //filters blog notes by category
     const filterByCategory = category => {
 
@@ -79,6 +95,22 @@ export const Blog = props => {
 
         return filteredNotes;
     }
+
+    useEffect(() => {
+
+        //reload page when url changes
+        reloadPage();
+
+        //if the url contains category name, filter blog notes by this category
+        let filteredCategory = checkFiltering();
+
+        if (checkFiltering()) {
+            setOlderNotes(filterByCategory());
+        } else {
+            setOlderNotes(BLOG_NOTES);
+        }
+
+    }, [props.location.pathname])
 
     useEffect(() => {
         //Update page title with the piece title
@@ -130,7 +162,7 @@ export const Blog = props => {
                 </ThemeWrapper>
             </AnimatedContent>
             <BlogNoteList
-                linklist={BLOG_NOTES}
+                linklist={olderNotes}
                 showImmediately={true}
             />
             <AnimatedContent

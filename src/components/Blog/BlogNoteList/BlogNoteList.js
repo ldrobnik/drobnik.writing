@@ -20,6 +20,11 @@ export const BlogNoteList = props => {
         props.setPageReload(false);
     };
 
+    //reloads the page
+    const reloadPage = () => {
+        props.setPageReload(true);
+    }
+
     //shows the text links
     const showLinks = () => {
         setLinksVisible(true);
@@ -31,19 +36,19 @@ export const BlogNoteList = props => {
     };
 
 
-    //hide message whenever the pathname or language change
+    //hide message whenever the pathname changes
     useEffect(() => {
             setTimeout(() => {
                 hideLinks();
             }, 100);
         },
-        [props.location.pathname, props.lang]
+        [props.location.pathname]
     );
 
     useEffect(() => {
 
         //if the prop showImmediately is set to true, show the links immediately after loading
-        if (props.showImmediately) showLinks();
+        if (props.showImmediately) setTimeout(showLinks(), FADE_DURATION);
 
         //show content after a while
         setTimeout(showContent, FADE_DURATION);
@@ -66,6 +71,7 @@ export const BlogNoteList = props => {
                                 title={link.title}
                                 category={link.category}
                                 linksVisible={linksVisible}
+                                onClick={setPageReload()}
                             />
                         </AnimatedBlogNoteLink>
                     )
