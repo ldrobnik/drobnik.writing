@@ -1360,7 +1360,10 @@ export const WEBSITE_TEXT = {
         title: 'Łukasz Drobnik’s blog',
         latestPost: 'Latest post:',
         olderPosts: 'Older posts:',
+        displayedCategory: 'Displayed category:',
+        showAll: 'show all',
         nextPost: 'up next: ',
+        readNext: 'Read next:',
         top: 'top',
         home: 'home',
         blog: 'all notes'
