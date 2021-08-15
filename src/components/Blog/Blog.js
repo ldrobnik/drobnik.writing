@@ -184,7 +184,6 @@ export const Blog = props => {
                 </AnimatedContent>
                 <BlogNoteList
                     linklist={olderNotes}
-                    showImmediately={true}
                     showCategories={!filteredCategory}
                 />
             </React.Fragment>

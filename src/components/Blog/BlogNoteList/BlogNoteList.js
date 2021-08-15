@@ -47,9 +47,6 @@ export const BlogNoteList = props => {
 
     useEffect(() => {
 
-        //if the prop showImmediately is set to true, show the links immediately after loading
-        if (props.showImmediately) setTimeout(() => showLinks(), 1000);
-
         //show content after a while
         setTimeout(showContent, FADE_DURATION);
     });
