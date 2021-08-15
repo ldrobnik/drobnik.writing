@@ -1363,8 +1363,6 @@ export const WEBSITE_TEXT = {
         displayedCategory: 'Category:',
         showAll: 'show all',
         readMore: 'Read more:',
-        top: 'top',
-        home: 'home',
         blog: 'all notes',
         bio: <React.Fragment><Link to={'/'}>ŁUKASZ DROBNIK</Link> is the author of <a
             href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
