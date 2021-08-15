@@ -33,6 +33,17 @@ const TopImage = props => {
         if (imageSrc.length > 0) {
             setTimeout(() => setVisible(true), 800)
         }
+    }, [])
+
+    useEffect(() => {
+        //reset image source every time pathname changes
+        setVisible(false);
+        importImage(props.id);
+
+        //show the image after loading
+        if (imageSrc.length > 0) {
+            setTimeout(() => setVisible(true), 800)
+        }
     }, [props.reload, props.pathname])
 
     return (
