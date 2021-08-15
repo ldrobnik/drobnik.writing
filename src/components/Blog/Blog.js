@@ -28,13 +28,11 @@ export const Blog = props => {
     const [latestNote, setLatestNote] = useState('');
 
     // list of blog notes to be linked under the latest blog note
-    const [olderNotes, setOlderNotes] = useState([])
+    const [olderNotes, setOlderNotes] = useState([]);
 
-    //specifies whether category filtering is on
-    const [isFiltered, setIsFiltered] = useState(false);
+    //specifies the filtered category
+    const [filteredCategory, setFilteredCagetory] = useState('');
 
-    //specifies the currently fitered category
-    const [filteredCategory, setFilteredCategory] = useState('');
 
     //shows the content
     const showContent = () => {
@@ -77,16 +75,16 @@ export const Blog = props => {
         //check if the url contains the name of any category
         for (let category of blogCategories) {
             if (props.location.pathname.includes(category)) {
-                setIsFiltered(true); //turns on the filtered mode
-                setFilteredCategory(category); //changes the filtered category
+                // setIsFiltered(true); //turns on the filtered mode
+                setFilteredCagetory(category); //sets the matching category as the one used for filtering
                 return category;
             }
         }
         ;
 
         //if the url doesn't match any category, return false
-        setFilteredCategory(''); //erases any filtered category
-        setIsFiltered(false); //turns off the filtered mode
+        // setIsFiltered(false); //turns off the filtered mode
+        setFilteredCagetory(''); //erases any filtered category
         return false
     }
 
@@ -122,6 +120,7 @@ export const Blog = props => {
 
         //if the url contains category name, filter blog notes by this category
         let categoryToFilter = checkFiltering();
+
 
         if (checkFiltering()) {
             setLatestNote(filterByCategory(categoryToFilter)[0]); // sets the latest note
@@ -166,6 +165,10 @@ export const Blog = props => {
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
                 <BlogTitle>{WEBSITE_TEXT.blog.title}</BlogTitle>
+                {(filteredCategory) &&
+                <React.Fragment>
+                    {`${WEBSITE_TEXT.blog.displayedCategory}${filteredCategory}`}
+                </React.Fragment>}
                 {(latestNote.id) &&
                 <React.Fragment>
                     <BlogSectionHeading>{WEBSITE_TEXT.blog.latestPost}</BlogSectionHeading>
@@ -183,7 +186,7 @@ export const Blog = props => {
                 <BlogNoteList
                     linklist={olderNotes}
                     showImmediately={true}
-                    showCategories={!isFiltered}
+                    showCategories={!filteredCategory}
                 />
             </React.Fragment>
             }
@@ -193,7 +196,7 @@ export const Blog = props => {
                 <SubpageLinks
                     lang={'en'}
                     reloadPage={reloadPage}
-                    blog={isFiltered}
+                    blog={filteredCategory}
                 />
                 <SectionSeparator/>
                 <CopyrightNote/>
