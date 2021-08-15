@@ -214,7 +214,7 @@ export const BlogNote = props => {
                             </Markdown>
                         </HighlightedMarkdown>
                         <BlogSeparator className={'colouredBackground'}/>
-                        <BlogBio />
+                        <BlogBio id={'bio'}/>
                         <BlogSeparator className={'colouredBackground'}/>
                         <BlogNoteReadMore className={'coloured'}>
                             {WEBSITE_TEXT.blog.readMore}
@@ -222,7 +222,10 @@ export const BlogNote = props => {
                     </BlogPost>
                 </ThemeWrapper>
             </AnimatedContent>
-            <BlogNoteList linklist={relatedNotes}/>
+            <BlogNoteList
+                linklist={relatedNotes}
+                showCategories={true}
+            />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >

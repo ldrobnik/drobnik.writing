@@ -1250,6 +1250,44 @@ export const TeaserWrapper = styled.div`
   }
 `;
 
+/* BlogNoteCredits.js */
+
+export const BlogNoteTeaserTitle = styled.h2`
+  font-size: ${props => props.theme.titleSize};
+  margin: 0;
+`;
+
+export const BlogNoteTitle = styled.h1`
+  font-size: ${props => props.theme.titleSize};
+  margin: 0;
+`;
+
+export const BlogNoteCategory = styled.div`
+  font-size: ${props => props.theme.subtitleSize};
+`;
+
+export const BlogNoteCreditWrapper = styled.div`
+  font-size: ${props => props.theme.captionSize};
+  display: flex;
+  flex-direction: row;
+  color: ${props => props.theme.darkColor};
+`;
+
+export const BlogTeaserAuthor = styled.div`
+  font-weight: bold;
+`;
+
+export const BlogNoteAuthor = styled.div`
+  font-weight: bold;
+  text-decoration: underline;
+  
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    &:hover {
+      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+    }
+  }
+`;
+
 /* BlogNote.js */
 
 export const BlogNoteReadMore = styled.div`
