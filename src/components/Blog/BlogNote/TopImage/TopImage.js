@@ -14,16 +14,14 @@ const TopImage = props => {
         import(`./../../../../assets/images/blog/${id}.jpg`)
             .then(res => {
                 fetch(res.default)
-                    .then(res => setImageSrc(res))
+                    .then(res => setImageSrc(res.url))
                     .catch(err => console.log(err));
             })
             .catch(err => console.log(err));
     }
 
     useEffect(() => {
-        setImageSrc(temporaryImage);
-        // importImage(props.id);
-        // console.log('tutaj', imageSrc);
+        importImage(props.id);
     }, [])
 
     return (
