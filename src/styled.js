@@ -1173,6 +1173,7 @@ export const TeaserWrapper = styled.div`
  max-height: 600px;
   overflow: hidden;
   position: relative;
+  pointer-events: none;
   
   & :after {
     content  : "";
@@ -1180,8 +1181,8 @@ export const TeaserWrapper = styled.div`
     z-index  : 1;
     bottom   : 0;
     left     : 0;
-    pointer-events   : none;
-    background-image : linear-gradient(to bottom,
+    pointer-events: none;
+    background-image: linear-gradient(to bottom,
     rgba(255,255,255, 0),
     rgba(255,255,255, 1) 90%);
     width    : 100%;

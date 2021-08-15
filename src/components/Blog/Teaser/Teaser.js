@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 import Markdown from 'markdown-to-jsx/dist/index.js';
 import {HighlightedMarkdown} from '../highlighted-markdown';
 import {AnimatedContent} from '../../../posed';
@@ -29,31 +28,33 @@ export const Teaser = props => {
 
     //do not show the content until the page is loaded
     return (
-        <TeaserWrapper>
-            <AnimatedContent
-                pose={!props.reload ? 'visible' : 'hidden'}>
-                <ThemeWrapper theme={'writing'}>
-                    <BlogPost>
-                        <HighlightedMarkdown>
-                            <Markdown
-                                options={{
-                                    overrides: {
-                                        a: {
-                                            props: {
-                                                target: '_blank',
-                                                rel: 'noopener noreferrer'
+        <Link to={`/blog/notes/${props.note.id}`}>
+            <TeaserWrapper>
+                <AnimatedContent
+                    pose={!props.reload ? 'visible' : 'hidden'}>
+                    <ThemeWrapper theme={'writing'}>
+                        <BlogPost>
+                            <HighlightedMarkdown>
+                                <Markdown
+                                    options={{
+                                        overrides: {
+                                            a: {
+                                                props: {
+                                                    target: '_blank',
+                                                    rel: 'noopener noreferrer'
+                                                },
                                             },
                                         },
-                                    },
-                                }}
-                            >
-                                {note}
-                            </Markdown>
-                        </HighlightedMarkdown>
-                    </BlogPost>
-                </ThemeWrapper>
-            </AnimatedContent>
-        </TeaserWrapper>
+                                    }}
+                                >
+                                    {note}
+                                </Markdown>
+                            </HighlightedMarkdown>
+                        </BlogPost>
+                    </ThemeWrapper>
+                </AnimatedContent>
+            </TeaserWrapper>
+        </Link>
     );
 };
 
