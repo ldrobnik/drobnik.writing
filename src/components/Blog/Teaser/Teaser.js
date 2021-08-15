@@ -36,7 +36,10 @@ export const Teaser = props => {
 
     //do not show the content until the page is loaded
     return (
-
+        <Link
+            to={`/blog/notes/${props.note.id}`}
+            onClick={reloadPage}
+        >
         <TeaserWrapper>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
@@ -45,10 +48,7 @@ export const Teaser = props => {
                         teaser={true}
                         note={props.note}
                     />
-                    <Link
-                        to={`/blog/notes/${props.note.id}`}
-                        onClick={reloadPage}
-                    >
+
                         <BlogPost>
                             <HighlightedMarkdown>
                                 <Markdown
@@ -64,11 +64,10 @@ export const Teaser = props => {
                                 </Markdown>
                             </HighlightedMarkdown>
                         </BlogPost>
-                    </Link>
                 </ThemeWrapper>
             </AnimatedContent>
         </TeaserWrapper>
-
+        </Link>
     );
 };
 

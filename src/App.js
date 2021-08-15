@@ -37,6 +37,7 @@ export const App = (props) => {
         //font sizes
         titleSize: '5em',
         smallTitleSize: '3.5em',
+        blogTitleSize: '2.5em',
         subtitleSize: '1.5em',
         bodySize: '1.3em',
         blogSize: '1.1em',

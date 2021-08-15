@@ -1253,12 +1253,12 @@ export const TeaserWrapper = styled.div`
 /* BlogNoteCredits.js */
 
 export const BlogNoteTeaserTitle = styled.h2`
-  font-size: ${props => props.theme.titleSize};
-  margin: 0;
+  font-size: ${props => props.theme.blogTitleSize};
+  margin: 0.6em 0 0 0;
 `;
 
 export const BlogNoteTitle = styled.h1`
-  font-size: ${props => props.theme.titleSize};
+  font-size: ${props => props.theme.blogTitleSize};
   margin: 0;
 `;
 
@@ -1271,6 +1271,11 @@ export const BlogNoteCreditWrapper = styled.div`
   display: flex;
   flex-direction: row;
   color: ${props => props.theme.darkColor};
+  padding: 1em 0 0.5em 0;
+  
+  div {
+    margin-right: 0.8em;
+  }
 `;
 
 export const BlogTeaserAuthor = styled.div`
