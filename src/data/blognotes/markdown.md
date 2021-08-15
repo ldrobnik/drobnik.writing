@@ -20,7 +20,7 @@ To create a heading, add one or more number signs (#) before a line of text.
 
 #### Result:
 
-![Formatted document title](http://localhost:3000/assets/images/markdown-headings.jpg)
+![Formatted document title](https://drobnik-test.netlify.app/assets/images/markdown-headings.jpg)
 
 ## Paragraphs
 
@@ -34,7 +34,7 @@ For Lucy had her work cut out for her.
 
 #### Result:
 
-![Formatted document title](http://localhost:3000/assets/images/markdown-paragraphs.jpg)
+![Formatted document title](https://drobnik-test.netlify.app/assets/images/markdown-paragraphs.jpg)
 
 ## Line breaks
 
@@ -56,7 +56,7 @@ This is some more __bold text__.
 
 #### Result:
 
-![Formatted document title](http://localhost:3000/assets/images/markdown-bold.jpg)
+![Formatted document title](https://drobnik-test.netlify.app/assets/images/markdown-bold.jpg)
 
 ### Italic
 
@@ -70,7 +70,7 @@ This is some more _italic text_.
 
 #### Result:
 
-![Formatted document title](http://localhost:3000/assets/images/markdown-italic.jpg)
+![Formatted document title](https://drobnik-test.netlify.app/assets/images/markdown-italic.jpg)
 
 ## Lists
 
@@ -102,7 +102,7 @@ To create an unordered list, start each line with a dash (-), asterisk (*), or p
 
 #### Result:
 
-![Formatted document title](http://localhost:3000/assets/images/markdown-ul.jpg)
+![Formatted document title](https://drobnik-test.netlify.app/assets/images/markdown-ul.jpg)
 
 ### Ordered lists
 
@@ -124,7 +124,7 @@ To create an ordered list, start each line with a number followed by a period. Y
 
 #### Result:
 
-![Formatted document title](http://localhost:3000/assets/images/markdown-ol.jpg)
+![Formatted document title](https://drobnik-test.netlify.app/assets/images/markdown-ol.jpg)
 
 ## Links
 
@@ -136,7 +136,7 @@ If you want to create a link, enclose the text to be displayed in square bracket
 
 #### Result:
 
-![Formatted document title](http://localhost:3000/assets/images/markdown-link.jpg)
+![Formatted document title](https://drobnik-test.netlify.app/assets/images/markdown-link.jpg)
 
 ## Images
 
@@ -148,7 +148,7 @@ To add an image, type an exclamation mark (!) and follow it by the alt text in s
 
 #### Result:
 
-![Markdown logo](http://localhost:3000/assets/images/markdown-logo.png)
+![Markdown logo](https://drobnik-test.netlify.app/assets/images/markdown-logo.png)
 
 ## Blockquotes
 
@@ -160,7 +160,7 @@ To create a blockquote, start a paragraph with a > sign.
 
 #### Result:
 
-![Formatted document title](http://localhost:3000/assets/images/markdown-blockquote.jpg)
+![Formatted document title](https://drobnik-test.netlify.app/assets/images/markdown-blockquote.jpg)
 
 ## Tables
 
@@ -176,7 +176,7 @@ If you want to insert a table, add three or more dashes (-) to create column hea
 
 #### Result:
 
-![Formatted document title](http://localhost:3000/assets/images/markdown-table.jpg)
+![Formatted document title](https://drobnik-test.netlify.app/assets/images/markdown-table.jpg)
 
 ## Inline code
 
@@ -188,7 +188,7 @@ Type `git add .` in the command line.
 
 #### Result:
 
-![Formatted document title](http://localhost:3000/assets/images/markdown-inline-code.jpg)
+![Formatted document title](https://drobnik-test.netlify.app/assets/images/markdown-inline-code.jpg)
 
 ## Code blocks
 
@@ -204,7 +204,7 @@ To create a code block, add three backticks (```) on the lines before and after 
 
 #### Result:
 
-![Formatted document title](http://localhost:3000/assets/images/markdown-codeblock.jpg)
+![Formatted document title](https://drobnik-test.netlify.app/assets/images/markdown-codeblock.jpg)
 
 ## Resources
 
