@@ -13,6 +13,7 @@ import {AnimatedContent} from '../../posed';
 import {BlogTopAnchor, BlogWrapper, BlogCategoryWrapper, BlogSectionHeading, BlogTitle, FADE_DURATION} from '../../styled';
 import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT} from './../../data/constants';
 import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
+import FilteredCategory from './FilteredCategory/FilteredCategory';
 import Teaser from './Teaser/Teaser';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
@@ -166,9 +167,7 @@ export const Blog = props => {
             >
                 <BlogTitle>{WEBSITE_TEXT.blog.title}</BlogTitle>
                 {(filteredCategory) &&
-                <React.Fragment>
-                    {`${WEBSITE_TEXT.blog.displayedCategory}${filteredCategory}`}
-                </React.Fragment>}
+                <FilteredCategory category={filteredCategory}/>}
                 {(latestNote.id) &&
                 <React.Fragment>
                     <BlogSectionHeading>{WEBSITE_TEXT.blog.latestPost}</BlogSectionHeading>
