@@ -6,6 +6,9 @@ import {WEBSITE_TEXT} from '../../../../data/constants';
 
 const TopImage = props => {
 
+    //specifies whether the image should be visible
+    const [visible, setVisible] = useState(false);
+
     //specifies the image source
     const [imageSrc, setImageSrc] = useState('');
 
@@ -23,15 +26,19 @@ const TopImage = props => {
 
     useEffect(() => {
         //reset image source every time pathname changes
-        setImageSrc('');
+        setVisible(false);
         importImage(props.id);
-        console.log(`${WEBSITE_TEXT.blog.imageBy} ${props.author} ${WEBSITE_TEXT.blog.via} ${props.source}`);
-    }, [props.reload])
+
+        //show the image after loading
+        if (imageSrc.length > 0) {
+            setTimeout(() => setVisible(true), 800)
+        }
+    }, [props.reload, props.pathname])
 
     return (
 
         <AnimatedPhoto
-            pose={imageSrc ? 'visible' : 'hidden'}>
+            pose={visible ? 'visible' : 'hidden'}>
             <TopImageWrapper>
                 <img
                     src={imageSrc}
