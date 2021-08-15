@@ -1230,7 +1230,7 @@ export const FilteredCategoryLink = styled.div`
 /* Teaser.js */
 
 export const TeaserWrapper = styled.div`
-  height: 30em;
+  height: 40em;
   overflow: hidden;
   position: relative;
   pointer-events: none;
