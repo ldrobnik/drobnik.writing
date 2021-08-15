@@ -215,7 +215,7 @@ export const BlogNote = props => {
 
         setVisible(false);
         if (noteId.length > 0) {
-            setTimeout(() => setVisible(true), 1000);
+            setTimeout(() => setVisible(true), 500);
         }
     }, [props.reload]);
 

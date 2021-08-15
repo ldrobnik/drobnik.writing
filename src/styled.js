@@ -1330,6 +1330,7 @@ export const TopImageWrapper = styled.div`
 
 export const TopImageCredits = styled.div`
   font-size: ${props => props.theme.smallCaptionSize}
+  margin-top: 0.5em;
   margin-bottom: 1em;
   padding: 0;
   text-align: center;

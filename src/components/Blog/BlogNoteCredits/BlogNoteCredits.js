@@ -27,7 +27,7 @@ export const BlogNoteCredits = props => {
     const [day, month, year] = props.date;
 
     //formatted date
-    const datePublished = moment(`${day}  ${month}  ${year}`).format('Do MMM YYYY');
+    const datePublished = moment(`${day}  ${month}  ${year}`).format('Do MMMM YYYY');
 
     //show different content depending on whether the title is used in the teaser or in the actual note
     if (props.teaser) {
