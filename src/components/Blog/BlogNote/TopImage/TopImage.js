@@ -37,6 +37,7 @@ const TopImage = props => {
     useEffect(() => {
         //reset image source every time pathname changes
         setVisible(false);
+        setImageSrc('');
         importImage(props.id);
 
         //show the image after loading
@@ -46,23 +47,28 @@ const TopImage = props => {
     }, [props.reload, props.pathname])
 
     return (
+    <React.Fragment>
+        {
+            (imageSrc.length > 0) &&
+            <AnimatedPhoto
+                pose={visible ? 'visible' : 'hidden'}>
+                <TopImageWrapper>
+                    <figure>
+                        <img
+                            src={imageSrc}
+                            alt={props.alt}
+                        />
+                        <figcaption>
+                            <TopImageCredits>
+                                {`${WEBSITE_TEXT.blog.imageBy} ${props.author} ${WEBSITE_TEXT.blog.via} ${props.src}`}
+                            </TopImageCredits>
+                        </figcaption>
+                    </figure>
+                </TopImageWrapper>
+            </AnimatedPhoto>
+        }
+    </React.Fragment>
 
-        <AnimatedPhoto
-            pose={visible ? 'visible' : 'hidden'}>
-            <TopImageWrapper>
-                <figure>
-                    <img
-                        src={imageSrc}
-                        alt={props.alt}
-                    />
-                    <figcaption>
-                        <TopImageCredits>
-                            {`${WEBSITE_TEXT.blog.imageBy} ${props.author} ${WEBSITE_TEXT.blog.via} ${props.src}`}
-                        </TopImageCredits>
-                    </figcaption>
-                </figure>
-            </TopImageWrapper>
-        </AnimatedPhoto>
     );
 };
 
