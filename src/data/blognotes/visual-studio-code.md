@@ -1,5 +1,3 @@
-# Visual Studio Code basics
-
 **Visual Studio Code** is a lightweight source code editor available for Windows, macOS, and Linux. It's a useful tool for editing Markdown, HTML, and other documents.
 
 ## Setup

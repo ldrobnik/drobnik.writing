@@ -1,5 +1,3 @@
-# Highlight.js
-
 ```jsx
 import React, { useRef, useEffect } from 'react';
 import Markdown from 'markdown-to-jsx';

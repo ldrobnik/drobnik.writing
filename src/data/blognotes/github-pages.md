@@ -1,5 +1,3 @@
-# Publishing on GitHub Pages
-
 GitHub Pages is a free hosting service that lets you publish a website from a GitHub repository.
 
 ## Publishing a website associated with your GitHub account

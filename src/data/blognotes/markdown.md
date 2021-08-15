@@ -1,19 +1,4 @@
-# Basic Markdown syntax
-
 [Markdown](https://daringfireball.net/projects/markdown/) is a lightweight markup language that lets you create formatted text using a plain-text editor. Here's an overview of the basic Markdown syntax.
-
-## Title
-
-To format a line of text as the document title, underline it with any number of = characters.
-
-```md
-Document title
-==============
-```
-
-#### Result:
-
-![Formatted document title](http://localhost:3000/assets/images/markdown-title.jpg)
 
 ## Headings
 

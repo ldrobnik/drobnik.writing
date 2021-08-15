@@ -1,5 +1,3 @@
-# Getting started with GitHub
-
 To start working with GitHub, you first need to [set up your GitHub account](#setting-up-a-github-account). With [GitHub Desktop](#installing-github-desktop), you can easily manage your repositories on your computer.
 
 ## Setting up a GitHub account

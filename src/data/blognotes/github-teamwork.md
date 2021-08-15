@@ -1,5 +1,3 @@
-# GitHub and teamwork
-
 GitHub makes collaboration easy. You can [invite other users to work on your project](#sharing-your-repository-with-other-users) or [contribute to their repositories](#contributing-to-another-users-repository).
 
 ## Adding a branch protection rule
