@@ -658,9 +658,10 @@ export const TextHeader = styled.div`
   }
 `;
 
-export const TextTitle = styled.div`
+export const TextTitle = styled.h1`
   font-size: ${props => props.theme.titleSize};
   font-weight: bold;
+  margin: 0;
 
   @media all and (max-width: ${props => props.theme.smallScr}) {
     font-size: 15vw;
