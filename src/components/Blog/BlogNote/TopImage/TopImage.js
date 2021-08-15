@@ -46,7 +46,7 @@ const TopImage = props => {
                 />
             </TopImageWrapper>
             <TopImageCredits>
-                {`${WEBSITE_TEXT.blog.imageBy} ${props.author} ${WEBSITE_TEXT.blog.via} ${props.source}`}
+                {`${WEBSITE_TEXT.blog.imageBy} ${props.author} ${WEBSITE_TEXT.blog.via} ${props.src}`}
             </TopImageCredits>
         </AnimatedPhoto>
     );
