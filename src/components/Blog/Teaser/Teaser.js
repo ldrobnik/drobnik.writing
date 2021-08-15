@@ -46,7 +46,9 @@ export const Teaser = props => {
                 <ThemeWrapper theme={props.note.category}>
                     <BlogNoteCredits
                         teaser={true}
-                        note={props.note}
+                        title={props.note.title}
+                        category={props.note.category}
+                        date={props.note.date}
                     />
 
                         <BlogPost>

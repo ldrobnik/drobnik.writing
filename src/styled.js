@@ -1286,6 +1286,7 @@ export const BlogTeaserAuthor = styled.div`
 export const BlogNoteAuthor = styled.div`
   font-weight: bold;
   text-decoration: underline;
+  color: ${props => props.theme.darkColor};
   
   @media all and (min-width: ${props => props.theme.smallScr}) {
     &:hover {

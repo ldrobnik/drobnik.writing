@@ -24,7 +24,7 @@ export const BlogNoteCredits = props => {
     };
 
     //the day, month, and year of publication
-    const [day, month, year] = props.note.date;
+    const [day, month, year] = props.date;
 
     //formatted date
     const datePublished = moment(`${day}  ${month}  ${year}`).format('Do MMM YYYY');
@@ -34,9 +34,9 @@ export const BlogNoteCredits = props => {
         return (
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <BlogNoteTeaserTitle>{props.note.title}</BlogNoteTeaserTitle>
+                <BlogNoteTeaserTitle>{props.title}</BlogNoteTeaserTitle>
                 <BlogNoteCategory>
-                    <strong>{BLOG_CATEGORIES[props.note.category]}</strong>
+                    <strong>{BLOG_CATEGORIES[props.category]}</strong>
                 </BlogNoteCategory>
                 <BlogNoteCreditWrapper>
                     <BlogTeaserAuthor>{WEBSITE_TEXT.blog.author}</BlogTeaserAuthor>
@@ -49,13 +49,13 @@ export const BlogNoteCredits = props => {
 
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <BlogNoteTitle>{props.note.title}</BlogNoteTitle>
+                <BlogNoteTitle>{props.title}</BlogNoteTitle>
                 <Link
-                    to={`/blog/${props.note.category}`}
+                    to={`/blog/${props.category}`}
                     onClick={reloadPage}
                 >
                     <BlogNoteCategory>
-                        <strong>{BLOG_CATEGORIES[props.note.category]}</strong>
+                        <strong>{BLOG_CATEGORIES[props.category]}</strong>
                     </BlogNoteCategory>
                 </Link>
                 <BlogNoteCreditWrapper>

@@ -18,6 +18,7 @@ import {WEBSITE_TEXT, BLOG_NOTES} from './../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
 import BlogBio from './BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
+import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
 import SectionSeparator from '../../UI/SectionSeparator/SectionSeparator';
 import SubpageLinks from '../../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../../UI/CopyrightNote/CopyrightNote';
@@ -88,7 +89,7 @@ export const BlogNote = props => {
                 //set note data
                 setNoteId(note.id); //ID
                 setNoteTitle(note.title); //Title
-                setNoteDate(new Date(note.date[0], note.date[1], note.date[2])); //Date
+                setNoteDate(note.date); //Date
                 setNoteCategory(note.category);
                 setRelatedNotes(createRelatedNotes(note.related));
 
@@ -196,6 +197,11 @@ export const BlogNote = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <ThemeWrapper theme={noteCategory}>
+                    <BlogNoteCredits
+                        title={noteTitle}
+                        category={noteCategory}
+                        date={noteDate}
+                    />
                     <BlogPost>
                         <HighlightedMarkdown>
                             <Markdown
@@ -214,7 +220,7 @@ export const BlogNote = props => {
                             </Markdown>
                         </HighlightedMarkdown>
                         <BlogSeparator className={'colouredBackground'}/>
-                        <BlogBio id={'bio'}/>
+                        <BlogBio id='bio'/>
                         <BlogSeparator className={'colouredBackground'}/>
                         <BlogNoteReadMore className={'coloured'}>
                             {WEBSITE_TEXT.blog.readMore}
