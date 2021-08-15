@@ -14,8 +14,8 @@ import {AnimatedContent} from '../../posed';
 import {BlogTopAnchor, BlogPost, BlogWrapper, FADE_DURATION} from '../../styled';
 import {BLOG_CATEGORIES, BLOG_NOTES, TEXT_NAMES, TEXTS, WEBSITE_TEXT} from './../../data/constants';
 import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
+import Teaser from './Teaser/Teaser';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
-import InvisibleSeparator from '../UI/InvisibleSeparator/InvisibleSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 import BlogNoteList from './BlogNoteList/BlogNoteList';
@@ -25,8 +25,8 @@ export const Blog = props => {
     // //filepath to a sample markdown document
     // const filename = 'markdown';
 
-    // //blogpost to be displayed
-    // const [post, setPost] = useState('');
+    //latest note to be displayed
+    const [latestNote, setLatestNote] = useState('');
 
     // list of blog notes to be linked under the latest blog note
     const [olderNotes, setOlderNotes] = useState([])
@@ -113,9 +113,11 @@ export const Blog = props => {
         let filteredCategory = checkFiltering();
 
         if (checkFiltering()) {
-            setOlderNotes(filterByCategory(filteredCategory));
+            setLatestNote(filterByCategory(filteredCategory)[0]); // sets the latest note
+            setOlderNotes(filterByCategory(filteredCategory)); // sets older notes
         } else {
-            setOlderNotes(BLOG_NOTES);
+            setLatestNote(BLOG_NOTES[0]); // sets the latest note
+            setOlderNotes(BLOG_NOTES); // sets older notes
         }
 
     }, [props.location.pathname])
@@ -162,13 +164,7 @@ export const Blog = props => {
             <BlogTopAnchor>
                 <div id='top'></div>
             </BlogTopAnchor>
-            <AnimatedContent
-                pose={!props.reload ? 'visible' : 'hidden'}>
-                <ThemeWrapper theme={'writing'}>
-                    <BlogPost>
-                    </BlogPost>
-                </ThemeWrapper>
-            </AnimatedContent>
+            <Teaser note={latestNote}/>
             <BlogNoteList
                 linklist={olderNotes}
                 showImmediately={true}

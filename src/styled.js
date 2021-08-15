@@ -1167,6 +1167,28 @@ export const BlogSeparator = styled.div`
   width: 6em;
 `;
 
+/* Teaser.js */
+
+export const TeaserWrapper = styled.div`
+ max-height: 600px;
+  overflow: hidden;
+  position: relative;
+  
+  & :after {
+    content  : "";
+    position : absolute;
+    z-index  : 1;
+    bottom   : 0;
+    left     : 0;
+    pointer-events   : none;
+    background-image : linear-gradient(to bottom,
+    rgba(255,255,255, 0),
+    rgba(255,255,255, 1) 90%);
+    width    : 100%;
+    height   : 4em;
+  }
+`;
+
 /* BlogNote.js */
 
 export const BlogNoteReadMore = styled.div`
