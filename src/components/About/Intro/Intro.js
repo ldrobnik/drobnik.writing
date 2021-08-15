@@ -8,7 +8,7 @@ import {IntroBody, FADE_DURATION} from '../../../styled';
 import {AnimatedContent, IntroAnimatedLinks, IntroAnimatedButton} from '../../../posed';
 import {WEBSITE_TEXT} from '../../../data/constants';
 import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'
-import SectionHeading from './../../UI/SectionHeading/SectionHeading';
+import PageHeading from '../../UI/PageHeading/PageHeading';
 import CentredPhoto from './../../UI/CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import CentredButton from './../../UI/CentredButton/CentredButton';
@@ -72,7 +72,7 @@ export const Intro = (props) => {
         <React.Fragment>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <SectionHeading
+                <PageHeading
                     title={WEBSITE_TEXT.intro.title}
                     subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
                 />

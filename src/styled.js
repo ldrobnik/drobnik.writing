@@ -900,8 +900,19 @@ export const SectionSubtitle = styled.div`
   @media all and (max-width: ${props => props.theme.smallScr}) {
     font-size: 6vw;
   }
+`;
 
-`
+/* PageHeading.js */
+
+export const PageTitle = styled.h1`
+  font-size: ${props => props.theme.titleSize};
+  font-weight: bold;
+  margin: 0;
+
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    font-size: 12vw;
+  }
+`;
 
 /* SectionSeparator.js */
 
