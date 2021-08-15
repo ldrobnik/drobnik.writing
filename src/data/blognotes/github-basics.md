@@ -6,7 +6,7 @@ To set up a new GitHub account, follow these steps:
 
 1. Go to the [GitHub website](https://github.com).
 2. In the upper right-hand corner, click **Sign up**.  
-    ![The Sign up button on GitHub](https://drobnik-test.netlify.app/assets/images/github-sign-up.jpg)  
+    ![The Sign up button on GitHub](http://localhost:3000/assets/images/github-sign-up.jpg)  
    
 3. Enter your **Username**, **Email address**, and **Password**.
 4. Under **Verify your account**, solve a puzzle to confirm you are not a robot.
@@ -27,13 +27,13 @@ To create a new repository, follow these steps:
 
 1. Open a browser and go to your GitHub account.
 2. Click **Repositories** > **New**.
-    ![The GitHub button for creating a new repository](https://drobnik-test.netlify.app/assets/images/github-new-rep.jpg)
+    ![The GitHub button for creating a new repository](http://localhost:3000/assets/images/github-new-rep.jpg)
 3. Enter the **Repository name** and, optionally, a **Description**.
 4. Choose whether you want your repository to be **Public** or **Private**.
-    ![Options to set your repository either public or private](https://drobnik-test.netlify.app/assets/images/github-public-private.jpg)
+    ![Options to set your repository either public or private](http://localhost:3000/assets/images/github-public-private.jpg)
 5. Click **Create repository**.
 6. To manage your repository from GitHub Desktop, click **Set up in Desktop**.
-   ![GitHub Set up in Desktop button](https://drobnik-test.netlify.app/assets/images/github-set-up-in-desktop.jpg)
+   ![GitHub Set up in Desktop button](http://localhost:3000/assets/images/github-set-up-in-desktop.jpg)
 7. In GitHub Desktop, enter **Local path** and click **Clone**.
 
 ## Working with your repository in GitHub Desktop
@@ -42,6 +42,6 @@ To update your online repository once you have edited it locally, follow these s
 
 1. In GitHub Desktop, enter the name for your changes and an optional description.
 2. Click **Commit to *branchname***, where *branchname* is the name of the current branch, for instance *main*.
-    ![GitHub Desktop fields for describing your changes and the commit button](https://drobnik-test.netlify.app/assets/images/github-commit.jpg)
+    ![GitHub Desktop fields for describing your changes and the commit button](http://localhost:3000/assets/images/github-commit.jpg)
 3. Click **Push origin**.  
-    ![The Push origin button in GitHub Desktop](https://drobnik-test.netlify.app/assets/images/github-push.jpg)
+    ![The Push origin button in GitHub Desktop](http://localhost:3000/assets/images/github-push.jpg)

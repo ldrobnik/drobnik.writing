@@ -4,7 +4,7 @@ GitHub Pages is a free hosting service that lets you publish a website from a Gi
 
 1. Open a browser and go to your GitHub account.
 2. Create a new public repository named ***username*.github.io**, where *username* is your GitHub username.
-    ![GitHub page for creating a new repository](https://drobnik-test.netlify.app/assets/images/github-create-repo.jpg)
+    ![GitHub page for creating a new repository](http://localhost:3000/assets/images/github-create-repo.jpg)
 3. To clone your repository on your computer, click **Set up in Desktop**.
 4. Create Markdown or HTML files in your local repository.  
     **Note:** One file has to be named either *index.md* or *index.html*. This will be the home page of your website.
@@ -14,11 +14,11 @@ GitHub Pages is a free hosting service that lets you publish a website from a Gi
 ## Publishing a repository on GitHub Pages
 
 1. Open your repository and go to **Settings > Pages**.  
-    ![GitHub Pages settings](https://drobnik-test.netlify.app/assets/images/github-pages.jpg)
+    ![GitHub Pages settings](http://localhost:3000/assets/images/github-pages.jpg)
 2. Under **Source**, click the drop-down menu to select a branch that you want to use, for example *main*.  
-   ![GitHub Pages settings](https://drobnik-test.netlify.app/assets/images/github-pages-branch.jpg)
+   ![GitHub Pages settings](http://localhost:3000/assets/images/github-pages-branch.jpg)
 3. Select a folder that contains your website files and click **Save**.  
-   ![GitHub Pages settings](https://drobnik-test.netlify.app/assets/images/github-pages-folder.jpg)
+   ![GitHub Pages settings](http://localhost:3000/assets/images/github-pages-folder.jpg)
 4. Your website is published under **https://*username*.github.io/*repository*/**, where *username* is your GitHub username and *repository* is your repository name.
 
 ## Customizing your website
