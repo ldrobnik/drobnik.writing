@@ -26,7 +26,7 @@ export const FilteredCategory = props => {
             <FilteredCategoryWrapper>
                 <ThemeWrapper theme={props.category}>
                     <FilteredCategoryHeading>
-                        {`${WEBSITE_TEXT.blog.displayedCategory}${BLOG_CATEGORIES[props.category]}`}
+                        {`${WEBSITE_TEXT.blog.displayedCategory} ${BLOG_CATEGORIES[props.category]}`}
                     </FilteredCategoryHeading>
                 </ThemeWrapper>
             </FilteredCategoryWrapper>
@@ -34,7 +34,9 @@ export const FilteredCategory = props => {
                 to={`/blog/`}
                 onClick={reloadPage}
             >
-                {WEBSITE_TEXT.blog.showAll}
+                <FilteredCategoryLink>
+                    {WEBSITE_TEXT.blog.showAll}
+                </FilteredCategoryLink>
             </Link>
 
         </AnimatedContent>

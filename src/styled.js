@@ -1098,6 +1098,7 @@ export const BlogTopAnchor = styled.div`
 export const BlogTitle = styled.h1`
   font-size: ${props => props.theme.smallTitleSize};
   margin: 0;
+  text-align: center;
 
   @media all and (max-width: ${props => props.theme.smallScr}) {
     font-size: 8vw;
@@ -1144,6 +1145,7 @@ export const BlogSectionHeading = styled.h2`
   font-style: italic;
   margin: 2em 0 0 0;
   color: ${props => props.theme.darkColor};
+  text-align: center;
 
   @media all and (max-width: ${props => props.theme.smallScr}) {
     font-size: 4vw;
@@ -1195,12 +1197,34 @@ export const BlogSeparator = styled.div`
 /* FilteredCategory.js */
 
 export const FilteredCategoryWrapper = styled.div`
+  text-align: center;
 `;
 
 export const FilteredCategoryHeading = styled.h3`
+  font-size: ${props => props.theme.subtitleSize};
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
+
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    font-size: 8vw;
+  }
 `;
 
 export const FilteredCategoryLink = styled.div`
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: ${props => props.theme.captionSize}
+  user-select: none;
+  margin: 0;
+  text-decoration: underline;
+
+
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    &:hover {
+      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+    }
+  }
 `;
 
 /* Teaser.js */
@@ -1210,11 +1234,7 @@ export const TeaserWrapper = styled.div`
   overflow: hidden;
   position: relative;
   pointer-events: none;
-  
-  &:hover {
-    animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
-  }
-  
+
   &:after {
     content: "";
     position: absolute;
@@ -1223,8 +1243,8 @@ export const TeaserWrapper = styled.div`
     left: 0;
     pointer-events: none;
     background-image: linear-gradient(to bottom,
-    rgba(247,247,247, 0),
-    rgba(247,247,247, 1) 90%);
+    rgba(247, 247, 247, 0),
+    rgba(247, 247, 247, 1) 90%);
     width: 100%;
     height: 25em;
   }
