@@ -1313,11 +1313,13 @@ export const BlogNoteReadMore = styled.div`
 /* TopImage.js */
 export const TopImageWrapper = styled.div`
 
-  height: 20em;
-  overflow: hidden;
   margin-bottom: 0.5em;
   text-align: center;
   padding: 0;
+  figure {
+    margin: 0;
+    padding: 0;
+  }
 
   img {
     width: 100%;

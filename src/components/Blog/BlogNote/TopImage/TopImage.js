@@ -47,14 +47,18 @@ const TopImage = props => {
         <AnimatedPhoto
             pose={visible ? 'visible' : 'hidden'}>
             <TopImageWrapper>
-                <img
-                    src={imageSrc}
-                    alt={props.alt}
-                />
+                <figure>
+                    <img
+                        src={imageSrc}
+                        alt={props.alt}
+                    />
+                    <figcaption>
+                        <TopImageCredits>
+                            {`${WEBSITE_TEXT.blog.imageBy} ${props.author} ${WEBSITE_TEXT.blog.via} ${props.src}`}
+                        </TopImageCredits>
+                    </figcaption>
+                </figure>
             </TopImageWrapper>
-            <TopImageCredits>
-                {`${WEBSITE_TEXT.blog.imageBy} ${props.author} ${WEBSITE_TEXT.blog.via} ${props.src}`}
-            </TopImageCredits>
         </AnimatedPhoto>
     );
 };
