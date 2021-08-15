@@ -191,10 +191,13 @@ export const BlogNote = props => {
         //if the blog note hasn't been loaded yet, identify the blog note based on the URL
         if (note.length < 1) identifyBlogNote();
 
-        //imports markdown documents and coverts it into text
-        importBlogNote(noteId);
-
     });
+
+    useEffect(() => {
+        //imports markdown documents and coverts it into text
+        if (noteId.length > 0) importBlogNote(noteId);
+
+    }, [noteId]);
 
     //load a new blog note anytime the path changes
     useEffect(() => {
@@ -209,10 +212,10 @@ export const BlogNote = props => {
     }, [props.location.pathname]);
 
     useEffect(() => {
+
+        setVisible(false);
         if (noteId.length > 0) {
-            setTimeout(() => setVisible(true), 800);
-        } else {
-            setVisible(false);
+            setTimeout(() => setVisible(true), 1000);
         }
     }, [props.reload]);
 
