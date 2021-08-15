@@ -1263,7 +1263,8 @@ export const BlogNoteTitle = styled.h1`
 `;
 
 export const BlogNoteCategory = styled.div`
-  font-size: ${props => props.theme.subtitleSize};
+  font-size: ${props => props.theme.bodySize};
+  margin-top: 0.6em;
 `;
 
 export const BlogNoteCreditWrapper = styled.div`

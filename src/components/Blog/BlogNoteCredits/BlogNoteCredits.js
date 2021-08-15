@@ -27,7 +27,7 @@ export const BlogNoteCredits = props => {
     const [day, month, year] = props.note.date;
 
     //formatted date
-    const datePublished = moment(`${day}  ${month}  ${year}`).format("Do MMM YYYY");
+    const datePublished = moment(`${day}  ${month}  ${year}`).format('Do MMM YYYY');
 
     //show different content depending on whether the title is used in the teaser or in the actual note
     if (props.teaser) {
@@ -35,7 +35,9 @@ export const BlogNoteCredits = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <BlogNoteTeaserTitle>{props.note.title}</BlogNoteTeaserTitle>
-                <BlogNoteCategory>{BLOG_CATEGORIES[props.note.id]}</BlogNoteCategory>
+                <BlogNoteCategory>
+                    <strong>{BLOG_CATEGORIES[props.note.category]}</strong>
+                </BlogNoteCategory>
                 <BlogNoteCreditWrapper>
                     <BlogTeaserAuthor>{WEBSITE_TEXT.blog.author}</BlogTeaserAuthor>
                     <div>{datePublished}</div>
@@ -52,7 +54,9 @@ export const BlogNoteCredits = props => {
                     to={`/blog/${props.note.category}`}
                     onClick={reloadPage}
                 >
-                    <BlogNoteCategory>{BLOG_CATEGORIES[props.note.id]}</BlogNoteCategory>
+                    <BlogNoteCategory>
+                        <strong>{BLOG_CATEGORIES[props.note.category]}</strong>
+                    </BlogNoteCategory>
                 </Link>
                 <BlogNoteCreditWrapper>
                     <AnchorLink href='#bio'>
