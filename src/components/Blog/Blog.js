@@ -10,7 +10,7 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
-import {BlogTopAnchor, BlogWrapper, BlogSectionHeading, BlogTitle, FADE_DURATION} from '../../styled';
+import {BlogTopAnchor, BlogWrapper, BlogCategoryWrapper, BlogSectionHeading, BlogTitle, FADE_DURATION} from '../../styled';
 import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT} from './../../data/constants';
 import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
 import Teaser from './Teaser/Teaser';
@@ -30,9 +30,11 @@ export const Blog = props => {
     // list of blog notes to be linked under the latest blog note
     const [olderNotes, setOlderNotes] = useState([])
 
-
     //specifies whether category filtering is on
     const [isFiltered, setIsFiltered] = useState(false);
+
+    //specifies the currently fitered category
+    const [filteredCategory, setFilteredCategory] = useState('');
 
     //shows the content
     const showContent = () => {
@@ -76,12 +78,14 @@ export const Blog = props => {
         for (let category of blogCategories) {
             if (props.location.pathname.includes(category)) {
                 setIsFiltered(true); //turns on the filtered mode
+                setFilteredCategory(category); //changes the filtered category
                 return category;
             }
         }
         ;
 
         //if the url doesn't match any category, return false
+        setFilteredCategory(''); //erases any filtered category
         setIsFiltered(false); //turns off the filtered mode
         return false
     }
@@ -117,11 +121,11 @@ export const Blog = props => {
         reloadPage();
 
         //if the url contains category name, filter blog notes by this category
-        let filteredCategory = checkFiltering();
+        let categoryToFilter = checkFiltering();
 
         if (checkFiltering()) {
-            setLatestNote(filterByCategory(filteredCategory)[0]); // sets the latest note
-            setOlderNotes(removeFirstElement(filterByCategory(filteredCategory))); // sets older notes
+            setLatestNote(filterByCategory(categoryToFilter)[0]); // sets the latest note
+            setOlderNotes(removeFirstElement(filterByCategory(categoryToFilter))); // sets older notes
         } else {
             setLatestNote(BLOG_NOTES[0]); // sets the latest note
             setOlderNotes(removeFirstElement(BLOG_NOTES)); // sets older notes

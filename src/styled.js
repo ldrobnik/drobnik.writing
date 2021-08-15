@@ -1134,6 +1134,10 @@ export const BlogPost = styled.div`
 
 `;
 
+export const BlogCategoryWrapper = styled.div`
+  text-align: center;
+`;
+
 export const BlogSectionHeading = styled.h2`
   font-size: ${props => props.theme.subtitleSize};
   font-weight: bold;
