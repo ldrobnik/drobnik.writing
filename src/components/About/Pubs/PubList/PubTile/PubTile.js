@@ -37,11 +37,11 @@ const PubTile = (props) => {
     const year = (props.year === '') ? forthcoming : props.year;
 
     //text to be displayed if the issue number/name is available
-    const issue = (props.issue !== undefined) ? <p><i>{props.issue}</i></p> : <div></div>;
+    const issue = (props.issue !== undefined) ? <p><em>{props.issue}</em></p> : <div></div>;
 
     //the above description wrapped in a tile element
     const tileContent = <React.Fragment>
-        <PubYear><i>{year}</i></PubYear>
+        <PubYear><em>{year}</em></PubYear>
         <PubTitle>{props.title}</PubTitle>
         <PubSeparator/>
         {bookCover}
