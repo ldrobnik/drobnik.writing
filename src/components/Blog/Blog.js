@@ -158,16 +158,24 @@ export const Blog = props => {
             <BlogTopAnchor>
                 <div id='top'></div>
             </BlogTopAnchor>
-            <BlogTitle>{WEBSITE_TEXT.blog.title}</BlogTitle>
-            {(latestNote.id) &&
-            <React.Fragment>
-                <BlogSectionHeading>{WEBSITE_TEXT.blog.latestPost}</BlogSectionHeading>
-                <Teaser note={latestNote}/>
-            </React.Fragment>
-            }
+            <AnimatedContent
+                pose={!props.reload ? 'visible' : 'hidden'}
+            >
+                <BlogTitle>{WEBSITE_TEXT.blog.title}</BlogTitle>
+                {(latestNote.id) &&
+                <React.Fragment>
+                    <BlogSectionHeading>{WEBSITE_TEXT.blog.latestPost}</BlogSectionHeading>
+                    <Teaser note={latestNote}/>
+                </React.Fragment>
+                }
+            </AnimatedContent>
             {(olderNotes.length > 0) &&
             <React.Fragment>
-                <BlogSectionHeading>{WEBSITE_TEXT.blog.olderPosts}</BlogSectionHeading>
+                <AnimatedContent
+                    pose={!props.reload ? 'visible' : 'hidden'}
+                >
+                    <BlogSectionHeading>{WEBSITE_TEXT.blog.olderPosts}</BlogSectionHeading>
+                </AnimatedContent>
                 <BlogNoteList
                     linklist={olderNotes}
                     showImmediately={true}
