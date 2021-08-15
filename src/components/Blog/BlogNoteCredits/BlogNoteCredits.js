@@ -52,7 +52,7 @@ export const BlogNoteCredits = props => {
                 </Link>
                 <BlogNoteCreditWrapper>
                     <AnchorLink href='#bio'>
-                        <BlogTeaserAuthor>{WEBSITE_TEXT.blog.author}</BlogTeaserAuthor>
+                        <BlogNoteAuthor>{WEBSITE_TEXT.blog.author}</BlogNoteAuthor>
                     </AnchorLink>
                     <div>{datePublished}</div>
                 </BlogNoteCreditWrapper>

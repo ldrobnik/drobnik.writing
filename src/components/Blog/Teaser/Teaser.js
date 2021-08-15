@@ -6,6 +6,7 @@ import Markdown from 'markdown-to-jsx/dist/index.js';
 import {HighlightedMarkdown} from '../highlighted-markdown';
 import {AnimatedContent} from '../../../posed';
 import {BlogPost, TeaserWrapper} from '../../../styled';
+import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
 import ThemeWrapper from '../ThemeWrapper/ThemeWrapper';
 import {setPageReload} from '../../../actions';
 
@@ -35,14 +36,19 @@ export const Teaser = props => {
 
     //do not show the content until the page is loaded
     return (
-        <Link
-            to={`/blog/notes/${props.note.id}`}
-            onClick={reloadPage}
-        >
-            <TeaserWrapper>
-                <AnimatedContent
-                    pose={!props.reload ? 'visible' : 'hidden'}>
-                    <ThemeWrapper theme={props.note.category}>
+
+        <TeaserWrapper>
+            <AnimatedContent
+                pose={!props.reload ? 'visible' : 'hidden'}>
+                <ThemeWrapper theme={props.note.category}>
+                    <BlogNoteCredits
+                        teaser={true}
+                        note={props.note}
+                    />
+                    <Link
+                        to={`/blog/notes/${props.note.id}`}
+                        onClick={reloadPage}
+                    >
                         <BlogPost>
                             <HighlightedMarkdown>
                                 <Markdown
@@ -58,10 +64,11 @@ export const Teaser = props => {
                                 </Markdown>
                             </HighlightedMarkdown>
                         </BlogPost>
-                    </ThemeWrapper>
-                </AnimatedContent>
-            </TeaserWrapper>
-        </Link>
+                    </Link>
+                </ThemeWrapper>
+            </AnimatedContent>
+        </TeaserWrapper>
+
     );
 };
 
