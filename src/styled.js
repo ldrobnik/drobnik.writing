@@ -1315,7 +1315,7 @@ export const TopImageWrapper = styled.div`
 
   height: 20em;
   overflow: hidden;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.5em;
   text-align: center;
   padding: 0;
 
@@ -1327,9 +1327,10 @@ export const TopImageWrapper = styled.div`
 `;
 
 export const TopImageCredits = styled.div`
-  font-size: ${props => props.theme.captionSize}
+  font-size: ${props => props.theme.smallCaptionSize}
   margin-bottom: 1em;
   padding: 0;
+  text-align: center;
 `;
 
 /* BlogNoteList.js */

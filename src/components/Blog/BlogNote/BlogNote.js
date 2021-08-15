@@ -212,6 +212,7 @@ export const BlogNote = props => {
                 author={imageCredits.author}
                 src={imageCredits.src}
                 alt={imageCredits.alt}
+                pathname={props.location.pathname}
             />
             <ThemeWrapper theme={noteCategory}>
                 <AnimatedContent

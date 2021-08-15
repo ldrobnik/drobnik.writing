@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
+import {connect} from 'react-redux';
 import {TopImageWrapper, TopImageCredits} from '../../../../styled';
 import {AnimatedPhoto} from '../../../../posed';
-import temporaryImage from '../../../../assets/images/blog/markdown.jpg'
+import {WEBSITE_TEXT} from '../../../../data/constants';
 
 const TopImage = props => {
 
@@ -21,21 +22,33 @@ const TopImage = props => {
     }
 
     useEffect(() => {
+        //reset image source every time pathname changes
+        setImageSrc('');
         importImage(props.id);
-    }, [])
+        console.log(`${WEBSITE_TEXT.blog.imageBy} ${props.author} ${WEBSITE_TEXT.blog.via} ${props.source}`);
+    }, [props.reload])
 
     return (
-        <TopImageWrapper>
-            <AnimatedPhoto
-                pose={imageSrc ? 'visible' : 'hidden'}>
+
+        <AnimatedPhoto
+            pose={imageSrc ? 'visible' : 'hidden'}>
+            <TopImageWrapper>
                 <img
                     src={imageSrc}
                     alt={props.alt}
                 />
-            </AnimatedPhoto>
-            <TopImageCredits></TopImageCredits>
-        </TopImageWrapper>
+            </TopImageWrapper>
+            <TopImageCredits>
+                {`${WEBSITE_TEXT.blog.imageBy} ${props.author} ${WEBSITE_TEXT.blog.via} ${props.source}`}
+            </TopImageCredits>
+        </AnimatedPhoto>
     );
 };
 
-export default TopImage;
+const mapStateToProps = state => {
+    return {
+        reload: state.pageReload
+    };
+};
+
+export default connect(mapStateToProps)(TopImage);
