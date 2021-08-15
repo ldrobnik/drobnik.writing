@@ -48,7 +48,7 @@ export const BlogNote = props => {
 
 
     //blogpost to be displayed
-    const [post, setPost] = useState('');
+    const [note, setNote] = useState('');
 
     //shows the content
     const showContent = () => {
@@ -136,7 +136,7 @@ export const BlogNote = props => {
             .then(res => {
                 fetch(res.default)
                     .then(res => res.text())
-                    .then(res => setPost(res))
+                    .then(res => setNote(res))
                     .catch(err => console.log(err));
             })
             .catch(err => console.log(err));
@@ -169,7 +169,7 @@ export const BlogNote = props => {
     useEffect(() => {
 
         //if the blog note hasn't been loaded yet, identify the blog note based on the URL
-        if (post.length < 1) identifyBlogNote();
+        if (note.length < 1) identifyBlogNote();
 
         //imports markdown documents and coverts it into text
         importBlogNote(noteId);
@@ -210,7 +210,7 @@ export const BlogNote = props => {
                                     },
                                 }}
                             >
-                                {post}
+                                {note}
                             </Markdown>
                         </HighlightedMarkdown>
                         <BlogSeparator className={'colouredBackground'}/>
