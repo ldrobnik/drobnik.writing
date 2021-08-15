@@ -180,6 +180,7 @@ export const Blog = props => {
                 <SubpageLinks
                     lang={'en'}
                     reloadPage={reloadPage}
+                    blog={isFiltered}
                 />
                 <SectionSeparator/>
                 <CopyrightNote/>
