@@ -10,7 +10,7 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
-import {BlogTopAnchor, BlogWrapper, BlogSectionHeading, FADE_DURATION} from '../../styled';
+import {BlogTopAnchor, BlogWrapper, BlogSectionHeading, BlogTitle, FADE_DURATION} from '../../styled';
 import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT} from './../../data/constants';
 import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
 import Teaser from './Teaser/Teaser';
@@ -158,6 +158,7 @@ export const Blog = props => {
             <BlogTopAnchor>
                 <div id='top'></div>
             </BlogTopAnchor>
+            <BlogTitle>{WEBSITE_TEXT.blog.title}</BlogTitle>
             {(latestNote.id) &&
             <React.Fragment>
                 <BlogSectionHeading>{WEBSITE_TEXT.blog.latestPost}</BlogSectionHeading>

@@ -1095,6 +1095,15 @@ export const BlogTopAnchor = styled.div`
   top: 0;
 `;
 
+export const BlogTitle = styled.h1`
+  font-size: ${props => props.theme.smallTitleSize};
+  margin: 0;
+
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    font-size: 8vw;
+  }
+`;
+
 export const BlogPost = styled.div`
 
   font-size: ${props => props.theme.blogSize};
@@ -1126,13 +1135,14 @@ export const BlogPost = styled.div`
 `;
 
 export const BlogSectionHeading = styled.h2`
-  font-size: ${props => props.theme.titleSize};
+  font-size: ${props => props.theme.subtitleSize};
   font-weight: bold;
-  margin: 0.5em 0;
+  font-style: italic;
+  margin: 2em 0 0 0;
   color: ${props => props.theme.darkColor};
 
   @media all and (max-width: ${props => props.theme.smallScr}) {
-    font-size: 12vw;
+    font-size: 4vw;
   }
 `;
 
