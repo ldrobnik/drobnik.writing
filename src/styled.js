@@ -1170,23 +1170,27 @@ export const BlogSeparator = styled.div`
 /* Teaser.js */
 
 export const TeaserWrapper = styled.div`
- max-height: 600px;
+  height: 30em;
   overflow: hidden;
   position: relative;
   pointer-events: none;
   
-  & :after {
-    content  : "";
-    position : absolute;
-    z-index  : 1;
-    bottom   : 0;
-    left     : 0;
+  &:hover {
+    animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+  }
+  
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
     pointer-events: none;
     background-image: linear-gradient(to bottom,
-    rgba(255,255,255, 0),
-    rgba(255,255,255, 1) 90%);
-    width    : 100%;
-    height   : 4em;
+    rgba(247,247,247, 0),
+    rgba(247,247,247, 1) 90%);
+    width: 100%;
+    height: 15em;
   }
 `;
 
