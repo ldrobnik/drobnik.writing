@@ -3,6 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import moment from 'moment';
 import {AnimatedContent} from '../../../posed';
 import {
     BlogNoteTeaserTitle,
@@ -22,8 +23,11 @@ export const BlogNoteCredits = props => {
         props.setPageReload(true);
     };
 
-    //publishing date of the note
-    const datePublished = new Date(props.note.date);
+    //the day, month, and year of publication
+    const [day, month, year] = props.note.date;
+
+    //formatted date
+    const datePublished = moment(`${day}  ${month}  ${year}`).format("Do MMM YYYY");
 
     //show different content depending on whether the title is used in the teaser or in the actual note
     if (props.teaser) {
