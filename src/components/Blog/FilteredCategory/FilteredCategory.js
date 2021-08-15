@@ -1,0 +1,50 @@
+import React, {useState, useEffect} from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
+import Markdown from 'markdown-to-jsx/dist/index.js';
+import {HighlightedMarkdown} from '../highlighted-markdown';
+import {AnimatedContent} from '../../../posed';
+import {FilteredCategoryWrapper, FilteredCategoryHeading, FilteredCategoryLink} from '../../../styled';
+import ThemeWrapper from '../ThemeWrapper/ThemeWrapper';
+import {setPageReload} from '../../../actions';
+import {WEBSITE_TEXT, BLOG_CATEGORIES} from '../../../data/constants';
+
+export const FilteredCategory = props => {
+
+    //sets off page reloading animation
+    const reloadPage = () => {
+        props.setPageReload(true);
+    };
+
+
+    //do not show the content until the page is loaded
+    return (
+
+        <AnimatedContent
+            pose={!props.reload ? 'visible' : 'hidden'}>
+            <FilteredCategoryWrapper>
+                <ThemeWrapper theme={props.category}>
+                    <FilteredCategoryHeading>
+                        {`${WEBSITE_TEXT.blog.displayedCategory}${BLOG_CATEGORIES[props.category]}`}
+                    </FilteredCategoryHeading>
+                </ThemeWrapper>
+            </FilteredCategoryWrapper>
+            <Link
+                to={`/blog/`}
+                onClick={reloadPage}
+            >
+                {WEBSITE_TEXT.blog.showAll}
+            </Link>
+
+        </AnimatedContent>
+
+
+    );
+};
+
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({setPageReload}, dispatch);
+};
+
+export default connect(null, mapDispatchToProps)(FilteredCategory);

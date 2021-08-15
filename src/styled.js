@@ -1192,6 +1192,17 @@ export const BlogSeparator = styled.div`
   width: 6em;
 `;
 
+/* FilteredCategory.js */
+
+export const FilteredCategoryWrapper = styled.div`
+`;
+
+export const FilteredCategoryHeading = styled.h3`
+`;
+
+export const FilteredCategoryLink = styled.div`
+`;
+
 /* Teaser.js */
 
 export const TeaserWrapper = styled.div`
