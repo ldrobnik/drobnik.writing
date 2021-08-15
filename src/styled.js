@@ -1190,7 +1190,7 @@ export const TeaserWrapper = styled.div`
     rgba(247,247,247, 0),
     rgba(247,247,247, 1) 90%);
     width: 100%;
-    height: 15em;
+    height: 25em;
   }
 `;
 
