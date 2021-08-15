@@ -1364,6 +1364,8 @@ export const WEBSITE_TEXT = {
         showAll: 'show all',
         readMore: 'Read more:',
         blog: 'all notes',
+        imageBy: 'Image by',
+        via: 'via',
         author: 'Łukasz Drobnik',
         bio: <React.Fragment><Link to={'/'}>ŁUKASZ DROBNIK</Link> is the author of <a
             href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
@@ -1393,42 +1395,71 @@ export const BLOG_NOTES = [
         title: 'Basic Markdown syntax',
         date: ['2021', '08', '01'],
         category: 'nocturine',
-        related: ['github-pages', 'visual-studio-code', 'highlightjs']
+        related: ['github-pages', 'visual-studio-code', 'highlightjs'],
+        imageCredits: {
+          author: 'Viktor Obrovsky',
+          src: 'Pixabay',
+          alt: 'Some image'
+        }
+
     },
     {
         id: 'github-pages',
         title: 'Publishing on GitHub Pages',
         date: ['2021', '07', '15'],
         category: 'pop',
-        related: ['markdown', 'visual-studio-code', 'highlightjs']
+        related: ['markdown', 'visual-studio-code', 'highlightjs'],
+        imageCredits: {
+            author: 'Viktor Obrovsky',
+            src: 'Pixabay',
+            alt: 'Some image'
+        }
     },
     {
         id: 'visual-studio-code',
         title: 'Visual Studio Code basics',
         date: ['2021', '07', '01'],
         category: 'vostok',
-        related: ['github-teamwork', 'highlightjs']
+        related: ['github-teamwork', 'highlightjs'],
+        imageCredits: {
+            author: 'Viktor Obrovsky',
+            src: 'Pixabay',
+            alt: 'Some image'
+        }
     },
     {
         id: 'github-teamwork',
         title: 'GitHub and teamwork',
         date: ['2021', '06', '01'],
         category: 'writing',
-        related: ['github-pages', 'highlightjs', 'markdown']
+        related: ['github-pages', 'highlightjs', 'markdown'],
+        imageCredits: {
+            author: 'Viktor Obrovsky',
+            src: 'Pixabay',
+            alt: 'Some image'
+        }
     },
     {
         id: 'github-basics',
         title: 'Getting started with GitHub',
         date: ['2021', '05', '21'],
         category: 'biology',
-        related: ['github-pages', 'highlightjs', 'markdown', 'visual-studio-code']
+        related: ['github-pages', 'highlightjs', 'markdown', 'visual-studio-code'],
+        imageAuthor: 'Viktor Obrovsky',
+        imageSource: 'Pixabay',
+        imageAlt: 'Lines of code'
     },
     {
         id: 'highlightjs',
         title: 'Highlight.js',
         date: ['2021', '05', '22'],
         category: 'code',
-        related: ['markdown', 'github-teamwork', 'visual-studio-code']
+        related: ['markdown', 'github-teamwork', 'visual-studio-code'],
+        imageCredits: {
+            author: 'Viktor Obrovsky',
+            src: 'Pixabay',
+            alt: 'Some image'
+        }
     }
 ];
 

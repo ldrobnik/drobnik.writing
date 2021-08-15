@@ -3,7 +3,6 @@ import {useHistory} from 'react-router-dom';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import Markdown from 'markdown-to-jsx/dist/index.js';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {HighlightedMarkdown} from '../highlighted-markdown';
 import {
     setTheme,
@@ -14,9 +13,18 @@ import {
     setPageReload
 } from '../../../actions';
 import {AnimatedContent} from '../../../posed';
-import {BlogTopAnchor, BlogPost, BlogWrapper, BlogSeparator, BlogNoteReadMore, FADE_DURATION} from '../../../styled';
+import {
+    BlogTopAnchor,
+    BlogPost,
+    BlogWrapper,
+    BlogSeparator,
+    BlogNoteReadMore,
+    FADE_DURATION,
+    TopImageCredits
+} from '../../../styled';
 import {WEBSITE_TEXT, BLOG_NOTES} from './../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
+import TopImage from './TopImage/TopImage';
 import BlogBio from './BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
@@ -47,6 +55,9 @@ export const BlogNote = props => {
 
     //related notes displayed below the text
     const [relatedNotes, setRelatedNotes] = useState([]);
+
+    //credits of the top image
+    const [imageCredits, setImageCredits] = useState({});
 
 
     //blogpost to be displayed
@@ -93,6 +104,7 @@ export const BlogNote = props => {
                 setNoteDate(note.date); //Date
                 setNoteCategory(note.category);
                 setRelatedNotes(createRelatedNotes(note.related));
+                setImageCredits(note.imageCredits);
 
                 return true;
             }
@@ -195,6 +207,12 @@ export const BlogNote = props => {
             <BlogTopAnchor>
                 <div id='top'></div>
             </BlogTopAnchor>
+            <TopImage
+                id={noteId}
+                author={imageCredits.author}
+                src={imageCredits.src}
+                alt={imageCredits.alt}
+            />
             <ThemeWrapper theme={noteCategory}>
                 <AnimatedContent
                     pose={!props.reload ? 'visible' : 'hidden'}>

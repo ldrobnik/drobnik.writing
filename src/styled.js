@@ -1279,7 +1279,7 @@ export const BlogNoteCreditWrapper = styled.div`
   flex-direction: row;
   color: ${props => props.theme.darkColor};
   padding: 1em 0 0.5em 0;
-  
+
   div {
     margin-right: 0.8em;
   }
@@ -1293,7 +1293,7 @@ export const BlogNoteAuthor = styled.div`
   font-weight: bold;
   text-decoration: underline;
   color: ${props => props.theme.darkColor};
-  
+
   @media all and (min-width: ${props => props.theme.smallScr}) {
     &:hover {
       animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
@@ -1308,6 +1308,28 @@ export const BlogNoteReadMore = styled.div`
   font-size: ${props => props.theme.subtitleSize};
   text-align: center;
   text-transform: uppercase;
+`;
+
+/* TopImage.js */
+export const TopImageWrapper = styled.div`
+
+  height: 20em;
+  overflow: hidden;
+  margin-bottom: 0.1em;
+  text-align: center;
+  padding: 0;
+
+  img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+`;
+
+export const TopImageCredits = styled.div`
+  font-size: ${props => props.theme.captionSize}
+  margin-bottom: 1em;
+  padding: 0;
 `;
 
 /* BlogNoteList.js */
