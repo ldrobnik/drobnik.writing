@@ -25,6 +25,9 @@ const TopImage = props => {
     }
 
     useEffect(() => {
+
+        importImage(props.id);
+
         //show the image after loading
         if (imageSrc.length > 0) {
             setTimeout(() => setVisible(true), 800)

@@ -1206,7 +1206,7 @@ export const FilteredCategoryHeading = styled.h3`
   margin-bottom: 0.1em;
 
   @media all and (max-width: ${props => props.theme.smallScr}) {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 `;
 
