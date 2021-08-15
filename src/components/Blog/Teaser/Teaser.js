@@ -32,7 +32,7 @@ export const Teaser = props => {
             <TeaserWrapper>
                 <AnimatedContent
                     pose={!props.reload ? 'visible' : 'hidden'}>
-                    <ThemeWrapper theme={'writing'}>
+                    <ThemeWrapper theme={props.note.category}>
                         <BlogPost>
                             <HighlightedMarkdown>
                                 <Markdown
