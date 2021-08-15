@@ -3,6 +3,7 @@ import {useHistory} from 'react-router-dom';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import Markdown from 'markdown-to-jsx/dist/index.js';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {HighlightedMarkdown} from '../highlighted-markdown';
 import {
     setTheme,
@@ -189,20 +190,23 @@ export const BlogNote = props => {
     }, [props.location.pathname]);
 
     //do not show the content until the page is loaded
-    return props.loaded &&
+    return props.loaded && (noteId.length > 0) &&
         <BlogWrapper>
             <BlogTopAnchor>
                 <div id='top'></div>
             </BlogTopAnchor>
-            <AnimatedContent
-                pose={!props.reload ? 'visible' : 'hidden'}>
-                <ThemeWrapper theme={noteCategory}>
+            <ThemeWrapper theme={noteCategory}>
+                <AnimatedContent
+                    pose={!props.reload ? 'visible' : 'hidden'}>
                     <BlogNoteCredits
                         title={noteTitle}
                         category={noteCategory}
                         date={noteDate}
                     />
-                    <BlogPost>
+                </AnimatedContent>
+                <BlogPost>
+                    <AnimatedContent
+                        pose={!props.reload ? 'visible' : 'hidden'}>
                         <HighlightedMarkdown>
                             <Markdown
                                 options={{
@@ -219,15 +223,20 @@ export const BlogNote = props => {
                                 {note}
                             </Markdown>
                         </HighlightedMarkdown>
+                    </AnimatedContent>
+                    <div id='bio'></div>
+                    <AnimatedContent
+                        pose={!props.reload ? 'visible' : 'hidden'}>
                         <BlogSeparator className={'colouredBackground'}/>
-                        <BlogBio id='bio'/>
+                        <BlogBio/>
                         <BlogSeparator className={'colouredBackground'}/>
                         <BlogNoteReadMore className={'coloured'}>
                             {WEBSITE_TEXT.blog.readMore}
                         </BlogNoteReadMore>
-                    </BlogPost>
-                </ThemeWrapper>
-            </AnimatedContent>
+                    </AnimatedContent>
+                </BlogPost>
+            </ThemeWrapper>
+
             <BlogNoteList
                 linklist={relatedNotes}
                 showCategories={true}
