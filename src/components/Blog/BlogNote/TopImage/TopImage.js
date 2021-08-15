@@ -25,14 +25,15 @@ const TopImage = props => {
     }
 
     useEffect(() => {
-
-        importImage(props.id);
+        //reset image source every time pathname changes
+        setVisible(false);
+        setImageSrc('');
 
         //show the image after loading
         if (imageSrc.length > 0) {
             setTimeout(() => setVisible(true), 800)
         }
-    })
+    }, [])
 
     useEffect(() => {
         //reset image source every time pathname changes
@@ -47,27 +48,27 @@ const TopImage = props => {
     }, [props.reload, props.pathname])
 
     return (
-    <React.Fragment>
-        {
-            (imageSrc.length > 0) &&
-            <AnimatedPhoto
-                pose={visible ? 'visible' : 'hidden'}>
-                <TopImageWrapper>
-                    <figure>
-                        <img
-                            src={imageSrc}
-                            alt={props.alt}
-                        />
-                        <figcaption>
-                            <TopImageCredits>
-                                {`${WEBSITE_TEXT.blog.imageBy} ${props.author} ${WEBSITE_TEXT.blog.via} ${props.src}`}
-                            </TopImageCredits>
-                        </figcaption>
-                    </figure>
-                </TopImageWrapper>
-            </AnimatedPhoto>
-        }
-    </React.Fragment>
+        <React.Fragment>
+            {
+                (imageSrc.length > 0) &&
+                <AnimatedPhoto
+                    pose={visible ? 'visible' : 'hidden'}>
+                    <TopImageWrapper>
+                        <figure>
+                            <img
+                                src={imageSrc}
+                                alt={props.alt}
+                            />
+                            <figcaption>
+                                <TopImageCredits>
+                                    {`${WEBSITE_TEXT.blog.imageBy} ${props.author} ${WEBSITE_TEXT.blog.via} ${props.src}`}
+                                </TopImageCredits>
+                            </figcaption>
+                        </figure>
+                    </TopImageWrapper>
+                </AnimatedPhoto>
+            }
+        </React.Fragment>
 
     );
 };
