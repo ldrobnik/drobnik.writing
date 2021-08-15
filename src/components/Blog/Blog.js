@@ -10,8 +10,8 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
-import {BlogTopAnchor, BlogPost, BlogWrapper, FADE_DURATION} from '../../styled';
-import {BLOG_CATEGORIES, BLOG_NOTES, TEXT_NAMES, TEXTS, WEBSITE_TEXT} from './../../data/constants';
+import {BlogTopAnchor, BlogWrapper, BlogSectionHeading, FADE_DURATION} from '../../styled';
+import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT} from './../../data/constants';
 import ThemeWrapper from './ThemeWrapper/ThemeWrapper';
 import Teaser from './Teaser/Teaser';
 import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
@@ -78,7 +78,8 @@ export const Blog = props => {
                 setIsFiltered(true); //turns on the filtered mode
                 return category;
             }
-        };
+        }
+        ;
 
         //if the url doesn't match any category, return false
         setIsFiltered(false); //turns off the filtered mode
@@ -157,12 +158,22 @@ export const Blog = props => {
             <BlogTopAnchor>
                 <div id='top'></div>
             </BlogTopAnchor>
-            { (latestNote.id) && <Teaser note={latestNote}/>}
-            {(olderNotes.length > 0) && <BlogNoteList
-                linklist={olderNotes}
-                showImmediately={true}
-                showCategories={!isFiltered}
-            />}
+            {(latestNote.id) &&
+            <React.Fragment>
+                <BlogSectionHeading>{WEBSITE_TEXT.blog.latestPost}</BlogSectionHeading>
+                <Teaser note={latestNote}/>
+            </React.Fragment>
+            }
+            {(olderNotes.length > 0) &&
+            <React.Fragment>
+                <BlogSectionHeading>{WEBSITE_TEXT.blog.olderPosts}</BlogSectionHeading>
+                <BlogNoteList
+                    linklist={olderNotes}
+                    showImmediately={true}
+                    showCategories={!isFiltered}
+                />
+            </React.Fragment>
+            }
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
