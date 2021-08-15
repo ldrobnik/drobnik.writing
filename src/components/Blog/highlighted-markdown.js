@@ -8,8 +8,7 @@ export const HighlightedMarkdown = props => {
 
     useEffect(() => {
         rootRef.current.querySelectorAll('pre code').forEach((block) => {
-            hljs.highlightBlock(block);
-            console.log(block);
+            hljs.highlightElement(block);
         });
     }, [props.children]);
 

@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import Markdown from 'markdown-to-jsx/dist/index.js';
 import {
     setTheme,
     setCurrentText,
@@ -104,6 +103,13 @@ export const Blog = props => {
         return filteredNotes;
     }
 
+    //removes the first element of an array
+    const removeFirstElement = (array) => {
+        let [, ...shortenedArray] = array;
+
+        return shortenedArray;
+    }
+
     useEffect(() => {
 
         //reload page when url changes
@@ -114,10 +120,10 @@ export const Blog = props => {
 
         if (checkFiltering()) {
             setLatestNote(filterByCategory(filteredCategory)[0]); // sets the latest note
-            setOlderNotes(filterByCategory(filteredCategory)); // sets older notes
+            setOlderNotes(removeFirstElement(filterByCategory(filteredCategory))); // sets older notes
         } else {
             setLatestNote(BLOG_NOTES[0]); // sets the latest note
-            setOlderNotes(BLOG_NOTES); // sets older notes
+            setOlderNotes(removeFirstElement(BLOG_NOTES)); // sets older notes
         }
 
     }, [props.location.pathname])
@@ -145,31 +151,18 @@ export const Blog = props => {
 
     });
 
-    // useEffect(() => {
-    //     //imports markdown documents and coverts it into text
-    //     import(`./../../data/blognotes/${filename}.md`)
-    //         .then(res => {
-    //             fetch(res.default)
-    //                 .then(res => res.text())
-    //                 .then(res => setPost(res))
-    //                 .catch(err => console.log(err));
-    //         })
-    //         .catch(err => console.log(err));
-    //
-    // });
-
     //do not show the content until the page is loaded
     return props.loaded &&
         <BlogWrapper>
             <BlogTopAnchor>
                 <div id='top'></div>
             </BlogTopAnchor>
-            <Teaser note={latestNote}/>
-            <BlogNoteList
+            { (latestNote.id) && <Teaser note={latestNote}/>}
+            {(olderNotes.length > 0) && <BlogNoteList
                 linklist={olderNotes}
                 showImmediately={true}
                 showCategories={!isFiltered}
-            />
+            />}
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >

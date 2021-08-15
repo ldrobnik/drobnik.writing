@@ -991,7 +991,7 @@ export const ToggleWrapper = styled.div`
 
 /* Blog.js */
 
-/* Wrappers for different categories of blog posts */
+// Wrappers for different categories of blog posts
 
 export const NocturineTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
@@ -1088,7 +1088,7 @@ export const PopTheme = styled.div`
   }
 `;
 
-/* Other components */
+// Other components
 
 export const BlogTopAnchor = styled.div`
   position: absolute;
@@ -1123,6 +1123,17 @@ export const BlogPost = styled.div`
     }
   }
 
+`;
+
+export const BlogSectionHeading = styled.h2`
+  font-size: ${props => props.theme.titleSize};
+  font-weight: bold;
+  margin: 0.5em 0;
+  color: ${props => props.theme.darkColor};
+
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    font-size: 12vw;
+  }
 `;
 
 export const BlogWrapper = styled.div`
