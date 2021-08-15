@@ -41,6 +41,9 @@ export const BlogNote = props => {
 
     const goToMainBlogPage = () => history.push('/blog');
 
+    //visibility of the page
+    const [visible, setVisible] = useState(false);
+
     //ID of the blog note to be displayed
     const [noteId, setNoteId] = useState('');
 
@@ -118,7 +121,10 @@ export const BlogNote = props => {
 
     //sets off page reloading animation
     const reloadPage = () => {
+        setVisible(false); //hide content on page reload
+        setNoteId(''); //reset note value
         props.setPageReload(true);
+
     };
 
     //checks whether the data storage notice should be displayed and turns it on if it is invisible but hasn't been confirmed yet
@@ -193,6 +199,7 @@ export const BlogNote = props => {
     //load a new blog note anytime the path changes
     useEffect(() => {
 
+
         //identify the blog note based on the URL
         identifyBlogNote();
 
@@ -200,6 +207,14 @@ export const BlogNote = props => {
         importBlogNote(noteId);
 
     }, [props.location.pathname]);
+
+    useEffect(() => {
+        if (noteId.length > 0) {
+            setTimeout(() => setVisible(true), 800);
+        } else {
+            setVisible(false);
+        }
+    }, [props.reload]);
 
     //do not show the content until the page is loaded
     return props.loaded && (noteId.length > 0) &&
@@ -213,10 +228,11 @@ export const BlogNote = props => {
                 src={imageCredits.src}
                 alt={imageCredits.alt}
                 pathname={props.location.pathname}
+                parentVisible={visible}
             />
             <ThemeWrapper theme={noteCategory}>
                 <AnimatedContent
-                    pose={!props.reload ? 'visible' : 'hidden'}>
+                    pose={visible ? 'visible' : 'hidden'}>
                     <BlogNoteCredits
                         title={noteTitle}
                         category={noteCategory}
@@ -225,7 +241,7 @@ export const BlogNote = props => {
                 </AnimatedContent>
                 <BlogPost>
                     <AnimatedContent
-                        pose={!props.reload ? 'visible' : 'hidden'}>
+                        pose={visible ? 'visible' : 'hidden'}>
                         <HighlightedMarkdown>
                             <Markdown
                                 options={{
@@ -245,7 +261,7 @@ export const BlogNote = props => {
                     </AnimatedContent>
                     <div id='bio'></div>
                     <AnimatedContent
-                        pose={!props.reload ? 'visible' : 'hidden'}>
+                        pose={visible ? 'visible' : 'hidden'}>
                         <BlogSeparator className={'colouredBackground'}/>
                         <BlogBio/>
                         <BlogSeparator className={'colouredBackground'}/>
@@ -261,7 +277,7 @@ export const BlogNote = props => {
                 showCategories={true}
             />
             <AnimatedContent
-                pose={!props.reload ? 'visible' : 'hidden'}
+                pose={visible ? 'visible' : 'hidden'}
             >
                 <SubpageLinks
                     lang={'en'}

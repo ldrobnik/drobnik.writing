@@ -28,13 +28,13 @@ const TopImage = props => {
 
         //if no image is loaded, load it
         if (imageSrc.length < 1) {
-            setVisible(false);
+            setTimeout(() => setVisible(false), 500);
             importImage(props.id);
         }
 
         //show the image after loading
-        if (imageSrc.length > 0) {
-            setTimeout(() => setVisible(true), 800)
+        if (imageSrc.length > 0 && props.parentVisible) {
+            setTimeout(() => setVisible(true), 500);
         }
     })
 
@@ -45,8 +45,8 @@ const TopImage = props => {
         importImage(props.id);
 
         //show the image after loading
-        if (imageSrc.length > 0) {
-            setTimeout(() => setVisible(true), 800)
+        if (imageSrc.length > 0 && props.parentVisible) {
+            setTimeout(() => setVisible(true), 500);
         }
     }, [props.reload, props.pathname])
 
