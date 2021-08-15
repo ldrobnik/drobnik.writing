@@ -882,9 +882,10 @@ export const SectionHeader = styled.div`
   text-align: center;
 `;
 
-export const SectionTitle = styled.div`
+export const SectionTitle = styled.h2`
   font-size: ${props => props.theme.titleSize};
   font-weight: bold;
+  margin: 0.5em 0;
 
   @media all and (max-width: ${props => props.theme.smallScr}) {
     font-size: 12vw;
