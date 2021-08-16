@@ -289,6 +289,7 @@ export const BlogNote = props => {
             <BlogTopAnchor>
                 <div id='top'></div>
             </BlogTopAnchor>
+            <ThemeWrapper theme={noteCategory}>
             <AnimatedContent
                 pose={visible ? 'visible' : 'hidden'}>
                 {(imageSrc.length > 0) && <TopImageWrapper>
@@ -306,7 +307,7 @@ export const BlogNote = props => {
                     </figure>
                 </TopImageWrapper>}
             </AnimatedContent>
-            <ThemeWrapper theme={noteCategory}>
+
                 <AnimatedContent
                     pose={visible ? 'visible' : 'hidden'}>
                     <BlogNoteCredits
