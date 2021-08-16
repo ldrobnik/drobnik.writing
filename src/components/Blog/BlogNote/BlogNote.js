@@ -19,12 +19,12 @@ import {
     BlogWrapper,
     BlogSeparator,
     BlogNoteReadMore,
-    FADE_DURATION,
-    TopImageCredits
+    TopImageWrapper,
+    TopImageCredits,
+    FADE_DURATION
 } from '../../../styled';
 import {WEBSITE_TEXT, BLOG_NOTES} from './../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
-import TopImage from './TopImage/TopImage';
 import BlogBio from './BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
@@ -62,15 +62,25 @@ export const BlogNote = props => {
     //credits of the top image
     const [imageCredits, setImageCredits] = useState({});
 
+    //specifies the source of the top image
+    const [imageSrc, setImageSrc] = useState('');
+
+    //specifies whether the top image has been loaded
+    const [imageLoaded, setImageLoaded] = useState(false);
+
 
     //blogpost to be displayed
     const [note, setNote] = useState('');
 
     //shows the content
     const showContent = () => {
-        setTimeout(() => setVisible(true), 500);
+        setTimeout(() => setVisible(true), FADE_DURATION + 500);
         props.setPageReload(false);
     };
+
+    const showImage = () => {
+        setImageLoaded(true);
+    }
 
     //creates an array of related notes
     const createRelatedNotes = relatedNoteIds => {
@@ -163,6 +173,17 @@ export const BlogNote = props => {
             .catch(err => console.log(err));
     }
 
+    //imports the appropriate image
+    const importImage = id => {
+        import(`./../../../assets/images/blog/${id}.jpg`)
+            .then(res => {
+                fetch(res.default)
+                    .then(res => setImageSrc(res.url))
+                    .catch(err => console.log(err));
+            })
+            .catch(err => console.log(err));
+    }
+
     useEffect(() => {
         //Update page title with the piece title
         document.title = 'Łukasz Drobnik - ' + noteTitle;
@@ -180,8 +201,8 @@ export const BlogNote = props => {
         //lets the Redux store know that the Text page is currently displayed
         setCurrentPage('blog');
 
-        //show content after a while if page has loaded
-        if (props.loaded) setTimeout(showContent, FADE_DURATION);
+        // //show content after a while if page has loaded
+        // if (props.loaded) showContent();
 
     });
 
@@ -193,36 +214,51 @@ export const BlogNote = props => {
     });
 
     useEffect(() => {
+
+        //resets image source
+        setImageSrc('');
+
+
         //imports markdown documents and coverts it into text
-        if (noteId.length > 0) importBlogNote(noteId);
+        if (noteId.length > 0) {
+            importBlogNote(noteId);
+            importImage(noteId);
+        }
 
     }, [noteId]);
 
     //load a new blog note anytime the path changes
     useEffect(() => {
 
-
         //identify the blog note based on the URL
         identifyBlogNote();
 
         //imports markdown documents and coverts it into text
-        if (noteId.length > 0) importBlogNote(noteId);
-
-        //shows content if note is displayed
         if (noteId.length > 0) {
-            setTimeout(() => setVisible(true), 500);
+            importBlogNote(noteId);
+            importImage(noteId);
         }
 
+        //shows content if note is displayed
+        if (noteId.length > 0 && imageLoaded) showContent();
+
     }, [props.location.pathname]);
+
+    useEffect(() => {
+        //when the image source changes, set image as not loaded
+        setImageLoaded(false);
+
+        //hide content
+        setVisible(false);
+    }, [imageSrc])
 
 
     useEffect(() => {
 
         //hides and shows content on reload
         setVisible(false);
-        if (noteId.length > 0) {
-            setTimeout(() => setVisible(true), 500);
-        }
+        if (noteId.length > 0 && imageLoaded) showContent();
+
     }, [props.reload]);
 
     //do not show the content until the page is loaded
@@ -233,14 +269,29 @@ export const BlogNote = props => {
             </BlogTopAnchor>
             <AnimatedContent
                 pose={visible ? 'visible' : 'hidden'}>
-                <TopImage
-                    id={noteId}
-                    author={imageCredits.author}
-                    src={imageCredits.src}
-                    alt={imageCredits.alt}
-                    pathname={props.location.pathname}
-                    parentVisible={visible}
-                />
+                {/*<TopImage*/}
+                {/*    id={noteId}*/}
+                {/*    author={imageCredits.author}*/}
+                {/*    src={imageSrc}*/}
+                {/*    source={imageCredits.src}*/}
+                {/*    alt={imageCredits.alt}*/}
+                {/*    pathname={props.location.pathname}*/}
+                {/*    parentVisible={visible}*/}
+                {/*/>*/}
+                {(imageSrc.length > 0) && <TopImageWrapper>
+                    <figure>
+                        <img
+                            src={imageSrc}
+                            alt={imageCredits.alt}
+                            onLoad={() => showImage()}
+                        />
+                        <figcaption>
+                            <TopImageCredits>
+                                {`${WEBSITE_TEXT.blog.imageBy} ${imageCredits.author} ${WEBSITE_TEXT.blog.via} ${imageCredits.source}`}
+                            </TopImageCredits>
+                        </figcaption>
+                    </figure>
+                </TopImageWrapper>}
             </AnimatedContent>
             <ThemeWrapper theme={noteCategory}>
                 <AnimatedContent

@@ -1401,7 +1401,7 @@ export const BLOG_NOTES = [
         related: ['github-pages', 'visual-studio-code', 'highlightjs'],
         imageCredits: {
           author: 'Viktor Obrovsky',
-          src: 'Pixabay',
+          source: 'Pixabay',
           alt: 'Some image'
         }
 
@@ -1414,7 +1414,7 @@ export const BLOG_NOTES = [
         related: ['markdown', 'visual-studio-code', 'highlightjs'],
         imageCredits: {
             author: 'Viktor Obrovsky',
-            src: 'Pixabay',
+            source: 'Pixabay',
             alt: 'Some image'
         }
     },
@@ -1426,7 +1426,7 @@ export const BLOG_NOTES = [
         related: ['github-teamwork', 'highlightjs'],
         imageCredits: {
             author: 'Viktor Obrovsky',
-            src: 'Pixabay',
+            source: 'Pixabay',
             alt: 'Some image'
         }
     },
@@ -1438,7 +1438,7 @@ export const BLOG_NOTES = [
         related: ['github-pages', 'highlightjs', 'markdown'],
         imageCredits: {
             author: 'Viktor Obrovsky',
-            src: 'Pixabay',
+            source: 'Pixabay',
             alt: 'Some image'
         }
     },
@@ -1450,7 +1450,7 @@ export const BLOG_NOTES = [
         related: ['github-pages', 'highlightjs', 'markdown', 'visual-studio-code'],
         imageCredits: {
             author: 'Viktor Obrovsky',
-            src: 'Pixabay',
+            source: 'Pixabay',
             alt: 'Some image'
         }
     },
@@ -1462,7 +1462,7 @@ export const BLOG_NOTES = [
         related: ['markdown', 'github-teamwork', 'visual-studio-code'],
         imageCredits: {
             author: 'Viktor Obrovsky',
-            src: 'Pixabay',
+            source: 'Pixabay',
             alt: 'Some image'
         }
     }
