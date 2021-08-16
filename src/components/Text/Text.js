@@ -28,6 +28,9 @@ export const Text = props => {
         //blogpost to be displayed
         const [piece, setPiece] = useState('');
 
+        //visibility of the content
+        const [visible, setVisible] = useState(false);
+
         //specifies whether 'up next' link should be displayed
         const [linkVisible, setlinkVisible] = useState(false);
 
@@ -36,17 +39,21 @@ export const Text = props => {
 
         //shows the content
         const showContent = () => {
+            //shows content
+            setVisible(true);
             props.setPageReload(false);
         };
 
         //shows the preorder button
         const showPreorderBtn = () => {
-            setPreorderBtnVisible(true);
+            //do it only if other content is visible
+            if (visible) setPreorderBtnVisible(true);
         };
 
         //shows the 'up next' link
         const showLink = () => {
-            setlinkVisible(true);
+            //do it only if other content is visible
+            if (visible) setlinkVisible(true);
         };
 
         //hides the 'up next' link
@@ -117,13 +124,9 @@ export const Text = props => {
             props.setPage(page);
         }
 
-        useEffect(() => {
-            //Update page title with the piece title
-            document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
-
-
-            //imports markdown documents and coverts it into text
-            import(`./../../data/texts/${filename}.md`)
+        //imports markdown documents and coverts it into text
+        const importText = (id) => {
+            import(`./../../data/texts/${id}.md`)
                 .then(res => {
                     fetch(res.default)
                         .then(res => res.text())
@@ -131,6 +134,15 @@ export const Text = props => {
                         .catch(err => console.log(err));
                 })
                 .catch(err => console.log(err));
+        }
+
+        useEffect(() => {
+            //Update page title with the piece title
+            document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
+
+
+            //imports markdown documents and coverts it into text
+            importText(filename);
 
 
             //update the theme depending on the text displayed
@@ -156,13 +168,13 @@ export const Text = props => {
         });
 
         //do not show the content until the page is loaded
-        return props.loaded &&
+        return props.loaded && piece &&
             <TextWrapper>
                 <TextTopAnchor>
                     <div id='top'></div>
                 </TextTopAnchor>
                 <AnimatedContent
-                    pose={!props.reload ? 'visible' : 'hidden'}>
+                    pose={visible && !props.reload ? 'visible' : 'hidden'}>
                     <TextHeader>
                         <TextTitle>
                             {TEXTS[props.lang][textName].title}
@@ -199,7 +211,7 @@ export const Text = props => {
                 </React.Fragment>
                 }
                 <AnimatedContent
-                    pose={!props.reload ? 'visible' : 'hidden'}>
+                    pose={visible && !props.reload? 'visible' : 'hidden'}>
                     <DescriptionPanel
                         description={TEXTS[props.lang][textName].description}
                         title={TEXTS[props.lang][textName].title}
@@ -220,7 +232,7 @@ export const Text = props => {
                     onEnter={showLink}
                 />
                 <AnimatedContent
-                    pose={!props.reload ? 'visible' : 'hidden'}>
+                    pose={visible && !props.reload ? 'visible' : 'hidden'}>
                     <SubpageLinks
                         lang={props.lang}
                         reloadPage={reloadPage}
