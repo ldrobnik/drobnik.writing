@@ -68,6 +68,7 @@ export const BlogNote = props => {
 
     //shows the content
     const showContent = () => {
+        setTimeout(() => setVisible(true), 500);
         props.setPageReload(false);
     };
 
@@ -180,9 +181,7 @@ export const BlogNote = props => {
         setCurrentPage('blog');
 
         //show content after a while if page has loaded
-        if (props.loaded) {
-            setTimeout(showContent, FADE_DURATION);
-        }
+        if (props.loaded) setTimeout(showContent, FADE_DURATION);
 
     });
 
@@ -207,12 +206,19 @@ export const BlogNote = props => {
         identifyBlogNote();
 
         //imports markdown documents and coverts it into text
-        importBlogNote(noteId);
+        if (noteId.length > 0) importBlogNote(noteId);
+
+        //shows content if note is displayed
+        if (noteId.length > 0) {
+            setTimeout(() => setVisible(true), 500);
+        }
 
     }, [props.location.pathname]);
 
+
     useEffect(() => {
 
+        //hides and shows content on reload
         setVisible(false);
         if (noteId.length > 0) {
             setTimeout(() => setVisible(true), 500);
