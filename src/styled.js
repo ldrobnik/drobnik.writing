@@ -1147,7 +1147,7 @@ export const BlogSectionHeading = styled.h2`
   color: ${props => props.theme.darkColor};
   text-align: center;
 
-  @media all and (max-width: ${props => props.theme.smallScr}) {
+  @media all and (max-width: ${props => props.theme.extraSmallScr}) {
     font-size: 4vw;
   }
 `;
@@ -1206,7 +1206,7 @@ export const FilteredCategoryHeading = styled.h3`
   margin-bottom: 0.1em;
 
   @media all and (max-width: ${props => props.theme.smallScr}) {
-    font-size: 6vw;
+    font-size: 4vw;
   }
 `;
 
@@ -1224,6 +1224,10 @@ export const FilteredCategoryLink = styled.div`
     &:hover {
       animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
     }
+  }
+
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    font-size: 3vw;
   }
 `;
 
