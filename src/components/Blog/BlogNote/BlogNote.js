@@ -231,14 +231,17 @@ export const BlogNote = props => {
             <BlogTopAnchor>
                 <div id='top'></div>
             </BlogTopAnchor>
-            <TopImage
-                id={noteId}
-                author={imageCredits.author}
-                src={imageCredits.src}
-                alt={imageCredits.alt}
-                pathname={props.location.pathname}
-                parentVisible={visible}
-            />
+            <AnimatedContent
+                pose={visible ? 'visible' : 'hidden'}>
+                <TopImage
+                    id={noteId}
+                    author={imageCredits.author}
+                    src={imageCredits.src}
+                    alt={imageCredits.alt}
+                    pathname={props.location.pathname}
+                    parentVisible={visible}
+                />
+            </AnimatedContent>
             <ThemeWrapper theme={noteCategory}>
                 <AnimatedContent
                     pose={visible ? 'visible' : 'hidden'}>
@@ -261,6 +264,14 @@ export const BlogNote = props => {
                                                 rel: 'noopener noreferrer'
                                             },
                                         },
+                                        img: {
+                                            props: {
+                                                style: {
+                                                    marginLeft: 'auto',
+                                                    marginRight: 'auto'
+                                                }
+                                            }
+                                        }
                                     },
                                 }}
                             >

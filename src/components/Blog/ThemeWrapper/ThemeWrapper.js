@@ -1,7 +1,7 @@
 import React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {NocturineTheme, VostokTheme, WritingTheme, CodeTheme, BiologyTheme, PopTheme} from '../../../styled';
+import {BlackAndWhiteTheme, NocturineTheme, VostokTheme, WritingTheme, CodeTheme, BiologyTheme, PopTheme} from '../../../styled';
 
 const ThemeWrapper = (props) => {
 
@@ -11,9 +11,9 @@ const ThemeWrapper = (props) => {
 
     if (props.bwMode) {
         return (
-            <React.Fragment>
+            <BlackAndWhiteTheme>
                 {props.children}
-            </React.Fragment>
+            </BlackAndWhiteTheme>
         )
     } else {
         switch (props.theme) {

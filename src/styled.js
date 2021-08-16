@@ -993,6 +993,17 @@ export const ToggleWrapper = styled.div`
 
 // Wrappers for different categories of blog posts
 
+export const BlackAndWhiteTheme = styled.div`
+  .coloured {
+    color: ${props => props.theme.darkColor}
+  }
+
+  .colouredBackground {
+    background-color: ${props => props.theme.darkColor};
+  }
+`;
+
+
 export const NocturineTheme = styled.div`
   h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
     color: ${props => props.theme.nocturineColor}
@@ -1132,7 +1143,6 @@ export const BlogPost = styled.div`
       }
     }
   }
-
 `;
 
 export const BlogCategoryWrapper = styled.div`
