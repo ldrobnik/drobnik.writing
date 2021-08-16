@@ -25,7 +25,7 @@ import {
 } from '../../../styled';
 import {WEBSITE_TEXT, BLOG_NOTES} from './../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
-import BlogBio from './BlogBio/BlogBio';
+import BlogBio from '../BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
 import SectionSeparator from '../../UI/SectionSeparator/SectionSeparator';

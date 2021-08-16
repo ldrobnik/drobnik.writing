@@ -2,9 +2,9 @@ import React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
-import {setPageReload} from '../../../../actions';
-import {BlogBioWrapper} from '../../../../styled';
-import {WEBSITE_TEXT} from '../../../../data/constants';
+import {setPageReload} from '../../../actions';
+import {BlogBioWrapper} from '../../../styled';
+import {WEBSITE_TEXT} from '../../../data/constants';
 
 const BlogBio = props => {
 

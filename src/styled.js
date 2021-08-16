@@ -1108,7 +1108,7 @@ export const BlogTopAnchor = styled.div`
 
 export const BlogTitle = styled.h1`
   font-size: ${props => props.theme.smallTitleSize};
-  margin: 0;
+  margin: 0 0 1em 0;
   text-align: center;
 
   @media all and (max-width: ${props => props.theme.smallScr}) {
@@ -1198,6 +1198,17 @@ export const BlogWrapper = styled.div`
   }
 `;
 
+export const MainPageBlogBio = styled.div`
+  padding: 0 6em;
+  text-align: justify;
+  margin-top: 1em;
+
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    padding: 0;
+    text-align: left;
+  }
+`;
+
 export const BlogSeparator = styled.div`
   margin: 3em auto;
   height: 0.6em;
@@ -1212,7 +1223,7 @@ export const FilteredCategoryWrapper = styled.div`
 
 export const FilteredCategoryHeading = styled.h3`
   font-size: ${props => props.theme.subtitleSize};
-  margin-top: 0.5em;
+  margin-top: 1.5em;
   margin-bottom: 0.1em;
 
   @media all and (max-width: ${props => props.theme.smallScr}) {
@@ -1268,7 +1279,6 @@ export const TeaserWrapper = styled.div`
 
 export const BlogNoteTeaserTitle = styled.h2`
   font-size: ${props => props.theme.blogTitleSize};
-  margin: 0.6em 0 0 0;
 `;
 
 export const BlogNoteTitle = styled.h1`
@@ -1401,4 +1411,16 @@ export const BlogNoteListElementSeparator = styled.div`
 
 export const BlogBioWrapper = styled.div`
   font-size: ${props => props.theme.captionSize};
+  line-height: 1.4;
+
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+      &:hover {
+        animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+      }
+    }
+  }
 `;
