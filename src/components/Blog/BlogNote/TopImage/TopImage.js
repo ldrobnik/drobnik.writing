@@ -12,6 +12,14 @@ const TopImage = props => {
     //specifies the image source
     const [imageSrc, setImageSrc] = useState('');
 
+    //shows content after loading
+    const showContent = () => {
+
+        let delay = props.parentVisible ? 500 : 1000;
+
+            setTimeout(() => setVisible(true), delay);
+
+    }
 
     //imports the appropriate image
     const importImage = id => {
@@ -31,11 +39,6 @@ const TopImage = props => {
             setTimeout(() => setVisible(false), 500);
             importImage(props.id);
         }
-
-        //show the image after loading
-        if (imageSrc.length > 0 && props.parentVisible) {
-            setTimeout(() => setVisible(true), 500);
-        }
     })
 
     useEffect(() => {
@@ -43,11 +46,6 @@ const TopImage = props => {
         setVisible(false);
         setImageSrc('');
         importImage(props.id);
-
-        //show the image after loading
-        if (imageSrc.length > 0 && props.parentVisible) {
-            setTimeout(() => setVisible(true), 500);
-        }
     }, [props.reload, props.pathname])
 
     return (
@@ -61,6 +59,7 @@ const TopImage = props => {
                             <img
                                 src={imageSrc}
                                 alt={props.alt}
+                                onLoad={() => showContent()}
                             />
                             <figcaption>
                                 <TopImageCredits>

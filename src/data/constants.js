@@ -12,7 +12,6 @@ import {
     faStickyNote
 } from '@fortawesome/free-solid-svg-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {Link} from 'react-router-dom';
 
 //source urls for book covers
 import nocturineCover from '../assets/images/nocturineCover.jpg';
@@ -33,6 +32,7 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/drobnikwrites/';
 export const MEDIUM_URL = 'https://drobnik.medium.com';
 export const KO_FI_URL = 'https://ko-fi.com/drobnik';
 export const BLYSKI_URL = 'https://blyski.org'; // błyski literary magazine
+
 
 //Names of available texts
 export const TEXT_NAMES = ['vostok', 'nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'spores', 'devonian', 'landmines', 'treasures'];
@@ -1367,10 +1367,13 @@ export const WEBSITE_TEXT = {
         imageBy: 'Image by',
         via: 'via',
         author: 'Łukasz Drobnik',
-        bio: <React.Fragment><Link to={'/'}>ŁUKASZ DROBNIK</Link> is the author of <a
-            href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
-            href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> as well as shorter prose published in <em>HAD</em>, <em>X-R-A-Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
-            href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of publications and fiction samples, <Link to={'/'}>go to the main page</Link>.</React.Fragment>
+        bio:
+            {
+               links: ['ŁUKASZ DROBNIK', 'go to the main page'],
+                content: <React.Fragment>is the author of <a
+                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> as well as shorter prose published in <em>HAD</em>, <em>X-R-A-Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
+                    href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of publications and fiction samples, </React.Fragment>
+            }
     },
     dataNotice: {
         en: {
