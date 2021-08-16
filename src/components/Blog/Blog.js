@@ -22,9 +22,6 @@ import BlogNoteList from './BlogNoteList/BlogNoteList';
 
 export const Blog = props => {
 
-    // //filepath to a sample markdown document
-    // const filename = 'markdown';
-
     //latest note to be displayed
     const [latestNote, setLatestNote] = useState('');
 

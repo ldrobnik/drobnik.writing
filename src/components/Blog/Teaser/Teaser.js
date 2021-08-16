@@ -37,7 +37,7 @@ export const Teaser = props => {
     //do not show the content until the page is loaded
     return (
         <Link
-            to={`/blog/notes/${props.note.id}`}
+            to={`/blog/${props.note.id}`}
             onClick={reloadPage}
         >
         <TeaserWrapper>

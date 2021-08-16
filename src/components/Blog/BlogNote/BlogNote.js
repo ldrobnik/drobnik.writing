@@ -104,7 +104,7 @@ export const BlogNote = props => {
     const identifyBlogNote = () => {
 
         //the base URL for all blog notes
-        let baseUrl = '/blog/notes/';
+        let baseUrl = '/blog/';
 
 
         for (let note of BLOG_NOTES) {

@@ -13,8 +13,9 @@ import BlogNote from '../Blog/BlogNote/BlogNote';
 import DataNotice from '../UI/DataNotice/DataNotice';
 import Spinner from '../UI/Spinner/Spinner';
 import {GlobalStyle} from '../../styled';
+import {BLOG_NOTES} from '../../data/constants';
 
-export const Home = (props) => {
+export const Home = props => {
     //checks if any data is stored in localStorage and updates Redux state accordingly
     const checkLocalStorage = () => {
 
@@ -48,12 +49,29 @@ export const Home = (props) => {
         }
     };
 
+    //checks whether the url contains any of the note ids
+    const checkIfBlogNote = () => {
+
+        //loop through all blog note ids and return the BlogNote component
+        for (let note of BLOG_NOTES) {
+            if (props.location.pathname.includes(note.id)) return <BlogNote {...props}/>;
+        }
+
+        //if there's no match, return the BlogComponent
+        return <Blog {...props}/>;
+
+    };
+
+    //blog component to be displayed
+    const blogComponent = checkIfBlogNote();
+
     //sets page loading state as loaded and hides spinner
     const hideSpinner = () => {
 
         //set Redux page loaded state to true
         props.setPageLoaded(true);
     };
+
 
     //Scrolls to top initially and if the URL path changes
     useEffect(() => {
@@ -92,7 +110,7 @@ export const Home = (props) => {
                     <Route path="/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>
                     <Route path="/links/" exact component={QuickLinks} key="links"/>
                     <Route path="/blog/" exact component={Blog} key="blog"/>
-                    <Route path="/blog/:id" exact component={Blog} key="blog-filtered" {...props}/>
+                    <Route path="/blog/:id" exact component={() => blogComponent} key="blog-filtered" {...props}/>
                     <Route path="/blog/notes/:id" exact component={BlogNote} key="blognotenote" {...props}/>
                     <Route render={() => (<Redirect to="/"/>)} key="default"/>
                 </Switch>

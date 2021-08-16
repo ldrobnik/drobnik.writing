@@ -26,7 +26,7 @@ const BlogNoteListElement = (props) => {
             <BlogNoteListElementWrapper>
                 <BlogNoteListElementContent>
                     <Link
-                        to={`/blog/notes/${props.id}`}
+                        to={`/blog/${props.id}`}
                         onClick={reloadPage}
                     >
                         <BlogNoteListElementTitle>
