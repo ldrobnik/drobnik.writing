@@ -134,6 +134,7 @@ export const BlogNote = props => {
     const reloadPage = () => {
         setVisible(false); //hide content on page reload
         setNoteId(''); //reset note value
+        setImageSrc(''); //reset image source
         props.setPageReload(true);
 
     };
@@ -218,7 +219,6 @@ export const BlogNote = props => {
         //resets image source
         setImageSrc('');
 
-
         //imports markdown documents and coverts it into text
         if (noteId.length > 0) {
             importBlogNote(noteId);
@@ -226,6 +226,28 @@ export const BlogNote = props => {
         }
 
     }, [noteId]);
+
+    //load a new blog note anytime the path changes
+    useEffect(() => {
+
+        //identify the blog note based on the URL
+        identifyBlogNote();
+
+        //imports markdown documents and coverts it into text
+        if (noteId.length > 0) {
+            importBlogNote(noteId);
+            importImage(noteId);
+        }
+
+        //shows content if note is displayed
+        if (noteId.length > 0 && imageLoaded) showContent();
+
+    }, []);
+
+    useEffect(() => {
+        //shows content if note is displayed
+        if (noteId.length > 0 && imageLoaded) showContent();
+    });
 
     //load a new blog note anytime the path changes
     useEffect(() => {
@@ -269,15 +291,6 @@ export const BlogNote = props => {
             </BlogTopAnchor>
             <AnimatedContent
                 pose={visible ? 'visible' : 'hidden'}>
-                {/*<TopImage*/}
-                {/*    id={noteId}*/}
-                {/*    author={imageCredits.author}*/}
-                {/*    src={imageSrc}*/}
-                {/*    source={imageCredits.src}*/}
-                {/*    alt={imageCredits.alt}*/}
-                {/*    pathname={props.location.pathname}*/}
-                {/*    parentVisible={visible}*/}
-                {/*/>*/}
                 {(imageSrc.length > 0) && <TopImageWrapper>
                     <figure>
                         <img
