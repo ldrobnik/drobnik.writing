@@ -1205,7 +1205,6 @@ export const MainPageBlogBio = styled.div`
 
   @media all and (max-width: ${props => props.theme.smallScr}) {
     padding: 0;
-    text-align: left;
   }
 `;
 
