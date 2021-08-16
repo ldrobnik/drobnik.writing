@@ -23,7 +23,7 @@ import {
     TopImageCredits,
     FADE_DURATION
 } from '../../../styled';
-import {WEBSITE_TEXT, BLOG_NOTES} from './../../../data/constants';
+import {WEBSITE_TEXT, BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
 import BlogBio from '../BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
@@ -187,7 +187,7 @@ export const BlogNote = props => {
 
     useEffect(() => {
         //Update page title with the piece title
-        document.title = 'Łukasz Drobnik - ' + noteTitle;
+        document.title = `${noteTitle} - ${BLOG_CATEGORIES[noteCategory]}`;
 
 
         //sets theme to black and white
