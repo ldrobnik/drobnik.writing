@@ -1445,9 +1445,11 @@ export const BLOG_NOTES = [
         date: ['2021', '05', '21'],
         category: 'biology',
         related: ['github-pages', 'highlightjs', 'markdown', 'visual-studio-code'],
-        imageAuthor: 'Viktor Obrovsky',
-        imageSource: 'Pixabay',
-        imageAlt: 'Lines of code'
+        imageCredits: {
+            author: 'Viktor Obrovsky',
+            src: 'Pixabay',
+            alt: 'Some image'
+        }
     },
     {
         id: 'highlightjs',
