@@ -136,6 +136,7 @@ export const Text = props => {
                 .catch(err => console.log(err));
         }
 
+
         useEffect(() => {
             //Update page title with the piece title
             document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
@@ -162,12 +163,18 @@ export const Text = props => {
 
             //show content after a while if page has loaded and the markdown file has been successfully fetched
             if (props.loaded && piece.length > 0) {
-                setTimeout(showContent, FADE_DURATION);
+                setTimeout(showContent, FADE_DURATION + 300);
             }
 
         });
 
-        //do not show the content until the page is loaded
+    useEffect (() => {
+        setPiece('');
+        setVisible(false);
+    }, [props.location.pathname]);
+
+
+    //do not show the content until the page is loaded
         return props.loaded && piece &&
             <TextWrapper>
                 <TextTopAnchor>
@@ -226,6 +233,7 @@ export const Text = props => {
                     <NextTextLink
                         textName={nextTextName}
                         lang={props.lang}
+                        onClick={reloadPage}
                     />
                 </AnimatedTextLink>
                 <Waypoint
