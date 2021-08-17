@@ -74,7 +74,7 @@ export const BlogNote = props => {
 
     //shows the content
     const showContent = () => {
-        setTimeout(() => setVisible(true), FADE_DURATION + 300);
+        setTimeout(() => setVisible(true), FADE_DURATION);
         props.setPageReload(false);
     };
 

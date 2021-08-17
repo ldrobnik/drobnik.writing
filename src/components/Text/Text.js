@@ -40,7 +40,7 @@ export const Text = props => {
         //shows the content
         const showContent = () => {
             //shows content
-            setVisible(true);
+            setTimeout(() => setVisible(true), FADE_DURATION + 200);
             props.setPageReload(false);
         };
 
@@ -162,16 +162,18 @@ export const Text = props => {
             setCurrentPage('text');
 
             //show content after a while if page has loaded and the markdown file has been successfully fetched
-            if (props.loaded && piece.length > 0) {
-                setTimeout(showContent, FADE_DURATION + 300);
-            }
+            if (props.loaded && piece.length > 0) showContent();
 
         });
 
     useEffect (() => {
         setPiece('');
         setVisible(false);
-    }, [props.location.pathname]);
+
+        //show content after a while if page has loaded and the markdown file has been successfully fetched
+        if (props.loaded && piece.length > 0) showContent();
+
+    }, [props.location.pathname, props.reload]);
 
 
     //do not show the content until the page is loaded
@@ -181,7 +183,7 @@ export const Text = props => {
                     <div id='top'></div>
                 </TextTopAnchor>
                 <AnimatedContent
-                    pose={visible && !props.reload ? 'visible' : 'hidden'}>
+                    pose={visible && piece.length > 0 && !props.reload ? 'visible' : 'hidden'}>
                     <TextHeader>
                         <TextTitle>
                             {TEXTS[props.lang][textName].title}
@@ -194,7 +196,6 @@ export const Text = props => {
                         <Markdown>
                             {piece}
                         </Markdown>
-                        {/*{TEXTS[props.lang][textName].content}*/}
                     </TextBody>
                     <Waypoint
                         onEnter={hideLink}
