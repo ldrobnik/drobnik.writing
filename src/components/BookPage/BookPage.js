@@ -9,11 +9,10 @@ import {
     setPage,
     setPageReload
 } from '../../actions';
-import {BookPageTopAnchor, BookPageWrapper, FADE_DURATION} from '../../styled';
+import {BookPageTopAnchor, BookPageWrapper, SectionSeparator, FADE_DURATION} from '../../styled';
 import {AnimatedContent} from '../../posed';
 import {BOOKS} from './../../data/constants';
 import Book from '../About/Book/Book';
-import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import InvisibleSeparator from '../UI/InvisibleSeparator/InvisibleSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';

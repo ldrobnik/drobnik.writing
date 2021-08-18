@@ -21,6 +21,7 @@ import {
     BlogNoteReadMore,
     TopImageWrapper,
     TopImageCredits,
+    SectionSeparator,
     FADE_DURATION
 } from '../../../styled';
 import {WEBSITE_TEXT, BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
@@ -28,7 +29,6 @@ import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
 import BlogBio from '../BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
-import SectionSeparator from '../../UI/SectionSeparator/SectionSeparator';
 import SubpageLinks from '../../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../../UI/CopyrightNote/CopyrightNote';
 

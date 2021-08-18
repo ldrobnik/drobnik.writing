@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {IntroBody, FADE_DURATION} from '../../../styled';
+import {IntroBody, SectionSeparator, SmallSeparator, FADE_DURATION} from '../../../styled';
 import {AnimatedContent, IntroAnimatedLinks, IntroAnimatedButton} from '../../../posed';
 import {WEBSITE_TEXT} from '../../../data/constants';
 import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'
@@ -13,9 +13,6 @@ import CentredPhoto from './../../UI/CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import CentredButton from './../../UI/CentredButton/CentredButton';
 import SectionLinks from '../SectionLinks/SectionLinks';
-import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';
-import SmallSeparator from './../../UI/SmallSeparator/SmallSeparator';
-
 export const Intro = (props) => {
 
     //specifies whether social links and CTA button should be visible

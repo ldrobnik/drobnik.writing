@@ -59,6 +59,21 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const SectionSeparator = styled.div`
+  margin: 6em auto 3em auto;
+  height: 0.8em;
+  width: 15em;
+  background-color: ${props => props.theme.darkColor};
+`;
+
+
+export const SmallSeparator = styled.div`
+  margin: 2.8em auto 1.4em auto;
+  height: 0.6em;
+  width: 8em;
+  background-color: ${props => props.theme.darkColor};
+`;
+
 /* About.js */
 
 export const AboutTopAnchor = styled.div`
@@ -898,7 +913,7 @@ export const SectionSubtitle = styled.div`
   font-weight: bold;
   font-style: italic;
 
-  @media all and (max-width: ${props => props.theme.smallScr}) {
+  @media all and (max-width: ${props => props.theme.extraSmallScr}) {
     font-size: 6vw;
   }
 `;
@@ -915,23 +930,6 @@ export const PageTitle = styled.h1`
   }
 `;
 
-/* SectionSeparator.js */
-
-export const SectSeparator = styled.div`
-  margin: 6em auto 3em auto;
-  height: 0.8em;
-  width: 15em;
-  background-color: ${props => props.theme.darkColor};
-`;
-
-/* SmallSeparator.js */
-
-export const SmSeparator = styled.div`
-  margin: 2.8em auto 1.4em auto;
-  height: 0.6em;
-  width: 8em;
-  background-color: ${props => props.theme.darkColor};
-`;
 
 /* Spinner.js */
 

@@ -4,12 +4,11 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {ReadWrapper, ReadMessage, ReadBlogBtnWrapper, FADE_DURATION} from '../../../styled';
+import {ReadWrapper, ReadMessage, ReadBlogBtnWrapper, SectionSeparator, FADE_DURATION} from '../../../styled';
 import {AnimatedContent, AnimatedReadList, AnimatedReadLink, AnimatedReadButton} from '../../../posed';
-import {WEBSITE_TEXT, HIGHLIGHTS, TEXTS, BOOKS} from './../../../data/constants';
+import {WEBSITE_TEXT, HIGHLIGHTS, TEXTS} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import SectionLinks from '../SectionLinks/SectionLinks';
-import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';
 import ReadListElement from './ReadListElement/ReadListElement';
 import CentredButton from '../../UI/CentredButton/CentredButton';
 

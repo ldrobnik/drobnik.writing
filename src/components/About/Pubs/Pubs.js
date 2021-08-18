@@ -12,6 +12,7 @@ import {
     PubsLabel,
     PubsSubsectionHeading,
     PubsSeparator,
+    SectionSeparator,
     FADE_DURATION
 } from '../../../styled';
 import {AnimatedContent, PubsAnimatedMessage, PubsAnimatedPanel} from '../../../posed';
@@ -20,7 +21,6 @@ import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import ToggleSwitch from './../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
 import SectionLinks from '../SectionLinks/SectionLinks';
-import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';
 
 export const Pubs = (props) => {
 

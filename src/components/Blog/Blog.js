@@ -10,12 +10,11 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
-import {BlogTopAnchor, BlogWrapper, MainPageBlogBio, BlogSectionHeading, BlogTitle, FADE_DURATION} from '../../styled';
+import {BlogTopAnchor, BlogWrapper, MainPageBlogBio, BlogSectionHeading, BlogTitle, SectionSeparator, FADE_DURATION} from '../../styled';
 import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT} from './../../data/constants';
 import FilteredCategory from './FilteredCategory/FilteredCategory';
 import Teaser from './Teaser/Teaser';
 import BlogBio from './BlogBio/BlogBio';
-import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 import BlogNoteList from './BlogNoteList/BlogNoteList';

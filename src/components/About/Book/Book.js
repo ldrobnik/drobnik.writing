@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {BookBody, BookSlogan, FADE_DURATION} from '../../../styled';
+import {BookBody, BookSlogan, SectionSeparator, SmallSeparator, FADE_DURATION} from '../../../styled';
 import {AnimatedContent, BookAnimatedButton} from '../../../posed';
 import {EXCERPT_BUTTON, BOOKS} from './../../../data/constants';
 import CentredPhoto from '../../UI/CentredPhoto/CentredPhoto';
@@ -12,8 +12,6 @@ import SectionHeading from '../../UI/SectionHeading/SectionHeading'
 import QuoteList from '../QuoteList/QuoteList';
 import CentredButton from '../../UI/CentredButton/CentredButton';
 import SectionLinks from '../SectionLinks/SectionLinks';
-import SectionSeparator from '../../UI/SectionSeparator/SectionSeparator';
-import SmallSeparator from '../../UI/SmallSeparator/SmallSeparator';
 
 export const Book = (props) => {
 

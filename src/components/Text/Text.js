@@ -11,13 +11,12 @@ import {
     setPage,
     setPageReload
 } from '../../actions';
-import {TextTopAnchor, TextWrapper, TextHeader, TextTitle, TextSubtitle, TextBody, FADE_DURATION} from '../../styled';
+import {TextTopAnchor, TextWrapper, TextHeader, TextTitle, TextSubtitle, TextBody, SectionSeparator, FADE_DURATION} from '../../styled';
 import {AnimatedContent, AnimatedTextLink, AnimatedTextButton} from '../../posed';
 import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES} from './../../data/constants';
 import Credits from './Credits/Credits';
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
 import NextTextLink from './NextTextLink/NextTextLink';
-import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 import CentredButton from '../UI/CentredButton/CentredButton';
