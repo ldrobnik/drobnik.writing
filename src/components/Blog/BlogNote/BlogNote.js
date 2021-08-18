@@ -37,8 +37,7 @@ export const BlogNote = props => {
 
     const history = useHistory();
 
-    //go to the main blog page
-
+    //redirects to the main blog page
     const goToMainBlogPage = () => history.push('/blog');
 
     //visibility of the page
@@ -290,24 +289,23 @@ export const BlogNote = props => {
                 <div id='top'></div>
             </BlogTopAnchor>
             <ThemeWrapper theme={noteCategory}>
-            <AnimatedContent
-                pose={visible ? 'visible' : 'hidden'}>
-                {(imageSrc.length > 0) && <TopImageWrapper>
-                    <figure>
-                        <img
-                            src={imageSrc}
-                            alt={imageCredits.alt}
-                            onLoad={() => showImage()}
-                        />
-                        <figcaption>
-                            <TopImageCredits>
-                                {`${WEBSITE_TEXT.blog.imageBy} ${imageCredits.author} ${WEBSITE_TEXT.blog.via} ${imageCredits.source}`}
-                            </TopImageCredits>
-                        </figcaption>
-                    </figure>
-                </TopImageWrapper>}
-            </AnimatedContent>
-
+                <AnimatedContent
+                    pose={visible ? 'visible' : 'hidden'}>
+                    {(imageSrc.length > 0) && <TopImageWrapper>
+                        <figure>
+                            <img
+                                src={imageSrc}
+                                alt={imageCredits.alt}
+                                onLoad={() => showImage()}
+                            />
+                            <figcaption>
+                                <TopImageCredits>
+                                    {`${WEBSITE_TEXT.blog.imageBy} ${imageCredits.author} ${WEBSITE_TEXT.blog.via} ${imageCredits.source}`}
+                                </TopImageCredits>
+                            </figcaption>
+                        </figure>
+                    </TopImageWrapper>}
+                </AnimatedContent>
                 <AnimatedContent
                     pose={visible ? 'visible' : 'hidden'}>
                     <BlogNoteCredits

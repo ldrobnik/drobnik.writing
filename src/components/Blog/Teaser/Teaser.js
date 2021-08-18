@@ -40,16 +40,16 @@ export const Teaser = props => {
             to={`/blog/${props.note.id}`}
             onClick={reloadPage}
         >
-        <TeaserWrapper>
-            <AnimatedContent
-                pose={!props.reload && note.length > 0 ? 'visible' : 'hidden'}>
-                <ThemeWrapper theme={props.note.category}>
-                    <BlogNoteCredits
-                        teaser={true}
-                        title={props.note.title}
-                        category={props.note.category}
-                        date={props.note.date}
-                    />
+            <TeaserWrapper>
+                <AnimatedContent
+                    pose={!props.reload && note.length > 0 ? 'visible' : 'hidden'}>
+                    <ThemeWrapper theme={props.note.category}>
+                        <BlogNoteCredits
+                            teaser={true}
+                            title={props.note.title}
+                            category={props.note.category}
+                            date={props.note.date}
+                        />
 
                         <BlogPost>
                             <HighlightedMarkdown>
@@ -66,9 +66,9 @@ export const Teaser = props => {
                                 </Markdown>
                             </HighlightedMarkdown>
                         </BlogPost>
-                </ThemeWrapper>
-            </AnimatedContent>
-        </TeaserWrapper>
+                    </ThemeWrapper>
+                </AnimatedContent>
+            </TeaserWrapper>
         </Link>
     );
 };

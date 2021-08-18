@@ -1,9 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
-import Markdown from 'markdown-to-jsx/dist/index.js';
-import {HighlightedMarkdown} from '../highlighted-markdown';
 import {AnimatedContent} from '../../../posed';
 import {FilteredCategoryWrapper, FilteredCategoryHeading, FilteredCategoryLink} from '../../../styled';
 import ThemeWrapper from '../ThemeWrapper/ThemeWrapper';
@@ -20,7 +18,6 @@ export const FilteredCategory = props => {
 
     //do not show the content until the page is loaded
     return (
-
         <AnimatedContent
             pose={!props.reload ? 'visible' : 'hidden'}>
             <FilteredCategoryWrapper>
@@ -38,10 +35,7 @@ export const FilteredCategory = props => {
                     {WEBSITE_TEXT.blog.showAll}
                 </FilteredCategoryLink>
             </Link>
-
         </AnimatedContent>
-
-
     );
 };
 

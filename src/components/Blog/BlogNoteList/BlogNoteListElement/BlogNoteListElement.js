@@ -10,7 +10,7 @@ import {
     BlogNoteListElementSeparator
 } from '../../../../styled';
 import {setPageReload} from '../../../../actions';
-import {BLOG_CATEGORIES, WEBSITE_TEXT} from '../../../../data/constants';
+import {BLOG_CATEGORIES} from '../../../../data/constants';
 import ThemeWrapper from '../../ThemeWrapper/ThemeWrapper';
 
 const BlogNoteListElement = (props) => {
@@ -21,7 +21,6 @@ const BlogNoteListElement = (props) => {
     };
 
     return (
-
         <ThemeWrapper theme={props.category}>
             <BlogNoteListElementWrapper>
                 <BlogNoteListElementContent>
@@ -45,7 +44,6 @@ const BlogNoteListElement = (props) => {
                 </BlogNoteListElementContent>
             </BlogNoteListElementWrapper>
         </ThemeWrapper>
-
     );
 };
 

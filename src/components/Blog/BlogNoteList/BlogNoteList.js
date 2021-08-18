@@ -5,8 +5,7 @@ import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
 import {BlogNoteListWrapper, FADE_DURATION} from '../../../styled';
-import {AnimatedContent, AnimatedBlogNoteList, AnimatedBlogNoteLink} from '../../../posed';
-import {WEBSITE_TEXT, BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
+import {AnimatedBlogNoteList, AnimatedBlogNoteLink} from '../../../posed';
 import BlogNoteListElement from './BlogNoteListElement/BlogNoteListElement';
 
 
@@ -19,11 +18,6 @@ export const BlogNoteList = props => {
     const showContent = () => {
         props.setPageReload(false);
     };
-
-    //reloads the page
-    const reloadPage = () => {
-        props.setPageReload(true);
-    }
 
     //shows the text links
     const showLinks = () => {

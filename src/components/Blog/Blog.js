@@ -31,7 +31,6 @@ export const Blog = props => {
     //specifies the filtered category
     const [filteredCategory, setFilteredCagetory] = useState('');
 
-
     //shows the content
     const showContent = () => {
         props.setPageReload(false);
@@ -104,7 +103,7 @@ export const Blog = props => {
         return filteredNotes;
     }
 
-    //removes the first element of an array
+    //returns an an array without its first element
     const removeFirstElement = (array) => {
         let [, ...shortenedArray] = array;
 
@@ -118,7 +117,6 @@ export const Blog = props => {
 
         //if the url contains category name, filter blog notes by this category
         let categoryToFilter = checkFiltering();
-
 
         if (checkFiltering()) {
             setLatestNote(filterByCategory(categoryToFilter)[0]); // sets the latest note

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, {useRef, useEffect} from 'react';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/atom-one-dark.css';
 
@@ -14,7 +14,7 @@ export const HighlightedMarkdown = props => {
 
     return (
         <div ref={rootRef}>
-                {props.children}
+            {props.children}
         </div>
     );
 }

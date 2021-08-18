@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
@@ -46,7 +46,6 @@ export const BlogNoteCredits = props => {
         );
     } else {
         return (
-
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <BlogNoteTitle>{props.title}</BlogNoteTitle>
@@ -68,12 +67,8 @@ export const BlogNoteCredits = props => {
                     to={`/blog/`}
                     onClick={reloadPage}
                 >
-
                 </Link>
-
             </AnimatedContent>
-
-
         );
     }
 

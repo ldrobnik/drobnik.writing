@@ -16,7 +16,6 @@ const ThemeWrapper = (props) => {
     //Don't style text if the black and white mode is on
     //Add appropriate styling to blog posts of different categories
 
-
     if (props.bwMode) {
         return (
             <BlackAndWhiteTheme>

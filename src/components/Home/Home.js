@@ -52,7 +52,7 @@ export const Home = props => {
     //checks whether the url contains any of the note ids
     const checkIfBlogNote = () => {
 
-        //loop through all blog note ids and return the BlogNote component
+        //loop through all blog note IDs; if there's a match, return the BlogNote component
         for (let note of BLOG_NOTES) {
             if (props.location.pathname.includes(note.id)) return <BlogNote {...props}/>;
         }
