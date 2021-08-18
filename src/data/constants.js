@@ -1132,8 +1132,8 @@ export const WEBSITE_TEXT = {
     intro: {
         title: 'Łukasz Drobnik',
         subtitle: {
-            en: 'fiction writer',
-            pl: 'prozaik'
+            en: 'author of genre-blending fiction',
+            pl: 'autor niejednoznacznej gatunkowo prozy'
         },
         altText: {
             en: 'Author’s photo',
@@ -1142,9 +1142,9 @@ export const WEBSITE_TEXT = {
         body: {
             en: <div>
                 <p>I’m a Polish writer writing mostly in English. My favourite pastime is taking literary fiction and
-                    blending it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from
+                    blending it with other genres, and I’m a huge flash fiction fan (though I don’t shy away from
                     longer forms). I live in Kraków, Poland.</p>
-                <p>I have two books coming out this year: a collection of interlinked stories <AnchorLink
+                <p>I have two genre-blending books coming out this year: a collection of interlinked stories <AnchorLink
                     href='#nocturine'
                     offset="60px"><strong>NOCTURINE</strong></AnchorLink> to
                     be published by <a href={NOCTURINE_URL} target="_blank"
@@ -1177,7 +1177,7 @@ export const WEBSITE_TEXT = {
                     wysokoartystyczną
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków. Do tego jestem ogromnym fanem <em>flash
                         fiction</em> (nie stronię jednak od dłuższych form). Mieszkam w Krakowie.</p>
-                <p>W&nbsp;tym roku ukażą się moje dwie książki: zbiór powiązanych fabularnie opowiadań <AnchorLink
+                <p>W&nbsp;tym roku ukażą się moje dwie niejednoznaczne gatunkowo książki: zbiór powiązanych fabularnie opowiadań <AnchorLink
                     href='#nocturine'
                     offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href={NOCTURINE_URL}
                                                                                           target="_blank"
@@ -1370,8 +1370,8 @@ export const WEBSITE_TEXT = {
         bio:
             {
                links: ['ŁUKASZ DROBNIK', 'go to the main page'],
-                content: <React.Fragment>is the author of <a
-                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> as well as shorter prose published in <em>HAD</em>, <em>X-R-A-Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
+                content: <React.Fragment>is the author of genre-blending books, <a
+                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose published in <em>HAD</em>, <em>X-R-A-Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
                     href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of publications and fiction samples, </React.Fragment>
             }
     },
