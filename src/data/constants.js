@@ -1398,7 +1398,7 @@ export const BLOG_NOTES = [
         title: 'Basic Markdown syntax',
         date: ['2021', '08', '01'],
         category: 'nocturine',
-        related: ['github-pages', 'visual-studio-code', 'highlightjs'],
+        related: ['github-pages', 'visual-studio-code', 'github-basics'],
         imageCredits: {
           author: 'Viktor Obrovsky',
           source: 'Pixabay',
@@ -1411,7 +1411,7 @@ export const BLOG_NOTES = [
         title: 'Publishing on GitHub Pages',
         date: ['2021', '07', '15'],
         category: 'pop',
-        related: ['markdown', 'visual-studio-code', 'highlightjs'],
+        related: ['highlightjs', 'visual-studio-code', 'markdown', 'github-something'],
         imageCredits: {
             author: 'Viktor Obrovsky',
             source: 'Pixabay',
@@ -1423,7 +1423,7 @@ export const BLOG_NOTES = [
         title: 'Visual Studio Code basics',
         date: ['2021', '07', '01'],
         category: 'vostok',
-        related: ['github-teamwork', 'highlightjs'],
+        related: ['github-teamwork', 'github-basics', 'highlightjs'],
         imageCredits: {
             author: 'Viktor Obrovsky',
             source: 'Pixabay',
@@ -1435,7 +1435,7 @@ export const BLOG_NOTES = [
         title: 'GitHub and teamwork',
         date: ['2021', '06', '01'],
         category: 'writing',
-        related: ['github-pages', 'highlightjs', 'markdown'],
+        related: ['github-pages', 'github-something', 'markdown'],
         imageCredits: {
             author: 'Viktor Obrovsky',
             source: 'Pixabay',
@@ -1465,17 +1465,30 @@ export const BLOG_NOTES = [
             source: 'Pixabay',
             alt: 'Some image'
         }
+    },
+    {
+        id: 'github-something',
+        title: 'The something of GitHub',
+        date: ['2021', '05', '02'],
+        category: 'literary',
+        related: ['github-basics', 'github-teamwork', 'visual-studio-code'],
+        imageCredits: {
+            author: 'Viktor Obrovsky',
+            source: 'Pixabay',
+            alt: 'Some image'
+        }
     }
 ];
 
 //Titles of blog note categories
 export const BLOG_CATEGORIES = {
     writing: 'The Tech of Writing',
-    nocturine: 'Notes on NOCTURINE',
-    vostok: 'VOSTOK as a Book',
+    nocturine: 'Notes on Nocturine',
+    vostok: 'Vostok as a Book',
     code: 'Code the Pain Away',
     biology: 'Biology Porn',
-    pop: 'This Is How We Pop'
+    pop: 'This Is How We Pop',
+    literary: 'Let’s Get Literary'
 }
 
 //Content of quick links (to be used on Instagram)

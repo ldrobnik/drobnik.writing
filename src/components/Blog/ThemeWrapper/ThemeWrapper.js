@@ -1,7 +1,15 @@
 import React from 'react';
-import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {BlackAndWhiteTheme, NocturineTheme, VostokTheme, WritingTheme, CodeTheme, BiologyTheme, PopTheme} from '../../../styled';
+import {
+    BlackAndWhiteTheme,
+    NocturineTheme,
+    VostokTheme,
+    WritingTheme,
+    CodeTheme,
+    BiologyTheme,
+    PopTheme,
+    LiteraryTheme
+} from '../../../styled';
 
 const ThemeWrapper = (props) => {
 
@@ -52,6 +60,12 @@ const ThemeWrapper = (props) => {
                     <PopTheme>
                         {props.children}
                     </PopTheme>
+                );
+            case 'literary':
+                return (
+                    <LiteraryTheme>
+                        {props.children}
+                    </LiteraryTheme>
                 );
             default:
                 return (

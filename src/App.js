@@ -19,14 +19,15 @@ export const App = (props) => {
         //colours
         color1: THEME_COLORS[props.theme].color1,
         color2: THEME_COLORS[props.theme].color2,
-        nocturineColor: THEME_COLORS.nocturine.color2,
+        darkColor: '#0f0f0f',
+        lightColor: '#bbbbbb',
+        nocturineColor: THEME_COLORS.nocturine.color1,
         vostokColor: THEME_COLORS.vostok.color1,
         writingColor: THEME_COLORS.devonian.color2,
         codeColor: THEME_COLORS.moths.color1,
         biologyColor: THEME_COLORS.spores.color1,
         popColor: THEME_COLORS.treasures.color1,
-        darkColor: '#0f0f0f',
-        lightColor: '#bbbbbb',
+        literaryColor: THEME_COLORS.landmines.color2,
         background: 'rgba(40,40,40,0.1)',
 
         //fonts

@@ -1099,6 +1099,22 @@ export const PopTheme = styled.div`
   }
 `;
 
+export const LiteraryTheme = styled.div`
+  h1, h2, h3, h4, h5, h6, a, b, strong, .coloured {
+    color: ${props => props.theme.literaryColor}
+
+  }
+
+  .colouredBackground {
+    background-color: ${props => props.theme.literaryColor};
+  }
+
+  & ::selection {
+    color: white;
+    background-color: ${props => props.theme.literaryColor};
+  }
+`;
+
 // Other components
 
 export const BlogTopAnchor = styled.div`
