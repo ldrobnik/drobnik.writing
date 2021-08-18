@@ -42,7 +42,7 @@ export const Teaser = props => {
         >
         <TeaserWrapper>
             <AnimatedContent
-                pose={!props.reload ? 'visible' : 'hidden'}>
+                pose={!props.reload && note.length > 0 ? 'visible' : 'hidden'}>
                 <ThemeWrapper theme={props.note.category}>
                     <BlogNoteCredits
                         teaser={true}
