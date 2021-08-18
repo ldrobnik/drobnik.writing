@@ -25,10 +25,10 @@ const NextTextLink = props => {
                 <NextTextLine/>
                 <UpNext>
                     <div>
-                        <i>
+                        <em>
                             {WEBSITE_TEXT.text.nextText[props.lang]}
                             {TEXTS[props.lang][props.textName].title}
-                        </i>
+                        </em>
                     </div>
                 </UpNext>
                 <NextTextLine/>

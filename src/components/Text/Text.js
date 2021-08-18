@@ -11,7 +11,16 @@ import {
     setPage,
     setPageReload
 } from '../../actions';
-import {TextTopAnchor, TextWrapper, TextHeader, TextTitle, TextSubtitle, TextBody, SectionSeparator, FADE_DURATION} from '../../styled';
+import {
+    TextTopAnchor,
+    TextWrapper,
+    TextHeader,
+    TextTitle,
+    TextSubtitle,
+    TextBody,
+    SectionSeparator,
+    FADE_DURATION
+} from '../../styled';
 import {AnimatedContent, AnimatedTextLink, AnimatedTextButton} from '../../posed';
 import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES} from './../../data/constants';
 import Credits from './Credits/Credits';
@@ -140,10 +149,10 @@ export const Text = props => {
             //Update page title with the piece title
             document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
 
-
             //imports markdown documents and coverts it into text
             importText(filename);
 
+            console.log(piece);
 
             //update the theme depending on the text displayed
             updateTheme();
@@ -161,49 +170,64 @@ export const Text = props => {
             setCurrentPage('text');
 
             //show content after a while if page has loaded and the markdown file has been successfully fetched
-            if (props.loaded && piece.length > 0) showContent();
+            if ((piece.length > 0) && props.loaded) showContent();
 
         });
 
-    useEffect (() => {
+        useEffect(() => {
+            //reset piece content and visibility
+            setPiece('');
+            setVisible(false);
+
+        }, []);
+
+        useEffect(() => {
+
+            //reset piece content and visibility
+            setPiece('');
+            setVisible(false);
+
+        }, [props.location.pathname]);
+
+    useEffect(() => {
+
+        //reset piece content and visibility
         setPiece('');
         setVisible(false);
 
-        //show content after a while if page has loaded and the markdown file has been successfully fetched
-        if (props.loaded && piece.length > 0) showContent();
-
-    }, [props.location.pathname, props.reload]);
+    }, [props.reload]);
 
 
-    //do not show the content until the page is loaded
-        return props.loaded && piece &&
+        //do not show the content until the page is loaded
+        return (piece.length > 0) && props.loaded && !props.reload &&
             <TextWrapper>
                 <TextTopAnchor>
                     <div id='top'></div>
                 </TextTopAnchor>
-                <AnimatedContent
-                    pose={visible && piece.length > 0 && !props.reload ? 'visible' : 'hidden'}>
-                    <TextHeader>
-                        <TextTitle>
-                            {TEXTS[props.lang][textName].title}
-                        </TextTitle>
-                        <TextSubtitle>
-                            {TEXTS[props.lang][textName].subtitle}
-                        </TextSubtitle>
-                    </TextHeader>
-                    <TextBody>
-                        <Markdown>
-                            {piece}
-                        </Markdown>
-                    </TextBody>
-                    <Waypoint
-                        onEnter={hideLink}
-                    />
-                    <Credits
-                        lang={props.lang}
-                        textName={textName}/>
-                </AnimatedContent>
-                {BOOK_LIST.includes(textName) &&
+                    <AnimatedContent
+                        pose={visible ? 'visible' : 'hidden'}>
+                        <TextHeader>
+                            <TextTitle>
+                                {TEXTS[props.lang][textName].title}
+                            </TextTitle>
+                            <TextSubtitle>
+                                {TEXTS[props.lang][textName].subtitle}
+                            </TextSubtitle>
+                        </TextHeader>
+                        <TextBody>
+                            <Markdown>
+                                {piece}
+                            </Markdown>
+                        </TextBody>
+                        <Waypoint
+                            onEnter={hideLink}
+                        />
+                        <Credits
+                            lang={props.lang}
+                            textName={textName}/>
+                    </AnimatedContent>
+                {
+                    BOOK_LIST.includes(textName) &&
                 <React.Fragment>
                     <Waypoint
                         onEnter={showPreorderBtn}
@@ -217,30 +241,30 @@ export const Text = props => {
                     </AnimatedTextButton>
                 </React.Fragment>
                 }
-                <AnimatedContent
-                    pose={visible && !props.reload? 'visible' : 'hidden'}>
-                    <DescriptionPanel
-                        description={TEXTS[props.lang][textName].description}
-                        title={TEXTS[props.lang][textName].title}
-                    />
-                </AnimatedContent>
+                    <AnimatedContent
+                        pose={visible ? 'visible' : 'hidden'}>
+                        <DescriptionPanel
+                            description={TEXTS[props.lang][textName].description}
+                            title={TEXTS[props.lang][textName].title}
+                        />
+                    </AnimatedContent>
                 <Waypoint
                     onEnter={showLink}
                 />
-                <AnimatedTextLink
-                    pose={linkVisible ? 'visible' : 'hidden'}
-                >
-                    <NextTextLink
-                        textName={nextTextName}
-                        lang={props.lang}
-                        onClick={reloadPage}
-                    />
-                </AnimatedTextLink>
+                    <AnimatedTextLink
+                        pose={linkVisible ? 'visible' : 'hidden'}
+                    >
+                        <NextTextLink
+                            textName={nextTextName}
+                            lang={props.lang}
+                            onClick={reloadPage}
+                        />
+                    </AnimatedTextLink>
                 <Waypoint
                     onEnter={showLink}
                 />
                 <AnimatedContent
-                    pose={visible && !props.reload ? 'visible' : 'hidden'}>
+                    pose={visible ? 'visible' : 'hidden'}>
                     <SubpageLinks
                         lang={props.lang}
                         reloadPage={reloadPage}
