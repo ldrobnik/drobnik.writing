@@ -22,7 +22,7 @@ import ToggleSwitch from './../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
 import SectionLinks from '../SectionLinks/SectionLinks';
 
-export const Pubs = (props) => {
+export const Pubs = props => {
 
     //specifies whether texts in English should be displayed
     const [en, setEn] = useState(true);

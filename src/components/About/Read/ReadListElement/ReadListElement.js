@@ -11,7 +11,7 @@ import {
 } from '../../../../styled';
 import {setPageReload} from '../../../../actions';
 
-const ReadListElement = (props) => {
+const ReadListElement = props => {
 
     //sets off page reloading animation
     const reloadPage = () => {

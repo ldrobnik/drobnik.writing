@@ -12,7 +12,7 @@ ReactGA.initialize(ANALYTICS_KEY);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 
-export const App = (props) => {
+export const App = props => {
 
     // Theme to be used in the project, two primary colors depending on redux state
     const theme = {

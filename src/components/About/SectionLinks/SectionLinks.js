@@ -4,7 +4,7 @@ import {SectionLinksWrapper} from '../../../styled';
 import {WEBSITE_TEXT} from './../../../data/constants';
 
 
-const SectionLinks = (props) => {
+const SectionLinks = props => {
 
     //array containing all section link data
     const sectionLinks = WEBSITE_TEXT.sectionLinks;

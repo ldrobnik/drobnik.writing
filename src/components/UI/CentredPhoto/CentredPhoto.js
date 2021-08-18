@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {CentredPhotoWrapper, Photo, PhotoLink} from '../../../styled';
 import {AnimatedPhoto} from '../../../posed';
 
-const CentredPhoto = (props) => {
+const CentredPhoto = props => {
 
     //specifies whether the photo is visible (it is turn visible when the photo is loaded
     const [visible, setVisible] = useState(false);

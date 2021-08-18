@@ -7,7 +7,7 @@ import {AnimatedContent} from '../../posed';
 import {LINKS, TEXT_NAMES} from '../../data/constants';
 import QuickLink from './QuickLink/QuickLink';
 
-const QuickLinks = (props) => {
+const QuickLinks = props => {
 
     //shows the content
     const showContent = () => {

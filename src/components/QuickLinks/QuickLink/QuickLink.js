@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {QuickLinkWrapper, QuickLinkContentWrapper, QuickLinkTitle, QuickLinkSubtitle} from '../../../styled';
 import {setPageReload} from '../../../actions';
 
-const QuickLink = (props) => {
+const QuickLink = props => {
 
     //sets off page reloading animation
     const reloadPage = () => {

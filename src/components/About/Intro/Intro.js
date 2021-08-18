@@ -13,7 +13,7 @@ import CentredPhoto from './../../UI/CentredPhoto/CentredPhoto';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import CentredButton from './../../UI/CentredButton/CentredButton';
 import SectionLinks from '../SectionLinks/SectionLinks';
-export const Intro = (props) => {
+export const Intro = props => {
 
     //specifies whether social links and CTA button should be visible
     const [socialVisible, setSocialVisible] = useState(false);

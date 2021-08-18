@@ -1,7 +1,7 @@
 import React from 'react';
 import {Description} from '../../../styled';
 
-const DescriptionPanel = (props) => {
+const DescriptionPanel = props => {
 
     return (
         <Description>

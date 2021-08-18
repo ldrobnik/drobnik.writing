@@ -13,7 +13,7 @@ import ReadListElement from './ReadListElement/ReadListElement';
 import CentredButton from '../../UI/CentredButton/CentredButton';
 
 
-export const Read = (props) => {
+export const Read = props => {
 
     //specifies whether text links should be visible
     const [linksVisible, setLinksVisible] = useState(false);

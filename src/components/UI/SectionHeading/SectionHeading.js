@@ -1,7 +1,7 @@
 import React from 'react';
 import {SectionHeader, SectionTitle, SectionSubtitle} from '../../../styled';
 
-const SectionHeading = (props) => {
+const SectionHeading = props => {
 
     return (
         <SectionHeader>

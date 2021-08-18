@@ -8,7 +8,7 @@ import {WEBSITE_TEXT} from './../../../data/constants';
 import {bindActionCreators} from 'redux';
 import {setPageReload} from '../../../actions';
 
-const NavLinks = (props) => {
+const NavLinks = props => {
 
     //array containing all section link data
     const sectionLinks = WEBSITE_TEXT.sectionLinks;

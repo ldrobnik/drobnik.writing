@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {setPageReload} from '../../../actions';
 import {CentredButtonOuterWrapper, CentredButtonButtonWrapper} from '../../../styled';
 
-export const CentredButton = (props) => {
+export const CentredButton = props => {
 
     //sets off page reloading animation
     const reloadPage = () => {

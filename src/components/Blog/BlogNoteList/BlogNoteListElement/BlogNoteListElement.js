@@ -13,7 +13,7 @@ import {setPageReload} from '../../../../actions';
 import {BLOG_CATEGORIES} from '../../../../data/constants';
 import ThemeWrapper from '../../ThemeWrapper/ThemeWrapper';
 
-const BlogNoteListElement = (props) => {
+const BlogNoteListElement = props => {
 
     //sets off page reloading animation
     const reloadPage = () => {

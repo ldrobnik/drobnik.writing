@@ -18,7 +18,7 @@ import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
 
-export const BookPage = (props) => {
+export const BookPage = props => {
 
     //shows the content
     const showContent = () => {

@@ -6,7 +6,7 @@ import {Notice, NoticeMessage, NoticeDismissButton} from '../../../styled';
 import {AnimatedContent} from '../../../posed';
 import {WEBSITE_TEXT} from '../../../data/constants';
 
-export const DataNotice = (props) => {
+export const DataNotice = props => {
 
     //notice content to be displayed
     const [noticeVisible, setNoticeVisible] = useState(false);

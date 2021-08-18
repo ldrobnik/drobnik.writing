@@ -15,7 +15,7 @@ import {
 import BookCover from './BookCover/BookCover';
 import {setPageReload} from '../../../../../actions';
 
-const PubTile = (props) => {
+const PubTile = props => {
 
     //sets off page reloading animation
     const reloadPage = () => {

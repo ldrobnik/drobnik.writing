@@ -13,7 +13,7 @@ import QuoteList from '../QuoteList/QuoteList';
 import CentredButton from '../../UI/CentredButton/CentredButton';
 import SectionLinks from '../SectionLinks/SectionLinks';
 
-export const Book = (props) => {
+export const Book = props => {
 
     //specifies whether the quotes should be displayed - triggered by scrolling to the Waypoint element
     const [quotesVisible, setQuotesVisible] = useState(false);
