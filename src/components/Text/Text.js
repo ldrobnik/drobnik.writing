@@ -202,8 +202,9 @@ export const Text = props => {
                 <TextTopAnchor>
                     <div id='top'></div>
                 </TextTopAnchor>
+                {(piece.length > 0) && !props.reload &&
                 <AnimatedContent
-                    pose={(piece.length > 0) && !props.reload && visible ? 'visible' : 'hidden'}>
+                    pose={visible ? 'visible' : 'hidden'}>
                     <TextHeader>
                         <TextTitle>
                             {TEXTS[props.lang][textName].title}
@@ -224,6 +225,7 @@ export const Text = props => {
                         lang={props.lang}
                         textName={textName}/>
                 </AnimatedContent>
+                }
                 {
                     BOOK_LIST.includes(textName) && (piece.length > 0) && !props.reload &&
                     <React.Fragment>
