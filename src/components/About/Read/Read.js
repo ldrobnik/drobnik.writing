@@ -6,7 +6,7 @@ import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
 import {ReadWrapper, ReadMessage, ReadBlogBtnWrapper, SectionSeparator, FADE_DURATION} from '../../../styled';
 import {AnimatedContent, AnimatedReadList, AnimatedReadLink, AnimatedReadButton} from '../../../posed';
-import {WEBSITE_TEXT, HIGHLIGHTS, TEXTS} from './../../../data/constants';
+import {WEBSITE_TEXT, TEXT_NAMES, TEXTS} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import SectionLinks from '../SectionLinks/SectionLinks';
 import ReadListElement from './ReadListElement/ReadListElement';
@@ -78,7 +78,7 @@ export const Read = props => {
             />
             <AnimatedReadList
                 pose={linksVisible ? 'visible' : 'hidden'}>
-                {HIGHLIGHTS.map((text, k) => {
+                {TEXT_NAMES.map((text, k) => {
                     let textLink = '/texts/' + text;
                     return (
                         <AnimatedReadLink

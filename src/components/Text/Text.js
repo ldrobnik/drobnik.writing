@@ -256,7 +256,7 @@ export const Text = props => {
                             onEnter={showLink}
                         />
                         <AnimatedTextLink
-                            pose={linkVisible ? 'visible' : 'hidden'}
+                            pose={(piece.length > 0) && linkVisible ? 'visible' : 'hidden'}
                         >
                             <NextTextLink
                                 textName={nextTextName}
