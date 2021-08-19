@@ -26,6 +26,10 @@ const NavBar = props => {
     // Specifies the current window width
     const [isMobile, setIsMobile] = useState(false);
 
+    // Specifies whether the read button is clickable
+    const [readClickable, setReadClickable] = useState(true);
+
+
     //specifies breakpoint for screens below which nav links are not displayed (higher for English version as there's one extra link)
     const mobileBreakpoint = (props.lang === 'en') ? 725 : 685;
 
@@ -92,6 +96,17 @@ const NavBar = props => {
     //sets off page reloading animation
     const reloadPage = () => {
         props.setPageReload(true);
+    };
+
+    //what happens when the read button is clicked
+    const handleReadClick = () => {
+        //reload page
+        reloadPage();
+
+        //make the button unclickable for a while
+        setReadClickable(false);
+        setTimeout(() => setReadClickable(true), 700);
+
     };
 
     //Content of the logo link - if on the home page, make it an anchor link scrolling to top
@@ -181,21 +196,24 @@ const NavBar = props => {
     //specifies whether the Book subpage is displayed
 
     /*If the Text page is currently displayed, assigned the next text to the read link.
-   //     * If the About page is displayed, assign a random text to it.
-   //     */
+    /*If the About page is displayed, assign a random text to it. */
     const chosenText = (props.page === 'main') ? randomText : nextText;
 
-
-    //content of the icon linking to the Text component
-    const readButton =
+    //variable to hold the read button code
+    const readButton = readClickable ?
         <NavElement>
             <Link
                 to={'/texts/' + chosenText}
-                onClick={reloadPage}>
+                onClick={() => handleReadClick()}>
                 <NavLinkContent>
                     {WEBSITE_TEXT.navbar.read[props.lang]}
                 </NavLinkContent>
             </Link>
+        </NavElement> :
+        <NavElement>
+            <NavLinkContent>
+                {WEBSITE_TEXT.navbar.read[props.lang]}
+            </NavLinkContent>
         </NavElement>;
 
     //content of the icon linking to the Text component; if the main blog page is displayed, scroll to top;

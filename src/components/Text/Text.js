@@ -152,8 +152,6 @@ export const Text = props => {
             //imports markdown documents and coverts it into text
             importText(filename);
 
-            console.log(piece);
-
             //update the theme depending on the text displayed
             updateTheme();
 
