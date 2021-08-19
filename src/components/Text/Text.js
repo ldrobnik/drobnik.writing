@@ -197,13 +197,13 @@ export const Text = props => {
 
 
         //do not show the content until the page is loaded
-        return (piece.length > 0) && props.loaded && !props.reload &&
+        return props.loaded &&
             <TextWrapper>
                 <TextTopAnchor>
                     <div id='top'></div>
                 </TextTopAnchor>
                     <AnimatedContent
-                        pose={visible ? 'visible' : 'hidden'}>
+                        pose={(piece.length > 0) && !props.reload && visible ? 'visible' : 'hidden'}>
                         <TextHeader>
                             <TextTitle>
                                 {TEXTS[props.lang][textName].title}
@@ -231,7 +231,7 @@ export const Text = props => {
                         onEnter={showPreorderBtn}
                     />
                     <AnimatedTextButton
-                        pose={preorderBtnVisible ? 'visible' : 'hidden'}>
+                        pose={(piece.length > 0) && !props.reload && preorderBtnVisible ? 'visible' : 'hidden'}>
                         <CentredButton
                             message={BOOKS[BOOK_LIST.indexOf(textName)].orderButton[props.lang]}
                             path={BOOKS[BOOK_LIST.indexOf(textName)].url}
@@ -240,7 +240,7 @@ export const Text = props => {
                 </React.Fragment>
                 }
                     <AnimatedContent
-                        pose={visible ? 'visible' : 'hidden'}>
+                        pose={(piece.length > 0) && !props.reload && visible ? 'visible' : 'hidden'}>
                         <DescriptionPanel
                             description={TEXTS[props.lang][textName].description}
                             title={TEXTS[props.lang][textName].title}
@@ -250,7 +250,7 @@ export const Text = props => {
                     onEnter={showLink}
                 />
                     <AnimatedTextLink
-                        pose={linkVisible ? 'visible' : 'hidden'}
+                        pose={(piece.length > 0) && !props.reload && linkVisible ? 'visible' : 'hidden'}
                     >
                         <NextTextLink
                             textName={nextTextName}
@@ -262,7 +262,7 @@ export const Text = props => {
                     onEnter={showLink}
                 />
                 <AnimatedContent
-                    pose={visible ? 'visible' : 'hidden'}>
+                    pose={(piece.length > 0) && !props.reload && visible ? 'visible' : 'hidden'}>
                     <SubpageLinks
                         lang={props.lang}
                         reloadPage={reloadPage}
