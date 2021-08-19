@@ -187,95 +187,103 @@ export const Text = props => {
 
         }, [props.location.pathname]);
 
-    useEffect(() => {
+        useEffect(() => {
 
-        //reset piece content and visibility
-        setPiece('');
-        setVisible(false);
+            //reset piece content and visibility
+            setPiece('');
+            setVisible(false);
 
-    }, [props.reload]);
+        }, [props.reload]);
 
 
         //do not show the content until the page is loaded
-        return (piece.length > 0) && props.loaded && !props.reload &&
+        return props.loaded &&
             <TextWrapper>
                 <TextTopAnchor>
                     <div id='top'></div>
                 </TextTopAnchor>
-                    <AnimatedContent
-                        pose={visible ? 'visible' : 'hidden'}>
-                        <TextHeader>
-                            <TextTitle>
-                                {TEXTS[props.lang][textName].title}
-                            </TextTitle>
-                            <TextSubtitle>
-                                {TEXTS[props.lang][textName].subtitle}
-                            </TextSubtitle>
-                        </TextHeader>
-                        <TextBody>
-                            <Markdown>
-                                {piece}
-                            </Markdown>
-                        </TextBody>
-                        <Waypoint
-                            onEnter={hideLink}
-                        />
-                        <Credits
-                            lang={props.lang}
-                            textName={textName}/>
-                    </AnimatedContent>
-                {
-                    BOOK_LIST.includes(textName) &&
-                <React.Fragment>
-                    <Waypoint
-                        onEnter={showPreorderBtn}
-                    />
-                    <AnimatedTextButton
-                        pose={preorderBtnVisible ? 'visible' : 'hidden'}>
-                        <CentredButton
-                            message={BOOKS[BOOK_LIST.indexOf(textName)].orderButton[props.lang]}
-                            path={BOOKS[BOOK_LIST.indexOf(textName)].url}
-                        />
-                    </AnimatedTextButton>
-                </React.Fragment>
-                }
-                    <AnimatedContent
-                        pose={visible ? 'visible' : 'hidden'}>
-                        <DescriptionPanel
-                            description={TEXTS[props.lang][textName].description}
-                            title={TEXTS[props.lang][textName].title}
-                        />
-                    </AnimatedContent>
-                <Waypoint
-                    onEnter={showLink}
-                />
-                    <AnimatedTextLink
-                        pose={linkVisible ? 'visible' : 'hidden'}
-                    >
-                        <NextTextLink
-                            textName={nextTextName}
-                            lang={props.lang}
-                            onClick={reloadPage}
-                        />
-                    </AnimatedTextLink>
-                <Waypoint
-                    onEnter={showLink}
-                />
                 <AnimatedContent
-                    pose={visible ? 'visible' : 'hidden'}>
-                    <SubpageLinks
+                    pose={(piece.length > 0) && !props.reload && visible ? 'visible' : 'hidden'}>
+                    <TextHeader>
+                        <TextTitle>
+                            {TEXTS[props.lang][textName].title}
+                        </TextTitle>
+                        <TextSubtitle>
+                            {TEXTS[props.lang][textName].subtitle}
+                        </TextSubtitle>
+                    </TextHeader>
+                    <TextBody>
+                        <Markdown>
+                            {piece}
+                        </Markdown>
+                    </TextBody>
+                    <Waypoint
+                        onEnter={hideLink}
+                    />
+                    <Credits
                         lang={props.lang}
-                        reloadPage={reloadPage}
-                    />
-                    <Waypoint
-                        onEnter={showLink}
-                    />
-                    <SectionSeparator/>
-                    <CopyrightNote/>
-                    <Waypoint
-                        onEnter={showLink}
-                    />
+                        textName={textName}/>
                 </AnimatedContent>
+                {
+                    BOOK_LIST.includes(textName) && (piece.length > 0) && !props.reload &&
+                    <React.Fragment>
+                        <Waypoint
+                            onEnter={showPreorderBtn}
+                        />
+                        <AnimatedTextButton
+                            pose={preorderBtnVisible ? 'visible' : 'hidden'}>
+                            <CentredButton
+                                message={BOOKS[BOOK_LIST.indexOf(textName)].orderButton[props.lang]}
+                                path={BOOKS[BOOK_LIST.indexOf(textName)].url}
+                            />
+                        </AnimatedTextButton>
+                    </React.Fragment>
+                }
+
+                {
+                    (piece.length > 0) && !props.reload &&
+                    <React.Fragment>
+                        <AnimatedContent
+                            pose={visible ? 'visible' : 'hidden'}>
+                            <DescriptionPanel
+                                description={TEXTS[props.lang][textName].description}
+                                title={TEXTS[props.lang][textName].title}
+                            />
+                        </AnimatedContent>
+                        }
+                        <Waypoint
+                            onEnter={showLink}
+                        />
+                        <AnimatedTextLink
+                            pose={linkVisible ? 'visible' : 'hidden'}
+                        >
+                            <NextTextLink
+                                textName={nextTextName}
+                                lang={props.lang}
+                                onClick={reloadPage}
+                            />
+                        </AnimatedTextLink>
+
+                        <Waypoint
+                            onEnter={showLink}
+                        />
+                        <AnimatedContent
+                            pose={visible ? 'visible' : 'hidden'}>
+                            <SubpageLinks
+                                lang={props.lang}
+                                reloadPage={reloadPage}
+                            />
+                            <Waypoint
+                                onEnter={showLink}
+                            />
+                            <SectionSeparator/>
+                            <CopyrightNote/>
+                            <Waypoint
+                                onEnter={showLink}
+                            />
+                        </AnimatedContent>
+                    </React.Fragment>
+                }
             </TextWrapper>;
     }
 ;
