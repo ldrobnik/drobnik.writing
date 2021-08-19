@@ -202,9 +202,9 @@ export const Text = props => {
                 <TextTopAnchor>
                     <div id='top'></div>
                 </TextTopAnchor>
-                {(piece.length > 0) && !props.reload &&
+                {!props.reload &&
                 <AnimatedContent
-                    pose={visible ? 'visible' : 'hidden'}>
+                    pose={(piece.length > 0) && visible ? 'visible' : 'hidden'}>
                     <TextHeader>
                         <TextTitle>
                             {TEXTS[props.lang][textName].title}
@@ -243,16 +243,15 @@ export const Text = props => {
                 }
 
                 {
-                    (piece.length > 0) && !props.reload &&
+                    !props.reload &&
                     <React.Fragment>
                         <AnimatedContent
-                            pose={visible ? 'visible' : 'hidden'}>
+                            pose={(piece.length > 0) && visible ? 'visible' : 'hidden'}>
                             <DescriptionPanel
                                 description={TEXTS[props.lang][textName].description}
                                 title={TEXTS[props.lang][textName].title}
                             />
                         </AnimatedContent>
-                        }
                         <Waypoint
                             onEnter={showLink}
                         />
@@ -270,7 +269,7 @@ export const Text = props => {
                             onEnter={showLink}
                         />
                         <AnimatedContent
-                            pose={visible ? 'visible' : 'hidden'}>
+                            pose={(piece.length > 0) && visible ? 'visible' : 'hidden'}>
                             <SubpageLinks
                                 lang={props.lang}
                                 reloadPage={reloadPage}
