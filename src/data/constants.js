@@ -1129,7 +1129,7 @@ export const WEBSITE_TEXT = {
     intro: {
         title: 'Łukasz Drobnik',
         subtitle: {
-            en: 'author of genre-blending fiction',
+            en: 'author of genre-bending fiction',
             pl: 'autor niejednoznacznej gatunkowo prozy'
         },
         altText: {
@@ -1141,7 +1141,7 @@ export const WEBSITE_TEXT = {
                 <p>I’m a Polish writer writing mostly in English. My favourite pastime is taking literary fiction and
                     blending it with other genres, and I’m a huge flash fiction fan (though I don’t shy away from
                     longer forms). I live in Kraków, Poland.</p>
-                <p>I have two genre-blending books coming out this year: a collection of interlinked stories <AnchorLink
+                <p>I have two genre-bending books coming out this year: a collection of interlinked stories <AnchorLink
                     href='#nocturine'
                     offset="60px"><strong>NOCTURINE</strong></AnchorLink> to
                     be published by <a href={NOCTURINE_URL} target="_blank"
@@ -1367,7 +1367,7 @@ export const WEBSITE_TEXT = {
         bio:
             {
                links: ['ŁUKASZ DROBNIK', 'go to the main page'],
-                content: <React.Fragment>is the author of genre-blending books, <a
+                content: <React.Fragment>is the author of genre-bending books, <a
                     href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose published in <em>HAD</em>, <em>X-R-A-Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
                     href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of publications and fiction samples, </React.Fragment>
             }
