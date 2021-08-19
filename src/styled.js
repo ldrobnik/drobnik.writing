@@ -639,6 +639,7 @@ export const TextTopAnchor = styled.div`
 export const TextWrapper = styled.div`
   overflow: hidden;
   padding: 7em 1em 2em 1em;
+  min-height: 110vh;
 
   .centered {
     text-align: center;
