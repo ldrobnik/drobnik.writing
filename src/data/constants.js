@@ -879,10 +879,10 @@ export const BOOKS = [
         cover: nocturineCover,
         url: NOCTURINE_URL,
         slogan: {
-            en: <div>Forthcoming in 2021 from <a href={NOCTURINE_URL} target="_blank"
+            en: <div>Forthcoming autumn 2021 from <a href={NOCTURINE_URL} target="_blank"
                                                  rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
-            pl: <div>Dostępna w&nbsp;2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
+            pl: <div>Dostępna jesienią 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
                 href={NOCTURINE_URL}
                 target="_blank"
                 rel="noopener noreferrer"><strong>FATHOM
