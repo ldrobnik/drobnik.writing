@@ -201,13 +201,6 @@ export const BlogNote = props => {
         //lets the Redux store know that the Text page is currently displayed
         setCurrentPage('blog');
 
-        // //show content after a while if page has loaded
-        // if (props.loaded) showContent();
-
-    });
-
-    useEffect(() => {
-
         //if the blog note hasn't been loaded yet, identify the blog note based on the URL
         if (note.length < 1) identifyBlogNote();
 
