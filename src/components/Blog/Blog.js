@@ -10,7 +10,15 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../posed';
-import {BlogTopAnchor, BlogWrapper, MainPageBlogBio, BlogSectionHeading, BlogTitle, SectionSeparator, FADE_DURATION} from '../../styled';
+import {
+    BlogTopAnchor,
+    BlogWrapper,
+    MainPageBlogBio,
+    BlogSectionHeading,
+    BlogTitle,
+    SectionSeparator,
+    FADE_DURATION
+} from '../../styled';
 import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT} from './../../data/constants';
 import FilteredCategory from './FilteredCategory/FilteredCategory';
 import Teaser from './Teaser/Teaser';
@@ -110,24 +118,6 @@ export const Blog = props => {
     }
 
     useEffect(() => {
-
-        //reload page when url changes
-        reloadPage();
-
-        //if the url contains category name, filter blog notes by this category
-        let categoryToFilter = checkFiltering();
-
-        if (checkFiltering()) {
-            setLatestNote(filterByCategory(categoryToFilter)[0]); // sets the latest note
-            setOlderNotes(removeFirstElement(filterByCategory(categoryToFilter))); // sets older notes
-        } else {
-            setLatestNote(BLOG_NOTES[0]); // sets the latest note
-            setOlderNotes(removeFirstElement(BLOG_NOTES)); // sets older notes
-        }
-
-    }, [props.location.pathname])
-
-    useEffect(() => {
         //Update page title with the piece title
         document.title = WEBSITE_TEXT.blog.title;
 
@@ -149,6 +139,25 @@ export const Blog = props => {
         }
 
     });
+
+    useEffect(() => {
+
+        //reload page when url changes
+        reloadPage();
+
+        //if the url contains category name, filter blog notes by this category
+        let categoryToFilter = checkFiltering();
+
+        if (checkFiltering()) {
+            setLatestNote(filterByCategory(categoryToFilter)[0]); // sets the latest note
+            setOlderNotes(removeFirstElement(filterByCategory(categoryToFilter))); // sets older notes
+        } else {
+            setLatestNote(BLOG_NOTES[0]); // sets the latest note
+            setOlderNotes(removeFirstElement(BLOG_NOTES)); // sets older notes
+        }
+
+    }, [props.location.pathname])
+
 
     //do not show the content until the page is loaded
     return props.loaded &&
