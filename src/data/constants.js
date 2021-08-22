@@ -916,7 +916,7 @@ export const BOOKS = [
                     najlepsza przyjaciółka także znika, podczas gdy czarne sześciany na niebie zaczynają się mnożyć,
                     zabierając coraz więcej miejskiej przestrzeni.</p>
                 <p><em>NOCTURINE</em> to zbiór powiązanych fabularnie opowiadań, który zabiera czytelnika na
-                    niejednoznaczną gatunkowo podróż z&nbsp;Poznania pożeranego przez ośmiobitową amebę przez dom
+                    gatunkowo niepokorną podróż z&nbsp;Poznania pożeranego przez ośmiobitową amebę przez dom
                     złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze
                     ludzkiego ciała. Każdy z&nbsp;sześciu tekstów ma innego narratora, który snuje opowieść
                     w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
@@ -1130,7 +1130,7 @@ export const WEBSITE_TEXT = {
         title: 'Łukasz Drobnik',
         subtitle: {
             en: 'author of genre-bending fiction',
-            pl: 'autor niejednoznacznej gatunkowo prozy'
+            pl: 'autor gatunkowo niepokornej prozy'
         },
         altText: {
             en: 'Author’s photo',
@@ -1174,7 +1174,7 @@ export const WEBSITE_TEXT = {
                     wysokoartystyczną
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków. Do tego jestem ogromnym fanem <em>flash
                         fiction</em> (nie stronię jednak od dłuższych form). Mieszkam w Krakowie.</p>
-                <p>W&nbsp;tym roku ukażą się moje dwie niejednoznaczne gatunkowo książki: zbiór powiązanych fabularnie opowiadań <AnchorLink
+                <p>W&nbsp;tym roku ukażą się moje dwie gatunkowo niepokorne książki: zbiór powiązanych fabularnie opowiadań <AnchorLink
                     href='#nocturine'
                     offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href={NOCTURINE_URL}
                                                                                           target="_blank"
