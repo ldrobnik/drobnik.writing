@@ -39,7 +39,7 @@ import {TREASURES_PL} from './texts/treasures-pl';
 import nocturineCover from '../assets/images/nocturineCover.jpg';
 import nocCunCover from '../assets/images/nocCunCover.jpg';
 import vostokCover from '../assets/images/vostokCover.jpg';
-// import tbaCover from '../assets/images/tbaCover.jpg';
+// import tbaCover from '../images/images/tbaCover.jpg';
 
 //Frequently used URLs
 
