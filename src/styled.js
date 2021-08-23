@@ -1147,6 +1147,21 @@ export const BlogPost = styled.div`
       font-size: 1.8em;
     }
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.2em;
+  }
+
+  p + sup {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 1.2em;
+  }
+  
+  img {
+    margin: 0.8em 0;
+  }
 
   a {
     text-decoration: underline;
