@@ -1406,7 +1406,7 @@ export const BLOG_NOTES = [
     {
         id: 'markdown-quick-guide',
         title: 'Markdown Quick Guide',
-        date: ['2021', '08', '20'],
+        date: ['2021', '08', '30'],
         category: 'code',
         related: ['markdown-for-creative-writers'],
         imageCredits: {

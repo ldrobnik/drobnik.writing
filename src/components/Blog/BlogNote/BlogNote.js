@@ -291,11 +291,14 @@ export const BlogNote = props => {
                                 alt={imageCredits.alt}
                                 onLoad={() => showImage()}
                             />
-                            <figcaption>
-                                <TopImageCredits>
-                                    {`${WEBSITE_TEXT.blog.imageBy} ${imageCredits.author} ${WEBSITE_TEXT.blog.via} ${imageCredits.source}`}
-                                </TopImageCredits>
-                            </figcaption>
+                            {
+                                imageCredits.author &&
+                                <figcaption>
+                                    <TopImageCredits>
+                                        {`${WEBSITE_TEXT.blog.imageBy} ${imageCredits.author} ${WEBSITE_TEXT.blog.via} ${imageCredits.source}`}
+                                    </TopImageCredits>
+                                </figcaption>
+                            }
                         </figure>
                     </TopImageWrapper>}
                 </AnimatedContent>
