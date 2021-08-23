@@ -1,6 +1,6 @@
 Markdown is a fast and easy way to create formatted text—with headings, paragraphs, links, and the like—using just plain text.
 
-You can use Markdown to write software documentation, blog notes, or [your next best-selling novel)(https://drobnik.co/blog/markdown-for-creative-writers).
+You can use Markdown to write software documentation, blog notes, or [your next best-selling novel](https://drobnik.co/blog/markdown-for-creative-writers).
 
 It has a simple, intuitive syntax that’s both easy to write and easy to understand. It’s also easy to learn—here’s a quick guide that will let you do just so.
 
@@ -212,9 +212,8 @@ To create a code block, add three backticks (```) on the lines before and after 
 
 ## Resources
 
-If you want to learn more about Markdown, here are some useful resources:
+If you want to learn more about Markdown, here are a couple of useful resources:
 
 - [Short Markdown tutorial](https://commonmark.org/help/tutorial/index.html)
 - [Markdown cheat sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-- [Collection of Markdown tools](https://github.com/mundimark/awesome-markdown)
 

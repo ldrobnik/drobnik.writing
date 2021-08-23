@@ -2,7 +2,7 @@ You might have heard about Markdown—it’s an easy way to create formatted doc
 
 Markdown syntax is so intuitive you can write a nicely formatted text without even thinking.
 
-Unlike HTML or XML, Markdown is also insanely easy to read. For instance, a header is just a line of text with one or more hashes before it:
+Unlike HTML or XML, Markdown is insanely easy to read. For instance, a header is just a line of text with one or more hash signs before it:
 
 ```md
 # Heading level 1
@@ -40,7 +40,7 @@ The rest of Markdown syntax is similarly straightforward. To learn more about it
 
 ## Why use Markdown for your writing
 
-Did you ever spend a good portion of your writing session adjusting indentation or paragraph spacing?
+Did you ever spend a good portion of your writing session fiddling with indentation or paragraph spacing?
 
 Markdown takes such distractions out of your way. You can write first and worry about the formatting later.
 
@@ -58,9 +58,7 @@ Markdown files are also great for version control. Solutions for programmers suc
 
 ## Choosing the right editor
 
-You can create Markdown documents in any text editor–just remember to replace the **.txt** extension with **.md** when saving.
-
-This means you can use Notepad for Windows or TextEditor for macOS although there are more convenient options.
+You can create Markdown documents in any text editor, such as Notepad for Windows or TextEditor for macOS, although you may want to try more convenient options.
 
 Windows users might enjoy [ghostwriter](https://wereturtle.github.io/ghostwriter/). This free editor provides live preview of your document and comes with  built-in light and dark themes.
 
@@ -80,11 +78,11 @@ Of course, at some point you will want to save your manuscript in a rich-text fo
 
 As much as I love writing in Markdown, I much prefer doing revisions in Word. Not to mention that your prospective publisher wouldn’t be too happy about receiving a Markdown file. 
 
-Fortunately, tools such as [Pandoc](https://pandoc.org/) (available for both macOS and Windows) let you convert Markdown files into a variety of formats, and *vice versa*. Pandoc integrates with Pandora, which makes exporting files super easy. 
+Fortunately, tools such as [Pandoc](https://pandoc.org/) (available for both macOS and Windows) let you convert Markdown files into a variety of formats, and *vice versa*. Pandoc integrates with Typora, which makes exporting files super easy. 
 
-![Exporting a Markdown file using Pandora and Pandoc](https://drobnik.co/images/md-for-writers-exporting.jpg)
+![Exporting a Markdown file from Typora using Pandoc](https://drobnik.co/images/md-for-writers-exporting.jpg)
 
-<sup>Exporting a Markdown file using Pandora and Pandoc</sup>
+<sup>Exporting a Markdown file from Typora using Pandoc</sup>
 
 Even if you prefer writing in a traditional word processor such as Word, you can still make use of Markdown.
 
@@ -96,4 +94,4 @@ Although not ideal for all cases, Markdown can make your writing process easier 
 
 It can be especially good for procrastinators. Writing in Markdown is much more distraction-free than working with traditional word processors. Markdown files are also great for back-ups and version control.
 
-Try writing next poem, essay, or story in Markdown. Chances are you’ll make it one of your essential writing tools. 
+Try writing your next poem, essay, or story in Markdown. Chances are you’ll make it one of your essential writing tools. 
