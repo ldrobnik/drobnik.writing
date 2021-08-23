@@ -1337,16 +1337,17 @@ export const TeaserWrapper = styled.div`
 
 export const BlogNoteTeaserTitle = styled.h2`
   font-size: ${props => props.theme.blogTitleSize};
+  margin: 1em 0 0 0;
 `;
 
 export const BlogNoteTitle = styled.h1`
   font-size: ${props => props.theme.blogTitleSize};
-  margin: 0;
+  margin: 1em 0 0 0;
 `;
 
 export const BlogNoteCategory = styled.div`
   font-size: ${props => props.theme.bodySize};
-  margin-top: 0.6em;
+  margin: 1em 0 0.5em 0;
 
   @media all and (min-width: ${props => props.theme.smallScr}) {
     &:hover {
@@ -1392,7 +1393,6 @@ export const BlogNoteReadMore = styled.div`
   text-transform: uppercase;
 `;
 
-/* TopImage.js */
 export const TopImageWrapper = styled.div`
 
   margin-bottom: 0.5em;
