@@ -1391,6 +1391,32 @@ export const WEBSITE_TEXT = {
 //Content and data of blog notes
 export const BLOG_NOTES = [
     {
+        id: 'markdown-for-creative-writers',
+        title: 'Markdown for Creative Writers',
+        date: ['2021', '08', '30'],
+        category: 'writing',
+        related: ['markdown-quick-guide'],
+        imageCredits: {
+            author: '',
+            source: '',
+            alt: ''
+        }
+
+    },
+    {
+        id: 'markdown-quick-guide',
+        title: 'Markdown Quick Guide',
+        date: ['2021', '08', '20'],
+        category: 'code',
+        related: ['markdown-for-creative-writers'],
+        imageCredits: {
+            author: '',
+            source: '',
+            alt: ''
+        }
+
+    },
+    {
         id: 'markdown',
         title: 'Basic Markdown syntax',
         date: ['2021', '08', '01'],
