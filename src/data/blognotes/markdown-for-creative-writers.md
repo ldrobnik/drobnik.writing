@@ -92,7 +92,7 @@ Export your manuscript as a Markdown file at the end of each writing session, an
 
 ## Conclusion
 
-Although not ideal for some cases, Markdown can make your writing process easier and faster.
+Although not ideal for all cases, Markdown can make your writing process easier and faster.
 
 It can be especially good for procrastinators. Writing in Markdown is much more distraction-free than working with traditional word processors. Markdown files are also great for back-ups and version control.
 
