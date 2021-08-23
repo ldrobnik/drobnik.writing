@@ -1133,8 +1133,9 @@ export const BlogTitle = styled.h1`
 
 export const BlogPost = styled.div`
 
+  font-family: ${props => props.theme.sansSerif};
   font-size: ${props => props.theme.blogSize};
-  line-height: 1.4;
+  line-height: 1.5;
 
   h1 {
     font-size: 3em;
