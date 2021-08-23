@@ -1000,6 +1000,7 @@ export const BlackAndWhiteTheme = styled.div`
   .colouredBackground {
     background-color: ${props => props.theme.darkColor};
   }
+
 `;
 
 
@@ -1017,6 +1018,9 @@ export const NocturineTheme = styled.div`
     background-color: ${props => props.theme.nocturineColor};
   }
 
+  .tintedImage:after {
+    background-color: rgba(218, 175, 181, 0.2);
+  }
 `;
 
 export const VostokTheme = styled.div`
@@ -1032,6 +1036,10 @@ export const VostokTheme = styled.div`
     color: white;
     background-color: ${props => props.theme.vostokColor};
   }
+
+  .tintedImage:after {
+    background-color: rgba(231, 184, 76, 0.2);
+  }
 `;
 
 export const WritingTheme = styled.div`
@@ -1046,6 +1054,10 @@ export const WritingTheme = styled.div`
   & ::selection {
     color: white;
     background-color: ${props => props.theme.writingColor};
+  }
+  
+  .tintedImage:after {
+    background-color: rgba(255, 233, 28, 0.2);
   }
 
 `;
@@ -1064,6 +1076,10 @@ export const CodeTheme = styled.div`
     background-color: ${props => props.theme.codeColor};
   }
 
+  .tintedImage:after {
+    background-color: rgba(77, 179, 255, 0.2);
+  }
+
 `;
 
 export const BiologyTheme = styled.div`
@@ -1079,6 +1095,10 @@ export const BiologyTheme = styled.div`
   & ::selection {
     color: white;
     background-color: ${props => props.theme.biologyColor};
+  }
+
+  .tintedImage:after {
+    background-color: rgba(0, 197, 144, 0.2);
   }
 `;
 
@@ -1096,6 +1116,10 @@ export const PopTheme = styled.div`
     color: white;
     background-color: ${props => props.theme.popColor};
   }
+
+  .tintedImage:after {
+    background-color: rgba(255, 116, 24, 0.2);
+  }
 `;
 
 export const LiteraryTheme = styled.div`
@@ -1111,6 +1135,10 @@ export const LiteraryTheme = styled.div`
   & ::selection {
     color: white;
     background-color: ${props => props.theme.literaryColor};
+  }
+
+  .tintedImage:after {
+    background-color: rgba(244, 123, 161, 0.2);
   }
 `;
 
@@ -1370,6 +1398,18 @@ export const TopImageWrapper = styled.div`
   margin-bottom: 0.5em;
   text-align: center;
   padding: 0;
+  position: relative;
+  
+  &:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+  }
+
   figure {
     margin: 0;
     padding: 0;

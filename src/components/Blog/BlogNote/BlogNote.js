@@ -284,23 +284,24 @@ export const BlogNote = props => {
             <ThemeWrapper theme={noteCategory}>
                 <AnimatedContent
                     pose={visible ? 'visible' : 'hidden'}>
-                    {(imageSrc.length > 0) && <TopImageWrapper>
+                    {(imageSrc.length > 0) &&
+                    <TopImageWrapper className={'tintedImage'}>
                         <figure>
                             <img
                                 src={imageSrc}
                                 alt={imageCredits.alt}
                                 onLoad={() => showImage()}
                             />
-                            {
-                                imageCredits.author &&
-                                <figcaption>
-                                    <TopImageCredits>
-                                        {`${WEBSITE_TEXT.blog.imageBy} ${imageCredits.author} ${WEBSITE_TEXT.blog.via} ${imageCredits.source}`}
-                                    </TopImageCredits>
-                                </figcaption>
-                            }
                         </figure>
                     </TopImageWrapper>}
+                    {
+                        imageCredits.author &&
+                        <figcaption>
+                            <TopImageCredits>
+                                {`${WEBSITE_TEXT.blog.imageBy} ${imageCredits.author} ${WEBSITE_TEXT.blog.via} ${imageCredits.source}`}
+                            </TopImageCredits>
+                        </figcaption>
+                    }
                 </AnimatedContent>
                 <AnimatedContent
                     pose={visible ? 'visible' : 'hidden'}>
