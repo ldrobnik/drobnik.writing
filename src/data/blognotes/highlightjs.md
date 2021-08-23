@@ -25,4 +25,6 @@ return (
 }
 ```
 
+![The repository settings button](https://drobnik-test.netlify.app/assets/images/md-for-writers-typora.gif)
+
 tsx is not yet supported by highlight.js [#1155](https://github.com/highlightjs/highlight.js/issues/1155)
