@@ -1,8 +1,8 @@
-Markdown is a fast and easy way to create formatted text—with headings, paragraphs, links, and the like—using just plain text.
+Markdown is a fast and easy way to create formatted text—with headings, paragraphs, links, and the like—using plain text.
 
 You can use Markdown to write software documentation, blog notes, or [your next best-selling novel](https://drobnik.co/blog/markdown-for-creative-writers).
 
-It has a simple, intuitive syntax that’s both easy to write and easy to understand. It’s also easy to learn—here’s a quick guide that will let you do just so.
+It has a simple, intuitive syntax that’s both easy to write and easy to understand. Markdown is also easy to learn—here’s a quick guide that will help you with that.
 
 ## Headings
 
