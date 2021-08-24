@@ -58,7 +58,7 @@ Markdown files are also great for **version control**. Solutions for programmers
 
 ## Choosing the right editor
 
-You can create Markdown documents in any plain text editor, such as Notepad for Windows or TextEditor for macOS, but I encourage you to try more convenient options.
+You can create Markdown documents in any plain text editor, such as Notepad, but I encourage you to try more convenient options.
 
 Windows users might enjoy [ghostwriter](https://wereturtle.github.io/ghostwriter/). This free editor provides a live preview of your document and comes with  built-in light and dark themes.
 
