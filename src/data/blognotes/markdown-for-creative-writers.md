@@ -1,6 +1,6 @@
 You might have heard about Markdown—it’s an easy way to create formatted documents in a plain text editor.
 
-Markdown syntax is so intuitive you can write a nicely formatted text without even thinking.
+Markdown syntax is so intuitive you can write nicely formatted text without even thinking.
 
 Unlike HTML or XML, Markdown is insanely easy to read. For instance, a heading is just a line of text with one or more hash signs before it:
 
@@ -50,7 +50,7 @@ Markdown takes such distractions out of your way. You can **write first and worr
 
 What’s more, Markdown documents are essentially text files, so they’re extremely lightweight. This makes **storage and back-ups** much easier.
 
-Markdown files are also great for **version control**. Solutions for programmers such as [GitHub](https://github.com/) or [BitBucket](https://bitbucket.org/) let you track every single change made to your manuscript. This way you can easily go back to earlier versions of your text, for example to revive one of your killed darlings.
+Markdown files are also great for **version control**. Solutions for programmers such as [GitHub](https://github.com/) or [Bitbucket](https://bitbucket.org/) let you track every single change made to your manuscript. This way you can easily go back to earlier versions of your text, for example to revive one of your killed darlings.
 
 ![Version control of a Markdown document using GitHub Desktop](https://drobnik.co/images/md-for-writers-github.jpg)
 
@@ -94,6 +94,6 @@ Export your manuscript as a Markdown file at the end of each writing session, an
 
 Although not ideal for all cases, Markdown can make your writing process easier and faster.
 
-It can be especially good for procrastinators. Writing in Markdown is much more distraction-free than working with traditional word processors. Markdown files are also great for back-ups and version control.
+It may be especially good for procrastinators. Writing in Markdown is much more distraction-free than working with traditional word processors. Markdown files are also great for back-ups and version control.
 
 Try writing your next poem, essay, or story in Markdown. Chances are you’ll make it one of your essential writing tools. 
