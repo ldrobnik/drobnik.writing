@@ -96,4 +96,4 @@ Although not ideal for all cases, Markdown can make your writing process easier 
 
 It may be especially good for procrastinators. Writing in Markdown is much more distraction-free than working with traditional word processors. Markdown files are also great for back-ups and version control.
 
-Try writing your next poem, essay, or story in Markdown. Chances are you’ll make it one of your essential writing tools. 
+Try writing your next poem, essay, or story in Markdown. Chances are you’ll make it one of your favourite writing tools. 
