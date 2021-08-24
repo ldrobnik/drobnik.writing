@@ -110,6 +110,21 @@ export const Blog = props => {
         return filteredNotes;
     }
 
+    //handles all operations related to category filtering
+    const handleCategoryFiltering = () => {
+        //if the url contains category name, filter blog notes by this category
+        let categoryToFilter = checkFiltering();
+
+        if (checkFiltering()) {
+            setLatestNote(filterByCategory(categoryToFilter)[0]); // sets the latest note
+            setOlderNotes(removeFirstElement(filterByCategory(categoryToFilter))); // sets older notes
+        } else {
+            setLatestNote(BLOG_NOTES[0]); // sets the latest note
+            setOlderNotes(removeFirstElement(BLOG_NOTES)); // sets older notes
+        }
+
+    };
+
     //returns an an array without its first element
     const removeFirstElement = (array) => {
         let [, ...shortenedArray] = array;
@@ -142,19 +157,26 @@ export const Blog = props => {
 
     useEffect(() => {
 
+        //check if category should be filtered and adjust state accordingly
+        handleCategoryFiltering();
+
+        //clean up state when unmounting
+        return () => {
+            setLatestNote('');
+            setOlderNotes('');
+            setFilteredCagetory('');
+
+        }
+
+    }, []);
+
+    useEffect(() => {
+
         //reload page when url changes
         reloadPage();
 
-        //if the url contains category name, filter blog notes by this category
-        let categoryToFilter = checkFiltering();
-
-        if (checkFiltering()) {
-            setLatestNote(filterByCategory(categoryToFilter)[0]); // sets the latest note
-            setOlderNotes(removeFirstElement(filterByCategory(categoryToFilter))); // sets older notes
-        } else {
-            setLatestNote(BLOG_NOTES[0]); // sets the latest note
-            setOlderNotes(removeFirstElement(BLOG_NOTES)); // sets older notes
-        }
+        //check if category should be filtered and adjust state accordingly
+        handleCategoryFiltering();
 
     }, [props.location.pathname])
 

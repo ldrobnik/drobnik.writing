@@ -217,7 +217,7 @@ export const BlogNote = props => {
             importImage(noteId);
         }
 
-    }, [noteId]);
+    }, [props.location.pathname, noteId]);
 
     //load a new blog note anytime the path changes
     useEffect(() => {
@@ -276,7 +276,7 @@ export const BlogNote = props => {
     }, [props.reload]);
 
     //do not show the content until the page is loaded
-    return props.loaded && (noteId.length > 20) &&
+    return props.loaded && (noteId.length > 1) &&
         <BlogWrapper>
             <BlogTopAnchor>
                 <div id='top'></div>
