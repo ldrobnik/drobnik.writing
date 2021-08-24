@@ -1001,6 +1001,10 @@ export const BlackAndWhiteTheme = styled.div`
     background-color: ${props => props.theme.darkColor};
   }
 
+  img {
+    border: ${props => props.theme.darkColor} 1px solid;
+  }
+
 `;
 
 
@@ -1021,6 +1025,10 @@ export const NocturineTheme = styled.div`
   .tintedImage:after {
     background-color: rgba(218, 175, 181, 0.2);
   }
+
+  img {
+    border: ${props => props.theme.nocturineColor} 1px solid;
+  }
 `;
 
 export const VostokTheme = styled.div`
@@ -1040,6 +1048,11 @@ export const VostokTheme = styled.div`
   .tintedImage:after {
     background-color: rgba(231, 184, 76, 0.2);
   }
+
+  img {
+    border: ${props => props.theme.vostokColor} 1px solid;
+  }
+  
 `;
 
 export const WritingTheme = styled.div`
@@ -1058,6 +1071,10 @@ export const WritingTheme = styled.div`
   
   .tintedImage:after {
     background-color: rgba(255, 233, 28, 0.2);
+  }
+  
+  img {
+    border: ${props => props.theme.writingColor} 1px solid;
   }
 
 `;
@@ -1080,6 +1097,10 @@ export const CodeTheme = styled.div`
     background-color: rgba(77, 179, 255, 0.2);
   }
 
+  img {
+    border: ${props => props.theme.codeColor} 1px solid;
+  }
+
 `;
 
 export const BiologyTheme = styled.div`
@@ -1100,6 +1121,11 @@ export const BiologyTheme = styled.div`
   .tintedImage:after {
     background-color: rgba(0, 197, 144, 0.2);
   }
+
+  img {
+    border: ${props => props.theme.biologyColor} 1px solid;
+  }
+  
 `;
 
 export const PopTheme = styled.div`
@@ -1120,6 +1146,11 @@ export const PopTheme = styled.div`
   .tintedImage:after {
     background-color: rgba(255, 116, 24, 0.2);
   }
+
+  img {
+    border: ${props => props.theme.popColor} 1px solid;
+  }
+  
 `;
 
 export const LiteraryTheme = styled.div`
@@ -1139,6 +1170,10 @@ export const LiteraryTheme = styled.div`
 
   .tintedImage:after {
     background-color: rgba(244, 123, 161, 0.2);
+  }
+
+  img {
+    border: ${props => props.theme.literaryColor} 1px solid;
   }
 `;
 
@@ -1177,7 +1212,11 @@ export const BlogPost = styled.div`
     }
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2 {
+    margin-top: 1.5em;
+  }
+
+  h3, h4, h5, h6 {
     margin-top: 1.2em;
   }
 
@@ -1185,11 +1224,16 @@ export const BlogPost = styled.div`
     width: 100%;
     display: block;
     text-align: center;
-    margin-bottom: 1.2em;
+    margin-bottom: 2em;
+    margin-top: 0;
   }
   
   img {
-    margin: 0.8em 0;
+    max-width: 100%;
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
   }
 
   a {
@@ -1228,14 +1272,7 @@ export const BlogWrapper = styled.div`
   .centered {
     text-align: center;
   }
-
-  img {
-    max-width: 100%;
-    display: block;
-    margin: 10px;
-    box-sizing: border-box;
-  }
-
+  
   @media all and (min-width: ${props => props.theme.extraSmallScr}) {
     padding: 7em 3em 2em 3em;
   }
@@ -1419,6 +1456,7 @@ export const TopImageWrapper = styled.div`
     width: 100%;
     padding: 0;
     margin: 0;
+    border: none;
   }
 `;
 
