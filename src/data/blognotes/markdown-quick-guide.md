@@ -2,7 +2,7 @@ Markdown is a fast and easy way to create formatted text—with headings, paragr
 
 You can use Markdown to write software documentation, blog notes, or [your next best-selling novel](https://drobnik.co/blog/markdown-for-creative-writers).
 
-It has a simple, intuitive syntax that’s both easy to write and easy to understand. Markdown is also easy to learn—here’s a quick guide that will help you with that.
+It has simple, intuitive syntax that’s both easy to write and easy to understand. Markdown is also easy to learn—here’s a quick guide that will help you with that.
 
 ## Headings
 
@@ -132,7 +132,7 @@ To create an ordered list, start each line with a number followed by a full stop
 
 ## Links
 
-If you want to create a link, enclose the text to be displayed in square brackets and follow it immediately with the URL in round brackets.
+If you want to create a link, enclose a text to be displayed in square brackets and follow it immediately with a URL in round brackets.
 
 ```md
 [Example website](https://example.com)
@@ -212,7 +212,7 @@ To create a code block, add three backticks (```) on the lines before and after 
 
 ## Resources
 
-If you want to learn more about Markdown or refresh your knowledge, here are a couple of useful resources:
+If you want to learn more about Markdown, here are a couple of useful resources:
 
 - [Short Markdown tutorial](https://commonmark.org/help/tutorial/index.html)
 - [Markdown cheat sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)

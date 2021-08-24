@@ -74,7 +74,7 @@ What’s ground-breaking about Typora’s design is that it gets rid of the prev
 
 **Note:** The current, beta version of Typora is free but—according to the official website—the software will finally cost $9–15 per licence.
 
-## Converting Markdown files to rich text
+## Converting Markdown to rich text
 
 Of course, at some point you will want to save your manuscript in a rich-text format, such as .doc or .docx.
 
