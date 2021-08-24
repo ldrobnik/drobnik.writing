@@ -41,7 +41,7 @@ export const App = props => {
         blogTitleSize: '2.5em',
         subtitleSize: '1.5em',
         bodySize: '1.3em',
-        blogSize: '1.1em',
+        smallBodySize: '1.1em',
         captionSize: '1em',
         smallCaptionSize: '0.8em',
 

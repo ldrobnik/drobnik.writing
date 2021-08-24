@@ -1197,8 +1197,12 @@ export const BlogTitle = styled.h1`
 export const BlogPost = styled.div`
 
   font-family: ${props => props.theme.sansSerif};
-  font-size: ${props => props.theme.blogSize};
+  font-size: ${props => props.theme.bodySize};
   line-height: 1.5;
+
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    font-size: ${props => props.theme.smallBodySize};
+  }
 
   h1 {
     font-size: 3em;
@@ -1375,11 +1379,20 @@ export const TeaserWrapper = styled.div`
 export const BlogNoteTeaserTitle = styled.h2`
   font-size: ${props => props.theme.blogTitleSize};
   margin: 1em 0 0 0;
+
+  @media all and (max-width: ${props => props.theme.extraSmallScr}) {
+    font-size: 10vw;
+  }
+  
 `;
 
 export const BlogNoteTitle = styled.h1`
   font-size: ${props => props.theme.blogTitleSize};
   margin: 1em 0 0 0;
+
+  @media all and (max-width: ${props => props.theme.extraSmallScr}) {
+    font-size: 10vw;
+  }
 `;
 
 export const BlogNoteCategory = styled.div`
@@ -1390,6 +1403,10 @@ export const BlogNoteCategory = styled.div`
     &:hover {
       animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
     }
+  }
+
+  @media all and (max-width: ${props => props.theme.extraSmallScr}) {
+    font-size: 6vw;
   }
 `;
 
