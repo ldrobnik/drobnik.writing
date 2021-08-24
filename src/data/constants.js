@@ -1410,7 +1410,7 @@ export const BLOG_NOTES = [
         imageCredits: {
             author: '',
             source: '',
-            alt: 'A text editor with the beginning of Joyce’s Ulysses written in Markdown'
+            alt: 'A text editor with the beginning of Woolfs’s Mrs. Dalloway written in Markdown'
         }
 
     },
