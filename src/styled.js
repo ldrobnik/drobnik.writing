@@ -1461,7 +1461,7 @@ export const TopImageWrapper = styled.div`
     display: block;
     top: 0;
     left: 0;
-    content: "";
+    content: '';
   }
 
   figure {
@@ -1474,6 +1474,7 @@ export const TopImageWrapper = styled.div`
     padding: 0;
     margin: 0;
     border: none;
+    vertical-align: top;
   }
 `;
 

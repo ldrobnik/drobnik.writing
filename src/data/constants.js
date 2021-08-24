@@ -880,7 +880,7 @@ export const BOOKS = [
         url: NOCTURINE_URL,
         slogan: {
             en: <div>Forthcoming autumn 2021 from <a href={NOCTURINE_URL} target="_blank"
-                                                 rel="noopener noreferrer"><strong>FATHOM
+                                                     rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
             pl: <div>Dostępna jesienią 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
                 href={NOCTURINE_URL}
@@ -1050,8 +1050,8 @@ export const BOOKS = [
 export const WEBSITE_TEXT = {
     author: 'Łukasz Drobnik',
     title: {
-      en: 'author of genre-bending fiction',
-      pl: 'autor gatunkowo niepokornej prozy'
+        en: 'author of genre-bending fiction',
+        pl: 'autor gatunkowo niepokornej prozy'
     },
     navbar: {
         home: {
@@ -1179,11 +1179,12 @@ export const WEBSITE_TEXT = {
                     wysokoartystyczną
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków. Do tego jestem ogromnym fanem <em>flash
                         fiction</em> (nie stronię jednak od dłuższych form). Mieszkam w Krakowie.</p>
-                <p>W&nbsp;tym roku ukażą się moje dwie gatunkowo niepokorne książki: zbiór powiązanych fabularnie opowiadań <AnchorLink
-                    href='#nocturine'
-                    offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href={NOCTURINE_URL}
-                                                                                          target="_blank"
-                                                                                          rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>)
+                <p>W&nbsp;tym roku ukażą się moje dwie gatunkowo niepokorne książki: zbiór powiązanych fabularnie
+                    opowiadań <AnchorLink
+                        href='#nocturine'
+                        offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href={NOCTURINE_URL}
+                                                                                              target="_blank"
+                                                                                              rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>)
                     i&nbsp;powieść <AnchorLink
                         href='#vostok'
                         offset="60px"><strong>VOSTOK</strong></AnchorLink> (wydawnictwo <a
@@ -1371,10 +1372,15 @@ export const WEBSITE_TEXT = {
         author: 'Łukasz Drobnik',
         bio:
             {
-               links: ['ŁUKASZ DROBNIK', 'go to the main page'],
+                links: ['ŁUKASZ DROBNIK', 'go to the main page'],
                 content: <React.Fragment>is the author of genre-bending books, <a
-                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose published in <em>HAD</em>, <em>X-R-A-Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
-                    href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of publications and fiction samples, </React.Fragment>
+                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
+                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose
+                    published in <em>HAD</em>, <em>X-R-A-Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus
+                        Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
+                        Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
+                        href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of
+                    publications and fiction samples, </React.Fragment>
             }
     },
     dataNotice: {
@@ -1428,9 +1434,9 @@ export const BLOG_NOTES = [
         category: 'nocturine',
         related: ['github-pages', 'visual-studio-code', 'github-basics'],
         imageCredits: {
-          author: 'Viktor Obrovsky',
-          source: 'Pixabay',
-          alt: 'Some image'
+            author: 'Viktor Obrovsky',
+            source: 'Pixabay',
+            alt: 'Some image'
         }
 
     },
