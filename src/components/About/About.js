@@ -3,7 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPage} from '../../actions';
 import {AboutWrapper, AboutTopAnchor, AboutSectionWrapper} from '../../styled';
-import {BOOKS, TEXT_NAMES} from './../../data/constants';
+import {BOOKS, TEXT_NAMES, WEBSITE_TEXT} from './../../data/constants';
 import Intro from './Intro/Intro';
 import Book from './Book/Book';
 import Pubs from './Pubs/Pubs';
@@ -11,9 +11,6 @@ import Read from './Read/Read';
 import CopyrightNote from './../UI/CopyrightNote/CopyrightNote';
 
 export const About = props => {
-
-    //part of page title to be displayed depending on the current language
-    const fictionWriter = (props.lang === 'en') ? 'fiction writer' : 'prozaik';
 
     //updates current theme
     const updateTheme = () => {
@@ -44,7 +41,7 @@ export const About = props => {
 
     useEffect(() => {
         //Update page title with the piece title
-        document.title = `Łukasz Drobnik - ${fictionWriter}`;
+        document.title = `${WEBSITE_TEXT.author} - ${WEBSITE_TEXT.title[props.lang]}`;
 
         //change theme to a random one
         updateTheme();

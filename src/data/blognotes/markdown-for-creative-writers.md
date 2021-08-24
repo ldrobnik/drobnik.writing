@@ -12,7 +12,7 @@ Unlike HTML or XML, Markdown is insanely easy to read. For instance, a header is
 
 No wonder then that Markdown has become widely popular among web writers and developers of software documentation. 
 
-But I argue it’s also a great tool for creative writers. Unless your fiction, CNF or poetry requires intricate formatting, you can simplify your writing process by switching to Markdown.
+But I argue it’s also a great tool for creative writers. Unless your fiction, CNF, or poetry requires intricate formatting, you can simplify your writing process by switching to Markdown.
 
 ## Basic syntax
 

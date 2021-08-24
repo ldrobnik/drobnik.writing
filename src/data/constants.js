@@ -1048,6 +1048,11 @@ export const BOOKS = [
 
 //constant containing text used on the website:
 export const WEBSITE_TEXT = {
+    author: 'Łukasz Drobnik',
+    title: {
+      en: 'author of genre-bending fiction',
+      pl: 'autor gatunkowo niepokornej prozy'
+    },
     navbar: {
         home: {
             en: (<React.Fragment>
