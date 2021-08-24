@@ -14,7 +14,7 @@ No wonder then that Markdown has become widely popular among web writers and dev
 
 But I argue it’s also a great tool for creative writers. Unless your fiction, CNF, or poetry requires intricate formatting, you can simplify your writing process by switching to Markdown.
 
-## Basic syntax
+## Basic Markdown syntax
 
 Let’s start with the basics. You already know how to make headings in Markdown. What about paragraphs? It’s simple—all you need to do is add an empty line:
 
@@ -64,7 +64,7 @@ Windows users might enjoy [ghostwriter](https://wereturtle.github.io/ghostwriter
 
 [MacDown](https://macdown.uranusjr.com/) is a similar free tool for macOS. It allows highly customisable Markdown rendering and has some extra features, such as auto-completion.
 
-My Markdown editor of choice, though, is [Typora](https://typora.io/), available for both Windows and macOS.
+My Markdown editor of choice, though, is [Typora](https://typora.io/), available for Windows, macOS, and Linux.
 
 What’s ground-breaking about Typora’s design is that it gets rid of the preview window. Instead, Markdown syntax symbols are seamlessly replaced with a preview of formatted text as you write, offering a distraction-free experience.
 
@@ -80,13 +80,13 @@ Of course, at some point you will want to save your manuscript in a rich-text fo
 
 As much as I love writing in Markdown, I much prefer doing revisions in Word. Not to mention that your prospective publisher wouldn’t be too happy about receiving a Markdown file. 
 
-Fortunately, tools such as [Pandoc](https://pandoc.org/) (available for both macOS and Windows) let you convert Markdown files into a variety of formats, and vice versa. Pandoc integrates with Typora, which makes exporting and importing files super easy. 
+Fortunately, tools such as [Pandoc](https://pandoc.org/) (available for Windows, macOS, and Linux) let you convert Markdown files into a variety of formats, and vice versa. Pandoc integrates with Typora, which makes exporting and importing files super easy. 
 
 ![Exporting a Markdown file from Typora using Pandoc](https://drobnik.co/images/md-for-writers-exporting.jpg)
 
 <sup>Exporting a Markdown file from Typora using Pandoc</sup>
 
-Even if you prefer writing in a traditional word processor such as Word, you can still make use of Markdown.
+Even if you prefer writing in a traditional word processor such as Microsoft Word, you can still make use of Markdown.
 
 Export your manuscript as a Markdown file at the end of each writing session, and you’ll get the benefits of easy back-ups and version control with no revolutionary changes to your writing routine.
 
