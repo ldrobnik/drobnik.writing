@@ -1158,7 +1158,7 @@ export const WEBSITE_TEXT = {
                         rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>.</p>
                 <p>My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly West</em>, <em>Pithead
-                    Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y
+                    Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X&#8209;R&#8209;A&#8209;Y
                     Literary
                     Magazine</em>, and
                     elsewhere. My writing was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
@@ -1193,7 +1193,7 @@ export const WEBSITE_TEXT = {
                 <p>Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly
                     West</em>, <em>Pithead
-                    Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X-R-A-Y
+                    Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X&#8209;R&#8209;A&#8209;Y
                     Literary
                     Magazine</em>. Moja proza trafiła na longlistę <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
                 <p>Jestem też redaktorem naczelnym <a
@@ -1376,7 +1376,7 @@ export const WEBSITE_TEXT = {
                 content: <React.Fragment>is the author of genre-bending books, <a
                     href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
                     href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose
-                    published in <em>HAD</em>, <em>X-R-A-Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus
+                    published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus
                         Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
                         Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
                         href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of
