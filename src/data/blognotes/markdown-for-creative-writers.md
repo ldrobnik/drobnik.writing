@@ -1,8 +1,8 @@
-You might have heard about Markdown—it’s an easy way to create formatted documents in a plain-text editor.
+You might have heard about Markdown—it’s an easy way to create formatted documents in a plain text editor.
 
 Markdown syntax is so intuitive you can write a nicely formatted text without even thinking.
 
-Unlike HTML or XML, Markdown is insanely easy to read. For instance, a header is just a line of text with one or more hash signs before it:
+Unlike HTML or XML, Markdown is insanely easy to read. For instance, a heading is just a line of text with one or more hash signs before it:
 
 ```md
 # Heading level 1
@@ -16,7 +16,7 @@ But I argue it’s also a great tool for creative writers. Unless your fiction, 
 
 ## Basic syntax
 
-Let’s start with the basics. You already now how to make headers in Markdown. What about paragraphs? It’s simple—all you need to do is add an empty line:
+Let’s start with the basics. You already know how to make headings in Markdown. What about paragraphs? It’s simple—all you need to do is add an empty line:
 
 ```md
 This is the first paragraph.
@@ -36,33 +36,33 @@ Bolding is as easy, but you need two asterisks on each side:
 This is some **bold text**.
 ```
 
-The rest of Markdown syntax is similarly straightforward. To learn more about it, read my [quick guide](https://drobnik.co/blog/quick-guide-to-markdown).
+The rest of Markdown syntax is similarly straightforward. To learn more about it, read my [quick guide](https://drobnik.co/blog/markdown-quick-guide).
+
+![Example Markdown document and its preview](https://drobnik.co/images/md-for-writers-example.jpg)
+
+<sup>Example Markdown document and its preview</sup>
 
 ## Why use Markdown for your writing
 
 Did you ever spend a good portion of your writing session fiddling with indentation or paragraph spacing?
 
-Markdown takes such distractions out of your way. You can write first and worry about the formatting later.
+Markdown takes such distractions out of your way. You can **write first and worry about the formatting later**.
 
-![Example Markdown document](https://drobnik.co/images/md-for-writers-example.jpg)
+What’s more, Markdown documents are essentially text files, so they’re extremely lightweight. This makes **storage and back-ups** much easier.
 
-<sup>Example Markdown document</sup>
+Markdown files are also great for **version control**. Solutions for programmers such as [GitHub](https://github.com/) or [BitBucket](https://bitbucket.org/) let you track every single change made to your manuscript. This way you can easily go back to earlier versions of your text, for example to revive one of your killed darlings.
 
-What’s more, Markdown documents are essentially text files, so they’re extremely lightweight. This makes backing them up so much easier.
+![Version control of a Markdown document using GitHub Desktop](https://drobnik.co/images/md-for-writers-github.jpg)
 
-Markdown files are also great for version control. Solutions for programmers such as [GitHub](https://github.com/) or [BitBucket](https://bitbucket.org/) let you track every single change made to your manuscript. This way you can easily go back to earlier versions of your text, for example to revive one of your killed darlings.
-
-![Version control of a Markdown document using GitHub and GitHub Desktop](https://drobnik.co/images/md-for-writers-github.jpg)
-
-<sup>Version control of a Markdown document using GitHub and GitHub Desktop</sup>
+<sup>Version control of a Markdown document using GitHub Desktop</sup>
 
 ## Choosing the right editor
 
-You can create Markdown documents in any text editor, such as Notepad for Windows or TextEditor for macOS, although you may want to try more convenient options.
+You can create Markdown documents in any plain text editor, such as Notepad for Windows or TextEditor for macOS, although I encourage you to try more convenient options.
 
-Windows users might enjoy [ghostwriter](https://wereturtle.github.io/ghostwriter/). This free editor provides live preview of your document and comes with  built-in light and dark themes.
+Windows users might enjoy [ghostwriter](https://wereturtle.github.io/ghostwriter/). This free editor provides a live preview of your document and comes with  built-in light and dark themes.
 
-[MacDown](https://macdown.uranusjr.com/) is a similar tool for macOS. It allows highly customisable Markdown rendering and some additional features, such as auto-completion.
+[MacDown](https://macdown.uranusjr.com/) is a similar free tool for macOS. It allows highly customisable Markdown rendering and has some extra features, such as auto-completion.
 
 My Markdown editor of choice, though, is [Typora](https://typora.io/), available for both Windows and macOS.
 
@@ -72,13 +72,15 @@ What’s ground-breaking about Typora’s design is that it gets rid of the prev
 
 <sup>Dynamic text preview in Typora</sup>
 
-## Converting Markdown files to a rich-text format
+**Note:** The current, beta version of Typora is free but, according to the official website, it will finally cost 9–15$ per licence.
+
+## Converting Markdown files to rich text
 
 Of course, at some point you will want to save your manuscript in a rich-text format, such as .doc or .docx.
 
 As much as I love writing in Markdown, I much prefer doing revisions in Word. Not to mention that your prospective publisher wouldn’t be too happy about receiving a Markdown file. 
 
-Fortunately, tools such as [Pandoc](https://pandoc.org/) (available for both macOS and Windows) let you convert Markdown files into a variety of formats, and *vice versa*. Pandoc integrates with Typora, which makes exporting and importing files super easy. 
+Fortunately, tools such as [Pandoc](https://pandoc.org/) (available for both macOS and Windows) let you convert Markdown files into a variety of formats, and vice versa. Pandoc integrates with Typora, which makes exporting and importing files super easy. 
 
 ![Exporting a Markdown file from Typora using Pandoc](https://drobnik.co/images/md-for-writers-exporting.jpg)
 
@@ -86,7 +88,7 @@ Fortunately, tools such as [Pandoc](https://pandoc.org/) (available for both mac
 
 Even if you prefer writing in a traditional word processor such as Word, you can still make use of Markdown.
 
-Export your manuscript as a Markdown file at the end of each writing session, and you’ll get the benefits of easy back-ups and version control without changing your writing routine.
+Export your manuscript as a Markdown file at the end of each writing session, and you’ll get the benefits of easy back-ups and version control with no revolutionary changes to your writing routine.
 
 ## Conclusion
 

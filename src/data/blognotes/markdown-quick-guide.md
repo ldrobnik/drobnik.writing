@@ -1,4 +1,4 @@
-Markdown is a fast and easy way to create formatted text—with headings, paragraphs, links, and the like—using plain text.
+Markdown is a fast and easy way to create formatted text—with headings, paragraphs, links, and the like—using a plain text editor.
 
 You can use Markdown to write software documentation, blog notes, or [your next best-selling novel](https://drobnik.co/blog/markdown-for-creative-writers).
 
@@ -6,7 +6,7 @@ It has a simple, intuitive syntax that’s both easy to write and easy to unders
 
 ## Headings
 
-To create a heading, add one or more number signs (#) before a line of text.
+To create a heading, add one or more hash signs (#) before a line of text.
 
 ```md
 # Heading level 1
@@ -31,7 +31,7 @@ To create a heading, add one or more number signs (#) before a line of text.
 If you want to create paragraphs, separate portions of text with a blank line.
 
 ```md
-Mrs Dalloway said she would buy the flowers herself.
+Mrs. Dalloway said she would buy the flowers herself.
 
 For Lucy had her work cut out for her.
 ```
@@ -212,7 +212,7 @@ To create a code block, add three backticks (```) on the lines before and after 
 
 ## Resources
 
-If you want to learn more about Markdown, here are a couple of useful resources:
+If you want to learn more about Markdown or refresh your knowledge, here are a couple of useful resources:
 
 - [Short Markdown tutorial](https://commonmark.org/help/tutorial/index.html)
 - [Markdown cheat sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
