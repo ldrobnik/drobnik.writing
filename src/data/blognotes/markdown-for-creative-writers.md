@@ -78,7 +78,7 @@ Of course, at some point you will want to save your manuscript in a rich-text fo
 
 As much as I love writing in Markdown, I much prefer doing revisions in Word. Not to mention that your prospective publisher wouldn’t be too happy about receiving a Markdown file. 
 
-Fortunately, tools such as [Pandoc](https://pandoc.org/) (available for both macOS and Windows) let you convert Markdown files into a variety of formats, and *vice versa*. Pandoc integrates with Typora, which makes exporting files super easy. 
+Fortunately, tools such as [Pandoc](https://pandoc.org/) (available for both macOS and Windows) let you convert Markdown files into a variety of formats, and *vice versa*. Pandoc integrates with Typora, which makes exporting and importing files super easy. 
 
 ![Exporting a Markdown file from Typora using Pandoc](https://drobnik.co/images/md-for-writers-exporting.jpg)
 
