@@ -276,7 +276,7 @@ export const BlogNote = props => {
     }, [props.reload]);
 
     //do not show the content until the page is loaded
-    return props.loaded && (noteId.length > 0) &&
+    return props.loaded && (noteId.length > 20) &&
         <BlogWrapper>
             <BlogTopAnchor>
                 <div id='top'></div>
