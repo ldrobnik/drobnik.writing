@@ -1410,7 +1410,7 @@ export const BLOG_NOTES = [
         imageCredits: {
             author: '',
             source: '',
-            alt: ''
+            alt: 'A text editor with the beginning of Joyce’s Ulysses written in Markdown'
         }
 
     },
@@ -1423,7 +1423,7 @@ export const BLOG_NOTES = [
         imageCredits: {
             author: '',
             source: '',
-            alt: ''
+            alt: 'A text editor showing basics Markdown syntax, such as headings and lists, and its preview'
         }
 
     },
