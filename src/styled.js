@@ -1052,7 +1052,7 @@ export const VostokTheme = styled.div`
   img {
     border: ${props => props.theme.vostokColor} 1px solid;
   }
-  
+
 `;
 
 export const WritingTheme = styled.div`
@@ -1068,11 +1068,11 @@ export const WritingTheme = styled.div`
     color: white;
     background-color: ${props => props.theme.writingColor};
   }
-  
+
   .tintedImage:after {
     background-color: rgba(255, 233, 28, 0.2);
   }
-  
+
   img {
     border: ${props => props.theme.writingColor} 1px solid;
   }
@@ -1125,7 +1125,7 @@ export const BiologyTheme = styled.div`
   img {
     border: ${props => props.theme.biologyColor} 1px solid;
   }
-  
+
 `;
 
 export const PopTheme = styled.div`
@@ -1150,7 +1150,7 @@ export const PopTheme = styled.div`
   img {
     border: ${props => props.theme.popColor} 1px solid;
   }
-  
+
 `;
 
 export const LiteraryTheme = styled.div`
@@ -1215,7 +1215,7 @@ export const BlogPost = styled.div`
       font-size: 1.8em;
     }
   }
-  
+
   h1, h2 {
     margin-top: 1.5em;
   }
@@ -1231,7 +1231,7 @@ export const BlogPost = styled.div`
     margin-bottom: 2em;
     margin-top: 0;
   }
-  
+
   img {
     max-width: 100%;
     display: block;
@@ -1276,7 +1276,7 @@ export const BlogWrapper = styled.div`
   .centered {
     text-align: center;
   }
-  
+
   @media all and (min-width: ${props => props.theme.extraSmallScr}) {
     padding: 7em 3em 2em 3em;
   }
@@ -1383,7 +1383,7 @@ export const BlogNoteTeaserTitle = styled.h2`
   @media all and (max-width: ${props => props.theme.extraSmallScr}) {
     font-size: 10vw;
   }
-  
+
 `;
 
 export const BlogNoteTitle = styled.h1`
@@ -1453,14 +1453,14 @@ export const TopImageWrapper = styled.div`
   text-align: center;
   padding: 0;
   position: relative;
-  
+
   &:after {
     position: absolute;
     height: 100%;
     width: 100%;
+    display: block;
     top: 0;
     left: 0;
-    display: block;
     content: "";
   }
 
