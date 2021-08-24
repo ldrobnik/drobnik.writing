@@ -165,7 +165,6 @@ export const Blog = props => {
             setLatestNote('');
             setOlderNotes('');
             setFilteredCagetory('');
-
         }
 
     }, []);

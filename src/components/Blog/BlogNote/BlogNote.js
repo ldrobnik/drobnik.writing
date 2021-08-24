@@ -50,7 +50,7 @@ export const BlogNote = props => {
     const [noteTitle, setNoteTitle] = useState('');
 
     //publish date of the blog note
-    const [noteDate, setNoteDate] = useState();
+    const [noteDate, setNoteDate] = useState('');
 
     //category of the blog note
     const [noteCategory, setNoteCategory] = useState('');
@@ -233,6 +233,19 @@ export const BlogNote = props => {
 
         //shows content if note is displayed
         if (noteId.length > 0 && imageLoaded) showContent();
+
+        //clean up state when unmounting
+        return () => {
+            setNoteId('');
+            setNoteTitle('');
+            setNoteDate('');
+            setNoteCategory('');
+            setRelatedNotes([]);
+            setImageCredits({});
+            setImageSrc('');
+            setImageLoaded(false);
+            setNote('');
+        }
 
     }, []);
 
