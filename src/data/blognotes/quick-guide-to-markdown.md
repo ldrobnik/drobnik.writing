@@ -216,4 +216,3 @@ If you want to learn more about Markdown, here are a couple of useful resources:
 
 - [Short Markdown tutorial](https://commonmark.org/help/tutorial/index.html)
 - [Markdown cheat sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
