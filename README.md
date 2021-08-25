@@ -22,5 +22,5 @@ A new version of my [author website](https://drobnik.co/) built with **React**. 
 * Navigation bar buttons making use of **FontAwesome** icons
 * **React Waypoint** to display elements depending on the current scroll position
 * Smooth scrolling to anchors by means of **react-anchor-link-smooth-scroll**
-* Dynamically loaded content from Markdown files with **markdown-to-jsx**
+* Content loaded dynamically from Markdown files with **markdown-to-jsx**
 
