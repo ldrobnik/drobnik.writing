@@ -1372,7 +1372,7 @@ export const WEBSITE_TEXT = {
         author: 'Łukasz Drobnik',
         bio:
             {
-                links: ['ŁUKASZ DROBNIK', 'go to the main page'],
+                links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>, <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
                 content: <React.Fragment>is the author of genre-bending books, <a
                     href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
                     href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose
