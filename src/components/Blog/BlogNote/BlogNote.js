@@ -87,8 +87,8 @@ export const BlogNote = props => {
         //an array to hold all notes that match the IDs
         let relatedNotes = [];
 
-        for (let id of relatedNoteIds) {
-            for (let note of BLOG_NOTES) {
+        for (const id of relatedNoteIds) {
+            for (const note of BLOG_NOTES) {
                 //if the id of the note matches the related note id, add it to the array
                 if (note.id === id) {
                     relatedNotes.push(note);

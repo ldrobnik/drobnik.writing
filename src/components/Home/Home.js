@@ -53,7 +53,7 @@ export const Home = props => {
     const checkIfBlogNote = () => {
 
         //loop through all blog note IDs; if there's a match, return the BlogNote component
-        for (let note of BLOG_NOTES) {
+        for (const note of BLOG_NOTES) {
             if (props.location.pathname.includes(note.id)) return <BlogNote {...props}/>;
         }
 

@@ -1351,6 +1351,13 @@ export const FilteredCategoryLink = styled.div`
   }
 `;
 
+/* CategoryPicker.js */
+
+export const CategoryPickerWrapper = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+`;
+
 /* Teaser.js */
 
 export const TeaserWrapper = styled.div`
