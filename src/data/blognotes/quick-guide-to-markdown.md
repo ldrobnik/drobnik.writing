@@ -2,7 +2,7 @@ Markdown is a fast and easy way to create formatted text—with headings, paragr
 
 You can use Markdown to write software documentation, blog notes, or [your next best-selling novel](https://drobnik.co/blog/markdown-for-creative-writers).
 
-It has simple, intuitive syntax that’s both easy to write and easy to understand. Markdown is also easy to learn—here’s a quick guide that will help you with that.
+It has a simple, intuitive syntax that’s both easy to write and easy to understand. Markdown is also easy to learn—here’s a quick guide that will help you with that.
 
 ## Headings
 
@@ -48,20 +48,6 @@ To add a line break, type two or more spaces at the end of the line and press `E
 
 You can add emphasis using asterisks or underscores.
 
-### Bold
-
-To bold a word or phrase, add two asterisks or underscores before and after the text.
-
-```md
-This is some **bold text**.
-
-This is some more __bold text__.
-```
-
-#### Result:
-
-![Formatted document title](https://drobnik.co/images/markdown-bold.jpg)
-
 ### Italic
 
 For an italic typeface, add one asterisk or underscore before and after a text.
@@ -76,13 +62,27 @@ This is some more _italic text_.
 
 ![Formatted document title](https://drobnik.co/images/markdown-italic.jpg)
 
+### Bold
+
+To bold a word or phrase, add two asterisks or underscores before and after the text.
+
+```md
+This is some **bold text**.
+
+This is some more __bold text__.
+```
+
+#### Result:
+
+![Formatted document title](https://drobnik.co/images/markdown-bold.jpg)
+
 ## Lists
 
 You can create both ordered and unordered lists.
 
 ### Unordered lists
 
-To create an unordered list, start each line with a dash (-), asterisk (*), or plus sign (+). You can create a nested list by indenting lines.
+To create an unordered list, start each line with a dash (-), an asterisk (*), or a plus sign (+). You can create a nested list by indenting lines.
 
 ```md
 - First item
