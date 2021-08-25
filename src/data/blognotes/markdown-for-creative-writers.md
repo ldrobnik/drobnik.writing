@@ -36,7 +36,7 @@ Bolding is as easy, but you need two asterisks on each side:
 This is some **bold text**.
 ```
 
-The rest of Markdown syntax is similarly straightforward. To learn more about it, read my [quick guide](https://drobnik.co/blog/markdown-quick-guide).
+The rest of Markdown syntax is similarly straightforward. To learn more about it, read my [quick guide](https://drobnik.co/blog/quick-guide-to-markdown).
 
 ![Example Markdown document and its preview](https://drobnik.co/images/md-for-writers-example.jpg)
 

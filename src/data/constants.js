@@ -1404,9 +1404,9 @@ export const BLOG_NOTES = [
     {
         id: 'markdown-for-creative-writers',
         title: 'Markdown for Creative Writers',
-        date: ['2021', '08', '30'],
+        date: ['2021', '08', '25'],
         category: 'writing',
-        related: ['markdown-quick-guide'],
+        related: ['quick-guide-to-markdown'],
         imageCredits: {
             author: '',
             source: '',
@@ -1415,9 +1415,9 @@ export const BLOG_NOTES = [
 
     },
     {
-        id: 'markdown-quick-guide',
-        title: 'Markdown Quick Guide',
-        date: ['2021', '08', '30'],
+        id: 'quick-guide-to-markdown',
+        title: 'Quick Guide to Markdown',
+        date: ['2021', '08', '25'],
         category: 'code',
         related: ['markdown-for-creative-writers'],
         imageCredits: {
