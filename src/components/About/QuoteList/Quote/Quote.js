@@ -46,7 +46,7 @@ const InvertedCommas = styled.div`
     user-select: none;
 `;
 
-const Quote = (props) => {
+const Quote = props => {
 
     return (
         <Wrapper>

@@ -11,17 +11,18 @@ import {
     PubsSwitchWrapper,
     PubsLabel,
     PubsSubsectionHeading,
-    PubsSeparator
+    PubsSeparator,
+    SectionSeparator,
+    FADE_DURATION
 } from '../../../styled';
 import {AnimatedContent, PubsAnimatedMessage, PubsAnimatedPanel} from '../../../posed';
-import {WEBSITE_TEXT, FADE_DURATION} from './../../../data/constants';
+import {WEBSITE_TEXT} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import ToggleSwitch from './../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
 import SectionLinks from '../SectionLinks/SectionLinks';
-import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';
 
-export const Pubs = (props) => {
+export const Pubs = props => {
 
     //specifies whether texts in English should be displayed
     const [en, setEn] = useState(true);

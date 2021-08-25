@@ -1,0 +1,21 @@
+Superbohaterka musi uratować miasto, lecz w jej kuchni jest pijany mężczyzna. Je banana. Sposób, w jaki łamie ogonek i zrywa całą skórkę jednym brutalnym ruchem, jest dla niej aż nadto znajomy. Kobieta zamyka oczy, tylko na moment, i myśli o chłodnym leśnym powietrzu, swoim policzku na wilgotnym mchu, jego szorstkich rękach pod jej bluzką. Gdy podnosi powieki, skórka już leży na poplamionym niebieskim obrusie — bez życia, jak rozjechane zwierzę.
+
+Za oknem czerwonofutre latające małpy atakują supermarket. Biorą wózki z parkingu i ciskają je w przerażonych klientów, a gdy tak robią, w czarnych dziurach ich ust obracają się całe rzędy zębów.
+
+Powinna tam być, obronić dziewczynkę przed porwaniem, mężczyznę w średnim wieku przed rozdarciem na kawałki, lecz wie, że by jej nie pozwolił. Małpy widzą ją z daleka swoimi laserowymi oczami, ich rekinie zęby łyskają w mroku. Kiedy mężczyzna próbuje ją do siebie przyciągnąć (na jego palcach wciąż drobinki miąższu banana), ona instynktownie się odsuwa.
+
+Później oglądają serial medyczny, udając, że nic się nie stało. On siedzi pośrodku, na wprost swojego brudnego laptopa, pijąc kolejne piwo prosto z puszki, gdy ona zerka na ekran zza gąszczu juk — poza tą minidżunglą pokój jest całkiem martwy. Kobieta liczy piwa, które wypił. Jeszcze jedno i zrobi się ckliwy. Brakuje tylko dwóch lub trzech, nim obudzi się w nim Bestia.
+
+Zawiózł ją do lasu, by odwrócić jej uwagę od tamtego chłopca. Weszli na pło pokrywające jezioro. Trzymali się za ręce, żartując, że to zupełnie nie przypomina spaceru po łóżku wodnym, że to konkretne pło jest całkiem mocne. Warstwy mchu pod ich stopami miały kolor chust chirurgicznych.
+
+Usłyszeli odgłos jakby eksplodującej piłki plażowej. Potem następny. I jeszcze parę. Z licznych otworów w ple, z potwornym, zwielokrotnionym sykiem, szły kłęby czerwonej, ziarnistej materii. Zaczęła biec ile tchu pośród coraz to nowych erupcji. Gdy się odwróciła, on stał wciąż w tym samym miejscu: machał do niej pochłonięty przez obłoki, całkiem nieświadom setek zarodników wchodzących mu do ust, nosa, uszu.
+
+Deszcz wygłodniałych serc prosto z nieba. Chmury naczyń włosowatych tworzących pola siłowe. Kardiomiocytobomby. Żadna z jej supermocy nie mogła go ocalić.
+
+Gonił za nią z szałem w oczach, a z każdym jego krokiem przez mszystą pokrywę przebiegały fale. Dotarła do brzegu i wbiegła między drzewa, lecz teraz cały las był pod zaklęciem rzuconym przez Bestię: każdy korzeń, pęd i owad na jej bezduszne zawołanie. Bestia musiała zawezwać jeżyny, które owinęły się wokół nóg niczym drutem kolczastym. Kobieta pamięta tylko upadek przez chłodne powietrze, policzek uderzający o wilgotny mech, jego szorstkie ręce unoszące ją z ziemi.
+
+Cykl życiowy Bestii jest skomplikowany. Najpierw są zarodniki. Gdy znajdą się w ciele ludzkiego gospodarza, tworzą coś na kształt grzybni, która zapuszcza korzenie głęboko w mózgu i rdzeniu kręgowym, przejmując kontrolę nad każdym neuronem. Może to trwać dni lub całe lata, nim gospodarz skryje się w piwnicy lub martwym pniu, zwinie w kłębek i zniknie we wnętrzu opalizującego kokonu. Z kokonu kiełkują mordercze pnącza, które pełzną przez kanalizację i podziemne parkingi, żywiąc się szczurami i bezdomnymi kotami, gubiąc po drodze skórzaste owoce pełne małpich embrionów. Owoce pękają po kilku miesiącach, uwalniając roje morderczych, uskrzydlonych naczelnych. Najadłszy się wystarczająco ludzkiego mięsa, małpy nurkują do jezior, stawów lub rzek, gdzie przemieniają się w żyjące, obrzmiałe, wytwarzające zarodniki, włochate worki.
+
+Serce chłopca wyglądało jak przerażone zwierzę. Robiła to już dziesiątki razy. Jej ruchy były powolne, miarowe i dokładne. Zupełnie się nie spodziewała pękającej tętnicy, krwistej powodzi, płaskiej linii na monitorze.
+
+Mężczyzna trzyma zarodniki Bestii w fiolkach na leki, lecz ona nie da się nabrać. Opanowała do perfekcji sztukę ukrywania ich pod językiem. Zanim mają szansę wykiełkować, idzie do kuchni, mijając nietrzeźwego człowieka, i chowa je głęboko w skórce od banana, którą wyrzuca do śmieci. W drodze powrotnej zerka na ziejący pustką lej w miejscu, w którym stał supermarket. Małpy ucztują na kościach.

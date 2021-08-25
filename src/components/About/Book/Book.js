@@ -4,18 +4,16 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {BookBody, BookSlogan} from '../../../styled';
+import {BookBody, BookSlogan, SectionSeparator, SmallSeparator, FADE_DURATION} from '../../../styled';
 import {AnimatedContent, BookAnimatedButton} from '../../../posed';
-import {EXCERPT_BUTTON, BOOKS, FADE_DURATION} from './../../../data/constants';
+import {EXCERPT_BUTTON, BOOKS} from './../../../data/constants';
 import CentredPhoto from '../../UI/CentredPhoto/CentredPhoto';
 import SectionHeading from '../../UI/SectionHeading/SectionHeading'
 import QuoteList from '../QuoteList/QuoteList';
 import CentredButton from '../../UI/CentredButton/CentredButton';
 import SectionLinks from '../SectionLinks/SectionLinks';
-import SectionSeparator from '../../UI/SectionSeparator/SectionSeparator';
-import SmallSeparator from '../../UI/SmallSeparator/SmallSeparator';
 
-export const Book = (props) => {
+export const Book = props => {
 
     //specifies whether the quotes should be displayed - triggered by scrolling to the Waypoint element
     const [quotesVisible, setQuotesVisible] = useState(false);
@@ -70,7 +68,7 @@ export const Book = (props) => {
     );
 
     //checks whether the component is displayed as a standalone page rather than part of the main page
-    const isStandalone = props.bookPage;
+    const isStandalone = props.page === 'book';
 
     //if the component is displayed on the standalone book page, do not display the section links
     const sectionLinks = isStandalone ?
@@ -170,7 +168,7 @@ const mapStateToProps = state => {
     return {
         lang: state.language,
         reload: state.pageReload,
-        bookPage: state.bookPageDisplayed
+        page: state.pageDisplayed
     };
 };
 

@@ -5,7 +5,7 @@ import {PubAnimatedTile} from '../../../../posed';
 import {PUBLICATIONS} from './../../../../data/constants';
 import PubTile from './PubTile/PubTile';
 
-const PubList = (props) => {
+const PubList = props => {
 
     return (
         <PubTileContainer>

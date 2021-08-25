@@ -1,5 +1,4 @@
 import React from 'react';
-import {keyframes} from 'styled-components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faTwitterSquare,
@@ -9,37 +8,17 @@ import {
 import {
     faHome,
     faBook,
-    faYinYang
+    faYinYang,
+    faStickyNote
 } from '@fortawesome/free-solid-svg-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
-//constants containing the content of individual pieces
-import {NOCTURINE_EN} from './texts/nocturine-en';
-import {NOCTURINE_PL} from './texts/nocturine-pl';
-import {CETACEAN_EN} from './texts/cetacean-en';
-import {CETACEAN_PL} from './texts/cetacean-pl';
-import {MOTHS_EN} from './texts/moths-en';
-import {MOTHS_PL} from './texts/moths-pl';
-import {CELLULOSE_EN} from './texts/cellulose-en';
-import {CELLULOSE_PL} from './texts/cellulose-pl';
-import {DRONES_EN} from './texts/drones-en';
-import {DRONES_PL} from './texts/drones-pl';
-import {SPORES_EN} from './texts/spores-en';
-import {SPORES_PL} from './texts/spores-pl';
-import {VOSTOK_EN} from './texts/vostok-en';
-import {VOSTOK_PL} from './texts/vostok-pl';
-import {DEVONIAN_EN} from './texts/devonian-en';
-import {DEVONIAN_PL} from './texts/devonian-pl';
-import {LANDMINES_EN} from './texts/landmines-en';
-import {LANDMINES_PL} from './texts/landmines-pl';
-import {TREASURES_EN} from './texts/treasures-en';
-import {TREASURES_PL} from './texts/treasures-pl';
+import {Note} from '../styled';
 
 //source urls for book covers
 import nocturineCover from '../assets/images/nocturineCover.jpg';
 import nocCunCover from '../assets/images/nocCunCover.jpg';
 import vostokCover from '../assets/images/vostokCover.jpg';
-// import tbaCover from '../images/images/tbaCover.jpg';
+// import tbaCover from '../assets/images/tbaCover.jpg';
 
 //Frequently used URLs
 
@@ -54,11 +33,9 @@ export const MEDIUM_URL = 'https://drobnik.medium.com';
 export const KO_FI_URL = 'https://ko-fi.com/drobnik';
 export const BLYSKI_URL = 'https://blyski.org'; // błyski literary magazine
 
+
 //Names of available texts
 export const TEXT_NAMES = ['vostok', 'nocturine', 'cetacean', 'cellulose', 'moths', 'drones', 'spores', 'devonian', 'landmines', 'treasures'];
-
-//Texts to be displayed on the main page
-export const HIGHLIGHTS = ['vostok', 'nocturine', 'cetacean', 'cellulose', 'moths', 'devonian', 'landmines', 'treasures'];
 
 //Content of pieces displayed in the Text component
 export const TEXTS = {
@@ -80,7 +57,7 @@ export const TEXTS = {
                     href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><em>Sharkpack
                     Annual</em></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank"
                                         rel="noopener noreferrer"><em>The Write Launch</em></a>).</p>,
-            content: NOCTURINE_EN,
+            filename: 'nocturine-en',
             theme: 'nocturine'
         },
 
@@ -94,7 +71,7 @@ export const TEXTS = {
                                                                                        target="_blank"
                                                                                        rel="noopener noreferrer"><em>Afront</em></a> Issue
                 2(5)/2018.</p>,
-            content: CETACEAN_EN,
+            filename: 'cetacean-en',
             theme: 'cetacean'
         },
 
@@ -106,7 +83,7 @@ export const TEXTS = {
                 Review</em>. Its Polish translation was featured in the inaugural issue of <a
                 href="http://stonerpolski.pl/celuloza-lukasz-drobnik" target="_blank"
                 rel="noopener noreferrer"><em>Stoner Polski</em></a>.</p>,
-            content: CELLULOSE_EN,
+            filename: 'cellulose-en',
             theme: 'cellulose'
         },
 
@@ -120,7 +97,7 @@ export const TEXTS = {
                 Its Polish translation was featured in <a
                     href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank"
                     rel="noopener noreferrer"><em>Fabularie</em></a> (incidentally, also Issue&nbsp;10).</p>,
-            content: MOTHS_EN,
+            filename: 'moths-en',
             theme: 'moths'
         },
 
@@ -134,7 +111,7 @@ export const TEXTS = {
                 translation
                 was featured in <a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank"
                                    rel="noopener noreferrer"><em>Helikopter</em></a> Issue&nbsp;3/2018.</p>,
-            content: DRONES_EN,
+            filename: 'drones-en',
             theme: 'drones'
         },
 
@@ -146,7 +123,7 @@ export const TEXTS = {
                                                           target="_blank"
                                                           rel="noopener noreferrer"><em>X&#8209;R&#8209;A&#8209;Y
                 Literary Magazine</em></a> Issue&nbsp;17.</p>,
-            content: SPORES_EN,
+            filename: 'spores-en',
             theme: 'spores'
         },
 
@@ -161,7 +138,7 @@ export const TEXTS = {
                                                                                 rel="noopener noreferrer"><em>Lampa</em></a> Issue&nbsp;3/2012
                 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
                           target="_blank" rel="noopener noreferrer"><em>wydawnictwo&nbsp;j</em></a> website.</p>,
-            content: VOSTOK_EN,
+            filename: 'vostok-en',
             theme: 'vostok'
         },
 
@@ -176,7 +153,7 @@ export const TEXTS = {
                 featured in <a
                     href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/"
                     target="_blank" rel="noopener noreferrer"><em>Inter-</em></a> Issue&nbsp;2(16)/2018.</p>,
-            content: DEVONIAN_EN,
+            filename: 'devonian-en',
             theme: 'devonian'
         },
 
@@ -188,7 +165,7 @@ export const TEXTS = {
                 href="https://foglifterjournal.com/product/foglifter-journal-volume-4-issue-1/" target="_blank"
                 rel="noopener noreferrer"><em>Foglifter</em></a> Volume&nbsp;4
                 Issue&nbsp;1.</p>,
-            content: LANDMINES_EN,
+            filename: 'landmines-en',
             theme: 'landmines'
         },
 
@@ -202,7 +179,7 @@ export const TEXTS = {
                 featured in <a
                     href="http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/"
                     target="_blank" rel="noopener noreferrer"><em>Tlen Literacki</em></a> Issue&nbsp;4.</p>,
-            content: TREASURES_EN,
+            filename: 'treasures-en',
             theme: 'treasures'
         }
 
@@ -226,7 +203,7 @@ export const TEXTS = {
                     href="http://fathombooks.org/html/issueone.html" target="_blank" rel="noopener noreferrer"><em>Sharkpack
                     Annual</em></a>, <a href="https://thewritelaunch.com/2018/01/heart-mighty-power/" target="_blank"
                                         rel="noopener noreferrer"><em>The Write Launch</em></a>).</p>,
-            content: NOCTURINE_PL,
+            filename: 'nocturine-pl',
             theme: 'nocturine'
         },
 
@@ -239,7 +216,7 @@ export const TEXTS = {
                 West</em></a>. Polski przekład zamieszczono w&nbsp;<a href="https://afront.org.pl/" target="_blank"
                                                                       rel="noopener noreferrer"><em>Afroncie</em></a> (numer
                 2(5)/2018).</p>,
-            content: CETACEAN_PL,
+            filename: 'cetacean-pl',
             theme: 'cetacean'
         },
 
@@ -252,7 +229,7 @@ export const TEXTS = {
                 Heart Review</em>. Polski przekład zamieszczono w&nbsp;pierwszym numerze <a
                 href="http://stonerpolski.pl/celuloza-lukasz-drobnik" target="_blank"
                 rel="noopener noreferrer"><em>Stonera Polskiego</em></a>.</div>,
-            content: CELLULOSE_PL,
+            filename: 'cellulose-pl',
             theme: 'cellulose'
         },
 
@@ -265,7 +242,7 @@ export const TEXTS = {
                 rel="noopener noreferrer"><em>Lighthouse</em></a>. Polski przekład zamieszczono w&nbsp;<a
                 href="https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok" target="_blank"
                 rel="noopener noreferrer"><em>Fabulariach</em></a> (także w&nbsp;numerze&nbsp;10.).</p>,
-            content: MOTHS_PL,
+            filename: 'moths-pl',
             theme: 'moths',
         },
 
@@ -279,7 +256,7 @@ export const TEXTS = {
                 w&nbsp;
                 <a href="https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/" target="_blank"
                    rel="noopener noreferrer"><em>Helikopterze</em></a> (numer 3/2018).</p>,
-            content: DRONES_PL,
+            filename: 'drones-pl',
             theme: 'drones'
         },
 
@@ -290,7 +267,7 @@ export const TEXTS = {
             description: <p>Tekst ukazał się po angielsku w&nbsp;17. numerze pisma <a
                 href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/" target="_blank"
                 rel="noopener noreferrer"><em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em></a>.</p>,
-            content: SPORES_PL,
+            filename: 'spores-pl',
             theme: 'spores'
         },
 
@@ -307,7 +284,7 @@ export const TEXTS = {
                 i&nbsp;na stronie <a
                     href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
                     target="_blank" rel="noopener noreferrer"><em>wydawnictwa&nbsp;j</em></a>.</p>,
-            content: VOSTOK_PL,
+            filename: 'vostok-pl',
             theme: 'vostok'
         },
 
@@ -321,7 +298,7 @@ export const TEXTS = {
                 zamieszczono w&nbsp;czasopiśmie <a
                     href="https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/"
                     target="_blank" rel="noopener noreferrer"><em>Inter-</em></a> (numer&nbsp;2(16)/2018).</p>,
-            content: DEVONIAN_PL,
+            filename: 'devonian-pl',
             theme: 'devonian'
         },
 
@@ -334,7 +311,7 @@ export const TEXTS = {
                 target="_blank"
                 rel="noopener noreferrer"><em>Foglifter</em></a> (Volume&nbsp;4
                 Issue&nbsp;1).</p>,
-            content: LANDMINES_PL,
+            filename: 'landmines-pl',
             theme: 'landmines'
         },
 
@@ -348,7 +325,7 @@ export const TEXTS = {
                 zamieszczono w&nbsp;czwartym numerze <a
                     href="http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/"
                     target="_blank" rel="noopener noreferrer"><em>Tlenu Literackiego</em></a>.</p>,
-            content: TREASURES_PL,
+            filename: 'treasures-pl',
             theme: 'treasures'
         }
     }
@@ -902,10 +879,10 @@ export const BOOKS = [
         cover: nocturineCover,
         url: NOCTURINE_URL,
         slogan: {
-            en: <div>Forthcoming in 2021 from <a href={NOCTURINE_URL} target="_blank"
-                                                 rel="noopener noreferrer"><strong>FATHOM
+            en: <div>Forthcoming autumn 2021 from <a href={NOCTURINE_URL} target="_blank"
+                                                     rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
-            pl: <div>Dostępna w&nbsp;2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
+            pl: <div>Dostępna jesienią 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
                 href={NOCTURINE_URL}
                 target="_blank"
                 rel="noopener noreferrer"><strong>FATHOM
@@ -939,7 +916,7 @@ export const BOOKS = [
                     najlepsza przyjaciółka także znika, podczas gdy czarne sześciany na niebie zaczynają się mnożyć,
                     zabierając coraz więcej miejskiej przestrzeni.</p>
                 <p><em>NOCTURINE</em> to zbiór powiązanych fabularnie opowiadań, który zabiera czytelnika na
-                    niejednoznaczną gatunkowo podróż z&nbsp;Poznania pożeranego przez ośmiobitową amebę przez dom
+                    gatunkowo niepokorną podróż z&nbsp;Poznania pożeranego przez ośmiobitową amebę przez dom
                     złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze
                     ludzkiego ciała. Każdy z&nbsp;sześciu tekstów ma innego narratora, który snuje opowieść
                     w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
@@ -1071,6 +1048,11 @@ export const BOOKS = [
 
 //constant containing text used on the website:
 export const WEBSITE_TEXT = {
+    author: 'Łukasz Drobnik',
+    title: {
+        en: 'author of genre-bending fiction',
+        pl: 'autor gatunkowo niepokornej prozy'
+    },
     navbar: {
         home: {
             en: (<React.Fragment>
@@ -1129,13 +1111,31 @@ export const WEBSITE_TEXT = {
                 </FontAwesomeIcon>
                 <span className="sr-only">Czytaj przykładowe opowiadania</span>
             </React.Fragment>)
+        },
+        blog: {
+            en: (<React.Fragment>
+                <FontAwesomeIcon
+                    icon={faStickyNote}
+                    aria-hidden="true"
+                    title="Read the blog">
+                </FontAwesomeIcon>
+                <span className="sr-only">Read the blog</span>
+            </React.Fragment>),
+            pl: (<React.Fragment>
+                <FontAwesomeIcon
+                    icon={faStickyNote}
+                    aria-hidden="true"
+                    title="Czytaj blog (po angielsku)">
+                </FontAwesomeIcon>
+                <span className="sr-only">Czytaj blog (po angielsku)</span>
+            </React.Fragment>)
         }
     },
     intro: {
         title: 'Łukasz Drobnik',
         subtitle: {
-            en: 'fiction writer',
-            pl: 'prozaik'
+            en: 'author of genre-bending fiction',
+            pl: 'autor gatunkowo niepokornej prozy'
         },
         altText: {
             en: 'Author’s photo',
@@ -1144,9 +1144,9 @@ export const WEBSITE_TEXT = {
         body: {
             en: <div>
                 <p>I’m a Polish writer writing mostly in English. My favourite pastime is taking literary fiction and
-                    blending it with other genres, and I’m an enormous flash fiction fan (though I don’t shy away from
+                    blending it with other genres, and I’m a huge flash fiction fan (though I don’t shy away from
                     longer forms). I live in Kraków, Poland.</p>
-                <p>I have two books coming out this year: a collection of interlinked stories <AnchorLink
+                <p>I have two genre-bending books coming out this year: a collection of interlinked stories <AnchorLink
                     href='#nocturine'
                     offset="60px"><strong>NOCTURINE</strong></AnchorLink> to
                     be published by <a href={NOCTURINE_URL} target="_blank"
@@ -1158,10 +1158,10 @@ export const WEBSITE_TEXT = {
                         rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>.</p>
                 <p>My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly West</em>, <em>Pithead
-                    Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X-R-A-Y
+                    Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X&#8209;R&#8209;A&#8209;Y
                     Literary
                     Magazine</em>, and
-                    elsewhere.</p>
+                    elsewhere. My writing was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
                 <p>I’m also editor-in-chief at <a
                     href={BLYSKI_URL} target="_blank"
                     rel="noopener noreferrer"><strong>BŁYSKI</strong></a>, a journal publishing flash fiction in Polish
@@ -1179,11 +1179,12 @@ export const WEBSITE_TEXT = {
                     wysokoartystyczną
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków. Do tego jestem ogromnym fanem <em>flash
                         fiction</em> (nie stronię jednak od dłuższych form). Mieszkam w Krakowie.</p>
-                <p>W&nbsp;tym roku ukażą się moje dwie książki: zbiór powiązanych fabularnie opowiadań <AnchorLink
-                    href='#nocturine'
-                    offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href={NOCTURINE_URL}
-                                                                                          target="_blank"
-                                                                                          rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>)
+                <p>W&nbsp;tym roku ukażą się moje dwie gatunkowo niepokorne książki: zbiór powiązanych fabularnie
+                    opowiadań <AnchorLink
+                        href='#nocturine'
+                        offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href={NOCTURINE_URL}
+                                                                                              target="_blank"
+                                                                                              rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>)
                     i&nbsp;powieść <AnchorLink
                         href='#vostok'
                         offset="60px"><strong>VOSTOK</strong></AnchorLink> (wydawnictwo <a
@@ -1192,9 +1193,9 @@ export const WEBSITE_TEXT = {
                 <p>Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly
                     West</em>, <em>Pithead
-                    Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X-R-A-Y
+                    Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X&#8209;R&#8209;A&#8209;Y
                     Literary
-                    Magazine</em>.</p>
+                    Magazine</em>. Moja proza trafiła na longlistę <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
                 <p>Jestem też redaktorem naczelnym <a
                     href={BLYSKI_URL} target="_blank"
                     rel="noopener noreferrer"><strong>BŁYSKÓW</strong></a>, pisma publikującego flash fiction
@@ -1304,7 +1305,8 @@ export const WEBSITE_TEXT = {
         introduction: {
             en: <div>Here are a handful of my pieces.<br/>Maybe you’d like to read some of them:</div>,
             pl: <div>Oto garstka moich tekstów<br/>do niezobowiązującej lektury:</div>
-        }
+        },
+        blogButton: '…or check out my blog'
     },
     sectionLinks: [
         {
@@ -1334,6 +1336,13 @@ export const WEBSITE_TEXT = {
                 en: 'reading room',
                 pl: 'czytelnia'
             }
+        },
+        {
+            id: 'blog',
+            text: {
+                en: 'blog',
+                pl: 'blog'
+            }
         }
     ],
     text: {
@@ -1350,6 +1359,30 @@ export const WEBSITE_TEXT = {
             pl: 'strona główna'
         }
     },
+    blog: {
+        title: 'Łukasz Drobnik’s blog',
+        latestPost: 'Latest:',
+        olderPosts: 'Older:',
+        displayedCategory: 'Category:',
+        showAll: 'show all',
+        readMore: 'Read more:',
+        blog: 'all notes',
+        imageBy: 'Image by',
+        via: 'via',
+        author: 'Łukasz Drobnik',
+        bio:
+            {
+                links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>, <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
+                content: <React.Fragment>is the author of genre-bending books, <a
+                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
+                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose
+                    published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus
+                        Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
+                        Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
+                        href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of
+                    publications and fiction samples, </React.Fragment>
+            }
+    },
     dataNotice: {
         en: {
             message: <div>This website collects basic information about user preferences (language and
@@ -1362,11 +1395,52 @@ export const WEBSITE_TEXT = {
                 języka i&nbsp;trybu czarno-białego).</div>,
             button: 'Rozumiem'
         }
-    }
+    },
+    copyright: <React.Fragment>&copy;&nbsp;2019–2021 Łukasz Drobnik</React.Fragment>
 };
 
-//Content of quick links (to be used on Instagram)
+//Content and data of blog notes
+export const BLOG_NOTES = [
+    {
+        id: 'markdown-for-creative-writers',
+        title: 'Markdown for Creative Writers',
+        date: ['2021', '08', '25'],
+        category: 'writing',
+        related: ['quick-guide-to-markdown'],
+        imageCredits: {
+            author: '',
+            source: '',
+            alt: 'A text editor with the beginning of Woolfs’s Mrs. Dalloway written in Markdown'
+        }
 
+    },
+    {
+        id: 'quick-guide-to-markdown',
+        title: 'Quick Guide to Markdown',
+        date: ['2021', '08', '25'],
+        category: 'code',
+        related: ['markdown-for-creative-writers'],
+        imageCredits: {
+            author: '',
+            source: '',
+            alt: 'A text editor showing basics Markdown syntax, such as headings and lists, and its preview'
+        }
+
+    }
+];
+
+//Titles of blog note categories
+export const BLOG_CATEGORIES = {
+    writing: 'The Tech of Writing',
+    nocturine: 'Notes on Nocturine',
+    vostok: 'Vostok as a Book',
+    code: 'Code the Pain Away',
+    biology: 'Biology Porn',
+    pop: 'This Is How We Pop',
+    literary: 'Let’s Get Literary'
+}
+
+//Content of quick links (to be used on Instagram)
 export const LINKS = [
     {
         title: 'Pre-order VOSTOK',
@@ -1439,40 +1513,3 @@ export const LINKS = [
         url: FACEBOOK_URL
     }
 ];
-
-/* Keyframes used for styled-components animations */
-
-//Keyframes of pulsating animation
-export const PULSATE_KEYFRAMES = keyframes`
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
-`;
-
-
-//Keyframes for 'popping' animation
-export const POP_KEYFRAMES = keyframes`
-  0% {
-    transform: scale(1, 1);
-  }
-
-  30% {
-    transform: scale(1.05, 1.05);
-
-  }
-
-  100% {
-    transform: scale(1, 1);
-  }
-`;
-
-//Duration of the fade-in animation used when loading new page
-export const FADE_DURATION = 200;

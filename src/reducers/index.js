@@ -8,8 +8,7 @@ const initialState = {
     navbarVisible: false,
     dataNoticeVisible: true,
     dataNoticeAccepted: false,
-    mainPageDisplayed: true,
-    nocturinePageDisplayed: false,
+    pageDisplayed: 'main',
     pageReload: true,
     pageLoaded: false
 };
@@ -51,16 +50,11 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 dataNoticeAccepted: action.dataNoticeAccepted
             };
-        case actionTypes.SET_MAIN_PAGE:
+        case actionTypes.SET_PAGE:
             return {
                 ...state,
-                mainPageDisplayed: action.mainPageDisplayed
-            };
-        case actionTypes.SET_BOOK_PAGE:
-            return {
-                ...state,
-                bookPageDisplayed: action.bookPageDisplayed
-            };
+                pageDisplayed: action.pageDisplayed
+            }
         case actionTypes.SET_PAGE_RELOAD:
             return {
                 ...state,

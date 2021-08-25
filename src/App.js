@@ -12,7 +12,7 @@ ReactGA.initialize(ANALYTICS_KEY);
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 
-export const App = (props) => {
+export const App = props => {
 
     // Theme to be used in the project, two primary colors depending on redux state
     const theme = {
@@ -21,6 +21,13 @@ export const App = (props) => {
         color2: THEME_COLORS[props.theme].color2,
         darkColor: '#0f0f0f',
         lightColor: '#bbbbbb',
+        nocturineColor: THEME_COLORS.nocturine.color1,
+        vostokColor: THEME_COLORS.vostok.color1,
+        writingColor: THEME_COLORS.devonian.color2,
+        codeColor: THEME_COLORS.moths.color1,
+        biologyColor: THEME_COLORS.spores.color1,
+        popColor: THEME_COLORS.treasures.color1,
+        literaryColor: THEME_COLORS.landmines.color2,
         background: 'rgba(40,40,40,0.1)',
 
         //fonts
@@ -30,8 +37,11 @@ export const App = (props) => {
 
         //font sizes
         titleSize: '5em',
+        smallTitleSize: '3.5em',
+        blogTitleSize: '2.5em',
         subtitleSize: '1.5em',
         bodySize: '1.3em',
+        smallBodySize: '1.1em',
         captionSize: '1em',
         smallCaptionSize: '0.8em',
 

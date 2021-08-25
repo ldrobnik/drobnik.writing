@@ -4,13 +4,21 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {setLanguage, setBWMode, setPageReload} from '../../actions';
-import {NavBarWrapper, NavToolbar, LogoWrapper, NavElement, ToggledNavElement, NavLinkContent} from '../../styled';
+import {
+    NavBarWrapper,
+    NavToolbar,
+    LogoWrapper,
+    NavElement,
+    NavInactiveElement,
+    ToggledNavElement,
+    NavLinkContent
+} from '../../styled';
 import {WEBSITE_TEXT, TEXT_NAMES} from '../../data/constants';
 import Logo from './Logo/Logo';
 import NavLinks from './NavLinks/NavLinks';
 
 
-const NavBar = (props) => {
+const NavBar = props => {
 
     // Specifies the current window width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -18,8 +26,12 @@ const NavBar = (props) => {
     // Specifies the current window width
     const [isMobile, setIsMobile] = useState(false);
 
-    //specifies breakpoint for screens below which nav links are not displayed
-    const mobileBreakpoint = 685;
+    // Specifies whether the read button is clickable
+    const [readClickable, setReadClickable] = useState(true);
+
+
+    //specifies breakpoint for screens below which nav links are not displayed (higher for English version as there's one extra link)
+    const mobileBreakpoint = (props.lang === 'en') ? 725 : 685;
 
     // Updates the window width
     const handleWindowSizeChange = () => {
@@ -86,8 +98,19 @@ const NavBar = (props) => {
         props.setPageReload(true);
     };
 
+    //what happens when the read button is clicked
+    const handleReadClick = () => {
+        //reload page
+        reloadPage();
+
+        //make the button unclickable for a while
+        setReadClickable(false);
+        setTimeout(() => setReadClickable(true), 700);
+
+    };
+
     //Content of the logo link - if on the home page, make it an anchor link scrolling to top
-    const logoLink = (props.mainDisplayed) ?
+    const logoLink = (props.page === 'main') ?
         <AnchorLink href='#top'>
             <Logo/>
         </AnchorLink>
@@ -99,11 +122,11 @@ const NavBar = (props) => {
         </Link>
     ;
 
-    //Content of the navlinks - display on main page (not Text) and on screens larger than mobile
-    const navLinks = (props.mainDisplayed && !isMobile) ? <NavLinks/> : <div></div>;
+    //Content of the navlinks - display on the main page and on screens larger than mobile
+    const navLinks = (props.page === 'main' && !isMobile) ? <NavLinks/> : null;
 
     //Content of the home button - if on the home page, make it an anchor link scrolling to top
-    const homeButton = (props.mainDisplayed) ?
+    const homeButton = (props.page === 'main') ?
         <NavElement>
             <AnchorLink href='#top'>
                 <NavLinkContent>
@@ -123,8 +146,8 @@ const NavBar = (props) => {
         </NavElement>
     ;
 
-    //Content of the button used to change current language
-    const langButton = (
+    //Content of the button used to change current language; don't show on the blog page (it's only in English)
+    const langButton = (props.page !== 'blog') ?
         <NavElement>
             <div onClick={changeLanguage}>
                 <NavLinkContent>
@@ -132,9 +155,16 @@ const NavBar = (props) => {
                 </NavLinkContent>
             </div>
         </NavElement>
-    );
+        :
+        <NavInactiveElement>
+            <div>
+                <NavLinkContent>
+                    {WEBSITE_TEXT.navbar.language[props.lang]}
+                </NavLinkContent>
+            </div>
+        </NavInactiveElement>;
 
-    //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off
+    //content of the icon used to toggle the black-and-white mode - display translucent if the mode is toggled off; don't display
     const bwButton = (props.bwMode) ?
         (<NavElement>
             <div onClick={toggleBwMode}>
@@ -166,24 +196,45 @@ const NavBar = (props) => {
     //specifies whether the Book subpage is displayed
 
     /*If the Text page is currently displayed, assigned the next text to the read link.
-   //     * If the Book page is displayed, assing nocturine
-   //     * If the About page is displayed, assign a random text to it.
-   //     */
-    const chosenText = props.mainDisplayed ? randomText : (props.nocturine ? 'nocturine' : nextText);
+    /*If the About page is displayed, assign a random text to it. */
+    const chosenText = (props.page === 'main') ? randomText : nextText;
 
-
-    //content of the icon linking to the Text component - display translucent inactive icon if the Text component is displayed
-    const readButton = (
+    //variable to hold the read button code
+    const readButton = readClickable ?
         <NavElement>
             <Link
                 to={'/texts/' + chosenText}
-                onClick={reloadPage}>
+                onClick={() => handleReadClick()}>
                 <NavLinkContent>
                     {WEBSITE_TEXT.navbar.read[props.lang]}
                 </NavLinkContent>
             </Link>
-        </NavElement>
-    );
+        </NavElement> :
+        <NavElement>
+            <NavLinkContent>
+                {WEBSITE_TEXT.navbar.read[props.lang]}
+            </NavLinkContent>
+        </NavElement>;
+
+    //content of the icon linking to the Text component; if the main blog page is displayed, scroll to top;
+    // if one of blog posts, make it link to the main blog page
+    const blogButton = (props.page === 'blog' && props.location.pathname.length < 7) ?
+        <NavElement>
+            <AnchorLink href='#top'>
+                <NavLinkContent>
+                    {WEBSITE_TEXT.navbar.blog[props.lang]}
+                </NavLinkContent>
+            </AnchorLink>
+        </NavElement> :
+        <NavElement>
+            <Link
+                to={'/blog'}
+                onClick={reloadPage}>
+                <NavLinkContent>
+                    {WEBSITE_TEXT.navbar.blog[props.lang]}
+                </NavLinkContent>
+            </Link>
+        </NavElement>;
 
     //class applied to the component content, depending on the navbar visibility state in the Redux store
     const contentClass = (props.showNavbar) ? '' : 'hidden';
@@ -200,6 +251,7 @@ const NavBar = (props) => {
                     {langButton}
                     {bwButton}
                     {readButton}
+                    {blogButton}
                 </NavToolbar>
             </div>
         </NavBarWrapper>
@@ -212,8 +264,7 @@ const mapStateToProps = state => {
         bwMode: state.blackAndWhite,
         curText: state.currentText,
         showNavbar: state.navbarVisible,
-        mainDisplayed: state.mainPageDisplayed,
-        nocturine: state.nocturinePageDisplayed,
+        page: state.pageDisplayed,
         reload: state.pageReload
     };
 };

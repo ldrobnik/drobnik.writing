@@ -2,7 +2,7 @@ import React from 'react';
 import {ToggleWrapper} from '../../../styled';
 import Switch from 'react-switch';
 
-const ToggleSwitch = (props) => {
+const ToggleSwitch = props => {
 
     return (
         <ToggleWrapper>

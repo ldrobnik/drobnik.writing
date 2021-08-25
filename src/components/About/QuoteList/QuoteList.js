@@ -4,7 +4,7 @@ import {AnimatedQuoteList, AnimatedQuote} from '../../../posed';
 import {BOOKS} from './../../../data/constants';
 import Quote from './Quote/Quote';
 
-const QuoteList = (props) => {
+const QuoteList = props => {
 
     return (
         <QuoteListWrapper>

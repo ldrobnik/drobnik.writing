@@ -1,28 +1,43 @@
 import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
+import Markdown from 'markdown-to-jsx/dist/index.js';
 import {Waypoint} from 'react-waypoint';
 import {
     setTheme,
     setCurrentText,
     setNavbarVisibility,
     setDataNoticeVisible,
-    setMainPage,
-    setBookPage,
+    setPage,
     setPageReload
 } from '../../actions';
-import {TextTopAnchor, TextWrapper, TextHeader, TextTitle, TextSubtitle, TextBody} from '../../styled';
+import {
+    TextTopAnchor,
+    TextWrapper,
+    TextHeader,
+    TextTitle,
+    TextSubtitle,
+    TextBody,
+    SectionSeparator,
+    FADE_DURATION
+} from '../../styled';
 import {AnimatedContent, AnimatedTextLink, AnimatedTextButton} from '../../posed';
-import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES, FADE_DURATION} from './../../data/constants';
+import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES} from './../../data/constants';
 import Credits from './Credits/Credits';
 import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
 import NextTextLink from './NextTextLink/NextTextLink';
-import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 import CentredButton from '../UI/CentredButton/CentredButton';
 
-export const Text = (props) => {
+export const Text = props => {
+
+
+        //blogpost to be displayed
+        const [piece, setPiece] = useState('');
+
+        //visibility of the content
+        const [visible, setVisible] = useState(false);
 
         //specifies whether 'up next' link should be displayed
         const [linkVisible, setlinkVisible] = useState(false);
@@ -32,17 +47,21 @@ export const Text = (props) => {
 
         //shows the content
         const showContent = () => {
+            //shows content
+            setTimeout(() => setVisible(true), FADE_DURATION + 200);
             props.setPageReload(false);
         };
 
         //shows the preorder button
         const showPreorderBtn = () => {
-            setPreorderBtnVisible(true);
+            //do it only if other content is visible
+            if (visible) setPreorderBtnVisible(true);
         };
 
         //shows the 'up next' link
         const showLink = () => {
-            setlinkVisible(true);
+            //do it only if other content is visible
+            if (visible) setlinkVisible(true);
         };
 
         //hides the 'up next' link
@@ -66,8 +85,12 @@ export const Text = (props) => {
             return 'nocturine';
         };
 
-        //constant holding the name of the text to be displayed
+        //the name of the text to be displayed
         const textName = checkTextID(props.match.params.id);
+
+
+        //the markdown file name of the text to be displayed
+        const filename = TEXTS[props.lang][textName].filename;
 
         //the index of the text
         const textIndex = TEXT_NAMES.indexOf(textName);
@@ -104,19 +127,30 @@ export const Text = (props) => {
             }
         };
 
-        //lets the Redux store know that the Main page is currently not displayed
-        const setMainNotDisplayed = () => {
-            props.setMainPage(false)
-        };
+        //lets the Redux store know which page is currently displayed
+        const setCurrentPage = (page) => {
+            props.setPage(page);
+        }
 
-        //lets the Redux store know that the Book page is currently not displayed
-        const setBookNotDisplayed = () => {
-            props.setBookPage(false);
-        };
+        //imports markdown documents and coverts it into text
+        const importText = (id) => {
+            import(`./../../data/texts/${id}.md`)
+                .then(res => {
+                    fetch(res.default)
+                        .then(res => res.text())
+                        .then(res => setPiece(res))
+                        .catch(err => console.log(err));
+                })
+                .catch(err => console.log(err));
+        }
+
 
         useEffect(() => {
             //Update page title with the piece title
             document.title = `Łukasz Drobnik - ${TEXTS[props.lang][textName].title}`;
+
+            //imports markdown documents and coverts it into text
+            importText(filename);
 
             //update the theme depending on the text displayed
             updateTheme();
@@ -130,27 +164,47 @@ export const Text = (props) => {
             //checks whether data storage notice should be visible and if so, turn is on
             checkDataNotice();
 
-            //lets the Redux store know that the main page is currently not displayed
-            setMainNotDisplayed();
+            //lets the Redux store know that the Text page is currently displayed
+            setCurrentPage('text');
 
-            //lets the Redux store know that the Book page is currently not displayed
-            setBookNotDisplayed();
-
-            //show content after a while if page has loaded
-            if (props.loaded) {
-                setTimeout(showContent, FADE_DURATION);
-            }
+            //show content after a while if page has loaded and the markdown file has been successfully fetched
+            if ((piece.length > 0) && props.loaded) showContent();
 
         });
 
+        useEffect(() => {
+            //reset piece content and visibility
+            setPiece('');
+            setVisible(false);
+
+        }, []);
+
+        useEffect(() => {
+
+            //reset piece content and visibility
+            setPiece('');
+            setVisible(false);
+
+        }, [props.location.pathname]);
+
+        useEffect(() => {
+
+            //reset piece content and visibility
+            setPiece('');
+            setVisible(false);
+
+        }, [props.reload]);
+
+
         //do not show the content until the page is loaded
-        return props.loaded ?
-            (<TextWrapper>
+        return props.loaded &&
+            <TextWrapper>
                 <TextTopAnchor>
                     <div id='top'></div>
                 </TextTopAnchor>
+                {!props.reload &&
                 <AnimatedContent
-                    pose={!props.reload ? 'visible' : 'hidden'}>
+                    pose={(piece.length > 0) && visible ? 'visible' : 'hidden'}>
                     <TextHeader>
                         <TextTitle>
                             {TEXTS[props.lang][textName].title}
@@ -160,7 +214,9 @@ export const Text = (props) => {
                         </TextSubtitle>
                     </TextHeader>
                     <TextBody>
-                        {TEXTS[props.lang][textName].content}
+                        <Markdown>
+                            {piece}
+                        </Markdown>
                     </TextBody>
                     <Waypoint
                         onEnter={hideLink}
@@ -169,58 +225,67 @@ export const Text = (props) => {
                         lang={props.lang}
                         textName={textName}/>
                 </AnimatedContent>
-                {BOOK_LIST.includes(textName) &&
-                <React.Fragment>
-                    <Waypoint
-                        onEnter={showPreorderBtn}
-                    />
-                    <AnimatedTextButton
-                        pose={preorderBtnVisible ? 'visible' : 'hidden'}>
-                        <CentredButton
-                            message={BOOKS[BOOK_LIST.indexOf(textName)].orderButton[props.lang]}
-                            path={BOOKS[BOOK_LIST.indexOf(textName)].url}
-                        />
-                    </AnimatedTextButton>
-                </React.Fragment>
                 }
-                <AnimatedContent
-                    pose={!props.reload ? 'visible' : 'hidden'}>
-                    <DescriptionPanel
-                        description={TEXTS[props.lang][textName].description}
-                        title={TEXTS[props.lang][textName].title}
-                    />
-                </AnimatedContent>
-                <Waypoint
-                    onEnter={showLink}
-                />
-                <AnimatedTextLink
-                    pose={linkVisible ? 'visible' : 'hidden'}
-                >
-                    <NextTextLink
-                        textName={nextTextName}
-                        lang={props.lang}
-                    />
-                </AnimatedTextLink>
-                <Waypoint
-                    onEnter={showLink}
-                />
-                <AnimatedContent
-                    pose={!props.reload ? 'visible' : 'hidden'}>
-                    <SubpageLinks
-                        lang={props.lang}
-                        reloadPage={reloadPage}
-                    />
-                    <Waypoint
-                        onEnter={showLink}
-                    />
-                    <SectionSeparator/>
-                    <CopyrightNote/>
-                    <Waypoint
-                        onEnter={showLink}
-                    />
-                </AnimatedContent>
-            </TextWrapper>) :
-            <div></div>;
+                {
+                    BOOK_LIST.includes(textName) && (piece.length > 0) && !props.reload &&
+                    <React.Fragment>
+                        <Waypoint
+                            onEnter={showPreorderBtn}
+                        />
+                        <AnimatedTextButton
+                            pose={preorderBtnVisible ? 'visible' : 'hidden'}>
+                            <CentredButton
+                                message={BOOKS[BOOK_LIST.indexOf(textName)].orderButton[props.lang]}
+                                path={BOOKS[BOOK_LIST.indexOf(textName)].url}
+                            />
+                        </AnimatedTextButton>
+                    </React.Fragment>
+                }
+
+                {
+                    !props.reload &&
+                    <React.Fragment>
+                        <AnimatedContent
+                            pose={(piece.length > 0) && visible ? 'visible' : 'hidden'}>
+                            <DescriptionPanel
+                                description={TEXTS[props.lang][textName].description}
+                                title={TEXTS[props.lang][textName].title}
+                            />
+                        </AnimatedContent>
+                        <Waypoint
+                            onEnter={showLink}
+                        />
+                        <AnimatedTextLink
+                            pose={(piece.length > 0) && linkVisible ? 'visible' : 'hidden'}
+                        >
+                            <NextTextLink
+                                textName={nextTextName}
+                                lang={props.lang}
+                                onClick={reloadPage}
+                            />
+                        </AnimatedTextLink>
+
+                        <Waypoint
+                            onEnter={showLink}
+                        />
+                        <AnimatedContent
+                            pose={(piece.length > 0) && visible ? 'visible' : 'hidden'}>
+                            <SubpageLinks
+                                lang={props.lang}
+                                reloadPage={reloadPage}
+                            />
+                            <Waypoint
+                                onEnter={showLink}
+                            />
+                            <SectionSeparator/>
+                            <CopyrightNote/>
+                            <Waypoint
+                                onEnter={showLink}
+                            />
+                        </AnimatedContent>
+                    </React.Fragment>
+                }
+            </TextWrapper>;
     }
 ;
 
@@ -242,8 +307,7 @@ const mapDispatchToProps = dispatch => {
             setCurrentText,
             setNavbarVisibility,
             setDataNoticeVisible,
-            setMainPage,
-            setBookPage,
+            setPage,
             setPageReload
         }, dispatch);
     }

@@ -56,22 +56,13 @@ export const setDataNoticeAccepted = (dataNoticeAccepted) => {
     }
 };
 
-//Specifies whether the main page is currently displayed
-export const setMainPage = (mainPageDisplayed) => {
-    return {
-        type: actionTypes.SET_MAIN_PAGE,
-        mainPageDisplayed
-    }
+//Specifies which page is currently displayed
+export const setPage = (pageDisplayed) => {
+  return {
+      type: actionTypes.SET_PAGE,
+      pageDisplayed
+  }
 };
-
-//Specifies whether the Book page is currently displayed
-export const setBookPage = (bookPageDisplayed) => {
-    return {
-        type: actionTypes.SET_BOOK_PAGE,
-        bookPageDisplayed
-    }
-};
-
 
 //Specifies whether the page reloading animation should be played
 export const setPageReload = (pageReload) => {

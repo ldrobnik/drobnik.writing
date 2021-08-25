@@ -6,21 +6,19 @@ import {
     setCurrentText,
     setNavbarVisibility,
     setDataNoticeVisible,
-    setMainPage,
-    setBookPage,
+    setPage,
     setPageReload
 } from '../../actions';
-import {BookPageTopAnchor, BookPageWrapper} from '../../styled';
+import {BookPageTopAnchor, BookPageWrapper, SectionSeparator, FADE_DURATION} from '../../styled';
 import {AnimatedContent} from '../../posed';
-import {BOOKS, FADE_DURATION} from './../../data/constants';
+import {BOOKS} from './../../data/constants';
 import Book from '../About/Book/Book';
-import SectionSeparator from '../UI/SectionSeparator/SectionSeparator';
 import InvisibleSeparator from '../UI/InvisibleSeparator/InvisibleSeparator';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
 
-export const BookPage = (props) => {
+export const BookPage = props => {
 
     //shows the content
     const showContent = () => {
@@ -53,15 +51,10 @@ export const BookPage = (props) => {
         }
     };
 
-    //lets the Redux store know that the Main page is currently not displayed
-    const setMainNotDisplayed = () => {
-        props.setMainPage(false)
-    };
-
-    //lets the Redux store know that the Book page is currently displayed
-    const setBookDisplayed = () => {
-        props.setBookPage(true);
-    };
+    //lets the Redux store know which page is currently displayed
+    const setCurrentPage = (page) => {
+        props.setPage(page);
+    }
 
     useEffect(() => {
         //Update page title with the piece title
@@ -78,11 +71,8 @@ export const BookPage = (props) => {
         //checks whether data storage notice should be visible and if so, turn is on
         checkDataNotice();
 
-        //lets the Redux store know that the main page is currently not displayed
-        setMainNotDisplayed();
-
-        ///lets the Redux store know that the Book page is currently displayed
-        setBookDisplayed();
+        //lets the Redux store know that the book page is currently displayed
+        setCurrentPage('book');
 
         //show content after a while if page has loaded
         if (props.loaded) {
@@ -92,8 +82,8 @@ export const BookPage = (props) => {
     });
 
     //do not show the content until the page is loaded
-    return props.loaded ?
-        (<BookPageWrapper>
+    return props.loaded &&
+        <BookPageWrapper>
             <BookPageTopAnchor>
                 <div id='top'></div>
             </BookPageTopAnchor>
@@ -108,8 +98,7 @@ export const BookPage = (props) => {
                 <SectionSeparator/>
                 <CopyrightNote/>
             </AnimatedContent>
-        </BookPageWrapper>) :
-        <div></div>;
+        </BookPageWrapper>;
 };
 
 const mapStateToProps = state => {
@@ -129,8 +118,7 @@ const mapDispatchToProps = dispatch => {
         setCurrentText,
         setNavbarVisibility,
         setDataNoticeVisible,
-        setMainPage,
-        setBookPage,
+        setPage,
         setPageReload
     }, dispatch);
 };

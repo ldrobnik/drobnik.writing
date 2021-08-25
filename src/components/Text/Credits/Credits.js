@@ -2,7 +2,7 @@ import React from 'react';
 import {CreditWrapper} from '../../../styled';
 import {TEXTS} from '../../../data/constants';
 
-const Credits = (props) => {
+const Credits = props => {
 
     return (
         <CreditWrapper>

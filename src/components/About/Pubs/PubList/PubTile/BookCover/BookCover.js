@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {BookCoverWrapper, BookCoverPhoto} from '../../../../../../styled';
 import {BookCoverAnimatedPic} from '../../../../../../posed';
 
-const BookCover = (props) => {
+const BookCover = props => {
 
     //specifies whether the photo is visible (it is turn visible when the photo is loaded
     const [visible, setVisible] = useState(false);

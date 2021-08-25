@@ -182,6 +182,22 @@ export const AnimatedReadLink = posed.div({
     }
 });
 
+export const AnimatedReadButton = posed.div({
+    visible: {
+        opacity: 1,
+        transform: 'scale(1,1)',
+        transition: {
+            type: 'spring',
+            stiffness: 100
+        }
+    },
+    hidden: {
+        opacity: 0,
+        transform: 'scale(0,0)'
+    }
+});
+
+
 /* Text.js */
 
 export const AnimatedTextLink = posed.div({
@@ -229,5 +245,27 @@ export const AnimatedPhoto = posed.div({
     hidden: {
         opacity: 0,
         filter: 'blur(20px)'
+    }
+});
+
+/* BlogNoteList.js */
+
+export const AnimatedBlogNoteList = posed.div({
+    visible: {
+        delayChildren: 400,
+        staggerChildren: 150
+    }
+});
+
+export const AnimatedBlogNoteLink = posed.div({
+    visible: {
+        x: '0%',
+        transition: {
+            type: 'spring',
+            stiffness: 100
+        }
+    },
+    hidden: {
+        x: '300%'
     }
 });

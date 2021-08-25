@@ -6,7 +6,7 @@ import {setPageReload} from '../../../actions';
 import {NextTextWrapper, UpNext, NextTextLine} from '../../../styled';
 import {TEXTS, WEBSITE_TEXT} from './../../../data/constants';
 
-const NextTextLink = (props) => {
+const NextTextLink = props => {
 
     //sets off page reloading animation
     const reloadPage = () => {
@@ -25,10 +25,10 @@ const NextTextLink = (props) => {
                 <NextTextLine/>
                 <UpNext>
                     <div>
-                        <i>
+                        <em>
                             {WEBSITE_TEXT.text.nextText[props.lang]}
                             {TEXTS[props.lang][props.textName].title}
-                        </i>
+                        </em>
                     </div>
                 </UpNext>
                 <NextTextLine/>

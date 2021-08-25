@@ -3,20 +3,23 @@ import {bindActionCreators} from 'redux';
 import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
-import {ReadWrapper, ReadMessage} from '../../../styled';
-import {AnimatedContent, AnimatedReadList, AnimatedReadLink} from '../../../posed';
 import {setPageReload} from '../../../actions';
-import {WEBSITE_TEXT, HIGHLIGHTS, TEXTS, FADE_DURATION} from './../../../data/constants';
+import {ReadWrapper, ReadMessage, ReadBlogBtnWrapper, SectionSeparator, FADE_DURATION} from '../../../styled';
+import {AnimatedContent, AnimatedReadList, AnimatedReadLink, AnimatedReadButton} from '../../../posed';
+import {WEBSITE_TEXT, TEXT_NAMES, TEXTS} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import SectionLinks from '../SectionLinks/SectionLinks';
-import SectionSeparator from './../../UI/SectionSeparator/SectionSeparator';
 import ReadListElement from './ReadListElement/ReadListElement';
+import CentredButton from '../../UI/CentredButton/CentredButton';
 
 
-export const Read = (props) => {
+export const Read = props => {
 
     //specifies whether text links should be visible
     const [linksVisible, setLinksVisible] = useState(false);
+
+    //specifies whether the blog button should be visible
+    const [blogBtnVisible, setBlogBtnVisible] = useState(false);
 
     //shows the content
     const showContent = () => {
@@ -33,9 +36,22 @@ export const Read = (props) => {
         setLinksVisible(false);
     };
 
+    //shows the blog button
+    const showBlogButton = () => {
+        setTimeout(() => setBlogBtnVisible(true), 1500);
+    }
+
+    //hides the blog button
+    const hideBlogButton = () => {
+        setBlogBtnVisible(false);
+    }
+
     //hide message whenever the pathname or language change
     useEffect(() => {
-            setTimeout(hideLinks, 100);
+            setTimeout(() => {
+                hideLinks();
+                hideBlogButton();
+            }, 100);
         },
         [props.location.pathname, props.lang]
     );
@@ -62,7 +78,7 @@ export const Read = (props) => {
             />
             <AnimatedReadList
                 pose={linksVisible ? 'visible' : 'hidden'}>
-                {HIGHLIGHTS.map((text, k) => {
+                {TEXT_NAMES.map((text, k) => {
                     let textLink = '/texts/' + text;
                     return (
                         <AnimatedReadLink
@@ -77,6 +93,19 @@ export const Read = (props) => {
                     )
                 })}
             </AnimatedReadList>
+            {(props.lang === 'en') &&
+            <ReadBlogBtnWrapper>
+                <AnimatedReadButton
+                    pose={blogBtnVisible ? 'visible' : 'hidden'}>
+                    <CentredButton
+                        message={WEBSITE_TEXT.read.blogButton}
+                        path={'/blog'}
+                    />
+                </AnimatedReadButton>
+                <Waypoint
+                    onEnter={showBlogButton}
+                />
+            </ReadBlogBtnWrapper>}
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionLinks
@@ -93,6 +122,9 @@ export const Read = (props) => {
             </AnimatedContent>
             <Waypoint
                 onEnter={showLinks}
+            />
+            <Waypoint
+                onEnter={showBlogButton}
             />
         </ReadWrapper>
     );
