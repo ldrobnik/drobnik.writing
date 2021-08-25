@@ -1355,7 +1355,22 @@ export const FilteredCategoryLink = styled.div`
 
 export const CategoryPickerWrapper = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+`;
+
+/* CategoryButton.js */
+export const CategoryButtonWrapper = styled.div`
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    &:hover {
+      animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+    }
+  }
+
 `;
 
 /* Teaser.js */
