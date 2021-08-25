@@ -1299,10 +1299,10 @@ export const BlogWrapper = styled.div`
 `;
 
 export const MainPageBlogBio = styled.div`
-  padding: 0 6em;
-  text-align: justify;
   margin-top: 1em;
-
+  padding: 0 3em;
+  font-size: ${props => props.theme.captionSize};
+  
   @media all and (max-width: ${props => props.theme.smallScr}) {
     padding: 0;
   }
@@ -1542,7 +1542,7 @@ export const BlogNoteListElementTitle = styled.div`
 `;
 
 export const BlogNoteListElementSubtitle = styled.div`
-  font-size: ${props => props.theme.smallCaptionSize};
+  font-size: ${props => props.theme.captionSize};
 
   &:hover {
     animation: ${POP_KEYFRAMES} ${props => props.theme.popAnimation};
@@ -1557,9 +1557,19 @@ export const BlogNoteListElementSeparator = styled.div`
 
 /* BlogBio.js */
 
+export const BlogNoteBio = styled.div`
+  font-size: ${props => props.theme.smallCaptionSize};
+`;
+
+
 export const BlogBioWrapper = styled.div`
-  font-size: ${props => props.theme.captionSize};
   line-height: 1.4;
+  padding: 0 3em;
+  text-align: justify;
+  
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    padding: 0;
+  }
 
   a {
     text-decoration: underline;

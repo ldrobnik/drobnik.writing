@@ -22,6 +22,7 @@ import {
     TopImageWrapper,
     TopImageCredits,
     SectionSeparator,
+    BlogNoteBio,
     FADE_DURATION
 } from '../../../styled';
 import {WEBSITE_TEXT, BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
@@ -356,7 +357,9 @@ export const BlogNote = props => {
                     <AnimatedContent
                         pose={visible ? 'visible' : 'hidden'}>
                         <BlogSeparator className={'colouredBackground'}/>
-                        <BlogBio/>
+                        <BlogNoteBio>
+                            <BlogBio/>
+                        </BlogNoteBio>
                         <BlogSeparator className={'colouredBackground'}/>
                         <BlogNoteReadMore className={'coloured'}>
                             {WEBSITE_TEXT.blog.readMore}
