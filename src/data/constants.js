@@ -12,12 +12,12 @@ import {
     faStickyNote
 } from '@fortawesome/free-solid-svg-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import {Note} from '../styled';
 
 //source urls for book covers
 import nocturineCover from '../assets/images/nocturineCover.jpg';
 import nocCunCover from '../assets/images/nocCunCover.jpg';
 import vostokCover from '../assets/images/vostokCover.jpg';
-import {Note} from '../styled';
 // import tbaCover from '../assets/images/tbaCover.jpg';
 
 //Frequently used URLs
