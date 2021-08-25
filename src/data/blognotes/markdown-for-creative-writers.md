@@ -66,7 +66,7 @@ Windows users might enjoy [ghostwriter](https://wereturtle.github.io/ghostwriter
 
 My Markdown editor of choice, though, is [Typora](https://typora.io/), available for Windows, macOS, and Linux.
 
-What’s ground-breaking about Typora’s design is that it gets rid of the preview window. Instead, Markdown syntax symbols are seamlessly replaced with a preview of formatted text as you write, offering a distraction-free experience.
+What’s ground-breaking about Typora’s design is that it gets rid of the preview window. Instead, Markdown syntax symbols are seamlessly replaced with a preview of formatted text *as you write*, offering a distraction-free experience.
 
 ![Dynamic text preview in Typora](https://drobnik.co/images/md-for-writers-typora.gif)
 
