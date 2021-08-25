@@ -1,4 +1,4 @@
-You might have heard about Markdown—it’s an easy way to create formatted documents in a plain text editor.
+You might have heard of Markdown—it’s an easy way to create formatted documents in a plain text editor.
 
 Markdown syntax is so intuitive you can write nicely formatted text without even thinking.
 
