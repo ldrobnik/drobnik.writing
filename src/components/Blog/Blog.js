@@ -20,6 +20,7 @@ import {
     FADE_DURATION
 } from '../../styled';
 import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT} from './../../data/constants';
+import CategoryPicker from './CategoryPicker/CategoryPicker';
 import FilteredCategory from './FilteredCategory/FilteredCategory';
 import Teaser from './Teaser/Teaser';
 import BlogBio from './BlogBio/BlogBio';
@@ -193,6 +194,8 @@ export const Blog = props => {
                 <MainPageBlogBio>
                     <BlogBio/>
                 </MainPageBlogBio>
+                {(filteredCategory === '') &&
+                <CategoryPicker />}
                 {(filteredCategory) &&
                 <FilteredCategory category={filteredCategory}/>}
                 {(latestNote.id) &&

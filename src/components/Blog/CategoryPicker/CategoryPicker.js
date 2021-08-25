@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
@@ -26,6 +26,10 @@ export const CategoryPicker = props => {
         }
     }
 
+
+    useEffect(() => {
+        checkActiveCategories();
+    }, []);
 
     //do not show the content until the page is loaded
     return (
