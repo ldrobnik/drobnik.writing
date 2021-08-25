@@ -1,4 +1,4 @@
-Markdown is a fast and easy way to create formatted text—with headings, paragraphs, links, and the like—using a plain text editor.
+Markdown is a fast and easy way to create formatted text—with headings, paragraphs, links, and the like—in a plain text editor.
 
 You can use Markdown to write software documentation, blog notes, or [your next best-selling novel](https://drobnik.co/blog/markdown-for-creative-writers).
 
