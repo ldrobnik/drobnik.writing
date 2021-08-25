@@ -12,7 +12,6 @@ import {
     faStickyNote
 } from '@fortawesome/free-solid-svg-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {Note} from '../styled';
 
 //source urls for book covers
 import nocturineCover from '../assets/images/nocturineCover.jpg';
@@ -1372,11 +1371,13 @@ export const WEBSITE_TEXT = {
         author: 'Łukasz Drobnik',
         bio:
             {
-                links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>, <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
+                links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
+                    <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
                 content: <React.Fragment>is the author of genre-bending books, <a
                     href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
                     href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose
-                    published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured Lit</em>, <em>Atticus
+                    published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
+                        Lit</em>, <em>Atticus
                         Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
                         Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
                         href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of
@@ -1453,6 +1454,11 @@ export const LINKS = [
         url: NOCTURINE_URL
     },
     {
+        title: 'Read my blog',
+        subtitle: 'drobnik.co/blog',
+        url: '/blog/'
+    },
+    {
         title: 'Check out “błyski”',
         subtitle: 'my journal with flash in Polish translation',
         url: 'https://blyski.org'
@@ -1489,7 +1495,7 @@ export const LINKS = [
     },
     {
         title: 'My official website',
-        subtitle: 'www.drobnik.co',
+        subtitle: 'drobnik.co',
         url: '/'
     },
     // {
