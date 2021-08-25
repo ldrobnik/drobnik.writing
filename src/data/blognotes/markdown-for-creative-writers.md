@@ -12,7 +12,7 @@ Unlike HTML or XML, Markdown is insanely easy to read. For instance, a heading i
 
 No wonder then that Markdown has become widely popular among web writers and developers of software documentation. 
 
-But I argue it’s also a great tool for creative writers. Unless your fiction, CNF, or poetry requires intricate formatting, you can simplify your writing process by switching to Markdown.
+But I argue it’s also a great tool for all kinds of creative writers. Unless your fiction, CNF, or poetry requires intricate formatting, you can simplify your writing process by switching to Markdown.
 
 ## Basic Markdown syntax
 
@@ -60,9 +60,9 @@ Markdown files are also great for **version control**. Solutions for programmers
 
 You can create Markdown documents in any plain text editor, such as Notepad, but I encourage you to try more convenient options.
 
-Windows users might enjoy [ghostwriter](https://wereturtle.github.io/ghostwriter/). This free editor provides a live preview of your document and comes with  built-in light and dark themes.
+Windows users might enjoy [ghostwriter](https://wereturtle.github.io/ghostwriter/). This free editor provides a live preview of your document and comes with built-in light and dark themes.
 
-[MacDown](https://macdown.uranusjr.com/) is a similar free tool for macOS. It allows highly customisable Markdown rendering and has some extra features, such as auto-completion.
+[MacDown](https://macdown.uranusjr.com/) is a free tool for macOS. It allows highly customisable Markdown rendering and has some extra features, such as auto-completion.
 
 My Markdown editor of choice, though, is [Typora](https://typora.io/), available for Windows, macOS, and Linux.
 
@@ -96,4 +96,4 @@ Although not ideal for all cases, Markdown can make your writing process easier 
 
 It may be especially good for procrastinators. Writing in Markdown is much more distraction-free than working with traditional word processors. Markdown files are also great for back-ups and version control.
 
-Try writing your next poem, essay, or story in Markdown. Chances are you’ll make it one of your favourite writing tools. 
+Try writing your next poem, essay, or story in Markdown. Chances are you’ll make it one of your essential writing tools. 

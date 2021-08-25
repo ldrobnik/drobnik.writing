@@ -1216,11 +1216,11 @@ export const BlogPost = styled.div`
     }
   }
 
-  h1, h2 {
+  h1, h2, h3, h4 {
     margin-top: 1.5em;
   }
 
-  h3, h4, h5, h6 {
+  h5, h6 {
     margin-top: 1.2em;
   }
 
