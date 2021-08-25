@@ -15,6 +15,7 @@ export const CategoryButton = props => {
         <CategoryButtonWrapper>
             <ThemeWrapper
                 theme={props.category}
+                preventBw={true}
             >
                 <Link
                     to={`/blog/${props.category}`}
