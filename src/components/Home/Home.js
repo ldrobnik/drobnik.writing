@@ -7,7 +7,7 @@ import Layout from '../Layout/Layout';
 import DataNotice from '../UI/DataNotice/DataNotice';
 import Spinner from '../UI/Spinner/Spinner';
 import {GlobalStyle} from '../../styled';
-import {BLOG_NOTES} from '../../data/constants';
+import {BLOG_NOTES, NOCTURINE_URL, VOSTOK_URL} from '../../data/constants';
 
 const About = lazy(() => import('../About/About'));
 const Text = lazy(() => import('../Text/Text'));
@@ -105,17 +105,17 @@ export const Home = props => {
                         <Route path="/books/nocturine/" exact component={() => <BookPage book={0}/>} key="nocturine"/>
                         <Route path="/books/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>
                         <Route path="/nocturine/" exact component={() => {
-                            window.location.href = 'http://fathombooks.org/html/drobnik.html';
+                            window.location.href = NOCTURINE_URL;
                             return null;
                         }}/>
                         <Route path="/vostok/" exact component={() => {
-                            window.location.href = 'https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk';
+                            window.location.href = VOSTOK_URL;
                             return null;
                         }}/>
                         <Route path="/links/" exact component={QuickLinks} key="links"/>
                         <Route path="/blog/" exact component={Blog} key="blog"/>
                         <Route path="/blog/:id" exact component={() => blogComponent} key="blog-filtered" {...props}/>
-                        <Route path="/blog/notes/:id" exact component={BlogNote} key="blognotenote" {...props}/>
+                        <Route path="/blog/notes/:id" exact component={BlogNote} key="blognote" {...props}/>
                         <Route render={() => (<Redirect to="/"/>)} key="default"/>
                     </Switch>
                 </Suspense>
