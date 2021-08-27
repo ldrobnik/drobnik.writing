@@ -18,6 +18,7 @@ const BlogNote = lazy(() => import('../Blog/BlogNote/BlogNote'));
 
 
 export const Home = props => {
+
     //checks if any data is stored in localStorage and updates Redux state accordingly
     const checkLocalStorage = () => {
 
@@ -119,7 +120,6 @@ export const Home = props => {
                     </Switch>
                 </Suspense>
                 <DataNotice/>
-                {!props.loaded && <Spinner/>}
             </Layout>
         </React.Fragment>
     );
