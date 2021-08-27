@@ -1,19 +1,21 @@
-import React, {useEffect} from 'react';
+import React, {Suspense, lazy, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {setDataNoticeVisible, setDataNoticeAccepted, setLanguage, setBWMode, setPageLoaded} from '../../actions';
 import Layout from '../Layout/Layout';
-import About from '../About/About';
-import Text from '../Text/Text';
-import BookPage from '../BookPage/BookPage';
-import QuickLinks from '../QuickLinks/QuickLinks';
-import Blog from '../Blog/Blog';
-import BlogNote from '../Blog/BlogNote/BlogNote';
 import DataNotice from '../UI/DataNotice/DataNotice';
 import Spinner from '../UI/Spinner/Spinner';
 import {GlobalStyle} from '../../styled';
 import {BLOG_NOTES} from '../../data/constants';
+
+const About = lazy(() => import('../About/About'));
+const Text = lazy(() => import('../Text/Text'));
+const BookPage = lazy(() => import('../BookPage/BookPage'));
+const QuickLinks = lazy(() => import('../QuickLinks/QuickLinks'));
+const Blog = lazy(() => import('../Blog/Blog'));
+const BlogNote = lazy(() => import('../Blog/BlogNote/BlogNote'));
+
 
 export const Home = props => {
     //checks if any data is stored in localStorage and updates Redux state accordingly
@@ -94,26 +96,28 @@ export const Home = props => {
         <React.Fragment>
             <GlobalStyle/>
             <Layout {...props}>
-                <Switch>
-                    <Route path="/" exact component={About} key="home"/>
-                    <Route path="/texts/" exact component={Text} key="texts"/>
-                    <Route path="/texts/:id" exact component={Text} key="text"/>
-                    <Route path="/books/nocturine/" exact component={() => <BookPage book={0}/>} key="nocturine"/>
-                    <Route path="/books/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>
-                    <Route path="/nocturine/" exact component={() => {
-                        window.location.href = "http://fathombooks.org/html/drobnik.html";
-                        return null;
-                    }}/>
-                    <Route path="/vostok/" exact component={() => {
-                        window.location.href = "https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk";
-                        return null;
-                    }}/>
-                    <Route path="/links/" exact component={QuickLinks} key="links"/>
-                    <Route path="/blog/" exact component={Blog} key="blog"/>
-                    <Route path="/blog/:id" exact component={() => blogComponent} key="blog-filtered" {...props}/>
-                    <Route path="/blog/notes/:id" exact component={BlogNote} key="blognotenote" {...props}/>
-                    <Route render={() => (<Redirect to="/"/>)} key="default"/>
-                </Switch>
+                <Suspense fallback={<Spinner/>}>
+                    <Switch>
+                        <Route path="/" exact component={About} key="home"/>
+                        <Route path="/texts/" exact component={Text} key="texts"/>
+                        <Route path="/texts/:id" exact component={Text} key="text"/>
+                        <Route path="/books/nocturine/" exact component={() => <BookPage book={0}/>} key="nocturine"/>
+                        <Route path="/books/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>
+                        <Route path="/nocturine/" exact component={() => {
+                            window.location.href = 'http://fathombooks.org/html/drobnik.html';
+                            return null;
+                        }}/>
+                        <Route path="/vostok/" exact component={() => {
+                            window.location.href = 'https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk';
+                            return null;
+                        }}/>
+                        <Route path="/links/" exact component={QuickLinks} key="links"/>
+                        <Route path="/blog/" exact component={Blog} key="blog"/>
+                        <Route path="/blog/:id" exact component={() => blogComponent} key="blog-filtered" {...props}/>
+                        <Route path="/blog/notes/:id" exact component={BlogNote} key="blognotenote" {...props}/>
+                        <Route render={() => (<Redirect to="/"/>)} key="default"/>
+                    </Switch>
+                </Suspense>
                 <DataNotice/>
                 {!props.loaded && <Spinner/>}
             </Layout>
