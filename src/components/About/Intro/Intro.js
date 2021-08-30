@@ -6,7 +6,7 @@ import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
 import {IntroBody, SectionSeparator, SmallSeparator, FADE_DURATION} from '../../../styled';
 import {AnimatedContent} from '../../../animations/shared';
-import {IntroAnimatedLinks, IntroAnimatedButton} from '../../../posed';
+import {IntroAnimatedLinks, IntroAnimatedButton} from '../../../animations/about';
 import {WEBSITE_TEXT} from '../../../data/constants';
 import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'
 import PageHeading from '../../UI/PageHeading/PageHeading';

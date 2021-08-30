@@ -6,7 +6,7 @@ import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
 import {BookBody, BookSlogan, SectionSeparator, SmallSeparator, FADE_DURATION} from '../../../styled';
 import {AnimatedContent} from '../../../animations/shared';
-import {BookAnimatedButton} from '../../../posed';
+import {BookAnimatedButton} from '../../../animations/about';
 import {EXCERPT_BUTTON, BOOKS} from './../../../data/constants';
 import CentredPhoto from '../../UI/CentredPhoto/CentredPhoto';
 import SectionHeading from '../../UI/SectionHeading/SectionHeading'

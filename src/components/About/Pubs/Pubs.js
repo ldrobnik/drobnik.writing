@@ -16,7 +16,7 @@ import {
     FADE_DURATION
 } from '../../../styled';
 import {AnimatedContent} from '../../../animations/shared';
-import {PubsAnimatedMessage, PubsAnimatedPanel} from '../../../posed';
+import {PubsAnimatedMessage, PubsAnimatedPanel} from '../../../animations/about';
 import {WEBSITE_TEXT} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import ToggleSwitch from './../../UI/ToggleSwitch/ToggleSwitch';
