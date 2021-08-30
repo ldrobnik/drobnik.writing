@@ -1,6 +1,6 @@
 import React from 'react';
 import {QuoteListWrapper} from '../../../styled';
-import {AnimatedQuoteList, AnimatedQuote} from '../../../posed';
+import {AnimatedQuoteList, AnimatedQuote} from '../../../animations/about';
 import {BOOKS} from './../../../data/constants';
 import Quote from './Quote/Quote';
 
