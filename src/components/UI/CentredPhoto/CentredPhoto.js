@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {CentredPhotoWrapper, Photo, PhotoLink} from '../../../styled';
+import {CentredPhotoWrapper, Photo, PhotoLink} from '../../../styles/shared';
 import {AnimatedPhoto} from '../../../animations/shared';
 
 const CentredPhoto = props => {

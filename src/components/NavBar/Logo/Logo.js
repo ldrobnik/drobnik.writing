@@ -1,5 +1,5 @@
 import React from 'react';
-import {WebsiteLogo} from '../../../styled';
+import {WebsiteLogo} from '../../../styles/shared';
 import websiteLogo from '../../../assets/images/logo.svg';
 
 

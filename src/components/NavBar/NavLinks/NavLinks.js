@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Link} from 'react-router-dom';
-import {NavLinksWrapper} from '../../../styled';
+import {NavLinksWrapper} from '../../../styles/shared';
 import {AnimatedContent} from '../../../animations/shared';
 import {WEBSITE_TEXT} from './../../../data/constants';
 import {bindActionCreators} from 'redux';

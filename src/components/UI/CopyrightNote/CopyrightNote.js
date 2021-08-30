@@ -1,12 +1,12 @@
 import React from 'react';
-import {Note} from '../../../styled';
+import {CopyNote} from '../../../styles/shared';
 import {WEBSITE_TEXT} from '../../../data/constants';
 
 const CopyrightNote = () => {
     return (
-        <Note>
+        <CopyNote>
             {WEBSITE_TEXT.copyright}
-        </Note>
+        </CopyNote>
     );
 };
 

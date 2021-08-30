@@ -1,7 +1,7 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Link} from 'react-router-dom';
-import {SubLinks} from '../../../styled';
+import {SubLinks} from '../../../styles/shared';
 import {WEBSITE_TEXT} from '../../../data/constants';
 
 

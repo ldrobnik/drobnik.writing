@@ -3,7 +3,7 @@ import {bindActionCreators} from 'redux';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {setPageReload} from '../../../actions';
-import {CentredButtonOuterWrapper, CentredButtonButtonWrapper} from '../../../styled';
+import {CentredButtonOuterWrapper, CentredButtonButtonWrapper} from '../../../styles/shared';
 
 export const CentredButton = props => {
 

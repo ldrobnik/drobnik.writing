@@ -12,7 +12,7 @@ import {
     NavInactiveElement,
     ToggledNavElement,
     NavLinkContent
-} from '../../styled';
+} from '../../styles/shared';
 import {WEBSITE_TEXT, TEXT_NAMES} from '../../data/constants';
 import Logo from './Logo/Logo';
 import NavLinks from './NavLinks/NavLinks';

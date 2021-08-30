@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {SpinnerWrapper, SpinnerBackdrop} from '../../../styled';
+import {SpinnerWrapper,  SpinnerBackdrop} from '../../../styles/shared';
 import {AnimatedContent} from '../../../animations/shared';
 import logoImage from '../../../assets/images/logo.svg';
 

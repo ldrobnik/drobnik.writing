@@ -13,6 +13,7 @@ import {
     setPageReload
 } from '../../../actions';
 import {AnimatedContent} from '../../../animations/shared';
+import {SectionSeparator} from '../../../styles/shared';
 import {
     BlogTopAnchor,
     BlogPost,
@@ -21,7 +22,6 @@ import {
     BlogNoteReadMore,
     TopImageWrapper,
     TopImageCredits,
-    SectionSeparator,
     BlogNoteBio,
     FADE_DURATION
 } from '../../../styled';

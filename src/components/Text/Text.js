@@ -11,6 +11,7 @@ import {
     setPage,
     setPageReload
 } from '../../actions';
+import {SectionSeparator} from '../../styles/shared';
 import {
     TextTopAnchor,
     TextWrapper,
@@ -18,7 +19,6 @@ import {
     TextTitle,
     TextSubtitle,
     TextBody,
-    SectionSeparator,
     FADE_DURATION
 } from '../../styled';
 import {AnimatedContent} from '../../animations/shared';

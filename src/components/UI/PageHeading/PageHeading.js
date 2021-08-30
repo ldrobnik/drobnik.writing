@@ -1,5 +1,5 @@
 import React from 'react';
-import {SectionHeader, PageTitle, SectionSubtitle} from '../../../styled';
+import {SectionHeader, PageTitle, SectionSubtitle} from '../../../styles/shared';
 
 const SectionHeading = props => {
 

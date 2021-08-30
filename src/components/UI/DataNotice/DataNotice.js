@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {setDataNoticeVisible, setDataNoticeAccepted} from '../../../actions';
-import {Notice, NoticeMessage, NoticeDismissButton} from '../../../styled';
+import {Notice, NoticeMessage, NoticeDismissButton} from '../../../styles/shared';
 import {AnimatedContent} from '../../../animations/shared';
 import {WEBSITE_TEXT} from '../../../data/constants';
 

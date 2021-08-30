@@ -1,5 +1,5 @@
 import React from 'react';
-import {ToggleWrapper} from '../../../styled';
+import {ToggleWrapper} from '../../../styles/shared';
 import Switch from 'react-switch';
 
 const ToggleSwitch = props => {

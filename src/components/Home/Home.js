@@ -6,7 +6,7 @@ import {setDataNoticeVisible, setDataNoticeAccepted, setLanguage, setBWMode, set
 import Layout from '../Layout/Layout';
 import DataNotice from '../UI/DataNotice/DataNotice';
 import Spinner from '../UI/Spinner/Spinner';
-import {GlobalStyle} from '../../styled';
+import {GlobalStyle} from '../../styles/shared';
 import {BLOG_NOTES, NOCTURINE_URL, VOSTOK_URL} from '../../data/constants';
 
 const About = lazy(() => import('../About/About'));

@@ -10,13 +10,13 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../animations/shared';
+import {SectionSeparator} from '../../styles/shared';
 import {
     BlogTopAnchor,
     BlogWrapper,
     MainPageBlogBio,
     BlogSectionHeading,
     BlogTitle,
-    SectionSeparator,
     FADE_DURATION
 } from '../../styled';
 import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT} from './../../data/constants';
