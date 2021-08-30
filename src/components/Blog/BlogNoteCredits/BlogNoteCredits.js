@@ -12,7 +12,7 @@ import {
     BlogNoteCreditWrapper,
     BlogNoteAuthor,
     BlogTeaserAuthor
-} from '../../../styled';
+} from '../../../styles/blog';
 import {setPageReload} from '../../../actions';
 import {WEBSITE_TEXT, BLOG_CATEGORIES} from '../../../data/constants';
 

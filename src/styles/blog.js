@@ -1,38 +1,5 @@
-/* STYLED-COMPONENTS */
-import styled, {createGlobalStyle, keyframes} from 'styled-components';
-
-/* Keyframes */
-
-export const PULSATE_KEYFRAMES = keyframes`
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
-`;
-
-
-//Keyframes for 'popping' animation
-export const POP_KEYFRAMES = keyframes`
-  0% {
-    transform: scale(1, 1);
-  }
-
-  30% {
-    transform: scale(1.05, 1.05);
-
-  }
-
-  100% {
-    transform: scale(1, 1);
-  }
-`;
+import styled from 'styled-components';
+import {POP_KEYFRAMES, PULSATE_KEYFRAMES} from './shared';
 
 /* Blog.js */
 

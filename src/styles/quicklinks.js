@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {POP_KEYFRAMES} from '../styled';
+import {POP_KEYFRAMES} from './shared';
 
 
 /* QuickLinks.js */

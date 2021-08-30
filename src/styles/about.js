@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {POP_KEYFRAMES, PULSATE_KEYFRAMES} from '../styled';
+import {POP_KEYFRAMES, PULSATE_KEYFRAMES} from './shared';
 
 
 /* About.js */

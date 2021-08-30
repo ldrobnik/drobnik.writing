@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {AnimatedContent} from '../../../animations/shared';
-import {CategoryPickerWrapper} from '../../../styled';
+import {CategoryPickerWrapper} from '../../../styles/blog';
 import {BLOG_NOTES, BLOG_CATEGORIES} from '../../../data/constants';
 import {CategoryButton} from './CategoryButton/CategoryButton';
 

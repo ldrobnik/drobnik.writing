@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import Markdown from 'markdown-to-jsx/dist/index.js';
 import {HighlightedMarkdown} from '../highlighted-markdown';
 import {AnimatedContent} from '../../../animations/shared';
-import {BlogPost, TeaserWrapper} from '../../../styled';
+import {BlogPost, TeaserWrapper} from '../../../styles/blog';
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
 import ThemeWrapper from '../ThemeWrapper/ThemeWrapper';
 import {setPageReload} from '../../../actions';

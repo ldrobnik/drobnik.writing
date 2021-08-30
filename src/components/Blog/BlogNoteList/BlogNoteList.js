@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
 import {FADE_DURATION} from '../../../styles/shared';
-import {BlogNoteListWrapper} from '../../../styled';
+import {BlogNoteListWrapper} from '../../../styles/blog';
 import {AnimatedBlogNoteList, AnimatedBlogNoteLink} from '../../../animations/blog';
 import BlogNoteListElement from './BlogNoteListElement/BlogNoteListElement';
 

@@ -17,7 +17,7 @@ import {
     MainPageBlogBio,
     BlogSectionHeading,
     BlogTitle
-} from '../../styled';
+} from '../../styles/blog';
 import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT} from './../../data/constants';
 import CategoryPicker from './CategoryPicker/CategoryPicker';
 import FilteredCategory from './FilteredCategory/FilteredCategory';

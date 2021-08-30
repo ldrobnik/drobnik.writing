@@ -23,7 +23,7 @@ import {
     TopImageWrapper,
     TopImageCredits,
     BlogNoteBio
-} from '../../../styled';
+} from '../../../styles/blog';
 import {WEBSITE_TEXT, BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
 import BlogBio from '../BlogBio/BlogBio';

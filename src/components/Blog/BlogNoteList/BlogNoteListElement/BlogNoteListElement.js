@@ -8,7 +8,7 @@ import {
     BlogNoteListElementTitle,
     BlogNoteListElementSubtitle,
     BlogNoteListElementSeparator
-} from '../../../../styled';
+} from '../../../../styles/blog';
 import {setPageReload} from '../../../../actions';
 import {BLOG_CATEGORIES} from '../../../../data/constants';
 import ThemeWrapper from '../../ThemeWrapper/ThemeWrapper';

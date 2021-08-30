@@ -3,7 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {AnimatedContent} from '../../../animations/shared';
-import {FilteredCategoryWrapper, FilteredCategoryHeading, FilteredCategoryLink} from '../../../styled';
+import {FilteredCategoryWrapper, FilteredCategoryHeading, FilteredCategoryLink} from '../../../styles/blog';
 import ThemeWrapper from '../ThemeWrapper/ThemeWrapper';
 import {setPageReload} from '../../../actions';
 import {WEBSITE_TEXT, BLOG_CATEGORIES} from '../../../data/constants';

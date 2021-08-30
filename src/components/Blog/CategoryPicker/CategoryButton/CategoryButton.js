@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faStickyNote} from '@fortawesome/free-solid-svg-icons';
-import {CategoryButtonWrapper} from '../../../../styled';
+import {CategoryButtonWrapper} from '../../../../styles/blog';
 import ThemeWrapper from '../../ThemeWrapper/ThemeWrapper';
 import {setPageReload} from '../../../../actions';
 import {BLOG_CATEGORIES} from '../../../../data/constants';
