@@ -1,8 +1,6 @@
-/* POSED COMPONENTS */
+/* BlogNoteList.js */
 
 import posed from 'react-pose';
-
-/* BlogNoteList.js */
 
 export const AnimatedBlogNoteList = posed.div({
     visible: {
