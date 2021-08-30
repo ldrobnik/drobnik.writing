@@ -1,5 +1,5 @@
 import React from 'react';
-import {SocialLinksWrapper} from '../../../styled';
+import {SocialLinksWrapper} from '../../../styles/about';
 import {WEBSITE_TEXT} from './../../../data/constants';
 
 const SocialLinks = () => {

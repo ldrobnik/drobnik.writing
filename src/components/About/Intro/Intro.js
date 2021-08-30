@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
 import {SectionSeparator, SmallSeparator, FADE_DURATION} from '../../../styles/shared';
-import {IntroBody} from '../../../styled';
+import {IntroBody} from '../../../styles/about';
 import {AnimatedContent} from '../../../animations/shared';
 import {IntroAnimatedLinks, IntroAnimatedButton} from '../../../animations/about';
 import {WEBSITE_TEXT} from '../../../data/constants';

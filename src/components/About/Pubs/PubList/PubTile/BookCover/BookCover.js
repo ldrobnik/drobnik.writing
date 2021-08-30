@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BookCoverWrapper, BookCoverPhoto} from '../../../../../../styled';
+import {BookCoverWrapper, BookCoverPhoto} from '../../../../../../styles/about';
 import {BookCoverAnimatedPic} from '../../../../../../animations/about';
 
 const BookCover = props => {

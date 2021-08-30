@@ -1,5 +1,5 @@
 import React from 'react';
-import {QuoteListWrapper} from '../../../styled';
+import {QuoteListWrapper} from '../../../styles/about';
 import {AnimatedQuoteList, AnimatedQuote} from '../../../animations/about';
 import {BOOKS} from './../../../data/constants';
 import Quote from './Quote/Quote';

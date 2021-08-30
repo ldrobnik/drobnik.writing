@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
 import {SectionSeparator, SmallSeparator, FADE_DURATION} from '../../../styles/shared';
-import {BookBody, BookSlogan} from '../../../styled';
+import {BookBody, BookSlogan} from '../../../styles/about';
 import {AnimatedContent} from '../../../animations/shared';
 import {BookAnimatedButton} from '../../../animations/about';
 import {EXCERPT_BUTTON, BOOKS} from './../../../data/constants';

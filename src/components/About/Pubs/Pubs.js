@@ -13,7 +13,7 @@ import {
     PubsLabel,
     PubsSubsectionHeading,
     PubsSeparator
-} from '../../../styled';
+} from '../../../styles/about';
 import {AnimatedContent} from '../../../animations/shared';
 import {PubsAnimatedMessage, PubsAnimatedPanel} from '../../../animations/about';
 import {WEBSITE_TEXT} from './../../../data/constants';

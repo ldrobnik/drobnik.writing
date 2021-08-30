@@ -11,7 +11,7 @@ import {
     PubSeparator,
     PubIssue,
     PubDescription
-} from '../../../../../styled';
+} from '../../../../../styles/about';
 import BookCover from './BookCover/BookCover';
 import {setPageReload} from '../../../../../actions';
 

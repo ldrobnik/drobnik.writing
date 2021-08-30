@@ -1,6 +1,6 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {SectionLinksWrapper} from '../../../styled';
+import {SectionLinksWrapper} from '../../../styles/about';
 import {WEBSITE_TEXT} from './../../../data/constants';
 
 

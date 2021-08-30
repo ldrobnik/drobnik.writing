@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPage} from '../../actions';
-import {AboutWrapper, AboutTopAnchor, AboutSectionWrapper} from '../../styled';
+import {AboutWrapper, AboutTopAnchor, AboutSectionWrapper} from '../../styles/about';
 import {BOOKS, TEXT_NAMES, WEBSITE_TEXT} from './../../data/constants';
 import Intro from './Intro/Intro';
 import Book from './Book/Book';

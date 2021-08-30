@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
 import {SectionSeparator, FADE_DURATION} from '../../../styles/shared';
-import {ReadWrapper, ReadMessage, ReadBlogBtnWrapper} from '../../../styled';
+import {ReadWrapper, ReadMessage, ReadBlogBtnWrapper} from '../../../styles/about';
 import {AnimatedContent} from '../../../animations/shared';
 import {AnimatedReadList, AnimatedReadLink, AnimatedReadButton} from '../../../animations/about';
 import {WEBSITE_TEXT, TEXT_NAMES, TEXTS} from './../../../data/constants';

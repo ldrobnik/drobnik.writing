@@ -8,7 +8,7 @@ import {
     ReadListElementTitle,
     ReadListElementSubtitle,
     ReadListElementLine
-} from '../../../../styled';
+} from '../../../../styles/about';
 import {setPageReload} from '../../../../actions';
 
 const ReadListElement = props => {

@@ -10,7 +10,7 @@ import {
     setPageReload
 } from '../../actions';
 import {InvisibleSeparator, SectionSeparator, FADE_DURATION} from '../../styles/shared';
-import {BookPageTopAnchor, BookPageWrapper} from '../../styled';
+import {BookPageTopAnchor, BookPageWrapper} from '../../styles/about';
 import {AnimatedContent} from '../../animations/shared';
 import {BOOKS} from './../../data/constants';
 import Book from '../About/Book/Book';

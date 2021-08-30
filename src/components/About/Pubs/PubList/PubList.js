@@ -1,6 +1,6 @@
 import React from 'react';
 import {PoseGroup} from 'react-pose';
-import {PubTileContainer} from '../../../../styled';
+import {PubTileContainer} from '../../../../styles/about';
 import {PubAnimatedTile} from '../../../../animations/about';
 import {PUBLICATIONS} from './../../../../data/constants';
 import PubTile from './PubTile/PubTile';
