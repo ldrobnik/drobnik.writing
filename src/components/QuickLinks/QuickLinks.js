@@ -3,7 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPageReload} from '../../actions';
 import {FADE_DURATION} from '../../styles/shared';
-import {QuickLinksWrapper} from '../../styled';
+import {QuickLinksWrapper} from '../../styles/quicklinks';
 import {AnimatedContent} from '../../animations/shared';
 import {LINKS, TEXT_NAMES} from '../../data/constants';
 import QuickLink from './QuickLink/QuickLink';
