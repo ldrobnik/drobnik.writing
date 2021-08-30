@@ -2,7 +2,7 @@ import React from 'react';
 import {bindActionCreators} from 'redux';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {QuickLinkWrapper, QuickLinkContentWrapper, QuickLinkTitle, QuickLinkSubtitle} from '../../../styled';
+import {QuickLinkWrapper, QuickLinkContentWrapper, QuickLinkTitle, QuickLinkSubtitle} from '../../../styles/quicklinks';
 import {setPageReload} from '../../../actions';
 
 const QuickLink = props => {
