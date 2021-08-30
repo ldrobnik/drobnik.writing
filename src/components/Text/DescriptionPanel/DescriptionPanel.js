@@ -1,5 +1,5 @@
 import React from 'react';
-import {Description} from '../../../styled';
+import {Description} from '../../../styles/text';
 
 const DescriptionPanel = props => {
 

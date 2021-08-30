@@ -19,7 +19,7 @@ import {
     TextTitle,
     TextSubtitle,
     TextBody
-} from '../../styled';
+} from '../../styles/text';
 import {AnimatedContent} from '../../animations/shared';
 import {AnimatedTextLink,  AnimatedTextButton} from '../../animations/text';
 import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES} from './../../data/constants';

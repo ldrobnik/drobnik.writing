@@ -1,5 +1,5 @@
 import React from 'react';
-import {CreditWrapper} from '../../../styled';
+import {CreditWrapper} from '../../../styles/text';
 import {TEXTS} from '../../../data/constants';
 
 const Credits = props => {
