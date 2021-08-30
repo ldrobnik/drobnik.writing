@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {SpinnerWrapper, SpinnerBackdrop} from '../../../styled';
-import {AnimatedContent} from '../../../posed';
+import {AnimatedContent} from '../../../animations/shared';
 import logoImage from '../../../assets/images/logo.svg';
 
 const Spinner = () => {

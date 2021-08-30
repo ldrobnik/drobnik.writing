@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import moment from 'moment';
-import {AnimatedContent} from '../../../posed';
+import {AnimatedContent} from '../../../animations/shared';
 import {
     BlogNoteTeaserTitle,
     BlogNoteTitle,

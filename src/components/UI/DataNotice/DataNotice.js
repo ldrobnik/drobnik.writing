@@ -3,7 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {setDataNoticeVisible, setDataNoticeAccepted} from '../../../actions';
 import {Notice, NoticeMessage, NoticeDismissButton} from '../../../styled';
-import {AnimatedContent} from '../../../posed';
+import {AnimatedContent} from '../../../animations/shared';
 import {WEBSITE_TEXT} from '../../../data/constants';
 
 export const DataNotice = props => {

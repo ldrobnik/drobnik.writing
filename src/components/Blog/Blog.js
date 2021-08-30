@@ -9,7 +9,7 @@ import {
     setPage,
     setPageReload
 } from '../../actions';
-import {AnimatedContent} from '../../posed';
+import {AnimatedContent} from '../../animations/shared';
 import {
     BlogTopAnchor,
     BlogWrapper,

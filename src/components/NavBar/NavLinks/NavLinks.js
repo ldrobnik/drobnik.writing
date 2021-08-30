@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Link} from 'react-router-dom';
 import {NavLinksWrapper} from '../../../styled';
-import {AnimatedContent} from '../../../posed';
+import {AnimatedContent} from '../../../animations/shared';
 import {WEBSITE_TEXT} from './../../../data/constants';
 import {bindActionCreators} from 'redux';
 import {setPageReload} from '../../../actions';

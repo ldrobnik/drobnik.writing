@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import Markdown from 'markdown-to-jsx/dist/index.js';
 import {HighlightedMarkdown} from '../highlighted-markdown';
-import {AnimatedContent} from '../../../posed';
+import {AnimatedContent} from '../../../animations/shared';
 import {BlogPost, TeaserWrapper} from '../../../styled';
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
 import ThemeWrapper from '../ThemeWrapper/ThemeWrapper';

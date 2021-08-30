@@ -2,7 +2,7 @@ import React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
-import {AnimatedContent} from '../../../posed';
+import {AnimatedContent} from '../../../animations/shared';
 import {FilteredCategoryWrapper, FilteredCategoryHeading, FilteredCategoryLink} from '../../../styled';
 import ThemeWrapper from '../ThemeWrapper/ThemeWrapper';
 import {setPageReload} from '../../../actions';
