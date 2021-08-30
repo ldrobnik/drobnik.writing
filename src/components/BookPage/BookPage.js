@@ -9,8 +9,8 @@ import {
     setPage,
     setPageReload
 } from '../../actions';
-import {InvisibleSeparator, SectionSeparator} from '../../styles/shared';
-import {BookPageTopAnchor, BookPageWrapper, FADE_DURATION} from '../../styled';
+import {InvisibleSeparator, SectionSeparator, FADE_DURATION} from '../../styles/shared';
+import {BookPageTopAnchor, BookPageWrapper} from '../../styled';
 import {AnimatedContent} from '../../animations/shared';
 import {BOOKS} from './../../data/constants';
 import Book from '../About/Book/Book';

@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {SectionSeparator} from '../../../styles/shared';
+import {SectionSeparator, FADE_DURATION} from '../../../styles/shared';
 import {
     PubsWrapper,
     PubsMessage,
@@ -12,8 +12,7 @@ import {
     PubsSwitchWrapper,
     PubsLabel,
     PubsSubsectionHeading,
-    PubsSeparator,
-    FADE_DURATION
+    PubsSeparator
 } from '../../../styled';
 import {AnimatedContent} from '../../../animations/shared';
 import {PubsAnimatedMessage, PubsAnimatedPanel} from '../../../animations/about';

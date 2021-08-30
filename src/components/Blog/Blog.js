@@ -10,14 +10,13 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../animations/shared';
-import {SectionSeparator} from '../../styles/shared';
+import {SectionSeparator, FADE_DURATION} from '../../styles/shared';
 import {
     BlogTopAnchor,
     BlogWrapper,
     MainPageBlogBio,
     BlogSectionHeading,
-    BlogTitle,
-    FADE_DURATION
+    BlogTitle
 } from '../../styled';
 import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT} from './../../data/constants';
 import CategoryPicker from './CategoryPicker/CategoryPicker';

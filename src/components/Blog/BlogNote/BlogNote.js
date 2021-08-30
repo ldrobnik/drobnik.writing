@@ -13,7 +13,7 @@ import {
     setPageReload
 } from '../../../actions';
 import {AnimatedContent} from '../../../animations/shared';
-import {SectionSeparator} from '../../../styles/shared';
+import {SectionSeparator, FADE_DURATION} from '../../../styles/shared';
 import {
     BlogTopAnchor,
     BlogPost,
@@ -22,8 +22,7 @@ import {
     BlogNoteReadMore,
     TopImageWrapper,
     TopImageCredits,
-    BlogNoteBio,
-    FADE_DURATION
+    BlogNoteBio
 } from '../../../styled';
 import {WEBSITE_TEXT, BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';

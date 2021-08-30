@@ -4,7 +4,8 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {BlogNoteListWrapper, FADE_DURATION} from '../../../styled';
+import {FADE_DURATION} from '../../../styles/shared';
+import {BlogNoteListWrapper} from '../../../styled';
 import {AnimatedBlogNoteList, AnimatedBlogNoteLink} from '../../../animations/blog';
 import BlogNoteListElement from './BlogNoteListElement/BlogNoteListElement';
 

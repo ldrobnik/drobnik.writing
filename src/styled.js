@@ -34,10 +34,6 @@ export const POP_KEYFRAMES = keyframes`
   }
 `;
 
-//Duration of the fade-in animation used when loading new page
-export const FADE_DURATION = 200;
-
-
 /* About.js */
 
 export const AboutTopAnchor = styled.div`

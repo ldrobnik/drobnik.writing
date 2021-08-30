@@ -11,15 +11,14 @@ import {
     setPage,
     setPageReload
 } from '../../actions';
-import {SectionSeparator} from '../../styles/shared';
+import {SectionSeparator, FADE_DURATION} from '../../styles/shared';
 import {
     TextTopAnchor,
     TextWrapper,
     TextHeader,
     TextTitle,
     TextSubtitle,
-    TextBody,
-    FADE_DURATION
+    TextBody
 } from '../../styled';
 import {AnimatedContent} from '../../animations/shared';
 import {AnimatedTextLink,  AnimatedTextButton} from '../../animations/text';
