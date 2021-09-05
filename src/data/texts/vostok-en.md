@@ -53,3 +53,21 @@ Weronika remarked with a sneer he would’ve had more free time if he hadn’t w
 Once he disappeared behind the curtain, Weronika started talking about how insanely wasted she got the night before, totally blotto; she didn’t remember much: the voices of drunken people, the smell of kebabs, the bright car lights, the piercing frost. She met some guy — in Dragon, or earlier, in Kisielice — and the two of them walked somewhere across the market square towards Garbary Street, maybe to Mięsna cos where else could they’ve gone. When she woke up, she couldn’t remember anything else, except for the image of small glowing pink rectangles she still has before her eyes. She’s got no idea what to connect it with.
 
 ‘Brilliant!’ Olka laughed and added Weronika must take better care of herself, after which she took out a rustling fifty-zloty note and handed it to Wu, who came back from the toilet, asking him to buy another round.
+
+<br>
+
+A heavy dark sky hung above the city, it was night, Poznań’s blocks of flats and tenement houses remained dormant, car parks choked on freezing air, lampposts cast a lurid light, snow lay heavy on the roofs, and a strong, piercing wind ran along the network of streets; it carried frost.
+
+In light from the street you could see unfocused outlines of the furniture and cardboard boxes, crumpled bedding, Wu tossing and turning. You could smell the pungent scent of tobacco smoke. Hear the muffled voices of brawling chavs. Finally, Wu sighed, got up from the bed, walked through the darkness of the entrance hall to the darkness of the kitchen, groped for the switch, pushed it, and when in spite of this it remained dark, he silently cursed the blown-out bulb. He felt around the worktop to find a bottle of mineral water and started to drink — with fast, greedy gulps.
+
+Twenty minutes later he already walked along Garbary Street, there was no one within the range of his sight, some dead-drunk girl lay in one of the doorways, but he couldn’t possibly see it, so he walked, trembling with cold, towards Bernardine Square, passed a shop selling telescopes (a bloated Jupiter on a poster next to the entrance), a row of black shop windows, a chemist’s ‘Wenus’, a dot-matrix display scrolling the message, ‘Stay healthy. Stay productive. Collect points.’
+
+Then he followed the tramline towards the river, Mostowa Street at this time of night was dark and motionless, no cars were approaching, so Wu walked diagonally to the other side and kept striding along the street, only to take a right turn before Roch Bridge and go down a steep embankment to the river itself. The Warta was ice-bound and covered with a thick layer of snow, the sky whitish from the city glow. Wu smoked, slowly carrying along the invisible bank, and as he walked, he sometimes squinted and massaged his eyelids, like one does to soothe an unbearable headache.
+
+One time after he opened his eyes, and it was when he nearly reached Chrobry Bridge, he stopped to stare, straining his eyes, into the dark space under the bridge’s deck. Right next to the bank, under a pillar, loomed a shape. Wu hesitated, then took a few steps forward, approaching the shape to a distance at which one could already see it was a girl kneeling in an unnatural pose, strangely bent forwards.
+
+He asked if everything was all right. Silence.
+
+After a moment he came closer, an arm’s length away, and — with hesitation — gently touched her shoulder, but the girl didn’t budge. Finally, he took his phone out from his pocket and shone it on her face.
+
+The reddish light revealed a mouth gagged with a decent-sized lemon, blue, ghastly open eyes, hands tied behind the back and a belly slit open to pour onto the snow a ripe cluster of guts.
