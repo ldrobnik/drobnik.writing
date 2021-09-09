@@ -65,6 +65,11 @@ export const VostokTheme = styled.div`
   img {
     border: ${props => props.theme.vostokColor} 1px solid;
   }
+  
+  blockquote {
+    border-left: 6px solid ${props => props.theme.vostokColor};
+    padding-left: 10px;
+  }
 
 `;
 
