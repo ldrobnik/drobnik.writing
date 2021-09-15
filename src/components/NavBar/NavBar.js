@@ -195,9 +195,23 @@ const NavBar = props => {
 
     //specifies whether the Book subpage is displayed
 
-    /*If the Text page is currently displayed, assigned the next text to the read link.
-    /*If the About page is displayed, assign a random text to it. */
-    const chosenText = (props.page === 'main') ? randomText : nextText;
+    /*If the Text page is currently displayed, assign the next text to the read link.
+    /*If the main page is displayed, assign no text value
+    (the button will direct to the Writing component */
+    /*If the Writing page is displayed, assign a random text to it.
+     */
+
+    //variable holding the read button target text
+    let chosenText;
+
+    if (props.page === 'writing') {
+        chosenText = randomText
+    } else if (props.page === 'main') {
+        chosenText = '';
+    } else {
+        chosenText = nextText;
+    }
+    
 
     //variable to hold the read button code
     const readButton = readClickable ?
