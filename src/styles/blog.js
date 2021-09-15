@@ -42,6 +42,17 @@ export const NocturineTheme = styled.div`
   img {
     border: ${props => props.theme.nocturineColor} 1px solid;
   }
+
+  blockquote {
+    border-left: 6px solid ${props => props.theme.nocturineColor};
+    padding-left: 1.5vw;
+    font-size: 0.9em;
+
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
 `;
 
 export const VostokTheme = styled.div`
@@ -101,6 +112,17 @@ export const WritingTheme = styled.div`
     border: ${props => props.theme.writingColor} 1px solid;
   }
 
+  blockquote {
+    border-left: 6px solid ${props => props.theme.writingColor};
+    padding-left: 1.5vw;
+    font-size: 0.9em;
+
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
 `;
 
 export const CodeTheme = styled.div`
@@ -123,6 +145,17 @@ export const CodeTheme = styled.div`
 
   img {
     border: ${props => props.theme.codeColor} 1px solid;
+  }
+
+  blockquote {
+    border-left: 6px solid ${props => props.theme.codeColor};
+    padding-left: 1.5vw;
+    font-size: 0.9em;
+
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
   }
 
 `;
@@ -150,6 +183,17 @@ export const BiologyTheme = styled.div`
     border: ${props => props.theme.biologyColor} 1px solid;
   }
 
+  blockquote {
+    border-left: 6px solid ${props => props.theme.biologyColor};
+    padding-left: 1.5vw;
+    font-size: 0.9em;
+
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
 `;
 
 export const PopTheme = styled.div`
@@ -175,6 +219,17 @@ export const PopTheme = styled.div`
     border: ${props => props.theme.popColor} 1px solid;
   }
 
+  blockquote {
+    border-left: 6px solid ${props => props.theme.popColor};
+    padding-left: 1.5vw;
+    font-size: 0.9em;
+
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
 `;
 
 export const LiteraryTheme = styled.div`
@@ -198,6 +253,17 @@ export const LiteraryTheme = styled.div`
 
   img {
     border: ${props => props.theme.literaryColor} 1px solid;
+  }
+
+  blockquote {
+    border-left: 6px solid ${props => props.theme.literaryColor};
+    padding-left: 1.5vw;
+    font-size: 0.9em;
+
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
   }
 `;
 
