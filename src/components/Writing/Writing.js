@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {
@@ -10,19 +10,22 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../animations/shared';
-import {SectionSeparator, FADE_DURATION} from '../../styles/shared';
+import {SectionSeparator, FADE_DURATION, InvisibleSeparator} from '../../styles/shared';
 import {
     WritingWrapper,
     WritingTopAnchor,
-    MainPageWritingBio,
     WritingTitle
 } from '../../styles/writing';
 import {TEXT_NAMES, WEBSITE_TEXT} from './../../data/constants';
 import WritingBio from './WritingBio/WritingBio';
+import ReadList from '../ReadList/ReadList';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
 export const Writing = props => {
+
+    //specifies whether text links should be visible
+    const [linksVisible, setLinksVisible] = useState(false);
 
     //updates current theme
     const updateTheme = () => {
@@ -80,6 +83,7 @@ export const Writing = props => {
         //show content after a while if page has loaded
         if (props.loaded) {
             setTimeout(showContent, FADE_DURATION);
+            setTimeout(setLinksVisible(true), FADE_DURATION * 2); //show text links after a longer while
         }
 
     });
@@ -95,11 +99,9 @@ export const Writing = props => {
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
                 <WritingTitle>{WEBSITE_TEXT.writing.title[props.lang]}</WritingTitle>
-                <MainPageWritingBio>
-                    <WritingBio lang={props.lang}/>
-                </MainPageWritingBio>
+                <WritingBio lang={props.lang}/>
             </AnimatedContent>
-
+            <ReadList linksVisible={linksVisible}/>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >

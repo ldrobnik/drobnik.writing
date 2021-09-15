@@ -47,26 +47,11 @@ export const WritingTitle = styled.h1`
   }
 `;
 
-export const MainPageWritingBio = styled.div`
-  margin-top: 1em;
-  padding: 0 3em;
-  font-size: ${props => props.theme.captionSize};
-  
-  @media all and (max-width: ${props => props.theme.smallScr}) {
-    padding: 0;
-  }
-`;
-
-export const WritingSeparator = styled.div`
-  margin: 3em auto;
-  height: 0.6em;
-  width: 6em;
-`;
-
 export const WritingBioWrapper = styled.div`
   line-height: 1.4;
   padding: 0 3em;
   text-align: justify;
+  font-size: ${props => props.theme.captionSize};
   
   @media all and (max-width: ${props => props.theme.smallScr}) {
     padding: 0;
