@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {
@@ -15,7 +15,6 @@ import {
     WritingWrapper,
     WritingTopAnchor,
     MainPageWritingBio,
-    WritingSectionHeading,
     WritingTitle
 } from '../../styles/writing';
 import {TEXT_NAMES, WEBSITE_TEXT} from './../../data/constants';
@@ -100,6 +99,7 @@ export const Writing = props => {
                     <WritingBio lang={props.lang}/>
                 </MainPageWritingBio>
             </AnimatedContent>
+
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >

@@ -8,8 +8,8 @@ import {
     ReadListElementTitle,
     ReadListElementSubtitle,
     ReadListElementLine
-} from '../../../../styles/about';
-import {setPageReload} from '../../../../actions';
+} from '../../../styles/about';
+import {setPageReload} from '../../../actions';
 
 const ReadListElement = props => {
 

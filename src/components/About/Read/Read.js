@@ -11,7 +11,8 @@ import {AnimatedReadList, AnimatedReadLink, AnimatedReadButton} from '../../../a
 import {WEBSITE_TEXT, TEXT_NAMES, TEXTS} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import SectionLinks from '../SectionLinks/SectionLinks';
-import ReadListElement from './ReadListElement/ReadListElement';
+import ReadList from '../../ReadList/ReadList';
+import ReadListElement from '../../ReadList/ReadListElement/ReadListElement';
 import CentredButton from '../../UI/CentredButton/CentredButton';
 
 
@@ -78,23 +79,7 @@ export const Read = props => {
             <Waypoint
                 onEnter={showLinks}
             />
-            <AnimatedReadList
-                pose={linksVisible ? 'visible' : 'hidden'}>
-                {TEXT_NAMES.map((text, k) => {
-                    let textLink = '/texts/' + text;
-                    return (
-                        <AnimatedReadLink
-                            pose={linksVisible ? 'visible' : 'hidden'}
-                            key={k}>
-                            <ReadListElement
-                                title={TEXTS[props.lang][text].title}
-                                subtitle={TEXTS[props.lang][text].subtitle}
-                                path={textLink}
-                            />
-                        </AnimatedReadLink>
-                    )
-                })}
-            </AnimatedReadList>
+            <ReadList linksVisible={linksVisible} />
             {(props.lang === 'en') &&
             <ReadBlogBtnWrapper>
                 <AnimatedReadButton
