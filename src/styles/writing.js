@@ -3,6 +3,35 @@ import {PULSATE_KEYFRAMES} from './shared';
 
 /* Writing.js */
 
+export const WritingWrapper = styled.div`
+  overflow: hidden;
+  padding: 7em 1em 2em 1em;
+
+  .centered {
+    text-align: center;
+  }
+
+  @media all and (min-width: ${props => props.theme.extraSmallScr}) {
+    padding: 7em 3em 2em 3em;
+  }
+
+  @media all and (min-width: ${props => props.theme.smallScr}) {
+    padding: 7em 10% 2em 10%;
+  }
+
+  @media all and (min-width: ${props => props.theme.mediumScr}) {
+    padding: 7em 20% 2em 20%;
+  }
+
+  @media all and (min-width: ${props => props.theme.largeScr}) {
+    padding: 7em 25% 2em 25%;
+  }
+
+  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+    padding: 7em 32% 2em 32%;
+  }
+`;
+
 export const WritingTopAnchor = styled.div`
   position: absolute;
   top: 0;

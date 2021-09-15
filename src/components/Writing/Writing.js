@@ -12,13 +12,14 @@ import {
 import {AnimatedContent} from '../../animations/shared';
 import {SectionSeparator, FADE_DURATION} from '../../styles/shared';
 import {
+    WritingWrapper,
     WritingTopAnchor,
     MainPageWritingBio,
     WritingSectionHeading,
     WritingTitle
 } from '../../styles/writing';
 import {WEBSITE_TEXT} from './../../data/constants';
-import BlogBio from './BlogBio/BlogBio';
+import WritingBio from './WritingBio/WritingBio';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
@@ -104,7 +105,7 @@ export const Writing = props => {
             >
                 <WritingTitle>{WEBSITE_TEXT.blog.title}</WritingTitle>
                 <MainPageWritingBio>
-                    <BlogBio/>
+                    <WritingBio lang={props.lang}/>
                 </MainPageWritingBio>
             </AnimatedContent>
             <AnimatedContent
