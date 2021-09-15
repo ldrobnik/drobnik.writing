@@ -1344,6 +1344,39 @@ export const WEBSITE_TEXT = {
             }
         }
     ],
+    writing: {
+        title: {
+            en: 'Łukasz Drobnik’s blog',
+            pl: 'Proza Łukasza Drobnika'
+        },
+        bio: {
+            en: {
+                links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
+                    <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
+                content: <React.Fragment>is the author of genre-bending books, <a
+                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
+                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose
+                    published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
+                        Lit</em>, <em>Atticus
+                        Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
+                        Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
+                        href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of
+                    publications, </React.Fragment>
+            },
+            pl: {
+                links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
+                    <React.Fragment>stronie&nbsp;głównej</React.Fragment>],
+                content: <React.Fragment>to autor niepokornych gatunkowo książek, <a
+                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> i&nbsp;<a
+                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, oraz którszych utworów opublikowanych m.in. w&nbsp;<em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
+                        Lit</em>, <em>Atticus
+                        Review</em> i&nbsp;<em>Pithead Chapel</em>. Jego proza trafiła na longlistę <em>Wigleaf
+                        Top 50 Very Short Fictions</em>. Czasem tweetuje jako <a
+                        href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. Pełną listę publikacji można znaleźć na </React.Fragment>
+            }
+        }
+
+    },
     text: {
         nextText: {
             en: 'up next: ',
@@ -1356,6 +1389,10 @@ export const WEBSITE_TEXT = {
         home: {
             en: 'home',
             pl: 'strona główna'
+        },
+        allTexts: {
+            en: 'all texts',
+            pl: 'wszystkie teksty'
         }
     },
     blog: {
@@ -1402,7 +1439,8 @@ export const WEBSITE_TEXT = {
 
 //Content and data of blog notes, including drafts
 export const ALL_BLOG_NOTES = [
-    {   id: 'grounding-the-otherworldly',
+    {
+        id: 'grounding-the-otherworldly',
         title: 'Grounding the Otherworldly: Science-Fiction That Plays by the Rules of Realism',
         draft: true,
         date: ['2021', '09', '09'],
