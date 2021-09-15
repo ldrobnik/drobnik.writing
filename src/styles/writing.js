@@ -49,7 +49,7 @@ export const WritingTitle = styled.h1`
 
 export const WritingBioWrapper = styled.div`
   line-height: 1.4;
-  padding: 0 3em;
+  padding: 0 6em;
   text-align: justify;
   font-size: ${props => props.theme.captionSize};
   

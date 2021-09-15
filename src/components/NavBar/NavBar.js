@@ -184,14 +184,10 @@ const NavBar = props => {
     //A random text
     const randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
 
-    //specifies whether the Book subpage is displayed
-
     /*If the Writing page is displayed, assign a random text to it.
     * Otherwise, assign no text value (the button will direct to the Writing component */
 
     let chosenText = (props.page === 'writing') ? randomText : '';
-
-
 
     //variable to hold the read button code
     const readButton = readClickable ?

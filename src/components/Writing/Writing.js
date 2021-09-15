@@ -117,6 +117,7 @@ export const Writing = props => {
                 <SubpageLinks
                     lang={'en'}
                     reloadPage={reloadPage}
+                    mainHidden={true}
                 />
                 <SectionSeparator/>
                 <CopyrightNote/>
