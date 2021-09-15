@@ -24,7 +24,9 @@ import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
 export const Writing = props => {
 
-    //specifies whether text links should be visible
+    //specifies whether the whole link list should be visible
+    const [linkListVisible, setLinkListVisible] = useState(false);
+    //specifies the text link animation should start
     const [linksVisible, setLinksVisible] = useState(false);
 
     //updates current theme
@@ -83,15 +85,10 @@ export const Writing = props => {
         //show content after a while if page has loaded
         if (props.loaded) {
             setTimeout(showContent, FADE_DURATION);
+            setTimeout(setLinkListVisible(true), FADE_DURATION);
             setTimeout(setLinksVisible(true), FADE_DURATION * 2); //show text links after a longer while
         }
-
     });
-
-    //hide links on page reload
-    useEffect(() => {
-        setLinksVisible(false);
-    }, [props.reload]);
 
 
     //do not show the content until the page is loaded
@@ -109,7 +106,11 @@ export const Writing = props => {
                     {WEBSITE_TEXT.writing.samples[props.lang]}
                 </WritingSectionHeading>
             </AnimatedContent>
-            <ReadList linksVisible={linksVisible}/>
+            <AnimatedContent
+                pose={!props.reload ? 'visible' : 'hidden'}
+            >
+            {linkListVisible && <ReadList linksVisible={linksVisible}/>}
+            </AnimatedContent>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >

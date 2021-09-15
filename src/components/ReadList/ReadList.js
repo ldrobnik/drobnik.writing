@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {AnimatedReadList, AnimatedReadLink} from '../../animations/about';
+import {AnimatedReadList, AnimatedReadLink} from '../../animations/shared';
 import {TEXT_NAMES, TEXTS} from '../../data/constants';
 import ReadListElement from './ReadListElement/ReadListElement';
 

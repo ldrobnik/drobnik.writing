@@ -1377,7 +1377,7 @@ export const WEBSITE_TEXT = {
         },
         samples: {
             en: 'Fiction samples:',
-            pl: 'Próbki prozy'
+            pl: 'Próbki prozy:'
         }
 
     },
