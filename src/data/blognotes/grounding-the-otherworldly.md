@@ -2,7 +2,7 @@
 
 The thought strikes me during my morning coffee. It’s almost exactly 12&nbsp;years ago, late 2009. I live in Poznań, Poland. My room is overlooking the neighbourhood of Chwaliszewo (once a separate town, now part of the city centre). An exceptionally harsh and long winter is about to start.
 
-What will later become [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), a genre-bending literary sci-fi, is but a few sketches and incongruent ideas. A cyborg woman who modifies her body as a form of art. Her brother or maybe childhood friend with no distinct characteristics. Their cheesy origin story involving—I kid you not—a fire in an orphanage. A multi-lever cyberpunk-like city. It’s getting nowhere, so I’m happy to scrap it and start anew.
+What will later become [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), a genre-bending literary sci-fi, is but a few sketches and incongruent ideas. A cyborg woman who modifies her body as a form of art. Her brother or maybe childhood friend with no distinct characteristics. Their cheesy origin story involving — I kid you not — a fire in an orphanage. A multi-lever cyberpunkesque city. It’s getting nowhere, so I’m happy to scrap it and start anew.
 
 ‘What if?’ I whisper to myself and drink another sip.
 
@@ -10,7 +10,7 @@ What will later become [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bw
 >
 > VOSTOK by Łukasz Drobnik
 
-Weronika and Wu, the main characters, are no longer siblings or childhood friends with a tragic backstory. Neither of them has brain implants or bionic limbs. They are twentysomethings who hate their jobs as a barmaid and a technical writer, navigate toxic relationships and have unhealthy coping mechanism — such as drowning their problems and insecurities out in Poznań’s pubs. When Weronika met Wu, she didn’t realise straight away he is gay — and now she’s in love with her best friend. A realistic story with a realistic premise. Now let’s make it also sci-fi.
+Weronika and Wu, the main characters, are no longer siblings or childhood friends with a tragic backstory. Neither of them has brain implants or bionic limbs. They are twentysomethings who hate their jobs as a barmaid and a technical writer, navigate toxic relationships and have unhealthy coping mechanism — such as drowning their problems and insecurities in Poznań’s pubs. When Weronika met Wu, she didn’t realise straight away he’s gay — and now she’s in love with her best friend. A realistic story with a realistic premise. Now let’s make it also sci-fi.
 
 ## Adding the otherwordly to the ordinary
 
@@ -45,13 +45,13 @@ Exposition is a crucial part of any speculative fiction. If you create a new wor
 
 VOSTOK is an experiment attempting to answer the question,
 
-‘Can you write a sci-fi novel with a minimum amount of exposition, and if so, how much exposition you need to make it work?’
+> Can you write a sci-fi novel with a minimum amount of exposition, and if so, how much exposition you need to make it work?
 
-It took me years to find an answer. The initial drafts portioned out exposition only through dialogue — the speculative layer of the novel was painted with just a few brush strokes, but the resulting painting was too abstract to have much resonance.
+It took me years to find an answer. The initial drafts portioned out exposition only through dialogue. The speculative layer of the novel was painted with just a few brush strokes, and the resulting painting was too abstract to have much resonance.
 
 Then I added some environmental storytelling: the sci-fi part of the story was told also through ads, leaflets, TV and radio programs. The result was better, but it wasn’t quite it.
 
-I started layering the novel with different texts: snippets of newspaper articles, encyclopaedic entries, fragments of instruction manuals. Only then the sci-fi portion of the novel became defined enough for it to make a resonant whole with the realistic part.
+I started layering the novel with different texts: snippets of newspaper articles, encyclopaedic entries, fragments of instruction manuals. Only then did the sci-fi portion of the novel become defined enough for it to make a meaningful whole with the realistic part.
 
 ## Failure or success?
 
