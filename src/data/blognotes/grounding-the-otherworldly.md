@@ -1,10 +1,8 @@
-‘What if I wrote a sci-fi novel that doesn’t break the rules of realism?’
+> What if I wrote a sci-fi novel that doesn’t break the rules of realism?
 
 The thought strikes me during my morning coffee. It’s almost exactly 12&nbsp;years ago, late 2009. I live in Poznań, Poland. My room is overlooking the neighbourhood of Chwaliszewo (once a separate town, now part of the city centre). An exceptionally harsh and long winter is about to start.
 
 What will later become [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), a genre-bending literary sci-fi, is but a few sketches and incongruent ideas. A cyborg woman who modifies her body as a form of art. Her brother or maybe childhood friend with no distinct characteristics. Their cheesy origin story involving — I kid you not — a fire in an orphanage. A multi-lever cyberpunkesque city. It’s getting nowhere, so I’m happy to scrap it and start anew.
-
-‘What if?’ I whisper to myself and drink another sip.
 
 > If you made, right along one of its walls, a longitudinal section through the pub Kisielice, on the left side of the colourful rectangle you would see a bar, the back of a bartender working behind the bar, in the background a wall painted in vividly coloured stripes, black-and-white artwork on the wall, and further towards the right end of the section: empty tables, chairs, sofas. The only clients in the pub visible from this perspective were a man and a woman, in their late twenties by the looks of it, who sat on a soft couch by the right edge of the rectangular section and talked, smoking tremendous amounts of cigarettes.
 >
