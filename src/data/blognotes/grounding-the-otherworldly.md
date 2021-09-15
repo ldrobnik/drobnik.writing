@@ -1,6 +1,6 @@
 ‘What if I wrote a sci-fi novel that doesn’t break the rules of realism?’
 
-The thought strikes me during my morning coffee. It’s almost exactly 12 years ago, late 2009. I live in Poznań, Poland. My room is overlooking the neighbourhood of Chwaliszewo (once a separate town, now part of the city centre). An exceptionally harsh and long winter is about to start.
+The thought strikes me during my morning coffee. It’s almost exactly 12&nbsp;years ago, late 2009. I live in Poznań, Poland. My room is overlooking the neighbourhood of Chwaliszewo (once a separate town, now part of the city centre). An exceptionally harsh and long winter is about to start.
 
 What will later become [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), a genre-bending literary sci-fi, is but a few sketches and incongruent ideas. A cyborg woman who modifies her body as a form of art. Her brother or maybe childhood friend with no distinct characteristics. Their cheesy origin story involving—I kid you not—a fire in an orphanage. A multi-lever cyberpunk-like city. It’s getting nowhere, so I’m happy to scrap it and start anew.
 
