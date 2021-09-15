@@ -18,12 +18,22 @@ import {
     WritingSectionHeading,
     WritingTitle
 } from '../../styles/writing';
-import {WEBSITE_TEXT} from './../../data/constants';
+import {TEXT_NAMES, WEBSITE_TEXT} from './../../data/constants';
 import WritingBio from './WritingBio/WritingBio';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
 export const Writing = props => {
+
+    //updates current theme
+    const updateTheme = () => {
+        //randomly selected theme
+        const randomTheme = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
+
+        //theme to be used - black-and-white if the black-and-white mode is on or the randomly selected theme
+        const themeToUse = props.bwMode ? 'blackAndWhite' : randomTheme;
+        props.setTheme(themeToUse);
+    };
 
     //shows the content
     const showContent = () => {
@@ -47,11 +57,6 @@ export const Writing = props => {
         props.setNavbarVisibility(true);
     };
 
-    //sets black and white theme
-    const setBwTheme = () => {
-        props.setTheme('blackAndWhite');
-    };
-
     //lets the Redux store know which page is currently displayed
     const setCurrentPage = page => {
         props.setPage(page);
@@ -61,17 +66,17 @@ export const Writing = props => {
         //Update page title with the piece title
         document.title = WEBSITE_TEXT.writing.title[props.lang];
 
-        //sets theme to black and white
-        setBwTheme();
-
         //show Navbar
         showNavbar();
+
+        //change theme to a random one
+        updateTheme();
 
         //checks whether data storage notice should be visible and if so, turn is on
         checkDataNotice();
 
         //lets the Redux store know that the Text page is currently displayed
-        setCurrentPage('blog');
+        setCurrentPage('writing');
 
         //show content after a while if page has loaded
         if (props.loaded) {
@@ -79,19 +84,6 @@ export const Writing = props => {
         }
 
     });
-
-    useEffect(() => {
-
-
-
-    }, []);
-
-    useEffect(() => {
-
-        //reload page when url changes
-        reloadPage();
-
-    }, [props.location.pathname])
 
 
     //do not show the content until the page is loaded
@@ -103,7 +95,7 @@ export const Writing = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
-                <WritingTitle>{WEBSITE_TEXT.blog.title}</WritingTitle>
+                <WritingTitle>{WEBSITE_TEXT.writing.title[props.lang]}</WritingTitle>
                 <MainPageWritingBio>
                     <WritingBio lang={props.lang}/>
                 </MainPageWritingBio>

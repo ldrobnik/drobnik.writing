@@ -10,6 +10,7 @@ import {GlobalStyle} from '../../styles/shared';
 import {ALL_BLOG_NOTES, NOCTURINE_URL, VOSTOK_URL} from '../../data/constants';
 
 const About = lazy(() => import('../About/About'));
+const Writing = lazy(() => import('../Writing/Writing'));
 const Text = lazy(() => import('../Text/Text'));
 const BookPage = lazy(() => import('../BookPage/BookPage'));
 const QuickLinks = lazy(() => import('../QuickLinks/QuickLinks'));
@@ -100,7 +101,7 @@ export const Home = props => {
                 <Suspense fallback={<Spinner/>}>
                     <Switch>
                         <Route path="/" exact component={About} key="home"/>
-                        <Route path="/texts/" exact component={Text} key="texts"/>
+                        <Route path="/texts/" exact component={Writing} key="writing"/>
                         <Route path="/texts/:id" exact component={Text} key="text"/>
                         <Route path="/books/nocturine/" exact component={() => <BookPage book={0}/>} key="nocturine"/>
                         <Route path="/books/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>

@@ -1346,7 +1346,7 @@ export const WEBSITE_TEXT = {
     ],
     writing: {
         title: {
-            en: 'Łukasz Drobnik’s blog',
+            en: 'Łukasz Drobnik’s fiction',
             pl: 'Proza Łukasza Drobnika'
         },
         bio: {
@@ -1365,14 +1365,14 @@ export const WEBSITE_TEXT = {
             },
             pl: {
                 links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
-                    <React.Fragment>stronie&nbsp;głównej</React.Fragment>],
+                    <React.Fragment>na&nbsp;stronie&nbsp;głównej</React.Fragment>],
                 content: <React.Fragment>to autor niepokornych gatunkowo książek, <a
                     href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> i&nbsp;<a
-                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, oraz którszych utworów opublikowanych m.in. w&nbsp;<em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
+                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, oraz krótszych utworów opublikowanych m.in. w&nbsp;<em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
                         Review</em> i&nbsp;<em>Pithead Chapel</em>. Jego proza trafiła na longlistę <em>Wigleaf
                         Top 50 Very Short Fictions</em>. Czasem tweetuje jako <a
-                        href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. Pełną listę publikacji można znaleźć na </React.Fragment>
+                        href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. Pełną listę publikacji można znaleźć </React.Fragment>
             }
         }
 
