@@ -10,7 +10,7 @@ What will later become [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bw
 >
 > VOSTOK by Łukasz Drobnik
 
-Weronika and Wu, the main characters, are no longer siblings or childhood friends with a tragic backstory. Neither of them has brain implants or bionic limbs. They are twentysomethings who hate their jobs as a barmaid and a technical writer, navigate toxic relationships and have unhealthy coping mechanism. One of them is drowning their problems and insecurities in Poznań’s pubs. When Weronika met Wu, she didn’t realise straight away he is gay — and now she’s in love with her best friend. A realistic story with a realistic premise. Now let’s make it also sci-fi.
+Weronika and Wu, the main characters, are no longer siblings or childhood friends with a tragic backstory. Neither of them has brain implants or bionic limbs. They are twentysomethings who hate their jobs as a barmaid and a technical writer, navigate toxic relationships and have unhealthy coping mechanism — such as drowning their problems and insecurities out in Poznań’s pubs. When Weronika met Wu, she didn’t realise straight away he is gay — and now she’s in love with her best friend. A realistic story with a realistic premise. Now let’s make it also sci-fi.
 
 ## Adding the otherwordly to the ordinary
 
@@ -39,7 +39,7 @@ I worked hard on dialogue and descriptions of the characters’ behaviour, but i
 >
 > VOSTOK by Łukasz Drobnik
 
-## …and the brain
+## …and the brains
 
 Exposition is a crucial part of any speculative fiction. If you create a new world with a set of its own rules, you want the reader to see that world, learn those rules.
 

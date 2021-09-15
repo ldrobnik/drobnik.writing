@@ -1404,6 +1404,7 @@ export const WEBSITE_TEXT = {
 export const BLOG_NOTES = [
     {   id: 'grounding-the-otherworldly',
         title: 'Grounding the Otherworldly: Science-Fiction That Plays by the Rules of Realism',
+        draft: true,
         date: ['2021', '09', '09'],
         category: 'vostok',
         sameImgForCategory: true,
