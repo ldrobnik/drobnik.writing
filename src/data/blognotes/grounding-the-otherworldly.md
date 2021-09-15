@@ -24,7 +24,8 @@ I wanted the realistic layer to be literary and rather lyrical in style, told by
 
 Crime gels well with virtually any genre, so I made VOSTOK a mystery story, one in which the murder weapon is a 19th-century war scythe. So far so good. Now the hard part starts.
 
-[<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
+[<img src="https://drobnik.co/images/vostok-cover.jpg">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
+<sup>VOSTOK is available as paperback, hardcover and ebook</sup>
 
 ## The heart of the story
 

@@ -242,7 +242,7 @@ export const BlogPost = styled.div`
     margin-top: 1.2em;
   }
 
-  p + sup {
+  p + sup, a + sup {
     width: 100%;
     display: block;
     text-align: center;

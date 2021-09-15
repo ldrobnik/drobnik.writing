@@ -1402,18 +1402,18 @@ export const WEBSITE_TEXT = {
 
 //Content and data of blog notes
 export const BLOG_NOTES = [
-    // {   id: 'grounding-the-otherworldly',
-    //     title: 'Grounding the Otherworldly: Science-Fiction That Plays by the Rules of Realism',
-    //     date: ['2021', '09', '09'],
-    //     category: 'vostok',
-    //     sameImgForCategory: true,
-    //     related: ['markdown-for-creative-writers'],
-    //     imageCredits: {
-    //         author: '',
-    //         source: '',
-    //         alt: 'A text editor with the beginning of Woolfs’s Mrs. Dalloway written in Markdown'
-    //     }
-    // },
+    {   id: 'grounding-the-otherworldly',
+        title: 'Grounding the Otherworldly: Science-Fiction That Plays by the Rules of Realism',
+        date: ['2021', '09', '09'],
+        category: 'vostok',
+        sameImgForCategory: true,
+        related: ['markdown-for-creative-writers'],
+        imageCredits: {
+            author: '',
+            source: '',
+            alt: 'A text editor with the beginning of Woolfs’s Mrs. Dalloway written in Markdown'
+        }
+    },
     {
         id: 'markdown-for-creative-writers',
         title: 'Markdown for Creative Writers',
