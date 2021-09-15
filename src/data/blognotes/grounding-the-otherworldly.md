@@ -24,6 +24,8 @@ I wanted the realistic layer to be literary and rather lyrical in style, told by
 
 Crime gels well with virtually any genre, so I made VOSTOK a mystery story, one in which the murder weapon is a 19th-century war scythe. So far so good. Now the hard part starts.
 
+[<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
+
 ## The heart of the story
 
 The omnipresent but not omniscient point of view made it easy to pace the reveal of speculative elements without it feeling contrived. The problem was, with no insight into the characters’ inner worlds it was difficult to connect with them. The initial drafts lacked heart — things were happening but didn’t resonate on an emotional level.

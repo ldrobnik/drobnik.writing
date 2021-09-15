@@ -1406,6 +1406,7 @@ export const BLOG_NOTES = [
     //     title: 'Grounding the Otherworldly: Science-Fiction That Plays by the Rules of Realism',
     //     date: ['2021', '09', '09'],
     //     category: 'vostok',
+    //     sameImgForCategory: true,
     //     related: ['markdown-for-creative-writers'],
     //     imageCredits: {
     //         author: '',

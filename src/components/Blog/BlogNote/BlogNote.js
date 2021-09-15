@@ -61,6 +61,9 @@ export const BlogNote = props => {
     //credits of the top image
     const [imageCredits, setImageCredits] = useState({});
 
+    //indicates whether the same image should be used for the category
+    const [sameImage, setSameImage] = useState(false);
+
     //specifies the source of the top image
     const [imageSrc, setImageSrc] = useState('');
 
@@ -115,9 +118,10 @@ export const BlogNote = props => {
                 setNoteId(note.id); //ID
                 setNoteTitle(note.title); //Title
                 setNoteDate(note.date); //Date
-                setNoteCategory(note.category);
-                setRelatedNotes(createRelatedNotes(note.related));
-                setImageCredits(note.imageCredits);
+                setNoteCategory(note.category); //Note category
+                setSameImage(note.sameImgForCategory); //Specifies whether the image should be used for a category
+                setRelatedNotes(createRelatedNotes(note.related)); //List of related notes
+                setImageCredits(note.imageCredits); //Image description and alt text
 
                 return true;
             }
@@ -214,7 +218,13 @@ export const BlogNote = props => {
         //imports markdown documents and coverts it into text
         if (noteId.length > 0) {
             importBlogNote(noteId);
-            importImage(noteId);
+
+            if (sameImage) {
+                importImage(noteCategory); //If a category uses only one image, import this image instead of a note-specific image
+            } else {
+                importImage(noteId); //Otherwise import a note-specific image
+            }
+
         }
 
     }, [props.location.pathname, noteId]);
@@ -240,6 +250,7 @@ export const BlogNote = props => {
             setNoteTitle('');
             setNoteDate('');
             setNoteCategory('');
+            setSameImage(false);
             setRelatedNotes([]);
             setImageCredits({});
             setImageSrc('');
