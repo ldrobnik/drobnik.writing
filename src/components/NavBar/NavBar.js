@@ -181,37 +181,17 @@ const NavBar = props => {
             </div>
         </ToggledNavElement>);
 
-    //the index of the text
-    const textIndex = TEXT_NAMES.indexOf(props.curText);
-
-    //The index of the next text in line - if the last text, choose the first one
-    const nextTextIndex = (textIndex < TEXT_NAMES.length - 1) ? textIndex + 1 : 0;
-
-    //The next text to be displayed
-    const nextText = TEXT_NAMES[nextTextIndex];
-
     //A random text
     const randomText = TEXT_NAMES[Math.floor(Math.random() * TEXT_NAMES.length)];
 
     //specifies whether the Book subpage is displayed
 
-    /*If the Text page is currently displayed, assign the next text to the read link.
-    /*If the main page is displayed, assign no text value
-    (the button will direct to the Writing component */
     /*If the Writing page is displayed, assign a random text to it.
-     */
+    * Otherwise, assign no text value (the button will direct to the Writing component */
 
-    //variable holding the read button target text
-    let chosenText;
+    let chosenText = (props.page === 'writing') ? randomText : '';
 
-    if (props.page === 'writing') {
-        chosenText = randomText
-    } else if (props.page === 'main') {
-        chosenText = '';
-    } else {
-        chosenText = nextText;
-    }
-    
+
 
     //variable to hold the read button code
     const readButton = readClickable ?
