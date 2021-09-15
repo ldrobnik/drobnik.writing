@@ -14,7 +14,7 @@ import {SectionSeparator, FADE_DURATION, InvisibleSeparator} from '../../styles/
 import {
     WritingWrapper,
     WritingTopAnchor,
-    WritingTitle
+    WritingTitle, WritingSectionHeading
 } from '../../styles/writing';
 import {TEXT_NAMES, WEBSITE_TEXT} from './../../data/constants';
 import WritingBio from './WritingBio/WritingBio';
@@ -88,6 +88,11 @@ export const Writing = props => {
 
     });
 
+    //hide links on page reload
+    useEffect(() => {
+        setLinksVisible(false);
+    }, [props.reload]);
+
 
     //do not show the content until the page is loaded
     return props.loaded &&
@@ -100,6 +105,9 @@ export const Writing = props => {
             >
                 <WritingTitle>{WEBSITE_TEXT.writing.title[props.lang]}</WritingTitle>
                 <WritingBio lang={props.lang}/>
+                <WritingSectionHeading>
+                    {WEBSITE_TEXT.writing.samples[props.lang]}
+                </WritingSectionHeading>
             </AnimatedContent>
             <ReadList linksVisible={linksVisible}/>
             <AnimatedContent

@@ -1374,6 +1374,10 @@ export const WEBSITE_TEXT = {
                         Top 50 Very Short Fictions</em>. Czasem tweetuje jako <a
                         href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. Pełną listę publikacji można znaleźć </React.Fragment>
             }
+        },
+        samples: {
+            en: 'Fiction samples:',
+            pl: 'Próbki prozy'
         }
 
     },

@@ -68,3 +68,16 @@ export const WritingBioWrapper = styled.div`
     }
   }
 `;
+
+export const WritingSectionHeading = styled.h2`
+  font-size: ${props => props.theme.subtitleSize};
+  font-weight: bold;
+  font-style: italic;
+  margin: 2em 0 1em 0;
+  color: ${props => props.theme.darkColor};
+  text-align: center;
+
+  @media all and (max-width: ${props => props.theme.extraSmallScr}) {
+    font-size: 4vw;
+  }
+`;
