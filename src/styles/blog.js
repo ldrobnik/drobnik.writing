@@ -68,7 +68,13 @@ export const VostokTheme = styled.div`
   
   blockquote {
     border-left: 6px solid ${props => props.theme.vostokColor};
-    padding-left: 10px;
+    padding-left: 1.5vw;
+    font-size: 0.9em;
+
+    @media all and (max-width: ${props => props.theme.smallScr}) {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
   }
 
 `;
