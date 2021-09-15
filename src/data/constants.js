@@ -1400,8 +1400,8 @@ export const WEBSITE_TEXT = {
     copyright: <React.Fragment>&copy;&nbsp;2019–2021 Łukasz Drobnik</React.Fragment>
 };
 
-//Content and data of blog notes
-export const BLOG_NOTES = [
+//Content and data of blog notes, including drafts
+export const ALL_BLOG_NOTES = [
     {   id: 'grounding-the-otherworldly',
         title: 'Grounding the Otherworldly: Science-Fiction That Plays by the Rules of Realism',
         draft: true,
@@ -1442,6 +1442,10 @@ export const BLOG_NOTES = [
 
     }
 ];
+
+//blog notes to display, excluding drafts
+export const BLOG_NOTES = ALL_BLOG_NOTES.filter(blognote => !blognote.draft);
+
 
 //Titles of blog note categories
 export const BLOG_CATEGORIES = {

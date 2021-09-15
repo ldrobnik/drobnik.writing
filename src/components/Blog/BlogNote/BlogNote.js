@@ -24,7 +24,7 @@ import {
     TopImageCredits,
     BlogNoteBio
 } from '../../../styles/blog';
-import {WEBSITE_TEXT, BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
+import {WEBSITE_TEXT, ALL_BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
 import BlogBio from '../BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
@@ -91,7 +91,7 @@ export const BlogNote = props => {
         let relatedNotes = [];
 
         for (const id of relatedNoteIds) {
-            for (const note of BLOG_NOTES) {
+            for (const note of ALL_BLOG_NOTES) {
                 //if the id of the note matches the related note id, add it to the array
                 if (note.id === id) {
                     relatedNotes.push(note);
@@ -109,7 +109,7 @@ export const BlogNote = props => {
         let baseUrl = '/blog/';
 
 
-        for (let note of BLOG_NOTES) {
+        for (let note of ALL_BLOG_NOTES) {
 
             //if the URL includes the blog note ID, set the data of this note
             if ((baseUrl + note.id === props.location.pathname) || (baseUrl + note.id + '/' === props.location.pathname)) {

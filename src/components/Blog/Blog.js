@@ -194,7 +194,7 @@ export const Blog = props => {
                     <BlogBio/>
                 </MainPageBlogBio>
                 {(filteredCategory === '') &&
-                <CategoryPicker />}
+                <CategoryPicker/>}
                 {(filteredCategory) &&
                 <FilteredCategory category={filteredCategory}/>}
                 {(latestNote.id) &&

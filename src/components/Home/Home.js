@@ -7,7 +7,7 @@ import Layout from '../Layout/Layout';
 import DataNotice from '../UI/DataNotice/DataNotice';
 import Spinner from '../UI/Spinner/Spinner';
 import {GlobalStyle} from '../../styles/shared';
-import {BLOG_NOTES, NOCTURINE_URL, VOSTOK_URL} from '../../data/constants';
+import {ALL_BLOG_NOTES, NOCTURINE_URL, VOSTOK_URL} from '../../data/constants';
 
 const About = lazy(() => import('../About/About'));
 const Text = lazy(() => import('../Text/Text'));
@@ -56,7 +56,7 @@ export const Home = props => {
     const checkIfBlogNote = () => {
 
         //loop through all blog note IDs; if there's a match, return the BlogNote component
-        for (const note of BLOG_NOTES) {
+        for (const note of ALL_BLOG_NOTES) {
             if (props.location.pathname.includes(note.id)) return <BlogNote {...props}/>;
         }
 
