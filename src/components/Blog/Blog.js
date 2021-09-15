@@ -224,6 +224,7 @@ export const Blog = props => {
                     lang={'en'}
                     reloadPage={reloadPage}
                     blog={filteredCategory}
+                    mainHidden={!filteredCategory}
                 />
                 <SectionSeparator/>
                 <CopyrightNote/>
