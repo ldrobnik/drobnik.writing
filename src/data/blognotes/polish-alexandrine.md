@@ -1,3 +1,7 @@
+Polish alexandrine is the iambic pentameter of Polish literature. Among pierogi-eaters it is known as *trzynastozgłowiec*, literally ‘thirteen-syllable verse’.
+
+## Anatomy of the beast
+
 ![A fragment of an old script: the beginning of the Polish song Jezusa Judasz przedał written in Polish alexandrine](https://drobnik.co/images/polish-alexandrine.jpg)
 
 <sup>The 15th-century song *Jezusa Judasz przedał* by Władysław z Gielniowa is one of the oldest examples of Polish alexandrine; source: Wikimedia Commons</sup>
