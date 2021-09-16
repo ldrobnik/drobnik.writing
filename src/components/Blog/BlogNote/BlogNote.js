@@ -24,7 +24,7 @@ import {
     TopImageCredits,
     BlogNoteBio
 } from '../../../styles/blog';
-import {WEBSITE_TEXT, ALL_BLOG_NOTES, BLOG_CATEGORIES} from './../../../data/constants';
+import {WEBSITE_TEXT, ALL_BLOG_NOTES, BLOG_CATEGORIES} from '../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
 import BlogBio from '../BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
@@ -319,10 +319,10 @@ export const BlogNote = props => {
                         </figure>
                     </TopImageWrapper>}
                     {
-                        imageCredits.author &&
+                        imageCredits.description &&
                         <figcaption>
                             <TopImageCredits>
-                                {`${WEBSITE_TEXT.blog.imageBy} ${imageCredits.author} ${WEBSITE_TEXT.blog.via} ${imageCredits.source}`}
+                                {imageCredits.description}
                             </TopImageCredits>
                         </figcaption>
                     }

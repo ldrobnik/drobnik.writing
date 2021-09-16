@@ -1407,8 +1407,6 @@ export const WEBSITE_TEXT = {
         showAll: 'show all',
         readMore: 'Read more:',
         blog: 'all notes',
-        imageBy: 'Image by',
-        via: 'via',
         author: 'Łukasz Drobnik',
         bio:
             {
@@ -1452,9 +1450,8 @@ export const ALL_BLOG_NOTES = [
         sameImgForCategory: true,
         related: ['markdown-for-creative-writers'],
         imageCredits: {
-            author: '',
-            source: '',
-            alt: 'A text editor with the beginning of Woolfs’s Mrs. Dalloway written in Markdown'
+            description: '',
+            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
         }
     },
     {
@@ -1464,8 +1461,7 @@ export const ALL_BLOG_NOTES = [
         category: 'writing',
         related: ['quick-guide-to-markdown'],
         imageCredits: {
-            author: '',
-            source: '',
+            description: '',
             alt: 'A text editor with the beginning of Woolfs’s Mrs. Dalloway written in Markdown'
         }
 
@@ -1477,8 +1473,7 @@ export const ALL_BLOG_NOTES = [
         category: 'code',
         related: ['markdown-for-creative-writers'],
         imageCredits: {
-            author: '',
-            source: '',
+            description: '',
             alt: 'A text editor showing basics Markdown syntax, such as headings and lists, and its preview'
         }
 
