@@ -408,7 +408,7 @@ export const PUBLICATIONS = {
             descriptionPl: 'Flash fiction „Cellulose” (utwór pierwotnie opublikowany w Mojave Heart Review)',
             descriptionEn: 'Flash fiction “Cellulose” (originally published in Mojave Heart Review)',
             language: 'en',
-            pieceTitle: 'Nameless'
+            pieceTitle: 'Cellulose'
         },
         {
             title: 'Akashic Books',

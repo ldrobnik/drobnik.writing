@@ -12,7 +12,7 @@ The dairy aisle. We revel in the chill from the refrigerators, our bodies bathed
 
 When you told me, everything became distant, as if miles away. You said you were exhausted, said it wasn’t working, said you couldn’t handle it any longer, said you were sorry. You told me to move out by the end of the month. That was yesterday. This morning we heard the news.
 
-We used to joke we’d start drinking again only in the last days of Earth. It goes without saying that now we’ll drink ourselves to death, so as we approach the shelves once full of beers, the only thing we’re concerned about is how many cans per person per day. We arrive at twelve. I add five bottles of white wine, just in case. Funny, I thought that if we’d recovered from the drinking, we could recover from anything.
+We used to joke we’d start drinking again only in the last days of Earth. It goes without saying that now we’ll drink ourselves to death, so as we approach the shelves once full of beers, the only thing we’re concerned about is how many cans per person per day. We arrive at twelve. I add five bottles of white wine, just in case. Funny, I thought that if we had recovered from the drinking, we could recover from anything.
 
 The ceaseless beeping of the tills makes me think of Morse code signals. I wonder why the cashiers are still working. Is it shock? Habit? Or maybe they were threatened? Before we stand in one of the winding, noisy queues, we take a detour to the pharmacy department and grab three bottles of sleeping pills.
 

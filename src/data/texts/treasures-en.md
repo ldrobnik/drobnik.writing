@@ -8,7 +8,7 @@ From a pile of old planks, through the deafening chirping of crickets filling th
 
 I am twenty-three, listen to death metal, and my hair is dyed ruby red and woven into plaits. This evening — in what will start as a trivial conversation — Dad will call me a monster. When he gives us a lift to the station tomorrow morning, he’ll know he messed up, but he’ll be too proud to say _I’m sorry_.
 
-For now, though, the sun is setting and I’m looking outside the window at what remains of the family barbeque. On plastic chairs facing the enormous roses, Mum is talking to L. She’s doing her best to make him come out to her. The harder she tries, however, the more he resembles an eel wriggling himself out of her hands. He’ll never tell them the tr—
+For now, though, the sun is setting and I’m looking outside the window at what remains of the family barbeque. On one of plastic chairs facing the enormous roses, Mum is talking to L. She’s doing her best to make him come out to her. The harder she tries, however, the more he resembles an eel wriggling himself out of her hands. He’ll never tell them the tr—
 
 —easures can be found in unexpected places. K, a sad plump child a second ago, now a slender woman in her mid-twenties, lines the living-room carpet with L’s childhood drawings: a series of Smurfettes in the sea, all scribbled with a blue ball pen and giving off their best Birth of Venus vibe, waves on top of waves on top of waves in the background.
 
