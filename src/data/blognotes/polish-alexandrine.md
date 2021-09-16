@@ -6,7 +6,7 @@ To help you understand the importance of this form, know that Adam Mickiewicz us
 
 <sup>The 15th-century song *Jezusa Judasz przedał* by Władysław z Gielniowa is one of the oldest examples of Polish alexandrine; source: Wikimedia Commons</sup>
 
-[VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write, so it made sense to interweave the text with a *trzynastozgłowiec* poem. One that is a queer retelling of  Bradbury’s “The Long Rain”.
+[VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave the text with a *trzynastozgłowiec* poem — one that is a queer retelling of Bradbury’s “The Long Rain”.
 
 ## Anatomy of the beast
 
