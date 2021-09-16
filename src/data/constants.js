@@ -381,6 +381,16 @@ export const PUBLICATIONS = {
 
     press: [
         {
+            title: 'MacroMicroCosm',
+            issue: 'Open Doors',
+            year: '2021',
+            url: 'https://www.magcloud.com/browse/issue/2070527?__r=3020311',
+            descriptionPl: 'Fragment powieści „Vostok”',
+            descriptionEn: 'Fragment of the novel “Vostok”',
+            language: 'en',
+            pieceTitle: 'Coal and Glitter'
+        },
+        {
             title: 'HAD',
             issue: '',
             year: '2020',
@@ -1519,6 +1529,11 @@ export const LINKS = [
         title: 'Pre-order NOCTURINE',
         subtitle: 'from Fathom Books',
         url: NOCTURINE_URL
+    },
+    {
+        title: 'Read VOSTOK excerpt',
+        subtitle: 'in MacroMicroCosm',
+        url: 'https://www.magcloud.com/browse/issue/2070527?__r=3020311'
     },
     {
         title: 'Read my blog',
