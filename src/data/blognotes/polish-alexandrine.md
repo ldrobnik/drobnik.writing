@@ -1,4 +1,4 @@
-Polish alexandrine is the iambic pentameter of Polish literature. Among pierogi-eaters it is known as *trzynastozgłowiec*, literally ‘thirteen-syllable verse’.
+Polish alexandrine is the iambic pentameter of Polish literature. Among pierogi-eaters it is known as *trzynastozgłowiec*, which means ‘thirteen-syllable verse’.
 
 ## Anatomy of the beast
 
