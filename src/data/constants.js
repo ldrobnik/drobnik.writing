@@ -1442,13 +1442,26 @@ export const WEBSITE_TEXT = {
 //Content and data of blog notes, including drafts
 export const ALL_BLOG_NOTES = [
     {
+        id: 'polish-alexandrine',
+        title: 'Polish Alexandrine in English: Forcing a Yorkshire Pudding into a Pierogi Mould',
+        draft: true,
+        date: ['2021', '10', '10'],
+        category: 'vostok',
+        sameImgForCategory: true,
+        related: ['grounding-the-otherworldly'],
+        imageCredits: {
+            description: '',
+            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
+        }
+    },
+    {
         id: 'grounding-the-otherworldly',
         title: 'Grounding the Otherworldly: Science-Fiction That Plays by the Rules of Realism',
         draft: true,
-        date: ['2021', '09', '09'],
+        date: ['2021', '10', '10'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['markdown-for-creative-writers'],
+        related: ['polish-alexandrine'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
