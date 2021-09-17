@@ -1,6 +1,6 @@
 Polish alexandrine is the iambic pentameter of Polish literature. Among us pierogi-eaters it is known as *trzynastozgłowiec*, which simply means ‘thirteen-syllable verse’.
 
-To help you understand how hyper-Polish this metric line is, let me just say that Adam Mickiewicz chose it for *Pan Tadeusz*, Poland’s national epic.
+To understand how hyper-Polish this metric line is, all you need to know is that Adam Mickiewicz chose it for *Pan Tadeusz*, Poland’s national epic.
 
 ![The opening lines of the first edition of Pan Tadeusz](https://drobnik.co/images/polish-alexandrine-example.jpg)
 
