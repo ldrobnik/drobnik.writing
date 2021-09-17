@@ -96,8 +96,8 @@ Note that even though the phrase “stream after stream after stream” has the 
 
 In a word: yes. And not only as a challenging translation exercise.
 
-The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story much better than the livelier iambic pentameter. *Trzynastozgłoskowiec* mimics the sound of undying Venusian rain, at the same time corresponding with the characters’ futile attempts to find a shelter.
+The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story much better than the livelier iambic pentameter. *Trzynastozgłoskowiec* mimics the sound of undying Venusian rain, its form corresponding with the characters’ futile attempts to find a shelter.
 
 What’s more, the very un-English form of Polish alexandrine forced some unconventional word choices that gave the passages a surreal feel.
 
-This otherworldliness goes well with the very premise of VOSTOK which is something much stranger than its realistic façade would make you believe.
+This otherworldliness goes well with the very premise of VOSTOK — a book that is something much stranger than its realistic façade would make you believe.
