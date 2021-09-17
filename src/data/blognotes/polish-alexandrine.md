@@ -26,7 +26,7 @@ In each verse, the thirteen syllables of Polish alexandrine are grouped into two
 
 ![Schematic representation of a Polish alexandrine verse. Two groups of seven and six syllables each separated by a caesura. The penultimate syllable of each group is stressed.](https://drobnik.co/images/polish-alexandrine-structure.svg)
 
-<sup>Basic structure of a Polish alexandrine verse. The horizontal lines represent syllables, the vertical line the caesura. Stressed syllables are coloured dark yellow.</sup>
+<sup>The basic structure of a Polish alexandrine verse. The horizontal lines represent syllables, the vertical line the caesura. Stressed syllables are coloured dark yellow.</sup>
 
 Perhaps it’s this last rule that makes *trzynastozgłoskowiec* sound so naturally, effortlessly Polish. In the vast majority of Polish words, the stress falls on the penultimate syllable, so it’s fairly easy to say even the most banal thought in Polish alexandrine:
 
@@ -79,7 +79,7 @@ became the English:
 
 ## Bending the form
 
-The cadence of Polish alexandrine is so soothing and predictable that any deviation from it jolts you out of your relaxed state and makes you pay attention.
+The cadence of Polish alexandrine is so soothing and predictable that any deviation from it jolts you out of your dreamlike state and makes you pay attention.
 
 I used this effect in the Polish draft of VOSTOK, so it made sense to replicate it in the English version:
 
@@ -96,8 +96,8 @@ Note that even though the phrase “stream after stream after stream” has the 
 
 In a word: yes. And not only as a challenging translation exercise.
 
-The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story much better than the livelier iambic pentameter. It mimics the sound of unceasing Venusian rains, at the same time corresponding with the characters’ futile attempts to find a shelter.
+The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story much better than the livelier iambic pentameter. *Trzynastozgłoskowiec* mimics the sound of undying Venusian rain, at the same time corresponding with the characters’ futile attempts to find a shelter.
 
-What’s more, the very un-English form of Polish forced some unconventional word choices that gave the passages a surreal feel.
+What’s more, the very un-English form of Polish alexandrine forced some unconventional word choices that gave the passages a surreal feel.
 
 This otherworldliness goes well with the very premise of VOSTOK which is something much stranger than its realistic façade would make you believe.
