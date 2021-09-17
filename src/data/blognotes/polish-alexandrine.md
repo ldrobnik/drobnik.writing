@@ -4,7 +4,7 @@ To help you understand how hyper-Polish this metric line is, let me just say tha
 
 ![The opening lines of the first edition of Pan Tadeusz](https://drobnik.co/images/polish-alexandrine-example.jpg)
 
-<sup>The opening lines of the first edition of *Pan Tadeusz*; source: Wikimedia Commons</sup>
+<sup>The opening lines of the first edition of *Pan Tadeusz*. Source: Wikimedia Commons.</sup>
 
 [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave the text with a *trzynastozgłowiec* poem. One that is a queer retelling of Bradbury’s “The Long Rain” because who’s going to stop me.
 
@@ -23,6 +23,10 @@ To help you understand how hyper-Polish this metric line is, let me just say tha
 ## Anatomy of the beast
 
 In each verse, the thirteen syllables of Polish alexandrine are grouped into two phrases. The first one contains seven syllables, the second six, and they’re separated by a caesura. The penultimate syllable of each phrase is stressed.
+
+![Schematic representation of a Polish alexandrine verse. Two groups of seven and six syllables each separated by a caesura. The penultimate syllable of each group is stressed.](https://drobnik.co/images/polish-alexandrine-structure.svg)
+
+<sup>Basic structure of a Polish alexandrine verse. The horizontal lines represent syllables, the vertical line a caesura. Stressed syllables are coloured dark yellow.</sup>
 
 Perhaps it’s the last rule that makes *trzynastozgłoskowiec* sound so naturally, effortlessly Polish. In the vast majority of Polish words, the stress falls on the penultimate syllable, so it’s fairly easy to say even the most banal thought in Polish alexandrine:
 
@@ -72,6 +76,6 @@ I used this effect in the Polish drafts of VOSTOK, so it made sense to replicate
 >
 > VOSTOK by Łukasz Drobnik
 
-Note that even though the phrase “stream after stream after stream” has seven syllables, the stress falls on its last syllable rather than penultimate one.
+Note that even though the phrase “stream after stream after stream” has seven syllables as it should, the stress falls on its last syllable rather than penultimate one.
 
 ## Was it all worth it?
