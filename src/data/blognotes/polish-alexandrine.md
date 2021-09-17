@@ -1,14 +1,12 @@
 Polish alexandrine is the iambic pentameter of Polish literature. Among us pierogi-eaters it is known as *trzynastozgłowiec*, which simply means ‘thirteen-syllable verse’.
 
-To help you understand the importance of this form, know that Adam Mickiewicz used Polish alexandrine for *Pan Tadeusz*, Poland’s national epic.
+To help you understand how hyper-Polish this metric line is, let me just say that Adam Mickiewicz chose it for *Pan Tadeusz*, Poland’s national epic.
 
-![A fragment of an old script: the beginning of the Polish song Jezusa Judasz przedał written in Polish alexandrine](https://drobnik.co/images/polish-alexandrine.jpg)
+![A fragment of an old script: the beginning of the Polish song Jezusa Judasz przedał written in Polish alexandrine](https://drobnik.co/images/polish-alexandrine-example.jpg)
 
 <sup>The 15th-century song *Jezusa Judasz przedał* by Władysław z Gielniowa is one of the oldest examples of Polish alexandrine; source: Wikimedia Commons</sup>
 
 [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave the text with a *trzynastozgłowiec* poem — one that is a queer retelling of Bradbury’s “The Long Rain”.
-
-## Anatomy of the beast
 
 
 
@@ -21,6 +19,10 @@ To help you understand the importance of this form, know that Adam Mickiewicz us
 > plants as if from a horror, eyelids as if leaden.
 >
 > VOSTOK by Łukasz Drobnik
+
+## Anatomy of the beast
+
+> 
 
 [<img src="https://drobnik.co/images/vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and ebook</sup>
