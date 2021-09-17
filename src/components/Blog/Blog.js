@@ -115,13 +115,17 @@ export const Blog = props => {
         //if the url contains category name, filter blog notes by this category
         let categoryToFilter = checkFiltering();
 
+        //filters out notes with the category in question
+        let filteredByCategory = BLOG_NOTES.filter(item => {return (item.category === categoryToFilter)});
+        console.log(filteredByCategory);
 
-        if (categoryToFilter) {
+        if (categoryToFilter && filteredByCategory.length) {
             setLatestNote(filterByCategory(categoryToFilter)[0]); // sets the latest note
             setOlderNotes(removeFirstElement(filterByCategory(categoryToFilter))); // sets older notes
         } else {
             setLatestNote(BLOG_NOTES[0]); // sets the latest note
             setOlderNotes(removeFirstElement(BLOG_NOTES)); // sets older notes
+            setFilteredCagetory(''); // resets filtered category
         }
 
     };
