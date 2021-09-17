@@ -6,7 +6,7 @@ To understand how hyper-Polish this metric line is, all you need to know is that
 
 <sup>The opening lines of the first edition of *Pan Tadeusz*. Source: Wikimedia Commons.</sup>
 
-[VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave the text with a *trzynastozgłowiec* poem. One that is a queer retelling of Bradbury’s “The Long Rain” because who’s going to stop me.
+[VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then (at least in my head) to interweave the text with a *trzynastozgłowiec* poem. One that is a queer retelling of Bradbury’s “The Long Rain” because who’s going to stop me.
 
 
 
@@ -38,20 +38,37 @@ And even the most banal thought said in *trzynastozgłoskowiec* has this soothin
 
 ## Translator’s dilemma
 
-I wrote the first draft of VOSTOK in Polish. It was only many drafts and rejections later that I decided to undertake the humongous task of translating the novel into English. (Spoiler alert: it did pay off.)
+I wrote the first draft of VOSTOK in Polish. It was only many drafts and rejections later that I decided to undertake the humongous task of translating the novel into English.
 
+The minute I made my mind, I panicked,
 
+> What should I do with the Polish alexandrine passages?
+
+Most English translators replace *trzynastozgłoskowiec* with iambic pentameter, which makes a lot of sense. Each is a signature metric line of the respective language, characteristic of a certain era.
+
+It didn’t feel right in the case of VOSTOK though. Its Polishness was such a crucial part of it that I decided to retain some common names or even swearwords. So why replace one of its most Polish parts with an Anglo-Saxon equivalent?
+
+[<img src="https://drobnik.co/images/vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
+<sup>VOSTOK is available as paperback, hardcover, and ebook</sup>
 
 ## Pushing the English into the Polish mould
 
-And so the Polish verse:
+Although both part of the Indo-European group, Polish and English sound nothing alike.
+
+The former is full of sibilant consonants, with just a few vowels of the same duration and stress falling in most cases on the penultimate syllable.
+
+The latter is ruled by vowels, which can vary in duration and chain into diphthongs (and even triphthongs!), while its word stress is pretty unpredictable. 
+
+I knew from the beginning I can’t be too dogmatic about the process. I allowed certain deviations (such as treating some diphthongs as if they were), focussing on the placement of the caesura and retaining the overall rhythm.
+
+And so the Polish:
 
 > Idziemy wciąż przed siebie, deszcz pada bez przerwy,  
 > mimowolnie poruszam ustami jak ryba,  
 > podnoszę ciężkie nogi, zmęczone powieki  
 > i nie ma nic prócz deszczu, nie ma nic prócz smutku.
 
-became the English verse:
+became the English:
 
 > We keep progressing deeper, the rain is unceasing,  
 > mouth opening and closing in a fish-like fashion,  
@@ -59,9 +76,6 @@ became the English verse:
 > there’s nothing left but downpour, nothing left but sadness.
 >
 > VOSTOK by Łukasz Drobnik
-
-[<img src="https://drobnik.co/images/vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
-<sup>VOSTOK is available as paperback, hardcover, and ebook</sup>
 
 ## Bending the form
 
@@ -79,3 +93,11 @@ I used this effect in the Polish drafts of VOSTOK, so it made sense to replicate
 Note that even though the phrase “stream after stream after stream” has the required seven syllables, the stress falls on its last syllable rather than penultimate.
 
 ## Was it all worth it?
+
+In a word: yes. And not only as a challenging translation exercise.
+
+The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story much better than the livelier iambic pentameter. It mimics the sound of unceasing Venusian rains and corresponds with the characters’ futile attempts to find a shelter.
+
+What’s more, the very un-English form of Polish forced some unconventional word choices that gave the passages a surreal feel.
+
+This otherworldliness goes well with the premise of VOSTOK which is something much stranger than its realistic façade would make you believe.
