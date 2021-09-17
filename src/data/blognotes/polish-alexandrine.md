@@ -2,11 +2,11 @@ Polish alexandrine is the iambic pentameter of Polish literature. Among us piero
 
 To help you understand how hyper-Polish this metric line is, let me just say that Adam Mickiewicz chose it for *Pan Tadeusz*, Poland’s national epic.
 
-![A fragment of an old script: the beginning of the Polish song Jezusa Judasz przedał written in Polish alexandrine](https://drobnik.co/images/polish-alexandrine-example.jpg)
+![The opening lines of the first edition of Pan Tadeusz](https://drobnik.co/images/polish-alexandrine-example.jpg)
 
-<sup>The 15th-century song *Jezusa Judasz przedał* by Władysław z Gielniowa is one of the oldest examples of Polish alexandrine; source: Wikimedia Commons</sup>
+<sup>The opening lines of the first edition of *Pan Tadeusz*; source: Wikimedia Commons</sup>
 
-[VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave the text with a *trzynastozgłowiec* poem — one that is a queer retelling of Bradbury’s “The Long Rain”.
+[VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave the text with a *trzynastozgłowiec* poem. One that is a queer retelling of Bradbury’s “The Long Rain” because who’s going to stop me.
 
 
 
@@ -22,14 +22,32 @@ To help you understand how hyper-Polish this metric line is, let me just say tha
 
 ## Anatomy of the beast
 
-> 
+In each verse, the thirteen syllables of Polish alexandrine are grouped into two phrases. The first one contains seven syllables, the second six, and they’re separated by a caesura. The penultimate syllable of each phrase is stressed.
 
-[<img src="https://drobnik.co/images/vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
-<sup>VOSTOK is available as paperback, hardcover, and ebook</sup>
+Perhaps it’s the last rule that makes *trzynastozgłoskowiec* sound so naturally, effortlessly Polish. In the vast majority of Polish words, the stress falls on the penultimate syllable, so it’s fairly easy to say even the most banal thought in Polish alexandrine:
+
+> Choć jestem polskim chłopcem, nie lubię kiełbasy.
+>
+> *(Though I’m a Polish boy, I don’t like kiełbasa.)*
+
+And even the most banal thought said in *trzynastozgłoskowiec* has this soothing, lulling cadence. One that made it difficult for me to stay awake during the compulsory reading of *Pan Tadeusz* in primary school.
 
 ## Translator’s dilemma
 
-I wrote the earliest draft of VOSTOK in Polish.
+I wrote the first draft of VOSTOK in Polish. It was only many drafts and rejections later that I decided to undertake the humongous task of translating the novel into English. (Spoiler alert: it did pay off.)
+
+
+
+## Pushing the English into the Polish mould
+
+And so the Polish verse:
+
+> Idziemy wciąż przed siebie, deszcz pada bez przerwy,  
+> mimowolnie poruszam ustami jak ryba,  
+> podnoszę ciężkie nogi, zmęczone powieki  
+> i nie ma nic prócz deszczu, nie ma nic prócz smutku.
+
+became the English verse:
 
 > We keep progressing deeper, the rain is unceasing,  
 > mouth opening and closing in a fish-like fashion,  
@@ -38,7 +56,14 @@ I wrote the earliest draft of VOSTOK in Polish.
 >
 > VOSTOK by Łukasz Drobnik
 
+[<img src="https://drobnik.co/images/vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
+<sup>VOSTOK is available as paperback, hardcover, and ebook</sup>
+
 ## Bending the form
+
+The cadence of Polish alexandrine is so soothing and predictable that any deviation from it jolts you out of your relaxed state and makes you pay attention.
+
+I used this effect in the Polish drafts of VOSTOK, so it made sense to replicate it in the English version:
 
 > Stream after stream after stream we follow the shoreline,  
 > the mouths of brooks and rivers, sometimes so expansive  
@@ -46,3 +71,7 @@ I wrote the earliest draft of VOSTOK in Polish.
 > into the jungle coloured like milk, glitter, buildings.
 >
 > VOSTOK by Łukasz Drobnik
+
+Note that even though the phrase “stream after stream after stream” has seven syllables, the stress falls on its last syllable rather than penultimate one.
+
+## Was it all worth it?
