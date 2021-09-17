@@ -76,6 +76,6 @@ I used this effect in the Polish drafts of VOSTOK, so it made sense to replicate
 >
 > VOSTOK by Łukasz Drobnik
 
-Note that even though the phrase “stream after stream after stream” has seven syllables as it should, the stress falls on its last syllable rather than penultimate one.
+Note that even though the phrase “stream after stream after stream” has the required seven syllables, the stress falls on its last syllable rather than penultimate one.
 
 ## Was it all worth it?
