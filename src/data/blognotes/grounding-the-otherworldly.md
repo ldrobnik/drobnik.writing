@@ -61,4 +61,4 @@ Does it bother me? I can’t say it does.
 
 As an atheist with Catholic upbringing, I both have irrational reverence for dogmas and find perverse pleasure in tearing them down. There’s a method to this madness: start with a set of rules to give your work an initial structure, but bend them to your needs to tell the best story you can.  
 
-The result is VOSTOK: not quite realistic fiction, not quite sci-fi, but something more than the sum of the two.
+The result is [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk): not quite realistic fiction, not quite sci-fi, but something more than the sum of the two.

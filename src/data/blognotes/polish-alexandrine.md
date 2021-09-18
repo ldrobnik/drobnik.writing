@@ -100,4 +100,5 @@ The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story muc
 
 What’s more, the very un-English form of Polish alexandrine forced some unconventional word choices that gave the passages a surreal feel.
 
-This otherworldliness goes well with the very premise of VOSTOK — a book that is something much stranger than its realistic façade would make you believe.
+This otherworldliness goes well with the very premise of [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk) — a book that is something much stranger than its realistic façade would make you believe.
+
