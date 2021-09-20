@@ -768,6 +768,16 @@ export const PUBLICATIONS = {
 
     collections: [
         {
+            title: 'Stranged Writing: A Literary Taxonomy',
+            issue: '',
+            year: '',
+            url: 'http://thegravityofthething.com/submit/',
+            descriptionPl: 'Flash fiction „Phagocytosis” w antologii przygotowywanej przez pismo The Gravity of the Thing',
+            descriptionEn: 'Flash fiction “Phagocytosis” in an anthology forthcoming from The Gravity of the Thing',
+            language: 'en',
+            pieceTitle: 'Phagocytosis'
+        },
+        {
             title: '2020. Antologia współczesnych polskich opowiadań',
             year: '2020',
             url: 'http://www.wforma.eu/2020-antologia-wspolczesnych-polskich-opowiadan.html',
