@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import SmallSpinner from '../../../UI/SmallSpinner/SmallSpinner';
 
 const BlogImage = props => {
 
@@ -26,8 +27,9 @@ const BlogImage = props => {
                 <img
                     src={imageSrc}
                     alt={props.alt}
+                    className={'border'}
                 /> :
-                <div>loading...</div>
+                <SmallSpinner />
             }
         </React.Fragment>
     );

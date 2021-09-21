@@ -14,7 +14,7 @@ export const BlackAndWhiteTheme = styled.div`
     background-color: ${props => props.theme.darkColor};
   }
 
-  img {
+  .border {
     border: ${props => props.theme.darkColor} 1px solid;
   }
 
@@ -39,7 +39,7 @@ export const NocturineTheme = styled.div`
     background-color: rgba(218, 175, 181, 0.2);
   }
 
-  img {
+  .border {
     border: ${props => props.theme.nocturineColor} 1px solid;
   }
 
@@ -73,7 +73,7 @@ export const VostokTheme = styled.div`
     background-color: rgba(231, 184, 76, 0.2);
   }
 
-  img {
+  .border {
     border: ${props => props.theme.vostokColor} 1px solid;
   }
   
@@ -108,7 +108,7 @@ export const WritingTheme = styled.div`
     background-color: rgba(255, 233, 28, 0.2);
   }
 
-  img {
+  .border {
     border: ${props => props.theme.writingColor} 1px solid;
   }
 
@@ -143,7 +143,7 @@ export const CodeTheme = styled.div`
     background-color: rgba(77, 179, 255, 0.2);
   }
 
-  img {
+  .border {
     border: ${props => props.theme.codeColor} 1px solid;
   }
 
@@ -179,7 +179,7 @@ export const BiologyTheme = styled.div`
     background-color: rgba(0, 197, 144, 0.2);
   }
 
-  img {
+  .border {
     border: ${props => props.theme.biologyColor} 1px solid;
   }
 
@@ -215,7 +215,7 @@ export const PopTheme = styled.div`
     background-color: rgba(255, 116, 24, 0.2);
   }
 
-  img {
+  .border {
     border: ${props => props.theme.popColor} 1px solid;
   }
 
@@ -251,7 +251,7 @@ export const LiteraryTheme = styled.div`
     background-color: rgba(244, 123, 161, 0.2);
   }
 
-  img {
+  .border {
     border: ${props => props.theme.literaryColor} 1px solid;
   }
 
@@ -558,17 +558,6 @@ export const BlogNoteReadMore = styled.div`
   text-align: center;
   text-transform: uppercase;
 `;
-
-export const TopImageContainer = styled.div`
-  min-height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  @media (min-width: ${props => props.theme.smallScr}) {
-    min-height: 300px;
-  }
-`
 
 
 /* TopImage */

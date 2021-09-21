@@ -27,6 +27,7 @@ import {WEBSITE_TEXT_BLOG, ALL_BLOG_NOTES, BLOG_CATEGORIES} from '../../../data/
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
 import BlogImage from './BlogImage/BlogImage';
+import SmallSpinner from '../../UI/SmallSpinner/SmallSpinner';
 
 const TopImage = lazy(() => import('./TopImage/TopImage'));
 const BlogBio = lazy(() => import('../BlogBio/BlogBio'));
@@ -296,15 +297,13 @@ export const BlogNote = props => {
                 <div id='top'></div>
             </BlogTopAnchor>
             <ThemeWrapper theme={noteCategory}>
-                <TopImageContainer>
-                    <Suspense fallback={<div>loading...</div>}>
-                        <TopImage
-                            imageSrc={imageSrc}
-                            imageCredits={imageCredits}
-                            visible={visible}
-                        />
-                    </Suspense>
-                </TopImageContainer>
+                <Suspense fallback={<SmallSpinner/>}>
+                    <TopImage
+                        imageSrc={imageSrc}
+                        imageCredits={imageCredits}
+                        visible={visible}
+                    />
+                </Suspense>
                 <AnimatedContent
                     pose={visible ? 'visible' : 'hidden'}>
                     <BlogNoteCredits
@@ -343,12 +342,12 @@ export const BlogNote = props => {
                         </HighlightedMarkdown>
                     </AnimatedContent>
                     <div id='bio'></div>
-                    <Suspense fallback={<div>loading...</div>}>
+                    <Suspense fallback={<SmallSpinner />}>
                         <AnimatedContent
                             pose={visible ? 'visible' : 'hidden'}>
                             <BlogSeparator className={'colouredBackground'}/>
                             <BlogNoteBio>
-                                <Suspense fallback={<div>loading...</div>}>
+                                <Suspense fallback={<SmallSpinner />}>
                                     <BlogBio/>
                                 </Suspense>
                             </BlogNoteBio>
@@ -360,7 +359,7 @@ export const BlogNote = props => {
                     </Suspense>
                 </BlogPost>
             </ThemeWrapper>
-            <Suspense fallback={<div></div>}>
+            <Suspense fallback={<SmallSpinner />}>
                 <BlogNoteList
                     linklist={relatedNotes}
                     showCategories={true}

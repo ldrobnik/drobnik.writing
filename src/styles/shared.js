@@ -368,6 +368,21 @@ export const SpinnerWrapper = styled.div`
 `;
 
 
+/* SmallSpinner.js */
+
+export const SmallSpinnerWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  width: 100%;
+  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+  
+  img {
+    height: 60px;
+  }
+`;
+
 export const SpinnerBackdrop = styled.div`
   position: absolute;
   left: 0;
