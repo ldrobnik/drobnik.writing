@@ -199,11 +199,19 @@ export const Blog = props => {
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
                 <BlogTitle>{WEBSITE_TEXT_BLOG.title}</BlogTitle>
+            </AnimatedContent>
                 <MainPageBlogBio>
                     <Suspense fallback={SmallSpinner}>
-                        <BlogBio/>
+                        <AnimatedContent
+                            pose={!props.reload ? 'visible' : 'hidden'}
+                        >
+                            <BlogBio/>
+                        </AnimatedContent>
                     </Suspense>
                 </MainPageBlogBio>
+            <AnimatedContent
+                pose={!props.reload ? 'visible' : 'hidden'}
+            >
                 {(filteredCategory === '') &&
                 <CategoryPicker/>}
                 {(filteredCategory) &&
