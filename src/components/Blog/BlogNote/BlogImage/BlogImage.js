@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import SmallSpinner from '../../../UI/SmallSpinner/SmallSpinner';
 import {AnimatedPhoto} from '../../../../animations/shared';
+import {BlogImg} from '../../../../styles/blog';
 
 const BlogImage = props => {
 
@@ -26,7 +27,7 @@ const BlogImage = props => {
         <React.Fragment>
             <AnimatedPhoto
                 pose={imageSrc ? 'visible' : 'hidden'}>
-                <img
+                <BlogImg
                     src={imageSrc}
                     alt={props.alt}
                     className={'border'}

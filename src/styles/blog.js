@@ -76,7 +76,7 @@ export const VostokTheme = styled.div`
   .border {
     border: ${props => props.theme.vostokColor} 1px solid;
   }
-  
+
   blockquote {
     border-left: 6px solid ${props => props.theme.vostokColor};
     padding-left: 1.5vw;
@@ -392,7 +392,7 @@ export const MainPageBlogBio = styled.div`
   margin-top: 1em;
   padding: 0 3em;
   font-size: ${props => props.theme.captionSize};
-  
+
   @media all and (max-width: ${props => props.theme.smallScr}) {
     padding: 0;
   }
@@ -600,6 +600,13 @@ export const TopImageCredits = styled.div`
   text-align: center;
 `;
 
+/* BlogImage.js */
+
+export const BlogImg = styled.img`
+  margin-left: auto;
+  margin-right: auto;
+`;
+
 /* BlogNoteList.js */
 
 export const BlogNoteListWrapper = styled.div`
@@ -658,7 +665,7 @@ export const BlogBioWrapper = styled.div`
   line-height: 1.4;
   padding: 0 3em;
   text-align: justify;
-  
+
   @media all and (max-width: ${props => props.theme.smallScr}) {
     padding: 0;
   }
