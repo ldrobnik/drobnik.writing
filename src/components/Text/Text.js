@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {lazy, Suspense, useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import Markdown from 'markdown-to-jsx/dist/index.js';
@@ -21,14 +21,16 @@ import {
     TextBody
 } from '../../styles/text';
 import {AnimatedContent} from '../../animations/shared';
-import {AnimatedTextLink,  AnimatedTextButton} from '../../animations/text';
+import {AnimatedTextLink, AnimatedTextButton} from '../../animations/text';
 import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES} from './../../data/constants';
-import Credits from './Credits/Credits';
-import DescriptionPanel from './DescriptionPanel/DescriptionPanel';
-import NextTextLink from './NextTextLink/NextTextLink';
-import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
-import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 import CentredButton from '../UI/CentredButton/CentredButton';
+import SmallSpinner from '../UI/SmallSpinner/SmallSpinner';
+
+const Credits = lazy(() => import('./Credits/Credits'));
+const DescriptionPanel = lazy(() => import('./DescriptionPanel/DescriptionPanel'));
+const NextTextLink = lazy(() => import('./NextTextLink/NextTextLink'));
+const SubpageLinks = lazy(() => import('../UI/SubpageLinks/SubpageLinks'));
+const CopyrightNote = lazy(() => import('../UI/CopyrightNote/CopyrightNote'));
 
 export const Text = props => {
 
@@ -221,9 +223,11 @@ export const Text = props => {
                     <Waypoint
                         onEnter={hideLink}
                     />
-                    <Credits
-                        lang={props.lang}
-                        textName={textName}/>
+                    <Suspense fallback={SmallSpinner}>
+                        <Credits
+                            lang={props.lang}
+                            textName={textName}/>
+                    </Suspense>
                 </AnimatedContent>
                 }
                 {
@@ -245,44 +249,49 @@ export const Text = props => {
                 {
                     !props.reload &&
                     <React.Fragment>
-                        <AnimatedContent
-                            pose={(piece.length > 0) && visible ? 'visible' : 'hidden'}>
-                            <DescriptionPanel
-                                description={TEXTS[props.lang][textName].description}
-                                title={TEXTS[props.lang][textName].title}
-                            />
-                        </AnimatedContent>
+                        <Suspense fallback={SmallSpinner}>
+                            <AnimatedContent
+                                pose={(piece.length > 0) && visible ? 'visible' : 'hidden'}>
+                                <DescriptionPanel
+                                    description={TEXTS[props.lang][textName].description}
+                                    title={TEXTS[props.lang][textName].title}
+                                />
+                            </AnimatedContent>
+                        </Suspense>
                         <Waypoint
                             onEnter={showLink}
                         />
-                        <AnimatedTextLink
-                            pose={(piece.length > 0) && linkVisible ? 'visible' : 'hidden'}
-                        >
-                            <NextTextLink
-                                textName={nextTextName}
-                                lang={props.lang}
-                                onClick={reloadPage}
-                            />
-                        </AnimatedTextLink>
-
+                        <Suspense fallback={SmallSpinner}>
+                            <AnimatedTextLink
+                                pose={(piece.length > 0) && linkVisible ? 'visible' : 'hidden'}
+                            >
+                                <NextTextLink
+                                    textName={nextTextName}
+                                    lang={props.lang}
+                                    onClick={reloadPage}
+                                />
+                            </AnimatedTextLink>
+                        </Suspense>
                         <Waypoint
                             onEnter={showLink}
                         />
-                        <AnimatedContent
-                            pose={(piece.length > 0) && visible ? 'visible' : 'hidden'}>
-                            <SubpageLinks
-                                lang={props.lang}
-                                reloadPage={reloadPage}
-                            />
-                            <Waypoint
-                                onEnter={showLink}
-                            />
-                            <SectionSeparator/>
-                            <CopyrightNote/>
-                            <Waypoint
-                                onEnter={showLink}
-                            />
-                        </AnimatedContent>
+                        <Suspense fallback={SmallSpinner}>
+                            <AnimatedContent
+                                pose={(piece.length > 0) && visible ? 'visible' : 'hidden'}>
+                                <SubpageLinks
+                                    lang={props.lang}
+                                    reloadPage={reloadPage}
+                                />
+                                <Waypoint
+                                    onEnter={showLink}
+                                />
+                                <SectionSeparator/>
+                                <CopyrightNote/>
+                                <Waypoint
+                                    onEnter={showLink}
+                                />
+                            </AnimatedContent>
+                        </Suspense>
                     </React.Fragment>
                 }
             </TextWrapper>;
