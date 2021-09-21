@@ -16,6 +16,20 @@ export const PULSATE_KEYFRAMES = keyframes`
   }
 `;
 
+export const REVERSE_PULSATE_KEYFRAMES = keyframes`
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+`;
+
 
 //Keyframes for 'popping' animation
 export const POP_KEYFRAMES = keyframes`
@@ -360,7 +374,7 @@ export const SpinnerWrapper = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+  animation: ${REVERSE_PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
 
   img {
     height: 110px;
@@ -376,7 +390,7 @@ export const SmallSpinnerWrapper = styled.div`
   justify-content: center;
   min-height: 100px;
   width: 100%;
-  animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+  animation: ${REVERSE_PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
   
   img {
     height: 60px;
