@@ -13,11 +13,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-//source urls for book covers
-import nocturineCover from '../assets/images/nocturineCover.jpg';
-import nocCunCover from '../assets/images/nocCunCover.jpg';
-import vostokCover from '../assets/images/vostokCover.jpg';
-// import tbaCover from '../assets/images/tbaCover.jpg';
+//file names for book covers
+const nocturineCover = 'nocturineCover.jpg';
+const nocCunCover = 'nocCunCover.jpg';
+const vostokCover = 'vostokCover.jpg';
+// import tbaCover from 'tbaCover.jpg';
 
 //Frequently used URLs
 

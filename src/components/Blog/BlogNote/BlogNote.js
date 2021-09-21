@@ -20,8 +20,7 @@ import {
     BlogWrapper,
     BlogSeparator,
     BlogNoteReadMore,
-    BlogNoteBio,
-    TopImageContainer
+    BlogNoteBio
 } from '../../../styles/blog';
 import {WEBSITE_TEXT_BLOG, ALL_BLOG_NOTES, BLOG_CATEGORIES} from '../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';

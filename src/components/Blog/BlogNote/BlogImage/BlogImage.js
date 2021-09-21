@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import SmallSpinner from '../../../UI/SmallSpinner/SmallSpinner';
+import {AnimatedPhoto} from '../../../../animations/shared';
 
 const BlogImage = props => {
 
@@ -19,18 +20,22 @@ const BlogImage = props => {
     useEffect(() => {
         //import the image once the component loads
         importImage(props.src);
-    }, [props.src])
+    }, [])
 
     return (
         <React.Fragment>
-            {imageSrc ?
+            <AnimatedPhoto
+                pose={imageSrc ? 'visible' : 'hidden'}>
                 <img
                     src={imageSrc}
                     alt={props.alt}
                     className={'border'}
-                /> :
-                <SmallSpinner />
+                />
+            </AnimatedPhoto>
+            {!imageSrc &&
+            <SmallSpinner/>
             }
+
         </React.Fragment>
     );
 };
