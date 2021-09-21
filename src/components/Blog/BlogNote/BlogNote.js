@@ -33,7 +33,6 @@ const BlogNoteList = lazy(() => import('../BlogNoteList/BlogNoteList'));
 const SubpageLinks = lazy(() => import('../../UI/SubpageLinks/SubpageLinks'));
 const CopyrightNote = lazy(() => import('../../UI/CopyrightNote/CopyrightNote'));
 
-
 export const BlogNote = props => {
 
 
