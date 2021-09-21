@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {lazy, Suspense, useState, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {
@@ -21,11 +21,13 @@ import {
 import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT_BLOG} from './../../data/constants';
 import CategoryPicker from './CategoryPicker/CategoryPicker';
 import FilteredCategory from './FilteredCategory/FilteredCategory';
-import Teaser from './Teaser/Teaser';
-import BlogBio from './BlogBio/BlogBio';
-import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
-import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
-import BlogNoteList from './BlogNoteList/BlogNoteList';
+import SmallSpinner from '../UI/SmallSpinner/SmallSpinner';
+
+const Teaser = lazy(() => import('./Teaser/Teaser'));
+const BlogBio = lazy(() => import('./BlogBio/BlogBio'));
+const SubpageLinks = lazy(() => import('../UI/SubpageLinks/SubpageLinks'));
+const CopyrightNote = lazy(() => import('../UI/CopyrightNote/CopyrightNote'));
+const BlogNoteList = lazy(() => import('./BlogNoteList/BlogNoteList'));
 
 export const Blog = props => {
 
@@ -116,7 +118,9 @@ export const Blog = props => {
         let categoryToFilter = checkFiltering();
 
         //filters out notes with the category in question
-        let filteredByCategory = BLOG_NOTES.filter(item => {return (item.category === categoryToFilter)});
+        let filteredByCategory = BLOG_NOTES.filter(item => {
+            return (item.category === categoryToFilter)
+        });
         console.log(filteredByCategory);
 
         if (categoryToFilter && filteredByCategory.length) {
@@ -196,7 +200,9 @@ export const Blog = props => {
             >
                 <BlogTitle>{WEBSITE_TEXT_BLOG.title}</BlogTitle>
                 <MainPageBlogBio>
-                    <BlogBio/>
+                    <Suspense fallback={SmallSpinner}>
+                        <BlogBio/>
+                    </Suspense>
                 </MainPageBlogBio>
                 {(filteredCategory === '') &&
                 <CategoryPicker/>}
@@ -205,7 +211,9 @@ export const Blog = props => {
                 {(latestNote.id) &&
                 <React.Fragment>
                     <BlogSectionHeading>{WEBSITE_TEXT_BLOG.latestPost}</BlogSectionHeading>
-                    <Teaser note={latestNote}/>
+                    <Suspense fallback={SmallSpinner}>
+                        <Teaser note={latestNote}/>
+                    </Suspense>
                 </React.Fragment>
                 }
             </AnimatedContent>
@@ -216,24 +224,28 @@ export const Blog = props => {
                 >
                     <BlogSectionHeading>{WEBSITE_TEXT_BLOG.olderPosts}</BlogSectionHeading>
                 </AnimatedContent>
-                <BlogNoteList
-                    linklist={olderNotes}
-                    showCategories={!filteredCategory}
-                />
+                <Suspense fallback={SmallSpinner}>
+                    <BlogNoteList
+                        linklist={olderNotes}
+                        showCategories={!filteredCategory}
+                    />
+                </Suspense>
             </React.Fragment>
             }
-            <AnimatedContent
-                pose={!props.reload ? 'visible' : 'hidden'}
-            >
-                <SubpageLinks
-                    lang={'en'}
-                    reloadPage={reloadPage}
-                    blog={filteredCategory}
-                    mainHidden={!filteredCategory}
-                />
-                <SectionSeparator/>
-                <CopyrightNote/>
-            </AnimatedContent>
+            <Suspense fallback={SmallSpinner}>
+                <AnimatedContent
+                    pose={!props.reload ? 'visible' : 'hidden'}
+                >
+                    <SubpageLinks
+                        lang={'en'}
+                        reloadPage={reloadPage}
+                        blog={filteredCategory}
+                        mainHidden={!filteredCategory}
+                    />
+                    <SectionSeparator/>
+                    <CopyrightNote/>
+                </AnimatedContent>
+            </Suspense>
         </BlogWrapper>;
 };
 
