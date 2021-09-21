@@ -51,7 +51,7 @@ export const DataNotice = props => {
         <div></div>;
 
     useEffect(() => {
-        setTimeout(setContent, 2500);
+        setTimeout(setContent, 5000);
     });
 
     return (
