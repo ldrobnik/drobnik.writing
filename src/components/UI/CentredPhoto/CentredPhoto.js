@@ -26,8 +26,6 @@ const CentredPhoto = props => {
     }
 
     useEffect(() => {
-
-        console.log(props.src)
         //import the image once the component loads
         importImage(props.src);
     }, [])
