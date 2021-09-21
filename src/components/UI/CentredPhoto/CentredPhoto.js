@@ -21,16 +21,16 @@ const CentredPhoto = props => {
                         <a href={props.link} target="_blank"
                            rel="noopener noreferrer">
                             <img
-                                src={props.source}
-                                alt={props.altText}
+                                src={props.src}
+                                alt={props.alt}
                                 onLoad={showPhoto}
                             />
                         </a>
                     </PhotoLink>
                     : <Photo>
                         <img
-                            src={props.source}
-                            alt={props.altText}
+                            src={props.src}
+                            alt={props.alt}
                             onLoad={showPhoto}
                         />
                     </Photo>}

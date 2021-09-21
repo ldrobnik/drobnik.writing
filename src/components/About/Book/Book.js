@@ -96,8 +96,8 @@ export const Book = props => {
                 />
                 <SmallSeparator/>
                 <CentredPhoto
-                    source={BOOKS[props.book].cover}
-                    altText='Book cover'
+                    src={BOOKS[props.book].cover}
+                    alt='Book cover'
                     link={BOOKS[props.book].url}
                 />
                 <BookSlogan>

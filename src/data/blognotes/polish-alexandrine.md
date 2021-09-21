@@ -2,7 +2,7 @@ Polish alexandrine is the iambic pentameter of Polish literature. Among us piero
 
 To understand how uber-Polish this metric line is, all you need to know is Adam Mickiewicz chose it for *Pan Tadeusz*, Poland’s national epic.
 
-![The opening lines of the first edition of Pan Tadeusz](https://drobnik.co/images/polish-alexandrine-example.jpg)
+![The opening lines of the first edition of Pan Tadeusz](polish-alexandrine-example.jpg)
 
 <sup>The opening lines of the first edition of *Pan Tadeusz*. Source: Wikimedia Commons.</sup>
 
@@ -24,7 +24,7 @@ To understand how uber-Polish this metric line is, all you need to know is Adam 
 
 In each verse, the thirteen syllables of Polish alexandrine are grouped into two phrases. The first one contains seven syllables, the second six, and they’re separated by a metrical pause (caesura). The penultimate syllable of each phrase is stressed.
 
-![Schematic representation of a Polish alexandrine verse. Two groups of seven and six syllables each separated by a caesura. The penultimate syllable of each group is stressed.](https://drobnik.co/images/polish-alexandrine-structure.svg)
+![Schematic representation of a Polish alexandrine verse. Two groups of seven and six syllables each separated by a caesura. The penultimate syllable of each group is stressed.](polish-alexandrine-structure.svg)
 
 <sup>The basic structure of a Polish alexandrine verse. The horizontal lines represent syllables, the vertical line the caesura. Syllables that need to be stressed are coloured dark yellow.</sup>
 
@@ -48,7 +48,7 @@ Most English translators replace *trzynastozgłoskowiec* with iambic pentameter,
 
 It didn’t feel right in the case of VOSTOK though. Its Polishness was such a crucial part of the book that I decided to retain many Polish names or even swearwords. So why replace one of its most Polish parts with an Anglo-Saxon equivalent?
 
-[<img src="https://drobnik.co/images/vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
+[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
 
 ## Pushing the English into the Polish mould

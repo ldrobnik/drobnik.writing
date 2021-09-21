@@ -77,8 +77,8 @@ export const Intro = props => {
                 />
                 <SmallSeparator/>
                 <CentredPhoto
-                    source={authorsPhoto}
-                    altText={WEBSITE_TEXT_ABOUT.intro.altText[props.lang]}
+                    src={authorsPhoto}
+                    alt={WEBSITE_TEXT_ABOUT.intro.altText[props.lang]}
                 />
                 <IntroBody>
                     {WEBSITE_TEXT_ABOUT.intro.body[props.lang]}

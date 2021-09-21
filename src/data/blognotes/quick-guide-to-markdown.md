@@ -24,7 +24,7 @@ To create a heading, add one or more hash signs (#) before a line of text.
 
 #### Result:
 
-![Formatted document title](https://drobnik.co/images/markdown-headings.jpg)
+![Formatted document title](markdown-headings.jpg)
 
 ## Paragraphs
 
@@ -38,7 +38,7 @@ For Lucy had her work cut out for her.
 
 #### Result:
 
-![Formatted document title](https://drobnik.co/images/markdown-paragraphs.jpg)
+![Formatted document title](markdown-paragraphs.jpg)
 
 ## Line breaks
 
@@ -60,7 +60,7 @@ This is some more _italic text_.
 
 #### Result:
 
-![Formatted document title](https://drobnik.co/images/markdown-italic.jpg)
+![Formatted document title](markdown-italic.jpg)
 
 ### Bold
 
@@ -74,7 +74,7 @@ This is some more __bold text__.
 
 #### Result:
 
-![Formatted document title](https://drobnik.co/images/markdown-bold.jpg)
+![Formatted document title](markdown-bold.jpg)
 
 ## Lists
 
@@ -106,7 +106,7 @@ To create an unordered list, start each line with a dash (-), an asterisk (*), o
 
 #### Result:
 
-![Formatted document title](https://drobnik.co/images/markdown-ul.jpg)
+![Formatted document title](markdown-ul.jpg)
 
 ### Ordered lists
 
@@ -128,7 +128,7 @@ To create an ordered list, start each line with a number followed by a full stop
 
 #### Result:
 
-![Formatted document title](https://drobnik.co/images/markdown-ol.jpg)
+![Formatted document title](markdown-ol.jpg)
 
 ## Links
 
@@ -140,7 +140,7 @@ If you want to create a link, enclose a text to be displayed in square brackets 
 
 #### Result:
 
-![Formatted document title](https://drobnik.co/images/markdown-link.jpg)
+![Formatted document title](markdown-link.jpg)
 
 ## Images
 
@@ -152,7 +152,7 @@ To add an image, type an exclamation mark (!) and follow it by an alt text in sq
 
 #### Result:
 
-![Markdown logo](https://drobnik.co/images/markdown-logo.png)
+![Markdown logo](markdown-logo.png)
 
 ## Blockquotes
 
@@ -164,7 +164,7 @@ To create a blockquote, start a paragraph with a > sign.
 
 #### Result:
 
-![Formatted document title](https://drobnik.co/images/markdown-blockquote.jpg)
+![Formatted document title](markdown-blockquote.jpg)
 
 ## Tables
 
@@ -180,7 +180,7 @@ If you want to insert a table, add three or more dashes (-) to create column hea
 
 #### Result:
 
-![Formatted document title](https://drobnik.co/images/markdown-table.jpg)
+![Formatted document title](markdown-table.jpg)
 
 ## Inline code
 
@@ -192,7 +192,7 @@ Type `git add .` in the command line.
 
 #### Result:
 
-![Formatted document title](https://drobnik.co/images/markdown-inline-code.jpg)
+![Formatted document title](markdown-inline-code.jpg)
 
 ## Code blocks
 
@@ -208,7 +208,7 @@ To create a code block, add three backticks (```) on the lines before and after 
 
 #### Result:
 
-![Formatted document title](https://drobnik.co/images/markdown-codeblock.jpg)
+![Formatted document title](markdown-codeblock.jpg)
 
 ## Resources
 

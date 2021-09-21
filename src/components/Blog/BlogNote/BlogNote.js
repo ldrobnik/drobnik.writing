@@ -26,6 +26,7 @@ import {
 import {WEBSITE_TEXT_BLOG, ALL_BLOG_NOTES, BLOG_CATEGORIES} from '../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
+import BlogImage from './BlogImage/BlogImage';
 
 const TopImage = lazy(() => import('./TopImage/TopImage'));
 const BlogBio = lazy(() => import('../BlogBio/BlogBio'));
@@ -326,6 +327,7 @@ export const BlogNote = props => {
                                             },
                                         },
                                         img: {
+                                            component: BlogImage,
                                             props: {
                                                 style: {
                                                     marginLeft: 'auto',

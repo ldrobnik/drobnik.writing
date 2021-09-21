@@ -38,7 +38,7 @@ This is some **bold text**.
 
 The rest of Markdown syntax is similarly straightforward. To learn more about it, read my [quick guide](https://drobnik.co/blog/quick-guide-to-markdown).
 
-![Example Markdown document and its preview](https://drobnik.co/images/md-for-writers-example.jpg)
+![Example Markdown document and its preview](md-for-writers-example.jpg)
 
 <sup>Example Markdown document and its preview</sup>
 
@@ -52,7 +52,7 @@ What’s more, Markdown documents are essentially text files, so they’re extre
 
 Markdown files are also great for **version control**. Solutions for programmers such as [GitHub](https://github.com/) or [Bitbucket](https://bitbucket.org/) let you track every single change made to your manuscript. This way you can easily go back to earlier versions of your text, for example to revive one of your killed darlings.
 
-![Version control of a Markdown document using GitHub Desktop](https://drobnik.co/images/md-for-writers-github.jpg)
+![Version control of a Markdown document using GitHub Desktop](md-for-writers-github.jpg)
 
 <sup>Version control of a Markdown document using GitHub Desktop</sup>
 
@@ -68,7 +68,7 @@ My Markdown editor of choice, though, is [Typora](https://typora.io/), available
 
 What’s ground-breaking about Typora’s design is that it gets rid of the preview window. Instead, Markdown syntax symbols are seamlessly replaced with a preview of formatted text *as you write*, offering a distraction-free experience.
 
-![Dynamic text preview in Typora](https://drobnik.co/images/md-for-writers-typora.gif)
+![Dynamic text preview in Typora](md-for-writers-typora.gif)
 
 <sup>Dynamic text preview in Typora</sup>
 
@@ -82,7 +82,7 @@ As much as I love writing in Markdown, I much prefer doing revisions in Word. No
 
 Fortunately, tools such as [Pandoc](https://pandoc.org/) (available for Windows, macOS, and Linux) let you convert Markdown files into a variety of formats, and vice versa. Pandoc integrates with Typora, which makes exporting and importing files super easy. 
 
-![Exporting a Markdown file from Typora using Pandoc](https://drobnik.co/images/md-for-writers-exporting.jpg)
+![Exporting a Markdown file from Typora using Pandoc](md-for-writers-exporting.jpg)
 
 <sup>Exporting a Markdown file from Typora using Pandoc</sup>
 
