@@ -1,14 +1,16 @@
-import React, {useEffect} from 'react';
+import React, {lazy, Suspense, useEffect} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPage} from '../../actions';
 import {AboutWrapper, AboutTopAnchor, AboutSectionWrapper} from '../../styles/about';
 import {BOOKS, TEXT_NAMES, WEBSITE_TEXT_SHARED, WEBSITE_TEXT} from './../../data/constants';
 import Intro from './Intro/Intro';
-import Book from './Book/Book';
-import Pubs from './Pubs/Pubs';
-import Read from './Read/Read';
-import CopyrightNote from './../UI/CopyrightNote/CopyrightNote';
+import SmallSpinner from '../UI/SmallSpinner/SmallSpinner';
+
+const Book = lazy(() => import('./Book/Book'));
+const Pubs = lazy(() => import('./Pubs/Pubs'));
+const Read = lazy(() => import('./Read/Read'));
+const CopyrightNote = lazy(() => import('./../UI/CopyrightNote/CopyrightNote'));
 
 export const About = props => {
 
@@ -65,22 +67,28 @@ export const About = props => {
             <AboutSectionWrapper>
                 <Intro/>
             </AboutSectionWrapper>
-            <AboutSectionWrapper id='books'>
-                {BOOKS.slice().reverse().map((book, k) => {
-                    return (
-                        book.displayOnMain && <AboutSectionWrapper id={book.id} key={book.id}>
-                            <Book book={BOOKS.indexOf(book)}/>
-                        </AboutSectionWrapper>
-                    );
-                })}
-            </AboutSectionWrapper>
-            <AboutSectionWrapper id='pubs'>
-                <Pubs/>
-            </AboutSectionWrapper>
-            <AboutSectionWrapper id='read'>
-                <Read/>
-            </AboutSectionWrapper>
-            <CopyrightNote/>
+            <Suspense fallback={SmallSpinner}>
+                <AboutSectionWrapper id='books'>
+                    {BOOKS.slice().reverse().map((book, k) => {
+                        return (
+                            book.displayOnMain && <AboutSectionWrapper id={book.id} key={book.id}>
+                                <Book book={BOOKS.indexOf(book)}/>
+                            </AboutSectionWrapper>
+                        );
+                    })}
+                </AboutSectionWrapper>
+            </Suspense>
+            <Suspense fallback={SmallSpinner}>
+                <AboutSectionWrapper id='pubs'>
+                    <Pubs/>
+                </AboutSectionWrapper>
+            </Suspense>
+            <Suspense fallback={SmallSpinner}>
+                <AboutSectionWrapper id='read'>
+                    <Read/>
+                </AboutSectionWrapper>
+                <CopyrightNote/>
+            </Suspense>
         </AboutWrapper>;
 };
 
