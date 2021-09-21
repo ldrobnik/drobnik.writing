@@ -14,7 +14,7 @@ import {
     BlogTeaserAuthor
 } from '../../../styles/blog';
 import {setPageReload} from '../../../actions';
-import {WEBSITE_TEXT, BLOG_CATEGORIES} from '../../../data/constants';
+import {WEBSITE_TEXT_BLOG, BLOG_CATEGORIES} from '../../../data/constants';
 
 export const BlogNoteCredits = props => {
 
@@ -39,7 +39,7 @@ export const BlogNoteCredits = props => {
                     <strong>{BLOG_CATEGORIES[props.category]}</strong>
                 </BlogNoteCategory>
                 <BlogNoteCreditWrapper>
-                    <BlogTeaserAuthor>{WEBSITE_TEXT.blog.author}</BlogTeaserAuthor>
+                    <BlogTeaserAuthor>{WEBSITE_TEXT_BLOG.author}</BlogTeaserAuthor>
                     <div>{datePublished}</div>
                 </BlogNoteCreditWrapper>
             </AnimatedContent>
@@ -59,7 +59,7 @@ export const BlogNoteCredits = props => {
                 </Link>
                 <BlogNoteCreditWrapper>
                     <AnchorLink offset='180' href='#bio'>
-                        <BlogNoteAuthor>{WEBSITE_TEXT.blog.author}</BlogNoteAuthor>
+                        <BlogNoteAuthor>{WEBSITE_TEXT_BLOG.author}</BlogNoteAuthor>
                     </AnchorLink>
                     <div>{datePublished}</div>
                 </BlogNoteCreditWrapper>

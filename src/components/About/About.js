@@ -3,7 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {setTheme, setNavbarVisibility, setDataNoticeVisible, setPage} from '../../actions';
 import {AboutWrapper, AboutTopAnchor, AboutSectionWrapper} from '../../styles/about';
-import {BOOKS, TEXT_NAMES, WEBSITE_TEXT} from './../../data/constants';
+import {BOOKS, TEXT_NAMES, WEBSITE_TEXT_SHARED, WEBSITE_TEXT} from './../../data/constants';
 import Intro from './Intro/Intro';
 import Book from './Book/Book';
 import Pubs from './Pubs/Pubs';
@@ -41,7 +41,7 @@ export const About = props => {
 
     useEffect(() => {
         //Update page title with the piece title
-        document.title = `${WEBSITE_TEXT.author} - ${WEBSITE_TEXT.title[props.lang]}`;
+        document.title = `${WEBSITE_TEXT_SHARED.author} - ${WEBSITE_TEXT_SHARED.title[props.lang]}`;
 
         //change theme to a random one
         updateTheme();

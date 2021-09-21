@@ -13,7 +13,7 @@ import {
     ToggledNavElement,
     NavLinkContent
 } from '../../styles/shared';
-import {WEBSITE_TEXT, TEXT_NAMES} from '../../data/constants';
+import {WEBSITE_TEXT_SHARED, TEXT_NAMES} from '../../data/constants';
 import Logo from './Logo/Logo';
 import NavLinks from './NavLinks/NavLinks';
 
@@ -130,7 +130,7 @@ const NavBar = props => {
         <NavElement>
             <AnchorLink href='#top'>
                 <NavLinkContent>
-                    {WEBSITE_TEXT.navbar.home[props.lang]}
+                    {WEBSITE_TEXT_SHARED.navbar.home[props.lang]}
                 </NavLinkContent>
             </AnchorLink>
         </NavElement>
@@ -140,7 +140,7 @@ const NavBar = props => {
                   onClick={reloadPage}
             >
                 <NavLinkContent>
-                    {WEBSITE_TEXT.navbar.home[props.lang]}
+                    {WEBSITE_TEXT_SHARED.navbar.home[props.lang]}
                 </NavLinkContent>
             </Link>
         </NavElement>
@@ -151,7 +151,7 @@ const NavBar = props => {
         <NavElement>
             <div onClick={changeLanguage}>
                 <NavLinkContent>
-                    {WEBSITE_TEXT.navbar.language[props.lang]}
+                    {WEBSITE_TEXT_SHARED.navbar.language[props.lang]}
                 </NavLinkContent>
             </div>
         </NavElement>
@@ -159,7 +159,7 @@ const NavBar = props => {
         <NavInactiveElement>
             <div>
                 <NavLinkContent>
-                    {WEBSITE_TEXT.navbar.language[props.lang]}
+                    {WEBSITE_TEXT_SHARED.navbar.language[props.lang]}
                 </NavLinkContent>
             </div>
         </NavInactiveElement>;
@@ -169,14 +169,14 @@ const NavBar = props => {
         (<NavElement>
             <div onClick={toggleBwMode}>
                 <NavLinkContent>
-                    {WEBSITE_TEXT.navbar.colourMode[props.lang]}
+                    {WEBSITE_TEXT_SHARED.navbar.colourMode[props.lang]}
                 </NavLinkContent>
             </div>
         </NavElement>) :
         (<ToggledNavElement>
             <div onClick={toggleBwMode}>
                 <NavLinkContent>
-                    {WEBSITE_TEXT.navbar.colourMode[props.lang]}
+                    {WEBSITE_TEXT_SHARED.navbar.colourMode[props.lang]}
                 </NavLinkContent>
             </div>
         </ToggledNavElement>);
@@ -196,13 +196,13 @@ const NavBar = props => {
                 to={'/texts/' + chosenText}
                 onClick={() => handleReadClick()}>
                 <NavLinkContent>
-                    {WEBSITE_TEXT.navbar.read[props.lang]}
+                    {WEBSITE_TEXT_SHARED.navbar.read[props.lang]}
                 </NavLinkContent>
             </Link>
         </NavElement> :
         <NavElement>
             <NavLinkContent>
-                {WEBSITE_TEXT.navbar.read[props.lang]}
+                {WEBSITE_TEXT_SHARED.navbar.read[props.lang]}
             </NavLinkContent>
         </NavElement>;
 
@@ -212,7 +212,7 @@ const NavBar = props => {
         <NavElement>
             <AnchorLink href='#top'>
                 <NavLinkContent>
-                    {WEBSITE_TEXT.navbar.blog[props.lang]}
+                    {WEBSITE_TEXT_SHARED.navbar.blog[props.lang]}
                 </NavLinkContent>
             </AnchorLink>
         </NavElement> :
@@ -221,7 +221,7 @@ const NavBar = props => {
                 to={'/blog'}
                 onClick={reloadPage}>
                 <NavLinkContent>
-                    {WEBSITE_TEXT.navbar.blog[props.lang]}
+                    {WEBSITE_TEXT_SHARED.navbar.blog[props.lang]}
                 </NavLinkContent>
             </Link>
         </NavElement>;

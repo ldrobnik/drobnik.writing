@@ -8,7 +8,7 @@ import {SectionSeparator, SmallSeparator, FADE_DURATION} from '../../../styles/s
 import {IntroBody} from '../../../styles/about';
 import {AnimatedContent} from '../../../animations/shared';
 import {IntroAnimatedLinks, IntroAnimatedButton} from '../../../animations/about';
-import {WEBSITE_TEXT} from '../../../data/constants';
+import {WEBSITE_TEXT_ABOUT} from '../../../data/constants';
 import authorsPhoto from '../../../assets/images/authorsPhoto.jpg'
 import PageHeading from '../../UI/PageHeading/PageHeading';
 import CentredPhoto from './../../UI/CentredPhoto/CentredPhoto';
@@ -21,7 +21,7 @@ export const Intro = props => {
     const [socialVisible, setSocialVisible] = useState(false);
 
     //gets a random CTA button out of available options
-    const ctaIndex = Math.floor(Math.random() * WEBSITE_TEXT.intro.cta[props.lang].length);
+    const ctaIndex = Math.floor(Math.random() * WEBSITE_TEXT_ABOUT.intro.cta[props.lang].length);
 
     //shows the content
     const showContent = () => {
@@ -72,16 +72,16 @@ export const Intro = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <PageHeading
-                    title={WEBSITE_TEXT.intro.title}
-                    subtitle={WEBSITE_TEXT.intro.subtitle[props.lang]}
+                    title={WEBSITE_TEXT_ABOUT.intro.title}
+                    subtitle={WEBSITE_TEXT_ABOUT.intro.subtitle[props.lang]}
                 />
                 <SmallSeparator/>
                 <CentredPhoto
                     source={authorsPhoto}
-                    altText={WEBSITE_TEXT.intro.altText[props.lang]}
+                    altText={WEBSITE_TEXT_ABOUT.intro.altText[props.lang]}
                 />
                 <IntroBody>
-                    {WEBSITE_TEXT.intro.body[props.lang]}
+                    {WEBSITE_TEXT_ABOUT.intro.body[props.lang]}
                 </IntroBody>
             </AnimatedContent>
             <IntroAnimatedLinks
@@ -91,8 +91,8 @@ export const Intro = props => {
             <IntroAnimatedButton
                 pose={socialVisible ? 'visible' : 'hidden'}>
                 <CentredButton
-                    message={WEBSITE_TEXT.intro.cta[props.lang][ctaIndex].message}
-                    path={WEBSITE_TEXT.intro.cta[props.lang][ctaIndex].path}
+                    message={WEBSITE_TEXT_ABOUT.intro.cta[props.lang][ctaIndex].message}
+                    path={WEBSITE_TEXT_ABOUT.intro.cta[props.lang][ctaIndex].path}
                 />
             </IntroAnimatedButton>
             <Waypoint

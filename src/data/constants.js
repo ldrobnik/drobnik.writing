@@ -1065,8 +1065,11 @@ export const BOOKS = [
     }
 ];
 
-//constant containing text used on the website:
-export const WEBSITE_TEXT = {
+//constants containing text used on the website:
+
+//shared text
+
+export const WEBSITE_TEXT_SHARED = {
     author: 'Łukasz Drobnik',
     title: {
         en: 'author of genre-bending fiction',
@@ -1150,6 +1153,39 @@ export const WEBSITE_TEXT = {
             </React.Fragment>)
         }
     },
+    subpagelinks: {
+        top: {
+            en: 'top',
+            pl: 'góra'
+        },
+        home: {
+            en: 'home',
+            pl: 'strona główna'
+        },
+        allTexts: {
+            en: 'all texts',
+            pl: 'wszystkie teksty'
+        },
+        allNotes: 'all notes'
+    },
+    dataNotice: {
+        en: {
+            message: <div>This website collects basic information about user preferences (language and
+                black-and-white
+                mode selection).</div>,
+            button: 'I understand'
+        },
+        pl: {
+            message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór dotyczący
+                języka i&nbsp;trybu czarno-białego).</div>,
+            button: 'Rozumiem'
+        }
+    },
+    copyright: <React.Fragment>&copy;&nbsp;2019–2021 Łukasz Drobnik</React.Fragment>
+}
+
+//text for the About section
+export const WEBSITE_TEXT_ABOUT = {
     intro: {
         title: 'Łukasz Drobnik',
         subtitle: {
@@ -1363,7 +1399,11 @@ export const WEBSITE_TEXT = {
                 pl: 'blog'
             }
         }
-    ],
+    ]
+};
+
+//text for the Texts section
+export const WEBSITE_TEXT_TEXTS = {
     writing: {
         title: {
             en: 'Łukasz Drobnik’s fiction',
@@ -1388,11 +1428,13 @@ export const WEBSITE_TEXT = {
                     <React.Fragment>na&nbsp;stronie&nbsp;głównej</React.Fragment>],
                 content: <React.Fragment>to autor niepokornych gatunkowo książek, <a
                     href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> i&nbsp;<a
-                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, oraz krótszych utworów opublikowanych m.in. w&nbsp;<em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
+                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, oraz krótszych utworów
+                    opublikowanych m.in. w&nbsp;<em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
                         Review</em> i&nbsp;<em>Pithead Chapel</em>. Jego proza trafiła na longlistę <em>Wigleaf
                         Top 50 Very Short Fictions</em>. Czasem tweetuje jako <a
-                        href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. Pełną listę publikacji można znaleźć </React.Fragment>
+                        href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. Pełną listę
+                    publikacji można znaleźć </React.Fragment>
             }
         },
         samples: {
@@ -1405,58 +1447,33 @@ export const WEBSITE_TEXT = {
         nextText: {
             en: 'up next: ',
             pl: 'następny tekst: '
-        },
-        top: {
-            en: 'top',
-            pl: 'góra'
-        },
-        home: {
-            en: 'home',
-            pl: 'strona główna'
-        },
-        allTexts: {
-            en: 'all texts',
-            pl: 'wszystkie teksty'
         }
-    },
-    blog: {
-        title: 'Łukasz Drobnik’s blog',
-        latestPost: 'Latest:',
-        olderPosts: 'Older:',
-        displayedCategory: 'Category:',
-        showAll: 'show all',
-        readMore: 'Read more:',
-        blog: 'all notes',
-        author: 'Łukasz Drobnik',
-        bio:
-            {
-                links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
-                    <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
-                content: <React.Fragment>is the author of genre-bending books, <a
-                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
-                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose
-                    published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
-                        Lit</em>, <em>Atticus
-                        Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
-                        Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
-                        href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of
-                    publications and fiction samples, </React.Fragment>
-            }
-    },
-    dataNotice: {
-        en: {
-            message: <div>This website collects basic information about user preferences (language and
-                black-and-white
-                mode selection).</div>,
-            button: 'I understand'
-        },
-        pl: {
-            message: <div>Strona przechowuje podstawowe informacje na temat preferencji użytkownika (wybór dotyczący
-                języka i&nbsp;trybu czarno-białego).</div>,
-            button: 'Rozumiem'
+    }
+}
+
+//text for the Blog section
+export const WEBSITE_TEXT_BLOG = {
+    title: 'Łukasz Drobnik’s blog',
+    latestPost: 'Latest:',
+    olderPosts: 'Older:',
+    displayedCategory: 'Category:',
+    showAll: 'show all',
+    readMore: 'Read more:',
+    author: 'Łukasz Drobnik',
+    bio:
+        {
+            links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
+                <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
+            content: <React.Fragment>is the author of genre-bending books, <a
+                href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
+                href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose
+                published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
+                    Lit</em>, <em>Atticus
+                    Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
+                    Top 50 Very Short Fictions</em>. Sometimes he tweets as <a
+                    href={TWITTER_URL} target="_blank" rel="noopener noreferrer">@drobnik</a>. For a full list of
+                publications and fiction samples, </React.Fragment>
         }
-    },
-    copyright: <React.Fragment>&copy;&nbsp;2019–2021 Łukasz Drobnik</React.Fragment>
 };
 
 //Content and data of blog notes, including drafts

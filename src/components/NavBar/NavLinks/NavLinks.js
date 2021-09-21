@@ -4,14 +4,14 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Link} from 'react-router-dom';
 import {NavLinksWrapper} from '../../../styles/shared';
 import {AnimatedContent} from '../../../animations/shared';
-import {WEBSITE_TEXT} from './../../../data/constants';
+import {WEBSITE_TEXT_ABOUT} from './../../../data/constants';
 import {bindActionCreators} from 'redux';
 import {setPageReload} from '../../../actions';
 
 const NavLinks = props => {
 
     //array containing all section link data
-    const sectionLinks = WEBSITE_TEXT.sectionLinks;
+    const sectionLinks = WEBSITE_TEXT_ABOUT.sectionLinks;
 
 
     //sets off page reloading animation

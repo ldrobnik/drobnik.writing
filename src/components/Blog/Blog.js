@@ -18,7 +18,7 @@ import {
     BlogSectionHeading,
     BlogTitle
 } from '../../styles/blog';
-import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT} from './../../data/constants';
+import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT_BLOG} from './../../data/constants';
 import CategoryPicker from './CategoryPicker/CategoryPicker';
 import FilteredCategory from './FilteredCategory/FilteredCategory';
 import Teaser from './Teaser/Teaser';
@@ -139,7 +139,7 @@ export const Blog = props => {
 
     useEffect(() => {
         //Update page title with the piece title
-        document.title = WEBSITE_TEXT.blog.title;
+        document.title = WEBSITE_TEXT_BLOG.title;
 
         //sets theme to black and white
         setBwTheme();
@@ -194,7 +194,7 @@ export const Blog = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
-                <BlogTitle>{WEBSITE_TEXT.blog.title}</BlogTitle>
+                <BlogTitle>{WEBSITE_TEXT_BLOG.title}</BlogTitle>
                 <MainPageBlogBio>
                     <BlogBio/>
                 </MainPageBlogBio>
@@ -204,7 +204,7 @@ export const Blog = props => {
                 <FilteredCategory category={filteredCategory}/>}
                 {(latestNote.id) &&
                 <React.Fragment>
-                    <BlogSectionHeading>{WEBSITE_TEXT.blog.latestPost}</BlogSectionHeading>
+                    <BlogSectionHeading>{WEBSITE_TEXT_BLOG.latestPost}</BlogSectionHeading>
                     <Teaser note={latestNote}/>
                 </React.Fragment>
                 }
@@ -214,7 +214,7 @@ export const Blog = props => {
                 <AnimatedContent
                     pose={!props.reload ? 'visible' : 'hidden'}
                 >
-                    <BlogSectionHeading>{WEBSITE_TEXT.blog.olderPosts}</BlogSectionHeading>
+                    <BlogSectionHeading>{WEBSITE_TEXT_BLOG.olderPosts}</BlogSectionHeading>
                 </AnimatedContent>
                 <BlogNoteList
                     linklist={olderNotes}

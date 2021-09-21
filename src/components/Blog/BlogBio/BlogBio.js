@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {setPageReload} from '../../../actions';
 import {BlogBioWrapper} from '../../../styles/blog';
-import {WEBSITE_TEXT} from '../../../data/constants';
+import {WEBSITE_TEXT_BLOG} from '../../../data/constants';
 
 const BlogBio = props => {
 
@@ -15,8 +15,8 @@ const BlogBio = props => {
 
     return (
         <BlogBioWrapper>
-            <Link to={'/'} onClick={reloadPage}>{WEBSITE_TEXT.blog.bio.links[0]}</Link> {WEBSITE_TEXT.blog.bio.content}
-            <Link to={'/'} onClick={reloadPage}>{WEBSITE_TEXT.blog.bio.links[1]}</Link>.
+            <Link to={'/'} onClick={reloadPage}>{WEBSITE_TEXT_BLOG.bio.links[0]}</Link> {WEBSITE_TEXT_BLOG.bio.content}
+            <Link to={'/'} onClick={reloadPage}>{WEBSITE_TEXT_BLOG.bio.links[1]}</Link>.
         </BlogBioWrapper>
     );
 

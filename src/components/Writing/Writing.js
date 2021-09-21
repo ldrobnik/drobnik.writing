@@ -10,13 +10,13 @@ import {
     setPageReload
 } from '../../actions';
 import {AnimatedContent} from '../../animations/shared';
-import {SectionSeparator, FADE_DURATION, InvisibleSeparator} from '../../styles/shared';
+import {SectionSeparator, FADE_DURATION} from '../../styles/shared';
 import {
     WritingWrapper,
     WritingTopAnchor,
     WritingTitle, WritingSectionHeading
 } from '../../styles/writing';
-import {TEXT_NAMES, WEBSITE_TEXT} from './../../data/constants';
+import {TEXT_NAMES, WEBSITE_TEXT_TEXTS} from './../../data/constants';
 import WritingBio from './WritingBio/WritingBio';
 import ReadList from '../ReadList/ReadList';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
@@ -68,7 +68,7 @@ export const Writing = props => {
 
     useEffect(() => {
         //Update page title with the piece title
-        document.title = WEBSITE_TEXT.writing.title[props.lang];
+        document.title = WEBSITE_TEXT_TEXTS.writing.title[props.lang];
 
         //show Navbar
         showNavbar();
@@ -100,10 +100,10 @@ export const Writing = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
-                <WritingTitle>{WEBSITE_TEXT.writing.title[props.lang]}</WritingTitle>
+                <WritingTitle>{WEBSITE_TEXT_TEXTS.writing.title[props.lang]}</WritingTitle>
                 <WritingBio lang={props.lang}/>
                 <WritingSectionHeading>
-                    {WEBSITE_TEXT.writing.samples[props.lang]}
+                    {WEBSITE_TEXT_TEXTS.writing.samples[props.lang]}
                 </WritingSectionHeading>
             </AnimatedContent>
             <AnimatedContent

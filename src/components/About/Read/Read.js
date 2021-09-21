@@ -7,8 +7,8 @@ import {setPageReload} from '../../../actions';
 import {SectionSeparator, FADE_DURATION} from '../../../styles/shared';
 import {ReadWrapper, ReadMessage, ReadBlogBtnWrapper} from '../../../styles/about';
 import {AnimatedContent} from '../../../animations/shared';
-import {AnimatedReadList, AnimatedReadLink, AnimatedReadButton} from '../../../animations/about';
-import {WEBSITE_TEXT, TEXT_NAMES, TEXTS} from './../../../data/constants';
+import {AnimatedReadButton} from '../../../animations/about';
+import {WEBSITE_TEXT_ABOUT} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import SectionLinks from '../SectionLinks/SectionLinks';
 import ReadList from '../../ReadList/ReadList';
@@ -71,10 +71,10 @@ export const Read = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionHeading
-                    title={WEBSITE_TEXT.read.title[props.lang]}
+                    title={WEBSITE_TEXT_ABOUT.read.title[props.lang]}
                     subtitle=""
                 />
-                <ReadMessage>{WEBSITE_TEXT.read.introduction[props.lang]}</ReadMessage>
+                <ReadMessage>{WEBSITE_TEXT_ABOUT.read.introduction[props.lang]}</ReadMessage>
             </AnimatedContent>
             <Waypoint
                 onEnter={showLinks}
@@ -85,7 +85,7 @@ export const Read = props => {
                 <AnimatedReadButton
                     pose={blogBtnVisible ? 'visible' : 'hidden'}>
                     <CentredButton
-                        message={WEBSITE_TEXT.read.blogButton}
+                        message={WEBSITE_TEXT_ABOUT.read.blogButton}
                         path={'/blog'}
                     />
                 </AnimatedReadButton>

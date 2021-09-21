@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {setPageReload} from '../../../actions';
 import {NextTextWrapper, UpNext, NextTextLine} from '../../../styles/text';
-import {TEXTS, WEBSITE_TEXT} from './../../../data/constants';
+import {TEXTS, WEBSITE_TEXT_TEXTS} from './../../../data/constants';
 
 const NextTextLink = props => {
 
@@ -26,7 +26,7 @@ const NextTextLink = props => {
                 <UpNext>
                     <div>
                         <em>
-                            {WEBSITE_TEXT.text.nextText[props.lang]}
+                            {WEBSITE_TEXT_TEXTS.text.nextText[props.lang]}
                             {TEXTS[props.lang][props.textName].title}
                         </em>
                     </div>

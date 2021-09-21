@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {setPageReload} from '../../../actions';
 import {WritingBioWrapper} from '../../../styles/writing';
-import {WEBSITE_TEXT} from '../../../data/constants';
+import {WEBSITE_TEXT_TEXTS} from '../../../data/constants';
 
 const WritingBio = props => {
 
@@ -15,8 +15,8 @@ const WritingBio = props => {
 
     return (
         <WritingBioWrapper>
-            <Link to={'/'} onClick={reloadPage}>{WEBSITE_TEXT.writing.bio[props.lang].links[0]}</Link> {WEBSITE_TEXT.writing.bio[props.lang].content}
-            <Link to={'/'} onClick={reloadPage}>{WEBSITE_TEXT.writing.bio[props.lang].links[1]}</Link>.
+            <Link to={'/'} onClick={reloadPage}>{WEBSITE_TEXT_TEXTS.writing.bio[props.lang].links[0]}</Link> {WEBSITE_TEXT_TEXTS.writing.bio[props.lang].content}
+            <Link to={'/'} onClick={reloadPage}>{WEBSITE_TEXT_TEXTS.writing.bio[props.lang].links[1]}</Link>.
         </WritingBioWrapper>
     );
 

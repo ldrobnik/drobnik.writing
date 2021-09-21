@@ -24,7 +24,7 @@ import {
     TopImageCredits,
     BlogNoteBio
 } from '../../../styles/blog';
-import {WEBSITE_TEXT, ALL_BLOG_NOTES, BLOG_CATEGORIES} from '../../../data/constants';
+import {WEBSITE_TEXT_BLOG, ALL_BLOG_NOTES, BLOG_CATEGORIES} from '../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
 import BlogBio from '../BlogBio/BlogBio';
 import BlogNoteList from '../BlogNoteList/BlogNoteList';
@@ -372,7 +372,7 @@ export const BlogNote = props => {
                         </BlogNoteBio>
                         <BlogSeparator className={'colouredBackground'}/>
                         <BlogNoteReadMore className={'coloured'}>
-                            {WEBSITE_TEXT.blog.readMore}
+                            {WEBSITE_TEXT_BLOG.readMore}
                         </BlogNoteReadMore>
                     </AnimatedContent>
                 </BlogPost>

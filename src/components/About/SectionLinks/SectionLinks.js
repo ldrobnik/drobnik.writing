@@ -1,13 +1,13 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {SectionLinksWrapper} from '../../../styles/about';
-import {WEBSITE_TEXT} from './../../../data/constants';
+import {WEBSITE_TEXT_ABOUT} from './../../../data/constants';
 
 
 const SectionLinks = props => {
 
     //array containing all section link data
-    const sectionLinks = WEBSITE_TEXT.sectionLinks;
+    const sectionLinks = WEBSITE_TEXT_ABOUT.sectionLinks;
 
     //array containing links that need to be displayed
     let linksToDisplay = [];

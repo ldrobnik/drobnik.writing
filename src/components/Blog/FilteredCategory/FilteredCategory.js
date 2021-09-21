@@ -6,7 +6,7 @@ import {AnimatedContent} from '../../../animations/shared';
 import {FilteredCategoryWrapper, FilteredCategoryHeading, FilteredCategoryLink} from '../../../styles/blog';
 import ThemeWrapper from '../ThemeWrapper/ThemeWrapper';
 import {setPageReload} from '../../../actions';
-import {WEBSITE_TEXT, BLOG_CATEGORIES} from '../../../data/constants';
+import {WEBSITE_TEXT_BLOG, BLOG_CATEGORIES} from '../../../data/constants';
 
 export const FilteredCategory = props => {
 
@@ -23,7 +23,7 @@ export const FilteredCategory = props => {
             <FilteredCategoryWrapper>
                 <ThemeWrapper theme={props.category}>
                     <FilteredCategoryHeading>
-                        {`${WEBSITE_TEXT.blog.displayedCategory} ${BLOG_CATEGORIES[props.category]}`}
+                        {`${WEBSITE_TEXT_BLOG.displayedCategory} ${BLOG_CATEGORIES[props.category]}`}
                     </FilteredCategoryHeading>
                 </ThemeWrapper>
             </FilteredCategoryWrapper>
@@ -32,7 +32,7 @@ export const FilteredCategory = props => {
                 onClick={reloadPage}
             >
                 <FilteredCategoryLink>
-                    {WEBSITE_TEXT.blog.showAll}
+                    {WEBSITE_TEXT_BLOG.showAll}
                 </FilteredCategoryLink>
             </Link>
         </AnimatedContent>

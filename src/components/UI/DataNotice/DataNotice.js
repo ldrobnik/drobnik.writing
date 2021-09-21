@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {setDataNoticeVisible, setDataNoticeAccepted} from '../../../actions';
 import {Notice, NoticeMessage, NoticeDismissButton} from '../../../styles/shared';
 import {AnimatedContent} from '../../../animations/shared';
-import {WEBSITE_TEXT} from '../../../data/constants';
+import {WEBSITE_TEXT_SHARED} from '../../../data/constants';
 
 export const DataNotice = props => {
 
@@ -39,12 +39,12 @@ export const DataNotice = props => {
             <AnimatedContent
                 pose={noticeFadeIn ? 'visible' : 'hidden'}>
                 <NoticeMessage>
-                    {WEBSITE_TEXT.dataNotice[props.lang].message}
+                    {WEBSITE_TEXT_SHARED.dataNotice[props.lang].message}
                 </NoticeMessage>
                 <NoticeDismissButton
                     onClick={acceptDataNotice} c
                 >
-                    {WEBSITE_TEXT.dataNotice[props.lang].button}
+                    {WEBSITE_TEXT_SHARED.dataNotice[props.lang].button}
                 </NoticeDismissButton>
             </AnimatedContent>
         </Notice>) :

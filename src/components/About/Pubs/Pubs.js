@@ -16,7 +16,7 @@ import {
 } from '../../../styles/about';
 import {AnimatedContent} from '../../../animations/shared';
 import {PubsAnimatedMessage, PubsAnimatedPanel} from '../../../animations/about';
-import {WEBSITE_TEXT} from './../../../data/constants';
+import {WEBSITE_TEXT_ABOUT} from './../../../data/constants';
 import SectionHeading from './../../UI/SectionHeading/SectionHeading'
 import ToggleSwitch from './../../UI/ToggleSwitch/ToggleSwitch';
 import PubList from './PubList/PubList';
@@ -93,7 +93,7 @@ export const Pubs = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <SectionHeading
-                    title={WEBSITE_TEXT.publications.title[props.lang]}
+                    title={WEBSITE_TEXT_ABOUT.publications.title[props.lang]}
                     subtitle=""
                 />
                 <Waypoint
@@ -101,7 +101,7 @@ export const Pubs = props => {
             </AnimatedContent>
             <PubsAnimatedMessage
                 pose={messageVisible ? 'visible' : 'hidden'}>
-                <PubsMessage>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].label}</PubsMessage>
+                <PubsMessage>{WEBSITE_TEXT_ABOUT.publications.chooseLanguage[props.lang].label}</PubsMessage>
             </PubsAnimatedMessage>
             <PubsAnimatedPanel
                 pose={messageVisible ? 'visible' : 'hidden'}>
@@ -112,7 +112,7 @@ export const Pubs = props => {
                                 checked={en}
                                 onChange={setEnHandler}
                             />
-                            <PubsLabel>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].english}</PubsLabel>
+                            <PubsLabel>{WEBSITE_TEXT_ABOUT.publications.chooseLanguage[props.lang].english}</PubsLabel>
                         </PubsSwitchWrapper>
                     </label>
                     <label>
@@ -121,7 +121,7 @@ export const Pubs = props => {
                                 checked={pl}
                                 onChange={setPlHandler}
                             />
-                            <PubsLabel>{WEBSITE_TEXT.publications.chooseLanguage[props.lang].polish}</PubsLabel>
+                            <PubsLabel>{WEBSITE_TEXT_ABOUT.publications.chooseLanguage[props.lang].polish}</PubsLabel>
                         </PubsSwitchWrapper>
                     </label>
                 </PubsSwitchPanel>
@@ -133,7 +133,7 @@ export const Pubs = props => {
                 <PubsSeparator/>
                 <Waypoint
                     onEnter={showPubs}/>
-                <PubsSubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].books}</PubsSubsectionHeading>
+                <PubsSubsectionHeading>{WEBSITE_TEXT_ABOUT.publications.headlines[props.lang].books}</PubsSubsectionHeading>
                 <PubList
                     en={en}
                     pl={pl}
@@ -143,14 +143,14 @@ export const Pubs = props => {
                 <Waypoint
                     onEnter={showPubs}/>
                 <PubsSeparator/>
-                <PubsSubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].press}</PubsSubsectionHeading>
+                <PubsSubsectionHeading>{WEBSITE_TEXT_ABOUT.publications.headlines[props.lang].press}</PubsSubsectionHeading>
                 <PubList
                     en={en}
                     pl={pl}
                     visible={pubsVisible}
                     type="press"/>
                 <PubsSeparator/>
-                <PubsSubsectionHeading>{WEBSITE_TEXT.publications.headlines[props.lang].collections}</PubsSubsectionHeading>
+                <PubsSubsectionHeading>{WEBSITE_TEXT_ABOUT.publications.headlines[props.lang].collections}</PubsSubsectionHeading>
                 <PubList
                     en={en}
                     pl={pl}
