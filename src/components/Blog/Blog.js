@@ -200,15 +200,15 @@ export const Blog = props => {
             >
                 <BlogTitle>{WEBSITE_TEXT_BLOG.title}</BlogTitle>
             </AnimatedContent>
-                <MainPageBlogBio>
-                    <Suspense fallback={SmallSpinner}>
-                        <AnimatedContent
-                            pose={!props.reload ? 'visible' : 'hidden'}
-                        >
-                            <BlogBio/>
-                        </AnimatedContent>
-                    </Suspense>
-                </MainPageBlogBio>
+            <MainPageBlogBio>
+                <Suspense fallback={SmallSpinner}>
+                    <AnimatedContent
+                        pose={!props.reload ? 'visible' : 'hidden'}
+                    >
+                        <BlogBio/>
+                    </AnimatedContent>
+                </Suspense>
+            </MainPageBlogBio>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
@@ -218,29 +218,28 @@ export const Blog = props => {
                 <FilteredCategory category={filteredCategory}/>}
             </AnimatedContent>
             <Suspense fallback={SmallSpinner}>
-            {(latestNote.id) &&
+                {(latestNote.id) &&
                 <AnimatedContent
                     pose={!props.reload ? 'visible' : 'hidden'}
                 >
                     <BlogSectionHeading>{WEBSITE_TEXT_BLOG.latestPost}</BlogSectionHeading>
-
                     <Teaser note={latestNote}/>
                 </AnimatedContent>
-            }
-            {
-                (olderNotes.length > 0) &&
-                <React.Fragment>
-                    <AnimatedContent
-                        pose={!props.reload ? 'visible' : 'hidden'}
-                    >
-                        <BlogSectionHeading>{WEBSITE_TEXT_BLOG.olderPosts}</BlogSectionHeading>
-                    </AnimatedContent>
+                }
+                {
+                    (olderNotes.length > 0) &&
+                    <React.Fragment>
+                        <AnimatedContent
+                            pose={!props.reload ? 'visible' : 'hidden'}
+                        >
+                            <BlogSectionHeading>{WEBSITE_TEXT_BLOG.olderPosts}</BlogSectionHeading>
+                        </AnimatedContent>
                         <BlogNoteList
                             linklist={olderNotes}
                             showCategories={!filteredCategory}
                         />
-                </React.Fragment>
-            }
+                    </React.Fragment>
+                }
                 <AnimatedContent
                     pose={!props.reload ? 'visible' : 'hidden'}
                 >
@@ -258,25 +257,27 @@ export const Blog = props => {
 };
 
 const mapStateToProps = state => {
-    return {
-        lang: state.language,
-        bwMode: state.blackAndWhite,
-        noticeVisible: state.dataNoticeVisible,
-        noticeAccepted: state.dataNoticeAccepted,
-        reload: state.pageReload,
-        loaded: state.pageLoaded
-    };
-};
+        return {
+            lang: state.language,
+            bwMode: state.blackAndWhite,
+            noticeVisible: state.dataNoticeVisible,
+            noticeAccepted: state.dataNoticeAccepted,
+            reload: state.pageReload,
+            loaded: state.pageLoaded
+        };
+    }
+;
 
 const mapDispatchToProps = dispatch => {
-    return bindActionCreators({
-        setTheme,
-        setCurrentText,
-        setNavbarVisibility,
-        setDataNoticeVisible,
-        setPage,
-        setPageReload
-    }, dispatch);
-};
+        return bindActionCreators({
+            setTheme,
+            setCurrentText,
+            setNavbarVisibility,
+            setDataNoticeVisible,
+            setPage,
+            setPageReload
+        }, dispatch);
+    }
+;
 
 export default connect(mapStateToProps, mapDispatchToProps)(Blog);
