@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, Suspense, lazy} from 'react';
 import {useHistory} from 'react-router-dom';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
@@ -20,17 +20,19 @@ import {
     BlogWrapper,
     BlogSeparator,
     BlogNoteReadMore,
-    TopImageWrapper,
-    TopImageCredits,
-    BlogNoteBio
+    BlogNoteBio,
+    TopImageContainer
 } from '../../../styles/blog';
 import {WEBSITE_TEXT_BLOG, ALL_BLOG_NOTES, BLOG_CATEGORIES} from '../../../data/constants';
 import ThemeWrapper from './../ThemeWrapper/ThemeWrapper';
-import BlogBio from '../BlogBio/BlogBio';
-import BlogNoteList from '../BlogNoteList/BlogNoteList';
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
-import SubpageLinks from '../../UI/SubpageLinks/SubpageLinks';
-import CopyrightNote from '../../UI/CopyrightNote/CopyrightNote';
+
+const TopImage = lazy(() => import('./TopImage/TopImage'));
+const BlogBio = lazy(() => import('../BlogBio/BlogBio'));
+const BlogNoteList = lazy(() => import('../BlogNoteList/BlogNoteList'));
+const SubpageLinks = lazy(() => import('../../UI/SubpageLinks/SubpageLinks'));
+const CopyrightNote = lazy(() => import('../../UI/CopyrightNote/CopyrightNote'));
+
 
 export const BlogNote = props => {
 
@@ -67,10 +69,6 @@ export const BlogNote = props => {
     //specifies the source of the top image
     const [imageSrc, setImageSrc] = useState('');
 
-    //specifies whether the top image has been loaded
-    const [imageLoaded, setImageLoaded] = useState(false);
-
-
     //blogpost to be displayed
     const [note, setNote] = useState('');
 
@@ -79,10 +77,6 @@ export const BlogNote = props => {
         setTimeout(() => setVisible(true), FADE_DURATION);
         props.setPageReload(false);
     };
-
-    const showImage = () => {
-        setImageLoaded(true);
-    }
 
     //creates an array of related notes
     const createRelatedNotes = relatedNoteIds => {
@@ -242,7 +236,7 @@ export const BlogNote = props => {
         }
 
         //shows content if note is displayed
-        if (noteId.length > 0 && imageLoaded) showContent();
+        if (noteId.length > 0) showContent();
 
         //clean up state when unmounting
         return () => {
@@ -254,7 +248,6 @@ export const BlogNote = props => {
             setRelatedNotes([]);
             setImageCredits({});
             setImageSrc('');
-            setImageLoaded(false);
             setNote('');
         }
 
@@ -262,7 +255,7 @@ export const BlogNote = props => {
 
     useEffect(() => {
         //shows content if note is displayed
-        if (noteId.length > 0 && imageLoaded) showContent();
+        if (noteId.length > 0) showContent();
     });
 
     //load a new blog note anytime the path changes
@@ -278,15 +271,12 @@ export const BlogNote = props => {
         }
 
         //shows content if note is displayed
-        if (noteId.length > 0 && imageLoaded) showContent();
+        if (noteId.length > 0) showContent();
 
     }, [props.location.pathname]);
 
     useEffect(() => {
-        //when the image source changes, set image as not loaded
-        setImageLoaded(false);
-
-        //hide content
+        //when the image source changes, hide content
         setVisible(false);
     }, [imageSrc])
 
@@ -295,7 +285,7 @@ export const BlogNote = props => {
 
         //hides and shows content on reload
         setVisible(false);
-        if (noteId.length > 0 && imageLoaded) showContent();
+        if (noteId.length > 0) showContent();
 
     }, [props.reload]);
 
@@ -306,27 +296,15 @@ export const BlogNote = props => {
                 <div id='top'></div>
             </BlogTopAnchor>
             <ThemeWrapper theme={noteCategory}>
-                <AnimatedContent
-                    pose={visible ? 'visible' : 'hidden'}>
-                    {(imageSrc.length > 0) &&
-                    <TopImageWrapper className={'tintedImage'}>
-                        <figure>
-                            <img
-                                src={imageSrc}
-                                alt={imageCredits.alt}
-                                onLoad={() => showImage()}
-                            />
-                        </figure>
-                    </TopImageWrapper>}
-                    {
-                        imageCredits.description &&
-                        <figcaption>
-                            <TopImageCredits>
-                                {imageCredits.description}
-                            </TopImageCredits>
-                        </figcaption>
-                    }
-                </AnimatedContent>
+                <TopImageContainer>
+                    <Suspense fallback={<div>loading...</div>}>
+                        <TopImage
+                            imageSrc={imageSrc}
+                            imageCredits={imageCredits}
+                            visible={visible}
+                        />
+                    </Suspense>
+                </TopImageContainer>
                 <AnimatedContent
                     pose={visible ? 'visible' : 'hidden'}>
                     <BlogNoteCredits
@@ -364,35 +342,40 @@ export const BlogNote = props => {
                         </HighlightedMarkdown>
                     </AnimatedContent>
                     <div id='bio'></div>
-                    <AnimatedContent
-                        pose={visible ? 'visible' : 'hidden'}>
-                        <BlogSeparator className={'colouredBackground'}/>
-                        <BlogNoteBio>
-                            <BlogBio/>
-                        </BlogNoteBio>
-                        <BlogSeparator className={'colouredBackground'}/>
-                        <BlogNoteReadMore className={'coloured'}>
-                            {WEBSITE_TEXT_BLOG.readMore}
-                        </BlogNoteReadMore>
-                    </AnimatedContent>
+                    <Suspense fallback={<div>loading...</div>}>
+                        <AnimatedContent
+                            pose={visible ? 'visible' : 'hidden'}>
+                            <BlogSeparator className={'colouredBackground'}/>
+                            <BlogNoteBio>
+                                <Suspense fallback={<div>loading...</div>}>
+                                    <BlogBio/>
+                                </Suspense>
+                            </BlogNoteBio>
+                            <BlogSeparator className={'colouredBackground'}/>
+                            <BlogNoteReadMore className={'coloured'}>
+                                {WEBSITE_TEXT_BLOG.readMore}
+                            </BlogNoteReadMore>
+                        </AnimatedContent>
+                    </Suspense>
                 </BlogPost>
             </ThemeWrapper>
-
-            <BlogNoteList
-                linklist={relatedNotes}
-                showCategories={true}
-            />
-            <AnimatedContent
-                pose={visible ? 'visible' : 'hidden'}
-            >
-                <SubpageLinks
-                    lang={'en'}
-                    reloadPage={reloadPage}
-                    blog={true}
+            <Suspense fallback={<div></div>}>
+                <BlogNoteList
+                    linklist={relatedNotes}
+                    showCategories={true}
                 />
-                <SectionSeparator/>
-                <CopyrightNote/>
-            </AnimatedContent>
+                <AnimatedContent
+                    pose={visible ? 'visible' : 'hidden'}
+                >
+                    <SubpageLinks
+                        lang={'en'}
+                        reloadPage={reloadPage}
+                        blog={true}
+                    />
+                    <SectionSeparator/>
+                    <CopyrightNote/>
+                </AnimatedContent>
+            </Suspense>
         </BlogWrapper>;
 };
 

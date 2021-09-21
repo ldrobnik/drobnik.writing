@@ -559,6 +559,19 @@ export const BlogNoteReadMore = styled.div`
   text-transform: uppercase;
 `;
 
+export const TopImageContainer = styled.div`
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  @media (min-width: ${props => props.theme.smallScr}) {
+    min-height: 300px;
+  }
+`
+
+
+/* TopImage */
 export const TopImageWrapper = styled.div`
 
   margin-bottom: 0.5em;
