@@ -208,29 +208,33 @@ export const Blog = props => {
                 <CategoryPicker/>}
                 {(filteredCategory) &&
                 <FilteredCategory category={filteredCategory}/>}
-                {(latestNote.id) &&
-                <React.Fragment>
-                    <BlogSectionHeading>{WEBSITE_TEXT_BLOG.latestPost}</BlogSectionHeading>
-                    <Suspense fallback={SmallSpinner}>
-                        <Teaser note={latestNote}/>
-                    </Suspense>
-                </React.Fragment>
-                }
             </AnimatedContent>
-            {(olderNotes.length > 0) &&
-            <React.Fragment>
+            {(latestNote.id) &&
+            <Suspense fallback={SmallSpinner}>
                 <AnimatedContent
                     pose={!props.reload ? 'visible' : 'hidden'}
                 >
-                    <BlogSectionHeading>{WEBSITE_TEXT_BLOG.olderPosts}</BlogSectionHeading>
+                    <BlogSectionHeading>{WEBSITE_TEXT_BLOG.latestPost}</BlogSectionHeading>
+
+                    <Teaser note={latestNote}/>
                 </AnimatedContent>
-                <Suspense fallback={SmallSpinner}>
-                    <BlogNoteList
-                        linklist={olderNotes}
-                        showCategories={!filteredCategory}
-                    />
-                </Suspense>
-            </React.Fragment>
+            </Suspense>
+            }
+            {
+                (olderNotes.length > 0) &&
+                <React.Fragment>
+                    <AnimatedContent
+                        pose={!props.reload ? 'visible' : 'hidden'}
+                    >
+                        <BlogSectionHeading>{WEBSITE_TEXT_BLOG.olderPosts}</BlogSectionHeading>
+                    </AnimatedContent>
+                    <Suspense fallback={SmallSpinner}>
+                        <BlogNoteList
+                            linklist={olderNotes}
+                            showCategories={!filteredCategory}
+                        />
+                    </Suspense>
+                </React.Fragment>
             }
             <Suspense fallback={SmallSpinner}>
                 <AnimatedContent
