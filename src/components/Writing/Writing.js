@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {lazy, Suspense, useEffect, useState} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {
@@ -17,10 +17,13 @@ import {
     WritingTitle, WritingSectionHeading
 } from '../../styles/writing';
 import {TEXT_NAMES, WEBSITE_TEXT_TEXTS} from './../../data/constants';
-import WritingBio from './WritingBio/WritingBio';
-import ReadList from '../ReadList/ReadList';
-import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
-import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
+import SmallSpinner from '../UI/SmallSpinner/SmallSpinner';
+
+const WritingBio = lazy(() => import('./WritingBio/WritingBio'));
+const ReadList = lazy(() => import('../ReadList/ReadList'));
+const SubpageLinks = lazy(() => import('../UI/SubpageLinks/SubpageLinks'));
+const CopyrightNote = lazy(() => import('../UI/CopyrightNote/CopyrightNote'));
+
 
 export const Writing = props => {
 
@@ -101,7 +104,9 @@ export const Writing = props => {
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
                 <WritingTitle>{WEBSITE_TEXT_TEXTS.writing.title[props.lang]}</WritingTitle>
-                <WritingBio lang={props.lang}/>
+                <Suspense fallback={<SmallSpinner/>}>
+                    <WritingBio lang={props.lang}/>
+                </Suspense>
                 <WritingSectionHeading>
                     {WEBSITE_TEXT_TEXTS.writing.samples[props.lang]}
                 </WritingSectionHeading>
@@ -109,18 +114,24 @@ export const Writing = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
-            {linkListVisible && <ReadList linksVisible={linksVisible}/>}
+                {linkListVisible &&
+                <Suspense fallback={<SmallSpinner/>}>
+                    <ReadList linksVisible={linksVisible}/>
+                </Suspense>
+                }
             </AnimatedContent>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
-                <SubpageLinks
-                    lang={'en'}
-                    reloadPage={reloadPage}
-                    mainHidden={true}
-                />
-                <SectionSeparator/>
-                <CopyrightNote/>
+                <Suspense fallback={<SmallSpinner/>}>
+                    <SubpageLinks
+                        lang={'en'}
+                        reloadPage={reloadPage}
+                        mainHidden={true}
+                    />
+                    <SectionSeparator/>
+                    <CopyrightNote/>
+                </Suspense>
             </AnimatedContent>
         </WritingWrapper>;
 };
