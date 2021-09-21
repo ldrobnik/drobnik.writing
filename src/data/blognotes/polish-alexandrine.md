@@ -1,6 +1,6 @@
 Polish alexandrine is the iambic pentameter of Polish literature. Among us pierogi-eaters it is known as *trzynastozgłowiec*, which simply means ‘thirteen-syllable verse’.
 
-To understand how uber-Polish this metric line is, all you need to know is that Adam Mickiewicz chose it for *Pan Tadeusz*, Poland’s national epic.
+To understand how uber-Polish this metric line is, all you need to know is Adam Mickiewicz chose it for *Pan Tadeusz*, Poland’s national epic.
 
 ![The opening lines of the first edition of Pan Tadeusz](https://drobnik.co/images/polish-alexandrine-example.jpg)
 
@@ -26,7 +26,7 @@ In each verse, the thirteen syllables of Polish alexandrine are grouped into two
 
 ![Schematic representation of a Polish alexandrine verse. Two groups of seven and six syllables each separated by a caesura. The penultimate syllable of each group is stressed.](https://drobnik.co/images/polish-alexandrine-structure.svg)
 
-<sup>The basic structure of a Polish alexandrine verse. The horizontal lines represent syllables, the vertical line the caesura. Stressed syllables are coloured dark yellow.</sup>
+<sup>The basic structure of a Polish alexandrine verse. The horizontal lines represent syllables, the vertical line the caesura. Syllables that need to be stressed are coloured dark yellow.</sup>
 
 Perhaps it’s this last rule that makes *trzynastozgłoskowiec* sound so naturally, effortlessly Polish. In the vast majority of Polish words, the stress falls on the penultimate syllable, so it’s fairly easy to say even the most banal thought in Polish alexandrine:
 
@@ -46,7 +46,7 @@ The minute I made my mind, I panicked,
 
 Most English translators replace *trzynastozgłoskowiec* with iambic pentameter, which makes a lot of sense — each is the signature metric line of the respective language.
 
-It didn’t feel right in the case of VOSTOK though. Its Polishness was such a crucial part of it that I decided to retain some common names or even swearwords. So why replace one of its most Polish parts with an Anglo-Saxon equivalent?
+It didn’t feel right in the case of VOSTOK though. Its Polishness was such a crucial part of the book that I decided to retain many Polish names or even swearwords. So why replace one of its most Polish parts with an Anglo-Saxon equivalent?
 
 [<img src="https://drobnik.co/images/vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
@@ -55,7 +55,7 @@ It didn’t feel right in the case of VOSTOK though. Its Polishness was such a c
 
 Although both part of the Indo-European group, Polish and English sound nothing alike.
 
-The former is full of sibilant consonants, with just a few vowels of the same duration and stress falling in most cases on the penultimate syllable.
+The former is full of sibilant consonants, with just a few vowels (all of the same duration) and stress falling in most cases on the penultimate syllable.
 
 The latter is ruled by vowels, which can vary in duration and chain into diphthongs (and even triphthongs!), while its word stress is pretty unpredictable. 
 
@@ -79,7 +79,7 @@ became the English:
 
 ## Bending the form
 
-The rhythm of Polish alexandrine is so soothing and predictable that any deviation from it jolts you out of your dreamlike state and makes you pay attention.
+The rhythm of Polish alexandrine is so soothing and predictable that any deviation from it jolts you out of your relaxed state and makes you pay attention.
 
 I used this effect in the Polish draft of VOSTOK, so it made sense to replicate it in the English version:
 
@@ -96,7 +96,7 @@ Note that even though the phrase “stream after stream after stream” has the 
 
 In a word: yes. And not only as a challenging translation exercise.
 
-The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story much better than the livelier iambic pentameter. *Trzynastozgłoskowiec* mimics the sound of undying Venusian rain, its form corresponding with the characters’ futile attempts to find a shelter.
+The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story much better than the livelier iambic pentameter. *Trzynastozgłoskowiec* mimics the sound of the undying Venusian rain, its repetitive form corresponding with the characters’ futile attempts to find a shelter.
 
 What’s more, the very un-English form of Polish alexandrine forced some unconventional word choices that gave the passages a surreal feel.
 

@@ -29,7 +29,7 @@ Crime gels well with virtually any genre, so I made VOSTOK a mystery, one in whi
 
 The omnipresent but not omniscient point of view made it easier to pace the reveal of speculative elements without it feeling contrived. The problem was, with no insight into the characters’ inner worlds it was difficult to connect with them. The initial drafts lacked heart — things were happening but didn’t resonate on an emotional level.
 
-I worked hard on dialogue and descriptions of the characters’ behaviour, but it wasn’t enough. The original premise of writing a realistic novel that’s speculative only in dialogue failed to hold the story I wanted to tell. So I thought, let’s break some rules. I added first-person passages told from the point of view of different characters.
+I worked hard on dialogue and descriptions of the characters’ behaviour, but it wasn’t enough. The original premise of writing a realistic novel that’s speculative only in dialogue failed to contain the story I wanted to tell. So I thought, let’s break some rules. I added first-person passages told from the point of view of different characters.
 
 > Suddenly, it’s the first weeks of our friendship. It’s early summer, and we go together to the Warta River, to the sun-burnt grasses, to be devoured by mosquitoes. We sit down on the concrete riverbank, still warm from the scorching day, look at the river’s waters, listen to the hum of cars on Chrobry Bridge, drink krupnik straight from the bottle, talk.
 >
@@ -45,9 +45,9 @@ VOSTOK is an experiment attempting to answer the question,
 
 > Can you write a sci-fi novel with a minimum amount of exposition, and if so, how much exposition you need to make it work?
 
-It took me years to find an answer. The initial drafts portioned out exposition only through dialogue. The speculative layer of the novel was painted with just a few brush strokes, and the resulting painting was too abstract to have much resonance.
+It took me years to find an answer. The initial drafts portioned out exposition only through dialogue. As a result, the speculative layer of the novel was painted with just a few brush strokes, and the painting was too abstract to have much resonance.
 
-Then I added some environmental storytelling: the sci-fi part of the story was told also through ads, leaflets, TV and radio programs. The result was better, but it wasn’t quite it.
+Then I added some environmental storytelling: the sci-fi part of the story was told also through ads, leaflets, TV and radio programs. The effect was better, but it wasn’t quite it.
 
 I started layering the novel with different texts: snippets of newspaper articles, encyclopaedic entries, fragments of instruction manuals. Only then did the sci-fi portion of the novel become defined enough for it to make a meaningful whole with the realistic part.
 
