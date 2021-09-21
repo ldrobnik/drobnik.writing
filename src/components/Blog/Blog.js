@@ -217,8 +217,8 @@ export const Blog = props => {
                 {(filteredCategory) &&
                 <FilteredCategory category={filteredCategory}/>}
             </AnimatedContent>
-            {(latestNote.id) &&
             <Suspense fallback={SmallSpinner}>
+            {(latestNote.id) &&
                 <AnimatedContent
                     pose={!props.reload ? 'visible' : 'hidden'}
                 >
@@ -226,7 +226,6 @@ export const Blog = props => {
 
                     <Teaser note={latestNote}/>
                 </AnimatedContent>
-            </Suspense>
             }
             {
                 (olderNotes.length > 0) &&
@@ -236,15 +235,12 @@ export const Blog = props => {
                     >
                         <BlogSectionHeading>{WEBSITE_TEXT_BLOG.olderPosts}</BlogSectionHeading>
                     </AnimatedContent>
-                    <Suspense fallback={SmallSpinner}>
                         <BlogNoteList
                             linklist={olderNotes}
                             showCategories={!filteredCategory}
                         />
-                    </Suspense>
                 </React.Fragment>
             }
-            <Suspense fallback={SmallSpinner}>
                 <AnimatedContent
                     pose={!props.reload ? 'visible' : 'hidden'}
                 >
