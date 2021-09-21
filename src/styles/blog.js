@@ -289,6 +289,7 @@ export const BlogPost = styled.div`
   font-family: ${props => props.theme.sansSerif};
   font-size: ${props => props.theme.bodySize};
   line-height: 1.5;
+  min-height: 800px;
 
   @media all and (max-width: ${props => props.theme.smallScr}) {
     font-size: ${props => props.theme.smallBodySize};

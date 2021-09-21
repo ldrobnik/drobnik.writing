@@ -19,12 +19,12 @@ import {
     BlogTitle
 } from '../../styles/blog';
 import {BLOG_CATEGORIES, BLOG_NOTES, WEBSITE_TEXT_BLOG} from './../../data/constants';
+import BlogBio from './BlogBio/BlogBio';
 import CategoryPicker from './CategoryPicker/CategoryPicker';
 import FilteredCategory from './FilteredCategory/FilteredCategory';
 import SmallSpinner from '../UI/SmallSpinner/SmallSpinner';
 
 const Teaser = lazy(() => import('./Teaser/Teaser'));
-const BlogBio = lazy(() => import('./BlogBio/BlogBio'));
 const SubpageLinks = lazy(() => import('../UI/SubpageLinks/SubpageLinks'));
 const CopyrightNote = lazy(() => import('../UI/CopyrightNote/CopyrightNote'));
 const BlogNoteList = lazy(() => import('./BlogNoteList/BlogNoteList'));
@@ -201,13 +201,11 @@ export const Blog = props => {
                 <BlogTitle>{WEBSITE_TEXT_BLOG.title}</BlogTitle>
             </AnimatedContent>
             <MainPageBlogBio>
-                <Suspense fallback={SmallSpinner}>
-                    <AnimatedContent
-                        pose={!props.reload ? 'visible' : 'hidden'}
-                    >
-                        <BlogBio/>
-                    </AnimatedContent>
-                </Suspense>
+                <AnimatedContent
+                    pose={!props.reload ? 'visible' : 'hidden'}
+                >
+                    <BlogBio/>
+                </AnimatedContent>
             </MainPageBlogBio>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}

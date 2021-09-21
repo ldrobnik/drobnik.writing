@@ -17,9 +17,9 @@ import {
     WritingTitle, WritingSectionHeading
 } from '../../styles/writing';
 import {TEXT_NAMES, WEBSITE_TEXT_TEXTS} from './../../data/constants';
+import WritingBio from './WritingBio/WritingBio';
 import SmallSpinner from '../UI/SmallSpinner/SmallSpinner';
 
-const WritingBio = lazy(() => import('./WritingBio/WritingBio'));
 const ReadList = lazy(() => import('../ReadList/ReadList'));
 const SubpageLinks = lazy(() => import('../UI/SubpageLinks/SubpageLinks'));
 const CopyrightNote = lazy(() => import('../UI/CopyrightNote/CopyrightNote'));
@@ -104,9 +104,7 @@ export const Writing = props => {
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
                 <WritingTitle>{WEBSITE_TEXT_TEXTS.writing.title[props.lang]}</WritingTitle>
-                <Suspense fallback={<SmallSpinner/>}>
-                    <WritingBio lang={props.lang}/>
-                </Suspense>
+                <WritingBio lang={props.lang}/>
                 <WritingSectionHeading>
                     {WEBSITE_TEXT_TEXTS.writing.samples[props.lang]}
                 </WritingSectionHeading>
