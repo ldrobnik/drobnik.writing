@@ -22,7 +22,7 @@ export const REVERSE_PULSATE_KEYFRAMES = keyframes`
   }
 
   50% {
-    opacity: 1;
+    opacity: 0.5;
   }
 
   100% {
