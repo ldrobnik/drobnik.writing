@@ -40,6 +40,9 @@ export const Blog = props => {
     //specifies the filtered category
     const [filteredCategory, setFilteredCagetory] = useState('');
 
+    //specifies whether the teaser should be visible
+    const [teaserVisible, setTeaserVisible] = useState(false);
+
     //shows the content
     const showContent = () => {
         props.setPageReload(false);
@@ -187,6 +190,7 @@ export const Blog = props => {
 
     }, [props.location.pathname])
 
+
     //do not show the content until the page is loaded
     return props.loaded &&
         <BlogWrapper>
@@ -212,18 +216,15 @@ export const Blog = props => {
                 <CategoryPicker/>}
                 {(filteredCategory) &&
                 <FilteredCategory category={filteredCategory}/>}
+                <BlogSectionHeading>{WEBSITE_TEXT_BLOG.latestPost}</BlogSectionHeading>
             </AnimatedContent>
-
-                <AnimatedContent
-                    pose={!props.reload ? 'visible' : 'hidden'}
-                >
-                    <BlogSectionHeading>{WEBSITE_TEXT_BLOG.latestPost}</BlogSectionHeading>
-                </AnimatedContent>
+            <Suspense fallback={SmallSpinner}>
+                {(latestNote.id) &&
                     <Teaser note={latestNote}/>
                 }
                 {
                     (olderNotes.length > 0) &&
-                    <Suspense fallback={SmallSpinner}>
+                    <React.Fragment>
                         <AnimatedContent
                             pose={!props.reload ? 'visible' : 'hidden'}
                         >
@@ -233,9 +234,8 @@ export const Blog = props => {
                             linklist={olderNotes}
                             showCategories={!filteredCategory}
                         />
-                    </Suspense>
+                    </React.Fragment>
                 }
-                <Suspense fallback={SmallSpinner}>
                 <AnimatedContent
                     pose={!props.reload ? 'visible' : 'hidden'}
                 >
