@@ -40,9 +40,6 @@ export const Blog = props => {
     //specifies the filtered category
     const [filteredCategory, setFilteredCagetory] = useState('');
 
-    //specifies whether the teaser should be visible
-    const [teaserVisible, setTeaserVisible] = useState(false);
-
     //shows the content
     const showContent = () => {
         props.setPageReload(false);
