@@ -53,6 +53,7 @@ export const FADE_DURATION = 200;
 /* General */
 
 export const GlobalStyle = createGlobalStyle`
+  
   body {
     font-family: ${props => props.theme.sansSerif};
     color: ${props => props.theme.darkColor};

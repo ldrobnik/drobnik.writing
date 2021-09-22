@@ -72,6 +72,9 @@ export const BlogNote = props => {
     //blogpost to be displayed
     const [note, setNote] = useState('');
 
+    //minimum note length for it to be displayed
+    const minNoteLength = 40;
+
     //shows the content
     const showContent = () => {
         setTimeout(() => setVisible(true), FADE_DURATION);
@@ -166,6 +169,7 @@ export const BlogNote = props => {
                 fetch(res.default)
                     .then(res => res.text())
                     .then(res => setNote(res))
+                    .then(() => showContent())
                     .catch(err => console.log(err));
             })
             .catch(err => console.log(err));
@@ -236,7 +240,7 @@ export const BlogNote = props => {
         }
 
         //shows content if note is displayed
-        if (noteId.length > 0) showContent();
+        if (note.length > minNoteLength) showContent();
 
         //clean up state when unmounting
         return () => {
@@ -255,7 +259,7 @@ export const BlogNote = props => {
 
     useEffect(() => {
         //shows content if note is displayed
-        if (noteId.length > 0) showContent();
+        if (note.length > minNoteLength) showContent();
     });
 
     //load a new blog note anytime the path changes
@@ -271,7 +275,7 @@ export const BlogNote = props => {
         }
 
         //shows content if note is displayed
-        if (noteId.length > 0) showContent();
+        if (note.length > minNoteLength) showContent();
 
     }, [props.location.pathname]);
 
@@ -285,7 +289,7 @@ export const BlogNote = props => {
 
         //hides and shows content on reload
         setVisible(false);
-        if (noteId.length > 0) showContent();
+        if (noteId.length > minNoteLength) showContent();
 
     }, [props.reload]);
 
