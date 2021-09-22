@@ -8,6 +8,7 @@ import {AnimatedContent} from '../../../animations/shared';
 import {BlogPost, TeaserWrapper} from '../../../styles/blog';
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
 import ThemeWrapper from '../ThemeWrapper/ThemeWrapper';
+import SmallSpinner from '../../UI/SmallSpinner/SmallSpinner';
 import {setPageReload} from '../../../actions';
 
 export const Teaser = props => {
@@ -42,7 +43,7 @@ export const Teaser = props => {
         >
             <TeaserWrapper>
                 <AnimatedContent
-                    pose={!props.reload && note.length > 1 ? 'visible' : 'hidden'}>
+                    pose={!props.reload && note.length > 20 ? 'visible' : 'hidden'}>
                     <ThemeWrapper theme={props.note.category}>
                         <BlogNoteCredits
                             teaser={true}
@@ -68,6 +69,7 @@ export const Teaser = props => {
                         </BlogPost>
                     </ThemeWrapper>
                 </AnimatedContent>
+                {!note.length && <SmallSpinner/>}
             </TeaserWrapper>
         </Link>
     );

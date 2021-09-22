@@ -117,6 +117,7 @@ export const Blog = props => {
 
     //handles all operations related to category filtering
     const handleCategoryFiltering = () => {
+
         //if the url contains category name, filter blog notes by this category
         let categoryToFilter = checkFiltering();
 
@@ -124,7 +125,6 @@ export const Blog = props => {
         let filteredByCategory = BLOG_NOTES.filter(item => {
             return (item.category === categoryToFilter)
         });
-
         if (categoryToFilter && filteredByCategory.length) {
             setLatestNote(filterByCategory(categoryToFilter)[0]); // sets the latest note
             setOlderNotes(removeFirstElement(filterByCategory(categoryToFilter))); // sets older notes
@@ -190,14 +190,6 @@ export const Blog = props => {
 
     }, [props.location.pathname])
 
-    useEffect(() => {
-
-        //show teaser when it is available
-        setTimeout(() => setTeaserVisible(true), 1500);
-
-    }, [latestNote.id]);
-
-
     //do not show the content until the page is loaded
     return props.loaded &&
         <BlogWrapper>
@@ -224,18 +216,17 @@ export const Blog = props => {
                 {(filteredCategory) &&
                 <FilteredCategory category={filteredCategory}/>}
             </AnimatedContent>
-            <Suspense fallback={SmallSpinner}>
-                {(latestNote.id) &&
+
                 <AnimatedContent
-                    pose={teaserVisible ? 'visible' : 'hidden'}
+                    pose={!props.reload ? 'visible' : 'hidden'}
                 >
                     <BlogSectionHeading>{WEBSITE_TEXT_BLOG.latestPost}</BlogSectionHeading>
-                    <Teaser note={latestNote}/>
                 </AnimatedContent>
+                    <Teaser note={latestNote}/>
                 }
                 {
                     (olderNotes.length > 0) &&
-                    <React.Fragment>
+                    <Suspense fallback={SmallSpinner}>
                         <AnimatedContent
                             pose={!props.reload ? 'visible' : 'hidden'}
                         >
@@ -245,8 +236,9 @@ export const Blog = props => {
                             linklist={olderNotes}
                             showCategories={!filteredCategory}
                         />
-                    </React.Fragment>
+                    </Suspense>
                 }
+                <Suspense fallback={SmallSpinner}>
                 <AnimatedContent
                     pose={!props.reload ? 'visible' : 'hidden'}
                 >
