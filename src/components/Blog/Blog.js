@@ -40,6 +40,9 @@ export const Blog = props => {
     //specifies the filtered category
     const [filteredCategory, setFilteredCagetory] = useState('');
 
+    //specifies whether the teaser should be visible
+    const [teaserVisible, setTeaserVisible] = useState(false);
+
     //shows the content
     const showContent = () => {
         props.setPageReload(false);
@@ -121,7 +124,6 @@ export const Blog = props => {
         let filteredByCategory = BLOG_NOTES.filter(item => {
             return (item.category === categoryToFilter)
         });
-        console.log(filteredByCategory);
 
         if (categoryToFilter && filteredByCategory.length) {
             setLatestNote(filterByCategory(categoryToFilter)[0]); // sets the latest note
@@ -188,6 +190,13 @@ export const Blog = props => {
 
     }, [props.location.pathname])
 
+    useEffect(() => {
+
+        //show teaser when it is available
+        setTimeout(() => setTeaserVisible(true), 1500);
+
+    }, [latestNote.id]);
+
 
     //do not show the content until the page is loaded
     return props.loaded &&
@@ -218,7 +227,7 @@ export const Blog = props => {
             <Suspense fallback={SmallSpinner}>
                 {(latestNote.id) &&
                 <AnimatedContent
-                    pose={!props.reload ? 'visible' : 'hidden'}
+                    pose={teaserVisible ? 'visible' : 'hidden'}
                 >
                     <BlogSectionHeading>{WEBSITE_TEXT_BLOG.latestPost}</BlogSectionHeading>
                     <Teaser note={latestNote}/>
