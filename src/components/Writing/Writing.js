@@ -112,15 +112,15 @@ export const Writing = props => {
                 </WritingSectionHeading>
             </AnimatedContent>
             <ReadListWrapper>
-                <AnimatedContent
-                    pose={!props.reload ? 'visible' : 'hidden'}
-                >
-                    <Suspense fallback={<SmallSpinner/>}>
-                        {linkListVisible &&
-                        <ReadList linksVisible={linksVisible}/>
-                        }
-                    </Suspense>
-                </AnimatedContent>
+            <AnimatedContent
+                pose={!props.reload ? 'visible' : 'hidden'}
+            >
+                <Suspense fallback={<SmallSpinner/>}>
+                    {linkListVisible &&
+                    <ReadList linksVisible={linksVisible}/>
+                    }
+                </Suspense>
+            </AnimatedContent>
             </ReadListWrapper>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
