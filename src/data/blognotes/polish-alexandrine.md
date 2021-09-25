@@ -46,7 +46,7 @@ The minute I made my mind, I panicked,
 
 Most English translators replace *trzynastozgłoskowiec* with iambic pentameter, which makes a lot of sense — each is the signature metric line of the respective language.
 
-It didn’t feel right in the case of VOSTOK though. Its Polishness was such a crucial part of the book that I decided to retain many Polish names or even swearwords. So why replace one of its most Polish parts with an Anglo-Saxon equivalent?
+It didn’t feel right in the case of VOSTOK though. Its Polishness was such a crucial part of the book that I decided to retain many Polish names or even swearwords. So why replace its most Polish part with an Anglo-Saxon equivalent?
 
 [<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
@@ -96,7 +96,7 @@ Note that even though the phrase “stream after stream after stream” has the 
 
 In a word: yes. And not only as a challenging translation exercise.
 
-The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story much better than the livelier iambic pentameter. *Trzynastozgłoskowiec* mimics the sound of the undying Venusian rain, its repetitive form corresponding with the characters’ futile attempts to find a shelter.
+The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story much better than the livelier iambic pentameter. *Trzynastozgłoskowiec* mimics the sound of the undying Venusian rain while its repetitive form corresponds with the characters’ futile attempts to find a shelter.
 
 What’s more, the very un-English form of Polish alexandrine forced some unconventional word choices that gave the passages a surreal feel.
 
