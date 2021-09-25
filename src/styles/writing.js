@@ -81,3 +81,7 @@ export const WritingSectionHeading = styled.h2`
     font-size: 4vw;
   }
 `;
+
+export const ReadListWrapper = styled.div`
+  min-height: 400px;
+`;

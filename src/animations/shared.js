@@ -33,7 +33,7 @@ export const AnimatedPhoto = posed.div({
 export const AnimatedReadList = posed.div({
     visible: {
         delayChildren: 400,
-        staggerChildren: 150,
+        staggerChildren: 150
     }
 });
 

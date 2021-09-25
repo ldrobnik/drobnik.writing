@@ -14,7 +14,9 @@ import {SectionSeparator, FADE_DURATION} from '../../styles/shared';
 import {
     WritingWrapper,
     WritingTopAnchor,
-    WritingTitle, WritingSectionHeading
+    WritingTitle,
+    WritingSectionHeading,
+    ReadListWrapper
 } from '../../styles/writing';
 import {TEXT_NAMES, WEBSITE_TEXT_TEXTS} from './../../data/constants';
 import WritingBio from './WritingBio/WritingBio';
@@ -109,15 +111,17 @@ export const Writing = props => {
                     {WEBSITE_TEXT_TEXTS.writing.samples[props.lang]}
                 </WritingSectionHeading>
             </AnimatedContent>
-            <AnimatedContent
-                pose={!props.reload ? 'visible' : 'hidden'}
-            >
-                {linkListVisible &&
-                <Suspense fallback={<SmallSpinner/>}>
-                    <ReadList linksVisible={linksVisible}/>
-                </Suspense>
-                }
-            </AnimatedContent>
+            <ReadListWrapper>
+                <AnimatedContent
+                    pose={!props.reload ? 'visible' : 'hidden'}
+                >
+                    <Suspense fallback={<SmallSpinner/>}>
+                        {linkListVisible &&
+                        <ReadList linksVisible={linksVisible}/>
+                        }
+                    </Suspense>
+                </AnimatedContent>
+            </ReadListWrapper>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}
             >
