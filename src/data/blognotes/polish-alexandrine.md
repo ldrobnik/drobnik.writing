@@ -79,7 +79,7 @@ became the English:
 
 ## Bending the form
 
-The rhythm of Polish alexandrine is so soothing and predictable that any deviation from it jolts you out of your relaxed state and makes you pay attention.
+The rhythm of Polish alexandrine is so soothing and predictable that any deviation jolts you out of your relaxed state and makes you pay attention.
 
 I used this effect in the Polish draft of VOSTOK, so it made sense to replicate it in the English version:
 
