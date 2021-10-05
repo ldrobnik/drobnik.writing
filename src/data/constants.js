@@ -1479,13 +1479,26 @@ export const WEBSITE_TEXT_BLOG = {
 //Content and data of blog notes, including drafts
 export const ALL_BLOG_NOTES = [
     {
-        id: 'polish-alexandrine',
-        title: 'Polish Alexandrine in English: Forcing a Yorkshire Pudding into a Pierogi Mould',
+        id: 'poznan',
+        title: 'Vostok places: Poznań',
         draft: true,
         date: ['2021', '10', '10'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['grounding-the-otherworldly'],
+        related: ['grounding-the-otherworldly', 'polish-alexandrine'],
+        imageCredits: {
+            description: '',
+            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
+        }
+    },
+    {
+        id: 'polish-alexandrine',
+        title: 'Polish Alexandrine in English: Forcing a Yorkshire Pudding into a Pierogi Mould',
+        draft: true,
+        date: ['2021', '10', '05'],
+        category: 'vostok',
+        sameImgForCategory: true,
+        related: ['grounding-the-otherworldly', 'poznan'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
@@ -1498,7 +1511,7 @@ export const ALL_BLOG_NOTES = [
         date: ['2021', '10', '10'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['polish-alexandrine'],
+        related: ['polish-alexandrine', 'poznan'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
