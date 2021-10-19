@@ -1060,7 +1060,7 @@ export const BOOKS = [
             en: [
                 {
                     quote: <div>One of the most imaginative novels I’ve read (…) The right mix of experimental, multi-formic prose and a world built beyond the bizarre as one keeps reading.</div>,
-                    source: 'Sapha Burnell, Goodreads'
+                    source: 'Sapha Burnell'
                 },
                 {
                     quote: <div><em>Vostok</em>’s prose is of a singular beauty and purity. I cannot stop diving back
@@ -1071,7 +1071,7 @@ export const BOOKS = [
             pl: [
                 {
                     quote: <div>Jedna z&nbsp;najbardziej pomysłowych powieści, jakie czytałam (…) Odpowiednia mieszanka eksperymentalnej, wielopostaciowej prozy i&nbsp;świata powieści, który w&nbsp;miarę czytania przekracza granice dziwaczności.</div>,
-                    source: 'Sapha Burnell, Goodreads'
+                    source: 'Sapha Burnell'
                 },
                 {
                     quote: <div><em>Vostok</em> to proza o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę
