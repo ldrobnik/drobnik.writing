@@ -3,7 +3,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faTwitterSquare,
     faFacebookSquare,
-    faInstagram
+    faInstagram,
+    faGoodreads
 } from '@fortawesome/free-brands-svg-icons';
 import {
     faHome,
@@ -28,6 +29,7 @@ export const VRAEDA_URL = 'https://www.vraeydamedia.ca/literary'; //Vræyda Lite
 export const TWITTER_URL = 'https://twitter.com/drobnik';
 export const FACEBOOK_URL = 'https://www.facebook.com/drobnikwrites';
 export const INSTAGRAM_URL = 'https://www.instagram.com/drobnikwrites/';
+export const GOODREADS_URL = 'https://www.goodreads.com/drobnik';
 export const MEDIUM_URL = 'https://drobnik.medium.com';
 export const KO_FI_URL = 'https://ko-fi.com/drobnik';
 export const BLYSKI_URL = 'https://blyski.org'; // błyski literary magazine
@@ -1311,6 +1313,18 @@ export const WEBSITE_TEXT_ABOUT = {
                         <span className="sr-only">Twitter</span>
                     </div>),
                 url: TWITTER_URL
+            },
+            {
+                name: (
+                    <div>
+                        <FontAwesomeIcon
+                            icon={faGoodreads}
+                            aria-hidden="true"
+                            title="Goodreads"
+                        />&nbsp;@drobnik
+                        <span className="sr-only">Goodreads</span>
+                    </div>),
+                url: GOODREADS_URL
             },
             {
                 name: (
