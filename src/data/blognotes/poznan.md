@@ -2,12 +2,15 @@ When I think of my last winter in Poznań, a meme from that time comes to my min
 
 Winter 2009/2010 was one of the longest and harshest winters I have lived through. Pavements disappeared under the crust of frozen snow and sand. People popped into shops and pretended to be looking around only to hide from the freezing weather. Pubs filled with dense, toxic clouds of cigarette smoke. (It was the last winter before they banned smoking in public places.) The smell of fumes and kebabs lingered in the air as it always does, irrespective of the weather.
 
+![Colourful, lushly decorated tenement houses in the Old Market Square in Poznań](poznan-old-market-square.jpg)
+
+<sup>The Old Market Square in Poznań. Photo by Diego Delso. CC BY-SA 4.0.</sup>
+
 Can’t say which of those are my real memories and which have been filtered through the years of writing [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi.
 
 I started working on the book in late 2009 and set it in Poznań during that seemingly never-ending winter — unaware of the fact it will be my way of saying farewell to the city. In spring, my wanderlust kicked in, and I moved to Kraków where I’ve lived ever since.
 
-[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
-<sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
+
 
 ## A handful of facts
 
@@ -24,9 +27,8 @@ Some trivia:
 - There’s no underground but the city has a fast tram line connecting the north with the centre. The line is called Poznań Fast Tram (Poznański Szybki Tramwaj). The acronym PST gave rise to affectionate monicker *pestka*. It literally means ‘seed’ but also has an idiomatic meaning similar to English ‘piece of cake’.
 - Confusingly to outsiders, Poznań dwellers often use the word *tej* for emphasis.
 
-![Colourful, lushly decorated tenement houses in the Old Market Square in Poznań](poznan-old-market-square.jpg)
-
-<sup>The Old Market Square in Poznań. Photo by Diego Delso. CC BY-SA 4.0.</sup>
+[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
+<sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
 
 ## A roomful of feelings
 
