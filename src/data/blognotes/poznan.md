@@ -14,7 +14,7 @@ I started working on the book in late 2009 and set it in Poznań during that see
 
 ## A handful of facts
 
-Poznań, the fifth largest Polish city, has a population similar to that of Edinburgh, but the entire agglomeration is more than twice this size. The city is the capital of a region called Greater Poland (in Polish, Wielkopolska).
+Poznań, the fifth largest Polish city, has a population similar to that of Edinburgh, but the entire agglomeration is more than twice this size. The city is the capital of a region called Wielkopolska (Greater Poland).
 
 Some trivia:
 
@@ -24,7 +24,7 @@ Some trivia:
 - Poznań is the only city mentioned in Poland’s national anthem.
 - The city is divided into five districts: Jeżyce, Grunwald, Wilda, Nowe Miasto, and Stare Miasto. The latter, although literally called the Old Town, accommodates not only the historic centre but also the landscapes of blocks of flats in the north.
 - No one really uses the five administrative districts in everyday conversations. People usually refer to themselves as coming from smaller neighbourhoods, such as Łazarz, Sołacz, or Winogrady.
-- There’s no underground but the city has a fast tram line connecting the north with the centre. The line is called Poznań Fast Tram (Poznański Szybki Tramwaj). The acronym PST gave rise to affectionate monicker *pestka*. It literally means ‘seed’ but also has an idiomatic meaning similar to English ‘piece of cake’.
+- There’s no underground but the city has a fast tram line connecting the north with the centre. The line is called Poznań Fast Tram (Poznański Szybki Tramwaj). The acronym PST gave rise to an affectionate monicker *pestka*. It literally means ‘seed’ but also has an idiomatic sense similar to English ‘piece of cake’.
 - Confusingly to outsiders, Poznań dwellers often use the word *tej* for emphasis.
 
 [<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
@@ -32,13 +32,15 @@ Some trivia:
 
 ## A roomful of feelings
 
-I moved to Poznań as a nineteen year old for university. Nostalgic for the smaller, cosier Kalisz where I attended secondary school, I needed years to feel at ease in this larger, louder, hostile city.
+I moved to Poznań for university. Nostalgic for the smaller, cosier Kalisz where I attended secondary school, I needed years to feel at ease in this larger, louder, more hostile city.
 
-In time, I grew to like the city’s qualities that I at first found overwhelming. The vast spaces, broad roads,  tram wires stretching above your head, monumental buildings, seas of blocks of flats.
+In time, I grew to enjoy the city’s qualities that I at first found overwhelming. The vast spaces, broad roads,  tram wires stretching above your head, monumental buildings, seas of blocks of flats.
 
-The city watched me find my way around adult life: making and losing friends, finding love in all the wrong places, figuring out what I’m made of, what I’m really about. 
+The city watched me clumsily find my way around adult life: making and losing friends, finding love in all the wrong places, figuring out what I’m made of, what I’m really about. 
 
-I remember a moment when I felt in Poznań completely at home, as if I was born there. I was walking the uneven pavement in Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon, and Poznań around me fitted me like a glove. It was both a pleasant and a suffocating feeling. One that made me realise I wanted something different, something more.
+I remember a moment when I felt in Poznań completely at home. I was walking the uneven pavement in Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon, and Poznań around me fitted me like a glove. It was both a warm and suffocating feeling. One that made me realise I wanted something different, something more.
 
-Funnily enough, I could write about Poznań only from afar. Before I moved out, I wrote a few dozen pages of *Vostok* but decided to scrap them. Only in the middle of a hot summer, in the centre of historic Kraków was I able to switch my *Joyce-on-an-exile-writing-about-Dublin* mode and start a book about a winter in a city that was no more.
+Funnily enough, I could write about Poznań only from afar. Before I moved out, I wrote a few dozen pages of *Vostok* but decided to scrap them.
+
+Only in the middle of a hot summer, in the centre of historic Kraków was I able get things going. I switched  to my *Joyce-on-an-exile-writing-about-Dublin* mode and started a book about a winter in a city that was no more.
 
