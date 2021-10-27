@@ -1517,15 +1517,15 @@ export const ALL_BLOG_NOTES = [
         date: ['2021', '10', '27'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['grounding-the-otherworldly', 'polish-alexandrine', 'adjusting-the-slav-dial'],
+        related: ['grounding-the-otherworldly', 'polish-alexandrine', 'adjusting-the-slavness-dial'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
         }
     },
     {
-        id: 'adjusting-the-slav-dial',
-        title: 'Polish Alexandrine in English: Forcing a Yorkshire Pudding into a Pierogi Mould',
+        id: 'adjusting-the-slavness-dial',
+        title: 'Adjusting the Slavness Dial: How Much Polish a Text Needs to Feel Polish',
         draft: true,
         date: ['2021', '10', '20'],
         category: 'vostok',
@@ -1543,7 +1543,7 @@ export const ALL_BLOG_NOTES = [
         date: ['2021', '10', '05'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['grounding-the-otherworldly', 'the-exotic-familiar', 'adjusting-the-slav-dial'],
+        related: ['grounding-the-otherworldly', 'the-exotic-familiar', 'adjusting-the-slavness-dial'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
