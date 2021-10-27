@@ -40,13 +40,15 @@ I remember a moment when I felt in Poznań completely at home. I was walking the
 
 ## A trip to the uncanny valley
 
-There surely is a compound German word for this feeling of knowing something so well it becomes transparent.
+There surely is a compound German word for this feeling of knowing something so well it becomes transparent. Whatever we might call it, the feeling was possibly part of the reason why I chose a place so familiar for the setting of a science-fiction novel.
 
-I won’t spoil the nature of the sci-fi element in VOSTOK
+There’s definitely a Russian word for presenting the familiar in an unfamiliar way to make the audience see them from a new persepctive. The word is *ostranenie* (остранение), translated as defamiliarisation.
+
+I won’t spoil the nature of the sci-fi element in VOSTOK (hope you’ll find it out for yourself),
 
 
 
-There’s a whole journal with defamiliarised writing called [The Gravity of the Thing](http://thegravityofthething.com/). I highly recommend it.
+There’s a whole journal with defamiliarised writing called [The Gravity of the Thing](http://thegravityofthething.com/), run by Thea Prieto. I highly recommend it.
 
 ## The nostalgia factor
 
