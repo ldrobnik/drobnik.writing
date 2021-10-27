@@ -1511,13 +1511,26 @@ export const WEBSITE_TEXT_BLOG = {
 //Content and data of blog notes, including drafts
 export const ALL_BLOG_NOTES = [
     {
-        id: 'poznan',
-        title: 'Vostok places: Poznań',
+        id: 'the-exotic-familiar',
+        title: 'The Exotic Familiar: Taking an Ordinary Setting into an Uncanny Territory',
         draft: true,
-        date: ['2021', '10', '10'],
+        date: ['2021', '10', '27'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['grounding-the-otherworldly', 'polish-alexandrine'],
+        related: ['grounding-the-otherworldly', 'polish-alexandrine', 'adjusting-the-slav-dial'],
+        imageCredits: {
+            description: '',
+            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
+        }
+    },
+    {
+        id: 'adjusting-the-slav-dial',
+        title: 'Polish Alexandrine in English: Forcing a Yorkshire Pudding into a Pierogi Mould',
+        draft: true,
+        date: ['2021', '10', '20'],
+        category: 'vostok',
+        sameImgForCategory: true,
+        related: ['grounding-the-otherworldly', 'polish-alexandrine', 'the-exotic-familiar'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
@@ -1530,7 +1543,7 @@ export const ALL_BLOG_NOTES = [
         date: ['2021', '10', '05'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['grounding-the-otherworldly', 'poznan'],
+        related: ['grounding-the-otherworldly', 'the-exotic-familiar', 'adjusting-the-slav-dial'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
@@ -1543,7 +1556,7 @@ export const ALL_BLOG_NOTES = [
         date: ['2021', '10', '10'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['polish-alexandrine', 'poznan'],
+        related: ['polish-alexandrine', 'the-exotic-familiar'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'

@@ -10,8 +10,6 @@ Can’t say which of those are my real memories and which have been filtered thr
 
 I started working on the book in late 2009 and set it in Poznań during that seemingly never-ending winter — unaware of the fact it will be my way of saying farewell to the city. In spring, my wanderlust kicked in, and I moved to Kraków where I’ve lived ever since.
 
-
-
 ## A handful of facts
 
 Poznań, the fifth largest Polish city, has a population similar to that of Edinburgh, but the entire agglomeration is more than twice this size. The city is the capital of a region called Wielkopolska (Greater Poland).
@@ -22,13 +20,10 @@ Some trivia:
 - It is located on the river Warta, the main tributary of the Oder.
 - In addition to bridges spanning the Warta, Poznań has three bridges stretched over the torrent of railway tracks: Most Teatralny (Theatre Bridge), Most Uniwersytecki (University Bridge), and Most Dworcowy (Station Bridge).
 - Poznań is the only city mentioned in Poland’s national anthem.
-- The city is divided into five districts: Jeżyce, Grunwald, Wilda, Nowe Miasto, and Stare Miasto. The latter, although literally called the Old Town, accommodates not only the historic centre but also the landscapes of blocks of flats in the north.
+- The city is divided into five districts: Jeżyce, Grunwald, Wilda, Nowe Miasto, and Stare Miasto. The last one, although literally called the Old Town, accommodates not only the historic centre but also the landscapes of blocks of flats in the north.
 - No one really uses the five administrative districts in everyday conversations. People usually refer to themselves as coming from smaller neighbourhoods, such as Łazarz, Sołacz, or Winogrady.
-- There’s no underground but the city has a fast tram line connecting the north with the centre. The line is called Poznań Fast Tram (Poznański Szybki Tramwaj). The acronym PST gave rise to an affectionate monicker *pestka*. It literally means ‘seed’ but also has an idiomatic sense similar to English ‘piece of cake’.
+- There’s no subway but the city has a fast tram line connecting the north with the centre, called Poznań Fast Tram (Poznański Szybki Tramwaj). The acronym PST gave rise to an affectionate monicker *pestka*. It literally means ‘seed’ but also has an idiomatic sense similar to English ‘piece of cake’.
 - Confusingly to outsiders, Poznań dwellers often use the word *tej* for emphasis.
-
-[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
-<sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
 
 ## A roomful of feelings
 
@@ -39,6 +34,21 @@ In time, I grew to enjoy the city’s qualities that I at first found overwhelmi
 The city watched me clumsily find my way around adult life: making and losing friends, finding love in all the wrong places, figuring out what I’m made of, what I’m really about. 
 
 I remember a moment when I felt in Poznań completely at home. I was walking the uneven pavement in Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon, and Poznań around me fitted me like a glove. It was both a warm and suffocating feeling. One that made me realise I wanted something different, something more.
+
+[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
+<sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
+
+## A trip to the uncanny valley
+
+There surely is a compound German word for this feeling of knowing something so well it becomes transparent.
+
+I won’t spoil the nature of the sci-fi element in VOSTOK
+
+
+
+There’s a whole journal with defamiliarised writing called [The Gravity of the Thing](http://thegravityofthething.com/). I highly recommend it.
+
+## The nostalgia factor
 
 Funnily enough, I could write about Poznań only from afar. Before I moved out, I wrote a few dozen pages of *Vostok* but decided to scrap them.
 
