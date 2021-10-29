@@ -8,7 +8,7 @@ Winter 2009–2010 was one of the longest and harshest I have lived through. Pav
 
 Can’t say which of the above are my real memories and which have been filtered through the years of writing [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi.
 
-I started working on the book in Poznań at the beginning of that seemingly never-ending winter and chose the frigid city as the setting. Little did I know it will be my way of saying goodbye. In spring, my wanderlust kicked in, and I moved to Kraków where I’ve lived ever since.
+I started working on the book in Poznań at the beginning of that seemingly never-ending winter and chose the frigid city as the setting. Little did I know it would be my way of saying goodbye. In spring, my wanderlust kicked in, and I moved to Kraków where I’ve lived ever since.
 
 ## A handful of facts
 
@@ -18,7 +18,7 @@ Some trivia:
 
 - Poznań is among the oldest Polish cities. A place where Mieszko I, the first known ruler of Poland, would often hang around.
 - It is located on the river Warta, the main tributary of the Oder.
-- In addition to bridges spanning the Warta, Poznań has three stretched over the torrent of railway tracks. Each bridge is named after a landmark in its proximity: the opera theatre, the university, and the railway station.
+- In addition to bridges spanning the Warta, Poznań has three stretched over the torrent of railway tracks. Each bridge is named after a landmark in its proximity: the opera theatre, the university, the railway station.
 - Poznań is the only city mentioned in Poland’s national anthem.
 - The city is divided into five districts: Jeżyce, Grunwald, Wilda, Nowe Miasto, and Stare Miasto. The last one, although literally called the Old Town, accommodates not only the historic centre but also the landscapes of blocks of flats in the north.
 - No one really uses the five administrative districts in everyday conversations. People usually refer to themselves as coming from smaller neighbourhoods, such as Łazarz, Sołacz, or Winogrady.
@@ -29,18 +29,18 @@ Some trivia:
 
 I moved to Poznań for university. Nostalgic for the smaller, cosier Kalisz where I attended secondary school, I needed years to feel at ease in this larger, louder, more hostile city.
 
-In time, I grew to enjoy the city’s qualities that I at first found overwhelming. The vast spaces, broad roads, tram wires stretching above your head, monumental buildings, seas of blocks of flats.
+In time, I grew to enjoy the city’s qualities I at first found overwhelming. The vast spaces, broad roads, tram wires stretching above your head, monumental buildings, seas of blocks of flats.
 
 The city watched me clumsily find my way around adult life: make and lose friends, find love in all the wrong places, try to figure out what I’m made of, what I’m really about. 
 
-I remember a moment when I felt in Poznań completely at home. I was walking the uneven pavement of Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon. Poznań around me fitted me like a glove. It was both a warm and suffocating feeling. One that made me realise I wanted something different, something more.
+I remember a moment when I felt in Poznań completely at home. I was walking the uneven pavement of Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon. Poznań around me fitted me like a glove. It was a both warm and suffocating feeling. One that made me realise I wanted something different, something more.
 
 [<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
 
 ## A trip to the uncanny valley
 
-There must be a compound German word for this feeling of knowing something so well it becomes transparent. Whatever we might call it, it was possibly part of the reason why I chose a place so familiar for the setting of a science-fiction novel.
+There must be a compound German word for this feeling of knowing something so well it makes you feel uneasy. Whatever we might call it, it was possibly part of the reason why I chose a place so familiar for the setting of a science-fiction novel.
 
 There’s definitely a Russian word for presenting, in a work of art, the familiar in an unfamiliar way so the audience can see it from a new perspective. The word is *ostranenie* (остранение), translated into English as defamiliarisation.
 
@@ -62,5 +62,5 @@ It turned out I had to move across the country to get things going. It was the m
 
 And as much as I was excited about my new chapter of life, I dearly missed Poznań: the people, the places, the atmosphere. Back then, Google Street View didn’t cover Polish cities. This meant I couldn’t virtually stroll its streets on my laptop screen and had to rely on my memory and whatever I could find online.
 
-Apparently, the combination of the above factors was enough for me to switch to my best *Joyce-on-an-exile* mode and start a book about a winter in a city that was no more.
+Apparently, the combination of the above was enough for me to switch to my best *Joyce-on-an-exile* mode and start a book about a winter in a city that was no more.
 
