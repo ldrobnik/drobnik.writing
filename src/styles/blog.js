@@ -321,7 +321,7 @@ export const BlogPost = styled.div`
     margin-bottom: 2em;
     margin-top: 0;
   }
-
+  
   img {
     max-width: 100%;
     display: block;
