@@ -62,5 +62,5 @@ It turned out I had to move across the country to get things going. It was the m
 
 And as much as I was excited about my new chapter of life, I dearly missed Poznań: the people, the places, the atmosphere. Back then, Google Street View didn’t cover Polish cities. This meant I couldn’t virtually stroll its streets on my laptop screen and had to rely on my memory and whatever I could find online.
 
-Apparently, the combination of the above was enough for me to switch to my best *Joyce-on-an-exile* mode and start a book about a winter in a city that was no more.
+The change of place did the trick. The combination of the above factors was enough for me to switch to my best *Joyce-on-an-exile* mode and start a book about a winter in a city that was no more.
 
