@@ -9,8 +9,8 @@ import {
 import {
     faHome,
     faBook,
-    faYinYang,
-    faStickyNote
+    faStickyNote,
+    faAdjust
 } from '@fortawesome/free-solid-svg-icons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -1121,7 +1121,7 @@ export const WEBSITE_TEXT_SHARED = {
         colourMode: {
             en: (<React.Fragment>
                 <FontAwesomeIcon
-                    icon={faYinYang}
+                    icon={faAdjust}
                     aria-hidden="true"
                     title="Toggle black-and-white mode">
                 </FontAwesomeIcon>
@@ -1129,7 +1129,7 @@ export const WEBSITE_TEXT_SHARED = {
             </React.Fragment>),
             pl: (<React.Fragment>
                 <FontAwesomeIcon
-                    icon={faYinYang}
+                    icon={faAdjust}
                     aria-hidden="true"
                     title="Przełącz tryb czarno-biały">
                 </FontAwesomeIcon>
