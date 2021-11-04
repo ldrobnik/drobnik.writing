@@ -1,6 +1,6 @@
 When I think of my last winter in Poznań, a meme from that time comes to my mind. It was a photo of a pavement with an inscription, ‘Remember? This is what a pavement looks like’.
 
-Winter 2009–2010 was one of the longest and harshest I have lived through. Pavements disappeared under the crust of frozen snow and sand. People popped into shops under the pretence of looking around only to hide from the freezing weather. Pubs filled with dense, toxic clouds of cigarette smoke. (It was the last winter before they banned smoking in public places.) The smell of fumes and kebabs lingered in the air as it always does, irrespective of the weather.
+Winter 2009–2010 was one of the longest and harshest I remember. Pavements disappeared under the crust of frozen snow and sand. People popped into random shops to hide from the freezing weather. Pubs filled with dense, toxic clouds of cigarette smoke. (It was the last winter before they banned smoking in public places.) The smell of fumes and kebabs lingered in the air as it always does, irrespective of the weather.
 
 ![Colourful, lushly decorated tenement houses in the Old Market Square in Poznań](poznan-old-market-square.jpg)
 
@@ -8,7 +8,7 @@ Winter 2009–2010 was one of the longest and harshest I have lived through. Pav
 
 Can’t say which of the above are my real memories and which have been filtered through the years of writing [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi.
 
-I started working on the book in Poznań at the beginning of that seemingly never-ending winter and chose the frigid city as the setting. Little did I know it would be my way of saying goodbye. In spring, my wanderlust kicked in, and I moved to Kraków where I’ve lived ever since.
+I started working on the book in Poznań at the beginning of that apparently never-ending winter and chose the frigid city as the setting. Little did I know it would be my farewell letter. In spring, my wanderlust kicked in, and I moved to Kraków where I’ve lived ever since.
 
 ## A handful of facts
 
@@ -18,7 +18,7 @@ Some trivia:
 
 - Poznań is among the oldest Polish cities. A place where Mieszko I, the first known ruler of Poland, would often hang around.
 - It is located on the river Warta, the main tributary of the Oder.
-- In addition to bridges spanning the Warta, Poznań has three stretched over the torrent of railway tracks. Each bridge is named after a landmark in its proximity: the opera theatre, the university, the railway station.
+- In addition to bridges spanning the Warta, Poznań has three bridges stretched over the torrent of railway tracks. Each bridge named after a landmark in its proximity: the opera theatre, the university, the railway station.
 - Poznań is the only city mentioned in Poland’s national anthem.
 - The city is divided into five districts: Jeżyce, Grunwald, Wilda, Nowe Miasto, and Stare Miasto. The last one, although literally called the Old Town, accommodates not only the historic centre but also the landscapes of blocks of flats in the north.
 - No one really uses the five administrative districts in everyday conversations. People usually refer to themselves as coming from smaller neighbourhoods, such as Łazarz, Sołacz, or Winogrady.
@@ -27,13 +27,13 @@ Some trivia:
 
 ## A roomful of feelings
 
-I moved to Poznań for university. Nostalgic for the smaller, cosier Kalisz where I attended secondary school, I needed years to feel at ease in this larger, louder, more hostile city.
+I moved to Poznań for university. Nostalgic for the smaller, cosier Kalisz where I attended secondary school, I needed years to feel at ease in this larger, louder, seemingly more hostile city.
 
-In time, I grew to enjoy the city’s qualities I at first found overwhelming. The vast spaces, broad roads, tram wires stretching above your head, monumental buildings, seas of blocks of flats.
+In time, I grew to enjoy the city’s qualities I at first found overwhelming. The vast spaces, broad roads, tram wires stretching above my head, monumental buildings, seas of blocks of flats.
 
 The city watched me clumsily find my way around adult life: make and lose friends, find love in all the wrong places, try to figure out what I’m made of, what I’m really about. 
 
-I remember a moment when I felt in Poznań completely at home. I was walking the uneven pavement of Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon. Poznań around me fitted me like a glove. It was a both warm and suffocating feeling. One that made me realise I wanted something different, something more.
+I remember a moment when I felt in Poznań completely at home. I was walking the uneven pavement of Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon. And Poznań around me fitted me like a glove. It was a both warm and suffocating feeling. One that made me realise I wanted something different, something more.
 
 [<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
@@ -58,9 +58,9 @@ I won’t spoil the nature of the sci-fi element in VOSTOK (hope you’ll find i
 
 Funnily enough, I could write about Poznań only from afar. Before I moved out, I wrote a few dozen pages of VOSTOK but decided to scrap them.
 
-It turned out I had to move across the country to get things going. It was the middle of a hot summer. I settled in Kraków’s historic Jewish neighbourhood of Kazimierz, a place that felt exotic and vibrant compared to the restrained, predictable Poznań.
+It turned out I had to move across the country to get things going. It was the middle of a hot summer. I settled in Kazimierz, Kraków’s historic Jewish neighbourhood, a place that felt exotic and vibrant compared to the restrained, predictable Poznań.
 
 And as much as I was excited about my new chapter of life, I dearly missed Poznań: the people, the places, the atmosphere. Back then, Google Street View didn’t cover Polish cities. This meant I couldn’t virtually stroll its streets on my laptop screen and had to rely on my memory and whatever I could find online.
 
-The change of place did the trick. The combination of the above factors was enough for me to switch to my best *Joyce-on-an-exile* mode and start a book about a winter in a city that was no more.
+The change of place did the trick. It gave me just enough nostalgia and distance to switch to my best *Joyce-on-an-exile* mode and start a book about a winter in a city that was no more.
 
