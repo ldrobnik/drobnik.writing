@@ -29,11 +29,11 @@ Some trivia:
 
 I moved to Poznań for university. Nostalgic for the smaller, cosier Kalisz where I attended secondary school, I needed years to feel at ease in this larger, louder, seemingly more hostile city.
 
-In time, I grew to enjoy the city’s qualities I at first found overwhelming. The vast spaces, broad roads, tram wires stretching above my head, monumental buildings, seas of blocks of flats.
+In time, I grew to enjoy the city’s qualities I initially found overwhelming. The vast spaces, broad roads, tram wires stretching above my head, monumental buildings, seas of blocks of flats.
 
 The city watched me clumsily find my way around adult life: make and lose friends, find love in all the wrong places, try to figure out what I’m made of, what I’m really about. 
 
-I remember a moment when I felt in Poznań completely at home. I was walking the uneven pavement of Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon. And Poznań around me fitted me like a glove. It was a both warm and suffocating feeling. One that made me realise I wanted something different, something more.
+I remember a moment when I felt in Poznań completely at home. I was walking the uneven pavement of Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon. Poznań around me fitted me like a glove. It was a both warm and suffocating feeling. One that made me realise I wanted something different, something more.
 
 [<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
@@ -52,7 +52,7 @@ The term was coined in 1917 by Viktor Shklovsky, one of the main figures of Russ
 
 Believe it or not, there’s a whole journal dedicated to defamiliarised writing called [The Gravity of the Thing](http://thegravityofthething.com/), which I highly recommend. It was this journal that made realise I use defamiliarisation in my own writing (I even ended up publishing [a story](http://thegravityofthething.com/devonian-lukasz-drobnik/) there).
 
-I won’t spoil the nature of the sci-fi element in VOSTOK (hope you’ll find it out for yourself), but the presence of a speculative layer allows an interesting shift: from the realistic contemporary Poznań into an otherwordly realm. A shift that invites the reader to look at seemingly ordinary things from an unexpected angle.
+I won’t spoil the nature of the sci-fi element in VOSTOK (hope you’ll discover it on your own), but the presence of a speculative layer results in an interesting shift: from the realistic contemporary Poznań into an otherwordly realm. A shift that invites the reader to look at seemingly ordinary things from an unexpected angle.
 
 ## The nostalgia factor
 
