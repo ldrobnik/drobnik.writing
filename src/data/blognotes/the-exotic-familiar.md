@@ -2,9 +2,9 @@ When I think of my last winter in Poznań, a meme from that time comes to my min
 
 Winter 2009–2010 was one of the longest and harshest I remember. Pavements disappeared under the crust of frozen snow and sand. People popped into random shops to hide from the freezing weather. Pubs filled with dense, toxic clouds of cigarette smoke. (It was the last winter before they banned smoking in public places.) The smell of fumes and kebabs lingered in the air as it always does, irrespective of the weather.
 
-![Colourful, lushly decorated tenement houses in the Old Market Square in Poznań](poznan-old-market-square.jpg)
+![Colourful, lushly decorated tenement houses in the Old Market Square in Poznań on a winter day](poznan-old-market-square.jpg)
 
-<sup>The Old Market Square in Poznań. Photo by Diego Delso. CC BY-SA 4.0.</sup>
+<sup>The Old Market Square in Poznań. Photo by pillerss – Can Stock Photo Inc.</sup>
 
 Can’t say which of the above are my real memories and which have been filtered through the years of writing [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi.
 
