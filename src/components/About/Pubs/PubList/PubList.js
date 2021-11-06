@@ -27,7 +27,6 @@ const PubList = props => {
                                     descriptionPl={pub.descriptionPl}
                                     descriptionEn={pub.descriptionEn}
                                     language={pub.language}
-                                    pieceTitle={pub.pieceTitle}
                                     key={k}
                                 />
                             </PubAnimatedTile>

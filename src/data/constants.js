@@ -346,8 +346,7 @@ export const PUBLICATIONS = {
             },
             descriptionPl: 'Powieść, która ukaże się w 2021 r. nakładem wydawnictwa Vræyda Literary',
             descriptionEn: 'Novel forthcoming in 2021 from Vræyda Literary',
-            language: 'en',
-            pieceTitle: 'Vostok'
+            language: 'en'
         },
         {
             title: 'Nocturine',
@@ -360,8 +359,7 @@ export const PUBLICATIONS = {
             },
             descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2021 r. nakładem wydawnictwa Fathom Books',
             descriptionEn: 'Collection of interlinked stories forthcoming in 2021 from Fathom Books',
-            language: 'en',
-            pieceTitle: 'Nocturine'
+            language: 'en'
         },
         {
             title: 'Nocturine. Cunninghamella',
@@ -376,8 +374,7 @@ export const PUBLICATIONS = {
             url: 'http://wforma.eu/12,nocturine.-cunninghamella.html',
             descriptionPl: 'Tom prozy opublikowany przez wydawnictwo Forma',
             descriptionEn: 'Volume of fiction published by Forma',
-            language: 'pl',
-            pieceTitle: 'Nocturine. Cunninghamella'
+            language: 'pl'
         }
     ],
 
@@ -389,8 +386,16 @@ export const PUBLICATIONS = {
             url: 'https://splitlipthemag.com/',
             descriptionPl: 'Flash fiction „Vacuoles”',
             descriptionEn: 'Flash fiction “Vacuoles”',
-            language: 'en',
-            pieceTitle: 'Vacuoles'
+            language: 'en'
+        },
+        {
+            title: 'MacroMicroCosm Online',
+            issue: '',
+            year: '2021',
+            url: 'https://www.vraeydamedia.ca/macromicrocosm-online/2021/10/31/vostok-an-excerpt',
+            descriptionPl: 'Fragment powieści „Vostok”',
+            descriptionEn: 'Fragment of the novel “Vostok”',
+            language: 'en'
         },
         {
             title: 'MacroMicroCosm',
@@ -399,8 +404,7 @@ export const PUBLICATIONS = {
             url: 'https://www.magcloud.com/browse/issue/2070527?__r=3020311',
             descriptionPl: 'Fragment powieści „Vostok”',
             descriptionEn: 'Fragment of the novel “Vostok”',
-            language: 'en',
-            pieceTitle: 'Coal and Glitter'
+            language: 'en'
         },
         {
             title: 'HAD',
@@ -409,8 +413,7 @@ export const PUBLICATIONS = {
             url: 'https://www.havehashad.com/hadposts/coal-and-glitter',
             descriptionPl: 'Flash fiction „Coal and Glitter”',
             descriptionEn: 'Flash fiction “Coal and Glitter”',
-            language: 'en',
-            pieceTitle: 'Coal and Glitter'
+            language: 'en'
         },
         {
             title: 'Fractured Lit',
@@ -419,8 +422,7 @@ export const PUBLICATIONS = {
             url: 'https://fracturedlit.com/echoes/',
             descriptionPl: 'Mikroopowiadanie „Echoes”',
             descriptionEn: 'Micro “Echoes”',
-            language: 'en',
-            pieceTitle: 'Echoes'
+            language: 'en'
         },
         {
             title: 'FlashFlood',
@@ -429,8 +431,7 @@ export const PUBLICATIONS = {
             url: 'http://flashfloodjournal.blogspot.com/2020/06/cellulose-by-ukasz-drobnik.html',
             descriptionPl: 'Flash fiction „Cellulose” (utwór pierwotnie opublikowany w Mojave Heart Review)',
             descriptionEn: 'Flash fiction “Cellulose” (originally published in Mojave Heart Review)',
-            language: 'en',
-            pieceTitle: 'Cellulose'
+            language: 'en'
         },
         {
             title: 'Akashic Books',
@@ -439,8 +440,7 @@ export const PUBLICATIONS = {
             url: 'http://www.akashicbooks.com/nameless-by-lukasz-drobnik/',
             descriptionPl: 'Flash fiction „Nameless”',
             descriptionEn: 'Flash fiction “Nameless”',
-            language: 'en',
-            pieceTitle: 'Nameless'
+            language: 'en'
         },
         {
             title: 'BULL',
@@ -449,8 +449,7 @@ export const PUBLICATIONS = {
             url: 'https://www.amazon.com/dp/B0851LL5PL/ref=mp_s_a_1_2?keywords=bull+%239+lit&qid=1582738243&sr=8-2',
             descriptionPl: 'Flash fiction „Riverweed”',
             descriptionEn: 'Flash fiction “Riverweed”',
-            language: 'en',
-            pieceTitle: 'Riverweed'
+            language: 'en'
         },
         {
             title: 'STORGY',
@@ -459,8 +458,7 @@ export const PUBLICATIONS = {
             url: 'https://storgy.com/2020/02/21/deadlines-by-lukasz-drobnik/',
             descriptionPl: 'Flash fiction „Deadlines”',
             descriptionEn: 'Flash fiction “Deadlines”',
-            language: 'en',
-            pieceTitle: 'Deadlines'
+            language: 'en'
         },
         {
             title: 'Tlen Literacki',
@@ -469,8 +467,7 @@ export const PUBLICATIONS = {
             url: 'http://tlenliteracki.pl/lukasz-drobnik-jedno-opowiadanie/',
             descriptionPl: 'Flash fiction „Skarby” (przekład tekstu „Treasures”)',
             descriptionEn: 'Flash fiction “Skarby” (translation of “Treasures”)',
-            language: 'pl',
-            pieceTitle: 'Skarby'
+            language: 'pl'
         },
         {
             title: 'Pithead Chapel',
@@ -479,8 +476,7 @@ export const PUBLICATIONS = {
             url: 'https://pitheadchapel.com/entrails/',
             descriptionPl: 'Flash fiction „Entrails”',
             descriptionEn: 'Flash fiction “Entrails”',
-            language: 'en',
-            pieceTitle: 'Entrails'
+            language: 'en'
         },
         {
             title: 'Atticus Review',
@@ -489,8 +485,7 @@ export const PUBLICATIONS = {
             url: 'https://atticusreview.org/treasures/',
             descriptionPl: 'Flash fiction „Treasures”',
             descriptionEn: 'Flash fiction “Treasures”',
-            language: 'en',
-            pieceTitle: 'Treasures'
+            language: 'en'
         },
         {
             title: 'Foglifter',
@@ -499,8 +494,7 @@ export const PUBLICATIONS = {
             url: 'https://foglifterjournal.com/product/foglifter-journal-volume-4-issue-1/',
             descriptionPl: 'Flash fiction „Landmines”',
             descriptionEn: 'Flash fiction “Landmines”',
-            language: 'en',
-            pieceTitle: 'Landmines'
+            language: 'en'
 
         },
         {
@@ -510,8 +504,7 @@ export const PUBLICATIONS = {
             url: 'http://x-r-a-y.com/spores-lukasz-drobnik/fiction/',
             descriptionPl: 'Flash fiction „Spores”',
             descriptionEn: 'Flash fiction “Spores”',
-            language: 'en',
-            pieceTitle: 'Spores'
+            language: 'en'
         },
         {
             title: 'SHARKPACK Annual',
@@ -520,8 +513,7 @@ export const PUBLICATIONS = {
             url: 'http://fathombooks.org/html/issueone.html',
             descriptionPl: '„8-bit Dreams” (opowiadanie ze zbioru „Nocturine”)',
             descriptionEn: '“8-bit Dreams” (a short story from the collection “Nocturine”)',
-            language: 'en',
-            pieceTitle: '8-bit Dreams'
+            language: 'en'
 
         },
         {
@@ -531,8 +523,7 @@ export const PUBLICATIONS = {
             url: 'http://stonerpolski.pl/celuloza-lukasz-drobnik',
             descriptionPl: 'Flash fiction „Celuloza” (przekład tekstu „Cellulose”)',
             descriptionEn: 'Flash fiction “Celuloza” (translation of “Cellulose”)',
-            language: 'pl',
-            pieceTitle: 'Celuloza'
+            language: 'pl'
         },
         {
             title: 'Underwood',
@@ -541,8 +532,7 @@ export const PUBLICATIONS = {
             url: 'https://underwoodpress.com/inaugural-issue/september-2018/photosensitivity-by-lukasz-drobnik/',
             descriptionPl: 'Opowiadanie „Photosensitivity” (przekład tekstu „Światłoczułość”)',
             descriptionEn: 'Short story “Photosensitivity” (translation of “Światłoczułość”)',
-            language: 'en',
-            pieceTitle: 'Photosensitivity'
+            language: 'en'
         },
         {
             title: 'Mojave Heart Review',
@@ -551,8 +541,7 @@ export const PUBLICATIONS = {
             url: '/texts/cellulose/',
             descriptionPl: 'Flash fiction „Cellulose”',
             descriptionEn: 'Flash fiction “Cellulose”',
-            language: 'en',
-            pieceTitle: 'Cellulose'
+            language: 'en'
         },
         {
             title: 'Afront',
@@ -561,8 +550,7 @@ export const PUBLICATIONS = {
             url: 'https://afront.org.pl/',
             descriptionPl: 'Opowiadanie „Skomplikowane przeczucie” i flash fiction „Waleń” (przekład tekstu „Cetacean”)',
             descriptionEn: 'Short story “Skomplikowane przeczucie” and flash fiction “Waleń” (translation of “Cetacean”)',
-            language: 'pl',
-            pieceTitle: 'Skomplikowane przeczucie'
+            language: 'pl'
         },
         {
             title: 'wydawnictwo j',
@@ -571,8 +559,7 @@ export const PUBLICATIONS = {
             url: 'http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/',
             descriptionPl: 'Fragment powieści „Vostok”',
             descriptionEn: 'Fragment of the novel “Vostok”',
-            language: 'pl',
-            pieceTitle: 'Vostok'
+            language: 'pl'
         },
         {
             title: 'Magazyn Wizje',
@@ -581,8 +568,7 @@ export const PUBLICATIONS = {
             url: 'http://magazynwizje.pl/lukasz-drobnik-swiatloczulosc/',
             descriptionPl: 'Opowiadanie „Światłoczułość”',
             descriptionEn: 'Short story “Światłoczułość”',
-            language: 'pl',
-            pieceTitle: 'Światłoczułość'
+            language: 'pl'
 
         },
         {
@@ -592,8 +578,7 @@ export const PUBLICATIONS = {
             url: 'https://www.quarterlywest.com/issue-94/cetacean',
             descriptionPl: 'Flash fiction „Cetacean”',
             descriptionEn: 'Flash fiction “Cetacean”',
-            language: 'en',
-            pieceTitle: 'Cetacean'
+            language: 'en'
         },
         {
             title: 'Obszary Przepisane',
@@ -602,8 +587,7 @@ export const PUBLICATIONS = {
             url: 'http://obszaryprzepisane.com/wp-content/uploads/2018/04/05op-1.pdf',
             descriptionPl: 'Flash fiction „Żywioły” (przekład tekstu „Elements”)',
             descriptionEn: 'Flash fiction “Żywioły” (translation of “Elements”)',
-            language: 'pl',
-            pieceTitle: 'Żywioły'
+            language: 'pl'
         },
         {
             title: 'The Chaffin Journal',
@@ -612,8 +596,7 @@ export const PUBLICATIONS = {
             url: 'https://english.eku.edu/chaffin-journal',
             descriptionPl: 'Flash fiction „Elements”',
             descriptionEn: 'Flash fiction “Elements”',
-            language: 'en',
-            pieceTitle: 'Elements'
+            language: 'en'
         },
         {
             title: 'Inter-',
@@ -622,8 +605,7 @@ export const PUBLICATIONS = {
             url: 'https://pismointer.wordpress.com/numery-archiwalne/nr-216-2018/lukasz-drobnik-dewon/',
             descriptionPl: 'Flash fiction „Dewon” (przekład tekstu „Devonian”)',
             descriptionEn: 'Flash fiction “Dewon” (translation of “Devonian”)',
-            language: 'pl',
-            pieceTitle: 'Dewon'
+            language: 'pl'
         },
         {
             title: 'Helikopter',
@@ -632,8 +614,7 @@ export const PUBLICATIONS = {
             url: 'https://opt-art.net/helikopter/3-2018/lukasz-drobnik-drony/',
             descriptionPl: 'Flash fiction „Drony” (przekład tekstu „Drones”)',
             descriptionEn: 'Flash fiction “Drony” (translation of “Drones”)',
-            language: 'pl',
-            pieceTitle: 'Drony'
+            language: 'pl'
         },
         {
             title: 'Cartridge Lit',
@@ -642,8 +623,7 @@ export const PUBLICATIONS = {
             url: 'https://cartridgelit.com/2018/02/14/montezumas-revenge/',
             descriptionPl: 'Opowiadanie „montezuma’s revenge”',
             descriptionEn: 'Short story “montezuma’s revenge”',
-            language: 'en',
-            pieceTitle: 'montezuma’s revenge'
+            language: 'en'
         },
         {
             title: 'The Write Launch',
@@ -652,8 +632,7 @@ export const PUBLICATIONS = {
             url: 'https://thewritelaunch.com/2018/01/heart-mighty-power/',
             descriptionPl: '„Heart Mighty Power” (opowiadanie ze zbioru „Nocturine”)',
             descriptionEn: '“Heart Mighty Power” (a short story from the collection “Nocturine”)',
-            language: 'en',
-            pieceTitle: 'Heart Mighty Power'
+            language: 'en'
         },
         {
             title: 'The Gravity of the Thing',
@@ -662,8 +641,7 @@ export const PUBLICATIONS = {
             url: 'http://thegravityofthething.com/devonian-lukasz-drobnik/',
             descriptionPl: 'Flash fiction „Devonian”',
             descriptionEn: 'Flash fiction “Devonian”',
-            language: 'en',
-            pieceTitle: 'Devonian'
+            language: 'en'
         },
         {
             title: 'Bare Fiction',
@@ -672,8 +650,7 @@ export const PUBLICATIONS = {
             url: 'http://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/',
             descriptionPl: 'Flash fiction „Drones”',
             descriptionEn: 'Flash fiction “Drones”',
-            language: 'en',
-            pieceTitle: 'Drones'
+            language: 'en'
         },
 
         {
@@ -683,8 +660,7 @@ export const PUBLICATIONS = {
             url: 'https://issuu.com/fabularie/docs/fabularie-nr10_issuu_ok',
             descriptionPl: 'Flash fiction „Ćmy” (przekład tekstu „Moths”)',
             descriptionEn: 'Flash fiction “Ćmy” (translation of “Moths”)',
-            language: 'pl',
-            pieceTitle: 'Ćmy'
+            language: 'pl'
         },
         {
             title: 'Wyspa',
@@ -693,8 +669,7 @@ export const PUBLICATIONS = {
             url: 'http://kwartalnikwyspa.pl/category/numer-2015suplement/',
             descriptionPl: 'Opowiadanie „Wszystkożerność”',
             descriptionEn: 'Short story “Wszystkożerność”',
-            language: 'pl',
-            pieceTitle: 'Wszystkożerność'
+            language: 'pl'
         },
         {
             title: 'Lighthouse',
@@ -703,8 +678,7 @@ export const PUBLICATIONS = {
             url: 'http://www.gatehousepress.com/lighthouse/',
             descriptionPl: 'Flash fiction „Moths”',
             descriptionEn: 'Flash fiction “Moths”',
-            language: 'en',
-            pieceTitle: 'Moths'
+            language: 'en'
         },
         {
             title: 'Lampa',
@@ -713,8 +687,7 @@ export const PUBLICATIONS = {
             url: 'http://lampa.art.pl/',
             descriptionPl: 'Początkowe rozdziały powieści „Vostok”',
             descriptionEn: 'Initial chapters of the novel “Vostok”',
-            language: 'pl',
-            pieceTitle: 'Vostok'
+            language: 'pl'
         },
         {
             title: 'Dodatek Literacki',
@@ -723,8 +696,7 @@ export const PUBLICATIONS = {
             url: 'http://nagrodaliterackagdynia.pl/sites/default/files/upload/dodatek-nr-9.pdf',
             descriptionPl: 'Wyjątek ze zbioru „Nocturine”',
             descriptionEn: 'Excerpt from the collection “Nocturine”',
-            language: 'pl',
-            pieceTitle: 'Nocturine'
+            language: 'pl'
         },
         {
             title: 'Dwutygodnik.com',
@@ -733,8 +705,7 @@ export const PUBLICATIONS = {
             url: 'https://www.dwutygodnik.com/artykul/2252-nocturine-fragment-powiesci.html',
             descriptionPl: 'Wyjątek ze zbioru „Nocturine”',
             descriptionEn: 'Excerpt from the collection “Nocturine”',
-            language: 'pl',
-            pieceTitle: 'Nocturine'
+            language: 'pl'
         },
         {
             title: 'Latarnia Morska',
@@ -743,8 +714,7 @@ export const PUBLICATIONS = {
             url: 'http://www.latarnia-morska.eu/pl/proza/513-nocturine',
             descriptionPl: 'Wyjątek ze zbioru „Nocturine”',
             descriptionEn: 'Excerpt from the collection “Nocturine”',
-            language: 'pl',
-            pieceTitle: 'Nocturine'
+            language: 'pl'
         },
         {
             title: 'Pro Arte online 3',
@@ -753,8 +723,7 @@ export const PUBLICATIONS = {
             url: 'http://proarte.net.pl',
             descriptionPl: 'Opowiadanie „ośmiobitowe sny”',
             descriptionEn: 'Short story “ośmiobitowe sny”',
-            language: 'pl',
-            pieceTitle: 'ośmiobitowe sny'
+            language: 'pl'
         },
         {
             title: 'Rita Baum',
@@ -763,8 +732,7 @@ export const PUBLICATIONS = {
             url: 'https://issuu.com/ritabaumwroclaw/docs/10',
             descriptionPl: 'Opowiadanie „Rozbieranie do snu”',
             descriptionEn: 'Short story “Rozbieranie do snu”',
-            language: 'pl',
-            pieceTitle: 'Rozbieranie do snu'
+            language: 'pl'
         },
         {
             title: 'Lampa',
@@ -773,8 +741,7 @@ export const PUBLICATIONS = {
             url: 'http://lampa.art.pl/',
             descriptionPl: 'Opowiadanie „astroskopia”',
             descriptionEn: 'Short story “astroskopia”',
-            language: 'pl',
-            pieceTitle: 'Astroskopia'
+            language: 'pl'
         }
     ],
 
@@ -786,8 +753,7 @@ export const PUBLICATIONS = {
             url: 'http://thegravityofthething.com/submit/',
             descriptionPl: 'Flash fiction „Phagocytosis” w antologii przygotowywanej przez pismo The Gravity of the Thing',
             descriptionEn: 'Flash fiction “Phagocytosis” in an anthology forthcoming from The Gravity of the Thing',
-            language: 'en',
-            pieceTitle: 'Phagocytosis'
+            language: 'en'
         },
         {
             title: '2020. Antologia współczesnych polskich opowiadań',
@@ -795,8 +761,7 @@ export const PUBLICATIONS = {
             url: 'http://www.wforma.eu/2020-antologia-wspolczesnych-polskich-opowiadan.html',
             descriptionPl: 'Zbiór opowiadań z moim tekstem „Niech nastanie Wisła” (Forma)',
             descriptionEn: 'Short story collection featuring my piece “Niech nastanie Wisła” (Forma)',
-            language: 'pl',
-            pieceTitle: 'Niech nastanie Wisła'
+            language: 'pl'
         },
         {
             title: 'Transformation Anthology',
@@ -804,8 +769,7 @@ export const PUBLICATIONS = {
             url: 'http://theselkie.co.uk/anthology/',
             descriptionPl: 'Flash fiction „Airborne” w antologii opublikowanej przez magazyn The Selkie',
             descriptionEn: 'Flash fiction “Airborne” in an anthology published by The Selkie',
-            language: 'en',
-            pieceTitle: 'Airborne'
+            language: 'en'
         },
         {
             title: '2017. Antologia współczesnych polskich opowiadań',
@@ -813,8 +777,7 @@ export const PUBLICATIONS = {
             url: 'http://www.wforma.eu/2017-antologia-wspolczesnych-polskich-opowiadan.html',
             descriptionPl: 'Zbiór opowiadań z moim tekstem „Jeśli zapłonę” (Forma)',
             descriptionEn: 'Short story collection featuring my piece “Jeśli zapłonę” (Forma)',
-            language: 'pl',
-            pieceTitle: 'Jeśli zapłonę'
+            language: 'pl'
         },
         {
             title: '2014. Antologia współczesnych polskich opowiadań',
@@ -822,8 +785,7 @@ export const PUBLICATIONS = {
             url: 'http://www.wforma.eu/318,2014-antologia-wspolczesnych-polskich-opowiadan.html',
             descriptionPl: 'Zbiór opowiadań z moim tekstem „Biegnący człowiek” (Forma)',
             descriptionEn: 'Short story collection featuring my piece “Biegnący człowiek” (Forma)',
-            language: 'pl',
-            pieceTitle: 'Biegnący człowiek'
+            language: 'pl'
         }
     ]
 
