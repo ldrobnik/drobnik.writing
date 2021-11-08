@@ -1024,7 +1024,11 @@ export const BOOKS = [
             en: [
                 {
                     quote: <div>One of the most imaginative novels I’ve read (…) The right mix of experimental, multi-formic prose and a world built beyond the bizarre as one keeps reading.</div>,
-                    source: 'Sapha Burnell, author of NEON Lieben, Usurper Kings, Son of Abel'
+                    source: 'Sapha Burnell, author of NEON Lieben'
+                },
+                {
+                    quote: <div>If you are looking for (…) a mystery that builds page to page with a revealing crescendo that washes over you helplessly, then <em>Vostok</em> is the novel for you.</div>,
+                    source: 'R.L. Arenz III, author of Aegis'
                 },
                 {
                     quote: <div><em>Vostok</em>’s prose is of a singular beauty and purity. I cannot stop diving back
@@ -1038,8 +1042,11 @@ export const BOOKS = [
                     source: 'Sapha Burnell, autorka książek NEON Lieben, Usurper Kings, Son of Abel'
                 },
                 {
-                    quote: <div><em>Vostok</em> to proza o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę
-                        przestać do niej wracać.</div>,
+                    quote: <div>Jeśli szukasz (…) kryminału, który strona po stronie buduje tajemnicę, by ją rozwiązać w spadającym znienacka crescendo, <em>Vostok</em> jest powieścią dla ciebie.</div>,
+                    source: 'R.L. Arenz III, autor powieści Aegis'
+                },
+                {
+                    quote: <div><em>Vostok</em> to proza o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę przestać do niej wracać.</div>,
                     source: 'VRÆYDA LITERARY, wydawca'
                 }
             ]
