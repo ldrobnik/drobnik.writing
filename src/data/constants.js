@@ -380,6 +380,15 @@ export const PUBLICATIONS = {
 
     press: [
         {
+            title: 'Zakład Magazyn',
+            issue: '2',
+            year: '',
+            url: 'https://www.zakladmagazyn.pl/',
+            descriptionPl: 'Flash fiction „Dedlajny” (przekład tekstu „Deadlines”)',
+            descriptionEn: 'Flash fiction “Dedlajny” (translation of “Deadlines”)',
+            language: 'pl'
+        },
+        {
             title: 'Split Lip Magazine',
             issue: '',
             year: '',
