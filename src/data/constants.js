@@ -1584,6 +1584,11 @@ export const BLOG_CATEGORIES = {
 //Content of quick links (to be used on Instagram)
 export const LINKS = [
     {
+        title: 'VOSTOK Launch',
+        subtitle: 'livestream novel launch party',
+        url: 'https://www.vraeydamedia.ca/events/2021/12/5/novel-launch-vostok-by-ukasz-drobnik'
+    },
+    {
         title: 'Pre-order VOSTOK',
         subtitle: 'from Vræyda Literary',
         url: VOSTOK_URL
