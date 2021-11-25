@@ -1638,11 +1638,11 @@ export const LINKS = [
     //     subtitle: 'in FlashFlood',
     //     url: 'http://flashfloodjournal.blogspot.com/2020/06/cellulose-by-ukasz-drobnik.html'
     // },
-    {
-        title: 'Buy me a coffee',
-        subtitle: 'please consider supporting me on Ko-fi',
-        url: KO_FI_URL
-    },
+    // {
+    //     title: 'Buy me a coffee',
+    //     subtitle: 'please consider supporting me on Ko-fi',
+    //     url: KO_FI_URL
+    // },
     {
         title: 'My official website',
         subtitle: 'drobnik.co',
