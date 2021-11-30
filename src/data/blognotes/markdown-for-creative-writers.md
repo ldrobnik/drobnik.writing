@@ -72,7 +72,7 @@ What’s ground-breaking about Typora’s design is that it gets rid of the prev
 
 <sup>Dynamic text preview in Typora</sup>
 
-**Note:** The current, beta version of Typora is free but—according to the official website—the software will finally cost $9–15 per licence.
+Note that Typora is a commercial product. The software costs $14.99 per licence and comes with a 15-day free trial.
 
 ## Converting Markdown to rich text
 
