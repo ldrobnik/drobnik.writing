@@ -1498,7 +1498,7 @@ export const ALL_BLOG_NOTES = [
         related: ['grounding-the-otherworldly', 'polish-alexandrine', 'adjusting-the-slavness-dial'],
         imageCredits: {
             description: '',
-            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
+            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the middle, the title and author’s name in a black, geometric font.'
         }
     },
     {
@@ -1511,7 +1511,7 @@ export const ALL_BLOG_NOTES = [
         related: ['grounding-the-otherworldly', 'polish-alexandrine', 'the-exotic-familiar'],
         imageCredits: {
             description: '',
-            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
+            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the middle, the title and author’s name in a black, geometric font.'
         }
     },
     {
@@ -1524,7 +1524,7 @@ export const ALL_BLOG_NOTES = [
         related: ['grounding-the-otherworldly', 'the-exotic-familiar', 'adjusting-the-slavness-dial'],
         imageCredits: {
             description: '',
-            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
+            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the middle, the title and author’s name in a black, geometric font.'
         }
     },
     {
@@ -1537,7 +1537,20 @@ export const ALL_BLOG_NOTES = [
         related: ['polish-alexandrine', 'the-exotic-familiar'],
         imageCredits: {
             description: '',
-            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the middle, the title and author’s name in a black, geometric font.'
+            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the middle, the title and author’s name in a black, geometric font.'
+        }
+    },
+    {
+        id: 'vostok-excerpt',
+        title: 'Vostok: An Excerpt',
+        draft: false,
+        date: ['2021', '30', '11'],
+        category: 'vostok',
+        sameImgForCategory: true,
+        related: ['markdown-for-creative-writers', 'quick-guide-to-markdown'],
+        imageCredits: {
+            description: '',
+            alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the middle, the title and author’s name in a black, geometric font.'
         }
     },
     {
@@ -1545,7 +1558,7 @@ export const ALL_BLOG_NOTES = [
         title: 'Markdown for Creative Writers',
         date: ['2021', '08', '25'],
         category: 'writing',
-        related: ['quick-guide-to-markdown'],
+        related: ['quick-guide-to-markdown', 'vostok-excerpt'],
         imageCredits: {
             description: '',
             alt: 'A text editor with the beginning of Woolfs’s Mrs. Dalloway written in Markdown'
@@ -1557,7 +1570,7 @@ export const ALL_BLOG_NOTES = [
         title: 'Quick Guide to Markdown',
         date: ['2021', '08', '25'],
         category: 'code',
-        related: ['markdown-for-creative-writers'],
+        related: ['markdown-for-creative-writers', 'vostok-excerpt'],
         imageCredits: {
             description: '',
             alt: 'A text editor showing basics Markdown syntax, such as headings and lists, and its preview'
@@ -1572,9 +1585,9 @@ export const BLOG_NOTES = ALL_BLOG_NOTES.filter(blognote => !blognote.draft);
 
 //Titles of blog note categories
 export const BLOG_CATEGORIES = {
-    writing: 'The Tech of Writing',
     nocturine: 'Notes on Nocturine',
     vostok: 'Vostok as a Book',
+    writing: 'The Tech of Writing',
     code: 'Code the Pain Away',
     biology: 'Biology Porn',
     pop: 'This Is How We Pop',
