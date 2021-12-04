@@ -1199,16 +1199,14 @@ export const WEBSITE_TEXT_ABOUT = {
                 <p>I’m a Polish writer writing mostly in English. My favourite pastime is taking literary fiction and
                     blending it with other genres, and I’m a huge flash fiction fan (though I don’t shy away from
                     longer forms). I live in Kraków, Poland.</p>
-                <p>I have two genre-bending books coming out this year: a collection of interlinked stories <AnchorLink
-                    href='#nocturine'
-                    offset="60px"><strong>NOCTURINE</strong></AnchorLink> to
-                    be published by <a href={NOCTURINE_URL} target="_blank"
-                                       rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>,
-                    and a novel <AnchorLink
+                <p>I’ve written two genre-bending books: a novel <AnchorLink
                         href='#vostok'
-                        offset="60px"><strong>VOSTOK</strong></AnchorLink> forthcoming from <a
+                        offset="60px"><strong>VOSTOK</strong></AnchorLink> published by <a
                         href={VOSTOK_URL} target="_blank"
-                        rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>.</p>
+                        rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a> and a collection of interlinked stories <AnchorLink
+                    href='#nocturine'
+                    offset="60px"><strong>NOCTURINE</strong></AnchorLink> forthcoming from <a href={NOCTURINE_URL} target="_blank"
+                                       rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.</p>
                 <p>My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly West</em>, <em>Pithead
                     Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X&#8209;R&#8209;A&#8209;Y
@@ -1232,17 +1230,16 @@ export const WEBSITE_TEXT_ABOUT = {
                     wysokoartystyczną
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków. Do tego jestem ogromnym fanem <em>flash
                         fiction</em> (nie stronię jednak od dłuższych form). Mieszkam w Krakowie.</p>
-                <p>W&nbsp;tym roku ukażą się moje dwie gatunkowo niepokorne książki: zbiór powiązanych fabularnie
+                <p>Napisałem dwie gatunkowo niepokorne książki: powieść <AnchorLink
+                        href='#vostok'
+                        offset="60px"><strong>VOSTOK</strong></AnchorLink> opublikowaną przez wydawnictwo <a
+                        href={VOSTOK_URL} target="_blank"
+                        rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a> i&nbsp;zbiór powiązanych fabularnie
                     opowiadań <AnchorLink
                         href='#nocturine'
-                        offset="60px"><strong>NOCTURINE</strong></AnchorLink> (wydawnictwo <a href={NOCTURINE_URL}
+                        offset="60px"><strong>NOCTURINE</strong></AnchorLink>, który ukaże się nakładem wydawnictwa <a href={NOCTURINE_URL}
                                                                                               target="_blank"
-                                                                                              rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>)
-                    i&nbsp;powieść <AnchorLink
-                        href='#vostok'
-                        offset="60px"><strong>VOSTOK</strong></AnchorLink> (wydawnictwo <a
-                        href={VOSTOK_URL} target="_blank"
-                        rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>).</p>
+                                                                                              rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.</p>
                 <p>Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly
                     West</em>, <em>Pithead
