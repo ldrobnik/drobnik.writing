@@ -336,6 +336,18 @@ export const BlogNote = props => {
                                                     marginRight: 'auto'
                                                 }
                                             }
+                                        },
+                                        br: {
+                                            component: BlogSeparator,
+                                            props: {
+                                                className: 'colouredBackground'
+                                            }
+                                        },
+                                        hr: {
+                                            component: SectionSeparator,
+                                            props: {
+                                                className: 'colouredBackground'
+                                            }
                                         }
                                     },
                                 }}

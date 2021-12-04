@@ -1544,7 +1544,7 @@ export const ALL_BLOG_NOTES = [
         id: 'vostok-excerpts',
         title: 'Vostok: Excerpts',
         draft: false,
-        date: ['2021', '30', '11'],
+        date: ['2021', '12', '04'],
         category: 'vostok',
         sameImgForCategory: true,
         related: ['markdown-for-creative-writers', 'quick-guide-to-markdown'],

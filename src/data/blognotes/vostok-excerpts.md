@@ -70,7 +70,7 @@ The three of them walked along the white Freedom Square, next to many-branched p
 
 They reached St Adalbert Street and stopped by one of the buildings. Weronika thanked Wu for walking her home, kissed him on the cheek and disappeared into a dark doorway. He, on the other hand, began to slowly walk towards a petrol station and farther – along Little Garbary Street.
 
-***
+<hr/>
 
 A tram number 9 derailed in the district of Wilda, hitting cars.
 
@@ -157,7 +157,7 @@ The reddish light revealed a mouth gagged with a decent-sized lemon, blue, ghast
 [<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
 
-***
+<hr/>
 
 Small glowing pink rectangles, I can see them whenever I close my eyes. The navy-blue sky over Międzymoście Square, the white clouds below the sky, the grey gulls, guarded car parks. Frost like small daggers plunged into my body. Once again we walk towards the river, neck in front of the off-licence. Once again the scratching of his stubble, pink rectangles, something about Venus, about Ceres. Chwaliszewo Street, the lamppost like a strobe light. Czartoria Street, we walk down the ice-covered embankment.
 
