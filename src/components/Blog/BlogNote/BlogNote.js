@@ -19,6 +19,7 @@ import {
     BlogPost,
     BlogWrapper,
     BlogSeparator,
+    BlogBigSeparator,
     BlogNoteReadMore,
     BlogNoteBio
 } from '../../../styles/blog';
@@ -344,7 +345,7 @@ export const BlogNote = props => {
                                             }
                                         },
                                         hr: {
-                                            component: SectionSeparator,
+                                            component: BlogBigSeparator,
                                             props: {
                                                 className: 'colouredBackground'
                                             }

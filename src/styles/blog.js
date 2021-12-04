@@ -404,6 +404,13 @@ export const BlogSeparator = styled.div`
   width: 6em;
 `;
 
+export const BlogBigSeparator = styled.div`
+  margin: 6em auto;
+  height: 0.8em;
+  width: 15em;
+  background-color: ${props => props.theme.darkColor};
+`;
+
 /* FilteredCategory.js */
 
 export const FilteredCategoryWrapper = styled.div`
