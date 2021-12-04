@@ -1541,8 +1541,8 @@ export const ALL_BLOG_NOTES = [
         }
     },
     {
-        id: 'vostok-excerpt',
-        title: 'Vostok: An Excerpt',
+        id: 'vostok-excerpts',
+        title: 'Vostok: Excerpts',
         draft: false,
         date: ['2021', '30', '11'],
         category: 'vostok',
@@ -1558,7 +1558,7 @@ export const ALL_BLOG_NOTES = [
         title: 'Markdown for Creative Writers',
         date: ['2021', '08', '25'],
         category: 'writing',
-        related: ['quick-guide-to-markdown', 'vostok-excerpt'],
+        related: ['quick-guide-to-markdown', 'vostok-excerpts'],
         imageCredits: {
             description: '',
             alt: 'A text editor with the beginning of Woolfs’s Mrs. Dalloway written in Markdown'
@@ -1570,7 +1570,7 @@ export const ALL_BLOG_NOTES = [
         title: 'Quick Guide to Markdown',
         date: ['2021', '08', '25'],
         category: 'code',
-        related: ['markdown-for-creative-writers', 'vostok-excerpt'],
+        related: ['markdown-for-creative-writers', 'vostok-excerpts'],
         imageCredits: {
             description: '',
             alt: 'A text editor showing basics Markdown syntax, such as headings and lists, and its preview'
