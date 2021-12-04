@@ -16,7 +16,7 @@ The pub was slowly filling up. Each time the door to the street opened, a pierci
 
 Wu smiled, put out his cigarette, kissed Weronika on the forehead and rose from the table. She followed him with her eyes as he stepped deeper into the pub, and then looked with yearning at his almost two-metre-high body leaning against the counter while he chatted with the bartender he apparently knew.
 
-When he came back, she was sitting on the couch, snuggled into its corner, shrouded in a greenish glow beaming from her phone texting someone obstinately. Once she noticed Wu, she took her legs off the seat, leaning over the phone and pressing the buttons for a while longer. Wu asked whether it was Jerzy, and Weronika replied yes, she was sorry and – after some hesitation – it seemed Jerzy and she got together again.
+When he came back, she was sitting on the couch, snuggled into its corner, shrouded in a greenish glow beaming from her phone texting someone obstinately. Once she noticed Wu, she took her legs off the seat, leaning over the phone and pressing the buttons for a while longer. Wu asked whether it was Jerzy, and Weronika replied yes, she was sorry and — after some hesitation — it seemed Jerzy and she got together again.
 
 In response to her friend’s judgemental look, she whined it’s not that she was planning it, it just happened, and took the first sip. Wu sat down, wetted his lips with beer, pushed the glass away and tossed into the dusky room a rhetorical question,
 
@@ -26,13 +26,13 @@ In response to her friend’s judgemental look, she whined it’s not that she w
 
 He lit a cigarette and inhaled the smoke. Weronika texted for a while until she sighed, put her phone down and suggested maybe at least the two of them would stop arguing about it. Anyway, she’s giving it two weeks until, in this series of break-ups and make-ups, Jerzy and she will end up where they started. He gave a conciliatory smile, kissed her on the temple and wrapped his arm around her shoulder only to withdraw it a moment later.
 
-They sat for a while, saying nothing against the background of the wall painted in stripes of different shades of green, with black-and-white artwork above their heads. Weronika smoked as well, pulled up her legs, and they stayed almost motionless for a good few minutes, staring into the void and releasing from their lungs occasional clouds of grey smoke. Finally, the thick curtain over the doorway opened, letting inside – in the company of a cold waft from the street – a woman of around forty.
+They sat for a while, saying nothing against the background of the wall painted in stripes of different shades of green, with black-and-white artwork above their heads. Weronika smoked as well, pulled up her legs, and they stayed almost motionless for a good few minutes, staring into the void and releasing from their lungs occasional clouds of grey smoke. Finally, the thick curtain over the doorway opened, letting inside — in the company of a cold waft from the street — a woman of around forty.
 
 ‘Olka!’ On seeing her, Weronika shrieked, jumped to her feet and ran towards the door to throw herself into the woman’s arms.
 
 The forty-year-old found the time to say hello to some friend at one of the tables before she headed deeper into this colourful, half-greenish, half-reddish tunnel, which was indeed formed by the interior of Kisielice, and went to the bar.
 
-She came back to the table holding three beers, put them in front of her friends, then laughed, ran her hand through dyed blond curls, tucked a tuft behind her ear, smoked and sat down. Having taken off her warm white jacket, she hung it on the back of the chair and – visibly amused for all this time – said this thing with the attack was some deep shit, there might be more at any moment.
+She came back to the table holding three beers, put them in front of her friends, then laughed, ran her hand through dyed blond curls, tucked a tuft behind her ear, smoked and sat down. Having taken off her warm white jacket, she hung it on the back of the chair and — visibly amused for all this time — said this thing with the attack was some deep shit, there might be more at any moment.
 
 ‘Stop it. I’m fed up with discussing this topic over and over.’
 
@@ -54,7 +54,7 @@ Wu told her to forget it, he didn’t have time lately and, frankly, no longer l
 
 Weronika remarked with a sneer he would’ve had more free time if he hadn’t wandered from pub to pub every night, which Wu answered with a humorous ‘spierdalaj’ only to put out the cigarette and announce he needed to take a leak.
 
-Once he disappeared behind the curtain, Weronika started talking about how insanely wasted she got the night before, totally blotto; she didn’t remember much: the voices of drunken people, the smell of kebabs, the bright car lights, the piercing frost. She met some guy – in Dragon, or earlier, in Kisielice – and the two of them walked somewhere across the market square towards Garbary Street, maybe to Mięsna cos where else could they’ve gone. When she woke up, she couldn’t remember anything else, except for the image of small glowing pink rectangles she still has before her eyes. She’s got no idea what to connect it with.
+Once he disappeared behind the curtain, Weronika started talking about how insanely wasted she got the night before, totally blotto; she didn’t remember much: the voices of drunken people, the smell of kebabs, the bright car lights, the piercing frost. She met some guy — in Dragon, or earlier, in Kisielice — and the two of them walked somewhere across the market square towards Garbary Street, maybe to Mięsna cos where else could they’ve gone. When she woke up, she couldn’t remember anything else, except for the image of small glowing pink rectangles she still has before her eyes. She’s got no idea what to connect it with.
 
 ‘Brilliant!’ Olka laughed and added Weronika must take better care of herself, after which she took out a rustling fifty-zloty note and handed it to Wu, who came back from the toilet, asking him to buy another round.
 
@@ -68,13 +68,13 @@ The three of them walked along the white Freedom Square, next to many-branched p
 
 ‘Probably a fifteen-year-old,’ said Wu, and Weronika, laughing, tightened her grip around his waist. Olka once told her she hadn’t the slightest intention of ever being in a relationship again, when she recovered from depression after her husband’s death, she decided that from now on she’d count only on herself and it was like being born anew. Weronika envies her. She herself can’t last a month without a guy before all her neuroses start to strike down.
 
-They reached St Adalbert Street and stopped by one of the buildings. Weronika thanked Wu for walking her home, kissed him on the cheek and disappeared into a dark doorway. He, on the other hand, began to slowly walk towards a petrol station and farther – along Little Garbary Street.
+They reached St Adalbert Street and stopped by one of the buildings. Weronika thanked Wu for walking her home, kissed him on the cheek and disappeared into a dark doorway. He, on the other hand, began to slowly walk towards a petrol station and farther — along Little Garbary Street.
 
 <hr/>
 
 A tram number 9 derailed in the district of Wilda, hitting cars.
 
-Meanwhile, in a completely different part of the city, along the PST (Poznań Fast Tram) line, on tracks laid down in a long deep trench, which – full of snow – formed a completely white tunnel, a two-cabin tram number 16 hurtled along like a bullet. People were crowding inside, the cabins fishtailed at sharper turns, and each time it happened, a sudden wave came through the passengers clinging to yellow tubes and the backs of seats, from the front to the end of each cabin, making them for a moment like one organism.
+Meanwhile, in a completely different part of the city, along the PST (Poznań Fast Tram) line, on tracks laid down in a long deep trench, which — full of snow — formed a completely white tunnel, a two-cabin tram number 16 hurtled along like a bullet. People were crowding inside, the cabins fishtailed at sharper turns, and each time it happened, a sudden wave came through the passengers clinging to yellow tubes and the backs of seats, from the front to the end of each cabin, making them for a moment like one organism.
 
 At the end of the second cabin, leaning against railings and staring outside a dirty pane, stood Weronika (in a red jacket) and some other woman, probably a bit younger: wearing a black coat, black boots, thick vivid orange tights, wrapped in a black scarf onto which her straight dark brown hair was falling. She tucked a tuft of it behind her ear. Weronika and the girl didn’t talk, the deafening clatter of the wheels on the rails being a possible reason, and glanced at each other only now and then, for the most part staring absent-mindedly at tracks flashing outside the window. The view behind the panes made up the following sequence: the whiteness of snow, the greyness of concrete (Słowiańska Street Station), the whiteness of snow, the greyness of concrete (Solidarity Avenue Station), and then the whiteness of snow again.
 
@@ -104,7 +104,7 @@ They talked for a while, the man decided to have a smoke as well, Weronika and Z
 
 Kuba replied he’d think about it cos he was working on some ‘friend’, as he called her, but he can just as well work on her at Wu’s, after which he said he must be going cos it was his tram, but he’ll let them know.
 
-The girls finished off their cigarettes, put them out against the edge of the bench, lifted their bags heavy with wine, bread, vegetables, cephalopods, headed towards a zebra crossing and – after several minutes at a red light – kept going along Estkowski Street for a bit. They carefully walked down an ice-covered escarpment to where the Warta River once flowed but now it was a sports field and a row of parking spaces, crossed this field, carried on among cars parked in the snow, went past a row of tin garages (black-and-white graffiti on the walls) and walked further, towards Chwaliszewo Street.
+The girls finished off their cigarettes, put them out against the edge of the bench, lifted their bags heavy with wine, bread, vegetables, cephalopods, headed towards a zebra crossing and — after several minutes at a red light — kept going along Estkowski Street for a bit. They carefully walked down an ice-covered escarpment to where the Warta River once flowed but now it was a sports field and a row of parking spaces, crossed this field, carried on among cars parked in the snow, went past a row of tin garages (black-and-white graffiti on the walls) and walked further, towards Chwaliszewo Street.
 
 <br/>
 
@@ -116,7 +116,7 @@ The three of them drank red wine, cigarette ends lit up above the table. Weronik
 
 Wu sighed and started chastening Weronika, saying she needed to take care of herself cos she was really going over the top this time and it couldn’t fucking end well, when loud ringing of the door phone interrupted him.
 
-Wu disappeared into the entrance hall, a cold draught from the staircase entered the kitchen, one could hear – in spite of the blaring music – increasingly loud steps on the stairs, and a moment later Olka came in, uttering a cheerful ‘cześć’ and followed by Wu carrying an armful of wine bottles.
+Wu disappeared into the entrance hall, a cold draught from the staircase entered the kitchen, one could hear — in spite of the blaring music — increasingly loud steps on the stairs, and a moment later Olka came in, uttering a cheerful ‘cześć’ and followed by Wu carrying an armful of wine bottles.
 
 She forced her way through the grey smoke to kiss Weronika and Zuza, declared she came only for a minute cos she needed to go to sleep at a reasonable hour, but she’d love to taste the legendary squid. Then she took a cigarette in her hand and began to look for a lighter. Weronika lifted a burning match in front of Olka’s face. Kuba was supposed to be here, but he’s working on some chick, so it’s anyone’s guess if he’s going to come.
 
@@ -128,7 +128,7 @@ Finally, he gave up, played a random track, leant against the wall and said thos
 
 Could Weronika, please, relax with a glass of wine on her day off without being forced to hearing about those fuckers all the time? (For a while, she squatted on a leatherette chair with her glass, giving an occasional eye roll.)
 
-‘You’re fucking lucky you’ve got a day off,’ retorted Zuza, who – as she quickly added – didn’t have a day off in three weeks because her greed made her take on another translation, though her schedule was already full, and to top this all off, Weronika was dragging her round the shops and talked her into cooking some, kurwa, squid, as if she knew how to cook.
+‘You’re fucking lucky you’ve got a day off,’ retorted Zuza, who — as she quickly added — didn’t have a day off in three weeks because her greed made her take on another translation, though her schedule was already full, and to top this all off, Weronika was dragging her round the shops and talked her into cooking some, kurwa, squid, as if she knew how to cook.
 
 ‘Oh, have a drink.’ Weronika laughed, filling up Zuza’s glass.
 
@@ -140,7 +140,7 @@ The events of the rest of this evening could be captured in stills: Wu leaning a
 
 A heavy dark sky hung above the city, it was night, Poznań’s blocks of flats and tenement houses remained dormant, car parks choked on freezing air, lampposts cast a lurid light, snow lay heavy on the roofs, and a strong, piercing wind ran along the network of streets; it carried frost.
 
-In light from the street you could see unfocused outlines of the furniture and cardboard boxes, crumpled bedding, Wu tossing and turning. You could smell the pungent scent of tobacco smoke. Hear the muffled voices of brawling chavs. Finally, Wu sighed, got up from the bed, walked through the darkness of the entrance hall to the darkness of the kitchen, groped for the switch, pushed it, and when in spite of this it remained dark, he silently cursed the blown-out bulb. He felt around the worktop to find a bottle of mineral water and started to drink – with fast, greedy gulps.
+In light from the street you could see unfocused outlines of the furniture and cardboard boxes, crumpled bedding, Wu tossing and turning. You could smell the pungent scent of tobacco smoke. Hear the muffled voices of brawling chavs. Finally, Wu sighed, got up from the bed, walked through the darkness of the entrance hall to the darkness of the kitchen, groped for the switch, pushed it, and when in spite of this it remained dark, he silently cursed the blown-out bulb. He felt around the worktop to find a bottle of mineral water and started to drink — with fast, greedy gulps.
 
 Twenty minutes later he already walked along Garbary Street, there was no one within the range of his sight, some dead-drunk girl lay in one of the doorways, but he couldn’t possibly see it, so he walked, trembling with cold, towards Bernardine Square, passed a shop selling telescopes (a bloated Jupiter on a poster next to the entrance), a row of black shop windows, a chemist’s ‘Wenus’, a dot-matrix display scrolling the message, ‘Stay healthy. Stay productive. Collect points.’
 
@@ -150,7 +150,7 @@ One time after he opened his eyes, and it was when he nearly reached Chrobry Bri
 
 He asked if everything was all right. Silence.
 
-After a moment he came closer, an arm’s length away, and – with hesitation – gently touched her shoulder, but the girl didn’t budge. Finally, he took his phone out from his pocket and shone it on her face.
+After a moment he came closer, an arm’s length away, and — with hesitation — gently touched her shoulder, but the girl didn’t budge. Finally, he took his phone out from his pocket and shone it on her face.
 
 The reddish light revealed a mouth gagged with a decent-sized lemon, blue, ghastly open eyes, hands tied behind the back and a belly slit open to pour onto the snow a ripe cluster of guts.
 
