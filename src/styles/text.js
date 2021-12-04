@@ -74,6 +74,13 @@ export const TextBody = styled.div`
   margin-top: 2em;
 `;
 
+export const TextSeparator = styled.div`
+  margin: 3em auto;
+  height: 0.6em;
+  width: 6em;
+  background-color: ${props => props.theme.darkColor};
+`;
+
 /* Credits.js */
 
 export const CreditWrapper = styled.div`

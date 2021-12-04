@@ -18,13 +18,15 @@ import {
     TextHeader,
     TextTitle,
     TextSubtitle,
-    TextBody
+    TextBody,
+    TextSeparator
 } from '../../styles/text';
 import {AnimatedContent} from '../../animations/shared';
 import {AnimatedTextLink, AnimatedTextButton} from '../../animations/text';
 import {BOOKS, BOOK_LIST, TEXTS, TEXT_NAMES} from './../../data/constants';
 import CentredButton from '../UI/CentredButton/CentredButton';
 import SmallSpinner from '../UI/SmallSpinner/SmallSpinner';
+import BlogImage from '../Blog/BlogNote/BlogImage/BlogImage';
 
 const Credits = lazy(() => import('./Credits/Credits'));
 const DescriptionPanel = lazy(() => import('./DescriptionPanel/DescriptionPanel'));
@@ -216,7 +218,15 @@ export const Text = props => {
                         </TextSubtitle>
                     </TextHeader>
                     <TextBody>
-                        <Markdown>
+                        <Markdown
+                            options={{
+                                overrides: {
+                                    br: {
+                                        component: TextSeparator
+                                    }
+                                },
+                            }}
+                        >
                             {piece}
                         </Markdown>
                     </TextBody>
