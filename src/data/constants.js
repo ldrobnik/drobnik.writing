@@ -132,9 +132,9 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'novel fragment',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick.',
-            description: <p><em>Vostok</em> is forthcoming later this year from <a href={VOSTOK_URL} target="_blank"
+            description: <p><em>Vostok</em> was published in 2021 by <a href={VOSTOK_URL} target="_blank"
                                                                                    rel="noopener noreferrer"><em>Vræyda
-                Literary</em></a>. Its fragments were published in Polish in <a href="http://lampa.art.pl/"
+                Literary</em></a>. Its fragments were featured in <a href="https://www.magcloud.com/browse/issue/2070527?__r=3020311" target="_blank" rel="noopener noreferrer"><em>MacroMicroCosm</em></a> and <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/10/31/vostok-an-excerpt" target="_blank" rel="noopener noreferrer"><em>MacroMicroCosm Online</em></a> as well as in Polish in <a href="http://lampa.art.pl/"
                                                                                 target="_blank"
                                                                                 rel="noopener noreferrer"><em>Lampa</em></a> Issue&nbsp;3/2012
                 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
@@ -276,7 +276,7 @@ export const TEXTS = {
             title: 'Vostok',
             subtitle: 'fragment powieści',
             credits: 'Tekst: Łukasz Drobnik.',
-            description: <p>„Vostok” ukaże się jeszcze w&nbsp;roku nakładem wydawnictwa <a href={VOSTOK_URL}
+            description: <p>„Vostok” ukazał się w&nbsp;2021&nbsp;roku nakładem wydawnictwa <a href={VOSTOK_URL}
                                                                                            target="_blank"
                                                                                            rel="noopener noreferrer"><em>Vræyda
                 Literary</em></a>. Fragmenty książki można było przeczytać po polsku w&nbsp;<a
@@ -284,7 +284,7 @@ export const TEXTS = {
                 rel="noopener noreferrer"><em>Lampie</em></a> (numer&nbsp;3/2012)
                 i&nbsp;na stronie <a
                     href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
-                    target="_blank" rel="noopener noreferrer"><em>wydawnictwa&nbsp;j</em></a>.</p>,
+                    target="_blank" rel="noopener noreferrer"><em>wydawnictwa&nbsp;j</em></a>, a&nbsp;po angielsku w&nbsp;piśmie <a href="https://www.magcloud.com/browse/issue/2070527?__r=3020311" target="_blank" rel="noopener noreferrer"><em>MacroMicroCosm</em></a> oraz <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/10/31/vostok-an-excerpt" target="_blank" rel="noopener noreferrer"><em>jego wersji online</em></a>.</p>,
             filename: 'vostok-pl',
             theme: 'vostok'
         },
@@ -336,19 +336,6 @@ export const TEXTS = {
 export const PUBLICATIONS = {
     books: [
         {
-            title: 'Vostok',
-            year: '',
-            url: VOSTOK_URL,
-            cover: vostokCover,
-            altText: {
-                en: 'Vostok cover',
-                pl: 'Okładka Vostok'
-            },
-            descriptionPl: 'Powieść, która ukaże się w 2021 r. nakładem wydawnictwa Vræyda Literary',
-            descriptionEn: 'Novel forthcoming in 2021 from Vræyda Literary',
-            language: 'en'
-        },
-        {
             title: 'Nocturine',
             year: '',
             url: NOCTURINE_URL,
@@ -357,8 +344,21 @@ export const PUBLICATIONS = {
                 en: 'Nocturine cover',
                 pl: 'Okładka Nocturine'
             },
-            descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2021 r. nakładem wydawnictwa Fathom Books',
-            descriptionEn: 'Collection of interlinked stories forthcoming in 2021 from Fathom Books',
+            descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się na początku 2022 r. nakładem wydawnictwa Fathom Books',
+            descriptionEn: 'Collection of interlinked stories forthcoming in early 2022 from Fathom Books',
+            language: 'en'
+        },
+        {
+            title: 'Vostok',
+            year: '2021',
+            url: VOSTOK_URL,
+            cover: vostokCover,
+            altText: {
+                en: 'Vostok cover',
+                pl: 'Okładka Vostok'
+            },
+            descriptionPl: 'Powieść wydana nakładem wydawnictwa Vræyda Literary',
+            descriptionEn: 'Novel published by Vræyda Literary',
             language: 'en'
         },
         {
@@ -881,10 +881,10 @@ export const BOOKS = [
         cover: nocturineCover,
         url: NOCTURINE_URL,
         slogan: {
-            en: <div>Forthcoming autumn 2021 from <a href={NOCTURINE_URL} target="_blank"
+            en: <div>Forthcoming in early 2022 from <a href={NOCTURINE_URL} target="_blank"
                                                      rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
-            pl: <div>Dostępna jesienią 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
+            pl: <div>Dostępna na początku 2022&nbsp;roku<br/>w&nbsp;wydawnictwie <a
                 href={NOCTURINE_URL}
                 target="_blank"
                 rel="noopener noreferrer"><strong>FATHOM
@@ -995,17 +995,17 @@ export const BOOKS = [
         cover: vostokCover,
         url: VOSTOK_URL,
         slogan: {
-            en: <div>Forthcoming autumn 2021 from <a href={VOSTOK_URL} target="_blank"
+            en: <div>Available now from <a href={VOSTOK_URL} target="_blank"
                                                      rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>
             </div>,
-            pl: <div>Dostępna jesienią 2021&nbsp;roku<br/>w&nbsp;wydawnictwie <a
+            pl: <div>Dostępna teraz w&nbsp;wydawnictwie <a
                 href={VOSTOK_URL}
                 target="_blank"
                 rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
         },
         orderButton: {
-            en: ORDER_BUTTON['preorder']['en'],
-            pl: ORDER_BUTTON['preorder']['pl']
+            en: ORDER_BUTTON['order']['en'],
+            pl: ORDER_BUTTON['order']['pl']
         },
         body: {
             en: <div>
