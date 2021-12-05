@@ -380,15 +380,6 @@ export const PUBLICATIONS = {
 
     press: [
         {
-            title: 'Zakład Magazyn',
-            issue: '2',
-            year: '',
-            url: 'https://www.zakladmagazyn.pl/',
-            descriptionPl: 'Flash fiction „Dedlajny” (przekład tekstu „Deadlines”)',
-            descriptionEn: 'Flash fiction “Dedlajny” (translation of “Deadlines”)',
-            language: 'pl'
-        },
-        {
             title: 'Split Lip Magazine',
             issue: '',
             year: '',
@@ -396,6 +387,15 @@ export const PUBLICATIONS = {
             descriptionPl: 'Flash fiction „Vacuoles”',
             descriptionEn: 'Flash fiction “Vacuoles”',
             language: 'en'
+        },
+        {
+            title: 'Zakład Magazyn',
+            issue: '2',
+            year: '2021',
+            url: 'https://www.zakladmagazyn.pl/post/%C5%82ukasz-drobnik-deadlajny',
+            descriptionPl: 'Flash fiction „Dedlajny” (przekład tekstu „Deadlines”)',
+            descriptionEn: 'Flash fiction “Dedlajny” (translation of “Deadlines”)',
+            language: 'pl'
         },
         {
             title: 'MacroMicroCosm Online',
@@ -1607,6 +1607,11 @@ export const LINKS = [
         title: 'Pre-order NOCTURINE',
         subtitle: 'from Fathom Books',
         url: NOCTURINE_URL
+    },
+    {
+      title: 'Read “Dedlajny”',
+      subtitle: 'In Zakład Magazyn',
+      url: 'https://www.zakladmagazyn.pl/post/%C5%82ukasz-drobnik-deadlajny'
     },
     {
         title: 'Read VOSTOK excerpt',
