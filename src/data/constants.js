@@ -1594,12 +1594,7 @@ export const BLOG_CATEGORIES = {
 //Content of quick links (to be used on Instagram)
 export const LINKS = [
     {
-        title: 'VOSTOK Launch',
-        subtitle: 'livestream novel launch party',
-        url: 'https://www.vraeydamedia.ca/events/2021/12/5/novel-launch-vostok-by-ukasz-drobnik'
-    },
-    {
-        title: 'Pre-order VOSTOK',
+        title: 'Order VOSTOK',
         subtitle: 'from Vræyda Literary',
         url: VOSTOK_URL
     },
@@ -1609,8 +1604,13 @@ export const LINKS = [
         url: NOCTURINE_URL
     },
     {
+        title: 'VOSTOK Launch',
+        subtitle: 'watch the launch party',
+        url: 'https://www.youtube.com/watch?v=Btpz1ImoAS4'
+    },
+    {
       title: 'Read “Dedlajny”',
-      subtitle: 'In Zakład Magazyn',
+      subtitle: 'in Zakład Magazyn',
       url: 'https://www.zakladmagazyn.pl/post/%C5%82ukasz-drobnik-deadlajny'
     },
     {
