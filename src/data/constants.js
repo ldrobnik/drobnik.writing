@@ -1604,6 +1604,11 @@ export const LINKS = [
         url: NOCTURINE_URL
     },
     {
+        title: 'Watch Wyliczanka interview me',
+        subtitle: '(in Polish)',
+        url: 'https://www.youtube.com/watch?v=xzx0otQG180'
+    },
+    {
         title: 'VOSTOK Launch',
         subtitle: 'watch the launch party',
         url: 'https://www.youtube.com/watch?v=Btpz1ImoAS4'
