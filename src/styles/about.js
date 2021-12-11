@@ -56,6 +56,18 @@ export const BookBody = styled.div`
     text-align: justify;
   }
 
+
+  a {
+    font-family: ${props => props.theme.sansSerif};
+
+    @media all and (min-width: ${props => props.theme.smallScr}) {
+      &:hover {
+        animation: ${PULSATE_KEYFRAMES} ${props => props.theme.pulsateAnimation};
+      }
+    }
+
+  }
+
 `;
 
 export const BookSlogan = styled.div`

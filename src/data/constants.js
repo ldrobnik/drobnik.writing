@@ -1017,6 +1017,8 @@ export const BOOKS = [
                 <p>On the surface, <em>VOSTOK</em> is a murder story with a literary bent. Dig deeper, and it will
                     reveal itself as science
                     fiction that only pretends to play by the rules of realism.</p>
+                <p>You can buy <em>VOSTOK</em> from <a href={VOSTOK_URL} target="_blank"
+                                                rel="noopener noreferrer"><strong>VRÆYDA&nbsp;SHOP</strong></a>, <a href="http://bookshop.org/" target="_blank" rel="noopener noreferrer"><strong>BOOKSHOP.ORG</strong></a> (US/UK), <a href="https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936" target="_blank" rel="noopener noreferrer"><strong>BARNES&nbsp;&amp;&nbsp;NOBLE</strong></a>, <a href="https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936" target="_blank" rel="noopener noreferrer"><strong>POWELL’S</strong></a>, <a href="https://www.amazon.com/Vostok-Lukasz-Drobnik/dp/1988034213" target="_blank" rel="noopener noreferrer"><strong>AMAZON</strong></a>, <a href="https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218" target="_blank" rel="noopener noreferrer"><strong>BOOKS A MILLION</strong></a>, <a href="https://www.mightyape.co.nz/product/vostok/35358666" target="_blank" rel="noopener noreferrer"><strong>MIGHTY APE</strong></a> (NZ), and <a href="https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218" target="_blank" rel="noopener noreferrer"><strong>SAXO</strong></a> (DK).</p>
             </div>,
             pl: <div>
                 <p>Poznań, środek mroźnej zimy. Weronika kocha się w&nbsp;swoim najlepszym przyjacielu Wu, który właśnie
@@ -1027,6 +1029,8 @@ export const BOOKS = [
                 <p>Na pierwszy rzut oka <em>VOSTOK</em> to kryminał z wysokoartystycznym zacięciem. Gdy jednak zajrzy
                     się głębiej, powieść okazuje się
                     science fiction, które tylko z&nbsp;pozoru gra według reguł realizmu.</p>
+                <p><em>VOSTOK</em> można kupić w&nbsp;tych miejscach: <a href={VOSTOK_URL} target="_blank"
+                                                       rel="noopener noreferrer"><strong>VRÆYDA&nbsp;SHOP</strong></a>, <a href="http://bookshop.org/" target="_blank" rel="noopener noreferrer"><strong>BOOKSHOP.ORG</strong></a> (US/UK), <a href="https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936" target="_blank" rel="noopener noreferrer"><strong>BARNES&nbsp;&amp;&nbsp;NOBLE</strong></a>, <a href="https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936" target="_blank" rel="noopener noreferrer"><strong>POWELL’S</strong></a>, <a href="https://www.amazon.com/Vostok-Lukasz-Drobnik/dp/1988034213" target="_blank" rel="noopener noreferrer"><strong>AMAZON</strong></a>, <a href="https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218" target="_blank" rel="noopener noreferrer"><strong>BOOKS A MILLION</strong></a>, <a href="https://www.mightyape.co.nz/product/vostok/35358666" target="_blank" rel="noopener noreferrer"><strong>MIGHTY APE</strong></a> (NZ) i&nbsp;<a href="https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218" target="_blank" rel="noopener noreferrer"><strong>SAXO</strong></a> (DK).</p>
             </div>
         },
         quotes: {
