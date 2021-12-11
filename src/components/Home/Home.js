@@ -103,16 +103,16 @@ export const Home = props => {
                         <Route path="/" exact component={About} key="home"/>
                         <Route path="/texts/" exact component={Writing} key="writing"/>
                         <Route path="/texts/:id" exact component={Text} key="text"/>
-                        <Route path="/books/nocturine/" exact component={() => <BookPage book={0}/>} key="nocturine"/>
-                        <Route path="/books/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>
-                        <Route path="/nocturine/" exact component={() => {
-                            window.location.href = NOCTURINE_URL;
-                            return null;
-                        }}/>
-                        <Route path="/vostok/" exact component={() => {
-                            window.location.href = VOSTOK_URL;
-                            return null;
-                        }}/>
+                        <Route path="/nocturine/" exact component={() => <BookPage book={0}/>} key="nocturine"/>
+                        <Route path="/vostok/" exact component={() => <BookPage book={1}/>} key="vostok"/>
+                        {/*<Route path="/nocturine/" exact component={() => {*/}
+                        {/*    window.location.href = NOCTURINE_URL;*/}
+                        {/*    return null;*/}
+                        {/*}}/>*/}
+                        {/*<Route path="/vostok/" exact component={() => {*/}
+                        {/*    window.location.href = VOSTOK_URL;*/}
+                        {/*    return null;*/}
+                        {/*}}/>*/}
                         <Route path="/links/" exact component={QuickLinks} key="links"/>
                         <Route path="/blog/" exact component={Blog} key="blog"/>
                         <Route path="/blog/:id" exact component={() => blogComponent} key="blog-filtered" {...props}/>

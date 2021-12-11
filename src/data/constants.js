@@ -909,6 +909,8 @@ export const BOOKS = [
                     contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a
                     homestead haunted by dummies, to the inside of a human body. Each of six pieces is told by
                     a different narrator in a frantic yet melancholic style.</p>
+                <p>You can pre-order <em>NOCTURINE</em> from <a href={NOCTURINE_URL} target="_blank"
+                                                                                        rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a>.</p>
             </div>,
             pl: <div>
                 <p>Koniec świata zaczyna się jak kampania reklamowa. Gdy nad Poznaniem zawisają czarne sześciany,
@@ -922,6 +924,8 @@ export const BOOKS = [
                     złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze
                     ludzkiego ciała. Każdy z&nbsp;sześciu tekstów ma innego narratora, który snuje opowieść
                     w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
+                <p><em>NOCTURINE</em> można zamówić w&nbsp;przedsprzedaży na stronie <a href={NOCTURINE_URL} target="_blank"
+                                                                         rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a>.</p>
             </div>
         },
         quotes: {
