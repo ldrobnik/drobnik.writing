@@ -338,13 +338,13 @@ export const BlogNote = props => {
                                                 }
                                             }
                                         },
-                                        br: {
+                                        smallSeparator: {
                                             component: BlogSeparator,
                                             props: {
                                                 className: 'colouredBackground'
                                             }
                                         },
-                                        hr: {
+                                        bigSeparator: {
                                             component: BlogBigSeparator,
                                             props: {
                                                 className: 'colouredBackground'

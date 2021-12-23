@@ -1,10 +1,10 @@
 *Fragments of [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi published by Vræyda Literary*
 
-<br/>
+<smallSeparator/>
 
 On days like this, Poznań was the cruellest of cities. It wasn’t easy to tell whether this was because of the twelve degrees of frost, the sharp sunlight, the motionless ice-bound white river, the snow lying on the roofs or a peculiar combination of these elements, but one could clearly sense that the city was streaked with a strange kind of anxiety, that its foundations were filled with elusive energy. You could swear it was about to suddenly break in half, and its northern and southern parts intended (like jaws) to break away from the ground, rise towards each other with a violent movement and forcefully collide until Piątkowo’s blocks of flats (like teeth) fitted between the tenements of Wilda.
 
-<br/>
+<smallSeparator/>
 
 If you made, right along one of its walls, a longitudinal section through the pub Kisielice, on the left side of the colourful rectangle you would see a bar, the back of a bartender working behind the bar, in the background a wall painted in vividly coloured stripes, black-and-white artwork on the wall, and further towards the right end of the section: empty tables, chairs, sofas. The only clients in the pub visible from this perspective were a man and a woman, in their late twenties by the looks of it, who sat on a soft couch by the right edge of the rectangular section and talked, smoking tremendous amounts of cigarettes.
 
@@ -58,7 +58,7 @@ Once he disappeared behind the curtain, Weronika started talking about how insan
 
 ‘Brilliant!’ Olka laughed and added Weronika must take better care of herself, after which she took out a rustling fifty-zloty note and handed it to Wu, who came back from the toilet, asking him to buy another round.
 
-<br/>
+<smallSeparator/>
 
 They left the pub well after midnight. Freezing, still air lay heavy over Poznań, high banks of snow stretched along its streets, people occasionally sneaked in the light of lampposts, cars went by.
 
@@ -70,7 +70,7 @@ The three of them walked along the white Freedom Square, next to many-branched p
 
 They reached St Adalbert Street and stopped by one of the buildings. Weronika thanked Wu for walking her home, kissed him on the cheek and disappeared into a dark doorway. He, on the other hand, began to slowly walk towards a petrol station and farther — along Little Garbary Street.
 
-<hr/>
+<bigSeparator/>
 
 A tram number 9 derailed in the district of Wilda, hitting cars.
 
@@ -80,7 +80,7 @@ At the end of the second cabin, leaning against railings and staring outside a d
 
 The oblong barrack of a shopping centre loomed over the tunnel, its elevation illuminated with glaring lights, a luminous yellow cord undulating along the building, and from the perspective of the rushing tram, this edifice could resemble a dignified, slowly swimming whale. When the vehicle reached the next, this time stunningly colourful, station (Lechicka/Poznań Plaza), Weronika told Zuza (that is how she addressed the girl gazing outside the window) to wake up, they needed to get off, and then they both headed for the exit.
 
-<br/>
+<smallSeparator/>
 
 No more than two hours later, another tram number 16 arrived at a stop in Little Garbary Street, the automatic doors opened, and people started to step out of the green cabins. Among them were Weronika and Zuza, carrying heavy linen bags clanking with bottles of wine.
 
@@ -106,7 +106,7 @@ Kuba replied he’d think about it cos he was working on some ‘friend’, as h
 
 The girls finished off their cigarettes, put them out against the edge of the bench, lifted their bags heavy with wine, bread, vegetables, cephalopods, headed towards a zebra crossing and — after several minutes at a red light — kept going along Estkowski Street for a bit. They carefully walked down an ice-covered escarpment to where the Warta River once flowed but now it was a sports field and a row of parking spaces, crossed this field, carried on among cars parked in the snow, went past a row of tin garages (black-and-white graffiti on the walls) and walked further, towards Chwaliszewo Street.
 
-<br/>
+<smallSeparator/>
 
 The kitchen walls were covered with ragged dark pink wallpaper; on the shabby kitchen cabinets, on the kitchen worktop, on the fridge stood flowerpots spewing out tangled ivy shoots. Once you entered the kitchen, you had the impression it was a freeze-frame from a film, and one careless move would suffice for the whole room to be consumed, in a split second, by the vividly green vegetation.
 
@@ -132,11 +132,11 @@ Could Weronika, please, relax with a glass of wine on her day off without being 
 
 ‘Oh, have a drink.’ Weronika laughed, filling up Zuza’s glass.
 
-<br/>
+<smallSeparator/>
 
 The events of the rest of this evening could be captured in stills: Wu leaning against the fridge, Zuza, Weronika and Olka at the table, bright dots of burning tobacco. Next, a similar scene, but with Kuba and a dainty bright-haired girl standing in the doorway, the girl was pale and had big blue eyes, she barely spoke a word. Then the dark pink kitchen, Weronika and Zuza above an empty bowl, the former whining about her complicated relationship with Jerzy, a cloud of grey smoke above their heads. Half an hour later at the table sat Weronika, Zuza and Kuba, the latter walked his blonde friend to a cab and told the girls someone must’ve got pretty stoned cos they broke into the military museum and stole a war scythe. Even later, a similar scene: Wu standing in the doorway with a bottle of wine, saying Olka went to Dragon after all but promised she’d be back, which meant she wouldn’t. Then a bulb blowing out, darkness instantly filling the kitchen. Later again, the rest of them sitting by candlelight, against the background of the wallpaper which seemed almost black in this light, Weronika immersed in a greenish glow beaming from the phone and texting. After one more hour, there was only Wu, Kuba and Zuza, the latter saying it always ends like this, sooner or later Jerzy calls and after ten minutes Weronika’s gone. And the last scene: a candle burning out, Wu and Kuba sitting in silence above the last of the wine, with lustreless eyes, smoking; the room was tightly filled with smoke, the smoke was as dense as fog.
 
-<br/>
+<smallSeparator/>
 
 A heavy dark sky hung above the city, it was night, Poznań’s blocks of flats and tenement houses remained dormant, car parks choked on freezing air, lampposts cast a lurid light, snow lay heavy on the roofs, and a strong, piercing wind ran along the network of streets; it carried frost.
 
@@ -157,7 +157,7 @@ The reddish light revealed a mouth gagged with a decent-sized lemon, blue, ghast
 [<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
 
-<hr/>
+<bigSeparator/>
 
 Small glowing pink rectangles, I can see them whenever I close my eyes. The navy-blue sky over Międzymoście Square, the white clouds below the sky, the grey gulls, guarded car parks. Frost like small daggers plunged into my body. Once again we walk towards the river, neck in front of the off-licence. Once again the scratching of his stubble, pink rectangles, something about Venus, about Ceres. Chwaliszewo Street, the lamppost like a strobe light. Czartoria Street, we walk down the ice-covered embankment.
 
