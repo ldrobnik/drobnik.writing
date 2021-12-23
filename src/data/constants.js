@@ -1429,8 +1429,8 @@ export const WEBSITE_TEXT_TEXTS = {
                 links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                     <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
                 content: <React.Fragment>is the author of genre-bending books, <a
-                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
-                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose
+                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
+                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
                     published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
                         Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
@@ -1442,8 +1442,8 @@ export const WEBSITE_TEXT_TEXTS = {
                 links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                     <React.Fragment>na&nbsp;stronie&nbsp;głównej</React.Fragment>],
                 content: <React.Fragment>to autor niepokornych gatunkowo książek, <a
-                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> i&nbsp;<a
-                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, oraz krótszych utworów
+                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> i&nbsp;<a
+                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, oraz krótszych utworów
                     opublikowanych m.in. w&nbsp;<em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
                         Review</em> i&nbsp;<em>Pithead Chapel</em>. Jego proza trafiła na longlistę <em>Wigleaf
@@ -1480,8 +1480,8 @@ export const WEBSITE_TEXT_BLOG = {
             links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                 <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
             content: <React.Fragment>is the author of genre-bending books, <a
-                href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a> and <a
-                href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a>, as well as shorter prose
+                href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
+                href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
                 published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                     Lit</em>, <em>Atticus
                     Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
