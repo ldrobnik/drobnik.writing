@@ -26,7 +26,7 @@ In each verse, the thirteen syllables of Polish alexandrine are grouped into two
 
 ![Schematic representation of a Polish alexandrine verse. Two groups of seven and six syllables each separated by a caesura. The penultimate syllable of each group is stressed.](polish-alexandrine-structure.svg)
 
-<sup>The basic structure of a Polish alexandrine verse. The horizontal lines represent syllables, the vertical line the caesura. Syllables that need to be stressed are coloured dark yellow.</sup>
+<sup>The basic structure of a Polish alexandrine verse. The horizontal lines represent syllables, the vertical line the caesura. Syllables that should be stressed are coloured dark yellow.</sup>
 
 Perhaps it’s this last rule that makes *trzynastozgłoskowiec* sound so naturally, effortlessly Polish. In the vast majority of Polish words, the stress falls on the penultimate syllable, so it’s fairly easy to say even the most banal thought in Polish alexandrine:
 
