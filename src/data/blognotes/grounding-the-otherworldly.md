@@ -8,7 +8,7 @@ What will later become [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bw
 >
 > VOSTOK by Łukasz Drobnik
 
-Weronika and Wu, the main characters, are no longer siblings or childhood friends with a tragic backstory. Neither of them has brain implants or bionic limbs. They are twentysomethings who hate their jobs as a barmaid and a technical writer, navigate toxic relationships and have unhealthy coping mechanism — such as drowning their problems and insecurities in Poznań’s pubs. When Weronika met Wu, she didn’t realise straight away he’s gay — and now she’s in love with her best friend. A realistic story with a realistic premise. Now let’s make it also sci-fi.
+Weronika and Wu, the main characters, are no longer siblings or childhood friends with a tragic backstory. Neither of them has brain implants or bionic limbs. They are twentysomethings who hate their jobs as a barmaid and a technical writer, navigate toxic relationships and have unhealthy coping mechanism — such as drinking their problems and insecurities away in a bunch of Poznań’s pubs. When Weronika met Wu, she didn’t realise straight away he’s gay — and now she’s in love with her best friend. A realistic story with a realistic premise. Now let’s make it also sci-fi.
 
 ## Adding the otherwordly to the ordinary
 
@@ -39,25 +39,21 @@ I worked hard on dialogue and descriptions of the characters’ behaviour, but i
 
 ## …and the brains
 
-Exposition is a crucial part of any speculative fiction. If you create a new world with a set of its own rules, you want the reader to see that world, learn those rules.
+Exposition is a crucial part of most speculative fiction. If you create a new world with a set of its own rules, you usually want the reader to see that world, learn those rules.
 
 VOSTOK is an experiment attempting to answer the question,
 
 > Can you write a sci-fi novel with a minimum amount of exposition, and if so, how much exposition you need to make it work?
 
-It took me years to find an answer. The initial drafts portioned out exposition only through dialogue. As a result, the speculative layer of the novel was painted with just a few brush strokes, and the painting was too abstract to have much resonance.
+It took me years to strike a balance. The initial drafts portioned out exposition only through dialogue. As a result, the speculative layer of the novel was painted with just a few brush strokes, and the painting was too abstract to have much resonance.
 
 Then I added some environmental storytelling: the sci-fi part of the story was told also through ads, leaflets, TV and radio programs. The effect was better, but it wasn’t quite it.
 
 I started layering the novel with different texts: snippets of newspaper articles, encyclopaedic entries, fragments of instruction manuals. Only then did the sci-fi portion of the novel become defined enough for it to make a meaningful whole with the realistic part.
 
-## Failure or success?
+## It is what it is
 
-So, can I write a sci-fi novel that doesn’t break the rules of realism?
-
-In the case of VOSTOK, the answer is a resounding… ‘kind of?’
-
-Does it bother me? I can’t say it does.
+In the end, is VOSTOK a sci-fi novel that doesn’t break the rules of realism? The answer is far from a resounding ‘yes’. I can’t say it bothers me though.
 
 As an atheist with Catholic upbringing, I both have irrational reverence for dogmas and find perverse pleasure in tearing them down. There’s a method to this madness: start with a set of rules to give your work an initial structure but bend them to your needs to tell the best story you can.  
 
