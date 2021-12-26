@@ -60,7 +60,7 @@ export const Teaser = props => {
                                             a: {
                                                 component: 'strong',
                                             },
-                                        },
+                                        }
                                     }}
                                 >
                                     {note}
