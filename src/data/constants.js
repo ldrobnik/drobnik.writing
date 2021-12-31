@@ -1612,15 +1612,20 @@ export const LINKS = [
         url: NOCTURINE_URL
     },
     {
+        title: 'Read the newest issue of “błyski”',
+        subtitle: 'featuring flash fiction by Cathy Ulrich',
+        url: 'https://blyski.org'
+    },
+    {
         title: 'Watch Wyliczanka interview me',
         subtitle: '(in Polish)',
         url: 'https://www.youtube.com/watch?v=xzx0otQG180'
     },
-    {
-        title: 'VOSTOK Launch',
-        subtitle: 'watch the launch party',
-        url: 'https://www.youtube.com/watch?v=Btpz1ImoAS4'
-    },
+    // {
+    //     title: 'VOSTOK Launch',
+    //     subtitle: 'watch the launch party',
+    //     url: 'https://www.youtube.com/watch?v=Btpz1ImoAS4'
+    // },
     {
       title: 'Read “Dedlajny”',
       subtitle: 'in Zakład Magazyn',
@@ -1635,11 +1640,6 @@ export const LINKS = [
         title: 'Read my blog',
         subtitle: 'drobnik.co/blog',
         url: '/blog/'
-    },
-    {
-        title: 'Check out “błyski”',
-        subtitle: 'my journal with flash in Polish translation',
-        url: 'https://blyski.org'
     },
     {
         title: 'Read “Coal and Glitter”',
