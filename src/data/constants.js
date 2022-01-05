@@ -131,7 +131,7 @@ export const TEXTS = {
         vostok: {
             title: 'Vostok',
             subtitle: 'novel fragment',
-            credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick.',
+            credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick and Lis Goryniuk-Ratajczak.',
             description: <p><em>Vostok</em> was published in 2021 by <a href={VOSTOK_URL} target="_blank"
                                                                                    rel="noopener noreferrer"><em>Vræyda
                 Literary</em></a>. Its fragments were featured in <a href="https://www.magcloud.com/browse/issue/2070527?__r=3020311" target="_blank" rel="noopener noreferrer"><em>MacroMicroCosm</em></a> and <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/10/31/vostok-an-excerpt" target="_blank" rel="noopener noreferrer"><em>MacroMicroCosm Online</em></a> as well as in Polish in <a href="http://lampa.art.pl/"
