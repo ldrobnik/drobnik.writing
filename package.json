@@ -53,7 +53,7 @@
     "react": "^16.14.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-app-polyfill": "^1.0.6",
-    "react-dev-utils": "^9.1.0",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.14.0",
     "react-ga": "^2.7.0",
     "react-pose": "^4.0.10",
