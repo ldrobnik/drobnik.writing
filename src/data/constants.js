@@ -1495,7 +1495,7 @@ export const WEBSITE_TEXT_BLOG = {
 export const ALL_BLOG_NOTES = [
     {
         id: 'the-exotic-familiar',
-        title: 'The Exotic Familiar: Taking an Ordinary Setting into an Uncanny Territory',
+        title: 'The Exotic Familiar: Taking an Ordinary Setting into the Uncanny Valley',
         draft: true,
         date: ['2021', '10', '27'],
         category: 'vostok',

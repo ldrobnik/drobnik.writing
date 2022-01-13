@@ -12,7 +12,7 @@ I started working on the book in Poznań at the beginning of that prolonged wint
 
 ## A handful of facts
 
-Poznań is the capital of a region called Wielkopolska (Greater Poland). It’s the fifth largest Polish city with a population similar to that of Edinburgh.
+Poznań is the capital of a region called Wielkopolska (Greater Poland). It’s the fifth-largest Polish city with a population similar to that of Edinburgh.
 
 Some trivia:
 
@@ -21,7 +21,7 @@ Some trivia:
 - In addition to bridges spanning the Warta, Poznań has three bridges stretched over the torrent of railway tracks. Each is named after a landmark in its proximity: the opera theatre, the university, the railway station.
 - Poznań is the only city mentioned in Poland’s national anthem.
 - It is divided into five districts: Jeżyce, Grunwald, Wilda, Nowe Miasto, and Stare Miasto. The last one, although literally called the Old Town, accommodates not only the historic centre but also the landscapes of blocks of flats in the north.
-- No one really uses the five administrative districts in everyday conversations. People usually refer to smaller neighbourhoods, such as Łazarz, Sołacz, or Winogrady.
+- No one really uses the five administrative districts in everyday conversations. In most cases, people refer to smaller neighbourhoods, such as Łazarz, Sołacz, or Winogrady.
 - There’s no subway, but the city has a fast tram line connecting the north with the centre, called Poznań Fast Tram (Poznański Szybki Tramwaj). The acronym PST gave rise to an affectionate monicker *pestka*. It literally means ‘seed’ but also has an idiomatic sense similar to English ‘piece of cake’.
 - Confusingly to outsiders, Poznań dwellers often use a meaningless word *tej* for emphasis.
 
@@ -33,14 +33,14 @@ In time, I grew to enjoy the city’s qualities I initially found overwhelming. 
 
 The city watched me clumsily find my way around adult life: make and lose friends, find love in all the wrong places, try to figure out what I’m made of, what I’m really about. 
 
-I remember a moment when I felt in Poznań completely at home. I was walking the uneven pavement of Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon—Poznań around me fitted me like a glove. It was a warm and at the same time suffocating feeling. One that made me realise I wanted something different, something more.
+I remember a moment when I felt in Poznań completely at home. I was walking the uneven pavement of Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon — Poznań around me fitted me like a glove. It was a warm and at the same time suffocating feeling. One that made me realise I wanted something different, something more.
 
-[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
+[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
 
 ## A trip to the uncanny valley
 
-There must be a compound German word for this feeling of knowing something so well it makes you feel uneasy. Whatever we call it, it was possibly part of the reason why I chose a place so familiar for the setting of a science-fiction novel.
+There must be a German compound word for this feeling of knowing something so well it makes you feel uneasy. Whatever we call it, it was possibly part of the reason why I chose a place so familiar for the setting of a science-fiction novel.
 
 There’s definitely a Russian word for presenting, in a work of art, the familiar in an unfamiliar way so the audience can see it from a new perspective. The word is *ostranenie* (остранение), translated into English as defamiliarisation.
 
@@ -50,7 +50,7 @@ The term was coined in 1917 by Viktor Shklovsky, one of the main figures of Russ
 >
 > <sub>Viktor Shklovsky (2017). Alexandra Berlina (ed.). Viktor Shklovsky: A Reader. Translated by Alexandra Berlina. Bloomsbury.</sub>
 
-Believe it or not, there’s a whole journal dedicated to defamiliarised writing called [The Gravity of the Thing](http://thegravityofthething.com/), which I highly recommend. It was this magazine that made realise I use defamiliarisation in my own writing (I even ended up publishing [a story](http://thegravityofthething.com/devonian-lukasz-drobnik/) there).
+Believe it or not, there’s a whole journal dedicated to defamiliarised writing called [The Gravity of the Thing](http://thegravityofthething.com/), which I highly recommend. It was this magazine that made me realise I use defamiliarisation in my own writing (I even ended up publishing [a story](http://thegravityofthething.com/devonian-lukasz-drobnik/) there).
 
 I won’t spoil the nature of the sci-fi element in VOSTOK (hope you’ll want to discover it on your own), but the presence of a speculative layer results in an interesting shift: from the realistic contemporary Poznań into an otherwordly realm. A shift that invites the reader to look at seemingly ordinary things from an unexpected angle.
 
