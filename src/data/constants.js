@@ -381,9 +381,9 @@ export const PUBLICATIONS = {
     press: [
         {
             title: 'Split Lip Magazine',
-            issue: '',
-            year: '',
-            url: 'https://splitlipthemag.com/',
+            issue: 'January 2022',
+            year: '2022',
+            url: 'https://splitlipthemag.com/flash/0122/lukasz-drobnik',
             descriptionPl: 'Flash fiction „Vacuoles”',
             descriptionEn: 'Flash fiction “Vacuoles”',
             language: 'en'
@@ -1610,6 +1610,11 @@ export const LINKS = [
         title: 'Pre-order NOCTURINE',
         subtitle: 'from Fathom Books',
         url: NOCTURINE_URL
+    },
+    {
+        title: 'Read “Vacuoles”',
+        subtitle: 'in Split Lip Magazine',
+        url: 'https://splitlipthemag.com/flash/0122/lukasz-drobnik'
     },
     {
         title: 'Read the newest issue of “błyski”',
