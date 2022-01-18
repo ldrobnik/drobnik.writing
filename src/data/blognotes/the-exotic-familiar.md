@@ -6,7 +6,7 @@ Winter 2009–2010 was one of the longest and harshest I remember. Pavements dis
 
 <sup>The Old Market Square in Poznań. Photo by pillerss – Can Stock Photo Inc.</sup>
 
-Can’t say which of the above are my real memories and which have been filtered through the years of writing [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi.
+Can’t say which of the above are my real memories and which have been filtered through the years of writing [VOSTOK](https://drobnik.co/vostok), my genre-bending literary sci-fi.
 
 I started working on the book in Poznań at the beginning of that prolonged winter and chose the frigid city as its setting. Little did I know it would be my farewell letter. In spring, my wanderlust kicked in, and I finally moved to Kraków where I’ve lived ever since.
 
@@ -35,7 +35,7 @@ The city watched me clumsily find my way around adult life: make and lose friend
 
 I remember a moment when I felt in Poznań completely at home. I was walking the uneven pavement of Chwaliszewo Street where I lived, headed for a night out in my favourite pub Dragon — Poznań around me fitted me like a glove. It was a warm and at the same time suffocating feeling. One that made me realise I wanted something different, something more.
 
-[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
+[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the top part, the title and author’s name in a black, geometric font">](https://drobnik.co/vostok)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
 
 ## A trip to the uncanny valley

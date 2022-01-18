@@ -1,4 +1,4 @@
-*Fragments of [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi published by Vræyda Literary*
+*Fragments of [VOSTOK](https://drobnik.co/vostok), my genre-bending literary sci-fi published by Vræyda Literary*
 
 <smallSeparator/>
 
@@ -154,7 +154,7 @@ After a moment he came closer, an arm’s length away, and — with hesitation �
 
 The reddish light revealed a mouth gagged with a decent-sized lemon, blue, ghastly open eyes, hands tied behind the back and a belly slit open to pour onto the snow a ripe cluster of guts.
 
-[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
+[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the top part, the title and author’s name in a black, geometric font">](https://drobnik.co/vostok)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
 
 <bigSeparator/>

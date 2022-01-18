@@ -1536,10 +1536,10 @@ export const ALL_BLOG_NOTES = [
         id: 'grounding-the-otherworldly',
         title: 'Grounding the Otherworldly: Science-Fiction That Plays by the Rules of Realism',
         draft: true,
-        date: ['2021', '10', '10'],
+        date: ['2022', '01', '20'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['polish-alexandrine', 'the-exotic-familiar'],
+        related: ['vostok-excerpts', 'markdown-for-creative-writers'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the middle, the title and author’s name in a black, geometric font.'
