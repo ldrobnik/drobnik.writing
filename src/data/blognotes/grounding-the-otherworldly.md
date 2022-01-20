@@ -8,7 +8,7 @@ What will later become [VOSTOK](https://drobnik.co/vostok), a genre-bending lite
 >
 > VOSTOK by Łukasz Drobnik
 
-Weronika and Wu, the main characters, are no longer siblings or childhood friends with a tragic backstory. Neither of them has brain implants or bionic limbs. They are twentysomethings who hate their jobs as a barmaid and a technical writer, navigate toxic relationships and have unhealthy coping mechanism — such as drinking their problems away in a bunch of Poznań’s pubs. When Weronika met Wu, she didn’t realise straight away he was gay — and now she’s in love with her best friend. A realistic story with a realistic premise. Now let’s make it sci-fi.
+Weronika and Wu, the main characters, are no longer siblings or childhood friends with a tragic backstory. Neither of them has brain implants or bionic limbs. They are twentysomethings who hate their jobs as a barmaid and a technical writer, navigate toxic relationships and exhibit unhealthy coping mechanisms, such as drinking their problems away in a bunch of Poznań’s pubs. When Weronika met Wu, she didn’t realise straight away he was gay — and now she’s in love with her best friend. A realistic story with a realistic premise. Now let’s make it sci-fi on top of that.
 
 ## Adding the otherworldly to the ordinary
 
@@ -27,9 +27,9 @@ Crime gels well with virtually any genre, so I made VOSTOK a mystery, one in whi
 
 ## The heart of the story
 
-The omnipresent but not omniscient point of view made it easier to pace the reveal of speculative elements without it feeling contrived. The problem was, lack of insight into the characters’ inner worlds made it difficult to connect with them. The initial drafts lacked heart — things were happening but didn’t resonate on an emotional level.
+The omnipresent but not omniscient point of view made it easier to pace the reveal of speculative elements without it feeling contrived. The problem was, with no insight into the characters’ inner worlds it was difficult to connect with them. The initial drafts lacked heart — things were happening but didn’t resonate on an emotional level.
 
-I worked hard on dialogue and descriptions of the characters’ behaviour, but it wasn’t enough. The original premise of writing a realistic novel that’s speculative only in dialogue failed to contain the story I wanted to tell. So I thought, let’s break some rules. I added first-person passages told from the point of view of different characters.
+I worked hard on dialogue and descriptions of the characters’ behaviour, but it wasn’t enough. The original premise of writing a realistic novel that’s speculative only in dialogue failed to contain the story I wanted to tell. So I thought, let’s break some rules. I added passages told in the first person by different characters.
 
 > Suddenly, it’s the first weeks of our friendship. It’s early summer, and we go together to the Warta River, to the sun-burnt grasses, to be devoured by mosquitoes. We sit down on the concrete riverbank, still warm from the scorching day, look at the river’s waters, listen to the hum of cars on Chrobry Bridge, drink krupnik straight from the bottle, talk.
 >
@@ -43,18 +43,18 @@ Exposition is a crucial part of most speculative fiction. If you create a new wo
 
 VOSTOK is an experiment attempting to answer the question,
 
-> Can you write a sci-fi novel with a minimum amount of exposition, and if so, how much exposition you need to make it work?
+> Can you write a sci-fi novel with minimum exposition, and if so, how much exposition do you need to make it work?
 
 It took me years to strike a balance. The initial drafts portioned out exposition only through dialogue. As a result, the speculative layer of the novel was painted with just a few brush strokes, and the painting was too abstract to have much resonance.
 
-Then I added some environmental storytelling: the sci-fi part of the story was told also through ads, leaflets, TV, and radio. The effect was better, but it wasn’t quite it.
+Then I added some environmental storytelling: the sci-fi part of the story was now also told through ads, leaflets, TV, and radio. The effect was better, but it wasn’t quite it.
 
-I started layering the novel with different texts: snippets of newspaper articles, encyclopaedic entries, fragments of instruction manuals. Only then did the sci-fi portion of the novel become defined enough for it to make a meaningful whole with the realistic part.
+I started layering the novel with different texts: snippets of newspaper articles, encyclopaedic entries, fragments of instruction manuals. Only then did the sci-fi portion of the novel become defined enough to make a meaningful whole with the realistic part.
 
 ## It is what it is
 
 In the end, is VOSTOK a sci-fi novel that doesn’t break the rules of realism? Though the answer is far from a resounding ‘yes’, I can’t say I’m bothered.
 
-As an atheist with Catholic upbringing, I both have irrational reverence for dogmas and find perverse pleasure in tearing them down. There’s a method to this madness: start with a set of rules to give your work an initial structure but bend them to your needs to tell the best story you can.  
+As an atheist with Catholic upbringing, I both have irrational reverence for dogmas and find perverse pleasure in tearing them down. Maybe there’s a method to this madness: start with a set of rules that give you an initial structure but bend them to your needs to tell the best story you can.  
 
-The result is [VOSTOK](https://drobnik.co/vostok): not quite realistic fiction, not quite sci-fi, but something more than the sum of the two.
+The result is [VOSTOK](https://drobnik.co/vostok): not quite realistic fiction, not quite sci-fi, but hopefully something more than the sum of the two.
