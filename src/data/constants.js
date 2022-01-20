@@ -1563,7 +1563,7 @@ export const ALL_BLOG_NOTES = [
         title: 'Markdown for Creative Writers',
         date: ['2021', '08', '25'],
         category: 'writing',
-        related: ['quick-guide-to-markdown', 'vostok-excerpts'],
+        related: ['quick-guide-to-markdown', 'grounding-the-otherworldly'],
         imageCredits: {
             description: '',
             alt: 'A text editor with the beginning of Woolfs’s Mrs. Dalloway written in Markdown'
@@ -1575,7 +1575,7 @@ export const ALL_BLOG_NOTES = [
         title: 'Quick Guide to Markdown',
         date: ['2021', '08', '25'],
         category: 'code',
-        related: ['markdown-for-creative-writers', 'vostok-excerpts'],
+        related: ['markdown-for-creative-writers', 'grounding-the-otherworldly'],
         imageCredits: {
             description: '',
             alt: 'A text editor showing basics Markdown syntax, such as headings and lists, and its preview'
