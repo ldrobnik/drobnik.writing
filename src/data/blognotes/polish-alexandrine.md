@@ -55,9 +55,9 @@ It didn’t feel right in the case of VOSTOK though. Its Polishness was such a c
 
 Although both part of the Indo-European family, Polish and English sound nothing alike.
 
-The former is stuffed with sibilant Slavic consonants, with just a handful of vowels (all of the same duration) and stress falling in most cases on the penultimate syllable.
+The former is full of sibilant Slavic consonants, with just a handful of vowels (all of the same duration) and stress falling in most cases on the penultimate syllable.
 
-The latter is all about airy vowels, which can vary in duration and chain into diphthongs (and even triphthongs!), while its word stress is pretty unpredictable. 
+The latter is all about vowels, which can vary in duration and chain into diphthongs (and even triphthongs!), while its word stress is pretty unpredictable. 
 
 I knew from the beginning I can’t be too dogmatic about the process. I allowed certain deviations (such as treating some diphthongs as if they were single vowels), focussing instead on retaining the caesura and overall rhythm.
 
