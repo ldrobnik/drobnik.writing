@@ -6,7 +6,7 @@ To understand how uber-Polish this metric line is, all you need to know is Adam 
 
 <sup>The opening lines of the first edition of *Pan Tadeusz*. Source: Wikimedia Commons.</sup>
 
-[VOSTOK](https://drobnik.co/vostok), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave the text with a *trzynastozgłowiec* poem. One that’s a queer retelling of Bradbury’s “The Long Rain” because who’s going to stop me.
+[VOSTOK](https://drobnik.co/vostok), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave it with *trzynastozgłowiec* verse. One that’s a queer retelling of Bradbury’s “The Long Rain” because who’s going to stop me.
 
 
 
@@ -28,13 +28,13 @@ In each verse, the thirteen syllables of Polish alexandrine are grouped into two
 
 <sup>The basic structure of a Polish alexandrine verse. The horizontal lines represent syllables, the vertical line the caesura. Syllables that should be stressed are coloured dark yellow.</sup>
 
-Perhaps it’s this last rule that makes *trzynastozgłoskowiec* sound so naturally, effortlessly Polish. In the vast majority of Polish words, the stress falls on the penultimate syllable, so it’s fairly easy to say even the most banal thought in Polish alexandrine:
+Perhaps it’s this last rule that makes *trzynastozgłoskowiec* sound so naturally, effortlessly Polish. In the vast majority of Polish words, the stress falls on the penultimate syllable, so it’s fairly easy to express even the most banal thought in Polish alexandrine:
 
 > Choć jestem polskim chłopcem, nie lubię kiełbasy.
 >
 > *(Though I’m a Polish boy, I don’t like kiełbasa.)*
 
-And even the most banal thought said in *trzynastozgłoskowiec* has a soothing, lulling cadence, one that made it a challenge to stay awake during my compulsory reading of *Pan Tadeusz* in primary school.
+And even the most banal phrase said in *trzynastozgłoskowiec* has a soothing, lulling cadence, one that almost made me fall asleep during my compulsory reading of *Pan Tadeusz* in primary school.
 
 ## Translator’s dilemma
 
@@ -44,9 +44,9 @@ The minute I made my mind, I panicked,
 
 > What should I do with the Polish alexandrine passages?
 
-When translating Polish works into English, most translators choose to replace *trzynastozgłoskowiec* with iambic pentameter. This makes sense — each is the signature metric line of the respective language.
+When translating Polish works into English, most translators choose to replace *trzynastozgłoskowiec* with iambic pentameter. That makes sense — each is the signature metric line of the respective language.
 
-It didn’t feel right in the case of VOSTOK though. Its Polishness was such a crucial part of the book I decided to retain many Polish names or even swearwords. So why replace its most Polish part with an Anglo-Saxon equivalent?
+It didn’t feel right in the case of VOSTOK though. The Polishness of the book was such a crucial part it that I decided to retain many Polish names or even swearwords, so why replace its most Polish part with an Anglo-Saxon equivalent?
 
 [<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the top part, the title and author’s name in a black, geometric font">](https://drobnik.co/vostok)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
@@ -59,7 +59,7 @@ The former is full of sibilant Slavic consonants, with just a handful of vowels 
 
 The latter is all about vowels, which can vary in duration and chain into diphthongs (and even triphthongs!), while its word stress is pretty unpredictable. 
 
-I knew from the beginning I can’t be too dogmatic about the process. I allowed certain deviations (such as treating some diphthongs as if they were single vowels), focussing instead on retaining the caesura and overall rhythm.
+I knew from the beginning I can’t be too dogmatic about the process. I allowed certain deviations (such as treating some diphthongs as if they were single vowels) and focussed instead on retaining the caesura and overall rhythm.
 
 And so the Polish:
 
@@ -79,7 +79,7 @@ became the English:
 
 ## Bending the form
 
-The rhythm of Polish alexandrine is so soothing and predictable that any deviation jolts you out of your relaxed state, making you pay attention.
+The rhythm of Polish alexandrine is so soothing and predictable that any deviation jolts you out of your ease, making you pay attention.
 
 I used this effect in the Polish draft of VOSTOK, so it made sense to replicate it in the English version:
 
