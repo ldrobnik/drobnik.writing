@@ -6,7 +6,7 @@ To understand how uber-Polish this metric line is, all you need to know is Adam 
 
 <sup>The opening lines of the first edition of *Pan Tadeusz*. Source: Wikimedia Commons.</sup>
 
-[VOSTOK](https://drobnik.co/vostok), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave it with *trzynastozgłowiec* verse. One that’s a queer retelling of Bradbury’s “The Long Rain” because who’s going to stop me.
+[VOSTOK](https://drobnik.co/vostok), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave it with a *trzynastozgłowiec* poem, one that’s a queer retelling of Bradbury’s “The Long Rain” because who’s going to stop me.
 
 
 
@@ -59,7 +59,7 @@ The former is full of sibilant Slavic consonants, with just a handful of vowels 
 
 The latter is all about vowels, which can vary in duration and chain into diphthongs (and even triphthongs!), while its word stress is pretty unpredictable. 
 
-I knew from the beginning I can’t be too dogmatic about the process. I allowed certain deviations (such as treating some diphthongs as if they were single vowels) and focussed instead on retaining the caesura and overall rhythm.
+I knew from the beginning I can’t be too dogmatic about the process. I allowed certain deviations (such as treating some diphthongs as single vowels) and focussed instead on retaining the caesura and overall rhythm.
 
 And so the Polish:
 
