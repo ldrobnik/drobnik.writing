@@ -24,7 +24,7 @@ To understand how uber-Polish this metric line is, all you need to know is Adam 
 
 In each verse, the thirteen syllables of Polish alexandrine are grouped into two phrases. The first contains seven syllables, the second six, and they’re separated by a caesura. The penultimate syllable of each phrase is stressed.
 
-![Schematic representation of a Polish alexandrine verse. Two groups of seven and six syllables each separated by a caesura. The penultimate syllable of each group is stressed.](polish-alexandrine-structure.svg)
+![Schematic representation of a Polish alexandrine verse. Two groups of seven and six syllables each separated by a caesura. The penultimate syllable of each group is stressed.](polish-alexandrine-structure.jpg)
 
 <sup>The basic structure of a Polish alexandrine verse. The horizontal lines represent syllables, the vertical line the caesura. Syllables that should be stressed are coloured dark yellow.</sup>
 
@@ -57,7 +57,7 @@ Although both part of the Indo-European family, Polish and English sound nothing
 
 The former is full of sibilant Slavic consonants, with just a handful of vowels (all of the same duration) and stress falling in most cases on the penultimate syllable.
 
-The latter is all about vowels, which can vary in duration and chain into diphthongs (and even triphthongs!), while its word stress is pretty unpredictable. 
+The latter is all about vowels, which can vary in duration and chain into diphthongs and even triphthongs, while its word stress is pretty unpredictable. 
 
 I knew from the beginning I can’t be too dogmatic about the process. I allowed certain deviations (such as treating some diphthongs as single vowels) and focussed instead on retaining the caesura and overall rhythm.
 
@@ -98,7 +98,5 @@ In a word, yes. And not only as a challenging translation exercise.
 
 The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story much better than the livelier iambic pentameter. *Trzynastozgłoskowiec* mimics the sound of the undying Venusian rain while its repetitive form corresponds with the characters’ futile attempts to find a shelter.
 
-What’s more, the very un-English form of Polish alexandrine forced some unconventional word choices that gave the passages a surreal feel.
-
-This otherworldliness goes well with the very premise of [VOSTOK](https://drobnik.co/vostok) — a book much stranger than its realistic façade would lead you to believe.
+What’s more, the very un-English form of Polish alexandrine forced some unconventional word choices that gave the passages a surreal feel. This otherworldliness goes well with the very premise of [VOSTOK](https://drobnik.co/vostok) — a book much stranger than its realistic façade would lead you to believe.
 
