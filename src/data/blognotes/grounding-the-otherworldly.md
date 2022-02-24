@@ -2,7 +2,7 @@
 
 The idea strikes me during my morning coffee. It’s late 2009. I live in Poznań, Poland. My room is overlooking the neighbourhood of Chwaliszewo (once a separate town, now part of the city centre). An exceptionally harsh and long winter is about to start.
 
-What will later become [VOSTOK](https://drobnik.co/vostok), a genre-bending literary sci-fi, is but a few sketches and incongruent ideas. A cyborg woman who modifies her body as a form of art. Her brother or maybe childhood friend with no distinct characteristics. Their cheesy origin story involving — I kid you not — a fire in an orphanage. A multi-lever cyberpunkesque city. It’s getting nowhere, so I’m happy to scrap it and start anew.
+What will later become [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), a genre-bending literary sci-fi, is but a few sketches and incongruent ideas. A cyborg woman who modifies her body as a form of art. Her brother or maybe childhood friend with no distinct characteristics. Their cheesy origin story involving — I kid you not — a fire in an orphanage. A multi-lever cyberpunkesque city. It’s getting nowhere, so I’m happy to scrap it and start anew.
 
 > If you made, right along one of its walls, a longitudinal section through the pub Kisielice, on the left side of the colourful rectangle you would see a bar, the back of a bartender working behind the bar, in the background a wall painted in vividly coloured stripes, black-and-white artwork on the wall, and further towards the right end of the section: empty tables, chairs, sofas. The only clients in the pub visible from this perspective were a man and a woman, in their late twenties by the looks of it, who sat on a soft couch by the right edge of the rectangular section and talked, smoking tremendous amounts of cigarettes.
 >
@@ -22,7 +22,7 @@ I wanted the realistic layer to be literary and rather poetic in style, told by 
 
 Crime gels well with virtually any genre, so I made VOSTOK a mystery, one in which the murder weapon is a 19th-century war scythe. So far so good. Now the hard part starts.
 
-[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the top part, the title and author’s name in a black, geometric font">](https://drobnik.co/vostok)
+[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
 
 ## The heart of the story
@@ -57,4 +57,4 @@ In the end, is VOSTOK a sci-fi novel that doesn’t break the rules of realism? 
 
 As an atheist with Catholic upbringing, I both have irrational reverence for dogmas and find perverse pleasure in tearing them down. Maybe there’s a method to this madness: start with a set of rules that give you an initial structure but bend them to your needs to tell the best story you can.  
 
-The result is [VOSTOK](https://drobnik.co/vostok): not quite realistic fiction, not quite sci-fi, but hopefully something more than the sum of the two.
+The result is [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk): not quite realistic fiction, not quite sci-fi, but hopefully something more than the sum of the two.

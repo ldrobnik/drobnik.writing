@@ -6,7 +6,7 @@ To understand how uber-Polish this metric line is, all you need to know is Adam 
 
 <sup>The opening lines of the first edition of *Pan Tadeusz*. Source: Wikimedia Commons.</sup>
 
-[VOSTOK](https://drobnik.co/vostok), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave it with a *trzynastozgłowiec* poem, one that’s a queer retelling of Bradbury’s “The Long Rain” because who’s going to stop me.
+[VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk), my genre-bending literary sci-fi, is probably the most Polish book I’ll ever write. It made sense then to interweave it with a *trzynastozgłowiec* poem, one that’s a queer retelling of Bradbury’s “The Long Rain” because who’s going to stop me.
 
 
 
@@ -48,7 +48,7 @@ When translating Polish works into English, most translators choose to replace *
 
 It didn’t feel right in the case of VOSTOK though. The Polishness of the book was such a crucial part it that I decided to retain many Polish names or even swearwords, so why replace its most Polish part with an Anglo-Saxon equivalent?
 
-[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the top part, the title and author’s name in a black, geometric font">](https://drobnik.co/vostok)
+[<img src="vostok-cover.jpg" alt="A book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the top part, the title and author’s name in a black, geometric font">](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk)
 <sup>VOSTOK is available as paperback, hardcover, and e-book</sup>
 
 ## Pushing the English into the Polish mould
@@ -98,5 +98,5 @@ In a word, yes. And not only as a challenging translation exercise.
 
 The sweeping, monotone cadence of Polish alexandrine fits Bradbury’s story much better than the livelier iambic pentameter. *Trzynastozgłoskowiec* mimics the sound of the undying Venusian rain while its repetitive form corresponds with the characters’ futile attempts to find a shelter.
 
-What’s more, the very un-English form of Polish alexandrine forced some unconventional word choices that gave the passages a surreal feel. This otherworldliness goes well with the very premise of [VOSTOK](https://drobnik.co/vostok) — a book much stranger than its realistic façade would lead you to believe.
+What’s more, the very un-English form of Polish alexandrine forced some unconventional word choices that gave the passages a surreal feel. This otherworldliness goes well with the very premise of [VOSTOK](https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk) — a book much stranger than its realistic façade would lead you to believe.
 
