@@ -1526,7 +1526,7 @@ export const ALL_BLOG_NOTES = [
         date: ['2021', '10', '05'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['grounding-the-otherworldly', 'the-exotic-familiar', 'adjusting-the-slavness-dial'],
+        related: ['grounding-the-otherworldly', 'vostok-excerpts', 'markdown-for-creative-writers'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the middle, the title and author’s name in a black, geometric font.'
