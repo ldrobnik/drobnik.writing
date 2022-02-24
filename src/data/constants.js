@@ -1616,10 +1616,15 @@ export const LINKS = [
         subtitle: 'in Split Lip Magazine',
         url: 'https://splitlipthemag.com/flash/0122/lukasz-drobnik'
     },
+    // {
+    //     title: 'Read about Polish alexandrine and VOSTOK',
+    //     subtitle: 'on my blog',
+    //     url: '/blog/polish-alexandrine'
+    // },
     {
-        title: 'Read about Polish alexandrine and VOSTOK',
+        title: 'Read about the sci-fi and the realistic in VOSTOK',
         subtitle: 'on my blog',
-        url: '/blog/polish-alexandrine'
+        url: '/blog/grounding-the-otherworldly'
     },
     {
         title: 'Read the newest issue of “błyski”',
