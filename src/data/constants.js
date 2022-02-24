@@ -1429,8 +1429,8 @@ export const WEBSITE_TEXT_TEXTS = {
                 links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                     <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
                 content: <React.Fragment>is the author of genre-bending books, <a
-                    href="https://drobnik.co/vostok" target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
-                    href="https://drobnik.co/nocturine" target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
+                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
+                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
                     published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
                         Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
@@ -1442,8 +1442,8 @@ export const WEBSITE_TEXT_TEXTS = {
                 links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                     <React.Fragment>na&nbsp;stronie&nbsp;głównej</React.Fragment>],
                 content: <React.Fragment>to autor niepokornych gatunkowo książek, <a
-                    href="https://drobnik.co/vostok" target="_blank" rel="noopener noreferrer">VOSTOK</a> i&nbsp;<a
-                    href="https://drobnik.co/nocturine" target="_blank" rel="noopener noreferrer">NOCTURINE</a>, oraz krótszych utworów
+                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> i&nbsp;<a
+                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, oraz krótszych utworów
                     opublikowanych m.in. w&nbsp;<em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
                         Review</em> i&nbsp;<em>Pithead Chapel</em>. Jego proza trafiła na longlistę <em>Wigleaf
@@ -1480,8 +1480,8 @@ export const WEBSITE_TEXT_BLOG = {
             links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                 <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
             content: <React.Fragment>is the author of genre-bending books, <a
-                href="https://drobnik.co/vostok" target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
-                href="https://drobnik.co/nocturine" target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
+                href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
+                href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
                 published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                     Lit</em>, <em>Atticus
                     Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
@@ -1617,6 +1617,11 @@ export const LINKS = [
         url: 'https://splitlipthemag.com/flash/0122/lukasz-drobnik'
     },
     {
+        title: 'Read about Polish alexandrine and VOSTOK',
+        subtitle: 'on my blog',
+        url: '/blog/polish-alexandrine'
+    },
+    {
         title: 'Read the newest issue of “błyski”',
         subtitle: 'featuring flash fiction by Cathy Ulrich',
         url: 'https://blyski.org'
@@ -1640,11 +1645,6 @@ export const LINKS = [
         title: 'Read VOSTOK excerpt',
         subtitle: 'in MacroMicroCosm',
         url: 'https://www.magcloud.com/browse/issue/2070527?__r=3020311'
-    },
-    {
-        title: 'Read my blog',
-        subtitle: 'drobnik.co/blog',
-        url: '/blog/'
     },
     {
         title: 'Read “Coal and Glitter”',
