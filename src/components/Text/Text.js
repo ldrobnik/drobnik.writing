@@ -291,6 +291,7 @@ export const Text = props => {
                                 <SubpageLinks
                                     lang={props.lang}
                                     reloadPage={reloadPage}
+                                    text={true}
                                 />
                                 <Waypoint
                                     onEnter={showLink}
