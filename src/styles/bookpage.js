@@ -5,7 +5,7 @@ import {POP_KEYFRAMES, PULSATE_KEYFRAMES} from './shared';
 
 export const BookPageTopPanel = styled.div`
     display: flex;
-
+  
   @media all and (max-width: ${props => props.theme.smallScr}) {
     display: block;
   }

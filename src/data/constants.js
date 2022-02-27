@@ -1237,7 +1237,7 @@ export const WEBSITE_TEXT_SHARED = {
             button: 'Rozumiem'
         }
     },
-    copyright: <React.Fragment>&copy;&nbsp;2019–2022 Łukasz Drobnik</React.Fragment>
+    copyright: <React.Fragment>&copy;&nbsp;2019–2022 Łukasz Drobnik</React.Fragment>,
 }
 
 //text for the About section
@@ -1470,6 +1470,15 @@ export const WEBSITE_TEXT_ABOUT = {
             }
         }
     ]
+};
+
+//text for the BookPage section
+
+export const WEBSITE_TEXT_BOOKPAGE = {
+    buyHere: {
+        en: 'Buy here:',
+        pl: 'Kup tutaj:'
+    }
 };
 
 //text for the Texts section
