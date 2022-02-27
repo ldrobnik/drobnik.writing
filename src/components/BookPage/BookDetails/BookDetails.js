@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
 import {FADE_DURATION, SmallSeparator} from '../../../styles/shared';
-import {BookBody, BookSlogan} from '../../../styles/about';
+import {BookPageBody, BookPageSlogan, BookPageTopPanel} from '../../../styles/bookpage';
 import {AnimatedContent} from '../../../animations/shared';
 import {BookAnimatedButton} from '../../../animations/about';
 import {EXCERPT_BUTTON, BOOKS} from '../../../data/constants';
@@ -66,23 +66,25 @@ export const BookDetails = props => {
         <React.Fragment>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <CentredPhoto
-                    src={BOOKS[props.book].cover}
-                    alt='Book cover'
-                    link={BOOKS[props.book].url}
-                />
-                <BookSlogan>
-                    <h1>{BOOKS[props.book].title[props.lang]}</h1>
-                    <p>{BOOKS[props.book].slogan[props.lang]}</p>
-                </BookSlogan>
+                <BookPageTopPanel>
+                    <CentredPhoto
+                        src={BOOKS[props.book].cover}
+                        alt='Book cover'
+                        link={BOOKS[props.book].url}
+                    />
+                    <BookPageSlogan>
+                        <h1>{BOOKS[props.book].title[props.lang]}</h1>
+                        <p>{BOOKS[props.book].slogan[props.lang]}</p>
+                    </BookPageSlogan>
+                </BookPageTopPanel>
             </AnimatedContent>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <BookBody>
+                <BookPageBody>
                     <div>
                         {BOOKS[props.book].body[props.lang]}
                     </div>
-                </BookBody>
+                </BookPageBody>
             </AnimatedContent>
             <Waypoint
                 onEnter={showQuotes}
