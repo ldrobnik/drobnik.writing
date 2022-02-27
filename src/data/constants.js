@@ -999,10 +999,10 @@ export const BOOKS = [
         cover: vostokCover,
         url: VOSTOK_URL,
         slogan: {
-            en: <div>Available now from <a href={VOSTOK_URL} target="_blank"
+            en: <div>Published in 2021 by <a href={VOSTOK_URL} target="_blank"
                                                      rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>
             </div>,
-            pl: <div>Dostępna teraz w&nbsp;wydawnictwie <a
+            pl: <div>Wydana w&nbsp;2021 nakładem wydawnictwa <a
                 href={VOSTOK_URL}
                 target="_blank"
                 rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
