@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
 import {FADE_DURATION, SmallSeparator} from '../../../styles/shared';
-import {BookPageBody, BookPageSlogan, BookPageTitle, BookPageTopPanel} from '../../../styles/bookpage';
+import {BookPageBody, BookPageSlogan, BookPageTitle, BookPageTopPanel, BookPageShopList} from '../../../styles/bookpage';
 import {AnimatedContent} from '../../../animations/shared';
 import {BookAnimatedButton} from '../../../animations/about';
 import {EXCERPT_BUTTON, BOOKS, WEBSITE_TEXT_BOOKPAGE} from '../../../data/constants';
@@ -75,14 +75,16 @@ export const BookDetails = props => {
                         link={BOOKS[props.book].url}
                     />
                     <div>
-                        <h1>{BOOKS[props.book].title[props.lang]}</h1>
+                        <BookPageTitle>{BOOKS[props.book].title[props.lang]}</BookPageTitle>
                         <BookPageSlogan>{BOOKS[props.book].slogan[props.lang]}</BookPageSlogan>
-                        <div>{WEBSITE_TEXT_BOOKPAGE.buyHere[props.lang]} </div>
+                        <BookPageShopList>
+                            {WEBSITE_TEXT_BOOKPAGE.buyHere[props.lang]}
                         {BOOKS[props.book].shopList.map((shop, k) => {
-                            return <div><a
+                            return <a
                                 href={shop.url} target="_blank"
-                                rel="noopener noreferrer">&nbsp;<strong>{shop.name}</strong>&nbsp;</a></div>;
+                                rel="noopener noreferrer">&nbsp;<strong>{shop.name}</strong></a>;
                         })}
+                        </BookPageShopList>
                     </div>
                 </BookPageTopPanel>
             </AnimatedContent>
