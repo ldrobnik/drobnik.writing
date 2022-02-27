@@ -903,6 +903,12 @@ export const BOOKS = [
             en: ORDER_BUTTON['preorder']['en'],
             pl: ORDER_BUTTON['preorder']['pl']
         },
+        shopList: [
+            {
+                name: <span>FATHOM BOOKS SHOP</span>,
+                url: NOCTURINE_URL
+            }
+        ],
         body: {
             en: <div>
                 <p>The end of the world starts like an ad campaign. When black cubes appear above the city of
@@ -1025,6 +1031,40 @@ export const BOOKS = [
             en: ORDER_BUTTON['order']['en'],
             pl: ORDER_BUTTON['order']['pl']
         },
+        shopList: [
+            {
+                name: <React.Fragment>VRÆYDA SHOP</React.Fragment>,
+                url: VOSTOK_URL
+            },
+            {
+                name: <React.Fragment>BOOKSHOP.ORG</React.Fragment>,
+                url: 'https://bookshop.org/books/vostok-9781988034218/9781988034218'
+            },
+            {
+                name: <React.Fragment>BARNES&nbsp;&amp;&nbsp;NOBLE</React.Fragment>,
+                url: 'https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936'
+            },
+            {
+                name: <React.Fragment>POWELL’S</React.Fragment>,
+                url: 'https://www.powells.com/book/vostok-9781988034218'
+            },
+            {
+                name: <React.Fragment>AMAZON</React.Fragment>,
+                url: 'https://www.amazon.com/Vostok-Lukasz-Drobnik/dp/1988034213'
+            },
+            {
+                name: <React.Fragment>BOOKS&nbsp;A&nbsp;MILLION</React.Fragment>,
+                url: 'https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218'
+            },
+            {
+                name: <React.Fragment>MIGHTY APE</React.Fragment>,
+                url: 'https://www.mightyape.co.nz/product/vostok/35358666'
+            },
+            {
+                name: <React.Fragment>SAXO</React.Fragment>,
+                url: 'https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218'
+            },
+        ],
         body: {
             en: <div>
                 <p>Poznań, Poland. The middle of a harsh winter. Weronika is in love with her best friend Wu, who has

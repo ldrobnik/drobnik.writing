@@ -11,6 +11,7 @@ export const BookPageTopPanel = styled.div`
   }
 `;
 
+
 export const BookPageBody = styled.div`
   font-size: ${props => props.theme.bodySize};
   font-family: ${props => props.theme.serif};
