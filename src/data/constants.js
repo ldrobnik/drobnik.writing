@@ -890,10 +890,10 @@ export const BOOKS = [
         cover: nocturineCover,
         url: NOCTURINE_URL,
         slogan: {
-            en: <div>Forthcoming in early 2022 from <a href={NOCTURINE_URL} target="_blank"
+            en: <div>A fiction collection forthcoming in early 2022 from <a href={NOCTURINE_URL} target="_blank"
                                                        rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
-            pl: <div>Dostępna na początku 2022&nbsp;roku<br/>w&nbsp;wydawnictwie <a
+            pl: <div>Zbiór prozy dostępny na początku 2022&nbsp;roku<br/>w&nbsp;wydawnictwie <a
                 href={NOCTURINE_URL}
                 target="_blank"
                 rel="noopener noreferrer"><strong>FATHOM
@@ -1013,10 +1013,10 @@ export const BOOKS = [
         cover: vostokCover,
         url: VOSTOK_URL,
         slogan: {
-            en: <div>Published in 2021 by <a href={VOSTOK_URL} target="_blank"
+            en: <div>A novel published in 2021 by <a href={VOSTOK_URL} target="_blank"
                                              rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>
             </div>,
-            pl: <div>Wydana w&nbsp;2021 nakładem wydawnictwa <a
+            pl: <div>Powieść wydana w&nbsp;2021&nbsp;roku nakładem wydawnictwa <a
                 href={VOSTOK_URL}
                 target="_blank"
                 rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
