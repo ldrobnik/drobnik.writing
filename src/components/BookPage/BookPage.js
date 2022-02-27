@@ -13,7 +13,7 @@ import {InvisibleSeparator, SectionSeparator, FADE_DURATION} from '../../styles/
 import {BookPageTopAnchor, BookPageWrapper} from '../../styles/about';
 import {AnimatedContent} from '../../animations/shared';
 import {BOOKS} from './../../data/constants';
-import Book from '../About/Book/Book';
+import BookDetails from './BookDetails/BookDetails';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
 
@@ -87,7 +87,7 @@ export const BookPage = props => {
             <BookPageTopAnchor>
                 <div id='top'></div>
             </BookPageTopAnchor>
-            <Book book={props.book}/>
+            <BookDetails book={props.book}/>
             <InvisibleSeparator/>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>

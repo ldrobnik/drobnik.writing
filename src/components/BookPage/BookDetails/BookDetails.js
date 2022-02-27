@@ -11,9 +11,9 @@ import {BookAnimatedButton} from '../../../animations/about';
 import {EXCERPT_BUTTON, BOOKS} from './../../../data/constants';
 import CentredPhoto from '../../UI/CentredPhoto/CentredPhoto';
 import SectionHeading from '../../UI/SectionHeading/SectionHeading'
-import QuoteList from '../QuoteList/QuoteList';
+import QuoteList from '../../About/QuoteList/QuoteList';
 import CentredButton from '../../UI/CentredButton/CentredButton';
-import SectionLinks from '../SectionLinks/SectionLinks';
+import SectionLinks from '../../About/SectionLinks/SectionLinks';
 
 export const BookDetails = props => {
 
@@ -162,4 +162,4 @@ const mapDispatchToProps = dispatch => {
     return bindActionCreators({setPageReload}, dispatch);
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Book));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(BookDetails));
