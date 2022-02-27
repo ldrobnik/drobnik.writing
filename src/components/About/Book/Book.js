@@ -100,7 +100,12 @@ export const Book = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <BookBody>
-                    {BOOKS[props.book].body[props.lang]}
+                    <div>
+                        {BOOKS[props.book].body[props.lang]}
+                    </div>
+                    <div>
+                        {BOOKS[props.book].orderDetails[props.lang]}
+                    </div>
                 </BookBody>
             </AnimatedContent>
             <Waypoint

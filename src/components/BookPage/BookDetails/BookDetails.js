@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {FADE_DURATION} from '../../../styles/shared';
+import {FADE_DURATION, SmallSeparator} from '../../../styles/shared';
 import {BookBody, BookSlogan} from '../../../styles/about';
 import {AnimatedContent} from '../../../animations/shared';
 import {BookAnimatedButton} from '../../../animations/about';
@@ -72,7 +72,8 @@ export const BookDetails = props => {
                     link={BOOKS[props.book].url}
                 />
                 <BookSlogan>
-                    {BOOKS[props.book].slogan[props.lang]}
+                    <h1>{BOOKS[props.book].title[props.lang]}</h1>
+                    <p>{BOOKS[props.book].slogan[props.lang]}</p>
                 </BookSlogan>
             </AnimatedContent>
             <AnimatedContent
@@ -80,9 +81,6 @@ export const BookDetails = props => {
                 <BookBody>
                     <div>
                         {BOOKS[props.book].body[props.lang]}
-                    </div>
-                    <div>
-                        {BOOKS[props.book].orderDetails[props.lang]}
                     </div>
                 </BookBody>
             </AnimatedContent>
