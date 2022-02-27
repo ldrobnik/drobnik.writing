@@ -10,14 +10,19 @@ const SubpageLinks = props => {
     const top = <AnchorLink href='#top'>{WEBSITE_TEXT_SHARED.subpagelinks.top[props.lang]}</AnchorLink>;
 
     //Link to the main page - different for the blog and text sections
-    const main = props.blog ? <Link
-        to={'/blog'}
-        onClick={props.reloadPage}
-    >{WEBSITE_TEXT_SHARED.subpagelinks.allNotes}</Link> :
-        <Link
+    let main = <div></div>;
+
+    if (props.blog) {
+        main = <Link
+            to={'/blog'}
+            onClick={props.reloadPage}
+        >{WEBSITE_TEXT_SHARED.subpagelinks.allNotes}</Link>;
+    } else if (props.text) {
+        main = <Link
             to={'/texts'}
             onClick={props.reloadPage}
         >{WEBSITE_TEXT_SHARED.subpagelinks.allTexts[props.lang]}</Link>;
+    }
 
     //The Home link
     const home = <Link
