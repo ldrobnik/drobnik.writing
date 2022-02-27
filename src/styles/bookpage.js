@@ -16,6 +16,9 @@ export const BookPageTitle = styled.h1`
   text-align: center;
   font-size: ${props => props.theme.smallTitleSize};
   font-family: ${props => props.theme.sansSerif};
+  @media all and (max-width: ${props => props.theme.smallScr}) {
+    margin-block-start: 0;
+  }
 `
 
 export const BookPageShopList = styled.div`
