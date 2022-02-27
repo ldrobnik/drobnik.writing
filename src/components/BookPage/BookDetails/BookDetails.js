@@ -4,11 +4,11 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {SectionSeparator, SmallSeparator, FADE_DURATION} from '../../../styles/shared';
+import {SmallSeparator, FADE_DURATION} from '../../../styles/shared';
 import {BookBody, BookSlogan} from '../../../styles/about';
 import {AnimatedContent} from '../../../animations/shared';
 import {BookAnimatedButton} from '../../../animations/about';
-import {EXCERPT_BUTTON, BOOKS} from './../../../data/constants';
+import {EXCERPT_BUTTON, BOOKS} from '../../../data/constants';
 import CentredPhoto from '../../UI/CentredPhoto/CentredPhoto';
 import SectionHeading from '../../UI/SectionHeading/SectionHeading'
 import QuoteList from '../../About/QuoteList/QuoteList';
@@ -28,7 +28,6 @@ export const BookDetails = props => {
     const showContent = () => {
         props.setPageReload(false);
     };
-
 
 
     //sets quote visibility to true
@@ -63,23 +62,6 @@ export const BookDetails = props => {
         [props.location.pathname, props.lang]
     );
 
-    //checks whether the component is displayed as a standalone page rather than part of the main page
-    const isStandalone = props.page === 'book';
-
-    //if the component is displayed on the standalone book page, do not display the section links
-    const sectionLinks = isStandalone ?
-        <div></div> :
-        <SectionLinks
-            lang={props.lang}
-            top={true}
-            books={false}
-            pubs={true}
-            read={true}
-        />;
-
-    //if the component is displayed on the standalone book page, do not display the section separator
-    const sectionSeparator = isStandalone ? <div></div> : <SectionSeparator/>;
-
     return (
         <React.Fragment>
             <AnimatedContent
@@ -101,7 +83,12 @@ export const BookDetails = props => {
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <BookBody>
-                    {BOOKS[props.book].body[props.lang]}
+                    <div>
+                        {BOOKS[props.book].body[props.lang]}
+                    </div>
+                    <div>
+                        {BOOKS[props.book].orderDetails[props.lang]}
+                    </div>
                 </BookBody>
             </AnimatedContent>
             <Waypoint
@@ -131,14 +118,12 @@ export const BookDetails = props => {
             />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                {sectionLinks}
                 <Waypoint
                     onEnter={showQuotes}
                 />
                 <Waypoint
                     onEnter={showExcerptBtn}
                 />
-                {sectionSeparator}
             </AnimatedContent>
             <Waypoint
                 onEnter={showQuotes}
