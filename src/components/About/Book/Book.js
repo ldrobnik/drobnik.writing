@@ -21,7 +21,7 @@ export const Book = props => {
     const [quotesVisible, setQuotesVisible] = useState(false);
 
     //specifies whether the preorder button should be visible
-    const [preorderBtnVisible, setPreorderBtnVisible] = useState(false);
+    const [orderBtnVisible, setOrderBtnVisible] = useState(false);
 
     //specifies whether the excerpt button should be visible
     const [excerptBtnVisible, setExcerptBtnVisible] = useState(false);
@@ -32,8 +32,8 @@ export const Book = props => {
     };
 
     //sets preorder button visibility to true
-    const showPreorderBtn = () => {
-        setPreorderBtnVisible(true);
+    const showorderBtn = () => {
+        setOrderBtnVisible(true);
     };
 
 
@@ -69,23 +69,6 @@ export const Book = props => {
         [props.location.pathname, props.lang]
     );
 
-    //checks whether the component is displayed as a standalone page rather than part of the main page
-    const isStandalone = props.page === 'book';
-
-    //if the component is displayed on the standalone book page, do not display the section links
-    const sectionLinks = isStandalone ?
-        <div></div> :
-        <SectionLinks
-            lang={props.lang}
-            top={true}
-            books={false}
-            pubs={true}
-            read={true}
-        />;
-
-    //if the component is displayed on the standalone book page, do not display the section separator
-    const sectionSeparator = isStandalone ? <div></div> : <SectionSeparator/>;
-
     return (
         <React.Fragment>
             <AnimatedContent
@@ -105,10 +88,10 @@ export const Book = props => {
                 </BookSlogan>
             </AnimatedContent>
             <Waypoint
-                onEnter={showPreorderBtn}
+                onEnter={showorderBtn}
             />
             <BookAnimatedButton
-                pose={preorderBtnVisible ? 'visible' : 'hidden'}>
+                pose={orderBtnVisible ? 'visible' : 'hidden'}>
                 <CentredButton
                     message={BOOKS[props.book].orderButton[props.lang]}
                     path={BOOKS[props.book].url}
@@ -147,14 +130,20 @@ export const Book = props => {
             />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                {sectionLinks}
+                <SectionLinks
+                    lang={props.lang}
+                    top={true}
+                    books={false}
+                    pubs={true}
+                    read={true}
+                />
                 <Waypoint
                     onEnter={showQuotes}
                 />
                 <Waypoint
                     onEnter={showExcerptBtn}
                 />
-                {sectionSeparator}
+                <SectionSeparator/>
             </AnimatedContent>
             <Waypoint
                 onEnter={showQuotes}
