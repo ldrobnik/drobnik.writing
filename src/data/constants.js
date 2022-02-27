@@ -1237,7 +1237,7 @@ export const WEBSITE_TEXT_SHARED = {
             button: 'Rozumiem'
         }
     },
-    copyright: <React.Fragment>&copy;&nbsp;2019–2021 Łukasz Drobnik</React.Fragment>
+    copyright: <React.Fragment>&copy;&nbsp;2019–2022 Łukasz Drobnik</React.Fragment>
 }
 
 //text for the About section
