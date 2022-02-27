@@ -97,6 +97,7 @@ export const BookDetails = props => {
                         {BOOKS[props.book].body[props.lang]}
                     </div>
                 </BookPageBody>
+                <SmallSeparator/>
             </AnimatedContent>
             <Waypoint
                 onEnter={showQuotes}
