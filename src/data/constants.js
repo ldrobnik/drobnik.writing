@@ -23,8 +23,10 @@ const vostokCover = 'vostokCover.jpg';
 //Frequently used URLs
 
 export const NOCTURINE_URL = 'http://fathombooks.org/html/drobnik.html'; //Nocturine pre-order
+export const NOCTURINE_LOCAL_URL = 'https://drobnik.co/nocturine';
 export const FATHOM_BOOKS_URL = 'http://fathombooks.org/'; //Fathom Books website
 export const VOSTOK_URL = 'https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk'; //Vostok pre-order
+export const VOSTOK_LOCAL_URL = 'https://drobnik.co/vostok';
 export const VRAEDA_URL = 'https://www.vraeydamedia.ca/literary'; //Vræyda Literary website
 export const TWITTER_URL = 'https://twitter.com/drobnik';
 export const FACEBOOK_URL = 'https://www.facebook.com/drobnikwrites';
@@ -1533,8 +1535,8 @@ export const WEBSITE_TEXT_TEXTS = {
                 links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                     <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
                 content: <React.Fragment>is the author of genre-bending books, <a
-                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
-                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter
+                    href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
+                    href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter
                     prose
                     published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
@@ -1547,8 +1549,8 @@ export const WEBSITE_TEXT_TEXTS = {
                 links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                     <React.Fragment>na&nbsp;stronie&nbsp;głównej</React.Fragment>],
                 content: <React.Fragment>to autor niepokornych gatunkowo książek, <a
-                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> i&nbsp;<a
-                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, oraz krótszych utworów
+                    href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> i&nbsp;<a
+                    href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, oraz krótszych utworów
                     opublikowanych m.in. w&nbsp;<em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
                         Review</em> i&nbsp;<em>Pithead Chapel</em>. Jego proza trafiła na longlistę <em>Wigleaf
@@ -1585,8 +1587,8 @@ export const WEBSITE_TEXT_BLOG = {
             links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                 <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
             content: <React.Fragment>is the author of genre-bending books, <a
-                href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
-                href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
+                href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
+                href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
                 published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                     Lit</em>, <em>Atticus
                     Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
