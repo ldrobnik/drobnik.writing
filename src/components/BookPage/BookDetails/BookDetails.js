@@ -90,6 +90,7 @@ export const BookDetails = props => {
             </AnimatedContent>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
+                <SmallSeparator/>
                 <BookPageBody>
                     <div>
                         {BOOKS[props.book].body[props.lang]}

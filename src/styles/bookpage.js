@@ -4,8 +4,9 @@ import {POP_KEYFRAMES, PULSATE_KEYFRAMES} from './shared';
 /* BookDetails.js */
 
 export const BookPageTopPanel = styled.div`
-    display: flex;
-  
+  display: flex;
+  align-items: center;
+
   @media all and (max-width: ${props => props.theme.smallScr}) {
     display: block;
   }
@@ -13,10 +14,19 @@ export const BookPageTopPanel = styled.div`
 
 export const BookPageTitle = styled.h1`
   text-align: center;
+  font-size: ${props => props.theme.smallTitleSize};
+  font-family: ${props => props.theme.sansSerif};
 `
 
 export const BookPageShopList = styled.div`
   text-align: center;
+  font-size: ${props => props.theme.smallBodySize};
+  font-family: ${props => props.theme.sansSerif};
+  line-height: 1.4;
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+  text-transform: uppercase;
+
   a {
     font-family: ${props => props.theme.sansSerif};
 
@@ -26,11 +36,11 @@ export const BookPageShopList = styled.div`
       }
     }
   }
-  
+
   a:not(:last-child):after {
     content: ' | ';
   }
-  
+
 `;
 
 export const BookPageBody = styled.div`
@@ -43,7 +53,7 @@ export const BookPageBody = styled.div`
   @media all and (min-width: ${props => props.theme.smallScr}) {
     text-align: justify;
   }
-  
+
   a {
     font-family: ${props => props.theme.sansSerif};
 

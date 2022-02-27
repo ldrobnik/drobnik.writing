@@ -905,7 +905,7 @@ export const BOOKS = [
         },
         shopList: [
             {
-                name: <span>FATHOM BOOKS SHOP</span>,
+                name: <span>FATHOM BOOKS</span>,
                 url: NOCTURINE_URL
             }
         ],
