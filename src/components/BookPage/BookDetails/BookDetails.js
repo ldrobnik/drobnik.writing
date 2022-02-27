@@ -4,24 +4,23 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {SectionSeparator, SmallSeparator, FADE_DURATION} from '../../../styles/shared';
-import {BookBody, BookSlogan} from '../../../styles/about';
+import {FADE_DURATION, SmallSeparator} from '../../../styles/shared';
+import {BookPageBody, BookPageSlogan, BookPageTitle, BookPageTopPanel, BookPageShopList} from '../../../styles/bookpage';
 import {AnimatedContent} from '../../../animations/shared';
 import {BookAnimatedButton} from '../../../animations/about';
-import {EXCERPT_BUTTON, BOOKS} from './../../../data/constants';
+import {EXCERPT_BUTTON, BOOKS, WEBSITE_TEXT_BOOKPAGE} from '../../../data/constants';
 import CentredPhoto from '../../UI/CentredPhoto/CentredPhoto';
 import SectionHeading from '../../UI/SectionHeading/SectionHeading'
-import QuoteList from '../QuoteList/QuoteList';
+import QuoteList from '../../About/QuoteList/QuoteList';
 import CentredButton from '../../UI/CentredButton/CentredButton';
-import SectionLinks from '../SectionLinks/SectionLinks';
+import ThemeWrapper from '../../ThemeWrapper/ThemeWrapper';
+import SectionLinks from '../../About/SectionLinks/SectionLinks';
 
-export const Book = props => {
+export const BookDetails = props => {
 
     //specifies whether the quotes should be displayed - triggered by scrolling to the Waypoint element
     const [quotesVisible, setQuotesVisible] = useState(false);
 
-    //specifies whether the preorder button should be visible
-    const [orderBtnVisible, setOrderBtnVisible] = useState(false);
 
     //specifies whether the excerpt button should be visible
     const [excerptBtnVisible, setExcerptBtnVisible] = useState(false);
@@ -29,11 +28,6 @@ export const Book = props => {
     //shows the content
     const showContent = () => {
         props.setPageReload(false);
-    };
-
-    //sets preorder button visibility to true
-    const showorderBtn = () => {
-        setOrderBtnVisible(true);
     };
 
 
@@ -65,6 +59,8 @@ export const Book = props => {
 
             //hide elements
             setTimeout(hideElements, 100);
+
+            console.log(BOOKS[props.book].shopList);
         },
         [props.location.pathname, props.lang]
     );
@@ -73,40 +69,34 @@ export const Book = props => {
         <React.Fragment>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <SectionHeading
-                    title={BOOKS[props.book].title[props.lang]}
-                    subtitle=""
-                />
-                <SmallSeparator/>
-                <CentredPhoto
-                    src={BOOKS[props.book].cover}
-                    alt='Book cover'
-                    link={BOOKS[props.book].url}
-                />
-                <BookSlogan>
-                    {BOOKS[props.book].slogan[props.lang]}
-                </BookSlogan>
+                <BookPageTopPanel>
+                    <CentredPhoto
+                        src={BOOKS[props.book].cover}
+                        alt='Book cover'
+                        link={BOOKS[props.book].url}
+                    />
+                    <div>
+                        <BookPageTitle>{BOOKS[props.book].title[props.lang]}</BookPageTitle>
+                        <BookPageSlogan>{BOOKS[props.book].slogan[props.lang]}</BookPageSlogan>
+                        <BookPageShopList>
+                            {WEBSITE_TEXT_BOOKPAGE.buyHere[props.lang]}
+                        {BOOKS[props.book].shopList.map((shop, k) => {
+                            return <a
+                                href={shop.url} target="_blank"
+                                rel="noopener noreferrer">&nbsp;<strong>{shop.name}</strong></a>;
+                        })}
+                        </BookPageShopList>
+                    </div>
+                </BookPageTopPanel>
             </AnimatedContent>
-            <Waypoint
-                onEnter={showorderBtn}
-            />
-            <BookAnimatedButton
-                pose={orderBtnVisible ? 'visible' : 'hidden'}>
-                <CentredButton
-                    message={BOOKS[props.book].orderButton[props.lang]}
-                    path={BOOKS[props.book].url}
-                />
-            </BookAnimatedButton>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <BookBody>
+                <SmallSeparator/>
+                <BookPageBody>
                     <div>
                         {BOOKS[props.book].body[props.lang]}
                     </div>
-                    <div>
-                        {BOOKS[props.book].orderDetails[props.lang]}
-                    </div>
-                </BookBody>
+                </BookPageBody>
             </AnimatedContent>
             <Waypoint
                 onEnter={showQuotes}
@@ -135,20 +125,12 @@ export const Book = props => {
             />
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <SectionLinks
-                    lang={props.lang}
-                    top={true}
-                    books={false}
-                    pubs={true}
-                    read={true}
-                />
                 <Waypoint
                     onEnter={showQuotes}
                 />
                 <Waypoint
                     onEnter={showExcerptBtn}
                 />
-                <SectionSeparator/>
             </AnimatedContent>
             <Waypoint
                 onEnter={showQuotes}
@@ -172,4 +154,4 @@ const mapDispatchToProps = dispatch => {
     return bindActionCreators({setPageReload}, dispatch);
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Book));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(BookDetails));

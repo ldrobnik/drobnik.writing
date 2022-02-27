@@ -11,7 +11,7 @@ import {
 } from '../../../../styles/blog';
 import {setPageReload} from '../../../../actions';
 import {BLOG_CATEGORIES} from '../../../../data/constants';
-import ThemeWrapper from '../../ThemeWrapper/ThemeWrapper';
+import ThemeWrapper from '../../../ThemeWrapper/ThemeWrapper';
 
 const BlogNoteListElement = props => {
 

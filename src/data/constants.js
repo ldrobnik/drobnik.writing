@@ -23,8 +23,10 @@ const vostokCover = 'vostokCover.jpg';
 //Frequently used URLs
 
 export const NOCTURINE_URL = 'http://fathombooks.org/html/drobnik.html'; //Nocturine pre-order
+export const NOCTURINE_LOCAL_URL = 'https://drobnik.co/nocturine';
 export const FATHOM_BOOKS_URL = 'http://fathombooks.org/'; //Fathom Books website
 export const VOSTOK_URL = 'https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk'; //Vostok pre-order
+export const VOSTOK_LOCAL_URL = 'https://drobnik.co/vostok';
 export const VRAEDA_URL = 'https://www.vraeydamedia.ca/literary'; //Vræyda Literary website
 export const TWITTER_URL = 'https://twitter.com/drobnik';
 export const FACEBOOK_URL = 'https://www.facebook.com/drobnikwrites';
@@ -133,10 +135,15 @@ export const TEXTS = {
             subtitle: 'novel fragment',
             credits: 'Written & translated from the Polish by Łukasz Drobnik. Edits by Emily Nemchick and Lis Goryniuk-Ratajczak.',
             description: <p><em>Vostok</em> was published in 2021 by <a href={VOSTOK_URL} target="_blank"
-                                                                                   rel="noopener noreferrer"><em>Vræyda
-                Literary</em></a>. Its fragments were featured in <a href="https://www.magcloud.com/browse/issue/2070527?__r=3020311" target="_blank" rel="noopener noreferrer"><em>MacroMicroCosm</em></a> and <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/10/31/vostok-an-excerpt" target="_blank" rel="noopener noreferrer"><em>MacroMicroCosm Online</em></a> as well as in Polish in <a href="http://lampa.art.pl/"
-                                                                                target="_blank"
-                                                                                rel="noopener noreferrer"><em>Lampa</em></a> Issue&nbsp;3/2012
+                                                                        rel="noopener noreferrer"><em>Vræyda
+                Literary</em></a>. Its fragments were featured in <a
+                href="https://www.magcloud.com/browse/issue/2070527?__r=3020311" target="_blank"
+                rel="noopener noreferrer"><em>MacroMicroCosm</em></a> and <a
+                href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/10/31/vostok-an-excerpt" target="_blank"
+                rel="noopener noreferrer"><em>MacroMicroCosm Online</em></a> as well as in Polish in <a
+                href="http://lampa.art.pl/"
+                target="_blank"
+                rel="noopener noreferrer"><em>Lampa</em></a> Issue&nbsp;3/2012
                 and on <a href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
                           target="_blank" rel="noopener noreferrer"><em>wydawnictwo&nbsp;j</em></a> website.</p>,
             filename: 'vostok-en',
@@ -277,14 +284,18 @@ export const TEXTS = {
             subtitle: 'fragment powieści',
             credits: 'Tekst: Łukasz Drobnik.',
             description: <p>„Vostok” ukazał się w&nbsp;2021&nbsp;roku nakładem wydawnictwa <a href={VOSTOK_URL}
-                                                                                           target="_blank"
-                                                                                           rel="noopener noreferrer"><em>Vræyda
+                                                                                              target="_blank"
+                                                                                              rel="noopener noreferrer"><em>Vræyda
                 Literary</em></a>. Fragmenty książki można było przeczytać po polsku w&nbsp;<a
                 href="http://lampa.art.pl/" target="_blank"
                 rel="noopener noreferrer"><em>Lampie</em></a> (numer&nbsp;3/2012)
                 i&nbsp;na stronie <a
                     href="http://wydawnictwoj.pl/uncategorized/pismo/proza/lukasz-drobnik-vostok-fragment/"
-                    target="_blank" rel="noopener noreferrer"><em>wydawnictwa&nbsp;j</em></a>, a&nbsp;po angielsku w&nbsp;piśmie <a href="https://www.magcloud.com/browse/issue/2070527?__r=3020311" target="_blank" rel="noopener noreferrer"><em>MacroMicroCosm</em></a> oraz <a href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/10/31/vostok-an-excerpt" target="_blank" rel="noopener noreferrer"><em>jego wersji online</em></a>.</p>,
+                    target="_blank" rel="noopener noreferrer"><em>wydawnictwa&nbsp;j</em></a>, a&nbsp;po angielsku
+                w&nbsp;piśmie <a href="https://www.magcloud.com/browse/issue/2070527?__r=3020311" target="_blank"
+                                 rel="noopener noreferrer"><em>MacroMicroCosm</em></a> oraz <a
+                    href="https://www.vraeydamedia.ca/macromicrocosm-online/2021/10/31/vostok-an-excerpt"
+                    target="_blank" rel="noopener noreferrer"><em>jego wersji online</em></a>.</p>,
             filename: 'vostok-pl',
             theme: 'vostok'
         },
@@ -881,10 +892,10 @@ export const BOOKS = [
         cover: nocturineCover,
         url: NOCTURINE_URL,
         slogan: {
-            en: <div>Forthcoming in early 2022 from <a href={NOCTURINE_URL} target="_blank"
-                                                     rel="noopener noreferrer"><strong>FATHOM
+            en: <div>A fiction collection forthcoming in early 2022 from <a href={NOCTURINE_URL} target="_blank"
+                                                       rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
-            pl: <div>Dostępna na początku 2022&nbsp;roku<br/>w&nbsp;wydawnictwie <a
+            pl: <div>Zbiór prozy dostępny na początku 2022&nbsp;roku<br/>w&nbsp;wydawnictwie <a
                 href={NOCTURINE_URL}
                 target="_blank"
                 rel="noopener noreferrer"><strong>FATHOM
@@ -894,6 +905,12 @@ export const BOOKS = [
             en: ORDER_BUTTON['preorder']['en'],
             pl: ORDER_BUTTON['preorder']['pl']
         },
+        shopList: [
+            {
+                name: <span>FATHOM BOOKS</span>,
+                url: NOCTURINE_URL
+            }
+        ],
         body: {
             en: <div>
                 <p>The end of the world starts like an ad campaign. When black cubes appear above the city of
@@ -909,8 +926,6 @@ export const BOOKS = [
                     contemporary Poznań devoured by an 8-bit amoeba to a house comprised of countless floors, to a
                     homestead haunted by dummies, to the inside of a human body. Each of six pieces is told by
                     a different narrator in a frantic yet melancholic style.</p>
-                <p>You can pre-order <em>NOCTURINE</em> from <a href={NOCTURINE_URL} target="_blank"
-                                                                                        rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a>.</p>
             </div>,
             pl: <div>
                 <p>Koniec świata zaczyna się jak kampania reklamowa. Gdy nad Poznaniem zawisają czarne sześciany,
@@ -924,9 +939,16 @@ export const BOOKS = [
                     złożony z&nbsp;niezliczonych pięter i&nbsp;nawiedzane przez manekiny domostwo aż po wnętrze
                     ludzkiego ciała. Każdy z&nbsp;sześciu tekstów ma innego narratora, który snuje opowieść
                     w&nbsp;gorączkowym, lecz melancholijnym stylu.</p>
-                <p><em>NOCTURINE</em> można zamówić w&nbsp;przedsprzedaży na stronie <a href={NOCTURINE_URL} target="_blank"
-                                                                         rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a>.</p>
             </div>
+        },
+        orderDetails: {
+            en: <p>You can pre-order <em>NOCTURINE</em> from <a href={NOCTURINE_URL} target="_blank"
+                                                                rel="noopener noreferrer"><strong>FATHOM BOOKS</strong></a>.
+            </p>,
+            pl: <p><em>NOCTURINE</em> można zamówić w&nbsp;przedsprzedaży na stronie <a href={NOCTURINE_URL}
+                                                                                        target="_blank"
+                                                                                        rel="noopener noreferrer"><strong>FATHOM
+                BOOKS</strong></a>.</p>
         },
         quotes: {
             en: [
@@ -999,10 +1021,10 @@ export const BOOKS = [
         cover: vostokCover,
         url: VOSTOK_URL,
         slogan: {
-            en: <div>Available now from <a href={VOSTOK_URL} target="_blank"
-                                                     rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>
+            en: <div>A novel published in 2021 by <a href={VOSTOK_URL} target="_blank"
+                                             rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>
             </div>,
-            pl: <div>Dostępna teraz w&nbsp;wydawnictwie <a
+            pl: <div>Powieść wydana w&nbsp;2021&nbsp;roku nakładem wydawnictwa <a
                 href={VOSTOK_URL}
                 target="_blank"
                 rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a></div>,
@@ -1011,6 +1033,40 @@ export const BOOKS = [
             en: ORDER_BUTTON['order']['en'],
             pl: ORDER_BUTTON['order']['pl']
         },
+        shopList: [
+            {
+                name: <React.Fragment>VRÆYDA SHOP</React.Fragment>,
+                url: VOSTOK_URL
+            },
+            {
+                name: <React.Fragment>BOOKSHOP.ORG</React.Fragment>,
+                url: 'https://bookshop.org/books/vostok-9781988034218/9781988034218'
+            },
+            {
+                name: <React.Fragment>BARNES&nbsp;&amp;&nbsp;NOBLE</React.Fragment>,
+                url: 'https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936'
+            },
+            {
+                name: <React.Fragment>POWELL’S</React.Fragment>,
+                url: 'https://www.powells.com/book/vostok-9781988034218'
+            },
+            {
+                name: <React.Fragment>AMAZON</React.Fragment>,
+                url: 'https://www.amazon.com/Vostok-Lukasz-Drobnik/dp/1988034213'
+            },
+            {
+                name: <React.Fragment>BOOKS&nbsp;A&nbsp;MILLION</React.Fragment>,
+                url: 'https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218'
+            },
+            {
+                name: <React.Fragment>MIGHTY APE</React.Fragment>,
+                url: 'https://www.mightyape.co.nz/product/vostok/35358666'
+            },
+            {
+                name: <React.Fragment>SAXO</React.Fragment>,
+                url: 'https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218'
+            },
+        ],
         body: {
             en: <div>
                 <p>Poznań, Poland. The middle of a harsh winter. Weronika is in love with her best friend Wu, who has
@@ -1021,8 +1077,6 @@ export const BOOKS = [
                 <p>On the surface, <em>VOSTOK</em> is a murder story with a literary bent. Dig deeper, and it will
                     reveal itself as science
                     fiction that only pretends to play by the rules of realism.</p>
-                <p>You can buy <em>VOSTOK</em> from <a href={VOSTOK_URL} target="_blank"
-                                                rel="noopener noreferrer"><strong>VRÆYDA&nbsp;SHOP</strong></a>, <a href="https://bookshop.org/books/vostok-9781988034218/9781988034218" target="_blank" rel="noopener noreferrer"><strong>BOOKSHOP.ORG</strong></a> (US/UK), <a href="https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936" target="_blank" rel="noopener noreferrer"><strong>BARNES&nbsp;&amp;&nbsp;NOBLE</strong></a>, <a href="https://www.powells.com/book/vostok-9781988034218" target="_blank" rel="noopener noreferrer"><strong>POWELL’S</strong></a>, <a href="https://www.amazon.com/Vostok-Lukasz-Drobnik/dp/1988034213" target="_blank" rel="noopener noreferrer"><strong>AMAZON</strong></a>, <a href="https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218" target="_blank" rel="noopener noreferrer"><strong>BOOKS&nbsp;A&nbsp;MILLION</strong></a>, <a href="https://www.mightyape.co.nz/product/vostok/35358666" target="_blank" rel="noopener noreferrer"><strong>MIGHTY APE</strong></a> (NZ), and <a href="https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218" target="_blank" rel="noopener noreferrer"><strong>SAXO</strong></a> (DK).</p>
             </div>,
             pl: <div>
                 <p>Poznań, środek mroźnej zimy. Weronika kocha się w&nbsp;swoim najlepszym przyjacielu Wu, który właśnie
@@ -1033,18 +1087,52 @@ export const BOOKS = [
                 <p>Na pierwszy rzut oka <em>VOSTOK</em> to kryminał z wysokoartystycznym zacięciem. Gdy jednak zajrzy
                     się głębiej, powieść okazuje się
                     science fiction, które tylko z&nbsp;pozoru gra według reguł realizmu.</p>
-                <p><em>VOSTOK</em> można kupić w&nbsp;tych miejscach: <a href={VOSTOK_URL} target="_blank"
-                                                       rel="noopener noreferrer"><strong>VRÆYDA&nbsp;SHOP</strong></a>, <a href="https://bookshop.org/books/vostok-9781988034218/9781988034218" target="_blank" rel="noopener noreferrer"><strong>BOOKSHOP.ORG</strong></a> (US/UK), <a href="https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936" target="_blank" rel="noopener noreferrer"><strong>BARNES&nbsp;&amp;&nbsp;NOBLE</strong></a>, <a href="https://www.powells.com/book/vostok-9781988034218" target="_blank" rel="noopener noreferrer"><strong>POWELL’S</strong></a>, <a href="https://www.amazon.com/Vostok-Lukasz-Drobnik/dp/1988034213" target="_blank" rel="noopener noreferrer"><strong>AMAZON</strong></a>, <a href="https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218" target="_blank" rel="noopener noreferrer"><strong>BOOKS&nbsp;A&nbsp;MILLION</strong></a>, <a href="https://www.mightyape.co.nz/product/vostok/35358666" target="_blank" rel="noopener noreferrer"><strong>MIGHTY APE</strong></a> (NZ) i&nbsp;<a href="https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218" target="_blank" rel="noopener noreferrer"><strong>SAXO</strong></a> (DK).</p>
             </div>
+        },
+        orderDetails: {
+            en: <p>You can buy <em>VOSTOK</em> from <a href={VOSTOK_URL} target="_blank"
+                                                       rel="noopener noreferrer"><strong>VRÆYDA&nbsp;SHOP</strong></a>, <a
+                href="https://bookshop.org/books/vostok-9781988034218/9781988034218" target="_blank"
+                rel="noopener noreferrer"><strong>BOOKSHOP.ORG</strong></a> (US/UK), <a
+                href="https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936" target="_blank"
+                rel="noopener noreferrer"><strong>BARNES&nbsp;&amp;&nbsp;NOBLE</strong></a>, <a
+                href="https://www.powells.com/book/vostok-9781988034218" target="_blank"
+                rel="noopener noreferrer"><strong>POWELL’S</strong></a>, <a
+                href="https://www.amazon.com/Vostok-Lukasz-Drobnik/dp/1988034213" target="_blank"
+                rel="noopener noreferrer"><strong>AMAZON</strong></a>, <a
+                href="https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218" target="_blank"
+                rel="noopener noreferrer"><strong>BOOKS&nbsp;A&nbsp;MILLION</strong></a>, <a
+                href="https://www.mightyape.co.nz/product/vostok/35358666" target="_blank"
+                rel="noopener noreferrer"><strong>MIGHTY APE</strong></a> (NZ), and <a
+                href="https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218" target="_blank"
+                rel="noopener noreferrer"><strong>SAXO</strong></a> (DK).</p>,
+            pl: <p><em>VOSTOK</em> można kupić w&nbsp;tych miejscach: <a href={VOSTOK_URL} target="_blank"
+                                                                         rel="noopener noreferrer"><strong>VRÆYDA&nbsp;SHOP</strong></a>, <a
+                href="https://bookshop.org/books/vostok-9781988034218/9781988034218" target="_blank"
+                rel="noopener noreferrer"><strong>BOOKSHOP.ORG</strong></a> (US/UK), <a
+                href="https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936" target="_blank"
+                rel="noopener noreferrer"><strong>BARNES&nbsp;&amp;&nbsp;NOBLE</strong></a>, <a
+                href="https://www.powells.com/book/vostok-9781988034218" target="_blank"
+                rel="noopener noreferrer"><strong>POWELL’S</strong></a>, <a
+                href="https://www.amazon.com/Vostok-Lukasz-Drobnik/dp/1988034213" target="_blank"
+                rel="noopener noreferrer"><strong>AMAZON</strong></a>, <a
+                href="https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218" target="_blank"
+                rel="noopener noreferrer"><strong>BOOKS&nbsp;A&nbsp;MILLION</strong></a>, <a
+                href="https://www.mightyape.co.nz/product/vostok/35358666" target="_blank"
+                rel="noopener noreferrer"><strong>MIGHTY APE</strong></a> (NZ) i&nbsp;<a
+                href="https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218" target="_blank"
+                rel="noopener noreferrer"><strong>SAXO</strong></a> (DK).</p>
         },
         quotes: {
             en: [
                 {
-                    quote: <div>One of the most imaginative novels I’ve read (…) The right mix of experimental, multi-formic prose and a world built beyond the bizarre as one keeps reading.</div>,
+                    quote: <div>One of the most imaginative novels I’ve read (…) The right mix of experimental,
+                        multi-formic prose and a world built beyond the bizarre as one keeps reading.</div>,
                     source: 'Sapha Burnell, author of NEON Lieben'
                 },
                 {
-                    quote: <div>If you are looking for (…) a mystery that builds page to page with a revealing crescendo that washes over you helplessly, then <em>Vostok</em> is the novel for you.</div>,
+                    quote: <div>If you are looking for (…) a mystery that builds page to page with a revealing crescendo
+                        that washes over you helplessly, then <em>Vostok</em> is the novel for you.</div>,
                     source: 'R.L. Arenz III, author of Aegis'
                 },
                 {
@@ -1055,15 +1143,19 @@ export const BOOKS = [
             ],
             pl: [
                 {
-                    quote: <div>Jedna z&nbsp;najbardziej pomysłowych powieści, jakie czytałam (…) Odpowiednia mieszanka eksperymentalnej, wielopostaciowej prozy i&nbsp;świata powieści, który w&nbsp;miarę czytania przekracza granice dziwaczności.</div>,
+                    quote: <div>Jedna z&nbsp;najbardziej pomysłowych powieści, jakie czytałam (…) Odpowiednia mieszanka
+                        eksperymentalnej, wielopostaciowej prozy i&nbsp;świata powieści, który w&nbsp;miarę czytania
+                        przekracza granice dziwaczności.</div>,
                     source: 'Sapha Burnell, autorka książek NEON Lieben, Usurper Kings, Son of Abel'
                 },
                 {
-                    quote: <div>Jeśli szukasz (…) kryminału, który strona po stronie buduje tajemnicę, by ją rozwiązać w spadającym znienacka crescendo, <em>Vostok</em> jest powieścią dla ciebie.</div>,
+                    quote: <div>Jeśli szukasz (…) kryminału, który strona po stronie buduje tajemnicę, by ją rozwiązać w
+                        spadającym znienacka crescendo, <em>Vostok</em> jest powieścią dla ciebie.</div>,
                     source: 'R.L. Arenz III, autor powieści Aegis'
                 },
                 {
-                    quote: <div><em>Vostok</em> to proza o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę przestać do niej wracać.</div>,
+                    quote: <div><em>Vostok</em> to proza o&nbsp;wyjątkowej urodzie i&nbsp;czystości. Nie mogę przestać
+                        do niej wracać.</div>,
                     source: 'VRÆYDA LITERARY, wydawca'
                 }
             ]
@@ -1187,7 +1279,7 @@ export const WEBSITE_TEXT_SHARED = {
             button: 'Rozumiem'
         }
     },
-    copyright: <React.Fragment>&copy;&nbsp;2019–2021 Łukasz Drobnik</React.Fragment>
+    copyright: <React.Fragment>&copy;&nbsp;2019–2022 Łukasz Drobnik</React.Fragment>,
 }
 
 //text for the About section
@@ -1208,13 +1300,16 @@ export const WEBSITE_TEXT_ABOUT = {
                     blending it with other genres, and I’m a huge flash fiction fan (though I don’t shy away from
                     longer forms). I live in Kraków, Poland.</p>
                 <p>I’ve written two genre-bending books: a novel <AnchorLink
-                        href='#vostok'
-                        offset="60px"><strong>VOSTOK</strong></AnchorLink> published by <a
-                        href={VOSTOK_URL} target="_blank"
-                        rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a> and a collection of interlinked stories <AnchorLink
-                    href='#nocturine'
-                    offset="60px"><strong>NOCTURINE</strong></AnchorLink> forthcoming from <a href={NOCTURINE_URL} target="_blank"
-                                       rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.</p>
+                    href='#vostok'
+                    offset="60px"><strong>VOSTOK</strong></AnchorLink> published by <a
+                    href={VOSTOK_URL} target="_blank"
+                    rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a> and a collection of interlinked
+                    stories <AnchorLink
+                        href='#nocturine'
+                        offset="60px"><strong>NOCTURINE</strong></AnchorLink> forthcoming from <a href={NOCTURINE_URL}
+                                                                                                  target="_blank"
+                                                                                                  rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.
+                </p>
                 <p>My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly West</em>, <em>Pithead
                     Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X&#8209;R&#8209;A&#8209;Y
@@ -1239,15 +1334,17 @@ export const WEBSITE_TEXT_ABOUT = {
                     i&nbsp;wplatam w&nbsp;nią elementy innych gatunków. Do tego jestem ogromnym fanem <em>flash
                         fiction</em> (nie stronię jednak od dłuższych form). Mieszkam w Krakowie.</p>
                 <p>Napisałem dwie gatunkowo niepokorne książki: powieść <AnchorLink
-                        href='#vostok'
-                        offset="60px"><strong>VOSTOK</strong></AnchorLink> opublikowaną przez wydawnictwo <a
-                        href={VOSTOK_URL} target="_blank"
-                        rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a> i&nbsp;zbiór powiązanych fabularnie
+                    href='#vostok'
+                    offset="60px"><strong>VOSTOK</strong></AnchorLink> opublikowaną przez wydawnictwo <a
+                    href={VOSTOK_URL} target="_blank"
+                    rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a> i&nbsp;zbiór powiązanych
+                    fabularnie
                     opowiadań <AnchorLink
                         href='#nocturine'
-                        offset="60px"><strong>NOCTURINE</strong></AnchorLink>, który ukaże się nakładem wydawnictwa <a href={NOCTURINE_URL}
-                                                                                              target="_blank"
-                                                                                              rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.</p>
+                        offset="60px"><strong>NOCTURINE</strong></AnchorLink>, który ukaże się nakładem wydawnictwa <a
+                        href={NOCTURINE_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.</p>
                 <p>Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly
                     West</em>, <em>Pithead
@@ -1417,6 +1514,15 @@ export const WEBSITE_TEXT_ABOUT = {
     ]
 };
 
+//text for the BookPage section
+
+export const WEBSITE_TEXT_BOOKPAGE = {
+    buyHere: {
+        en: 'Buy here:',
+        pl: 'Kup tutaj:'
+    }
+};
+
 //text for the Texts section
 export const WEBSITE_TEXT_TEXTS = {
     writing: {
@@ -1429,8 +1535,9 @@ export const WEBSITE_TEXT_TEXTS = {
                 links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                     <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
                 content: <React.Fragment>is the author of genre-bending books, <a
-                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
-                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
+                    href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
+                    href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter
+                    prose
                     published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
                         Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
@@ -1442,8 +1549,8 @@ export const WEBSITE_TEXT_TEXTS = {
                 links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                     <React.Fragment>na&nbsp;stronie&nbsp;głównej</React.Fragment>],
                 content: <React.Fragment>to autor niepokornych gatunkowo książek, <a
-                    href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> i&nbsp;<a
-                    href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, oraz krótszych utworów
+                    href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> i&nbsp;<a
+                    href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, oraz krótszych utworów
                     opublikowanych m.in. w&nbsp;<em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
                         Review</em> i&nbsp;<em>Pithead Chapel</em>. Jego proza trafiła na longlistę <em>Wigleaf
@@ -1480,8 +1587,8 @@ export const WEBSITE_TEXT_BLOG = {
             links: [<React.Fragment>ŁUKASZ DROBNIK</React.Fragment>,
                 <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
             content: <React.Fragment>is the author of genre-bending books, <a
-                href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
-                href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
+                href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
+                href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
                 published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                     Lit</em>, <em>Atticus
                     Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
@@ -1642,9 +1749,9 @@ export const LINKS = [
     //     url: 'https://www.youtube.com/watch?v=Btpz1ImoAS4'
     // },
     {
-      title: 'Read “Dedlajny”',
-      subtitle: 'in Zakład Magazyn',
-      url: 'https://www.zakladmagazyn.pl/post/%C5%82ukasz-drobnik-deadlajny'
+        title: 'Read “Dedlajny”',
+        subtitle: 'in Zakład Magazyn',
+        url: 'https://www.zakladmagazyn.pl/post/%C5%82ukasz-drobnik-deadlajny'
     },
     {
         title: 'Read VOSTOK excerpt',

@@ -9,7 +9,7 @@ import {
     BiologyTheme,
     PopTheme,
     LiteraryTheme
-} from '../../../styles/blog';
+} from '../../styles/themes';
 
 const ThemeWrapper = props => {
 
