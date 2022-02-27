@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {Waypoint} from 'react-waypoint';
 import {setPageReload} from '../../../actions';
-import {SmallSeparator, FADE_DURATION} from '../../../styles/shared';
+import {FADE_DURATION} from '../../../styles/shared';
 import {BookBody, BookSlogan} from '../../../styles/about';
 import {AnimatedContent} from '../../../animations/shared';
 import {BookAnimatedButton} from '../../../animations/about';
@@ -66,11 +66,6 @@ export const BookDetails = props => {
         <React.Fragment>
             <AnimatedContent
                 pose={!props.reload ? 'visible' : 'hidden'}>
-                <SectionHeading
-                    title={BOOKS[props.book].title[props.lang]}
-                    subtitle=""
-                />
-                <SmallSeparator/>
                 <CentredPhoto
                     src={BOOKS[props.book].cover}
                     alt='Book cover'
