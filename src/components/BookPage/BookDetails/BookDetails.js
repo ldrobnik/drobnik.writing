@@ -13,6 +13,7 @@ import CentredPhoto from '../../UI/CentredPhoto/CentredPhoto';
 import SectionHeading from '../../UI/SectionHeading/SectionHeading'
 import QuoteList from '../../About/QuoteList/QuoteList';
 import CentredButton from '../../UI/CentredButton/CentredButton';
+import ThemeWrapper from '../../ThemeWrapper/ThemeWrapper';
 import SectionLinks from '../../About/SectionLinks/SectionLinks';
 
 export const BookDetails = props => {

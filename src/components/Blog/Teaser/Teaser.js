@@ -7,7 +7,7 @@ import {HighlightedMarkdown} from '../highlighted-markdown';
 import {AnimatedContent} from '../../../animations/shared';
 import {BlogPost, TeaserWrapper} from '../../../styles/blog';
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
-import ThemeWrapper from '../ThemeWrapper/ThemeWrapper';
+import ThemeWrapper from '../../ThemeWrapper/ThemeWrapper';
 import SmallSpinner from '../../UI/SmallSpinner/SmallSpinner';
 import {setPageReload} from '../../../actions';
 

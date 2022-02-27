@@ -12,10 +12,11 @@ import {
 import {InvisibleSeparator, SectionSeparator, FADE_DURATION} from '../../styles/shared';
 import {BookPageTopAnchor, BookPageWrapper} from '../../styles/about';
 import {AnimatedContent} from '../../animations/shared';
-import {BOOKS} from './../../data/constants';
+import {BOOKS, TEXT_NAMES} from './../../data/constants';
 import BookDetails from './BookDetails/BookDetails';
 import SubpageLinks from '../UI/SubpageLinks/SubpageLinks';
 import CopyrightNote from '../UI/CopyrightNote/CopyrightNote';
+import ThemeWrapper from "../ThemeWrapper/ThemeWrapper";
 
 
 export const BookPage = props => {
@@ -29,7 +30,6 @@ export const BookPage = props => {
     const reloadPage = () => {
         props.setPageReload(true);
     };
-
 
     //theme to be used - based on the current text or black-and-white if the black-and-white mode is on
     const themeToUse = props.bwMode ? 'blackAndWhite' : BOOKS[props.book].id;
@@ -62,7 +62,7 @@ export const BookPage = props => {
 
         //during pre-release promotion --> redirect to preorder page
 
-        //update the theme depending on the text displayed
+        //updates the theme based on the book
         updateTheme();
 
         //show Navbar
@@ -84,20 +84,22 @@ export const BookPage = props => {
     //do not show the content until the page is loaded
     return props.loaded &&
         <BookPageWrapper>
-            <BookPageTopAnchor>
-                <div id='top'></div>
-            </BookPageTopAnchor>
-            <BookDetails book={props.book}/>
-            <InvisibleSeparator/>
-            <AnimatedContent
-                pose={!props.reload ? 'visible' : 'hidden'}>
-                <SubpageLinks
-                    lang={props.lang}
-                    reloadPage={reloadPage}
-                />
-                <SectionSeparator/>
-                <CopyrightNote/>
-            </AnimatedContent>
+            <ThemeWrapper theme={props.book}>
+                <BookPageTopAnchor>
+                    <div id='top'></div>
+                </BookPageTopAnchor>
+                <BookDetails book={props.book}/>
+                <InvisibleSeparator/>
+                <AnimatedContent
+                    pose={!props.reload ? 'visible' : 'hidden'}>
+                    <SubpageLinks
+                        lang={props.lang}
+                        reloadPage={reloadPage}
+                    />
+                    <SectionSeparator/>
+                    <CopyrightNote/>
+                </AnimatedContent>
+            </ThemeWrapper>
         </BookPageWrapper>;
 };
 
