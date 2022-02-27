@@ -58,9 +58,8 @@ export const BookPage = props => {
 
     useEffect(() => {
         //Update page title with the piece title
-        document.title = `Łukasz Drobnik - Nocturine`;
+        document.title = `Łukasz Drobnik - ${BOOKS[props.book].title[props.lang]}`;
 
-        //during pre-release promotion --> redirect to preorder page
 
         //updates the theme based on the book
         updateTheme();
