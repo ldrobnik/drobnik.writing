@@ -227,19 +227,19 @@ export const CentredButtonButtonWrapper = styled.div`
   }
 
   @media all and (min-width: ${props => props.theme.smallScr}) {
-    margin: 0 4em;
+    margin: 0 18%;
   }
 
   @media all and (min-width: ${props => props.theme.mediumScr}) {
-    margin: 0 2em;
-  }
-
-  @media all and (min-width: ${props => props.theme.largeScr}) {
     margin: 0 20%;
   }
 
-  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+  @media all and (min-width: ${props => props.theme.largeScr}) {
     margin: 0 25%;
+  }
+
+  @media all and (min-width: ${props => props.theme.extraLargeScr}) {
+    margin: 0 30%;
   }
 `;
 
