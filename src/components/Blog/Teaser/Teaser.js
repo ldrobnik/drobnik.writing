@@ -5,9 +5,11 @@ import {Link} from 'react-router-dom';
 import Markdown from 'markdown-to-jsx/dist/index.js';
 import {HighlightedMarkdown} from '../highlighted-markdown';
 import {AnimatedContent} from '../../../animations/shared';
-import {BlogPost, TeaserWrapper} from '../../../styles/blog';
+import {BlogBigSeparator, BlogPost, BlogSeparator, TeaserWrapper} from '../../../styles/blog';
+import {SmallSeparator, BigSeparator} from "../../../styles/shared";
 import BlogNoteCredits from '../BlogNoteCredits/BlogNoteCredits';
 import ThemeWrapper from '../../ThemeWrapper/ThemeWrapper';
+import BlogImage from '../BlogNote/BlogImage/BlogImage';
 import SmallSpinner from '../../UI/SmallSpinner/SmallSpinner';
 import {setPageReload} from '../../../actions';
 
@@ -60,6 +62,27 @@ export const Teaser = props => {
                                             a: {
                                                 component: 'strong',
                                             },
+                                            img: {
+                                                component: BlogImage,
+                                                props: {
+                                                    style: {
+                                                        marginLeft: 'auto',
+                                                        marginRight: 'auto'
+                                                    }
+                                                }
+                                            },
+                                            smallSeparator: {
+                                                component: BlogSeparator,
+                                                props: {
+                                                    className: 'colouredBackground'
+                                                }
+                                            },
+                                            bigSeparator: {
+                                                component: BlogBigSeparator,
+                                                props: {
+                                                    className: 'colouredBackground'
+                                                }
+                                            }
                                         }
                                     }}
                                 >

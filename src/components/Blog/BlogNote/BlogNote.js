@@ -350,7 +350,7 @@ export const BlogNote = props => {
                                                 className: 'colouredBackground'
                                             }
                                         }
-                                    },
+                                    }
                                 }}
                             >
                                 {note}
