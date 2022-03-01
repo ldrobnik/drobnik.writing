@@ -355,8 +355,8 @@ export const PUBLICATIONS = {
                 en: 'Nocturine cover',
                 pl: 'Okładka Nocturine'
             },
-            descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się na początku 2022 r. nakładem wydawnictwa Fathom Books',
-            descriptionEn: 'Collection of interlinked stories forthcoming in early 2022 from Fathom Books',
+            descriptionPl: 'Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2022 r. nakładem wydawnictwa Fathom Books',
+            descriptionEn: 'Collection of interlinked stories forthcoming in 2022 from Fathom Books',
             language: 'en'
         },
         {
@@ -892,10 +892,10 @@ export const BOOKS = [
         cover: nocturineCover,
         url: NOCTURINE_URL,
         slogan: {
-            en: <div>A fiction collection forthcoming in early 2022 from <a href={NOCTURINE_URL} target="_blank"
+            en: <div>A fiction collection forthcoming in  2022 from <a href={NOCTURINE_URL} target="_blank"
                                                        rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
-            pl: <div>Zbiór prozy dostępny na początku 2022&nbsp;roku<br/>w&nbsp;wydawnictwie <a
+            pl: <div>Zbiór prozy dostępny w&nbsp;2022&nbsp;roku<br/>w&nbsp;wydawnictwie <a
                 href={NOCTURINE_URL}
                 target="_blank"
                 rel="noopener noreferrer"><strong>FATHOM
@@ -1629,8 +1629,8 @@ export const ALL_BLOG_NOTES = [
     {
         id: 'polish-alexandrine',
         title: 'Polish Alexandrine in English: Forcing a Yorkshire Pudding into a Pierogi Mould',
-        draft: true,
-        date: ['2021', '10', '05'],
+        draft: false,
+        date: ['2022', '03', '01'],
         category: 'vostok',
         sameImgForCategory: true,
         related: ['grounding-the-otherworldly', 'vostok-excerpts', 'markdown-for-creative-writers'],
@@ -1646,7 +1646,7 @@ export const ALL_BLOG_NOTES = [
         date: ['2022', '01', '20'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['vostok-excerpts', 'markdown-for-creative-writers'],
+        related: ['polish-alexandrine', 'vostok-excerpts', 'markdown-for-creative-writers'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the middle, the title and author’s name in a black, geometric font.'
@@ -1659,7 +1659,7 @@ export const ALL_BLOG_NOTES = [
         date: ['2021', '12', '04'],
         category: 'vostok',
         sameImgForCategory: true,
-        related: ['grounding-the-otherworldly', 'markdown-for-creative-writers'],
+        related: ['grounding-the-otherworldly', 'polish-alexandrine', 'markdown-for-creative-writers'],
         imageCredits: {
             description: '',
             alt: 'Fragment of a book cover: Vostok by Łukasz Drobnik. Rows of pink triangles against a white background. In the middle, the title and author’s name in a black, geometric font.'
