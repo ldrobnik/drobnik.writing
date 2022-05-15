@@ -1335,8 +1335,8 @@ export const WEBSITE_TEXT_ABOUT = {
             pl: <div>
                 <p>Łukasz Drobnik jest polskim pisarzem piszącym głównie po angielsku. Najlepiej się bawi, gdy bierze tzw. prozę
                     wysokoartystyczną
-                    i&nbsp;wplata w&nbsp;nią elementy innych gatunków. Do tego jest ogromnym fanem <em>flash
-                        fiction</em> (nie stroni jednak od dłuższych form). Mieszka w Krakowie.</p>
+                    i&nbsp;wplata w&nbsp;nią elementy innych gatunków. Do tego jest ogromnym fanem flash
+                        fiction (nie stroni jednak od dłuższych form). Mieszka w Krakowie.</p>
                 <p>Łukasz napisał dwie gatunkowo niepokorne książki: powieść <AnchorLink
                     href='#vostok'
                     offset="60px"><strong>VOSTOK</strong></AnchorLink> opublikowaną przez wydawnictwo <a
