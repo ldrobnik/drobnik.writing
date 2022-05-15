@@ -221,7 +221,7 @@ export const Text = props => {
                         <Markdown
                             options={{
                                 overrides: {
-                                    br: {
+                                    separator: {
                                         component: TextSeparator
                                     }
                                 },
