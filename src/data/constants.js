@@ -1310,7 +1310,7 @@ export const WEBSITE_TEXT_ABOUT = {
                                                                                                   target="_blank"
                                                                                                   rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.
                 </p>
-                <p>His other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
+                <p>His other work has been featured in <em>Split Lip Magazine</em>, <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly West</em>, <em>Pithead
                     Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X&#8209;R&#8209;A&#8209;Y
                     Literary
@@ -1345,7 +1345,7 @@ export const WEBSITE_TEXT_ABOUT = {
                         href={NOCTURINE_URL}
                         target="_blank"
                         rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.</p>
-                <p>Jego utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
+                <p>Jego utwory były publikowane m.in. w&nbsp;<em>Split Lip Magazine</em>, <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly
                     West</em>, <em>Pithead
                     Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X&#8209;R&#8209;A&#8209;Y
