@@ -1,6 +1,6 @@
 On days like this, Poznań was the cruellest of cities. It wasn’t easy to tell whether this was because of the twelve degrees of frost, the sharp sunlight, the motionless ice-bound white river, the snow lying on the roofs or a peculiar combination of these elements, but one could clearly sense that the city was streaked with a strange kind of anxiety, that its foundations were filled with elusive energy. You could swear it was about to suddenly break in half, and its northern and southern parts intended (like jaws) to break away from the ground, rise towards each other with a violent movement and forcefully collide until Piątkowo’s blocks of flats (like teeth) fitted between the tenements of Wilda.
 
-<br/>
+<separator/>
 
 If you made, right along one of its walls, a longitudinal section through the pub Kisielice, on the left side of the colourful rectangle you would see a bar, the back of a bartender working behind the bar, in the background a wall painted in vividly coloured stripes, black-and-white artwork on the wall, and further towards the right end of the section: empty tables, chairs, sofas. The only clients in the pub visible from this perspective were a man and a woman, in their late twenties by the looks of it, who sat on a soft couch by the right edge of the rectangular section and talked, smoking tremendous amounts of cigarettes.
 
@@ -54,7 +54,7 @@ Once he disappeared behind the curtain, Weronika started talking about how insan
 
 ‘Brilliant!’ Olka laughed and added Weronika must take better care of herself, after which she took out a rustling fifty-zloty note and handed it to Wu, who came back from the toilet, asking him to buy another round.
 
-<br>
+<separator/>
 
 A heavy dark sky hung above the city, it was night, Poznań’s blocks of flats and tenement houses remained dormant, car parks choked on freezing air, lampposts cast a lurid light, snow lay heavy on the roofs, and a strong, piercing wind ran along the network of streets; it carried frost.
 

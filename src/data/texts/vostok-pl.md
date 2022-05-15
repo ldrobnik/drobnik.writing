@@ -1,6 +1,6 @@
 W dni takie jak ten Poznań był najokrutniejszym z miast. Trudno sprecyzować, czy wynikało to z dwunastostopniowego mrozu, ostro świecącego słońca, skutej lodem białej nieruchomej rzeki, śniegu zalegającego na dachach czy też ze swoistego połączenia tych elementów, wyraźnie jednak dało się odczuć, że miasto podszyte jest dziwnym rodzajem niepokoju, że jego fundamenty przepełnia trudna do opisania energia. Zupełnie jakby miało się nagle przełamać wpół, a jego północna i południowa część zamierzały (na kształt paszczy) oderwać się od ziemi, gwałtownie unieść ku sobie i z wielkim impetem zderzyć, aż piątkowskie bloki (jak zęby) wpasują się pomiędzy wildeckie kamienice.
 
-<br/>
+<separator/>
 
 Gdyby wykonać, tuż przy jednej ze ścian, przekrój podłużny przez pub Kisielice, z lewej strony barwnego prostokąta widać by było bar, odwróconego tyłem barmana uwijającego się za barem, w tle ścianę pomalowaną w kolorowe pasy, czarno-białe grafiki na ścianie, a dalej w kierunku prawego końca przekroju: puste stoliki, krzesła, kanapy. Jedynymi widocznymi z tej perspektywy klientami pubu byliby kobieta i mężczyzna, na oko pod trzydziestkę, którzy siedzieli na miękkiej sofie przy prawym krańcu prostokątnego przekroju i rozmawiając, palili potworne ilości papierosów.
 
@@ -54,7 +54,7 @@ Kiedy zniknął za kotarą, Weronika zaczęła opowiadać o tym, jak strasznie 
 
 — Przepięknie! — zaśmiała się Olka i dodała, że Weronika musi bardziej na siebie uważać, po czym wyjęła z szelestem banknot pięćdziesięciozłotowy i wręczyła go Wu, który właśnie wrócił z toalety, prosząc go, by kupił jeszcze każdemu po jednym.
 
-<br>
+<separator/>
 
 Nad miastem wisiało ciężkie, ciemne niebo, była noc, poznańskie bloki i kamienice trwały w uśpieniu, parkingi dusiły się mroźnym powietrzem, paliło trupie światło latarń, śnieg zalegał na dachach, a wzdłuż sieci poznańskich ulic przebiegał silny, przenikliwy wiatr; niósł ze sobą mróz.
 
