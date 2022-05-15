@@ -18,6 +18,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 const nocturineCover = 'nocturineCover.jpg';
 const nocCunCover = 'nocCunCover.jpg';
 const vostokCover = 'vostokCover.jpg';
+const nocturineCoverColor = 'nocturineCoverColor.jpg';
+const vostokCoverColor = 'vostokCoverColor.jpg';
 // import tbaCover from 'tbaCover.jpg';
 
 //Frequently used URLs
@@ -890,6 +892,7 @@ export const BOOKS = [
         },
         displayOnMain: true,
         cover: nocturineCover,
+        colorCover: nocturineCoverColor,
         url: NOCTURINE_URL,
         slogan: {
             en: <div>A fiction collection forthcoming in  2022 from <a href={NOCTURINE_URL} target="_blank"
@@ -1019,6 +1022,7 @@ export const BOOKS = [
         },
         displayOnMain: true,
         cover: vostokCover,
+        colorCover: vostokCoverColor,
         url: VOSTOK_URL,
         slogan: {
             en: <div>A novel published in 2021 by <a href={VOSTOK_URL} target="_blank"

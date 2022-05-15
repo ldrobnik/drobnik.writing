@@ -71,7 +71,7 @@ export const BookDetails = props => {
                 pose={!props.reload ? 'visible' : 'hidden'}>
                 <BookPageTopPanel>
                     <CentredPhoto
-                        src={BOOKS[props.book].cover}
+                        src={BOOKS[props.book].colorCover}
                         alt='Book cover'
                         link={BOOKS[props.book].url}
                     />
