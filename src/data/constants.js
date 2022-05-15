@@ -1296,10 +1296,10 @@ export const WEBSITE_TEXT_ABOUT = {
         },
         body: {
             en: <div>
-                <p>I’m a Polish writer writing mostly in English. My favourite pastime is taking literary fiction and
-                    blending it with other genres, and I’m a huge flash fiction fan (though I don’t shy away from
-                    longer forms). I live in Kraków, Poland.</p>
-                <p>I’ve written two genre-bending books: a novel <AnchorLink
+                <p>Łukasz Drobnik is a Polish writer writing mostly in English. His favourite pastime is taking literary fiction and
+                    blending it with other genres, and he’s a huge flash fiction fan (though he doesn’t shy away from
+                    longer forms). He lives in Kraków, Poland.</p>
+                <p>Łukasz has written two genre-bending books: a novel <AnchorLink
                     href='#vostok'
                     offset="60px"><strong>VOSTOK</strong></AnchorLink> published by <a
                     href={VOSTOK_URL} target="_blank"
@@ -1310,13 +1310,13 @@ export const WEBSITE_TEXT_ABOUT = {
                                                                                                   target="_blank"
                                                                                                   rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.
                 </p>
-                <p>My other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
+                <p>His other work has been featured in <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly West</em>, <em>Pithead
                     Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X&#8209;R&#8209;A&#8209;Y
                     Literary
                     Magazine</em>, and
-                    elsewhere. My writing was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
-                <p>I’m also editor-in-chief at <a
+                    elsewhere. His writing was longlisted for the <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
+                <p>He is also editor-in-chief at <a
                     href={BLYSKI_URL} target="_blank"
                     rel="noopener noreferrer"><strong>BŁYSKI</strong></a>, a journal publishing flash fiction in Polish
                     translation.</p>
@@ -1324,16 +1324,16 @@ export const WEBSITE_TEXT_ABOUT = {
                     a <AnchorLink href='#pubs' offset="60px"><strong>FULL LIST OF
                         PUBLICATIONS</strong></AnchorLink> and <AnchorLink href='#read'
                                                                            offset="60px"><strong>READ</strong></AnchorLink> some
-                    of my pieces.
+                    of his pieces.
                 </p>
                 <p className="centered">email: <em>drobniklukasz [at] gmail [dot] com</em></p>
             </div>,
             pl: <div>
-                <p>Jestem polskim pisarzem piszącym głównie po angielsku. Najlepiej się bawię, gdy biorę tzw. prozę
+                <p>Łukasz Drobnik jest polskim pisarzem piszącym głównie po angielsku. Najlepiej się bawi, gdy bierze tzw. prozę
                     wysokoartystyczną
-                    i&nbsp;wplatam w&nbsp;nią elementy innych gatunków. Do tego jestem ogromnym fanem <em>flash
-                        fiction</em> (nie stronię jednak od dłuższych form). Mieszkam w Krakowie.</p>
-                <p>Napisałem dwie gatunkowo niepokorne książki: powieść <AnchorLink
+                    i&nbsp;wplata w&nbsp;nią elementy innych gatunków. Do tego jest ogromnym fanem <em>flash
+                        fiction</em> (nie stroni jednak od dłuższych form). Mieszka w Krakowie.</p>
+                <p>Łukasz napisał dwie gatunkowo niepokorne książki: powieść <AnchorLink
                     href='#vostok'
                     offset="60px"><strong>VOSTOK</strong></AnchorLink> opublikowaną przez wydawnictwo <a
                     href={VOSTOK_URL} target="_blank"
@@ -1345,20 +1345,20 @@ export const WEBSITE_TEXT_ABOUT = {
                         href={NOCTURINE_URL}
                         target="_blank"
                         rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.</p>
-                <p>Moje utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
+                <p>Jego utwory były publikowane m.in. w&nbsp;<em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly
                     West</em>, <em>Pithead
                     Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X&#8209;R&#8209;A&#8209;Y
                     Literary
-                    Magazine</em>. Moja proza trafiła na longlistę <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
-                <p>Jestem też redaktorem naczelnym <a
+                    Magazine</em>. Jego proza trafiła na longlistę <em>Wigleaf Top 50 Very Short Fictions</em>.</p>
+                <p>Jest też redaktorem naczelnym <a
                     href={BLYSKI_URL} target="_blank"
                     rel="noopener noreferrer"><strong>BŁYSKÓW</strong></a>, pisma publikującego flash fiction
                     w&nbsp;polskim przekładzie.</p>
                 <p>Poniżej można
                     znaleźć <AnchorLink href='#pubs' offset="60px"><strong>PEŁNĄ LISTĘ PUBLIKACJI</strong></AnchorLink>,
                     a&nbsp;także <AnchorLink href='#read' offset="60px"><strong>POCZYTAĆ</strong></AnchorLink> kilka
-                    moich
+                    jego
                     tekstów.</p>
                 <p className="centered">e-mail: <em>drobniklukasz [at] gmail [dot] com</em></p>
             </div>
@@ -1470,8 +1470,8 @@ export const WEBSITE_TEXT_ABOUT = {
             pl: 'Czytelnia'
         },
         introduction: {
-            en: <div>Here are a handful of my pieces.<br/>Maybe you’d like to read some of them:</div>,
-            pl: <div>Oto garstka moich tekstów<br/>do niezobowiązującej lektury:</div>
+            en: <div>Selected pieces:</div>,
+            pl: <div>Wybrane teksty:</div>
         },
         blogButton: '…or check out my blog'
     },
