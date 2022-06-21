@@ -1723,6 +1723,11 @@ export const LINKS = [
         url: NOCTURINE_URL
     },
     {
+        title: 'Pre-order STRANGED WRITING',
+        subtitle: 'anthology featuring my piece “Phagocytosis”',
+        url: 'https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/'
+    },
+    {
         title: 'Read “Vacuoles”',
         subtitle: 'in Split Lip Magazine',
         url: 'https://splitlipthemag.com/flash/0122/lukasz-drobnik'
