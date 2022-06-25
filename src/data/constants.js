@@ -1070,6 +1070,10 @@ export const BOOKS = [
                 name: <React.Fragment>SAXO</React.Fragment>,
                 url: 'https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218'
             },
+            {
+                name: <React.Fragment>SMASHWORDS</React.Fragment>,
+                url: 'https://www.smashwords.com/books/view/1150667'
+            }
         ],
         body: {
             en: <div>
@@ -1107,9 +1111,11 @@ export const BOOKS = [
                 href="https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218" target="_blank"
                 rel="noopener noreferrer"><strong>BOOKS&nbsp;A&nbsp;MILLION</strong></a>, <a
                 href="https://www.mightyape.co.nz/product/vostok/35358666" target="_blank"
-                rel="noopener noreferrer"><strong>MIGHTY APE</strong></a> (NZ), and <a
+                rel="noopener noreferrer"><strong>MIGHTY APE</strong></a> (NZ), <a
                 href="https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218" target="_blank"
-                rel="noopener noreferrer"><strong>SAXO</strong></a> (DK).</p>,
+                rel="noopener noreferrer"><strong>SAXO</strong></a> (DK), and <a
+                href="https://www.smashwords.com/books/view/1150667" target="_blank"
+                rel="noopener noreferrer"><strong>SMASHWORDS</strong></a>.</p>,
             pl: <p><em>VOSTOK</em> można kupić w&nbsp;tych miejscach: <a href={VOSTOK_URL} target="_blank"
                                                                          rel="noopener noreferrer"><strong>VRÆYDA&nbsp;SHOP</strong></a>, <a
                 href="https://bookshop.org/books/vostok-9781988034218/9781988034218" target="_blank"
@@ -1123,9 +1129,11 @@ export const BOOKS = [
                 href="https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218" target="_blank"
                 rel="noopener noreferrer"><strong>BOOKS&nbsp;A&nbsp;MILLION</strong></a>, <a
                 href="https://www.mightyape.co.nz/product/vostok/35358666" target="_blank"
-                rel="noopener noreferrer"><strong>MIGHTY APE</strong></a> (NZ) i&nbsp;<a
+                rel="noopener noreferrer"><strong>MIGHTY APE</strong></a> (NZ), <a
                 href="https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218" target="_blank"
-                rel="noopener noreferrer"><strong>SAXO</strong></a> (DK).</p>
+                rel="noopener noreferrer"><strong>SAXO</strong></a> (DK) i&nbsp;<a
+                href="https://www.smashwords.com/books/view/1150667" target="_blank"
+                rel="noopener noreferrer"><strong>SMASHWORDS</strong></a>.</p>
         },
         quotes: {
             en: [
@@ -1721,6 +1729,11 @@ export const LINKS = [
         title: 'Pre-order NOCTURINE',
         subtitle: 'from Fathom Books',
         url: NOCTURINE_URL
+    },
+    {
+        title: 'Buy VOSTOK ebook',
+        subtitle: 'from Smashwords',
+        url: 'https://www.smashwords.com/books/view/1150667'
     },
     {
         title: 'Pre-order STRANGED WRITING',
