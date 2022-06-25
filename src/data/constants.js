@@ -772,7 +772,7 @@ export const PUBLICATIONS = {
             title: 'Stranged Writing: A Literary Taxonomy',
             issue: '',
             year: '',
-            url: 'http://thegravityofthething.com/submit/',
+            url: 'https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/',
             descriptionPl: 'Flash fiction „Phagocytosis” w antologii przygotowywanej przez pismo The Gravity of the Thing',
             descriptionEn: 'Flash fiction “Phagocytosis” in an anthology forthcoming from The Gravity of the Thing',
             language: 'en'
