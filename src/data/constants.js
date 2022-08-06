@@ -1205,8 +1205,14 @@ export const WEBSITE_TEXT_SHARED = {
             </React.Fragment>)
         },
         language: {
-            en: 'pl',
-            pl: 'en'
+            en: (<React.Fragment>
+                <span title="Change language to Polish">pl</span>
+                <span className="sr-only">Change language to Polish</span>
+            </React.Fragment>),
+            pl: (<React.Fragment>
+                <span title="Zmień język na angielski">en</span>
+                <span className="sr-only">Zmień język na angielski</span>
+            </React.Fragment>)
         },
         colourMode: {
             en: (<React.Fragment>
