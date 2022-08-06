@@ -895,8 +895,8 @@ export const BOOKS = [
         colorCover: nocturineCoverColor,
         url: NOCTURINE_URL,
         slogan: {
-            en: <div>A fiction collection forthcoming in  2022 from <a href={NOCTURINE_URL} target="_blank"
-                                                       rel="noopener noreferrer"><strong>FATHOM
+            en: <div>A fiction collection forthcoming in 2022 from <a href={NOCTURINE_URL} target="_blank"
+                                                                      rel="noopener noreferrer"><strong>FATHOM
                 BOOKS</strong></a></div>,
             pl: <div>Zbiór prozy dostępny w&nbsp;2022&nbsp;roku<br/>w&nbsp;wydawnictwie <a
                 href={NOCTURINE_URL}
@@ -1026,7 +1026,7 @@ export const BOOKS = [
         url: VOSTOK_URL,
         slogan: {
             en: <div>A novel published in 2021 by <a href={VOSTOK_URL} target="_blank"
-                                             rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>
+                                                     rel="noopener noreferrer"><strong>VRÆYDA&nbsp;LITERARY</strong></a>
             </div>,
             pl: <div>Powieść wydana w&nbsp;2021&nbsp;roku nakładem wydawnictwa <a
                 href={VOSTOK_URL}
@@ -1185,6 +1185,16 @@ export const WEBSITE_TEXT_SHARED = {
         en: 'author of genre-bending fiction',
         pl: 'autor gatunkowo niepokornej prozy'
     },
+    logoButton: {
+        top: {
+            en: 'Go to top',
+            pl: 'Początek strony'
+        },
+        home: {
+            en: 'Go to the homepage',
+            pl: 'Strona główna'
+        }
+    },
     navbar: {
         home: {
             en: (<React.Fragment>
@@ -1314,7 +1324,8 @@ export const WEBSITE_TEXT_ABOUT = {
         },
         body: {
             en: <div>
-                <p>Łukasz Drobnik is a Polish writer writing mostly in English. His favourite pastime is taking literary fiction and
+                <p>Łukasz Drobnik is a Polish writer writing mostly in English. His favourite pastime is taking literary
+                    fiction and
                     blending it with other genres, and he’s a huge flash fiction fan (though he doesn’t shy away from
                     longer forms). He lives in Kraków, Poland.</p>
                 <p>Łukasz has written two genre-bending books: a novel <AnchorLink
@@ -1328,7 +1339,8 @@ export const WEBSITE_TEXT_ABOUT = {
                                                                                                   target="_blank"
                                                                                                   rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.
                 </p>
-                <p>His other work has been featured in <em>Split Lip Magazine</em>, <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
+                <p>His other work has been featured in <em>Split Lip Magazine</em>, <em>HAD</em>, <em>Fractured
+                    Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly West</em>, <em>Pithead
                     Chapel</em>, <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>, <em>Foglifter</em>, <em>X&#8209;R&#8209;A&#8209;Y
                     Literary
@@ -1347,10 +1359,11 @@ export const WEBSITE_TEXT_ABOUT = {
                 <p className="centered">email: <em>drobniklukasz [at] gmail [dot] com</em></p>
             </div>,
             pl: <div>
-                <p>Łukasz Drobnik jest polskim pisarzem piszącym głównie po angielsku. Najlepiej się bawi, gdy bierze tzw. prozę
+                <p>Łukasz Drobnik jest polskim pisarzem piszącym głównie po angielsku. Najlepiej się bawi, gdy bierze
+                    tzw. prozę
                     wysokoartystyczną
                     i&nbsp;wplata w&nbsp;nią elementy innych gatunków. Do tego jest ogromnym fanem flash
-                        fiction (nie stroni jednak od dłuższych form). Mieszka w Krakowie.</p>
+                    fiction (nie stroni jednak od dłuższych form). Mieszka w Krakowie.</p>
                 <p>Łukasz napisał dwie gatunkowo niepokorne książki: powieść <AnchorLink
                     href='#vostok'
                     offset="60px"><strong>VOSTOK</strong></AnchorLink> opublikowaną przez wydawnictwo <a
@@ -1363,7 +1376,8 @@ export const WEBSITE_TEXT_ABOUT = {
                         href={NOCTURINE_URL}
                         target="_blank"
                         rel="noopener noreferrer"><strong>FATHOM&nbsp;BOOKS</strong></a>.</p>
-                <p>Jego utwory były publikowane m.in. w&nbsp;<em>Split Lip Magazine</em>, <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus
+                <p>Jego utwory były publikowane m.in. w&nbsp;<em>Split Lip Magazine</em>, <em>HAD</em>, <em>Fractured
+                    Lit</em>, <em>Atticus
                     Review</em>, <em>Quarterly
                     West</em>, <em>Pithead
                     Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>, <em>STORGY</em>, <em>BULL</em> oraz <em>X&#8209;R&#8209;A&#8209;Y
@@ -1554,7 +1568,8 @@ export const WEBSITE_TEXT_TEXTS = {
                     <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
                 content: <React.Fragment>is the author of genre-bending books, <a
                     href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
-                    href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter
+                    href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as
+                    shorter
                     prose
                     published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
@@ -1568,7 +1583,8 @@ export const WEBSITE_TEXT_TEXTS = {
                     <React.Fragment>na&nbsp;stronie&nbsp;głównej</React.Fragment>],
                 content: <React.Fragment>to autor niepokornych gatunkowo książek, <a
                     href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> i&nbsp;<a
-                    href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, oraz krótszych utworów
+                    href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, oraz krótszych
+                    utworów
                     opublikowanych m.in. w&nbsp;<em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                         Lit</em>, <em>Atticus
                         Review</em> i&nbsp;<em>Pithead Chapel</em>. Jego proza trafiła na longlistę <em>Wigleaf
@@ -1606,7 +1622,8 @@ export const WEBSITE_TEXT_BLOG = {
                 <React.Fragment>go&nbsp;to the main&nbsp;page</React.Fragment>],
             content: <React.Fragment>is the author of genre-bending books, <a
                 href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">VOSTOK</a> and <a
-                href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter prose
+                href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">NOCTURINE</a>, as well as shorter
+                prose
                 published in <em>HAD</em>, <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, <em>Fractured
                     Lit</em>, <em>Atticus
                     Review</em>, <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for the <em>Wigleaf
