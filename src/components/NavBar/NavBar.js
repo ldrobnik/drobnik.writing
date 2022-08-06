@@ -108,14 +108,13 @@ const NavBar = props => {
         setTimeout(() => setReadClickable(true), 700);
 
     };
-    console.log(WEBSITE_TEXT_SHARED.logoButton.top[props.lang]);
+
     //Content of the logo link - if on the home page, make it an anchor link scrolling to top;
     //on other pages, make it a homepage link
     const logoLink = (props.page === 'main') ?
         <AnchorLink
             href='#top'
-            title={WEBSITE_TEXT_SHARED.logoButton.top[props.lang]}
-        >
+            title={WEBSITE_TEXT_SHARED.logoButton.top[props.lang]}>
             <Logo/>
             <span className="sr-only">{WEBSITE_TEXT_SHARED.logoButton.top[props.lang]}</span>
         </AnchorLink>

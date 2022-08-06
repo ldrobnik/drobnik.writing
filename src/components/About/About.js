@@ -67,7 +67,7 @@ export const About = props => {
             <AboutSectionWrapper>
                 <Intro/>
             </AboutSectionWrapper>
-            <Suspense fallback={SmallSpinner}>
+            <Suspense fallback={<SmallSpinner/>}>
                 <AboutSectionWrapper id='books'>
                     {BOOKS.slice().reverse().map((book, k) => {
                         return (
@@ -78,12 +78,12 @@ export const About = props => {
                     })}
                 </AboutSectionWrapper>
             </Suspense>
-            <Suspense fallback={SmallSpinner}>
+            <Suspense fallback={<SmallSpinner/>}>
                 <AboutSectionWrapper id='pubs'>
                     <Pubs/>
                 </AboutSectionWrapper>
             </Suspense>
-            <Suspense fallback={SmallSpinner}>
+            <Suspense fallback={<SmallSpinner/>}>
                 <AboutSectionWrapper id='read'>
                     <Read/>
                 </AboutSectionWrapper>
