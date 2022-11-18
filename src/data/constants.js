@@ -1994,21 +1994,29 @@ export const WEBSITE_TEXT_ABOUT = {
             shy away from longer forms). He lives in Kraków, Poland.
           </p>
           <p>
-            Łukasz has written two genre-bending books: a novel{" "}
+            He has written three genre-bending books: a novel{" "}
             <AnchorLink href="#vostok" offset="60px">
               <strong>VOSTOK</strong>
             </AnchorLink>{" "}
             published by{" "}
             <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
               <strong>VRÆYDA&nbsp;LITERARY</strong>
-            </a>{" "}
-            and a collection of interlinked stories{" "}
+            </a>
+            , a collection of interlinked stories{" "}
             <AnchorLink href="#nocturine" offset="60px">
               <strong>NOCTURINE</strong>
             </AnchorLink>{" "}
             forthcoming from{" "}
             <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
               <strong>FATHOM&nbsp;BOOKS</strong>
+            </a>
+            , and a flash fiction collection{" "}
+            <AnchorLink href="#pubs" offset="60px">
+              <strong>RIVERINE</strong>
+            </AnchorLink>
+            , soon available from{" "}
+            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+              <strong>VEGETARIAN ALCOHOLIC PRESS</strong>
             </a>
             .
           </p>
@@ -2055,21 +2063,29 @@ export const WEBSITE_TEXT_ABOUT = {
             Mieszka w Krakowie.
           </p>
           <p>
-            Łukasz napisał dwie gatunkowo niepokorne książki: powieść{" "}
+            Napisał trzy gatunkowo niepokorne książki: powieść{" "}
             <AnchorLink href="#vostok" offset="60px">
               <strong>VOSTOK</strong>
             </AnchorLink>{" "}
             opublikowaną przez wydawnictwo{" "}
             <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
               <strong>VRÆYDA&nbsp;LITERARY</strong>
-            </a>{" "}
-            i&nbsp;zbiór powiązanych fabularnie opowiadań{" "}
+            </a>
+            , zbiór powiązanych fabularnie opowiadań{" "}
             <AnchorLink href="#nocturine" offset="60px">
               <strong>NOCTURINE</strong>
             </AnchorLink>
             , który ukaże się nakładem wydawnictwa{" "}
             <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
               <strong>FATHOM&nbsp;BOOKS</strong>
+            </a>
+            , oraz zbiór flash fiction{" "}
+            <AnchorLink href="#pubs" offset="60px">
+              <strong>RIVERINE</strong>
+            </AnchorLink>
+            , niedługo dostępny w wydawnictwie{" "}
+            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+              <strong>VEGETARIAN ALCOHOLIC PRESS</strong>
             </a>
             .
           </p>
@@ -2392,10 +2408,14 @@ export const WEBSITE_TEXT_BLOG = {
         is the author of genre-bending books,{" "}
         <a href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">
           VOSTOK
-        </a>{" "}
-        and{" "}
+        </a>
+        ,{" "}
         <a href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">
           NOCTURINE
+        </a>
+        , and{" "}
+        <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+          RIVERINE
         </a>
         , as well as shorter prose published in <em>HAD</em>,{" "}
         <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
