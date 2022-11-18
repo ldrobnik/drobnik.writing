@@ -717,9 +717,9 @@ export const PUBLICATIONS = {
         pl: "Okładka Nocturine",
       },
       descriptionPl:
-        "Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2022 r. nakładem wydawnictwa Fathom Books",
+        "Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2023 r. nakładem wydawnictwa Fathom Books",
       descriptionEn:
-        "Collection of interlinked stories forthcoming in 2022 from Fathom Books",
+        "Collection of interlinked stories forthcoming in 2023 from Fathom Books",
       language: "en",
     },
     {
@@ -1271,7 +1271,7 @@ export const BOOKS = [
     slogan: {
       en: (
         <div>
-          A fiction collection forthcoming in 2022 from{" "}
+          A fiction collection forthcoming in 2023 from{" "}
           <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
             <strong>FATHOM BOOKS</strong>
           </a>
@@ -1279,7 +1279,7 @@ export const BOOKS = [
       ),
       pl: (
         <div>
-          Zbiór prozy dostępny w&nbsp;2022&nbsp;roku
+          Zbiór prozy dostępny w&nbsp;2023&nbsp;roku
           <br />
           w&nbsp;wydawnictwie{" "}
           <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
