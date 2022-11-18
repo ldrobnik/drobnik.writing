@@ -709,21 +709,6 @@ export const TEXTS = {
 export const PUBLICATIONS = {
   books: [
     {
-      title: "Nocturine",
-      year: "",
-      url: NOCTURINE_URL,
-      cover: nocturineCover,
-      altText: {
-        en: "Nocturine cover",
-        pl: "Okładka Nocturine",
-      },
-      descriptionPl:
-        "Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2023 r. nakładem wydawnictwa Fathom Books",
-      descriptionEn:
-        "Collection of interlinked stories forthcoming in 2023 from Fathom Books",
-      language: "en",
-    },
-    {
       title: "Riverine",
       year: "",
       url: VAPRESS_URL,
@@ -736,6 +721,21 @@ export const PUBLICATIONS = {
         "Zbiór flash fiction, który ukaże się w 2023 r. nakładem wydawnictwa Vegetarian Alcoholic Press",
       descriptionEn:
         "Flash fiction collection forthcoming in 2023 from Vegetarian Alcoholic Press",
+      language: "en",
+    },
+    {
+      title: "Nocturine",
+      year: "",
+      url: NOCTURINE_URL,
+      cover: nocturineCover,
+      altText: {
+        en: "Nocturine cover",
+        pl: "Okładka Nocturine",
+      },
+      descriptionPl:
+        "Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2023 r. nakładem wydawnictwa Fathom Books",
+      descriptionEn:
+        "Collection of interlinked stories forthcoming in 2023 from Fathom Books",
       language: "en",
     },
     {
