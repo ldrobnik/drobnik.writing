@@ -31,6 +31,7 @@ export const VOSTOK_URL =
   "https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk"; //Vostok pre-order
 export const VOSTOK_LOCAL_URL = "https://drobnik.co/vostok";
 export const VRAEDA_URL = "https://www.vraeydamedia.ca/literary"; //Vræyda Literary website
+export const VAPRESS_URL = "http://vegetarianalcoholicpress.com/"; //Vegetarian Alcoholic Press website
 export const TWITTER_URL = "https://twitter.com/drobnik";
 export const FACEBOOK_URL = "https://www.facebook.com/drobnikwrites";
 export const INSTAGRAM_URL = "https://www.instagram.com/drobnikwrites/";
@@ -725,7 +726,7 @@ export const PUBLICATIONS = {
     {
       title: "Riverine",
       year: "",
-      url: "http://vegetarianalcoholicpress.com/",
+      url: VAPRESS_URL,
       cover: tbaCover,
       altText: {
         en: "Cover not yet available",
@@ -2293,14 +2294,18 @@ export const WEBSITE_TEXT_TEXTS = {
               rel="noopener noreferrer"
             >
               VOSTOK
-            </a>{" "}
-            and{" "}
+            </a>
+            ,{" "}
             <a
               href={NOCTURINE_LOCAL_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
               NOCTURINE
+            </a>
+            , and{" "}
+            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+              RIVERINE
             </a>
             , as well as shorter prose published in <em>HAD</em>,{" "}
             <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
@@ -2329,16 +2334,20 @@ export const WEBSITE_TEXT_TEXTS = {
               rel="noopener noreferrer"
             >
               VOSTOK
-            </a>{" "}
-            i&nbsp;
+            </a>
+            ,{" "}
             <a
               href={NOCTURINE_LOCAL_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
               NOCTURINE
-            </a>
-            , oraz krótszych utworów opublikowanych m.in. w&nbsp;<em>HAD</em>,{" "}
+            </a>{" "}
+            i&nbsp;
+            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+              RIVERINE
+            </a>{" "}
+            oraz krótszych utworów opublikowanych m.in. w&nbsp;<em>HAD</em>,{" "}
             <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
             <em>Fractured Lit</em>, <em>Atticus Review</em> i&nbsp;
             <em>Pithead Chapel</em>. Jego proza trafiła na longlistę{" "}
