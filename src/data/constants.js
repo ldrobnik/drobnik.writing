@@ -20,7 +20,7 @@ const nocCunCover = "nocCunCover.jpg";
 const vostokCover = "vostokCover.jpg";
 const nocturineCoverColor = "nocturineCoverColor.jpg";
 const vostokCoverColor = "vostokCoverColor.jpg";
-// import tbaCover from 'tbaCover.jpg';
+const tbaCover = "tbaCover.jpg";
 
 //Frequently used URLs
 
@@ -720,6 +720,21 @@ export const PUBLICATIONS = {
         "Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2023 r. nakładem wydawnictwa Fathom Books",
       descriptionEn:
         "Collection of interlinked stories forthcoming in 2023 from Fathom Books",
+      language: "en",
+    },
+    {
+      title: "Riverine",
+      year: "",
+      url: "http://vegetarianalcoholicpress.com/",
+      cover: tbaCover,
+      altText: {
+        en: "Cover not yet available",
+        pl: "Okładka jeszcze niedostępna",
+      },
+      descriptionPl:
+        "Zbiór flash fiction, który ukaże się w 2023 r. nakładem wydawnictwa Vegetarian Alcoholic Press",
+      descriptionEn:
+        "Flash fiction collection forthcoming in 2023 from Vegetarian Alcoholic Press",
       language: "en",
     },
     {
