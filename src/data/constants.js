@@ -2439,8 +2439,8 @@ export const ALL_BLOG_NOTES = [
       "The Exotic Familiar: Taking an Ordinary Setting into the Uncanny Valley",
     draft: true,
     date: ["2021", "10", "27"],
-    category: "vostok",
-    sameImgForCategory: true,
+    category: "literary",
+    imageName: "vostok",
     related: [
       "grounding-the-otherworldly",
       "polish-alexandrine",
@@ -2457,8 +2457,8 @@ export const ALL_BLOG_NOTES = [
       "Adjusting the Slavness Dial: How Much Polish a Text Needs to Feel Polish",
     draft: true,
     date: ["2021", "10", "20"],
-    category: "vostok",
-    sameImgForCategory: true,
+    category: "literary",
+    imageName: "vostok",
     related: [
       "grounding-the-otherworldly",
       "polish-alexandrine",
@@ -2475,8 +2475,8 @@ export const ALL_BLOG_NOTES = [
       "Polish Alexandrine in English: Forcing a Yorkshire Pudding into a Pierogi Mould",
     draft: false,
     date: ["2022", "03", "01"],
-    category: "vostok",
-    sameImgForCategory: true,
+    category: "literary",
+    imageName: "vostok",
     related: [
       "grounding-the-otherworldly",
       "vostok-excerpts",
@@ -2493,8 +2493,8 @@ export const ALL_BLOG_NOTES = [
       "Grounding the Otherworldly: Science-Fiction That Plays by the Rules of Realism",
     draft: false,
     date: ["2022", "01", "20"],
-    category: "vostok",
-    sameImgForCategory: true,
+    category: "literary",
+    imageName: "vostok",
     related: [
       "polish-alexandrine",
       "vostok-excerpts",
@@ -2510,8 +2510,8 @@ export const ALL_BLOG_NOTES = [
     title: "Vostok: Excerpts",
     draft: false,
     date: ["2021", "12", "04"],
-    category: "vostok",
-    sameImgForCategory: true,
+    category: "literary",
+    imageName: "vostok",
     related: [
       "grounding-the-otherworldly",
       "polish-alexandrine",
@@ -2526,7 +2526,7 @@ export const ALL_BLOG_NOTES = [
     id: "markdown-for-creative-writers",
     title: "Markdown for Creative Writers",
     date: ["2021", "08", "25"],
-    category: "writing",
+    category: "techy",
     related: ["quick-guide-to-markdown", "grounding-the-otherworldly"],
     imageCredits: {
       description: "",
@@ -2537,7 +2537,7 @@ export const ALL_BLOG_NOTES = [
     id: "quick-guide-to-markdown",
     title: "Quick Guide to Markdown",
     date: ["2021", "08", "25"],
-    category: "code",
+    category: "techy",
     related: ["markdown-for-creative-writers", "grounding-the-otherworldly"],
     imageCredits: {
       description: "",
@@ -2551,13 +2551,9 @@ export const BLOG_NOTES = ALL_BLOG_NOTES.filter((blognote) => !blognote.draft);
 
 //Titles of blog note categories
 export const BLOG_CATEGORIES = {
-  nocturine: "Notes on Nocturine",
-  vostok: "Vostok as a Book",
-  writing: "The Tech of Writing",
-  code: "Code the Pain Away",
-  biology: "Biology Porn",
-  pop: "This Is How We Pop",
-  literary: "Let’s Get Literary",
+  literary: "Literary Stuff",
+  techy: "Techy Stuff",
+  sciencey: "Science-y Stuff",
 };
 
 //Content of quick links (to be used on Instagram)
