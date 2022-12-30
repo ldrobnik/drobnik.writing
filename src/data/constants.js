@@ -2559,6 +2559,11 @@ export const BLOG_CATEGORIES = {
 //Content of quick links (to be used on Instagram)
 export const LINKS = [
   {
+    title: "Read the latest issue of “błyski”",
+    subtitle: "featuring flash fiction by Tara Isabel Zambrano",
+    url: "https://blyski.org",
+  },
+  {
     title: "Order VOSTOK",
     subtitle: "from Vræyda Literary",
     url: VOSTOK_URL,
@@ -2593,11 +2598,6 @@ export const LINKS = [
   //     subtitle: 'on my blog',
   //     url: '/blog/grounding-the-otherworldly'
   // },
-  {
-    title: "Read the newest issue of “błyski”",
-    subtitle: "featuring flash fiction by Cathy Ulrich",
-    url: "https://blyski.org",
-  },
   {
     title: "Watch Wyliczanka interview me",
     subtitle: "(in Polish)",
