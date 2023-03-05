@@ -31,7 +31,7 @@ export const VOSTOK_URL =
   "https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk"; //Vostok pre-order
 export const VOSTOK_LOCAL_URL = "https://drobnik.co/vostok";
 export const VRAEDA_URL = "https://www.vraeydamedia.ca/literary"; //Vræyda Literary website
-export const VAPRESS_URL = "http://vegetarianalcoholicpress.com/"; //Vegetarian Alcoholic Press website
+export const VAPRESS_URL = "http://vapoetry.com/"; //VA Press website
 export const TWITTER_URL = "https://twitter.com/drobnik";
 export const FACEBOOK_URL = "https://www.facebook.com/drobnikwrites";
 export const INSTAGRAM_URL = "https://www.instagram.com/drobnikwrites/";
@@ -718,9 +718,9 @@ export const PUBLICATIONS = {
         pl: "Okładka jeszcze niedostępna",
       },
       descriptionPl:
-        "Zbiór flash fiction, który ukaże się w 2023 r. nakładem wydawnictwa Vegetarian Alcoholic Press",
+        <>Zbiór flash fiction, który ukaże się w 2023 r. nakładem wydawnictwa VA&nbsp;Press</>,
       descriptionEn:
-        "Flash fiction collection forthcoming in 2023 from Vegetarian Alcoholic Press",
+      <>Flash fiction collection forthcoming in 2023 from VA&nbsp;Press</>,
       language: "en",
     },
     {
@@ -733,9 +733,9 @@ export const PUBLICATIONS = {
         pl: "Okładka Nocturine",
       },
       descriptionPl:
-        "Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2023 r. nakładem wydawnictwa Fathom Books",
+      <>Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2023 r. nakładem wydawnictwa Fathom Books</>,
       descriptionEn:
-        "Collection of interlinked stories forthcoming in 2023 from Fathom Books",
+      <>Collection of interlinked stories forthcoming in 2023 from Fathom Books</>,
       language: "en",
     },
     {
@@ -747,8 +747,8 @@ export const PUBLICATIONS = {
         en: "Vostok cover",
         pl: "Okładka Vostok",
       },
-      descriptionPl: "Powieść wydana nakładem wydawnictwa Vræyda Literary",
-      descriptionEn: "Novel published by Vræyda Literary",
+      descriptionPl: <>Powieść wydana nakładem wydawnictwa Vræyda Literary</>,
+      descriptionEn: <>Novel published by Vræyda Literary</>,
       language: "en",
     },
     {
@@ -2016,7 +2016,7 @@ export const WEBSITE_TEXT_ABOUT = {
             </AnchorLink>
             , soon available from{" "}
             <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VEGETARIAN ALCOHOLIC PRESS</strong>
+              <strong>VA&nbsp;PRESS</strong>
             </a>
             .
           </p>
@@ -2085,7 +2085,7 @@ export const WEBSITE_TEXT_ABOUT = {
             </AnchorLink>
             , niedługo dostępny w wydawnictwie{" "}
             <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VEGETARIAN ALCOHOLIC PRESS</strong>
+              <strong>VA&nbsp;PRESS</strong>
             </a>
             .
           </p>
