@@ -717,10 +717,15 @@ export const PUBLICATIONS = {
         en: "Cover not yet available",
         pl: "Okładka jeszcze niedostępna",
       },
-      descriptionPl:
-        <>Zbiór flash fiction, który ukaże się w 2023 r. nakładem wydawnictwa VA&nbsp;Press</>,
-      descriptionEn:
-      <>Flash fiction collection forthcoming in 2023 from VA&nbsp;Press</>,
+      descriptionPl: (
+        <>
+          Zbiór flash fiction, który ukaże się w 2023 r. nakładem wydawnictwa
+          VA&nbsp;Press
+        </>
+      ),
+      descriptionEn: (
+        <>Flash fiction collection forthcoming in 2023 from VA&nbsp;Press</>
+      ),
       language: "en",
     },
     {
@@ -732,10 +737,18 @@ export const PUBLICATIONS = {
         en: "Nocturine cover",
         pl: "Okładka Nocturine",
       },
-      descriptionPl:
-      <>Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2023 r. nakładem wydawnictwa Fathom Books</>,
-      descriptionEn:
-      <>Collection of interlinked stories forthcoming in 2023 from Fathom Books</>,
+      descriptionPl: (
+        <>
+          Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2023 r.
+          nakładem wydawnictwa Fathom Books
+        </>
+      ),
+      descriptionEn: (
+        <>
+          Collection of interlinked stories forthcoming in 2023 from Fathom
+          Books
+        </>
+      ),
       language: "en",
     },
     {
@@ -1150,6 +1163,17 @@ export const PUBLICATIONS = {
   ],
 
   collections: [
+    {
+      title: "Get Bent",
+      issue: "",
+      year: "2023",
+      url: "https://www.amazon.com/Get-Bent-Robert-Vaughan/dp/1945028483",
+      descriptionPl:
+        "Antologia opublikowana przez pismo Bending Genres z moim flash fiction „Coal and Glitter”",
+      descriptionEn:
+        "Anthology published by Bending Genres featuring my flash fiction “Coal and Glitter”",
+      language: "en",
+    },
     {
       title: "Stranged Writing: A Literary Taxonomy",
       issue: "",
@@ -2558,6 +2582,11 @@ export const BLOG_CATEGORIES = {
 
 //Content of quick links (to be used on Instagram)
 export const LINKS = [
+  {
+    title: "Order GET BENT",
+    subtitle: "anthology featuring my piece “Coal and Glitter”",
+    url: "https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/",
+  },
   {
     title: "Read the latest issue of “błyski”",
     subtitle: "featuring flash fiction by Tara Isabel Zambrano",
