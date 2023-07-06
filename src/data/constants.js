@@ -27,8 +27,8 @@ const tbaCover = "tbaCover.jpg";
 export const NOCTURINE_URL = "http://fathombooks.org/html/drobnik.html"; //Nocturine pre-order
 export const NOCTURINE_LOCAL_URL = "https://drobnik.co/nocturine";
 export const FATHOM_BOOKS_URL = "http://fathombooks.org/"; //Fathom Books website
-export const VOSTOK_URL =
-  "https://www.vraeydamedia.ca/shop/x55ht1b0h70i3bwv9qismih2f6b5nk"; //Vostok pre-order
+export const VOSTOK_URL = "https://mybook.to/vostok-paper"; // buy Vostok
+export const VOSTOK_EBOOK_URL = ""; // buy Vostok ebook
 export const VOSTOK_LOCAL_URL = "https://drobnik.co/vostok";
 export const VRAEDA_URL = "https://www.vraeydamedia.ca/literary"; //Vræyda Literary website
 export const VAPRESS_URL = "http://vapoetry.com/"; //VA Press website
