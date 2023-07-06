@@ -2444,7 +2444,7 @@ export const BLOG_CATEGORIES = {
 //Content of quick links (to be used on Instagram)
 export const LINKS = [
   {
-    title: "Order GET BENT",
+    title: "Buy GET BENT",
     subtitle: "anthology featuring my piece “Coal and Glitter”",
     url: "https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/",
   },
@@ -2469,7 +2469,7 @@ export const LINKS = [
     url: NOCTURINE_URL,
   },
   {
-    title: "Order STRANGED WRITING",
+    title: "Buy STRANGED WRITING",
     subtitle: "anthology featuring my piece “Phagocytosis”",
     url: "https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/",
   },
