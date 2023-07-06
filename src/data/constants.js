@@ -28,7 +28,7 @@ export const NOCTURINE_URL = "http://fathombooks.org/html/drobnik.html"; //Noctu
 export const NOCTURINE_LOCAL_URL = "https://drobnik.co/nocturine";
 export const FATHOM_BOOKS_URL = "http://fathombooks.org/"; //Fathom Books website
 export const VOSTOK_URL = "https://mybook.to/vostok-paper"; // buy Vostok
-export const VOSTOK_EBOOK_URL = ""; // buy Vostok ebook
+export const VOSTOK_EBOOK_URL = "https://mybook.to/vostok-digital"; // buy Vostok ebook
 export const VOSTOK_LOCAL_URL = "https://drobnik.co/vostok";
 export const VRAEDA_URL = "https://www.vraeydamedia.ca/literary"; //Vræyda Literary website
 export const VAPRESS_URL = "http://vapoetry.com/"; //VA Press website
@@ -1334,7 +1334,10 @@ export const BOOKS = [
     },
     shopList: [
       {
-        name: <span>FATHOM BOOKS</span>,
+        name: {
+          en: <React.Fragment>PAPER</React.Fragment>,
+          pl: <React.Fragment>PAPIER</React.Fragment>,
+        },
         url: NOCTURINE_URL,
       },
     ],
@@ -1540,40 +1543,18 @@ export const BOOKS = [
     },
     shopList: [
       {
-        name: <React.Fragment>VRÆYDA SHOP</React.Fragment>,
+        name: {
+          en: <React.Fragment>PAPER</React.Fragment>,
+          pl: <React.Fragment>PAPIER</React.Fragment>,
+        },
         url: VOSTOK_URL,
       },
       {
-        name: <React.Fragment>BOOKSHOP.ORG</React.Fragment>,
-        url: "https://bookshop.org/books/vostok-9781988034218/9781988034218",
-      },
-      {
-        name: <React.Fragment>BARNES&nbsp;&amp;&nbsp;NOBLE</React.Fragment>,
-        url: "https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936",
-      },
-      {
-        name: <React.Fragment>POWELL’S</React.Fragment>,
-        url: "https://www.powells.com/book/vostok-9781988034218",
-      },
-      {
-        name: <React.Fragment>AMAZON</React.Fragment>,
-        url: "https://www.amazon.com/Vostok-Lukasz-Drobnik/dp/1988034213",
-      },
-      {
-        name: <React.Fragment>BOOKS&nbsp;A&nbsp;MILLION</React.Fragment>,
-        url: "https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218",
-      },
-      {
-        name: <React.Fragment>MIGHTY APE</React.Fragment>,
-        url: "https://www.mightyape.co.nz/product/vostok/35358666",
-      },
-      {
-        name: <React.Fragment>SAXO</React.Fragment>,
-        url: "https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218",
-      },
-      {
-        name: <React.Fragment>SMASHWORDS</React.Fragment>,
-        url: "https://www.smashwords.com/books/view/1150667",
+        name: {
+          en: <React.Fragment>DIGITAL</React.Fragment>,
+          pl: <React.Fragment>E-BOOK</React.Fragment>,
+        },
+        url: VOSTOK_EBOOK_URL,
       },
     ],
     body: {
@@ -1618,146 +1599,26 @@ export const BOOKS = [
     orderDetails: {
       en: (
         <p>
-          You can buy <em>VOSTOK</em> from{" "}
+          You can buy <em>VOSTOK</em> in{" "}
           <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
-            <strong>VRÆYDA&nbsp;SHOP</strong>
-          </a>
-          ,{" "}
-          <a
-            href="https://bookshop.org/books/vostok-9781988034218/9781988034218"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>BOOKSHOP.ORG</strong>
+            <strong>PAPER</strong>
           </a>{" "}
-          (US/UK),{" "}
-          <a
-            href="https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>BARNES&nbsp;&amp;&nbsp;NOBLE</strong>
-          </a>
-          ,{" "}
-          <a
-            href="https://www.powells.com/book/vostok-9781988034218"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>POWELL’S</strong>
-          </a>
-          ,{" "}
-          <a
-            href="https://www.amazon.com/Vostok-Lukasz-Drobnik/dp/1988034213"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>AMAZON</strong>
-          </a>
-          ,{" "}
-          <a
-            href="https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>BOOKS&nbsp;A&nbsp;MILLION</strong>
-          </a>
-          ,{" "}
-          <a
-            href="https://www.mightyape.co.nz/product/vostok/35358666"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>MIGHTY APE</strong>
+          and{" "}
+          <a href={VOSTOK_EBOOK_URL} target="_blank" rel="noopener noreferrer">
+            <strong>DIGITAL</strong>
           </a>{" "}
-          (NZ),{" "}
-          <a
-            href="https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>SAXO</strong>
-          </a>{" "}
-          (DK), and{" "}
-          <a
-            href="https://www.smashwords.com/books/view/1150667"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>SMASHWORDS</strong>
-          </a>
-          .
+          formats.
         </p>
       ),
       pl: (
         <p>
-          <em>VOSTOK</em> można kupić w&nbsp;tych miejscach:{" "}
+          <em>VOSTOK</em> można kupić w&nbsp;formacie{" "}
           <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
-            <strong>VRÆYDA&nbsp;SHOP</strong>
-          </a>
-          ,{" "}
-          <a
-            href="https://bookshop.org/books/vostok-9781988034218/9781988034218"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>BOOKSHOP.ORG</strong>
+            <strong>PAPIEROWYM</strong>
           </a>{" "}
-          (US/UK),{" "}
-          <a
-            href="https://www.barnesandnoble.com/w/vostok-lukasz-drobnik/1140383936"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>BARNES&nbsp;&amp;&nbsp;NOBLE</strong>
-          </a>
-          ,{" "}
-          <a
-            href="https://www.powells.com/book/vostok-9781988034218"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>POWELL’S</strong>
-          </a>
-          ,{" "}
-          <a
-            href="https://www.amazon.com/Vostok-Lukasz-Drobnik/dp/1988034213"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>AMAZON</strong>
-          </a>
-          ,{" "}
-          <a
-            href="https://www.booksamillion.com/p/Vostok/Lukasz-Drobnik/9781988034218"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>BOOKS&nbsp;A&nbsp;MILLION</strong>
-          </a>
-          ,{" "}
-          <a
-            href="https://www.mightyape.co.nz/product/vostok/35358666"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>MIGHTY APE</strong>
-          </a>{" "}
-          (NZ),{" "}
-          <a
-            href="https://www.saxo.com/dk/vostok_lukasz-drobnik_hardback_9781988034218"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>SAXO</strong>
-          </a>{" "}
-          (DK) i&nbsp;
-          <a
-            href="https://www.smashwords.com/books/view/1150667"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>SMASHWORDS</strong>
+          i&nbsp;
+          <a href={VOSTOK_EBOOK_URL} target="_blank" rel="noopener noreferrer">
+            <strong>ELEKTRONICZNYM</strong>
           </a>
           .
         </p>
@@ -2307,8 +2168,8 @@ export const WEBSITE_TEXT_ABOUT = {
 
 export const WEBSITE_TEXT_BOOKPAGE = {
   buyHere: {
-    en: "Buy here:",
-    pl: "Kup tutaj:",
+    en: "Buy:",
+    pl: "Kup:",
   },
 };
 
@@ -2593,19 +2454,19 @@ export const LINKS = [
     url: "https://blyski.org",
   },
   {
-    title: "Order VOSTOK",
-    subtitle: "from Vræyda Literary",
+    title: "Buy VOSTOK",
+    subtitle: "my literary sci-fi novel",
     url: VOSTOK_URL,
   },
   {
-    title: "Pre-order NOCTURINE",
-    subtitle: "from Fathom Books",
-    url: NOCTURINE_URL,
+    title: "Buy VOSTOK ebook",
+    subtitle: "my literary sci-fi novel",
+    url: VOSTOK_EBOOK_URL,
   },
   {
-    title: "Buy VOSTOK ebook",
-    subtitle: "from Smashwords",
-    url: "https://www.smashwords.com/books/view/1150667",
+    title: "Pre-order NOCTURINE",
+    subtitle: "my linked story collection",
+    url: NOCTURINE_URL,
   },
   {
     title: "Order STRANGED WRITING",
