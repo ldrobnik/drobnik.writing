@@ -125,10 +125,15 @@ export const TEXTS = {
     cetacean: {
       title: "Cetacean",
       subtitle: "flash fiction",
-      credits: "Written by Łukasz Drobnik. Edits by Emily Nemchick.",
+      credits:
+        "Written by Łukasz Drobnik. Edits by Emily Nemchick & Janae Mancheski.",
       description: (
         <p>
-          The piece was originally published in{" "}
+          One of stories from{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . The piece was originally published in{" "}
           <a
             href="https://www.quarterlywest.com/issue-94/cetacean"
             target="_blank"
@@ -154,10 +159,15 @@ export const TEXTS = {
     cellulose: {
       title: "Cellulose",
       subtitle: "flash fiction",
-      credits: "Written by Łukasz Drobnik. Edits by Emily Nemchick.",
+      credits:
+        "Written by Łukasz Drobnik. Edits by Emily Nemchick & Janae Mancheski.",
       description: (
         <p>
-          The piece was originally published in September 2018 Issue of{" "}
+          One of stories from{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . The piece was originally published in September 2018 Issue of{" "}
           <em>Mojave Heart Review</em>. Its Polish translation was featured in
           the inaugural issue of{" "}
           <a
@@ -178,10 +188,14 @@ export const TEXTS = {
       title: "Moths",
       subtitle: "flash fiction",
       credits:
-        "Written by Łukasz Drobnik. Edits by Emily Nemchick & Anna De Vaul.",
+        "Written by Łukasz Drobnik. Edits by Emily Nemchick, Anna De Vaul & Janae Mancheski.",
       description: (
         <p>
-          The piece was originally published in{" "}
+          One of stories from{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . The piece was originally published in{" "}
           <a
             href="http://www.gatehousepress.com/lighthouse/"
             target="_blank"
@@ -208,10 +222,14 @@ export const TEXTS = {
       title: "Drones",
       subtitle: "flash fiction",
       credits:
-        "Written by Łukasz Drobnik. Edits by Emily Nemchick & Robert Harper.",
+        "Written by Łukasz Drobnik. Edits by Emily Nemchick, Robert Harper & Janae Mancheski.",
       description: (
         <p>
-          The piece was originally published in{" "}
+          One of stories from{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . The piece was originally published in{" "}
           <a
             href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/"
             target="_blank"
@@ -237,10 +255,15 @@ export const TEXTS = {
     spores: {
       title: "Spores",
       subtitle: "flash fiction",
-      credits: "Written by Łukasz Drobnik. Edits by Emily Nemchick.",
+      credits:
+        "Written by Łukasz Drobnik. Edits by Emily Nemchick & Janae Mancheski.",
       description: (
         <p>
-          The piece was published in{" "}
+          One of stories from{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . The piece was published in{" "}
           <a
             href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/"
             target="_blank"
@@ -309,10 +332,14 @@ export const TEXTS = {
       title: "Devonian",
       subtitle: "flash fiction",
       credits:
-        "Written by Łukasz Drobnik. Edits by Emily Nemchick & Thea Prieto.",
+        "Written by Łukasz Drobnik. Edits by Emily Nemchick, Thea Prieto & Janae Mancheski.",
       description: (
         <p>
-          The piece was originally published in{" "}
+          One of stories from{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . The piece was originally published in{" "}
           <a
             href="http://thegravityofthething.com/devonian-lukasz-drobnik/"
             target="_blank"
@@ -338,10 +365,15 @@ export const TEXTS = {
     landmines: {
       title: "Landmines",
       subtitle: "flash fiction",
-      credits: "Written by Łukasz Drobnik. Edits by Emily Nemchick.",
+      credits:
+        "Written by Łukasz Drobnik. Edits by Emily Nemchick & Janae Mancheski.",
       description: (
         <p>
-          The piece published in{" "}
+          One of stories from{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . The piece published in{" "}
           <a
             href="https://foglifterjournal.com/product/foglifter-journal-volume-4-issue-1/"
             target="_blank"
@@ -360,10 +392,14 @@ export const TEXTS = {
       title: "Treasures",
       subtitle: "flash fiction",
       credits:
-        "Written by Łukasz Drobnik. Edits by Emily Nemchick & Michelle Ross.",
+        "Written by Łukasz Drobnik. Edits by Emily Nemchick, Michelle Ross & Janae Mancheski.",
       description: (
         <p>
-          The piece was published in May 2019 in{" "}
+          One of stories from{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . The piece was published in May 2019 in{" "}
           <a
             href="https://atticusreview.org/treasures/"
             target="_blank"
@@ -454,7 +490,11 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Tekst ukazał się pierwotnie po angielsku w&nbsp;94. numerze{" "}
+          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . Tekst ukazał się pierwotnie po angielsku w&nbsp;94. numerze{" "}
           <a
             href="https://www.quarterlywest.com/issue-94/cetacean"
             target="_blank"
@@ -483,7 +523,11 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <div>
-          Tekst ukazał się pierwotnie po angielsku w&nbsp;2018&nbsp;r. we
+          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . Tekst ukazał się pierwotnie po angielsku w&nbsp;2018&nbsp;r. we
           wrześniowym numerze <em>Mojave Heart Review</em>. Polski przekład
           zamieszczono w&nbsp;pierwszym numerze{" "}
           <a
@@ -506,7 +550,11 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Tekst ukazał się pierwotnie po angielsku w&nbsp;10. numerze{" "}
+          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . Tekst ukazał się pierwotnie po angielsku w&nbsp;10. numerze{" "}
           <a
             href="http://www.gatehousepress.com/lighthouse/"
             target="_blank"
@@ -535,7 +583,11 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Tekst ukazał się pierwotnie po angielsku w&nbsp;10. numerze{" "}
+          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . Tekst ukazał się pierwotnie po angielsku w&nbsp;10. numerze{" "}
           <a
             href="https://www.barefictionmagazine.co.uk/buy/issues/bare-fiction-magazine-issue-10-november-2017/"
             target="_blank"
@@ -564,7 +616,11 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Tekst ukazał się po angielsku w&nbsp;17. numerze pisma{" "}
+          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . Tekst ukazał się po angielsku w&nbsp;17. numerze pisma{" "}
           <a
             href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/"
             target="_blank"
@@ -634,7 +690,11 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Tekst ukazał się pierwotnie po angielsku w&nbsp;piśmie{" "}
+          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . Tekst ukazał się pierwotnie po angielsku w&nbsp;piśmie{" "}
           <a
             href="http://thegravityofthething.com/devonian-lukasz-drobnik/"
             target="_blank"
@@ -663,7 +723,11 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Tekst ukazał się po angielsku w&nbsp;piśmie{" "}
+          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . Tekst ukazał się po angielsku w&nbsp;piśmie{" "}
           <a
             href="https://foglifterjournal.com/product/foglifter-journal-volume-4-issue-1/"
             target="_blank"
@@ -684,7 +748,11 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Tekst ukazał się po angielsku w&nbsp;maju 2019&nbsp;r. w&nbsp;
+          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+            <em>RIVERINE</em>
+          </a>
+          . Tekst ukazał się po angielsku w&nbsp;maju 2019&nbsp;r. w&nbsp;
           <a
             href="https://atticusreview.org/treasures/"
             target="_blank"
