@@ -783,7 +783,7 @@ export const PUBLICATIONS = {
     {
       title: "Riverine",
       year: "",
-      url: VAPRESS_URL,
+      url: RIVERINE_URL,
       cover: riverineCover,
       altText: {
         en: "Cover not yet available",
