@@ -263,7 +263,7 @@ export const TEXTS = {
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <em>RIVERINE</em>
           </a>
-          . The piece was published in{" "}
+          . The piece was first published in{" "}
           <a
             href="http://x-r-a-y.com/spores-lukasz-drobnik/fiction/"
             target="_blank"
@@ -399,7 +399,7 @@ export const TEXTS = {
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <em>RIVERINE</em>
           </a>
-          . The piece was published in May 2019 in{" "}
+          . The piece was first published in May 2019 in{" "}
           <a
             href="https://atticusreview.org/treasures/"
             target="_blank"
