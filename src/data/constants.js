@@ -30,7 +30,7 @@ export const FATHOM_BOOKS_URL = "http://fathombooks.org/"; //Fathom Books websit
 export const VOSTOK_URL = "https://mybook.to/vostok-paper"; // buy Vostok
 export const VOSTOK_EBOOK_URL = "https://mybook.to/vostok-digital"; // buy Vostok ebook
 export const VOSTOK_LOCAL_URL = "https://drobnik.co/vostok";
-export const VRAEDA_URL = "https://www.vraeydamedia.ca/literary"; //Vræyda Literary website
+export const VRAEDA_URL = "https://www.vraeydamedia.ca/literary"; //Vraeyda Literary website
 export const RIVERINE_URL =
   "https://vegetarianalcoholicpress.com/titles/ukasz-drobnik-riverine"; // Riverine pre=order
 export const VAPRESS_URL = "http://vapoetry.com/"; //VA Press website
@@ -262,7 +262,7 @@ export const TEXTS = {
         <p>
           <em>Vostok</em> was published in 2021 by{" "}
           <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
-            <em>Vræyda Literary</em>
+            <em>Vraeyda Literary</em>
           </a>
           . Its fragments were featured in{" "}
           <a
@@ -585,7 +585,7 @@ export const TEXTS = {
         <p>
           „Vostok” ukazał się w&nbsp;2021&nbsp;roku nakładem wydawnictwa{" "}
           <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
-            <em>Vræyda Literary</em>
+            <em>Vraeyda Literary</em>
           </a>
           . Fragmenty książki można było przeczytać po polsku w&nbsp;
           <a
@@ -762,8 +762,8 @@ export const PUBLICATIONS = {
         en: "Vostok cover",
         pl: "Okładka Vostok",
       },
-      descriptionPl: <>Powieść wydana nakładem wydawnictwa Vræyda Literary</>,
-      descriptionEn: <>Novel published by Vræyda Literary</>,
+      descriptionPl: <>Powieść wydana nakładem wydawnictwa Vraeyda Literary</>,
+      descriptionEn: <>Novel published by Vraeyda Literary</>,
       language: "en",
     },
     {
