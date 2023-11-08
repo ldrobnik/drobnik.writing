@@ -105,7 +105,7 @@ export const BookDetails = (props) => {
       <BookAnimatedButton pose={excerptBtnVisible ? "visible" : "hidden"}>
         <CentredButton
           message={EXCERPT_BUTTON[props.lang]}
-          path={"/texts/" + BOOKS[props.book].id}
+          path={"/texts/" + BOOKS[props.book].excerptId}
         />
       </BookAnimatedButton>
       <Waypoint onEnter={showQuotes} />
