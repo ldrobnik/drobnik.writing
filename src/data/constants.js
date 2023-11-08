@@ -2072,11 +2072,11 @@ export const WEBSITE_TEXT_ABOUT = {
               <strong>FATHOM&nbsp;BOOKS</strong>
             </a>
             , and a flash fiction collection{" "}
-            <AnchorLink href="#pubs" offset="60px">
+            <AnchorLink href="#riverine" offset="60px">
               <strong>RIVERINE</strong>
             </AnchorLink>
             , soon available from{" "}
-            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+            <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
               <strong>VA&nbsp;PRESS</strong>
             </a>
             .
@@ -2141,11 +2141,11 @@ export const WEBSITE_TEXT_ABOUT = {
               <strong>FATHOM&nbsp;BOOKS</strong>
             </a>
             , oraz zbiór flash fiction{" "}
-            <AnchorLink href="#pubs" offset="60px">
+            <AnchorLink href="#riverine" offset="60px">
               <strong>RIVERINE</strong>
             </AnchorLink>
             , niedługo dostępny w wydawnictwie{" "}
-            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+            <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
               <strong>VA&nbsp;PRESS</strong>
             </a>
             .
