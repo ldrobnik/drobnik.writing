@@ -16,11 +16,13 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 //file names for book covers
 const nocturineCover = "nocturineCover.jpg";
+const nocturineCoverColor = "nocturineCoverColor.jpg";
 const nocCunCover = "nocCunCover.jpg";
 const vostokCover = "vostokCover.jpg";
-const nocturineCoverColor = "nocturineCoverColor.jpg";
 const vostokCoverColor = "vostokCoverColor.jpg";
-const tbaCover = "tbaCover.jpg";
+const riverineCover = "riverineCover.jpg";
+const riverineCoverColor = "riverineCoverColor.jpg";
+// const tbaCover = "tbaCover.jpg";
 
 //Frequently used URLs
 
@@ -714,7 +716,7 @@ export const PUBLICATIONS = {
       title: "Riverine",
       year: "",
       url: VAPRESS_URL,
-      cover: tbaCover,
+      cover: riverineCover,
       altText: {
         en: "Cover not yet available",
         pl: "Okładka jeszcze niedostępna",
@@ -1421,7 +1423,7 @@ export const BOOKS = [
         {
           quote: (
             <div>
-              To say <em>Nocturine</em> is oneiric isn’t enough — it’s a
+              To say <em>Nocturine</em> is oneiric is an understatement — it’s a
               psychedelic. It kicks in slowly, swaying you from the very first
               sentences. Hypnotic phrase. Beautiful!
             </div>
@@ -1693,6 +1695,182 @@ export const BOOKS = [
       ],
     },
   },
+  // {
+  //   id: "riverine",
+  //   title: {
+  //     en: "Riverine",
+  //     pl: "Riverine",
+  //   },
+  //   displayOnMain: true,
+  //   cover: riverineCover,
+  //   colorCover: riverineCoverColor,
+  //   url: RIVERINE_URL,
+  //   slogan: {
+  //     en: (
+  //       <div>
+  //         A flash fiction collection forthcoming in 2023 from
+  //         <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+  //           <strong>VA&nbsp;Press</strong>
+  //         </a>
+  //       </div>
+  //     ),
+  //     pl: (
+  //       <div>
+  //         Zbiór flash fiction, który ukaże się w&nbsp;2023&nbsp;r. nakładem
+  //         wydawnictwa{" "}
+  //         <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+  //           <strong>VA&nbsp;Press</strong>
+  //         </a>
+  //       </div>
+  //     ),
+  //   },
+  //   orderButton: {
+  //     en: ORDER_BUTTON["preorder"]["en"],
+  //     pl: ORDER_BUTTON["preorder"]["pl"],
+  //   },
+  //   shopList: [
+  //     {
+  //       name: {
+  //         en: <React.Fragment>PAPER</React.Fragment>,
+  //         pl: <React.Fragment>PAPIER</React.Fragment>,
+  //       },
+  //       url: RIVERINE_URL,
+  //     },
+  //   ],
+  //   body: {
+  //     en: (
+  //       <div>
+  //         <p>
+  //           Poznań, Poland. The middle of a harsh winter. Weronika is in love
+  //           with her best friend Wu, who has just told her about his new
+  //           boyfriend. They spend most evenings drinking away their problems
+  //           with a bunch of like-minded pub-goers. There’s been a terrorist
+  //           attack. A girl gets murdered with a war scythe. The reality reveals
+  //           a whole new layer when the friends mention a place called Vostok
+  //           City.
+  //         </p>
+  //         <p>
+  //           On the surface, <em>VOSTOK</em> is a murder story with a literary
+  //           bent. Dig deeper, and it will reveal itself as science fiction that
+  //           only pretends to play by the rules of realism.
+  //         </p>
+  //       </div>
+  //     ),
+  //     pl: (
+  //       <div>
+  //         <p>
+  //           Poznań, środek mroźnej zimy. Weronika kocha się w&nbsp;swoim
+  //           najlepszym przyjacielu Wu, który właśnie przedstawił jej swojego
+  //           nowego chłopaka. Większość wieczorów przyjaciele spędzają
+  //           w&nbsp;ulubionych knajpach, zapijając problemy z&nbsp;grupką
+  //           znajomych. Niesie się wieść o&nbsp;ataku terrorystycznym. Dziewczyna
+  //           ginie raniona kosą bojową. Rzeczywistość odkrywa całkiem nową
+  //           warstwę, gdy znajomi wspominają o&nbsp;miejscu zwanym Vostok City.
+  //         </p>
+  //         <p>
+  //           Na pierwszy rzut oka <em>VOSTOK</em> to kryminał z
+  //           wysokoartystycznym zacięciem. Gdy jednak zajrzy się głębiej, powieść
+  //           okazuje się science fiction, które tylko z&nbsp;pozoru gra według
+  //           reguł realizmu.
+  //         </p>
+  //       </div>
+  //     ),
+  //   },
+  //   orderDetails: {
+  //     en: (
+  //       <p>
+  //         You can buy <em>VOSTOK</em> in{" "}
+  //         <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
+  //           <strong>PAPER</strong>
+  //         </a>{" "}
+  //         and{" "}
+  //         <a href={VOSTOK_EBOOK_URL} target="_blank" rel="noopener noreferrer">
+  //           <strong>DIGITAL</strong>
+  //         </a>{" "}
+  //         formats.
+  //       </p>
+  //     ),
+  //     pl: (
+  //       <p>
+  //         <em>VOSTOK</em> można kupić w&nbsp;formacie{" "}
+  //         <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
+  //           <strong>PAPIEROWYM</strong>
+  //         </a>{" "}
+  //         i&nbsp;
+  //         <a href={VOSTOK_EBOOK_URL} target="_blank" rel="noopener noreferrer">
+  //           <strong>ELEKTRONICZNYM</strong>
+  //         </a>
+  //         .
+  //       </p>
+  //     ),
+  //   },
+  //   quotes: {
+  //     en: [
+  //       {
+  //         quote: (
+  //           <div>
+  //             One of the most imaginative novels I’ve read (…) The right mix of
+  //             experimental, multi-formic prose and a world built beyond the
+  //             bizarre as one keeps reading.
+  //           </div>
+  //         ),
+  //         source: "Sapha Burnell, author of NEON Lieben",
+  //       },
+  //       {
+  //         quote: (
+  //           <div>
+  //             If you are looking for (…) a mystery that builds page to page with
+  //             a revealing crescendo that washes over you helplessly, then{" "}
+  //             <em>Vostok</em> is the novel for you.
+  //           </div>
+  //         ),
+  //         source: "R.L. Arenz III, author of Aegis",
+  //       },
+  //       {
+  //         quote: (
+  //           <div>
+  //             <em>Vostok</em>’s prose is of a singular beauty and purity. I
+  //             cannot stop diving back into it.
+  //           </div>
+  //         ),
+  //         source: "VRÆYDA LITERARY, the publisher",
+  //       },
+  //     ],
+  //     pl: [
+  //       {
+  //         quote: (
+  //           <div>
+  //             Jedna z&nbsp;najbardziej pomysłowych powieści, jakie czytałam (…)
+  //             Odpowiednia mieszanka eksperymentalnej, wielopostaciowej prozy
+  //             i&nbsp;świata powieści, który w&nbsp;miarę czytania przekracza
+  //             granice dziwaczności.
+  //           </div>
+  //         ),
+  //         source:
+  //           "Sapha Burnell, autorka książek NEON Lieben, Usurper Kings, Son of Abel",
+  //       },
+  //       {
+  //         quote: (
+  //           <div>
+  //             Jeśli szukasz (…) kryminału, który strona po stronie buduje
+  //             tajemnicę, by ją rozwiązać w spadającym znienacka crescendo,{" "}
+  //             <em>Vostok</em> jest powieścią dla ciebie.
+  //           </div>
+  //         ),
+  //         source: "R.L. Arenz III, autor powieści Aegis",
+  //       },
+  //       {
+  //         quote: (
+  //           <div>
+  //             <em>Vostok</em> to proza o&nbsp;wyjątkowej urodzie
+  //             i&nbsp;czystości. Nie mogę przestać do niej wracać.
+  //           </div>
+  //         ),
+  //         source: "VRÆYDA LITERARY, wydawca",
+  //       },
+  //     ],
+  //   },
+  // },
 ];
 
 //constants containing text used on the website:
