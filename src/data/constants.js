@@ -31,6 +31,8 @@ export const VOSTOK_URL = "https://mybook.to/vostok-paper"; // buy Vostok
 export const VOSTOK_EBOOK_URL = "https://mybook.to/vostok-digital"; // buy Vostok ebook
 export const VOSTOK_LOCAL_URL = "https://drobnik.co/vostok";
 export const VRAEDA_URL = "https://www.vraeydamedia.ca/literary"; //Vræyda Literary website
+export const RIVERINE_URL =
+  "https://vegetarianalcoholicpress.com/titles/ukasz-drobnik-riverine"; // Riverine pre=order
 export const VAPRESS_URL = "http://vapoetry.com/"; //VA Press website
 export const TWITTER_URL = "https://twitter.com/drobnik";
 export const FACEBOOK_URL = "https://www.facebook.com/drobnikwrites";
@@ -2443,6 +2445,11 @@ export const BLOG_CATEGORIES = {
 
 //Content of quick links (to be used on Instagram)
 export const LINKS = [
+  {
+    title: "Pre-order RIVERINE",
+    subtitle: "my flash fiction collection",
+    url: RIVERINE_URL,
+  },
   {
     title: "Buy GET BENT",
     subtitle: "anthology featuring my piece “Coal and Glitter”",
