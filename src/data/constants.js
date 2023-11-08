@@ -2186,12 +2186,8 @@ export const WEBSITE_TEXT_ABOUT = {
     cta: {
       en: [
         {
-          message: <div>Pre-order NOCTURINE</div>,
-          path: NOCTURINE_URL,
-        },
-        {
-          message: <div>Pre-order VOSTOK</div>,
-          path: VOSTOK_URL,
+          message: <div>Pre-order RIVERINE</div>,
+          path: RIVERINE_URL,
         },
       ],
       pl: [
