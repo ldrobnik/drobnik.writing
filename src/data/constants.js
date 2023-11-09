@@ -490,7 +490,7 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          Jedno z&nbsp;opowiadań ze zbioru{" "}
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <em>RIVERINE</em>
           </a>
@@ -523,7 +523,7 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <div>
-          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          Jedno z&nbsp;opowiadań ze zbioru{" "}
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <em>RIVERINE</em>
           </a>
@@ -550,7 +550,7 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          Jedno z&nbsp;opowiadań ze zbioru{" "}
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <em>RIVERINE</em>
           </a>
@@ -583,7 +583,7 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          Jedno z&nbsp;opowiadań ze zbioru{" "}
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <em>RIVERINE</em>
           </a>
@@ -616,7 +616,7 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          Jedno z&nbsp;opowiadań ze zbioru{" "}
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <em>RIVERINE</em>
           </a>
@@ -690,7 +690,7 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          Jedno z&nbsp;opowiadań ze zbioru{" "}
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <em>RIVERINE</em>
           </a>
@@ -723,7 +723,7 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          Jedno z&nbsp;opowiadań ze zbioru{" "}
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <em>RIVERINE</em>
           </a>
@@ -748,7 +748,7 @@ export const TEXTS = {
       credits: "Tekst i przekład z angielskiego: Łukasz Drobnik.",
       description: (
         <p>
-          Jedno z&nbsp;opowiadań z&nbsp;tomu{" "}
+          Jedno z&nbsp;opowiadań ze zbioru{" "}
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <em>RIVERINE</em>
           </a>
@@ -786,8 +786,8 @@ export const PUBLICATIONS = {
       url: RIVERINE_URL,
       cover: riverineCover,
       altText: {
-        en: "Cover not yet available",
-        pl: "Okładka jeszcze niedostępna",
+        en: "Riverine cover",
+        pl: "Okładka Riverine",
       },
       descriptionPl: (
         <>
@@ -1835,8 +1835,8 @@ export const BOOKS = [
             Para idzie na zakupy w&nbsp;ostatnich dniach Ziemi. Nieodwzajemniona
             miłość przeradza się w&nbsp;przyjaźń na całe życie. Bakteria walczy
             z&nbsp;pożarciem przez leukocyt. Polska społeczność queer wznieca
-            powstanie, by odzyskać ojczyznę. Kobieta wpada w&nbsp;pętlę opieki
-            nad przemocowym mężem.
+            powstanie, by odzyskać ojczyznę. Kobieta wpada w&nbsp;pętlę
+            opiekowania się przemocowym mężem.
           </p>
           <p>
             <em>RIVERINE</em> to zbiór 25&nbsp;flash fiction oscylujących między
@@ -1906,7 +1906,7 @@ export const BOOKS = [
             <div>
               Postaci w&nbsp;tych ograniczonych przestrzeniach emanują światłem
               i&nbsp;samoświadomością, a&nbsp;także tym, co czyni z&nbsp;życia
-              tę tyleż mroczną, co radosną podróż.
+              tyleż mroczną, co radosną podróż.
             </div>
           ),
           source:
@@ -1926,8 +1926,8 @@ export const BOOKS = [
         {
           quote: (
             <div>
-              Drobnik to odważny, błyskotliwy pisarzem, który pokazujące, co nas
-              łączy, nawet burzy fundamenty cywilizacji.
+              Drobnik to odważny, błyskotliwy pisarz, który pokazuje, co nas
+              łączy, nawet gdy burzy fundamenty cywilizacji.
             </div>
           ),
           source: "Ross Showalter",
