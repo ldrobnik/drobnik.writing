@@ -811,13 +811,13 @@ export const PUBLICATIONS = {
       },
       descriptionPl: (
         <>
-          Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2023 r.
+          Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2024 r.
           nakładem wydawnictwa Fathom Books
         </>
       ),
       descriptionEn: (
         <>
-          Collection of interlinked stories forthcoming in 2023 from Fathom
+          Collection of interlinked stories forthcoming in 2024 from Fathom
           Books
         </>
       ),
@@ -1385,7 +1385,7 @@ export const BOOKS = [
     slogan: {
       en: (
         <div>
-          Fiction collection forthcoming in 2023 from{" "}
+          Fiction collection forthcoming in 2024 from{" "}
           <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
             <strong>FATHOM BOOKS</strong>
           </a>
@@ -1393,7 +1393,7 @@ export const BOOKS = [
       ),
       pl: (
         <div>
-          Zbiór prozy dostępny w&nbsp;2023&nbsp;roku
+          Zbiór prozy dostępny w&nbsp;2024&nbsp;roku
           <br />
           w&nbsp;wydawnictwie{" "}
           <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
