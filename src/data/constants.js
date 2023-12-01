@@ -862,7 +862,7 @@ export const PUBLICATIONS = {
       descriptionPl:
         "Flash fiction „Rozproszone” (przekład tekstu „Scattered”)",
       descriptionEn: "Flash fiction “Rozproszone” (translation of “Scattered”)",
-      language: "en",
+      language: "pl",
     },
     {
       title: "Split Lip Magazine",
