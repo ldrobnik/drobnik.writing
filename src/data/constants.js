@@ -871,7 +871,7 @@ export const PUBLICATIONS = {
       url: "https://splitlipthemag.com/flash/0122/lukasz-drobnik",
       descriptionPl: "Flash fiction „Vacuoles”",
       descriptionEn: "Flash fiction “Vacuoles”",
-      language: "pl",
+      language: "en",
     },
     {
       title: "Zakład Magazyn",
