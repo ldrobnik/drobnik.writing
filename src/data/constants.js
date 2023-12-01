@@ -855,13 +855,23 @@ export const PUBLICATIONS = {
 
   press: [
     {
+      title: "e-eleWator",
+      issue: "3",
+      year: "2023",
+      url: "https://e-elewator.org/e-e-3-lukasz-drobnik/",
+      descriptionPl:
+        "Flash fiction „Rozproszone” (przekład tekstu „Scattered”)",
+      descriptionEn: "Flash fiction “Rozproszone” (translation of “Scattered”)",
+      language: "en",
+    },
+    {
       title: "Split Lip Magazine",
       issue: "January 2022",
       year: "2022",
       url: "https://splitlipthemag.com/flash/0122/lukasz-drobnik",
       descriptionPl: "Flash fiction „Vacuoles”",
       descriptionEn: "Flash fiction “Vacuoles”",
-      language: "en",
+      language: "pl",
     },
     {
       title: "Zakład Magazyn",
