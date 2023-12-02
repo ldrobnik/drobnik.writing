@@ -2695,8 +2695,13 @@ export const BLOG_CATEGORIES = {
 export const LINKS = [
   {
     title: "Pre-order RIVERINE",
-    subtitle: "my flash fiction collection",
+    subtitle: "from VA Press",
     url: RIVERINE_URL,
+  },
+  {
+    title: "Pre-order RIVERINE",
+    subtitle: "from Amazon.de",
+    url: "https://www.amazon.de/-/en/Lukasz-Drobnik/dp/1952055555/ref=sr_1_1?crid=34LGU52U6LZUD&keywords=Riverine+Lukasz+Drobnik&qid=1701521487&sprefix=riverine+lukasz+drobnik,aps,219&sr=8-1",
   },
   {
     title: "Buy GET BENT",
