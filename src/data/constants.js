@@ -781,26 +781,6 @@ export const TEXTS = {
 export const PUBLICATIONS = {
   books: [
     {
-      title: "Riverine",
-      year: "",
-      url: RIVERINE_URL,
-      cover: riverineCover,
-      altText: {
-        en: "Riverine cover",
-        pl: "Okładka Riverine",
-      },
-      descriptionPl: (
-        <>
-          Zbiór flash fiction, który ukaże się w 2023 r. nakładem wydawnictwa
-          VA&nbsp;Press
-        </>
-      ),
-      descriptionEn: (
-        <>Flash fiction collection forthcoming in 2023 from VA&nbsp;Press</>
-      ),
-      language: "en",
-    },
-    {
       title: "Nocturine",
       year: "",
       url: NOCTURINE_URL,
@@ -820,6 +800,26 @@ export const PUBLICATIONS = {
           Collection of interlinked stories forthcoming in 2024 from Fathom
           Books
         </>
+      ),
+      language: "en",
+    },
+    {
+      title: "Riverine",
+      year: "2023",
+      url: RIVERINE_URL,
+      cover: riverineCover,
+      altText: {
+        en: "Riverine cover",
+        pl: "Okładka Riverine",
+      },
+      descriptionPl: (
+        <>
+          Zbiór flash fiction, który ukazał się w 2023 r. nakładem wydawnictwa
+          VA&nbsp;Press
+        </>
+      ),
+      descriptionEn: (
+        <>Flash fiction collection published in 2023 by VA&nbsp;Press</>
       ),
       language: "en",
     },
@@ -1792,7 +1792,7 @@ export const BOOKS = [
     slogan: {
       en: (
         <div>
-          Flash fiction collection forthcoming in 2023 from{" "}
+          Flash fiction collection published in 2023 by{" "}
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <strong>VA&nbsp;Press</strong>
           </a>
@@ -1800,7 +1800,7 @@ export const BOOKS = [
       ),
       pl: (
         <div>
-          Zbiór flash fiction, który ukaże się w&nbsp;2023&nbsp;r. nakładem
+          Zbiór flash fiction, który ukazał się w&nbsp;2023&nbsp;r. nakładem
           wydawnictwa{" "}
           <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
             <strong>VA&nbsp;Press</strong>
@@ -1809,8 +1809,8 @@ export const BOOKS = [
       ),
     },
     orderButton: {
-      en: ORDER_BUTTON["preorder"]["en"],
-      pl: ORDER_BUTTON["preorder"]["pl"],
+      en: ORDER_BUTTON["order"]["en"],
+      pl: ORDER_BUTTON["order"]["pl"],
     },
     shopList: [
       {
@@ -2141,21 +2141,21 @@ export const WEBSITE_TEXT_ABOUT = {
             <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
               <strong>VRÆYDA&nbsp;LITERARY</strong>
             </a>
-            , a collection of interlinked stories{" "}
+            , a flash fiction collection{" "}
+            <AnchorLink href="#riverine" offset="60px">
+              <strong>RIVERINE</strong>
+            </AnchorLink>{" "}
+            available from{" "}
+            <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+              <strong>VA&nbsp;PRESS</strong>
+            </a>
+            , and a collection of interlinked stories{" "}
             <AnchorLink href="#nocturine" offset="60px">
               <strong>NOCTURINE</strong>
             </AnchorLink>{" "}
             forthcoming from{" "}
             <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
               <strong>FATHOM&nbsp;BOOKS</strong>
-            </a>
-            , and a flash fiction collection{" "}
-            <AnchorLink href="#riverine" offset="60px">
-              <strong>RIVERINE</strong>
-            </AnchorLink>
-            , soon available from{" "}
-            <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VA&nbsp;PRESS</strong>
             </a>
             .
           </p>
@@ -2210,21 +2210,21 @@ export const WEBSITE_TEXT_ABOUT = {
             <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
               <strong>VRÆYDA&nbsp;LITERARY</strong>
             </a>
-            , zbiór powiązanych fabularnie opowiadań{" "}
+            , zbiór flash fiction{" "}
+            <AnchorLink href="#riverine" offset="60px">
+              <strong>RIVERINE</strong>
+            </AnchorLink>{" "}
+            dostępny w wydawnictwie{" "}
+            <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
+              <strong>VA&nbsp;PRESS</strong>
+            </a>{" "}
+            oraz zbiór powiązanych fabularnie opowiadań{" "}
             <AnchorLink href="#nocturine" offset="60px">
               <strong>NOCTURINE</strong>
             </AnchorLink>
             , który ukaże się nakładem wydawnictwa{" "}
             <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
               <strong>FATHOM&nbsp;BOOKS</strong>
-            </a>
-            , oraz zbiór flash fiction{" "}
-            <AnchorLink href="#riverine" offset="60px">
-              <strong>RIVERINE</strong>
-            </AnchorLink>
-            , niedługo dostępny w wydawnictwie{" "}
-            <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VA&nbsp;PRESS</strong>
             </a>
             .
           </p>
@@ -2264,7 +2264,7 @@ export const WEBSITE_TEXT_ABOUT = {
     cta: {
       en: [
         {
-          message: <div>Pre-order RIVERINE</div>,
+          message: <div>Order RIVERINE</div>,
           path: RIVERINE_URL,
         },
       ],
@@ -2447,18 +2447,18 @@ export const WEBSITE_TEXT_TEXTS = {
               VOSTOK
             </a>
             ,{" "}
+            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+              RIVERINE
+            </a>
+            , and{" "}
             <a
               href={NOCTURINE_LOCAL_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
               NOCTURINE
-            </a>
-            , and{" "}
-            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
-              RIVERINE
-            </a>
-            , as well as shorter prose published in <em>HAD</em>,{" "}
+            </a>{" "}
+            as well as shorter prose published in <em>HAD</em>,{" "}
             <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
             <em>Fractured Lit</em>, <em>Atticus Review</em>,{" "}
             <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for
@@ -2487,16 +2487,16 @@ export const WEBSITE_TEXT_TEXTS = {
               VOSTOK
             </a>
             ,{" "}
+            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+              RIVERINE
+            </a>{" "}
+            i&nbsp;
             <a
               href={NOCTURINE_LOCAL_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
               NOCTURINE
-            </a>{" "}
-            i&nbsp;
-            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
-              RIVERINE
             </a>{" "}
             oraz krótszych utworów opublikowanych m.in. w&nbsp;<em>HAD</em>,{" "}
             <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
@@ -2545,14 +2545,14 @@ export const WEBSITE_TEXT_BLOG = {
           VOSTOK
         </a>
         ,{" "}
-        <a href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">
-          NOCTURINE
-        </a>
-        , and{" "}
         <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
           RIVERINE
         </a>
-        , as well as shorter prose published in <em>HAD</em>,{" "}
+        , and{" "}
+        <a href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">
+          NOCTURINE
+        </a>{" "}
+        as well as shorter prose published in <em>HAD</em>,{" "}
         <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
         <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Pithead Chapel</em>
         , and elsewhere. His work was longlisted for the{" "}
@@ -2694,12 +2694,12 @@ export const BLOG_CATEGORIES = {
 //Content of quick links (to be used on Instagram)
 export const LINKS = [
   {
-    title: "Pre-order RIVERINE",
+    title: "Order RIVERINE",
     subtitle: "from VA Press",
     url: RIVERINE_URL,
   },
   {
-    title: "Pre-order RIVERINE",
+    title: "Order RIVERINE",
     subtitle: "from Amazon.de",
     url: "https://www.amazon.de/-/en/Lukasz-Drobnik/dp/1952055555/ref=sr_1_1?crid=34LGU52U6LZUD&keywords=Riverine+Lukasz+Drobnik&qid=1701521487&sprefix=riverine+lukasz+drobnik,aps,219&sr=8-1",
   },
