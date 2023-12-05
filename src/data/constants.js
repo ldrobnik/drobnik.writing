@@ -2704,6 +2704,11 @@ export const LINKS = [
     url: "https://www.amazon.de/-/en/Lukasz-Drobnik/dp/1952055555/ref=sr_1_1?crid=34LGU52U6LZUD&keywords=Riverine+Lukasz+Drobnik&qid=1701521487&sprefix=riverine+lukasz+drobnik,aps,219&sr=8-1",
   },
   {
+    title: "Order RIVERINE",
+    subtitle: "from Bookshop.org",
+    url: "https://bookshop.org/p/books/riverine-lukasz-drobnik/20861065?aid=1561&ean=9781952055553&listref=read-the-future-400b148f-68bf-4d95-8f90-2c3c9596a0d5&",
+  },
+  {
     title: "Buy GET BENT",
     subtitle: "anthology featuring my piece “Coal and Glitter”",
     url: "https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/",
