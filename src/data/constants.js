@@ -2569,6 +2569,23 @@ export const WEBSITE_TEXT_BLOG = {
 //Content and data of blog notes, including drafts
 export const ALL_BLOG_NOTES = [
   {
+    id: "riverine-3-stories",
+    title: "Riverine: Three Stories",
+    draft: false,
+    date: ["2023", "12", "8"],
+    category: "literary",
+    imageName: "riverine",
+    related: [
+      "vostok-excerpts",
+      "grounding-the-otherworldly",
+      "polish-alexandrine",
+    ],
+    imageCredits: {
+      description: "",
+      alt: "Fragment of a book cover: Riverine by Łukasz Drobnik. White title against a blue-tinted satellite photo of a river.",
+    },
+  },
+  {
     id: "the-exotic-familiar",
     title:
       "The Exotic Familiar: Taking an Ordinary Setting into the Uncanny Valley",
