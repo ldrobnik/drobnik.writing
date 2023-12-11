@@ -2717,13 +2717,23 @@ export const LINKS = [
   },
   {
     title: "Order RIVERINE",
+    subtitle: "from Bookshop.org",
+    url: "https://bookshop.org/p/books/riverine-lukasz-drobnik/20861065?aid=1561&ean=9781952055553&listref=read-the-future-400b148f-68bf-4d95-8f90-2c3c9596a0d5&",
+  },
+  {
+    title: "Order RIVERINE",
     subtitle: "from Amazon.de",
     url: "https://www.amazon.de/-/en/Lukasz-Drobnik/dp/1952055555/ref=sr_1_1?crid=34LGU52U6LZUD&keywords=Riverine+Lukasz+Drobnik&qid=1701521487&sprefix=riverine+lukasz+drobnik,aps,219&sr=8-1",
   },
   {
     title: "Order RIVERINE",
-    subtitle: "from Bookshop.org",
-    url: "https://bookshop.org/p/books/riverine-lukasz-drobnik/20861065?aid=1561&ean=9781952055553&listref=read-the-future-400b148f-68bf-4d95-8f90-2c3c9596a0d5&",
+    subtitle: "from Amazon.pl",
+    url: "https://www.amazon.pl/Riverine-Lukasz-Drobnik/dp/1952055555/ref=mp_s_a_1_1?crid=3RZ1C8JHEY29G&keywords=Drobnik+Riverine&qid=1701791445&sprefix=drobnik+riverine+%2Caps%2C106&sr=8-1",
+  },
+  {
+    title: "Read stories from RIVERINE",
+    subtitle: "on my blog",
+    url: "/blog/riverine-3-stories",
   },
   {
     title: "Buy GET BENT",
@@ -2760,36 +2770,36 @@ export const LINKS = [
     subtitle: "in Split Lip Magazine",
     url: "https://splitlipthemag.com/flash/0122/lukasz-drobnik",
   },
-  {
-    title: "Read about Polish alexandrine and VOSTOK",
-    subtitle: "on my blog",
-    url: "/blog/polish-alexandrine",
-  },
+  // {
+  //   title: "Read about Polish alexandrine and VOSTOK",
+  //   subtitle: "on my blog",
+  //   url: "/blog/polish-alexandrine",
+  // },
   // {
   //     title: 'Read about the sci-fi and the realistic in VOSTOK',
   //     subtitle: 'on my blog',
   //     url: '/blog/grounding-the-otherworldly'
   // },
-  {
-    title: "Watch Wyliczanka interview me",
-    subtitle: "(in Polish)",
-    url: "https://www.youtube.com/watch?v=xzx0otQG180",
-  },
+  // {
+  //   title: "Watch Wyliczanka interview me",
+  //   subtitle: "(in Polish)",
+  //   url: "https://www.youtube.com/watch?v=xzx0otQG180",
+  // },
   // {
   //     title: 'VOSTOK Launch',
   //     subtitle: 'watch the launch party',
   //     url: 'https://www.youtube.com/watch?v=Btpz1ImoAS4'
   // },
-  {
-    title: "Read “Dedlajny”",
-    subtitle: "in Zakład Magazyn",
-    url: "https://www.zakladmagazyn.pl/post/%C5%82ukasz-drobnik-deadlajny",
-  },
-  {
-    title: "Read VOSTOK excerpt",
-    subtitle: "in MacroMicroCosm",
-    url: "https://www.magcloud.com/browse/issue/2070527?__r=3020311",
-  },
+  // {
+  //   title: "Read “Dedlajny”",
+  //   subtitle: "in Zakład Magazyn",
+  //   url: "https://www.zakladmagazyn.pl/post/%C5%82ukasz-drobnik-deadlajny",
+  // },
+  // {
+  //   title: "Read VOSTOK excerpt",
+  //   subtitle: "in MacroMicroCosm",
+  //   url: "https://www.magcloud.com/browse/issue/2070527?__r=3020311",
+  // },
   {
     title: "Read “Coal and Glitter”",
     subtitle: "in HAD",
@@ -2800,11 +2810,11 @@ export const LINKS = [
     subtitle: "in Fractured Lit",
     url: "https://fracturedlit.com/echoes/",
   },
-  {
-    title: "Watch me read my flash fiction",
-    subtitle: "at the the 16th International Short Story Festival",
-    url: "https://youtu.be/lEgFtba3WWM",
-  },
+  // {
+  //   title: "Watch me read my flash fiction",
+  //   subtitle: "at the the 16th International Short Story Festival",
+  //   url: "https://youtu.be/lEgFtba3WWM",
+  // },
   // {
   //     title: '“2020. Antologia współczesnych polskich opowiadań”',
   //     subtitle: 'featuring my short story “Niech nastatnie Wisła” (in Polish)',
