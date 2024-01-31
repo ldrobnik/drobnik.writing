@@ -2731,6 +2731,11 @@ export const LINKS = [
     url: "https://www.amazon.pl/Riverine-Lukasz-Drobnik/dp/1952055555/ref=mp_s_a_1_1?crid=3RZ1C8JHEY29G&keywords=Drobnik+Riverine&qid=1701791445&sprefix=drobnik+riverine+%2Caps%2C106&sr=8-1",
   },
   {
+    title: "“Cetacean” from RIVERINE",
+    subtitle: "analyzed by Tommy Dean",
+    url: "https://tommydean.substack.com/p/are-you-talking-to-me",
+  },
+  {
     title: "Read stories from RIVERINE",
     subtitle: "on my blog",
     url: "/blog/riverine-3-stories",
