@@ -5,6 +5,7 @@ import {
   faFacebookSquare,
   faInstagram,
   faGoodreads,
+  faSquareBluesky,
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
@@ -2216,30 +2217,44 @@ export const WEBSITE_TEXT_ABOUT = {
         name: (
           <div>
             <FontAwesomeIcon
-              icon={faTwitterSquare}
+              icon={faSquareBluesky}
               aria-hidden="true"
-              title="Twitter"
+              title="Bluesky"
             />
-            &nbsp;@drobnik
-            <span className="sr-only">Twitter</span>
+            &nbsp;@drobnik.bsky.social
+            <span className="sr-only">Bluesky</span>
           </div>
         ),
-        url: TWITTER_URL,
+        url: BLUESKY_URL,
       },
-      {
-        name: (
-          <div>
-            <FontAwesomeIcon
-              icon={faGoodreads}
-              aria-hidden="true"
-              title="Goodreads"
-            />
-            &nbsp;@drobnik
-            <span className="sr-only">Goodreads</span>
-          </div>
-        ),
-        url: GOODREADS_URL,
-      },
+      // {
+      //   name: (
+      //     <div>
+      //       <FontAwesomeIcon
+      //         icon={faTwitterSquare}
+      //         aria-hidden="true"
+      //         title="Twitter"
+      //       />
+      //       &nbsp;@drobnik
+      //       <span className="sr-only">Twitter</span>
+      //     </div>
+      //   ),
+      //   url: TWITTER_URL,
+      // },
+      // {
+      //   name: (
+      //     <div>
+      //       <FontAwesomeIcon
+      //         icon={faGoodreads}
+      //         aria-hidden="true"
+      //         title="Goodreads"
+      //       />
+      //       &nbsp;@drobnik
+      //       <span className="sr-only">Goodreads</span>
+      //     </div>
+      //   ),
+      //   url: GOODREADS_URL,
+      // },
       {
         name: (
           <div>
@@ -2254,20 +2269,20 @@ export const WEBSITE_TEXT_ABOUT = {
         ),
         url: INSTAGRAM_URL,
       },
-      {
-        name: (
-          <div>
-            <FontAwesomeIcon
-              icon={faFacebookSquare}
-              aria-hidden="true"
-              title="Facebook"
-            ></FontAwesomeIcon>
-            &nbsp;@drobnikwrites
-            <span className="sr-only">Facebook</span>
-          </div>
-        ),
-        url: FACEBOOK_URL,
-      },
+      // {
+      //   name: (
+      //     <div>
+      //       <FontAwesomeIcon
+      //         icon={faFacebookSquare}
+      //         aria-hidden="true"
+      //         title="Facebook"
+      //       ></FontAwesomeIcon>
+      //       &nbsp;@drobnikwrites
+      //       <span className="sr-only">Facebook</span>
+      //     </div>
+      //   ),
+      //   url: FACEBOOK_URL,
+      // },
     ],
   },
   publications: {
