@@ -48,8 +48,8 @@ export const BLYSKI_URL = "https://blyski.org"; // błyski literary magazine
 
 //Names of available texts
 export const TEXT_NAMES = [
-  "vostok",
-  "nocturine",
+  // "vostok",
+  // "nocturine",
   "cetacean",
   "cellulose",
   "moths",
@@ -782,29 +782,29 @@ export const TEXTS = {
 //List of publications used in the Pubs section
 export const PUBLICATIONS = {
   books: [
-    {
-      title: "Nocturine",
-      year: "",
-      url: NOCTURINE_URL,
-      cover: nocturineCover,
-      altText: {
-        en: "Nocturine cover",
-        pl: "Okładka Nocturine",
-      },
-      descriptionPl: (
-        <>
-          Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2024 r.
-          nakładem wydawnictwa Fathom Books
-        </>
-      ),
-      descriptionEn: (
-        <>
-          Collection of interlinked stories forthcoming in 2024 from Fathom
-          Books
-        </>
-      ),
-      language: "en",
-    },
+    // {
+    //   title: "Nocturine",
+    //   year: "",
+    //   url: NOCTURINE_URL,
+    //   cover: nocturineCover,
+    //   altText: {
+    //     en: "Nocturine cover",
+    //     pl: "Okładka Nocturine",
+    //   },
+    //   descriptionPl: (
+    //     <>
+    //       Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2024 r.
+    //       nakładem wydawnictwa Fathom Books
+    //     </>
+    //   ),
+    //   descriptionEn: (
+    //     <>
+    //       Collection of interlinked stories forthcoming in 2024 from Fathom
+    //       Books
+    //     </>
+    //   ),
+    //   language: "en",
+    // },
     {
       title: "Riverine",
       year: "2023",
