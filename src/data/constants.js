@@ -5,7 +5,9 @@ import {
   faFacebookSquare,
   faInstagram,
   faGoodreads,
+  faSquareBluesky,
 } from "@fortawesome/free-brands-svg-icons";
+
 import {
   faHome,
   faBook,
@@ -36,6 +38,7 @@ export const VRAEDA_URL = "https://www.vraeydamedia.ca/literary"; //Vraeyda Lite
 export const RIVERINE_URL =
   "https://vegetarianalcoholicpress.com/titles/ukasz-drobnik-riverine"; // Riverine pre=order
 export const VAPRESS_URL = "http://vapoetry.com/"; //VA Press website
+export const BLUESKY_URL = "https://bsky.app/profile/drobnik.bsky.social";
 export const TWITTER_URL = "https://twitter.com/drobnik";
 export const FACEBOOK_URL = "https://www.facebook.com/drobnikwrites";
 export const INSTAGRAM_URL = "https://www.instagram.com/drobnikwrites/";
@@ -46,8 +49,8 @@ export const BLYSKI_URL = "https://blyski.org"; // błyski literary magazine
 
 //Names of available texts
 export const TEXT_NAMES = [
-  "vostok",
-  "nocturine",
+  // "vostok",
+  // "nocturine",
   "cetacean",
   "cellulose",
   "moths",
@@ -780,29 +783,29 @@ export const TEXTS = {
 //List of publications used in the Pubs section
 export const PUBLICATIONS = {
   books: [
-    {
-      title: "Nocturine",
-      year: "",
-      url: NOCTURINE_URL,
-      cover: nocturineCover,
-      altText: {
-        en: "Nocturine cover",
-        pl: "Okładka Nocturine",
-      },
-      descriptionPl: (
-        <>
-          Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2024 r.
-          nakładem wydawnictwa Fathom Books
-        </>
-      ),
-      descriptionEn: (
-        <>
-          Collection of interlinked stories forthcoming in 2024 from Fathom
-          Books
-        </>
-      ),
-      language: "en",
-    },
+    // {
+    //   title: "Nocturine",
+    //   year: "",
+    //   url: NOCTURINE_URL,
+    //   cover: nocturineCover,
+    //   altText: {
+    //     en: "Nocturine cover",
+    //     pl: "Okładka Nocturine",
+    //   },
+    //   descriptionPl: (
+    //     <>
+    //       Zbiór powiązanych fabularnie opowiadań, który ukaże się w 2024 r.
+    //       nakładem wydawnictwa Fathom Books
+    //     </>
+    //   ),
+    //   descriptionEn: (
+    //     <>
+    //       Collection of interlinked stories forthcoming in 2024 from Fathom
+    //       Books
+    //     </>
+    //   ),
+    //   language: "en",
+    // },
     {
       title: "Riverine",
       year: "2023",
@@ -1388,7 +1391,7 @@ export const BOOKS = [
       en: "Nocturine",
       pl: "Nocturine",
     },
-    displayOnMain: true,
+    displayOnMain: false,
     cover: nocturineCover,
     colorCover: nocturineCoverColor,
     url: NOCTURINE_URL,
@@ -1954,8 +1957,8 @@ export const BOOKS = [
 export const WEBSITE_TEXT_SHARED = {
   author: "Łukasz Drobnik",
   title: {
-    en: "author of genre-bending fiction",
-    pl: "autor gatunkowo niepokornej prozy",
+    en: "fiction writer",
+    pl: "prozaik",
   },
   logoButton: {
     top: {
@@ -2116,8 +2119,8 @@ export const WEBSITE_TEXT_ABOUT = {
   intro: {
     title: "Łukasz Drobnik",
     subtitle: {
-      en: "author of genre-bending fiction",
-      pl: "autor gatunkowo niepokornej prozy",
+      en: "fiction writer",
+      pl: "prozaik",
     },
     altText: {
       en: "Author’s photo",
@@ -2127,54 +2130,21 @@ export const WEBSITE_TEXT_ABOUT = {
       en: (
         <div>
           <p>
-            Łukasz Drobnik is a Polish writer writing mostly in English. His
-            favourite pastime is taking literary fiction and blending it with
-            other genres, and he’s a huge flash fiction fan (though he doesn’t
-            shy away from longer forms). He lives in Kraków, Poland.
-          </p>
-          <p>
-            He has written three genre-bending books: a novel{" "}
+            Łukasz Drobnik is a Polish fiction writer writing mostly in English,
+            author of genre-bending books,{" "}
             <AnchorLink href="#vostok" offset="60px">
               <strong>VOSTOK</strong>
             </AnchorLink>{" "}
-            published by{" "}
-            <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VRÆYDA&nbsp;LITERARY</strong>
-            </a>
-            , a flash fiction collection{" "}
+            and{" "}
             <AnchorLink href="#riverine" offset="60px">
               <strong>RIVERINE</strong>
-            </AnchorLink>{" "}
-            available from{" "}
-            <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VA&nbsp;PRESS</strong>
-            </a>
-            , and a collection of interlinked stories{" "}
-            <AnchorLink href="#nocturine" offset="60px">
-              <strong>NOCTURINE</strong>
-            </AnchorLink>{" "}
-            forthcoming from{" "}
-            <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
-              <strong>FATHOM&nbsp;BOOKS</strong>
-            </a>
-            .
-          </p>
-          <p>
-            His other work has been featured in <em>Split Lip Magazine</em>,{" "}
-            <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>,{" "}
-            <em>Quarterly West</em>, <em>Pithead Chapel</em>,{" "}
-            <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>,{" "}
-            <em>Foglifter</em>,{" "}
-            <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, and elsewhere.
-            His writing was longlisted for the{" "}
-            <em>Wigleaf Top 50 Very Short Fictions</em>.
-          </p>
-          <p>
-            He is also editor-in-chief at{" "}
-            <a href={BLYSKI_URL} target="_blank" rel="noopener noreferrer">
-              <strong>BŁYSKI</strong>
-            </a>
-            , a journal publishing flash fiction in Polish translation.
+            </AnchorLink>
+            , as well as shorter prose published in Split Lip Magazine, HAD,
+            Fractured Lit, Atticus Review, Quarterly West, Pithead Chapel,{" "}
+            Lighthouse, STORGY, BULL, Foglifter, X&#8209;R&#8209;A&#8209;Y
+            Literary Magazine, and elsewhere. His writing was longlisted for the{" "}
+            Wigleaf Top 50 Very Short Fictions and nominated for the Pushcart
+            Prize. He lives in Kraków, Poland.
           </p>
           <p>
             Below you can find a{" "}
@@ -2195,54 +2165,21 @@ export const WEBSITE_TEXT_ABOUT = {
       pl: (
         <div>
           <p>
-            Łukasz Drobnik jest polskim pisarzem piszącym głównie po angielsku.
-            Najlepiej się bawi, gdy bierze tzw. prozę wysokoartystyczną
-            i&nbsp;wplata w&nbsp;nią elementy innych gatunków. Do tego jest
-            ogromnym fanem flash fiction (nie stroni jednak od dłuższych form).
-            Mieszka w Krakowie.
-          </p>
-          <p>
-            Napisał trzy gatunkowo niepokorne książki: powieść{" "}
+            Łukasz Drobnik to polski prozaik piszący głównie po angielsku, autor
+            niejednoznacznych gatunkowo książek, powieści{" "}
             <AnchorLink href="#vostok" offset="60px">
               <strong>VOSTOK</strong>
             </AnchorLink>{" "}
-            opublikowaną przez wydawnictwo{" "}
-            <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VRÆYDA&nbsp;LITERARY</strong>
-            </a>
-            , zbiór flash fiction{" "}
+            i&nbsp;zbioru flash fiction{" "}
             <AnchorLink href="#riverine" offset="60px">
               <strong>RIVERINE</strong>
-            </AnchorLink>{" "}
-            dostępny w wydawnictwie{" "}
-            <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VA&nbsp;PRESS</strong>
-            </a>{" "}
-            oraz zbiór powiązanych fabularnie opowiadań{" "}
-            <AnchorLink href="#nocturine" offset="60px">
-              <strong>NOCTURINE</strong>
             </AnchorLink>
-            , który ukaże się nakładem wydawnictwa{" "}
-            <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
-              <strong>FATHOM&nbsp;BOOKS</strong>
-            </a>
-            .
-          </p>
-          <p>
-            Jego utwory były publikowane m.in. w&nbsp;
-            <em>Split Lip Magazine</em>, <em>HAD</em>, <em>Fractured Lit</em>,{" "}
-            <em>Atticus Review</em>, <em>Quarterly West</em>,{" "}
-            <em>Pithead Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>,{" "}
-            <em>STORGY</em>, <em>BULL</em> oraz{" "}
-            <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>. Jego proza
-            trafiła na longlistę <em>Wigleaf Top 50 Very Short Fictions</em>.
-          </p>
-          <p>
-            Jest też redaktorem naczelnym{" "}
-            <a href={BLYSKI_URL} target="_blank" rel="noopener noreferrer">
-              <strong>BŁYSKÓW</strong>
-            </a>
-            , pisma publikującego flash fiction w&nbsp;polskim przekładzie.
+            , oraz krótszych utworów opublikowanych m.in. w&nbsp;Split Lip
+            Magazine, HAD, Fractured Lit, Atticus Review, Quarterly West,
+            Pithead Chapel, Lighthouse, Foglifter, STORGY, BULL oraz
+            X&#8209;R&#8209;A&#8209;Y Literary Magazine. Ma na koncie miejsce na
+            longliście Wigleaf Top 50 Very Short Fictions i&nbsp;nominację do
+            Pushcart Prize. Mieszka w&nbsp;Krakowie.
           </p>
           <p>
             Poniżej można znaleźć{" "}
@@ -2270,7 +2207,7 @@ export const WEBSITE_TEXT_ABOUT = {
       ],
       pl: [
         {
-          message: <div>Czytaj BŁYSKI</div>,
+          message: <div>Zamów RIVERINE</div>,
           path: BLYSKI_URL,
         },
       ],
@@ -2280,30 +2217,44 @@ export const WEBSITE_TEXT_ABOUT = {
         name: (
           <div>
             <FontAwesomeIcon
-              icon={faTwitterSquare}
+              icon={faSquareBluesky}
               aria-hidden="true"
-              title="Twitter"
+              title="Bluesky"
             />
-            &nbsp;@drobnik
-            <span className="sr-only">Twitter</span>
+            &nbsp;@drobnik.bsky.social
+            <span className="sr-only">Bluesky</span>
           </div>
         ),
-        url: TWITTER_URL,
+        url: BLUESKY_URL,
       },
-      {
-        name: (
-          <div>
-            <FontAwesomeIcon
-              icon={faGoodreads}
-              aria-hidden="true"
-              title="Goodreads"
-            />
-            &nbsp;@drobnik
-            <span className="sr-only">Goodreads</span>
-          </div>
-        ),
-        url: GOODREADS_URL,
-      },
+      // {
+      //   name: (
+      //     <div>
+      //       <FontAwesomeIcon
+      //         icon={faTwitterSquare}
+      //         aria-hidden="true"
+      //         title="Twitter"
+      //       />
+      //       &nbsp;@drobnik
+      //       <span className="sr-only">Twitter</span>
+      //     </div>
+      //   ),
+      //   url: TWITTER_URL,
+      // },
+      // {
+      //   name: (
+      //     <div>
+      //       <FontAwesomeIcon
+      //         icon={faGoodreads}
+      //         aria-hidden="true"
+      //         title="Goodreads"
+      //       />
+      //       &nbsp;@drobnik
+      //       <span className="sr-only">Goodreads</span>
+      //     </div>
+      //   ),
+      //   url: GOODREADS_URL,
+      // },
       {
         name: (
           <div>
@@ -2318,20 +2269,20 @@ export const WEBSITE_TEXT_ABOUT = {
         ),
         url: INSTAGRAM_URL,
       },
-      {
-        name: (
-          <div>
-            <FontAwesomeIcon
-              icon={faFacebookSquare}
-              aria-hidden="true"
-              title="Facebook"
-            ></FontAwesomeIcon>
-            &nbsp;@drobnikwrites
-            <span className="sr-only">Facebook</span>
-          </div>
-        ),
-        url: FACEBOOK_URL,
-      },
+      // {
+      //   name: (
+      //     <div>
+      //       <FontAwesomeIcon
+      //         icon={faFacebookSquare}
+      //         aria-hidden="true"
+      //         title="Facebook"
+      //       ></FontAwesomeIcon>
+      //       &nbsp;@drobnikwrites
+      //       <span className="sr-only">Facebook</span>
+      //     </div>
+      //   ),
+      //   url: FACEBOOK_URL,
+      // },
     ],
   },
   publications: {
@@ -2445,27 +2396,22 @@ export const WEBSITE_TEXT_TEXTS = {
               rel="noopener noreferrer"
             >
               VOSTOK
-            </a>
-            ,{" "}
+            </a>{" "}
+            and{" "}
             <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
               RIVERINE
             </a>
-            , and{" "}
-            <a
-              href={NOCTURINE_LOCAL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              NOCTURINE
+            , as well as shorter prose published in HAD,{" "}
+            X&#8209;R&#8209;A&#8209;Y Literary Magazine, Fractured Lit, Atticus
+            Review, Pithead Chapel, and elsewhere. His work was longlisted for
+            the Wigleaf Top 50 Very Short Fictions and nominated for the
+            Pushcart Prize. Find him on{" "}
+            <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
+              Bluesky
             </a>{" "}
-            as well as shorter prose published in <em>HAD</em>,{" "}
-            <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
-            <em>Fractured Lit</em>, <em>Atticus Review</em>,{" "}
-            <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for
-            the <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets
-            as{" "}
-            <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer">
-              @drobnik
+            and{" "}
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+              Instagram
             </a>
             . For a full list of publications,{" "}
           </React.Fragment>
@@ -2478,33 +2424,29 @@ export const WEBSITE_TEXT_TEXTS = {
         ],
         content: (
           <React.Fragment>
-            to autor niepokornych gatunkowo książek,{" "}
+            to autor niejednoznacznych gatunkowo książek,{" "}
             <a
               href={VOSTOK_LOCAL_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
               VOSTOK
-            </a>
-            ,{" "}
-            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
-              RIVERINE
             </a>{" "}
             i&nbsp;
-            <a
-              href={NOCTURINE_LOCAL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              NOCTURINE
+            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+              RIVERINE
+            </a>
+            , oraz krótszych utworów opublikowanych m.in. w&nbsp;HAD,{" "}
+            X&#8209;R&#8209;A&#8209;Y Literary Magazine, Fractured Lit, Atticus
+            Review i&nbsp;Pithead Chapel. Ma na koncie miejsce na longliście
+            Wigleaf Top 50 Very Short Fictions i&nbsp;nominację do Pushcart
+            Prize. Jest na{" "}
+            <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
+              Bluesky
             </a>{" "}
-            oraz krótszych utworów opublikowanych m.in. w&nbsp;<em>HAD</em>,{" "}
-            <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
-            <em>Fractured Lit</em>, <em>Atticus Review</em> i&nbsp;
-            <em>Pithead Chapel</em>. Jego proza trafiła na longlistę{" "}
-            <em>Wigleaf Top 50 Very Short Fictions</em>. Czasem tweetuje jako{" "}
-            <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer">
-              @drobnik
+            i&nbsp;
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+              Instagramie
             </a>
             . Pełną listę publikacji można znaleźć{" "}
           </React.Fragment>
@@ -2543,22 +2485,21 @@ export const WEBSITE_TEXT_BLOG = {
         is the author of genre-bending books,{" "}
         <a href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">
           VOSTOK
-        </a>
-        ,{" "}
+        </a>{" "}
+        and{" "}
         <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
           RIVERINE
         </a>
-        , and{" "}
-        <a href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">
-          NOCTURINE
+        , as well as shorter prose published in HAD, X&#8209;R&#8209;A&#8209;Y
+        Literary Magazine, Fractured Lit, Atticus Review, Pithead Chapel, and
+        elsewhere. His work was longlisted for the Wigleaf Top 50 Very Short
+        Fictions and nominated for the Pushcart Prize. Find him on{" "}
+        <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
+          Bluesky
         </a>{" "}
-        as well as shorter prose published in <em>HAD</em>,{" "}
-        <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
-        <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Pithead Chapel</em>
-        , and elsewhere. His work was longlisted for the{" "}
-        <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets as{" "}
-        <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer">
-          @drobnik
+        and{" "}
+        <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+          Instagram
         </a>
         . For a full list of publications and fiction samples,{" "}
       </React.Fragment>
@@ -2711,10 +2652,20 @@ export const BLOG_CATEGORIES = {
 //Content of quick links (to be used on Instagram)
 export const LINKS = [
   {
-    title: "Order RIVERINE",
-    subtitle: "from VA Press",
-    url: RIVERINE_URL,
+    title: "My official website",
+    subtitle: "drobnik.co",
+    url: "/",
   },
+  {
+    title: "Bluesky",
+    subtitle: "@drobnik.bsky.social",
+    url: BLUESKY_URL,
+  },
+  // {
+  //   title: "Order RIVERINE",
+  //   subtitle: "from VA Press",
+  //   url: RIVERINE_URL,
+  // },
   {
     title: "Order RIVERINE",
     subtitle: "from Bookshop.org",
@@ -2722,34 +2673,39 @@ export const LINKS = [
   },
   {
     title: "Order RIVERINE",
-    subtitle: "from Amazon.de",
-    url: "https://www.amazon.de/-/en/Lukasz-Drobnik/dp/1952055555/ref=sr_1_1?crid=34LGU52U6LZUD&keywords=Riverine+Lukasz+Drobnik&qid=1701521487&sprefix=riverine+lukasz+drobnik,aps,219&sr=8-1",
+    subtitle: "from Amazon",
+    url: "https://www.amazon.com/Riverine-Lukasz-Drobnik/dp/1952055555&",
   },
-  {
-    title: "Order RIVERINE",
-    subtitle: "from Amazon.pl",
-    url: "https://www.amazon.pl/Riverine-Lukasz-Drobnik/dp/1952055555/ref=mp_s_a_1_1?crid=3RZ1C8JHEY29G&keywords=Drobnik+Riverine&qid=1701791445&sprefix=drobnik+riverine+%2Caps%2C106&sr=8-1",
-  },
+  // {
+  //   title: "Order RIVERINE",
+  //   subtitle: "from Amazon.de",
+  //   url: "https://www.amazon.de/-/en/Lukasz-Drobnik/dp/1952055555/ref=sr_1_1?crid=34LGU52U6LZUD&keywords=Riverine+Lukasz+Drobnik&qid=1701521487&sprefix=riverine+lukasz+drobnik,aps,219&sr=8-1",
+  // },
+  // {
+  //   title: "Order RIVERINE",
+  //   subtitle: "from Amazon.pl",
+  //   url: "https://www.amazon.pl/Riverine-Lukasz-Drobnik/dp/1952055555/ref=mp_s_a_1_1?crid=3RZ1C8JHEY29G&keywords=Drobnik+Riverine&qid=1701791445&sprefix=drobnik+riverine+%2Caps%2C106&sr=8-1",
+  // },
   {
     title: "“Cetacean” from RIVERINE",
     subtitle: "analyzed by Tommy Dean",
     url: "https://tommydean.substack.com/p/are-you-talking-to-me",
   },
-  {
-    title: "Read stories from RIVERINE",
-    subtitle: "on my blog",
-    url: "/blog/riverine-3-stories",
-  },
+  // {
+  //   title: "Read stories from RIVERINE",
+  //   subtitle: "on my blog",
+  //   url: "/blog/riverine-3-stories",
+  // },
   {
     title: "Buy GET BENT",
     subtitle: "anthology featuring my piece “Coal and Glitter”",
     url: "https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/",
   },
-  {
-    title: "Read the latest issue of “błyski”",
-    subtitle: "featuring flash fiction by Tara Isabel Zambrano",
-    url: "https://blyski.org",
-  },
+  // {
+  //   title: "Read the latest issue of “błyski”",
+  //   subtitle: "featuring flash fiction by Tara Isabel Zambrano",
+  //   url: "https://blyski.org",
+  // },
   {
     title: "Buy VOSTOK",
     subtitle: "my literary sci-fi novel",
@@ -2760,16 +2716,16 @@ export const LINKS = [
     subtitle: "my literary sci-fi novel",
     url: VOSTOK_EBOOK_URL,
   },
-  {
-    title: "Pre-order NOCTURINE",
-    subtitle: "my linked story collection",
-    url: NOCTURINE_URL,
-  },
-  {
-    title: "Buy STRANGED WRITING",
-    subtitle: "anthology featuring my piece “Phagocytosis”",
-    url: "https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/",
-  },
+  // {
+  //   title: "Pre-order NOCTURINE",
+  //   subtitle: "my linked story collection",
+  //   url: NOCTURINE_URL,
+  // },
+  // {
+  //   title: "Buy STRANGED WRITING",
+  //   subtitle: "anthology featuring my piece “Phagocytosis”",
+  //   url: "https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/",
+  // },
   {
     title: "Read “Vacuoles”",
     subtitle: "in Split Lip Magazine",
@@ -2835,11 +2791,6 @@ export const LINKS = [
   //     subtitle: 'please consider supporting me on Ko-fi',
   //     url: KO_FI_URL
   // },
-  {
-    title: "My official website",
-    subtitle: "drobnik.co",
-    url: "/",
-  },
   // {
   //     title: 'Read “Deadlines”',
   //     subtitle: 'in STORGY',
@@ -2850,14 +2801,14 @@ export const LINKS = [
   //     subtitle: 'in Pithead Chapel',
   //     url: 'https://pitheadchapel.com/entrails/'
   // },
-  {
-    title: "Twitter",
-    subtitle: "@drobnik",
-    url: TWITTER_URL,
-  },
-  {
-    title: "Facebook",
-    subtitle: "@drobnikwrites",
-    url: FACEBOOK_URL,
-  },
+  // {
+  //   title: "Twitter",
+  //   subtitle: "@drobnik",
+  //   url: TWITTER_URL,
+  // },
+  // {
+  //   title: "Facebook",
+  //   subtitle: "@drobnikwrites",
+  //   url: FACEBOOK_URL,
+  // },
 ];
