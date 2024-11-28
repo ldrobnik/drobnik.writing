@@ -1957,8 +1957,8 @@ export const BOOKS = [
 export const WEBSITE_TEXT_SHARED = {
   author: "Łukasz Drobnik",
   title: {
-    en: "author of genre-bending fiction",
-    pl: "autor gatunkowo niejednoznacznej prozy",
+    en: "fiction writer",
+    pl: "prozaik",
   },
   logoButton: {
     top: {
@@ -2119,8 +2119,8 @@ export const WEBSITE_TEXT_ABOUT = {
   intro: {
     title: "Łukasz Drobnik",
     subtitle: {
-      en: "author of genre-bending fiction",
-      pl: "autor gatunkowo niejednoznacznej prozy",
+      en: "fiction writer",
+      pl: "prozaik",
     },
     altText: {
       en: "Author’s photo",
