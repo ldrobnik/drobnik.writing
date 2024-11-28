@@ -2679,10 +2679,20 @@ export const BLOG_CATEGORIES = {
 //Content of quick links (to be used on Instagram)
 export const LINKS = [
   {
-    title: "Order RIVERINE",
-    subtitle: "from VA Press",
-    url: RIVERINE_URL,
+    title: "My official website",
+    subtitle: "drobnik.co",
+    url: "/",
   },
+  {
+    title: "Bluesky",
+    subtitle: "@drobnik.bsky.social",
+    url: BLUESKY_URL,
+  },
+  // {
+  //   title: "Order RIVERINE",
+  //   subtitle: "from VA Press",
+  //   url: RIVERINE_URL,
+  // },
   {
     title: "Order RIVERINE",
     subtitle: "from Bookshop.org",
@@ -2690,34 +2700,39 @@ export const LINKS = [
   },
   {
     title: "Order RIVERINE",
-    subtitle: "from Amazon.de",
-    url: "https://www.amazon.de/-/en/Lukasz-Drobnik/dp/1952055555/ref=sr_1_1?crid=34LGU52U6LZUD&keywords=Riverine+Lukasz+Drobnik&qid=1701521487&sprefix=riverine+lukasz+drobnik,aps,219&sr=8-1",
+    subtitle: "from Amazon",
+    url: "https://www.amazon.com/Riverine-Lukasz-Drobnik/dp/1952055555&",
   },
-  {
-    title: "Order RIVERINE",
-    subtitle: "from Amazon.pl",
-    url: "https://www.amazon.pl/Riverine-Lukasz-Drobnik/dp/1952055555/ref=mp_s_a_1_1?crid=3RZ1C8JHEY29G&keywords=Drobnik+Riverine&qid=1701791445&sprefix=drobnik+riverine+%2Caps%2C106&sr=8-1",
-  },
+  // {
+  //   title: "Order RIVERINE",
+  //   subtitle: "from Amazon.de",
+  //   url: "https://www.amazon.de/-/en/Lukasz-Drobnik/dp/1952055555/ref=sr_1_1?crid=34LGU52U6LZUD&keywords=Riverine+Lukasz+Drobnik&qid=1701521487&sprefix=riverine+lukasz+drobnik,aps,219&sr=8-1",
+  // },
+  // {
+  //   title: "Order RIVERINE",
+  //   subtitle: "from Amazon.pl",
+  //   url: "https://www.amazon.pl/Riverine-Lukasz-Drobnik/dp/1952055555/ref=mp_s_a_1_1?crid=3RZ1C8JHEY29G&keywords=Drobnik+Riverine&qid=1701791445&sprefix=drobnik+riverine+%2Caps%2C106&sr=8-1",
+  // },
   {
     title: "“Cetacean” from RIVERINE",
     subtitle: "analyzed by Tommy Dean",
     url: "https://tommydean.substack.com/p/are-you-talking-to-me",
   },
-  {
-    title: "Read stories from RIVERINE",
-    subtitle: "on my blog",
-    url: "/blog/riverine-3-stories",
-  },
+  // {
+  //   title: "Read stories from RIVERINE",
+  //   subtitle: "on my blog",
+  //   url: "/blog/riverine-3-stories",
+  // },
   {
     title: "Buy GET BENT",
     subtitle: "anthology featuring my piece “Coal and Glitter”",
     url: "https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/",
   },
-  {
-    title: "Read the latest issue of “błyski”",
-    subtitle: "featuring flash fiction by Tara Isabel Zambrano",
-    url: "https://blyski.org",
-  },
+  // {
+  //   title: "Read the latest issue of “błyski”",
+  //   subtitle: "featuring flash fiction by Tara Isabel Zambrano",
+  //   url: "https://blyski.org",
+  // },
   {
     title: "Buy VOSTOK",
     subtitle: "my literary sci-fi novel",
@@ -2728,16 +2743,16 @@ export const LINKS = [
     subtitle: "my literary sci-fi novel",
     url: VOSTOK_EBOOK_URL,
   },
-  {
-    title: "Pre-order NOCTURINE",
-    subtitle: "my linked story collection",
-    url: NOCTURINE_URL,
-  },
-  {
-    title: "Buy STRANGED WRITING",
-    subtitle: "anthology featuring my piece “Phagocytosis”",
-    url: "https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/",
-  },
+  // {
+  //   title: "Pre-order NOCTURINE",
+  //   subtitle: "my linked story collection",
+  //   url: NOCTURINE_URL,
+  // },
+  // {
+  //   title: "Buy STRANGED WRITING",
+  //   subtitle: "anthology featuring my piece “Phagocytosis”",
+  //   url: "https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/",
+  // },
   {
     title: "Read “Vacuoles”",
     subtitle: "in Split Lip Magazine",
@@ -2803,11 +2818,6 @@ export const LINKS = [
   //     subtitle: 'please consider supporting me on Ko-fi',
   //     url: KO_FI_URL
   // },
-  {
-    title: "My official website",
-    subtitle: "drobnik.co",
-    url: "/",
-  },
   // {
   //     title: 'Read “Deadlines”',
   //     subtitle: 'in STORGY',
@@ -2818,14 +2828,14 @@ export const LINKS = [
   //     subtitle: 'in Pithead Chapel',
   //     url: 'https://pitheadchapel.com/entrails/'
   // },
-  {
-    title: "Twitter",
-    subtitle: "@drobnik",
-    url: TWITTER_URL,
-  },
-  {
-    title: "Facebook",
-    subtitle: "@drobnikwrites",
-    url: FACEBOOK_URL,
-  },
+  // {
+  //   title: "Twitter",
+  //   subtitle: "@drobnik",
+  //   url: TWITTER_URL,
+  // },
+  // {
+  //   title: "Facebook",
+  //   subtitle: "@drobnikwrites",
+  //   url: FACEBOOK_URL,
+  // },
 ];
