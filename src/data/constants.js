@@ -1957,7 +1957,7 @@ export const WEBSITE_TEXT_SHARED = {
   author: "Łukasz Drobnik",
   title: {
     en: "author of genre-bending fiction",
-    pl: "autor gatunkowo niepokornej prozy",
+    pl: "autor gatunkowo niejednoznacznej prozy",
   },
   logoButton: {
     top: {
@@ -2119,7 +2119,7 @@ export const WEBSITE_TEXT_ABOUT = {
     title: "Łukasz Drobnik",
     subtitle: {
       en: "author of genre-bending fiction",
-      pl: "autor gatunkowo niepokornej prozy",
+      pl: "autor gatunkowo niejednoznacznej prozy",
     },
     altText: {
       en: "Author’s photo",
@@ -2129,37 +2129,21 @@ export const WEBSITE_TEXT_ABOUT = {
       en: (
         <div>
           <p>
-            Łukasz Drobnik is a Polish writer writing mostly in English. His
-            favourite pastime is taking literary fiction and blending it with
-            other genres, and he’s a huge flash fiction fan (though he doesn’t
-            shy away from longer forms). He lives in Kraków, Poland.
-          </p>
-          <p>
-            He has written a novel{" "}
+            Łukasz Drobnik is a Polish fiction writer writing mostly in English,
+            author of genre-bending books,{" "}
             <AnchorLink href="#vostok" offset="60px">
               <strong>VOSTOK</strong>
             </AnchorLink>{" "}
-            published by{" "}
-            <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VRÆYDA&nbsp;LITERARY</strong>
-            </a>{" "}
-            and a flash fiction collection{" "}
+            and{" "}
             <AnchorLink href="#riverine" offset="60px">
               <strong>RIVERINE</strong>
-            </AnchorLink>{" "}
-            available from{" "}
-            <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VA&nbsp;PRESS</strong>
-            </a>
-            .
-          </p>
-          <p>
-            His other work has been featured in Split Lip Magazine, HAD,
+            </AnchorLink>
+            , as well as shorter prose published in Split Lip Magazine, HAD,
             Fractured Lit, Atticus Review, Quarterly West, Pithead Chapel,{" "}
             Lighthouse, STORGY, BULL, Foglifter, X&#8209;R&#8209;A&#8209;Y
             Literary Magazine, and elsewhere. His writing was longlisted for the{" "}
             Wigleaf Top 50 Very Short Fictions and nominated for the Pushcart
-            Prize.
+            Prize. He lives in Kraków, Poland.
           </p>
           <p>
             Below you can find a{" "}
@@ -2180,37 +2164,21 @@ export const WEBSITE_TEXT_ABOUT = {
       pl: (
         <div>
           <p>
-            Łukasz Drobnik jest polskim pisarzem piszącym głównie po angielsku.
-            Najlepiej się bawi, gdy bierze tzw. prozę wysokoartystyczną
-            i&nbsp;wplata w&nbsp;nią elementy innych gatunków. Do tego jest
-            ogromnym fanem flash fiction (nie stroni jednak od dłuższych form).
-            Mieszka w Krakowie.
-          </p>
-          <p>
-            Napisał powieść{" "}
+            Łukasz Drobnik to polski prozaik piszący głównie po angielsku, autor
+            niejednoznacznych gatunkowo książek, powieści{" "}
             <AnchorLink href="#vostok" offset="60px">
               <strong>VOSTOK</strong>
             </AnchorLink>{" "}
-            opublikowaną przez wydawnictwo{" "}
-            <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VRÆYDA&nbsp;LITERARY</strong>
-            </a>{" "}
-            oraz zbiór flash fiction{" "}
+            i&nbsp;zbioru flash fiction{" "}
             <AnchorLink href="#riverine" offset="60px">
               <strong>RIVERINE</strong>
-            </AnchorLink>{" "}
-            dostępny w&nbsp;wydawnictwie{" "}
-            <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
-              <strong>VA&nbsp;PRESS</strong>
-            </a>
-            .
-          </p>
-          <p>
-            Jego utwory były publikowane m.in. w&nbsp; Split Lip Magazine, HAD,
-            Fractured Lit, Atticus Review, Quarterly West, Pithead Chapel,
-            Lighthouse, Foglifter, STORGY, BULL oraz X&#8209;R&#8209;A&#8209;Y
-            Literary Magazine. Ma na koncie miejsce na longliście Wigleaf Top 50
-            Very Short Fictions i&nbsp;nominację do Pushcart Prize.
+            </AnchorLink>
+            , oraz krótszych utworów opublikowanych m.in. w&nbsp;Split Lip
+            Magazine, HAD, Fractured Lit, Atticus Review, Quarterly West,
+            Pithead Chapel, Lighthouse, Foglifter, STORGY, BULL oraz
+            X&#8209;R&#8209;A&#8209;Y Literary Magazine. Ma na koncie miejsce na
+            longliście Wigleaf Top 50 Very Short Fictions i&nbsp;nominację do
+            Pushcart Prize. Mieszka w&nbsp;Krakowie.
           </p>
           <p>
             Poniżej można znaleźć{" "}
@@ -2413,27 +2381,22 @@ export const WEBSITE_TEXT_TEXTS = {
               rel="noopener noreferrer"
             >
               VOSTOK
-            </a>
-            ,{" "}
+            </a>{" "}
+            and{" "}
             <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
               RIVERINE
             </a>
-            , and{" "}
-            <a
-              href={NOCTURINE_LOCAL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              NOCTURINE
+            , as well as shorter prose published in HAD,{" "}
+            X&#8209;R&#8209;A&#8209;Y Literary Magazine, Fractured Lit, Atticus
+            Review, Pithead Chapel, and elsewhere. His work was longlisted for
+            the Wigleaf Top 50 Very Short Fictions and nominated for the
+            Pushcart Prize. Find him on{" "}
+            <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
+              Bluesky
             </a>{" "}
-            as well as shorter prose published in <em>HAD</em>,{" "}
-            <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
-            <em>Fractured Lit</em>, <em>Atticus Review</em>,{" "}
-            <em>Pithead Chapel</em>, and elsewhere. His work was longlisted for
-            the <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets
-            as{" "}
-            <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer">
-              @drobnik
+            and{" "}
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+              Instagram
             </a>
             . For a full list of publications,{" "}
           </React.Fragment>
@@ -2446,33 +2409,29 @@ export const WEBSITE_TEXT_TEXTS = {
         ],
         content: (
           <React.Fragment>
-            to autor niepokornych gatunkowo książek,{" "}
+            to autor niejednoznacznych gatunkowo książek,{" "}
             <a
               href={VOSTOK_LOCAL_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
               VOSTOK
-            </a>
-            ,{" "}
-            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
-              RIVERINE
             </a>{" "}
             i&nbsp;
-            <a
-              href={NOCTURINE_LOCAL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              NOCTURINE
+            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+              RIVERINE
+            </a>
+            , oraz krótszych utworów opublikowanych m.in. w&nbsp;HAD,{" "}
+            X&#8209;R&#8209;A&#8209;Y Literary Magazine, Fractured Lit, Atticus
+            Review i&nbsp;Pithead Chapel. Ma na koncie miejsce na longliście
+            Wigleaf Top 50 Very Short Fictions i&nbsp;nominację do Pushcart
+            Prize. Jest na{" "}
+            <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
+              Bluesky
             </a>{" "}
-            oraz krótszych utworów opublikowanych m.in. w&nbsp;<em>HAD</em>,{" "}
-            <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
-            <em>Fractured Lit</em>, <em>Atticus Review</em> i&nbsp;
-            <em>Pithead Chapel</em>. Jego proza trafiła na longlistę{" "}
-            <em>Wigleaf Top 50 Very Short Fictions</em>. Czasem tweetuje jako{" "}
-            <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer">
-              @drobnik
+            i&nbsp;
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+              Instagramie
             </a>
             . Pełną listę publikacji można znaleźć{" "}
           </React.Fragment>
@@ -2511,22 +2470,21 @@ export const WEBSITE_TEXT_BLOG = {
         is the author of genre-bending books,{" "}
         <a href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">
           VOSTOK
-        </a>
-        ,{" "}
+        </a>{" "}
+        and{" "}
         <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
           RIVERINE
         </a>
-        , and{" "}
-        <a href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">
-          NOCTURINE
+        , as well as shorter prose published in HAD, X&#8209;R&#8209;A&#8209;Y
+        Literary Magazine, Fractured Lit, Atticus Review, Pithead Chapel, and
+        elsewhere. His work was longlisted for the Wigleaf Top 50 Very Short
+        Fictions and nominated for the Pushcart Prize. Find him on{" "}
+        <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
+          Bluesky
         </a>{" "}
-        as well as shorter prose published in <em>HAD</em>,{" "}
-        <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>,{" "}
-        <em>Fractured Lit</em>, <em>Atticus Review</em>, <em>Pithead Chapel</em>
-        , and elsewhere. His work was longlisted for the{" "}
-        <em>Wigleaf Top 50 Very Short Fictions</em>. Sometimes he tweets as{" "}
-        <a href={TWITTER_URL} target="_blank" rel="noopener noreferrer">
-          @drobnik
+        and{" "}
+        <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+          Instagram
         </a>
         . For a full list of publications and fiction samples,{" "}
       </React.Fragment>
