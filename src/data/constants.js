@@ -6,6 +6,7 @@ import {
   faInstagram,
   faGoodreads,
 } from "@fortawesome/free-brands-svg-icons";
+
 import {
   faHome,
   faBook,
@@ -36,6 +37,7 @@ export const VRAEDA_URL = "https://www.vraeydamedia.ca/literary"; //Vraeyda Lite
 export const RIVERINE_URL =
   "https://vegetarianalcoholicpress.com/titles/ukasz-drobnik-riverine"; // Riverine pre=order
 export const VAPRESS_URL = "http://vapoetry.com/"; //VA Press website
+export const BLUESKY_URL = "https://bsky.app/profile/drobnik.bsky.social";
 export const TWITTER_URL = "https://twitter.com/drobnik";
 export const FACEBOOK_URL = "https://www.facebook.com/drobnikwrites";
 export const INSTAGRAM_URL = "https://www.instagram.com/drobnikwrites/";
@@ -1388,7 +1390,7 @@ export const BOOKS = [
       en: "Nocturine",
       pl: "Nocturine",
     },
-    displayOnMain: true,
+    displayOnMain: false,
     cover: nocturineCover,
     colorCover: nocturineCoverColor,
     url: NOCTURINE_URL,
@@ -2133,15 +2135,15 @@ export const WEBSITE_TEXT_ABOUT = {
             shy away from longer forms). He lives in Kraków, Poland.
           </p>
           <p>
-            He has written three genre-bending books: a novel{" "}
+            He has written a novel{" "}
             <AnchorLink href="#vostok" offset="60px">
               <strong>VOSTOK</strong>
             </AnchorLink>{" "}
             published by{" "}
             <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
               <strong>VRÆYDA&nbsp;LITERARY</strong>
-            </a>
-            , a flash fiction collection{" "}
+            </a>{" "}
+            and a flash fiction collection{" "}
             <AnchorLink href="#riverine" offset="60px">
               <strong>RIVERINE</strong>
             </AnchorLink>{" "}
@@ -2149,32 +2151,15 @@ export const WEBSITE_TEXT_ABOUT = {
             <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
               <strong>VA&nbsp;PRESS</strong>
             </a>
-            , and a collection of interlinked stories{" "}
-            <AnchorLink href="#nocturine" offset="60px">
-              <strong>NOCTURINE</strong>
-            </AnchorLink>{" "}
-            forthcoming from{" "}
-            <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
-              <strong>FATHOM&nbsp;BOOKS</strong>
-            </a>
             .
           </p>
           <p>
-            His other work has been featured in <em>Split Lip Magazine</em>,{" "}
-            <em>HAD</em>, <em>Fractured Lit</em>, <em>Atticus Review</em>,{" "}
-            <em>Quarterly West</em>, <em>Pithead Chapel</em>,{" "}
-            <em>Lighthouse</em>, <em>STORGY</em>, <em>BULL</em>,{" "}
-            <em>Foglifter</em>,{" "}
-            <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>, and elsewhere.
-            His writing was longlisted for the{" "}
-            <em>Wigleaf Top 50 Very Short Fictions</em>.
-          </p>
-          <p>
-            He is also editor-in-chief at{" "}
-            <a href={BLYSKI_URL} target="_blank" rel="noopener noreferrer">
-              <strong>BŁYSKI</strong>
-            </a>
-            , a journal publishing flash fiction in Polish translation.
+            His other work has been featured in Split Lip Magazine, HAD,
+            Fractured Lit, Atticus Review, Quarterly West, Pithead Chapel,{" "}
+            Lighthouse, STORGY, BULL, Foglifter, X&#8209;R&#8209;A&#8209;Y
+            Literary Magazine, and elsewhere. His writing was longlisted for the{" "}
+            Wigleaf Top 50 Very Short Fictions and nominated for the Pushcart
+            Prize.
           </p>
           <p>
             Below you can find a{" "}
@@ -2202,47 +2187,30 @@ export const WEBSITE_TEXT_ABOUT = {
             Mieszka w Krakowie.
           </p>
           <p>
-            Napisał trzy gatunkowo niepokorne książki: powieść{" "}
+            Napisał powieść{" "}
             <AnchorLink href="#vostok" offset="60px">
               <strong>VOSTOK</strong>
             </AnchorLink>{" "}
             opublikowaną przez wydawnictwo{" "}
             <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
               <strong>VRÆYDA&nbsp;LITERARY</strong>
-            </a>
-            , zbiór flash fiction{" "}
+            </a>{" "}
+            oraz zbiór flash fiction{" "}
             <AnchorLink href="#riverine" offset="60px">
               <strong>RIVERINE</strong>
             </AnchorLink>{" "}
-            dostępny w wydawnictwie{" "}
+            dostępny w&nbsp;wydawnictwie{" "}
             <a href={RIVERINE_URL} target="_blank" rel="noopener noreferrer">
               <strong>VA&nbsp;PRESS</strong>
-            </a>{" "}
-            oraz zbiór powiązanych fabularnie opowiadań{" "}
-            <AnchorLink href="#nocturine" offset="60px">
-              <strong>NOCTURINE</strong>
-            </AnchorLink>
-            , który ukaże się nakładem wydawnictwa{" "}
-            <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
-              <strong>FATHOM&nbsp;BOOKS</strong>
             </a>
             .
           </p>
           <p>
-            Jego utwory były publikowane m.in. w&nbsp;
-            <em>Split Lip Magazine</em>, <em>HAD</em>, <em>Fractured Lit</em>,{" "}
-            <em>Atticus Review</em>, <em>Quarterly West</em>,{" "}
-            <em>Pithead Chapel</em>, <em>Lighthouse</em>, <em>Foglifter</em>,{" "}
-            <em>STORGY</em>, <em>BULL</em> oraz{" "}
-            <em>X&#8209;R&#8209;A&#8209;Y Literary Magazine</em>. Jego proza
-            trafiła na longlistę <em>Wigleaf Top 50 Very Short Fictions</em>.
-          </p>
-          <p>
-            Jest też redaktorem naczelnym{" "}
-            <a href={BLYSKI_URL} target="_blank" rel="noopener noreferrer">
-              <strong>BŁYSKÓW</strong>
-            </a>
-            , pisma publikującego flash fiction w&nbsp;polskim przekładzie.
+            Jego utwory były publikowane m.in. w&nbsp; Split Lip Magazine, HAD,
+            Fractured Lit, Atticus Review, Quarterly West, Pithead Chapel,
+            Lighthouse, Foglifter, STORGY, BULL oraz X&#8209;R&#8209;A&#8209;Y
+            Literary Magazine. Ma na koncie miejsce na longliście Wigleaf Top 50
+            Very Short Fictions i&nbsp;nominację do Pushcart Prize.
           </p>
           <p>
             Poniżej można znaleźć{" "}
@@ -2270,7 +2238,7 @@ export const WEBSITE_TEXT_ABOUT = {
       ],
       pl: [
         {
-          message: <div>Czytaj BŁYSKI</div>,
+          message: <div>Zamów RIVERINE</div>,
           path: BLYSKI_URL,
         },
       ],
