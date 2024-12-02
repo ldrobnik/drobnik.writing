@@ -1396,41 +1396,31 @@ export const BOOKS = [
     colorCover: nocturineCoverColor,
     url: NOCTURINE_URL,
     slogan: {
-      en: (
-        <div>
-          Fiction collection forthcoming in 2024 from{" "}
-          <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
-            <strong>FATHOM BOOKS</strong>
-          </a>
-        </div>
-      ),
-      pl: (
-        <div>
-          Zbiór prozy dostępny w&nbsp;2024&nbsp;roku
-          <br />
-          w&nbsp;wydawnictwie{" "}
-          <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
-            <strong>FATHOM BOOKS</strong>
-          </a>
-        </div>
-      ),
+      en: <div>Fiction collection</div>,
+      pl: <div>Zbiór prozy</div>,
     },
     orderButton: {
-      en: ORDER_BUTTON["preorder"]["en"],
-      pl: ORDER_BUTTON["preorder"]["pl"],
+      en: null,
+      pl: null,
     },
-    shopList: [
-      {
-        name: {
-          en: <React.Fragment>PAPER</React.Fragment>,
-          pl: <React.Fragment>PAPIER</React.Fragment>,
-        },
-        url: NOCTURINE_URL,
-      },
-    ],
+    shopList: null,
     body: {
       en: (
         <div>
+          <p>
+            <em>
+              DECEMBER 2024: The release has been delayed. Waiting for the final
+              publication date from FATHOM BOOKS. Check my{" "}
+              <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
+                <strong>BLUESKY</strong>
+              </a>{" "}
+              and{" "}
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+                <strong>INSTAGRAM</strong>
+              </a>{" "}
+              for more updates.
+            </em>
+          </p>
           <p>
             The end of the world starts like an ad campaign. When black cubes
             appear above the city of Poznań, some think it’s just another mobile
@@ -1451,6 +1441,21 @@ export const BOOKS = [
       ),
       pl: (
         <div>
+          <p>
+            <em>
+              GRUDZIEŃ 2024: Wydanie zostało opóźnione. Czekam, aż FATHOM BOOKS
+              prześle mi ostateczną datę publikacji. O&nbsp;dalszych losach
+              książki będę informował na{" "}
+              <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
+                <strong>BLUESKY</strong>
+              </a>{" "}
+              i&nbsp;
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
+                <strong>INSTAGRAMIE</strong>
+              </a>
+              .
+            </em>
+          </p>
           <p>
             Koniec świata zaczyna się jak kampania reklamowa. Gdy nad Poznaniem
             zawisają czarne sześciany, niektórzy sądzą, że to po prostu kolejny

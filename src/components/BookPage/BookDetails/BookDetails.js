@@ -79,16 +79,22 @@ export const BookDetails = (props) => {
             <BookPageSlogan>
               {BOOKS[props.book].slogan[props.lang]}
             </BookPageSlogan>
-            <BookPageShopList>
-              {WEBSITE_TEXT_BOOKPAGE.buyHere[props.lang]}
-              {BOOKS[props.book].shopList.map((shop, k) => {
-                return (
-                  <a href={shop.url} target="_blank" rel="noopener noreferrer">
-                    &nbsp;<strong>{shop.name[props.lang]}</strong>
-                  </a>
-                );
-              })}
-            </BookPageShopList>
+            {BOOKS[props.book].shopList && (
+              <BookPageShopList>
+                {WEBSITE_TEXT_BOOKPAGE.buyHere[props.lang]}
+                {BOOKS[props.book].shopList.map((shop, k) => {
+                  return (
+                    <a
+                      href={shop.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      &nbsp;<strong>{shop.name[props.lang]}</strong>
+                    </a>
+                  );
+                })}
+              </BookPageShopList>
+            )}
           </div>
         </BookPageTopPanel>
       </AnimatedContent>
