@@ -2666,11 +2666,11 @@ export const LINKS = [
     subtitle: "@drobnik.bsky.social",
     url: BLUESKY_URL,
   },
-  // {
-  //   title: "Order RIVERINE",
-  //   subtitle: "from VA Press",
-  //   url: RIVERINE_URL,
-  // },
+  {
+    title: "Order RIVERINE",
+    subtitle: "from VA Press",
+    url: RIVERINE_URL,
+  },
   {
     title: "Order RIVERINE",
     subtitle: "from Bookshop.org",
@@ -2679,7 +2679,7 @@ export const LINKS = [
   {
     title: "Order RIVERINE",
     subtitle: "from Amazon",
-    url: "https://www.amazon.com/Riverine-Lukasz-Drobnik/dp/1952055555&",
+    url: "https://www.amazon.com/Riverine-Lukasz-Drobnik/dp/1952055555",
   },
   // {
   //   title: "Order RIVERINE",
@@ -2703,7 +2703,7 @@ export const LINKS = [
   // },
   {
     title: "Buy GET BENT",
-    subtitle: "anthology featuring my piece “Coal and Glitter”",
+    subtitle: "featuring “Coal and Glitter”",
     url: "https://thegravityofthething.com/product/stranged-writing-a-literary-taxonomy/",
   },
   // {
