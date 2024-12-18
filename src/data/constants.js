@@ -1396,8 +1396,22 @@ export const BOOKS = [
     colorCover: nocturineCoverColor,
     url: NOCTURINE_URL,
     slogan: {
-      en: <div>Fiction collection</div>,
-      pl: <div>Zbiór prozy</div>,
+      en: (
+        <div>
+          Fiction collection forthcoming from{" "}
+          <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
+            <strong>FATHOM BOOKS</strong>
+          </a>
+        </div>
+      ),
+      pl: (
+        <div>
+          Zbiór prozy, który ukażę się nakładem wydawcnitwa{" "}
+          <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
+            <strong>FATHOM BOOKS</strong>
+          </a>
+        </div>
+      ),
     },
     orderButton: {
       en: null,
@@ -1409,8 +1423,7 @@ export const BOOKS = [
         <div>
           <p>
             <em>
-              DECEMBER 2024: The release has been delayed. Waiting for the final
-              publication date from FATHOM BOOKS. Check my{" "}
+              The release has been pushed to May 2025. Check my{" "}
               <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
                 <strong>BLUESKY</strong>
               </a>{" "}
@@ -1443,9 +1456,7 @@ export const BOOKS = [
         <div>
           <p>
             <em>
-              GRUDZIEŃ 2024: Wydanie zostało opóźnione. Czekam, aż FATHOM BOOKS
-              prześle mi ostateczną datę publikacji. O&nbsp;dalszych losach
-              książki będę informował na{" "}
+              Data wydania została przeniesiona na 2025&nbsp;r. Więcej na{" "}
               <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
                 <strong>BLUESKY</strong>
               </a>{" "}
@@ -1618,7 +1629,7 @@ export const BOOKS = [
         <div>
           Novel published in 2021 by{" "}
           <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
-            <strong>VRÆYDA&nbsp;LITERARY</strong>
+            <strong>VRAEYDA&nbsp;LITERARY</strong>
           </a>
         </div>
       ),
@@ -1626,7 +1637,7 @@ export const BOOKS = [
         <div>
           Powieść wydana w&nbsp;2021&nbsp;roku nakładem wydawnictwa{" "}
           <a href={VOSTOK_URL} target="_blank" rel="noopener noreferrer">
-            <strong>VRÆYDA&nbsp;LITERARY</strong>
+            <strong>VAEYDA&nbsp;LITERARY</strong>
           </a>
         </div>
       ),
@@ -1747,7 +1758,7 @@ export const BOOKS = [
               cannot stop diving back into it.
             </div>
           ),
-          source: "VRÆYDA LITERARY, the publisher",
+          source: "VRAEYDA LITERARY, the publisher",
         },
       ],
       pl: [
@@ -1780,7 +1791,7 @@ export const BOOKS = [
               i&nbsp;czystości. Nie mogę przestać do niej wracać.
             </div>
           ),
-          source: "VRÆYDA LITERARY, wydawca",
+          source: "VRAEYDA LITERARY, wydawca",
         },
       ],
     },
