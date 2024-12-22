@@ -49,8 +49,8 @@ export const BLYSKI_URL = "https://blyski.org"; // błyski literary magazine
 
 //Names of available texts
 export const TEXT_NAMES = [
-  // "vostok",
-  // "nocturine",
+  "vostok",
+  "nocturine",
   "cetacean",
   "cellulose",
   "moths",
@@ -1803,8 +1803,8 @@ export const BOOKS = [
       ),
     },
     orderButton: {
-      en: ORDER_BUTTON["order"]["en"],
-      pl: ORDER_BUTTON["order"]["pl"],
+      en: null,
+      pl: null,
     },
     shopList: [
       {
