@@ -36,7 +36,8 @@ export const VOSTOK_EBOOK_URL = "https://mybook.to/vostok-digital"; // buy Vosto
 export const VOSTOK_LOCAL_URL = "https://drobnik.co/vostok";
 export const VRAEDA_URL = "https://www.vraeydamedia.ca/literary"; //Vraeyda Literary website
 export const RIVERINE_URL =
-  "https://vegetarianalcoholicpress.com/titles/ukasz-drobnik-riverine"; // Riverine pre=order
+  "https://vegetarianalcoholicpress.com/titles/ukasz-drobnik-riverine"; // Riverine order
+export const RIVERINE_LOCAL_URL = "https://drobnik.co/riverine";
 export const VAPRESS_URL = "http://vapoetry.com/"; //VA Press website
 export const BLUESKY_URL = "https://bsky.app/profile/drobnik.bsky.social";
 export const TWITTER_URL = "https://twitter.com/drobnik";
@@ -2127,17 +2128,21 @@ export const WEBSITE_TEXT_ABOUT = {
             author of genre-bending books,{" "}
             <AnchorLink href="#vostok" offset="60px">
               <strong>VOSTOK</strong>
-            </AnchorLink>{" "}
-            and{" "}
+            </AnchorLink>
+            ,{" "}
             <AnchorLink href="#riverine" offset="60px">
               <strong>RIVERINE</strong>
             </AnchorLink>
-            , as well as shorter prose published in Split Lip Magazine, HAD,
-            Fractured Lit, Atticus Review, Quarterly West, Pithead Chapel,{" "}
-            Lighthouse, STORGY, BULL, Foglifter, X&#8209;R&#8209;A&#8209;Y
-            Literary Magazine, and elsewhere. His writing was longlisted for the{" "}
-            Wigleaf Top 50 Very Short Fictions and nominated for the Pushcart
-            Prize. He lives in Kraków, Poland.
+            , and{" "}
+            <AnchorLink href="#nocturine" offset="60px">
+              <strong>NOCTURINE</strong>
+            </AnchorLink>{" "}
+            (forthcoming), as well as shorter prose published in Split Lip
+            Magazine, HAD, Fractured Lit, Atticus Review, Quarterly West,
+            Pithead Chapel, Lighthouse, STORGY, BULL, Foglifter,
+            X&#8209;R&#8209;A&#8209;Y Literary Magazine, and elsewhere. His
+            writing was longlisted for the Wigleaf Top 50 Very Short Fictions
+            and nominated for the Pushcart Prize. He lives in Kraków, Poland.
           </p>
           <p>
             Below you can find a{" "}
@@ -2159,20 +2164,25 @@ export const WEBSITE_TEXT_ABOUT = {
         <div>
           <p>
             Łukasz Drobnik to polski prozaik piszący głównie po angielsku, autor
-            niejednoznacznych gatunkowo książek, powieści{" "}
+            niejednoznacznych gatunkowo książek,{" "}
             <AnchorLink href="#vostok" offset="60px">
               <strong>VOSTOK</strong>
-            </AnchorLink>{" "}
-            i&nbsp;zbioru flash fiction{" "}
+            </AnchorLink>
+            ,{" "}
             <AnchorLink href="#riverine" offset="60px">
               <strong>RIVERINE</strong>
-            </AnchorLink>
-            , oraz krótszych utworów opublikowanych m.in. w&nbsp;Split Lip
-            Magazine, HAD, Fractured Lit, Atticus Review, Quarterly West,
-            Pithead Chapel, Lighthouse, Foglifter, STORGY, BULL oraz
-            X&#8209;R&#8209;A&#8209;Y Literary Magazine. Ma na koncie miejsce na
-            longliście Wigleaf Top 50 Very Short Fictions i&nbsp;nominację do
-            Pushcart Prize. Mieszka w&nbsp;Krakowie.
+            </AnchorLink>{" "}
+            i&nbsp;
+            <AnchorLink href="#nocturine" offset="60px">
+              <strong>NOCTURINE</strong>
+            </AnchorLink>{" "}
+            (w&nbsp;przygotowaniu), a&nbsp;także krótszych utworów
+            opublikowanych m.in. w&nbsp;Split Lip Magazine, HAD, Fractured Lit,
+            Atticus Review, Quarterly West, Pithead Chapel, Lighthouse,
+            Foglifter, STORGY, BULL oraz X&#8209;R&#8209;A&#8209;Y Literary
+            Magazine. Ma na koncie miejsce na longliście Wigleaf Top 50 Very
+            Short Fictions i&nbsp;nominację do Pushcart Prize. Mieszka
+            w&nbsp;Krakowie.
           </p>
           <p>
             Poniżej można znaleźć{" "}
@@ -2389,12 +2399,24 @@ export const WEBSITE_TEXT_TEXTS = {
               rel="noopener noreferrer"
             >
               VOSTOK
-            </a>{" "}
-            and{" "}
-            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+            </a>
+            ,{" "}
+            <a
+              href={RIVERINE_LOCAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               RIVERINE
             </a>
-            , as well as shorter prose published in HAD,{" "}
+            , and{" "}
+            <a
+              href={NOCTURINE_LOCAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              NOCTURINE
+            </a>{" "}
+            (forthcoming), as well as shorter prose published in HAD,{" "}
             X&#8209;R&#8209;A&#8209;Y Literary Magazine, Fractured Lit, Atticus
             Review, Pithead Chapel, and elsewhere. His work was longlisted for
             the Wigleaf Top 50 Very Short Fictions and nominated for the
@@ -2424,16 +2446,28 @@ export const WEBSITE_TEXT_TEXTS = {
               rel="noopener noreferrer"
             >
               VOSTOK
-            </a>{" "}
-            i&nbsp;
-            <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
-              RIVERINE
             </a>
-            , oraz krótszych utworów opublikowanych m.in. w&nbsp;HAD,{" "}
-            X&#8209;R&#8209;A&#8209;Y Literary Magazine, Fractured Lit, Atticus
-            Review i&nbsp;Pithead Chapel. Ma na koncie miejsce na longliście
-            Wigleaf Top 50 Very Short Fictions i&nbsp;nominację do Pushcart
-            Prize. Jest na{" "}
+            ,{" "}
+            <a
+              href={VOSTOK_LOCAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              RIVERINE
+            </a>{" "}
+            oraz{" "}
+            <a
+              href={NOCTURINE_LOCAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              NOCTURINE
+            </a>{" "}
+            (w&nbsp;przygotowaniu), a&nbsp;także krótszych utworów
+            opublikowanych m.in. w&nbsp;HAD, X&#8209;R&#8209;A&#8209;Y Literary
+            Magazine, Fractured Lit, Atticus Review i&nbsp;Pithead Chapel. Ma na
+            koncie miejsce na longliście Wigleaf Top 50 Very Short Fictions
+            i&nbsp;nominację do Pushcart Prize. Jest na{" "}
             <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
               Bluesky
             </a>{" "}
@@ -2478,15 +2512,20 @@ export const WEBSITE_TEXT_BLOG = {
         is the author of genre-bending books,{" "}
         <a href={VOSTOK_LOCAL_URL} target="_blank" rel="noopener noreferrer">
           VOSTOK
-        </a>{" "}
-        and{" "}
-        <a href={VAPRESS_URL} target="_blank" rel="noopener noreferrer">
+        </a>
+        ,{" "}
+        <a href={RIVERINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">
           RIVERINE
         </a>
-        , as well as shorter prose published in HAD, X&#8209;R&#8209;A&#8209;Y
-        Literary Magazine, Fractured Lit, Atticus Review, Pithead Chapel, and
-        elsewhere. His work was longlisted for the Wigleaf Top 50 Very Short
-        Fictions and nominated for the Pushcart Prize. Find him on{" "}
+        , and{" "}
+        <a href={NOCTURINE_LOCAL_URL} target="_blank" rel="noopener noreferrer">
+          NOCTURINE
+        </a>{" "}
+        (forthcoming), as well as shorter prose published in HAD,
+        X&#8209;R&#8209;A&#8209;Y Literary Magazine, Fractured Lit, Atticus
+        Review, Pithead Chapel, and elsewhere. His work was longlisted for the
+        Wigleaf Top 50 Very Short Fictions and nominated for the Pushcart Prize.
+        Find him on{" "}
         <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
           Bluesky
         </a>{" "}
