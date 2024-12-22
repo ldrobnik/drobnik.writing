@@ -82,12 +82,14 @@ export const Book = (props) => {
         <BookSlogan>{BOOKS[props.book].slogan[props.lang]}</BookSlogan>
       </AnimatedContent>
       <Waypoint onEnter={showorderBtn} />
-      <BookAnimatedButton pose={orderBtnVisible ? "visible" : "hidden"}>
-        <CentredButton
-          message={BOOKS[props.book].orderButton[props.lang]}
-          path={BOOKS[props.book].url}
-        />
-      </BookAnimatedButton>
+      {BOOKS[props.book].orderButton[props.lang] && (
+        <BookAnimatedButton pose={orderBtnVisible ? "visible" : "hidden"}>
+          <CentredButton
+            message={BOOKS[props.book].orderButton[props.lang]}
+            path={BOOKS[props.book].url}
+          />
+        </BookAnimatedButton>
+      )}
       <AnimatedContent pose={!props.reload ? "visible" : "hidden"}>
         <BookBody>
           <div>{BOOKS[props.book].body[props.lang]}</div>

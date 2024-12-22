@@ -1391,7 +1391,7 @@ export const BOOKS = [
       en: "Nocturine",
       pl: "Nocturine",
     },
-    displayOnMain: false,
+    displayOnMain: true,
     cover: nocturineCover,
     colorCover: nocturineCoverColor,
     url: NOCTURINE_URL,
@@ -1464,24 +1464,26 @@ export const BOOKS = [
       ),
     },
     orderDetails: {
-      en: (
-        <p>
-          You can pre-order <em>NOCTURINE</em> from{" "}
-          <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
-            <strong>FATHOM BOOKS</strong>
-          </a>
-          .
-        </p>
-      ),
-      pl: (
-        <p>
-          <em>NOCTURINE</em> można zamówić w&nbsp;przedsprzedaży na stronie{" "}
-          <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
-            <strong>FATHOM BOOKS</strong>
-          </a>
-          .
-        </p>
-      ),
+      // en: (
+      //   <p>
+      //     You can pre-order <em>NOCTURINE</em> from{" "}
+      //     <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
+      //       <strong>FATHOM BOOKS</strong>
+      //     </a>
+      //     .
+      //   </p>
+      // ),
+      // pl: (
+      //   <p>
+      //     <em>NOCTURINE</em> można zamówić w&nbsp;przedsprzedaży na stronie{" "}
+      //     <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
+      //       <strong>FATHOM BOOKS</strong>
+      //     </a>
+      //     .
+      //   </p>
+      // ),
+      en: null,
+      pl: null,
     },
     quotes: {
       en: [
@@ -1803,8 +1805,8 @@ export const BOOKS = [
       ),
     },
     orderButton: {
-      en: null,
-      pl: null,
+      en: ORDER_BUTTON["order"]["en"],
+      pl: ORDER_BUTTON["order"]["pl"],
     },
     shopList: [
       {
