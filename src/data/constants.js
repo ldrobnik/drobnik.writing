@@ -72,7 +72,7 @@ export const TEXTS = {
       description: (
         <p>
           <em>Nocturine</em> is a collection of interlinked stories forthcoming
-          from{" "}
+          in May 2025 from{" "}
           <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
             Fathom Books
           </a>
@@ -433,8 +433,8 @@ export const TEXTS = {
         "Tekst: Łukasz Drobnik. Redakcja: Paweł Nowakowski, Adrian Sikora.",
       description: (
         <p>
-          „Nocturine” to zbiór powiązanych fabularnie opowiadań
-          w&nbsp;przygotowaniu przez wydawnictwo{" "}
+          „Nocturine” to zbiór powiązanych fabularnie opowiadań, który ma się
+          ukazać w&nbsp;maju 2025&nbsp;r. nakładem wydawnictwa{" "}
           <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
             Fathom Books
           </a>
@@ -1398,7 +1398,7 @@ export const BOOKS = [
     slogan: {
       en: (
         <div>
-          Fiction collection forthcoming from{" "}
+          Fiction collection forthcoming in May 2025 from{" "}
           <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
             <strong>FATHOM BOOKS</strong>
           </a>
@@ -1406,7 +1406,8 @@ export const BOOKS = [
       ),
       pl: (
         <div>
-          Zbiór prozy, który ukażę się nakładem wydawcnitwa{" "}
+          Zbiór prozy, który ukażę się w&nbsp;maju 2025&nbsp;r. nakładem
+          wydawcnitwa{" "}
           <a href={NOCTURINE_URL} target="_blank" rel="noopener noreferrer">
             <strong>FATHOM BOOKS</strong>
           </a>
@@ -1421,19 +1422,6 @@ export const BOOKS = [
     body: {
       en: (
         <div>
-          <p>
-            <em>
-              The release has been pushed to May 2025. Check my{" "}
-              <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
-                <strong>BLUESKY</strong>
-              </a>{" "}
-              and{" "}
-              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
-                <strong>INSTAGRAM</strong>
-              </a>{" "}
-              for more updates.
-            </em>
-          </p>
           <p>
             The end of the world starts like an ad campaign. When black cubes
             appear above the city of Poznań, some think it’s just another mobile
@@ -1454,19 +1442,6 @@ export const BOOKS = [
       ),
       pl: (
         <div>
-          <p>
-            <em>
-              Data wydania została przeniesiona na 2025&nbsp;r. Więcej na{" "}
-              <a href={BLUESKY_URL} target="_blank" rel="noopener noreferrer">
-                <strong>BLUESKY</strong>
-              </a>{" "}
-              i&nbsp;
-              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
-                <strong>INSTAGRAMIE</strong>
-              </a>
-              .
-            </em>
-          </p>
           <p>
             Koniec świata zaczyna się jak kampania reklamowa. Gdy nad Poznaniem
             zawisają czarne sześciany, niektórzy sądzą, że to po prostu kolejny
