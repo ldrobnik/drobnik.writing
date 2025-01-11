@@ -39,7 +39,7 @@ export const RIVERINE_URL =
   "https://vegetarianalcoholicpress.com/titles/ukasz-drobnik-riverine"; // Riverine order
 export const RIVERINE_LOCAL_URL = "https://drobnik.co/riverine";
 export const VAPRESS_URL = "http://vapoetry.com/"; //VA Press website
-export const BLUESKY_URL = "https://bsky.app/profile/drobnik.bsky.social";
+export const BLUESKY_URL = "https://bsky.app/profile/drobnik.co";
 export const TWITTER_URL = "https://twitter.com/drobnik";
 export const FACEBOOK_URL = "https://www.facebook.com/drobnikwrites";
 export const INSTAGRAM_URL = "https://www.instagram.com/drobnikwrites/";
@@ -2224,7 +2224,7 @@ export const WEBSITE_TEXT_ABOUT = {
               aria-hidden="true"
               title="Bluesky"
             />
-            &nbsp;@drobnik.bsky.social
+            &nbsp;@drobnik.co
             <span className="sr-only">Bluesky</span>
           </div>
         ),
@@ -2690,7 +2690,7 @@ export const LINKS = [
   },
   {
     title: "Bluesky",
-    subtitle: "@drobnik.bsky.social",
+    subtitle: "@drobnik.co",
     url: BLUESKY_URL,
   },
   {
